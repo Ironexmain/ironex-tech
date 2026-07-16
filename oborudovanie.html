@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Производственное оборудование — 47 станков ЧПУ | IRONEX</title>
+  <meta name="description" content="Собственный цех IRONEX без аутсорса: 47 единиц ЧПУ-оборудования на одной площадке. 5-осевые центры DMG Mori и Hermle, лазер D-SOAR 20 кВт, гидроабразив APW2050BA, листогибы до 150 т, КИМ Hexagon Global S." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --dark:#18181B;--dark2:#27272A;--amber:#F59E0B;--amber2:#D97706;
+      --amber3:#FEF3C7;--bg:#FAFAF9;--bg2:#F4F4F0;--text:#18181B;
+      --muted:#71717A;--border:#E4E4E7;--white:#FFFFFF;--r:10px;
+    }
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;}
+    .container{max-width:1180px;margin:0 auto;padding:0 24px;}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;
+             letter-spacing:.1em;text-transform:uppercase;color:var(--amber2);margin-bottom:18px;}
+    .eyebrow::before{content:'';display:block;width:20px;height:2px;background:var(--amber);}
+    h2.h2{font-size:clamp(24px,3.5vw,36px);font-weight:900;line-height:1.15;letter-spacing:-.025em;margin-bottom:14px;}
+    h2.h2 em{font-style:normal;color:var(--amber2);}
+    .lead{font-size:16px;color:var(--muted);line-height:1.65;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:8px;
+         font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;transition:all .2s;border:none;}
+    .btn-amber{background:var(--amber);color:var(--dark);}
+    .btn-amber:hover{background:var(--amber2);}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:200;background:rgba(24,24,27,.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06);}
+    .nav-inner{display:flex;align-items:center;height:68px;}
+    .nav-logo{font-size:21px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:-.025em;flex-shrink:0;margin-right:auto;}
+    .nav-logo span{color:var(--amber);}
+    .nav-links{display:flex;gap:28px;list-style:none;margin-right:32px;}
+    .nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;}
+    .nav-actions{display:flex;align-items:center;gap:20px;flex-shrink:0;}
+    .nav-phone{color:rgba(255,255,255,.8);font-size:14px;font-weight:600;text-decoration:none;}
+    .nav-phone:hover{color:var(--amber);}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;margin-left:16px;}
+    .hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;}
+    .mob-menu{display:none;background:var(--dark2);border-top:1px solid rgba(255,255,255,.08);}
+    .mob-menu.open{display:block;}
+    .mob-menu a{display:block;padding:13px 24px;color:rgba(255,255,255,.75);font-size:15px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);}
+
+    /* BREADCRUMB */
+    .breadcrumb{padding:16px 0;border-bottom:1px solid var(--border);}
+    .breadcrumb-inner{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);}
+    .breadcrumb a{color:var(--muted);text-decoration:none;}
+    .breadcrumb span{color:var(--text);font-weight:500;}
+
+    /* PAGE HERO */
+    .page-hero{padding:64px 0 56px;background:var(--dark);color:#fff;}
+    .page-hero h1{font-size:clamp(32px,5vw,52px);font-weight:900;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px;}
+    .page-hero h1 em{font-style:normal;color:var(--amber);}
+    .page-hero p{font-size:16px;color:rgba(255,255,255,.55);line-height:1.65;max-width:560px;}
+    .stats-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.1);margin-top:48px;}
+    .stat-item{padding:24px 0;border-right:1px solid rgba(255,255,255,.1);}
+    .stat-item:last-child{border-right:none;}
+    .stat-num{font-size:36px;font-weight:900;color:var(--amber);letter-spacing:-.03em;}
+    .stat-label{font-size:12px;color:rgba(255,255,255,.45);margin-top:4px;}
+
+    /* MACHINE GRID */
+    .machine-section{padding:72px 0;border-bottom:1px solid var(--border);}
+    .section-header{margin-bottom:40px;}
+    .machine-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .machine-card{border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:all .2s;}
+    .machine-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-2px);}
+    .machine-card-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+    .machine-card-body{padding:22px;}
+    .machine-tag{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--amber2);background:var(--amber3);padding:3px 8px;border-radius:5px;margin-bottom:10px;}
+    .machine-card h3{font-size:16px;font-weight:800;margin-bottom:8px;letter-spacing:-.01em;}
+    .machine-card p{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:14px;}
+    .machine-specs{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+    .mspec{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 10px;}
+    .mspec-label{font-size:10px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em;}
+    .mspec-val{font-size:13px;font-weight:700;color:var(--text);margin-top:2px;}
+
+    /* FEATURED MACHINE */
+    .machine-featured{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:32px;}
+    .mf-img{overflow:hidden;}
+    .mf-img img{width:100%;height:100%;object-fit:cover;display:block;}
+    .mf-body{padding:40px;background:var(--bg);display:flex;flex-direction:column;justify-content:center;}
+    .mf-body h3{font-size:22px;font-weight:900;margin-bottom:10px;letter-spacing:-.02em;}
+    .mf-body > p{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:20px;}
+    .mf-specs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
+    .mf-spec{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:10px 12px;}
+    .mf-spec-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);}
+    .mf-spec-val{font-size:14px;font-weight:800;margin-top:2px;}
+
+    /* CAPABILITIES TABLE */
+    .cap-table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;border:1px solid var(--border);}
+    .cap-table th{background:var(--dark);color:#fff;padding:12px 16px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;}
+    .cap-table td{padding:13px 16px;font-size:13px;border-bottom:1px solid var(--border);}
+    .cap-table tr:last-child td{border-bottom:none;}
+    .cap-table tr:nth-child(even) td{background:var(--bg);}
+    .cap-table td:first-child{font-weight:600;}
+    .green{color:#16a34a;font-weight:700;}
+
+    /* CTA */
+    .cta-bar{background:var(--dark);color:#fff;padding:64px 0;}
+    .cta-bar-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+    .cta-bar h2{color:#fff;font-size:clamp(22px,3vw,32px);font-weight:900;letter-spacing:-.025em;margin-bottom:12px;}
+    .cta-bar p{color:rgba(255,255,255,.55);font-size:15px;line-height:1.6;}
+    .cta-channels{display:flex;flex-direction:column;gap:12px;}
+    .cta-ch{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:18px 22px;text-decoration:none;color:#fff;transition:all .2s;}
+    .cta-ch:hover{background:rgba(245,158,11,.12);border-color:var(--amber);}
+    .cta-ch-icon{font-size:22px;flex-shrink:0;}
+    .cta-ch-title{font-size:14px;font-weight:700;}
+    .cta-ch-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:1px;}
+    .cta-ch-val{margin-left:auto;font-size:13px;font-weight:700;color:var(--amber);white-space:nowrap;}
+
+    /* FOOTER */
+    footer{background:#0A0A0C;color:rgba(255,255,255,.4);padding:48px 0 24px;}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.07);}
+    .f-logo{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.025em;margin-bottom:10px;}
+    .f-logo span{color:var(--amber);}
+    .f-desc{font-size:13px;line-height:1.65;max-width:220px;margin-bottom:16px;}
+    .f-contacts{display:flex;flex-direction:column;gap:7px;}
+    .f-contacts a{color:rgba(255,255,255,.6);text-decoration:none;font-size:13px;}
+    .f-contacts a:hover{color:var(--amber);}
+    .f-col h4{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.3);margin-bottom:14px;}
+    .f-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+    .f-col a{color:rgba(255,255,255,.5);text-decoration:none;font-size:13px;}
+    .f-col a:hover{color:rgba(255,255,255,.9);}
+    .footer-bottom{display:flex;justify-content:space-between;padding-top:20px;font-size:12px;flex-wrap:wrap;gap:10px;}
+
+    @media(max-width:768px){
+      .nav-links,.nav-actions{display:none;}
+      .hamburger{display:flex;}
+      .stats-bar{grid-template-columns:1fr 1fr;}
+      .machine-grid{grid-template-columns:1fr;}
+      .machine-featured{grid-template-columns:1fr;}
+      .mf-img{display:none;}
+      .cta-bar-inner{grid-template-columns:1fr;gap:36px;}
+      .footer-top{grid-template-columns:1fr 1fr;}
+    }
+    @media(max-width:480px){.footer-top{grid-template-columns:1fr;}}
+  </style>
+
+  <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
+  <link rel="canonical" href="https://ironex.tech/oborudovanie.html" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Оборудование","item":"https://ironex.tech/oborudovanie.html"}]},
+    {"@type":"WebPage","url":"https://ironex.tech/oborudovanie.html","name":"Производственное оборудование — 47 станков ЧПУ | IRONEX","description":"47 станков ЧПУ: 5-осевые обрабатывающие центры DMG Mori, волоконный лазер 20 кВт D-SOAR, гидроабразив APW, прессы 150 т. КИМ-контроль Hexagon. Полный цикл металлообработки.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-07-14"}
+  ]}
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">IRON<span>EX</span></a>
+      <ul class="nav-links">
+        <li><a href="uslugi.html">Услуги</a></li>
+        <li><a href="oborudovanie.html" class="active">Оборудование</a></li>
+        <li><a href="ceny.html">Цены</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="index.html#cases">Кейсы</a></li>
+        <li><a href="kontakty.html">Контакты</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
+        <a href="kontakty.html" class="btn btn-amber" style="padding:10px 20px;font-size:14px;">Запросить расчёт</a>
+      </div>
+      <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mob-menu" id="mob">
+    <a href="uslugi.html">Услуги</a>
+    <a href="oborudovanie.html">Оборудование</a>
+    <a href="ceny.html">Цены</a>
+    <a href="blog.html">Блог</a>
+    <a href="index.html#cases">Кейсы</a>
+    <a href="kontakty.html">Контакты</a>
+    <a href="kontakty.html" style="color:var(--amber);">Запросить расчёт</a>
+    <a href="tel:+79934904024">+7 993 490-40-24</a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="container">
+    <div class="breadcrumb-inner"><a href="index.html">Главная</a> · <span>Оборудование</span></div>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow" style="color:rgba(255,255,255,.4);"><span style="background:var(--amber);width:20px;height:2px;display:block;"></span>Производственный парк</div>
+    <h1>47 станков ЧПУ —<br><em>полный цикл</em> под одной крышей.</h1>
+    <p>Обрабатывающие центры Hermle и DMG Mori, волоконные лазеры 20 кВт, гидроабразив, КИМ-машина Hexagon. Всё, что нужно от чертежа до готовой детали.</p>
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-num">47</div><div class="stat-label">Станков ЧПУ</div></div>
+      <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">Осей обработки</div></div>
+      <div class="stat-item"><div class="stat-num">20</div><div class="stat-label">кВт мощность лазера</div></div>
+      <div class="stat-item"><div class="stat-num">±0,005</div><div class="stat-label">мм точность ЧПУ</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- МЕХАНООБРАБОТКА -->
+<section class="machine-section" id="mechobrabotka">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Механообработка ЧПУ</div>
+      <h2 class="h2">Обрабатывающие центры<br><em>3, 4 и 5 осей</em></h2>
+    </div>
+
+    <div class="machine-featured">
+      <div class="mf-img">
+        <img src="images/photos/prod-1022.webp" alt="5-осевой обрабатывающий центр" />
+      </div>
+      <div class="mf-body">
+        <div class="machine-tag">Флагман</div>
+        <h3>Hermle C500 · 5-осевой ОЦ</h3>
+        <p>Непрерывная 5-осевая обработка сложных деталей в одной установке. Исключает погрешности переустановки, сокращает время производства сложных корпусных деталей в 2–3 раза.</p>
+        <div class="mf-specs">
+          <div class="mf-spec"><div class="mf-spec-label">Рабочая зона</div><div class="mf-spec-val">1100×600×600 мм</div></div>
+          <div class="mf-spec"><div class="mf-spec-label">Точность</div><div class="mf-spec-val">±0,005 мм</div></div>
+          <div class="mf-spec"><div class="mf-spec-label">Шпиндель</div><div class="mf-spec-val">12 000 об/мин</div></div>
+          <div class="mf-spec"><div class="mf-spec-label">Количество</div><div class="mf-spec-val">2 шт.</div></div>
+        </div>
+        <span style="display:inline-block;font-size:12px;font-weight:700;color:var(--amber2);background:var(--amber3);padding:4px 10px;border-radius:6px;">5-осевая непрерывная обработка</span>
+      </div>
+    </div>
+
+    <div class="machine-grid">
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/prod-2044.webp" alt="DMG Mori NLX" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Токарная</div>
+          <h3>DMG Mori NLX 2500</h3>
+          <p>Токарный центр с приводным инструментом, осью C и противошпинделем. Полная токарно-фрезерная обработка без переустановки.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Диаметр</div><div class="mspec-val">⌀ 380 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Длина</div><div class="mspec-val">до 1500 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Точность</div><div class="mspec-val">±0,008 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Кол-во</div><div class="mspec-val">6 шт.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/gen-milling.webp" alt="Фрезерный центр DMG" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Фрезерная</div>
+          <h3>DMG Mori DMU 85 · 3–4 оси</h3>
+          <p>Горизонтальные и вертикальные фрезерные центры. Корпусные детали, плиты, кронштейны в серийном производстве.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Рабочая зона</div><div class="mspec-val">800×500 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Шпиндель</div><div class="mspec-val">8 000 об/мин</div></div>
+            <div class="mspec"><div class="mspec-label">Точность</div><div class="mspec-val">±0,007 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Кол-во</div><div class="mspec-val">8 шт.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/prod-2035.webp" alt="Шлифовальный станок" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Шлифование</div>
+          <h3>Станки цилиндрической и плоской шлифовки</h3>
+          <p>Финишная шлифовка после закалки и цементации. Ra 0,2–0,4 мкм. Детали под прецизионные подшипниковые посадки.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Шероховатость</div><div class="mspec-val">Ra 0,2 мкм</div></div>
+            <div class="mspec"><div class="mspec-label">Точность</div><div class="mspec-val">±0,003 мм</div></div>
+            <div class="mspec"><div class="mspec-label">После ТО</div><div class="mspec-val">да</div></div>
+            <div class="mspec"><div class="mspec-label">Кол-во</div><div class="mspec-val">3 шт.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- РЕЗКА -->
+<section class="machine-section" id="rezka" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Резка и раскрой</div>
+      <h2 class="h2">Лазер <em>20 кВт,</em><br>гидроабразив, плазма</h2>
+    </div>
+    <div class="machine-grid">
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/gen-laser.webp" alt="Лазерный станок D-SOAR" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Лазер</div>
+          <h3>D-SOAR 20 кВт · волоконный лазер</h3>
+          <p>Волоконный лазер нового поколения. 20 кВт — режет сталь до 30 мм с чистой кромкой, скорость резки 4× выше CO₂-лазеров той же мощности.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Мощность</div><div class="mspec-val">20 кВт</div></div>
+            <div class="mspec"><div class="mspec-label">Толщина</div><div class="mspec-val">до 30 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Рабочее поле</div><div class="mspec-val">2500×1200 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Кол-во</div><div class="mspec-val">3 шт.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/gen-hydro.webp" alt="Гидроабразивный станок APW" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Гидроабразив</div>
+          <h3>APW2050BA · гидроабразивная резка</h3>
+          <p>Давление воды до 4000 бар. Режет любой материал без нагрева — титан, бронзу, стекло, камень, композиты. Без изменения структуры.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Давление</div><div class="mspec-val">4 000 бар</div></div>
+            <div class="mspec"><div class="mspec-label">Материал</div><div class="mspec-val">любой</div></div>
+            <div class="mspec"><div class="mspec-label">Толщина</div><div class="mspec-val">до 200 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Нагрев</div><div class="mspec-val">нет</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/gen-plasma.webp" alt="Плазменный раскрой" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Плазма</div>
+          <h3>Плазменный раскрой · HyPerformance</h3>
+          <p>Экономичный раскрой толстостенных конструкционных сталей. Высокая скорость, минимальная стоимость реза на толщинах 20–100 мм.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Толщина</div><div class="mspec-val">до 100 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Материал</div><div class="mspec-val">сталь · нерж</div></div>
+            <div class="mspec"><div class="mspec-label">Точность</div><div class="mspec-val">±0,5 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Применение</div><div class="mspec-val">черновые загот.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЛИСТОВАЯ -->
+<section class="machine-section" id="listovaya">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Листовая обработка</div>
+      <h2 class="h2">Прессы до <em>150 тонн,</em><br>координатная пробивка</h2>
+    </div>
+    <div class="machine-grid">
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/gen-bending.webp" alt="Листогибочный пресс" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Гибка</div>
+          <h3>PR6C-150T / VR6-125T · листогибы</h3>
+          <p>Листогибочные прессы с ЧПУ управлением угла гиба. Высокая повторяемость, сложные многоплоскостные профили.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Усилие</div><div class="mspec-val">150 тонн</div></div>
+            <div class="mspec"><div class="mspec-label">Длина</div><div class="mspec-val">до 3 000 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Толщина</div><div class="mspec-val">до 12 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Кол-во</div><div class="mspec-val">4 шт.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/gen-punch.webp" alt="Координатно-пробивной станок" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Пробивка</div>
+          <h3>VT-300 ЧПУ · координатная пробивка</h3>
+          <p>Перфорация, вырубка, формовка по программе. Детали с множеством отверстий любого расположения — в одной установке.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Рабочее поле</div><div class="mspec-val">1500×1000 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Толщина</div><div class="mspec-val">до 6 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Управление</div><div class="mspec-val">ЧПУ</div></div>
+            <div class="mspec"><div class="mspec-label">Кол-во</div><div class="mspec-val">2 шт.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- СВАРКА -->
+<section class="machine-section" id="svarka" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Сварка и сборка</div>
+      <h2 class="h2">16 постов, 2 робота,<br><em>лазерная сварка</em></h2>
+    </div>
+    <div class="machine-grid">
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/gen-welding.webp" alt="Роботизированная сварка" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Робот</div>
+          <h3>NB-350 · роботизированная сварка</h3>
+          <p>2 сварочных робота для серийных узлов. Один раз программируется — одинаковый шов на каждой детали партии.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Применение</div><div class="mspec-val">от 20 шт.</div></div>
+            <div class="mspec"><div class="mspec-label">Материал</div><div class="mspec-val">сталь · нерж · алюм</div></div>
+            <div class="mspec"><div class="mspec-label">Повторяемость</div><div class="mspec-val">±0,1 мм</div></div>
+            <div class="mspec"><div class="mspec-label">Кол-во</div><div class="mspec-val">2 шт.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/gen-tig.webp" alt="TIG сварка" />
+        <div class="machine-card-body">
+          <div class="machine-tag">TIG / MIG</div>
+          <h3>WSM-400, WSME-315 · 16 постов</h3>
+          <p>Ручная аргонодуговая и полуавтоматическая сварка. TIG — нержавейка и алюминий с эстетичным швом, MIG — конструкционная сталь.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Тип</div><div class="mspec-val">TIG + MIG/MAG</div></div>
+            <div class="mspec"><div class="mspec-label">Постов</div><div class="mspec-val">16</div></div>
+            <div class="mspec"><div class="mspec-label">Нерж / Алюм</div><div class="mspec-val">да</div></div>
+            <div class="mspec"><div class="mspec-label">Сертификат</div><div class="mspec-val">НАКС</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="machine-card">
+        <img class="machine-card-img" src="images/photos/gen-laser-weld.webp" alt="Лазерная сварка" />
+        <div class="machine-card-body">
+          <div class="machine-tag">Лазер</div>
+          <h3>SUP-AMF-D · лазерная сварка</h3>
+          <p>Минимальная зона нагрева, узкий шов. Тонкостенные детали, где важно сохранить геометрию после сварки.</p>
+          <div class="machine-specs">
+            <div class="mspec"><div class="mspec-label">Зона нагрева</div><div class="mspec-val">минимальная</div></div>
+            <div class="mspec"><div class="mspec-label">Шов</div><div class="mspec-val">узкий, чистый</div></div>
+            <div class="mspec"><div class="mspec-label">Тонкостенные</div><div class="mspec-val">да</div></div>
+            <div class="mspec"><div class="mspec-label">Деформация</div><div class="mspec-val">мин.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КИМ-КОНТРОЛЬ -->
+<section class="machine-section" id="kontrol">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Контроль качества</div>
+      <h2 class="h2">Hexagon Global S —<br><em>протокол</em> на каждую партию</h2>
+    </div>
+    <div class="machine-featured">
+      <div class="mf-img">
+        <img src="images/photos/gen-kim.webp" alt="КИМ Hexagon Global S" />
+      </div>
+      <div class="mf-body">
+        <div class="machine-tag">Флагман контроля</div>
+        <h3>Hexagon Global S · КИМ-машина</h3>
+        <p>Координатно-измерительная машина 3D-замера. Единственный инструмент, который подтверждает допуск не на одной детали, а на всей партии. Протокол с отклонениями в комплекте к заказу.</p>
+        <div class="mf-specs">
+          <div class="mf-spec"><div class="mf-spec-label">Рабочее поле</div><div class="mf-spec-val">800×600×600 мм</div></div>
+          <div class="mf-spec"><div class="mf-spec-label">Точность</div><div class="mf-spec-val">±0,0025 мм</div></div>
+          <div class="mf-spec"><div class="mf-spec-label">Оптический 2D</div><div class="mf-spec-val">есть</div></div>
+          <div class="mf-spec"><div class="mf-spec-label">Протокол</div><div class="mf-spec-val">включён в заказ</div></div>
+        </div>
+        <span style="display:inline-block;font-size:12px;font-weight:700;color:#16a34a;background:#dcfce7;padding:6px 14px;border-radius:6px;">✓ КИМ включён в стоимость заказа</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- СВОДНАЯ ТАБЛИЦА ВОЗМОЖНОСТЕЙ -->
+<section style="padding:64px 0;background:var(--bg);">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Производственные возможности</div>
+      <h2 class="h2">Что мы умеем —<br><em>в одной таблице</em></h2>
+    </div>
+    <table class="cap-table">
+      <thead>
+        <tr>
+          <th>Операция</th>
+          <th>Оборудование</th>
+          <th>Точность</th>
+          <th>Макс. размер / толщина</th>
+          <th>Доступность</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Фрезеровка 5 осей</td><td>Hermle C500</td><td>±0,005 мм</td><td>1100×600×600 мм</td><td class="green">доступно</td></tr>
+        <tr><td>Токарная обработка</td><td>DMG Mori NLX 2500</td><td>±0,008 мм</td><td>⌀380×1500 мм</td><td class="green">доступно</td></tr>
+        <tr><td>Фрезеровка 3–4 оси</td><td>DMG Mori DMU 85</td><td>±0,007 мм</td><td>800×500 мм</td><td class="green">доступно</td></tr>
+        <tr><td>Лазерная резка</td><td>D-SOAR 20 кВт</td><td>±0,1 мм</td><td>до 30 мм</td><td class="green">доступно</td></tr>
+        <tr><td>Гидроабразивная резка</td><td>APW2050BA</td><td>±0,1 мм</td><td>до 200 мм, любой материал</td><td class="green">доступно</td></tr>
+        <tr><td>Плазменная резка</td><td>HyPerformance</td><td>±0,5 мм</td><td>до 100 мм (сталь)</td><td class="green">доступно</td></tr>
+        <tr><td>Гибка листового металла</td><td>PR6C-150T</td><td>±0,3°</td><td>до 3 000 мм, до 12 мм</td><td class="green">доступно</td></tr>
+        <tr><td>Координатная пробивка</td><td>VT-300 ЧПУ</td><td>±0,1 мм</td><td>1500×1000 мм, до 6 мм</td><td class="green">доступно</td></tr>
+        <tr><td>Роботизированная сварка</td><td>NB-350 (2 шт.)</td><td>±0,1 мм</td><td>серия от 20 шт.</td><td class="green">доступно</td></tr>
+        <tr><td>TIG / MIG сварка</td><td>WSM-400, WSME-315</td><td>—</td><td>16 постов</td><td class="green">доступно</td></tr>
+        <tr><td>Лазерная сварка</td><td>SUP-AMF-D</td><td>минимальная деформация</td><td>тонкостенные</td><td class="green">доступно</td></tr>
+        <tr><td>Порошковая окраска</td><td>камеры полимеризации</td><td>любой RAL</td><td>до 6 м</td><td class="green">доступно</td></tr>
+        <tr><td>КИМ-контроль</td><td>Hexagon Global S</td><td>±0,0025 мм</td><td>800×600×600 мм</td><td class="green">включён</td></tr>
+        <tr><td>Шлифование</td><td>цилиндр. + плоское</td><td>Ra 0,2 мкм</td><td>—</td><td class="green">доступно</td></tr>
+        <tr><td>Лазерная маркировка</td><td>волоконный маркер</td><td>≤0,05 мм</td><td>QR, DataMatrix, серийники</td><td class="green">доступно</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-bar">
+  <div class="container">
+    <div class="cta-bar-inner">
+      <div>
+        <h2>Готовы к производству вашей детали</h2>
+        <p>Пришлите чертёж — технолог определит оптимальный маршрут и вернётся с расчётом за 3 дня.</p>
+        <div style="margin-top:20px;display:flex;flex-direction:column;gap:8px;">
+          <span style="font-size:13px;color:rgba(255,255,255,.5);">✓ PDF, DWG, DXF, STEP, IGES, ZIP</span>
+          <span style="font-size:13px;color:rgba(255,255,255,.5);">✓ От 1 детали · NDA по запросу</span>
+        </div>
+      </div>
+      <div class="cta-channels">
+        <a href="mailto:info@ironex.tech" class="cta-ch">
+          <div class="cta-ch-icon">✉️</div>
+          <div><div class="cta-ch-title">Написать на почту</div><div class="cta-ch-sub">Прикрепите чертёж</div></div>
+          <div class="cta-ch-val">info@ironex.tech</div>
+        </a>
+        <a href="tel:+79934904024" class="cta-ch">
+          <div class="cta-ch-icon">📞</div>
+          <div><div class="cta-ch-title">Позвонить</div><div class="cta-ch-sub">Пн–Пт, 09:00–19:00</div></div>
+          <div class="cta-ch-val">+7 993 490-40-24</div>
+        </a>
+        <a href="https://t.me/+79934904024" class="cta-ch">
+          <div class="cta-ch-icon">✈️</div>
+          <div><div class="cta-ch-title">Telegram</div><div class="cta-ch-sub">Ответим в течение часа</div></div>
+          <div class="cta-ch-val">→ открыть</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="f-logo">IRON<span>EX</span></div>
+        <p class="f-desc">Изготовление деталей по чертежам полного цикла. 47 станков ЧПУ, КИМ-контроль каждой партии.</p>
+        <div class="f-contacts">
+          <a href="tel:+79934904024">+7 993 490-40-24</a>
+          <a href="mailto:info@ironex.tech">info@ironex.tech</a>
+          <span>Пн–Пт, 09:00–19:00 (МСК)</span>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="uslugi.html#mechobrabotka">Фрезерная обработка</a></li>
+          <li><a href="uslugi.html#mechobrabotka">Токарная обработка</a></li>
+          <li><a href="uslugi.html#rezka">Лазерная резка</a></li>
+          <li><a href="uslugi.html#listovaya">Гибка металла</a></li>
+          <li><a href="uslugi.html#svarka">Сварка и сборка</a></li>
+          <li><a href="uslugi.html#finish">Порошковая покраска</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="oborudovanie.html">Оборудование</a></li>
+          <li><a href="ceny.html">Цены</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="index.html#cases">Кейсы</a></li>
+          <li><a href="kontakty.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Связаться</h4>
+        <ul>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="https://t.me/+79934904024">Telegram</a></li>
+          <li><a href="https://wa.me/79934904024">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 IRONEX. Контрактное производство деталей.</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
