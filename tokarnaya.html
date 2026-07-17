@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Токарная обработка металла на ЧПУ — IRONEX | от 1 200 ₽/нормо-час</title>
+  <meta name="description" content="Токарная обработка металла на ЧПУ. Валы, втулки, фланцы, шестерни по чертежам. Точность ±0,008 мм. Сталь, нержавейка, алюминий. Расчёт за 3 дня. DMG Mori NLX 2500." />
+  <link rel="canonical" href="https://ironex.tech/tokarnaya.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --dark:#18181B;--dark2:#27272A;--dark3:#3F3F46;--amber:#F59E0B;--amber2:#D97706;
+      --amber3:#FEF3C7;--bg:#FAFAF9;--bg2:#F4F4F0;--text:#18181B;
+      --muted:#71717A;--border:#E4E4E7;--white:#FFFFFF;--r:10px;
+    }
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;}
+    .container{max-width:1180px;margin:0 auto;padding:0 24px;}
+    .section{padding:80px 0;}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;
+             letter-spacing:.1em;text-transform:uppercase;color:var(--amber2);margin-bottom:18px;}
+    .eyebrow::before{content:'';display:block;width:20px;height:2px;background:var(--amber);}
+    .eyebrow-light::before{background:var(--amber);}
+    h2.h2{font-size:clamp(26px,3.5vw,38px);font-weight:900;line-height:1.15;letter-spacing:-.025em;margin-bottom:14px;}
+    h2.h2 em{font-style:normal;color:var(--amber2);}
+    .lead{font-size:16px;color:var(--muted);line-height:1.65;max-width:600px;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:8px;
+         font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;transition:all .2s;border:none;font-family:inherit;}
+    .btn-amber{background:var(--amber);color:var(--dark);}
+    .btn-amber:hover{background:var(--amber2);transform:translateY(-1px);}
+    .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.25);}
+    .btn-ghost:hover{background:rgba(255,255,255,.08);}
+    nav{position:sticky;top:0;z-index:200;background:rgba(24,24,27,.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06);}
+    .nav-inner{display:flex;align-items:center;height:68px;}
+    .nav-logo{font-size:21px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:-.025em;flex-shrink:0;margin-right:auto;}
+    .nav-logo span{color:var(--amber);}
+    .nav-links{display:flex;gap:28px;list-style:none;margin-right:32px;}
+    .nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;}
+    .nav-actions{display:flex;align-items:center;gap:20px;flex-shrink:0;}
+    .nav-phone{color:rgba(255,255,255,.8);font-size:14px;font-weight:600;text-decoration:none;}
+    .nav-phone:hover{color:var(--amber);}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;margin-left:16px;}
+    .hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;}
+    .mob-menu{display:none;background:var(--dark2);border-top:1px solid rgba(255,255,255,.08);}
+    .mob-menu.open{display:block;}
+    .mob-menu a{display:block;padding:13px 24px;color:rgba(255,255,255,.75);font-size:15px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);}
+    /* HERO */
+    .page-hero{padding:72px 0 60px;background:var(--dark);color:#fff;}
+    .page-hero h1{font-size:clamp(32px,5vw,54px);font-weight:900;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px;}
+    .page-hero h1 em{font-style:normal;color:var(--amber);}
+    .page-hero p{font-size:17px;color:rgba(255,255,255,.55);line-height:1.65;max-width:580px;margin-bottom:32px;}
+    .hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px;}
+    .hbadge{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;
+            background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
+            border-radius:100px;padding:7px 14px;color:rgba(255,255,255,.85);}
+    .hero-cta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+    /* SPECS BAR */
+    .specs-bar{background:var(--amber);padding:20px 0;}
+    .specs-inner{display:flex;gap:0;justify-content:space-around;flex-wrap:wrap;}
+    .spec-item{text-align:center;padding:8px 24px;}
+    .spec-val{font-size:28px;font-weight:900;color:var(--dark);letter-spacing:-.03em;}
+    .spec-label{font-size:12px;font-weight:700;color:rgba(24,24,27,.65);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;}
+    /* FEATURE GRID */
+    .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+    .feat-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px;transition:all .2s;position:relative;}
+    .feat-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--amber);transform:scaleX(0);transform-origin:left;border-radius:0 0 var(--r) var(--r);transition:transform .2s;}
+    .feat-card:hover{border-color:var(--amber);box-shadow:0 6px 24px rgba(0,0,0,.06);transform:translateY(-2px);}
+    .feat-card:hover::after{transform:scaleX(1);}
+    .feat-icon{font-size:32px;margin-bottom:16px;}
+    .feat-card h3{font-size:16px;font-weight:800;margin-bottom:8px;}
+    .feat-card p{font-size:13px;color:var(--muted);line-height:1.6;}
+    .feat-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;}
+    .feat-tag{font-size:11px;background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:3px 9px;font-weight:600;}
+    /* MATERIALS */
+    .mat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+    .mat-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:20px 18px;}
+    .mat-card h4{font-size:14px;font-weight:800;margin-bottom:6px;}
+    .mat-card p{font-size:12px;color:var(--muted);line-height:1.55;}
+    .mat-card .mat-grade{font-size:11px;font-weight:700;color:var(--amber2);margin-top:8px;}
+    /* EQUIP */
+    .equip-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+    .equip-card{background:var(--dark);color:#fff;border-radius:14px;padding:32px;display:flex;gap:24px;align-items:flex-start;}
+    .equip-num{font-size:40px;font-weight:900;color:var(--amber);line-height:1;flex-shrink:0;width:48px;}
+    .equip-card h3{font-size:18px;font-weight:800;margin-bottom:8px;}
+    .equip-card p{font-size:13px;color:rgba(255,255,255,.55);line-height:1.6;margin-bottom:12px;}
+    .equip-specs{display:flex;flex-wrap:wrap;gap:6px;}
+    .equip-spec{font-size:11px;background:rgba(255,255,255,.1);border-radius:6px;padding:3px 9px;font-weight:600;}
+    /* CASES */
+    .cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+    .case-card{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
+    .case-img{aspect-ratio:4/3;overflow:hidden;background:var(--bg2);}
+    .case-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s;}
+    .case-card:hover .case-img img{transform:scale(1.04);}
+    .case-body{padding:18px;}
+    .case-body h4{font-size:14px;font-weight:800;margin-bottom:6px;}
+    .case-body p{font-size:12px;color:var(--muted);line-height:1.55;}
+    .case-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--amber2);background:var(--amber3);padding:3px 9px;border-radius:6px;margin-top:8px;}
+    /* PROCESS */
+    .process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;}
+    .process-steps::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:2px;background:var(--border);z-index:0;}
+    .step{text-align:center;position:relative;z-index:1;padding:0 12px;}
+    .step-num{width:56px;height:56px;border-radius:50%;background:var(--amber);color:var(--dark);font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+    .step h4{font-size:13px;font-weight:700;margin-bottom:4px;}
+    .step p{font-size:12px;color:var(--muted);}
+    /* CTA */
+    .cta-bar{background:var(--dark);color:#fff;padding:72px 0;}
+    .cta-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+    .cta-bar h2{color:#fff;font-size:clamp(24px,3vw,36px);font-weight:900;letter-spacing:-.025em;margin-bottom:12px;}
+    .cta-bar p{color:rgba(255,255,255,.55);font-size:16px;line-height:1.6;margin-bottom:24px;}
+    .cta-channels{display:flex;flex-direction:column;gap:12px;}
+    .cta-ch{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:18px 22px;text-decoration:none;color:#fff;transition:all .2s;}
+    .cta-ch:hover{background:rgba(245,158,11,.12);border-color:var(--amber);}
+    .cta-ch-icon{font-size:22px;flex-shrink:0;}
+    .cta-ch-title{font-size:14px;font-weight:700;}
+    .cta-ch-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:1px;}
+    .cta-ch-val{margin-left:auto;font-size:13px;font-weight:700;color:var(--amber);white-space:nowrap;}
+    /* FOOTER */
+    footer{background:#0A0A0C;color:rgba(255,255,255,.4);padding:48px 0 24px;}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.07);}
+    .f-logo{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.025em;margin-bottom:10px;}
+    .f-logo span{color:var(--amber);}
+    .f-desc{font-size:13px;line-height:1.65;max-width:220px;margin-bottom:16px;}
+    .f-contacts{display:flex;flex-direction:column;gap:7px;}
+    .f-contacts a{color:rgba(255,255,255,.6);text-decoration:none;font-size:13px;}
+    .f-col h4{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.3);margin-bottom:14px;}
+    .f-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+    .f-col a{color:rgba(255,255,255,.5);text-decoration:none;font-size:13px;}
+    .f-col a:hover{color:rgba(255,255,255,.9);}
+    .footer-bottom{display:flex;justify-content:space-between;padding-top:20px;font-size:12px;flex-wrap:wrap;gap:10px;}
+    @media(max-width:900px){
+      .feat-grid{grid-template-columns:1fr 1fr;}
+      .mat-grid{grid-template-columns:1fr 1fr;}
+      .equip-grid{grid-template-columns:1fr;}
+      .cases-grid{grid-template-columns:1fr 1fr;}
+      .process-steps{grid-template-columns:1fr 1fr;gap:24px;}
+      .process-steps::before{display:none;}
+    }
+    @media(max-width:768px){
+      .nav-links,.nav-actions{display:none;}
+      .hamburger{display:flex;}
+      .cta-inner{grid-template-columns:1fr;gap:36px;}
+      .footer-top{grid-template-columns:1fr 1fr;}
+      .specs-inner{gap:0;}
+      .spec-item{padding:8px 16px;}
+    }
+    @media(max-width:480px){
+      .feat-grid{grid-template-columns:1fr;}
+      .mat-grid{grid-template-columns:1fr 1fr;}
+      .cases-grid{grid-template-columns:1fr;}
+      .process-steps{grid-template-columns:1fr;}
+      .footer-top{grid-template-columns:1fr;}
+    }
+  
+    .copy-chip{display:inline-flex;align-items:center;gap:6px;cursor:pointer;user-select:none;}
+    .copy-chip .copy-icon{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:rgba(255,255,255,.12);border:none;border-radius:4px;cursor:pointer;font-size:12px;color:rgba(255,255,255,.5);transition:all .2s;flex-shrink:0;}
+    .copy-chip .copy-icon:hover{background:var(--amber);color:var(--dark);}
+    .copy-icon-dark{background:var(--bg2)!important;color:var(--muted)!important;}
+    .copy-icon-dark:hover{background:var(--amber)!important;color:var(--dark)!important;}
+    .cta-ch{cursor:pointer;}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},
+      {"@type":"ListItem","position":2,"name":"Услуги","item":"https://ironex.tech/uslugi.html"},
+      {"@type":"ListItem","position":3,"name":"Токарная обработка","item":"https://ironex.tech/tokarnaya.html"}
+    ]},
+    {"@type":"Service","name":"Токарная обработка металла на ЧПУ",
+      "provider":{"@id":"https://ironex.tech/#org"},
+      "serviceType":"Токарная обработка ЧПУ",
+      "description":"Токарная обработка деталей на ЧПУ. Валы, втулки, фланцы по чертежам. Точность ±0,008 мм. Диаметр до 380 мм, длина до 1500 мм.",
+      "areaServed":{"@type":"Country","name":"Россия"},
+      "offers":{"@type":"Offer","priceCurrency":"RUB","price":"1200","priceSpecification":{"@type":"UnitPriceSpecification","price":"1200","priceCurrency":"RUB","unitText":"нормо-час"}}
+    }
+  ]}
+  </script>
+  <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+  <!-- ═══ Яндекс Метрика 105009501 ═══ -->
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+</head>
+<body>
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">IRON<span>EX</span></a>
+      <ul class="nav-links">
+        <li><a href="uslugi.html">Услуги</a></li>
+        <li><a href="oborudovanie.html">Оборудование</a></li>
+        <li><a href="ceny.html">Цены</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="index.html#cases">Кейсы</a></li>
+        <li><a href="kontakty.html">Контакты</a></li>
+      </ul>
+      <div class="nav-actions">
+        <span class="copy-chip"><a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a><button class="copy-icon" onclick="copyVal('+79934904024',this)" title="Скопировать">⧉</button></span>
+        <a href="https://wa.me/79934904024" class="btn btn-amber" style="padding:10px 20px;font-size:14px;" target="_blank">💬 WhatsApp</a>
+      </div>
+      <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mob-menu" id="mob">
+    <a href="uslugi.html">Услуги</a>
+    <a href="oborudovanie.html">Оборудование</a>
+    <a href="ceny.html">Цены</a>
+    <a href="blog.html">Блог</a>
+    <a href="index.html#cases">Кейсы</a>
+    <a href="kontakty.html">Контакты</a>
+    <a href="tel:+79934904024">+7 993 490-40-24</a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div style="padding:14px 0;border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);">
+      <a href="index.html" style="color:var(--muted);text-decoration:none;">Главная</a> ·
+      <a href="uslugi.html" style="color:var(--muted);text-decoration:none;">Услуги</a> ·
+      <span style="color:var(--text);font-weight:500;">Токарная обработка</span>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow eyebrow-light" style="color:rgba(255,255,255,.5);">
+      <span style="background:var(--amber);width:20px;height:2px;display:block;"></span>Токарная обработка ЧПУ
+    </div>
+    <h1>Токарная обработка —<br><em>любые тела вращения</em> по чертежу</h1>
+    <p>Валы, втулки, фланцы, оси, гайки, шестерни — от опытного образца до серии 50 000 штук. DMG Mori NLX 2500 с приводным инструментом и осью C.</p>
+    <div class="hero-badges">
+      <span class="hbadge">✓ Точность ±0,008 мм</span>
+      <span class="hbadge">✓ ⌀ до 380 × 1500 мм</span>
+      <span class="hbadge">✓ от 1 200 ₽/нормо-час</span>
+      <span class="hbadge">✓ Расчёт за 3 дня</span>
+      <span class="hbadge">✓ КИМ-контроль включён</span>
+    </div>
+    <div class="hero-cta">
+      <a href="kontakty.html" class="btn btn-amber">Отправить чертёж</a>
+      <a href="tel:+79934904024" class="btn btn-ghost">+7 993 490-40-24</a>
+    </div>
+  </div>
+</section>
+
+<!-- SPECS BAR -->
+<div class="specs-bar">
+  <div class="container">
+    <div class="specs-inner">
+      <div class="spec-item">
+        <div class="spec-val">±0,008</div>
+        <div class="spec-label">точность, мм</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">⌀380</div>
+        <div class="spec-label">макс. диаметр, мм</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">1500</div>
+        <div class="spec-label">макс. длина, мм</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">Ra 0,8</div>
+        <div class="spec-label">шероховатость, мкм</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-val">50 000</div>
+        <div class="spec-label">максимальная серия, шт</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ВИДЫ ТОКАРНОЙ -->
+<section class="section" style="background:var(--bg);">
+  <div class="container">
+    <div class="eyebrow">Виды обработки</div>
+    <h2 class="h2">Что мы точим</h2>
+    <p class="lead" style="margin-bottom:40px;">Полный цикл токарной обработки — от чернового снятия припуска до финишных посадочных поверхностей под подшипники и уплотнения.</p>
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="feat-icon">⚙️</div>
+        <h3>Черновая токарная обработка</h3>
+        <p>Быстрое снятие большого припуска. Мощный шпиндель, высокие подачи, твердосплавные пластины. Подготовка заготовки под чистовую обработку.</p>
+        <div class="feat-tags">
+          <span class="feat-tag">высокая производительность</span>
+          <span class="feat-tag">крупные серии</span>
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">✨</div>
+        <h3>Чистовая токарная обработка</h3>
+        <p>Финишные проходы с минимальным припуском. Шероховатость Ra 0,8–1,6 мкм, посадочные поверхности под подшипники H6–H7.</p>
+        <div class="feat-tags">
+          <span class="feat-tag">Ra 0,8 мкм</span>
+          <span class="feat-tag">H6–H7</span>
+          <span class="feat-tag">под подшипники</span>
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔄</div>
+        <h3>Токарно-фрезерные операции</h3>
+        <p>Приводной инструмент и ось C на токарном центре. Шпоночные пазы, радиальные отверстия, фрезеровка лысок — без переустановки на фрезерный.</p>
+        <div class="feat-tags">
+          <span class="feat-tag">приводной инструмент</span>
+          <span class="feat-tag">ось C</span>
+          <span class="feat-tag">комплексная обработка</span>
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🎯</div>
+        <h3>Нарезание резьбы</h3>
+        <p>Метрическая, дюймовая, трапецеидальная резьба. Нарезание резцом и метчиком, резьбофрезерование. Любой шаг и профиль по ГОСТ и ISO.</p>
+        <div class="feat-tags">
+          <span class="feat-tag">M · UNC · Tr</span>
+          <span class="feat-tag">любой шаг</span>
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔧</div>
+        <h3>Глубокое сверление</h3>
+        <p>Осевые и радиальные отверстия диаметром от 1 мм. Глубокое сверление до L/D=30. Внутренние расточные операции под уплотнения.</p>
+        <div class="feat-tags">
+          <span class="feat-tag">от ⌀1 мм</span>
+          <span class="feat-tag">L/D до 30</span>
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📦</div>
+        <h3>Серийная токарная обработка</h3>
+        <p>Прутковая подача, противошпиндель, авто-загрузка. Партии до 50 000 штук в непрерывном режиме. Стабильность ±2σ по SPC.</p>
+        <div class="feat-tags">
+          <span class="feat-tag">серия</span>
+          <span class="feat-tag">пруток</span>
+          <span class="feat-tag">SPC</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- МАТЕРИАЛЫ -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Материалы</div>
+    <h2 class="h2">Точим <em>любые металлы</em></h2>
+    <p class="lead" style="margin-bottom:36px;">Работаем с заготовками заказчика или закупаем материал с паспортом качества. Сертификаты на материал по запросу.</p>
+    <div class="mat-grid">
+      <div class="mat-card">
+        <h4>🔩 Конструкционная сталь</h4>
+        <p>Валы, оси, шестерни, болты, гайки. Хорошая обрабатываемость, широкий типоряд прутков.</p>
+        <div class="mat-grade">Ст45, 40Х, 30ХГСА, 20</div>
+      </div>
+      <div class="mat-card">
+        <h4>✨ Нержавеющая сталь</h4>
+        <p>Детали насосов, фланцы трубопроводов, медицинские изделия. Аустенитные и мартенситные марки.</p>
+        <div class="mat-grade">12Х18Н10Т, 14Х17Н2, 316L</div>
+      </div>
+      <div class="mat-card">
+        <h4>🪶 Алюминий</h4>
+        <p>Лёгкие валы и корпуса, авиа- и автокомпоненты. Высокие скорости, хорошее качество поверхности.</p>
+        <div class="mat-grade">Д16Т, В95, АМГ, 6061</div>
+      </div>
+      <div class="mat-card">
+        <h4>🔴 Медь и латунь</h4>
+        <p>Электротехнические детали, сантехнические изделия, декоративные элементы.</p>
+        <div class="mat-grade">М1, ЛС59, ЛМцА</div>
+      </div>
+      <div class="mat-card">
+        <h4>🟤 Бронза</h4>
+        <p>Подшипниковые втулки, червячные колёса, детали арматуры. Антифрикционные марки.</p>
+        <div class="mat-grade">БрОЦС, БрАЖ9-4, БрБ2</div>
+      </div>
+      <div class="mat-card">
+        <h4>⚫ Чугун</h4>
+        <p>Корпуса, гильзы, направляющие. Серый и высокопрочный чугун. Хорошая виброгасящая способность.</p>
+        <div class="mat-grade">СЧ20, ВЧ50, АЧС</div>
+      </div>
+      <div class="mat-card">
+        <h4>🚀 Титан</h4>
+        <p>Медицинские имплантаты, аэрокосмические детали. Специальный режущий инструмент и СОЖ.</p>
+        <div class="mat-grade">ВТ1-0, ВТ6, Grade 2</div>
+      </div>
+      <div class="mat-card">
+        <h4>🧪 Полимеры</h4>
+        <p>Уплотнительные кольца, втулки скольжения, изоляторы. Фторопласт, капролон, полиамид.</p>
+        <div class="mat-grade">PA6, PTFE, PEEK, POM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОБОРУДОВАНИЕ -->
+<section class="section" style="background:var(--dark);color:#fff;">
+  <div class="container">
+    <div class="eyebrow eyebrow-light" style="color:rgba(255,255,255,.5);">
+      <span style="background:var(--amber);width:20px;height:2px;display:block;"></span>Оборудование
+    </div>
+    <h2 class="h2" style="color:#fff;margin-bottom:8px;">Токарные центры — <em>прецизионный класс</em></h2>
+    <p class="lead" style="margin-bottom:36px;color:rgba(255,255,255,.5);">Токарные центры с ЧПУ Fanuc и Siemens 840D. Приводной инструмент, противошпиндель, ось C — полная обработка за один установ.</p>
+    <div class="equip-grid">
+      <div class="equip-card">
+        <div class="equip-num">01</div>
+        <div>
+          <h3>DMG Mori NLX 2500</h3>
+          <p>Флагманский токарный центр. Приводной инструмент, ось C, противошпиндель. Полная обработка деталей типа «вал» без переустановок.</p>
+          <div class="equip-specs">
+            <span class="equip-spec">⌀380×1500 мм</span>
+            <span class="equip-spec">приводной инструмент</span>
+            <span class="equip-spec">ось C</span>
+            <span class="equip-spec">противошпиндель</span>
+          </div>
+        </div>
+      </div>
+      <div class="equip-card">
+        <div class="equip-num">02</div>
+        <div>
+          <h3>Mazak Quick Turn 250</h3>
+          <p>Токарный центр для серийной обработки. Подача прутка, быстрая смена инструмента. Оптимален для партий от 100 до 50 000 штук.</p>
+          <div class="equip-specs">
+            <span class="equip-spec">⌀300×1000 мм</span>
+            <span class="equip-spec">пруткоподача</span>
+            <span class="equip-spec">серия</span>
+          </div>
+        </div>
+      </div>
+      <div class="equip-card">
+        <div class="equip-num">03</div>
+        <div>
+          <h3>Haas ST-30</h3>
+          <p>Тяжёлый токарный центр для крупных деталей. Патрон 400 мм, планшайба для деталей типа «диск» и «фланец».</p>
+          <div class="equip-specs">
+            <span class="equip-spec">⌀530×660 мм</span>
+            <span class="equip-spec">патрон 400 мм</span>
+            <span class="equip-spec">тяжёлая обработка</span>
+          </div>
+        </div>
+      </div>
+      <div class="equip-card">
+        <div class="equip-num">04</div>
+        <div>
+          <h3>Токарный центр с ОЦ Mazak Integrex</h3>
+          <p>Токарно-фрезерный комплекс. Полная 5-осевая обработка сложных деталей в одном установе — точение + фрезеровка + сверление.</p>
+          <div class="equip-specs">
+            <span class="equip-spec">токарка + фрезеровка</span>
+            <span class="equip-spec">5 осей</span>
+            <span class="equip-spec">один установ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КЕЙСЫ -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Примеры работ</div>
+    <h2 class="h2">Что мы уже <em>изготовили</em></h2>
+    <p class="lead" style="margin-bottom:36px;">Детали из нашего производства. КИМ-протокол на каждую партию — точность подтверждена измерениями.</p>
+    <div class="cases-grid">
+      <div class="case-card">
+        <div class="case-img">
+          <img src="images/photos/prod-2035.webp" alt="Вал ступенчатый токарная обработка" loading="lazy" />
+        </div>
+        <div class="case-body">
+          <h4>Вал ступенчатый 40Х</h4>
+          <p>Токарная обработка с приводным инструментом. Посадочные поверхности k6, шпоночный паз, торцевое биение 0,01 мм. Серия 200 шт.</p>
+          <span class="case-tag">сталь · вал · серия</span>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img">
+          <img src="images/photos/prod-2039.webp" alt="Втулка бронзовая токарная обработка" loading="lazy" />
+        </div>
+        <div class="case-body">
+          <h4>Втулка БрАЖ подшипниковая</h4>
+          <p>Антифрикционная бронза. Внутренняя поверхность H7, Ra 0,8 мкм. Наружный диаметр k6. Одиночный заказ — 1 шт.</p>
+          <span class="case-tag">бронза · втулка · единичная</span>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img">
+          <img src="images/photos/prod-1022.webp" alt="Фланец нержавеющая сталь" loading="lazy" />
+        </div>
+        <div class="case-body">
+          <h4>Фланец 316L для трубопровода</h4>
+          <p>Нержавеющая сталь. Токарная обработка уплотнительных поверхностей Ra 1,6 мкм, сверление крепёжных отверстий. Партия 40 шт.</p>
+          <span class="case-tag">нерж · фланец · химия</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОЦЕСС -->
+<section class="section" style="background:var(--bg);">
+  <div class="container">
+    <div class="eyebrow">Как это работает</div>
+    <h2 class="h2" style="margin-bottom:48px;">От чертежа до <em>готовой детали</em></h2>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Чертёж</h4>
+        <p>Присылаете DXF, STEP, PDF или эскиз</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Расчёт</h4>
+        <p>Технолог считает цену и срок за 3 дня</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Производство</h4>
+        <p>Токарная обработка на ЧПУ-центре</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>КИМ-контроль</h4>
+        <p>Каждая деталь проверяется КИМ</p>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <h4>Отгрузка</h4>
+        <p>Доставка с протоколом измерений</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-bar">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2>Пришлите чертёж —<br>посчитаем за 3 дня</h2>
+        <p>Укажите материал, количество, требования по допускам. Технолог свяжется и уточнит детали до выставления счёта.</p>
+        <a href="kontakty.html" class="btn btn-amber">Запросить расчёт</a>
+      </div>
+      <div class="cta-channels">
+        <a href="tel:+79934904024" class="cta-ch">
+          <span class="cta-ch-icon">📞</span>
+          <div><div class="cta-ch-title">Телефон</div><div class="cta-ch-sub">Пн–Пт, 9:00–18:00</div></div>
+          <span class="cta-ch-val">+7 993 490-40-24<button class="copy-icon" onclick="event.preventDefault();copyVal('+79934904024',this)" title="Скопировать" style="margin-left:6px;">⧉</button></span>
+        </a>
+        <div class="cta-ch" onclick="copyVal('info@ironex.tech',this.querySelector('.copy-icon'))">
+          <span class="cta-ch-icon">✉️</span>
+          <div><div class="cta-ch-title">Email</div><div class="cta-ch-sub">Нажмите, чтобы скопировать</div></div>
+          <span class="cta-ch-val">info@ironex.tech<button class="copy-icon" style="margin-left:6px;" title="Скопировать">⧉</button></span>
+        </div>
+        <a href="https://wa.me/79934904024" class="cta-ch" target="_blank">
+          <span class="cta-ch-icon">💬</span>
+          <div><div class="cta-ch-title">WhatsApp</div><div class="cta-ch-sub">Отправьте чертёж в чат</div></div>
+          <span class="cta-ch-val">Написать</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="f-logo">IRON<span>EX</span></div>
+        <p class="f-desc">Контрактное производство деталей по чертежам. Фрезеровка, токарка, лазер, гибка, сварка, КИМ-контроль.</p>
+        <div class="f-contacts">
+          <a href="tel:+79934904024">+7 993 490-40-24</a>
+          <span class="copy-chip" onclick="copyVal('info@ironex.tech',this.querySelector('.copy-icon'))">info@ironex.tech<button class="copy-icon copy-icon-dark" style="margin-left:4px;" title="Скопировать">⧉</button></span>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="frezerovka.html">Фрезеровка ЧПУ</a></li>
+          <li><a href="tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="uslugi.html#rezka">Лазерная резка</a></li>
+          <li><a href="uslugi.html#svarka">Сварка</a></li>
+          <li><a href="uslugi.html#finish">Покраска</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="oborudovanie.html">Оборудование</a></li>
+          <li><a href="ceny.html">Цены</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="kontakty.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><span class="copy-chip" onclick="copyVal('info@ironex.tech',this.querySelector('.copy-icon'))">info@ironex.tech<button class="copy-icon copy-icon-dark" style="margin-left:4px;" title="Скопировать">⧉</button></span></li>
+          <li><a href="https://wa.me/79934904024">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 IRONEX. Все права защищены.</span>
+      <span>ironex.tech</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function copyVal(val, btn) {
+  navigator.clipboard.writeText(val).then(function(){
+    var o = btn.innerHTML; btn.innerHTML = '✓'; btn.style.background = '#16a34a'; btn.style.color = '#fff';
+    setTimeout(function(){ btn.innerHTML = o; btn.style.background = ''; btn.style.color = ''; }, 2000);
+  });
+}
+</script>
+</body>
+</html>
