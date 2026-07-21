@@ -190,6 +190,7 @@
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+  <link rel="stylesheet" href="email-copy.css" />
 </head>
 <body>
 <nav>
@@ -206,7 +207,7 @@
       </ul>
       <div class="nav-actions">
         <span class="copy-chip"><a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a><button class="copy-icon" onclick="copyVal('+79934904024',this)" title="Скопировать">⧉</button></span>
-        <a href="https://wa.me/79934904024" class="btn btn-amber" style="padding:10px 20px;font-size:14px;" target="_blank">💬 WhatsApp</a>
+        <a href="https://wa.me/79819470402" class="btn btn-amber" style="padding:10px 20px;font-size:14px;" target="_blank">💬 WhatsApp</a>
       </div>
       <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Меню">
         <span></span><span></span><span></span>
@@ -562,12 +563,15 @@
           <div><div class="cta-ch-title">Телефон</div><div class="cta-ch-sub">Пн–Пт, 9:00–18:00</div></div>
           <span class="cta-ch-val">+7 993 490-40-24<button class="copy-icon" onclick="event.preventDefault();copyVal('+79934904024',this)" title="Скопировать" style="margin-left:6px;">⧉</button></span>
         </a>
-        <div class="cta-ch" onclick="copyVal('info@ironex.tech',this.querySelector('.copy-icon'))">
+        <div class="cta-ch email-contact-card" data-email-copy>
           <span class="cta-ch-icon">✉️</span>
-          <div><div class="cta-ch-title">Email</div><div class="cta-ch-sub">Нажмите, чтобы скопировать</div></div>
-          <span class="cta-ch-val">info@ironex.tech<button class="copy-icon" style="margin-left:6px;" title="Скопировать">⧉</button></span>
+          <div><div class="cta-ch-title">Email</div><div class="cta-ch-sub">Написать письмо или скопировать адрес</div></div>
+          <span class="email-contact-actions">
+            <a href="mailto:info@ironex.tech" class="cta-ch-val email-contact-address" data-email-value>info@ironex.tech</a>
+            <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
+          </span>
         </div>
-        <a href="https://wa.me/79934904024" class="cta-ch" target="_blank">
+        <a href="https://wa.me/79819470402" class="cta-ch" target="_blank">
           <span class="cta-ch-icon">💬</span>
           <div><div class="cta-ch-title">WhatsApp</div><div class="cta-ch-sub">Отправьте чертёж в чат</div></div>
           <span class="cta-ch-val">Написать</span>
@@ -584,7 +588,7 @@
         <p class="f-desc">Контрактное производство деталей по чертежам. Фрезеровка, токарка, лазер, гибка, сварка, КИМ-контроль.</p>
         <div class="f-contacts">
           <a href="tel:+79934904024">+7 993 490-40-24</a>
-          <span class="copy-chip" onclick="copyVal('info@ironex.tech',this.querySelector('.copy-icon'))">info@ironex.tech<button class="copy-icon copy-icon-dark" style="margin-left:4px;" title="Скопировать">⧉</button></span>
+          <span class="copy-chip" data-email-copy><a href="mailto:info@ironex.tech" class="email-contact-address" data-email-value style="color:inherit;font-weight:inherit;">info@ironex.tech</a><button class="copy-icon copy-icon-dark" data-copy-email style="margin-left:4px;" title="Скопировать email" aria-label="Скопировать адрес электронной почты">⧉</button></span>
         </div>
       </div>
       <div class="f-col">
@@ -610,8 +614,8 @@
         <h4>Контакты</h4>
         <ul>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
-          <li><span class="copy-chip" onclick="copyVal('info@ironex.tech',this.querySelector('.copy-icon'))">info@ironex.tech<button class="copy-icon copy-icon-dark" style="margin-left:4px;" title="Скопировать">⧉</button></span></li>
-          <li><a href="https://wa.me/79934904024">WhatsApp</a></li>
+          <li><span class="copy-chip" data-email-copy><a href="mailto:info@ironex.tech" class="email-contact-address" data-email-value style="color:inherit;font-weight:inherit;">info@ironex.tech</a><button class="copy-icon copy-icon-dark" data-copy-email style="margin-left:4px;" title="Скопировать email" aria-label="Скопировать адрес электронной почты">⧉</button></span></li>
+          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
         </ul>
       </div>
     </div>
@@ -630,5 +634,6 @@ function copyVal(val, btn) {
   });
 }
 </script>
+<script src="email-copy.js"></script>
 </body>
 </html>

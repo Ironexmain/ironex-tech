@@ -157,6 +157,7 @@
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+  <link rel="stylesheet" href="email-copy.css" />
 </head>
 <body>
 
@@ -221,14 +222,17 @@
         <div class="eyebrow">Каналы связи</div>
         <h2 class="h2" style="margin-bottom:28px;">Как нас<br><em>найти</em></h2>
         <div class="contact-block">
-          <a href="mailto:info@ironex.tech" class="channel-card">
+          <div class="channel-card email-contact-card" data-email-copy>
             <div class="ch-icon email">✉️</div>
             <div>
               <div class="ch-title">Электронная почта</div>
               <div class="ch-desc">Прикрепите чертёж — ответим с расчётом</div>
             </div>
-            <div class="ch-val">info@ironex.tech</div>
-          </a>
+            <div class="email-contact-actions">
+              <a href="mailto:info@ironex.tech" class="ch-val email-contact-address" data-email-value>info@ironex.tech</a>
+              <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
+            </div>
+          </div>
           <a href="tel:+79934904024" class="channel-card">
             <div class="ch-icon phone">📞</div>
             <div>
@@ -237,7 +241,7 @@
             </div>
             <div class="ch-val">+7 993 490-40-24</div>
           </a>
-          <a href="https://t.me/+79934904024" class="channel-card">
+          <a href="https://t.me/+79819470402" class="channel-card">
             <div class="ch-icon tg">✈️</div>
             <div>
               <div class="ch-title">Telegram</div>
@@ -245,7 +249,7 @@
             </div>
             <div class="ch-val">@ironex</div>
           </a>
-          <a href="https://wa.me/79934904024" class="channel-card">
+          <a href="https://wa.me/79819470402" class="channel-card">
             <div class="ch-icon wa">💬</div>
             <div>
               <div class="ch-title">WhatsApp</div>
@@ -409,8 +413,8 @@
         <ul>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
-          <li><a href="https://t.me/+79934904024">Telegram</a></li>
-          <li><a href="https://wa.me/79934904024">WhatsApp</a></li>
+          <li><a href="https://t.me/+79819470402">Telegram</a></li>
+          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
         </ul>
       </div>
     </div>
@@ -421,5 +425,6 @@
   </div>
 </footer>
 
+<script src="email-copy.js"></script>
 </body>
 </html>

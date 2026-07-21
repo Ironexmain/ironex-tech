@@ -1,0 +1,96 @@
+.email-contact-actions {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.email-contact-address {
+  color: var(--amber, #F59E0B);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.email-contact-address:hover {
+  text-decoration: underline;
+}
+
+.email-contact-actions .cta-channel-val,
+.email-contact-actions .cta-ch-val,
+.email-contact-actions .ch-val {
+  margin-left: 0;
+}
+
+.email-copy-button {
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: var(--amber, #F59E0B);
+  color: #18181B;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform .15s ease, background .15s ease, color .15s ease;
+}
+
+.email-copy-button:hover {
+  background: #FBBF24;
+  transform: translateY(-1px);
+}
+
+.email-copy-button:focus-visible {
+  outline: 3px solid rgba(245, 158, 11, .35);
+  outline-offset: 3px;
+}
+
+.email-copy-button[data-copy-state="success"] {
+  background: #16A34A;
+  color: #fff;
+}
+
+.email-copy-button[data-copy-state="error"] {
+  background: #DC2626;
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .email-contact-card {
+    align-items: flex-start !important;
+    flex-wrap: wrap;
+  }
+
+  .email-contact-actions {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 38px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .email-contact-address {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 420px) {
+  .email-contact-actions {
+    padding-left: 0;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .email-copy-button {
+    min-height: 44px;
+  }
+}
