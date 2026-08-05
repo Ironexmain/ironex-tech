@@ -7,7 +7,7 @@
   <meta name="description" content="Прозрачные цены на металлообработку: токарка от 950 ₽/нормо-час, фрезеровка от 1 100 ₽, лазерная резка от 80 ₽/м. Никаких скрытых наценок — точный расчёт по вашему чертежу за 3 рабочих дня." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -173,7 +173,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Цены","item":"https://ironex.tech/ceny.html"}]},
-    {"@type":"WebPage","url":"https://ironex.tech/ceny.html","name":"Цены на металлообработку — IRONEX","description":"Ориентировочные цены на токарную, фрезерную обработку, лазерную резку, гибку, сварку и покраску. Точный расчёт — по чертежу за 3 рабочих дня.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-04"}
+    {"@type":"WebPage","url":"https://ironex.tech/ceny.html","name":"Цены на металлообработку — IRONEX","description":"Ориентировочные цены на токарную, фрезерную обработку, лазерную резку, гибку, сварку и покраску. Точный расчёт — по чертежу за 3 рабочих дня.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-05"}
   ]}
   </script>
   <!-- ═══ Яндекс Метрика 105009501 ═══ -->
@@ -185,10 +185,12 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
   <link rel="stylesheet" href="email-copy.css" />
+  <link rel="stylesheet" href="redesign.css" />
 </head>
-<body>
+<body class="redesign-precision">
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
 
 <!-- NAV -->
 <nav>
@@ -207,12 +209,12 @@
         <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
         <a href="kontakty.html" class="btn btn-amber" style="padding:10px 20px;font-size:14px;">Запросить расчёт</a>
       </div>
-      <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Меню">
+      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-  <div class="mob-menu" id="mob">
+  <div class="mob-menu" id="mobMenu">
     <a href="uslugi.html">Услуги</a>
     <a href="oborudovanie.html">Оборудование</a>
     <a href="ceny.html">Цены</a>
@@ -223,6 +225,8 @@
     <a href="tel:+79934904024">+7 993 490-40-24</a>
   </div>
 </nav>
+
+<main id="main-content">
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
@@ -519,7 +523,7 @@
   {"@type":"Question","name":"Почему нет фиксированного прайса?","acceptedAnswer":{"@type":"Answer","text":"Стоимость детали зависит от материала, геометрии, точности, количества операций и объёма партии. Один и тот же контур в нержавейке стоит вдвое дороже, чем в алюминии. Точная цена — только по чертежу."}},
   {"@type":"Question","name":"Как получить расчёт стоимости?","acceptedAnswer":{"@type":"Answer","text":"Пришлите чертёж на info@ironex.tech или в Telegram. Ответим с ценой и сроком за 3 рабочих дня — расчёт бесплатный."}},
   {"@type":"Question","name":"Есть ли скидки на серийные заказы?","acceptedAnswer":{"@type":"Answer","text":"Да. Подготовительные операции (наладка, программирование) распределяются на весь тираж, поэтому чем больше партия — тем ниже цена единицы."}},
-  {"@type":"Question","name":"Включён ли НДС в цены на сайте?","acceptedAnswer":{"@type":"Answer","text":"Цены на сайте ориентировочные, без НДС. В коммерческом предложении НДС 20% указывается отдельно. Работаем как с НДС, так и без."}}
+  {"@type":"Question","name":"Включён ли НДС в цены на сайте?","acceptedAnswer":{"@type":"Answer","text":"Цены на сайте ориентировочные, без НДС. В коммерческом предложении НДС 22% указывается отдельно. Работаем как с НДС, так и без."}}
 ]}
 </script>
 <section style="padding:80px 0;background:#F5F5F4;">
@@ -541,7 +545,7 @@
       </details>
       <details style="border:1px solid #E7E5E4;border-radius:12px;background:#fff;">
         <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">Включён ли НДС в цены на сайте?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Цены на сайте ориентировочные, без НДС. В коммерческом предложении НДС 20% указывается отдельно. Работаем как с НДС, так и без.</p>
+        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Цены на сайте ориентировочные, без НДС. В коммерческом предложении НДС 22% указывается отдельно. Работаем как с НДС, так и без.</p>
       </details>
     </div>
   </div>
@@ -562,7 +566,7 @@
       </div>
       <div class="cta-channels">
         <div class="cta-ch email-contact-card" data-email-copy>
-          <div class="cta-ch-icon">✉️</div>
+          <div class="cta-ch-icon">MAIL</div>
           <div>
             <div class="cta-ch-title">Написать на почту</div>
             <div class="cta-ch-sub">Прикрепите чертёж — ответим за 3 дня</div>
@@ -573,7 +577,7 @@
           </div>
         </div>
         <a href="tel:+79934904024" class="cta-ch">
-          <div class="cta-ch-icon">📞</div>
+          <div class="cta-ch-icon">TEL</div>
           <div>
             <div class="cta-ch-title">Позвонить</div>
             <div class="cta-ch-sub">Пн–Пт, 09:00–19:00 МСК</div>
@@ -581,7 +585,7 @@
           <div class="cta-ch-val">+7 993 490-40-24</div>
         </a>
         <a href="https://t.me/+79819470402" class="cta-ch">
-          <div class="cta-ch-icon">✈️</div>
+          <div class="cta-ch-icon">TG</div>
           <div>
             <div class="cta-ch-title">Telegram</div>
             <div class="cta-ch-sub">Ответим в течение часа</div>
@@ -592,6 +596,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -607,7 +613,7 @@
         </div>
       </div>
       <div class="f-col">
-        <h4>Услуги</h4>
+        <p class="footer-heading">Услуги</p>
         <ul>
           <li><a href="frezerovka.html">Фрезерная обработка</a></li>
           <li><a href="tokarnaya.html">Токарная обработка</a></li>
@@ -617,7 +623,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Компания</h4>
+        <p class="footer-heading">Компания</p>
         <ul>
           <li><a href="index.html#equipment">Оборудование</a></li>
           <li><a href="ceny.html">Цены</a></li>
@@ -627,7 +633,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Связаться</h4>
+        <p class="footer-heading">Связаться</p>
         <ul>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
@@ -644,5 +650,6 @@
 </footer>
 
 <script src="email-copy.js"></script>
+<script src="redesign.js"></script>
 </body>
 </html>

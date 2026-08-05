@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://ironex.tech/tokarnaya.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -189,10 +189,12 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
   <link rel="stylesheet" href="email-copy.css" />
+  <link rel="stylesheet" href="redesign.css" />
 </head>
-<body>
+<body class="redesign-precision">
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
 <nav>
   <div class="container">
     <div class="nav-inner">
@@ -207,14 +209,14 @@
       </ul>
       <div class="nav-actions">
         <span class="copy-chip"><a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a><button class="copy-icon" onclick="copyVal('+79934904024',this)" title="Скопировать">⧉</button></span>
-        <a href="https://wa.me/79819470402" class="btn btn-amber" style="padding:10px 20px;font-size:14px;" target="_blank">💬 WhatsApp</a>
+        <a href="https://wa.me/79819470402" class="btn btn-amber" style="padding:10px 20px;font-size:14px;" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </div>
-      <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Меню">
+      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-  <div class="mob-menu" id="mob">
+  <div class="mob-menu" id="mobMenu">
     <a href="uslugi.html">Услуги</a>
     <a href="oborudovanie.html">Оборудование</a>
     <a href="ceny.html">Цены</a>
@@ -224,6 +226,8 @@
     <a href="tel:+79934904024">+7 993 490-40-24</a>
   </div>
 </nav>
+
+<main id="main-content">
 
 <!-- BREADCRUMB -->
 <div style="padding:14px 0;border-bottom:1px solid var(--border);">
@@ -294,7 +298,7 @@
     <p class="lead" style="margin-bottom:40px;">Полный цикл токарной обработки — от чернового снятия припуска до финишных посадочных поверхностей под подшипники и уплотнения.</p>
     <div class="feat-grid">
       <div class="feat-card">
-        <div class="feat-icon">⚙️</div>
+        <div class="feat-icon">ROUGH</div>
         <h3>Черновая токарная обработка</h3>
         <p>Быстрое снятие большого припуска. Мощный шпиндель, высокие подачи, твердосплавные пластины. Подготовка заготовки под чистовую обработку.</p>
         <div class="feat-tags">
@@ -303,7 +307,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">✨</div>
+        <div class="feat-icon">FIN</div>
         <h3>Чистовая токарная обработка</h3>
         <p>Финишные проходы с минимальным припуском. Шероховатость Ra 0,8–1,6 мкм, посадочные поверхности под подшипники H6–H7.</p>
         <div class="feat-tags">
@@ -313,7 +317,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">🔄</div>
+        <div class="feat-icon">C-AXIS</div>
         <h3>Токарно-фрезерные операции</h3>
         <p>Приводной инструмент и ось C на токарном центре. Шпоночные пазы, радиальные отверстия, фрезеровка лысок — без переустановки на фрезерный.</p>
         <div class="feat-tags">
@@ -323,7 +327,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">🎯</div>
+        <div class="feat-icon">PREC</div>
         <h3>Нарезание резьбы</h3>
         <p>Метрическая, дюймовая, трапецеидальная резьба. Нарезание резцом и метчиком, резьбофрезерование. Любой шаг и профиль по ГОСТ и ISO.</p>
         <div class="feat-tags">
@@ -332,7 +336,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">🔧</div>
+        <div class="feat-icon">CNC</div>
         <h3>Глубокое сверление</h3>
         <p>Осевые и радиальные отверстия диаметром от 1 мм. Глубокое сверление до L/D=30. Внутренние расточные операции под уплотнения.</p>
         <div class="feat-tags">
@@ -341,7 +345,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">📦</div>
+        <div class="feat-icon">SERIES</div>
         <h3>Серийная токарная обработка</h3>
         <p>Прутковая подача, противошпиндель, авто-загрузка. Партии до 50 000 штук в непрерывном режиме. Стабильность ±2σ по SPC.</p>
         <div class="feat-tags">
@@ -362,42 +366,42 @@
     <p class="lead" style="margin-bottom:36px;">Работаем с заготовками заказчика или закупаем материал с паспортом качества. Сертификаты на материал по запросу.</p>
     <div class="mat-grid">
       <div class="mat-card">
-        <h4>🔩 Конструкционная сталь</h4>
+        <h4>Конструкционная сталь</h4>
         <p>Валы, оси, шестерни, болты, гайки. Хорошая обрабатываемость, широкий типоряд прутков.</p>
         <div class="mat-grade">Ст45, 40Х, 30ХГСА, 20</div>
       </div>
       <div class="mat-card">
-        <h4>✨ Нержавеющая сталь</h4>
+        <h4>Нержавеющая сталь</h4>
         <p>Детали насосов, фланцы трубопроводов, медицинские изделия. Аустенитные и мартенситные марки.</p>
         <div class="mat-grade">12Х18Н10Т, 14Х17Н2, 316L</div>
       </div>
       <div class="mat-card">
-        <h4>🪶 Алюминий</h4>
+        <h4>Алюминий</h4>
         <p>Лёгкие валы и корпуса, авиа- и автокомпоненты. Высокие скорости, хорошее качество поверхности.</p>
         <div class="mat-grade">Д16Т, В95, АМГ, 6061</div>
       </div>
       <div class="mat-card">
-        <h4>🔴 Медь и латунь</h4>
+        <h4>Медь и латунь</h4>
         <p>Электротехнические детали, сантехнические изделия, декоративные элементы.</p>
         <div class="mat-grade">М1, ЛС59, ЛМцА</div>
       </div>
       <div class="mat-card">
-        <h4>🟤 Бронза</h4>
+        <h4>Бронза</h4>
         <p>Подшипниковые втулки, червячные колёса, детали арматуры. Антифрикционные марки.</p>
         <div class="mat-grade">БрОЦС, БрАЖ9-4, БрБ2</div>
       </div>
       <div class="mat-card">
-        <h4>⚫ Чугун</h4>
+        <h4>Чугун</h4>
         <p>Корпуса, гильзы, направляющие. Серый и высокопрочный чугун. Хорошая виброгасящая способность.</p>
         <div class="mat-grade">СЧ20, ВЧ50, АЧС</div>
       </div>
       <div class="mat-card">
-        <h4>🚀 Титан</h4>
+        <h4>Титан</h4>
         <p>Медицинские имплантаты, аэрокосмические детали. Специальный режущий инструмент и СОЖ.</p>
         <div class="mat-grade">ВТ1-0, ВТ6, Grade 2</div>
       </div>
       <div class="mat-card">
-        <h4>🧪 Полимеры</h4>
+        <h4>Полимеры</h4>
         <p>Уплотнительные кольца, втулки скольжения, изоляторы. Фторопласт, капролон, полиамид.</p>
         <div class="mat-grade">PA6, PTFE, PEEK, POM</div>
       </div>
@@ -553,20 +557,20 @@
       </div>
       <div class="cta-channels">
         <a href="tel:+79934904024" class="cta-ch">
-          <span class="cta-ch-icon">📞</span>
+          <span class="cta-ch-icon">TEL</span>
           <div><div class="cta-ch-title">Телефон</div><div class="cta-ch-sub">Пн–Пт, 9:00–18:00</div></div>
           <span class="cta-ch-val">+7 993 490-40-24<button class="copy-icon" onclick="event.preventDefault();copyVal('+79934904024',this)" title="Скопировать" style="margin-left:6px;">⧉</button></span>
         </a>
         <div class="cta-ch email-contact-card" data-email-copy>
-          <span class="cta-ch-icon">✉️</span>
+          <span class="cta-ch-icon">MAIL</span>
           <div><div class="cta-ch-title">Email</div><div class="cta-ch-sub">Написать письмо или скопировать адрес</div></div>
           <span class="email-contact-actions">
             <a href="mailto:info@ironex.tech" class="cta-ch-val email-contact-address" data-email-value>info@ironex.tech</a>
             <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
           </span>
         </div>
-        <a href="https://wa.me/79819470402" class="cta-ch" target="_blank">
-          <span class="cta-ch-icon">💬</span>
+        <a href="https://wa.me/79819470402" class="cta-ch" target="_blank" rel="noopener noreferrer">
+          <span class="cta-ch-icon">WA</span>
           <div><div class="cta-ch-title">WhatsApp</div><div class="cta-ch-sub">Отправьте чертёж в чат</div></div>
           <span class="cta-ch-val">Написать</span>
         </a>
@@ -574,6 +578,7 @@
     </div>
   </div>
 </section>
+</main>
 <footer>
   <div class="container">
     <div class="footer-top">
@@ -586,7 +591,7 @@
         </div>
       </div>
       <div class="f-col">
-        <h4>Услуги</h4>
+        <p class="footer-heading">Услуги</p>
         <ul>
           <li><a href="frezerovka.html">Фрезеровка ЧПУ</a></li>
           <li><a href="tokarnaya.html">Токарная обработка</a></li>
@@ -596,7 +601,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Компания</h4>
+        <p class="footer-heading">Компания</p>
         <ul>
           <li><a href="oborudovanie.html">Оборудование</a></li>
           <li><a href="ceny.html">Цены</a></li>
@@ -605,7 +610,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Контакты</h4>
+        <p class="footer-heading">Контакты</p>
         <ul>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><span class="copy-chip" data-email-copy><a href="mailto:info@ironex.tech" class="email-contact-address" data-email-value style="color:inherit;font-weight:inherit;">info@ironex.tech</a><button class="copy-icon copy-icon-dark" data-copy-email style="margin-left:4px;" title="Скопировать email" aria-label="Скопировать адрес электронной почты">⧉</button></span></li>
@@ -629,5 +634,6 @@ function copyVal(val, btn) {
 }
 </script>
 <script src="email-copy.js"></script>
+<script src="redesign.js"></script>
 </body>
 </html>

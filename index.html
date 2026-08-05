@@ -12,7 +12,7 @@
   <meta property="og:image" content="images/og.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -298,7 +298,7 @@
   {"@context":"https://schema.org","@graph":[
     {"@type":"Organization","@id":"https://ironex.tech/#org","name":"IRONEX","url":"https://ironex.tech","telephone":"+79934904024","email":"info@ironex.tech","description":"Контрактное производство металлических деталей по чертежам. Токарная и фрезерная обработка ЧПУ, лазерная резка, гибка, сварка, КИМ-контроль.","address":{"@type":"PostalAddress","addressCountry":"RU"},"contactPoint":{"@type":"ContactPoint","telephone":"+79934904024","contactType":"customer service","availableLanguage":"Russian"}},
     {"@type":"WebSite","@id":"https://ironex.tech/#website","name":"IRONEX","url":"https://ironex.tech","publisher":{"@id":"https://ironex.tech/#org"}},
-    {"@type":"WebPage","url":"https://ironex.tech/","name":"IRONEX — Контрактное производство деталей по чертежам","description":"Отправьте чертёж — вернём точную цену и срок за 3 рабочих дня. IRONEX: изготовление металлических деталей на ЧПУ. Фрезеровка, токарка, лазерная резка, гибка, сварка, КИМ-контроль. Без форм и посредников.","isPartOf":{"@id":"https://ironex.tech/#website"},"publisher":{"@id":"https://ironex.tech/#org"},"dateModified":"2026-08-04"}
+    {"@type":"WebPage","url":"https://ironex.tech/","name":"IRONEX — Контрактное производство деталей по чертежам","description":"Отправьте чертёж — вернём точную цену и срок за 3 рабочих дня. IRONEX: изготовление металлических деталей на ЧПУ. Фрезеровка, токарка, лазерная резка, гибка, сварка, КИМ-контроль. Без форм и посредников.","isPartOf":{"@id":"https://ironex.tech/#website"},"publisher":{"@id":"https://ironex.tech/#org"},"dateModified":"2026-08-05"}
   ]}
   </script>
   <!-- ═══ Яндекс Метрика 105009501 ═══ -->
@@ -310,10 +310,12 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
   <link rel="stylesheet" href="email-copy.css" />
+  <link rel="stylesheet" href="redesign.css" />
 </head>
-<body>
+<body class="redesign-precision">
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
 
 <!-- ═══════ NAV ═══════ -->
 <nav>
@@ -332,31 +334,36 @@
         <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
         <a href="kontakty.html" class="btn btn-amber" style="padding:10px 20px;font-size:14px;">Запросить расчёт</a>
       </div>
-      <button class="hamburger" onclick="toggleMenu()" aria-label="Меню">
+      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
   <div class="mob-menu" id="mobMenu">
-    <a href="uslugi.html"       onclick="toggleMenu()">Услуги</a>
-    <a href="oborudovanie.html" onclick="toggleMenu()">Оборудование</a>
-    <a href="ceny.html"         onclick="toggleMenu()">Цены</a>
-    <a href="blog.html"         onclick="toggleMenu()">Блог</a>
-    <a href="#cases"            onclick="toggleMenu()">Кейсы</a>
-    <a href="kontakty.html"     onclick="toggleMenu()">Контакты</a>
-    <a href="kontakty.html"     onclick="toggleMenu()" style="color:var(--amber);">Запросить расчёт</a>
+    <a href="uslugi.html">Услуги</a>
+    <a href="oborudovanie.html">Оборудование</a>
+    <a href="ceny.html">Цены</a>
+    <a href="blog.html">Блог</a>
+    <a href="#cases">Кейсы</a>
+    <a href="kontakty.html">Контакты</a>
+    <a href="kontakty.html" style="color:var(--amber);">Запросить расчёт</a>
     <a href="tel:+79934904024">+7 993 490-40-24</a>
   </div>
 </nav>
+
+<main id="main-content">
 
 <!-- ═══════ HERO ═══════ -->
 <section class="hero">
   <div class="container">
     <div class="hero-inner">
       <div class="hero-img">
-        <img src="images/photos/prod-2045.webp" alt="Обработка детали на станке с ЧПУ" />
+        <picture>
+          <source srcset="images/stock/cnc-coolant-daniel-smyth-pexels-8956445.avif" type="image/avif" />
+          <img class="stock-process stock-process-home" src="images/stock/cnc-coolant-daniel-smyth-pexels-8956445.jpg" alt="Фрезерование металлической заготовки с подачей охлаждающей жидкости — иллюстрация процесса" width="1800" height="1200" fetchpriority="high" decoding="async" />
+        </picture>
         <div class="hero-img-badge">
-          <strong>47</strong>станков ЧПУ
+          <strong>ЧПУ</strong>обработка в работе
         </div>
       </div>
       <div class="hero-content">
@@ -367,8 +374,8 @@
           Прямой контакт с технологом: без онлайн-форм, без колл-центра, без ожиданий.
         </p>
         <div class="hero-btns">
-          <a href="#services" class="btn btn-amber">Смотреть услуги</a>
-          <a href="#cta" class="btn btn-ghost">Связаться</a>
+          <a href="kontakty.html" class="btn btn-amber">Отправить чертёж</a>
+          <a href="#services" class="btn btn-ghost">Проверить возможности</a>
         </div>
         <div class="hero-specs">
           <div class="hero-spec">
@@ -454,7 +461,7 @@
     <div class="equip-grid">
 
       <div class="equip-card">
-        <img class="equip-photo" src="images/photos/prod-2044.webp" alt="Пятиосевой обрабатывающий центр" />
+        <img class="equip-photo" src="images/photos/prod-2044.webp" alt="Пятиосевой обрабатывающий центр" width="1100" height="733" loading="lazy" decoding="async" />
         <div class="equip-tag">5 осей · ×1</div>
         <h3>Prim Miller C500</h3>
         <p class="equip-model">Пятиосевой обрабатывающий центр</p>
@@ -467,7 +474,7 @@
       </div>
 
       <div class="equip-card">
-        <img class="equip-photo" src="images/photos/gen-laser.webp" alt="Волоконный лазер" />
+        <img class="equip-photo" src="images/photos/gen-laser.webp" alt="Волоконный лазер" width="1100" height="821" loading="lazy" decoding="async" />
         <div class="equip-tag">Лазер · ×1</div>
         <h3>D-SOAR L25120 · 20 кВт</h3>
         <p class="equip-model">Волоконный лазер для раскроя</p>
@@ -480,7 +487,7 @@
       </div>
 
       <div class="equip-card">
-        <img class="equip-photo" src="images/photos/gen-bending.webp" alt="Листогибочный пресс с ЧПУ" />
+        <img class="equip-photo" src="images/photos/gen-bending.webp" alt="Листогибочный пресс с ЧПУ" width="1100" height="821" loading="lazy" decoding="async" />
         <div class="equip-tag">Гибка · ×3</div>
         <h3>Листогибочный пресс PR6C-150T</h3>
         <p class="equip-model">Гибочный пресс с ЧПУ</p>
@@ -493,7 +500,7 @@
       </div>
 
       <div class="equip-card">
-        <img class="equip-photo" src="images/photos/prod-2039.webp" alt="Токарный станок с ЧПУ" />
+        <img class="equip-photo" src="images/photos/prod-2039.webp" alt="Токарный станок с ЧПУ" width="1100" height="733" loading="lazy" decoding="async" />
         <div class="equip-tag">Токарка · ×2</div>
         <h3>TaiWan KAIBO CPL-208</h3>
         <p class="equip-model">Токарный центр с приводным инструментом</p>
@@ -506,7 +513,7 @@
       </div>
 
       <div class="equip-card">
-        <img class="equip-photo" src="images/photos/prod-2035.webp" alt="КИМ Hexagon" />
+        <img class="equip-photo" src="images/photos/prod-2035.webp" alt="КИМ Hexagon" width="733" height="1100" loading="lazy" decoding="async" />
         <div class="equip-tag">КИМ · ×1</div>
         <h3>Hexagon Global S</h3>
         <p class="equip-model">Координатно-измерительная машина</p>
@@ -519,7 +526,7 @@
       </div>
 
       <div class="equip-card">
-        <img class="equip-photo" src="images/photos/gen-welding.webp" alt="Роботизированная сварка" />
+        <img class="equip-photo" src="images/photos/gen-welding.webp" alt="Роботизированная сварка" width="1100" height="821" loading="lazy" decoding="async" />
         <div class="equip-tag">Сварка · ×16</div>
         <h3>TIG · MIG · Робот · Лазер</h3>
         <p class="equip-model">Сварочный участок</p>
@@ -623,13 +630,13 @@
     <h2 class="h2" style="color:#fff;">Ваш файл — наш маршрут.<br><em>Пять шагов</em> до готовой детали.</h2>
     <div class="process-grid">
       <div class="process-img">
-        <img src="images/photos/prod-2045.webp" alt="Производственный процесс" />
+        <img src="images/photos/prod-2045.webp" alt="Производственный процесс" width="1100" height="733" loading="lazy" decoding="async" />
       </div>
       <div class="steps">
         <div class="step-row">
           <div class="step-num">01</div>
           <div class="step-body">
-            <h4>Заявка и чертёж</h4>
+            <h3>Заявка и чертёж</h3>
             <p>Присылаете файл: PDF, DWG, DXF, STEP, IGES, ZIP. NDA и режим конфиденциальности согласуем до начала работ.</p>
             <div class="step-note">→ NDA по запросу</div>
           </div>
@@ -637,7 +644,7 @@
         <div class="step-row">
           <div class="step-num">02</div>
           <div class="step-body">
-            <h4>Расчёт стоимости</h4>
+            <h3>Расчёт стоимости</h3>
             <p>Технолог считает маршрут, материал и оснастку. Возвращаем точную стоимость и срок.</p>
             <div class="step-note">→ 3 рабочих дня</div>
           </div>
@@ -645,7 +652,7 @@
         <div class="step-row">
           <div class="step-num">03</div>
           <div class="step-body">
-            <h4>Производство</h4>
+            <h3>Производство</h3>
             <p>Раскрой, обработка, сварка, покрытие. 47 станков, 2 смены. Видео-отчёт по запросу.</p>
             <div class="step-note">→ статус в любое время</div>
           </div>
@@ -653,7 +660,7 @@
         <div class="step-row">
           <div class="step-num">04</div>
           <div class="step-body">
-            <h4>КИМ-контроль</h4>
+            <h3>КИМ-контроль</h3>
             <p>Каждая партия — на координатной машине Hexagon. Протокол с допусками в комплекте.</p>
             <div class="step-note">→ точность ±0,0025 мм</div>
           </div>
@@ -661,7 +668,7 @@
         <div class="step-row">
           <div class="step-num">05</div>
           <div class="step-body">
-            <h4>Доставка</h4>
+            <h3>Доставка</h3>
             <p>Собственный транспорт по ПФО, транспортные компании по всей РФ, экспорт ЕАЭС.</p>
             <div class="step-note">→ 63 региона</div>
           </div>
@@ -732,7 +739,7 @@
 
       <div class="case-card">
         <div class="case-img">
-          <img src="images/cases/korpus-rea-d16t.webp" alt="Корпус бортовой РЭА" />
+          <img src="images/cases/korpus-rea-d16t.webp" alt="Корпус бортовой РЭА" width="1200" height="670" loading="lazy" decoding="async" />
         </div>
         <div class="case-body">
           <div class="case-tags">
@@ -752,7 +759,7 @@
 
       <div class="case-card">
         <div class="case-img">
-          <img src="images/cases/valy-reduktora-40h.webp" alt="Партия валов редуктора" />
+          <img src="images/cases/valy-reduktora-40h.webp" alt="Партия валов редуктора" width="1100" height="738" loading="lazy" decoding="async" />
         </div>
         <div class="case-body">
           <div class="case-tags">
@@ -770,7 +777,7 @@
 
       <div class="case-card">
         <div class="case-img">
-          <img src="images/cases/server-rack-42u.webp" alt="Каркас серверной стойки" />
+          <img src="images/cases/server-rack-42u.webp" alt="Каркас серверной стойки" width="960" height="717" loading="lazy" decoding="async" />
         </div>
         <div class="case-body">
           <div class="case-tags">
@@ -789,7 +796,7 @@
 
       <div class="case-card">
         <div class="case-img">
-          <img src="images/cases/modul-aisi304.webp" alt="Технологический модуль из нержавейки" />
+          <img src="images/cases/modul-aisi304.webp" alt="Технологический модуль из нержавейки" width="960" height="717" loading="lazy" decoding="async" />
         </div>
         <div class="case-body">
           <div class="case-tags">
@@ -806,7 +813,7 @@
 
       <div class="case-card">
         <div class="case-img">
-          <img src="images/cases/kronshtein-titan-vt6.webp" alt="Кронштейн из титана ВТ6" />
+          <img src="images/cases/kronshtein-titan-vt6.webp" alt="Кронштейн из титана ВТ6" width="960" height="717" loading="lazy" decoding="async" />
         </div>
         <div class="case-body">
           <div class="case-tags">
@@ -832,16 +839,16 @@
     <h2 class="h2" style="font-size:clamp(22px,3vw,30px);margin-bottom:8px;">Детали с нашего производства.</h2>
     <p style="font-size:14px;color:var(--muted);margin-bottom:0;">Токарка, фрезеровка, 5 осей. Алюминий, сталь, нержавейка, латунь.</p>
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="images/photos/shop-16.webp" alt="Фрезерованная деталь из алюминия на заказ" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-01.webp" alt="Токарная деталь ЧПУ из нержавеющей стали" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-03.webp" alt="Корпусная деталь металлообработка по чертежу" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-08.webp" alt="Серийные детали из нержавейки AISI 304" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-06.webp" alt="Гнутые листовые детали металлообработка" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-14.webp" alt="Сварной металлический узел контрактное производство" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-05.webp" alt="Прецизионная деталь токарный станок ЧПУ" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-15.webp" alt="Партия деталей металлообработка изготовление" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-11.webp" alt="Фрезерная обработка детали 5-осевой станок" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-17.webp" alt="Прецизионная деталь из стали по чертежу" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-16.webp" alt="Фрезерованная деталь из алюминия на заказ" width="700" height="394" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-01.webp" alt="Токарная деталь ЧПУ из нержавеющей стали" width="476" height="700" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-03.webp" alt="Корпусная деталь металлообработка по чертежу" width="476" height="700" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-08.webp" alt="Серийные детали из нержавейки AISI 304" width="476" height="700" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-06.webp" alt="Гнутые листовые детали металлообработка" width="476" height="700" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-14.webp" alt="Сварной металлический узел контрактное производство" width="394" height="700" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-05.webp" alt="Прецизионная деталь токарный станок ЧПУ" width="476" height="700" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-15.webp" alt="Партия деталей металлообработка изготовление" width="700" height="394" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-11.webp" alt="Фрезерная обработка детали 5-осевой станок" width="476" height="700" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item"><img src="images/photos/shop-17.webp" alt="Прецизионная деталь из стали по чертежу" width="700" height="394" loading="lazy" decoding="async" /></div>
     </div>
   </div>
 </section>
@@ -869,7 +876,7 @@
       <div class="cta-right">
         <div class="cta-channels">
           <div class="cta-channel email-contact-card" data-email-copy>
-            <div class="cta-icon">✉️</div>
+            <div class="cta-icon">EMAIL</div>
             <div>
               <div class="cta-channel-title">Написать на почту</div>
               <div class="cta-channel-sub">Прикрепите чертёж · PDF, DWG, DXF, STEP, IGES, ZIP</div>
@@ -880,7 +887,7 @@
             </div>
           </div>
           <a href="tel:+79934904024" class="cta-channel">
-            <div class="cta-icon">📞</div>
+            <div class="cta-icon">TEL</div>
             <div>
               <div class="cta-channel-title">Позвонить</div>
               <div class="cta-channel-sub">Пн–Пт, 09:00–19:00 по МСК</div>
@@ -888,7 +895,7 @@
             <div class="cta-channel-val">+7 993 490-40-24</div>
           </a>
           <a href="https://t.me/+79819470402" class="cta-channel">
-            <div class="cta-icon">✈️</div>
+            <div class="cta-icon">TG</div>
             <div>
               <div class="cta-channel-title">Написать в Telegram</div>
               <div class="cta-channel-sub">Ответим в течение часа в рабочее время</div>
@@ -896,7 +903,7 @@
             <div class="cta-channel-val">→ Telegram</div>
           </a>
           <a href="https://wa.me/79819470402" class="cta-channel">
-            <div class="cta-icon">💬</div>
+            <div class="cta-icon">WA</div>
             <div>
               <div class="cta-channel-title">WhatsApp</div>
               <div class="cta-channel-sub">Удобно отправить фото или голосовое</div>
@@ -914,6 +921,8 @@
 </section>
 
 <!-- ═══════ FOOTER ═══════ -->
+</main>
+
 <footer>
   <div class="container">
     <div class="footer-top">
@@ -927,7 +936,7 @@
         </div>
       </div>
       <div class="f-col">
-        <h4>Услуги</h4>
+        <p class="footer-heading">Услуги</p>
         <ul>
           <li><a href="tokarnaya.html">Токарная обработка</a></li>
           <li><a href="frezerovka.html">Фрезерная обработка</a></li>
@@ -939,7 +948,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Компания</h4>
+        <p class="footer-heading">Компания</p>
         <ul>
           <li><a href="#equipment">Оборудование</a></li>
           <li><a href="#process">Как работаем</a></li>
@@ -949,7 +958,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Связаться</h4>
+        <p class="footer-heading">Связаться</p>
         <ul>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
@@ -966,10 +975,6 @@
 </footer>
 
 <script>
-  function toggleMenu() {
-    document.getElementById('mobMenu').classList.toggle('open');
-  }
-
   // Подсветка активного пункта в навигации при скролле
   const sections = document.querySelectorAll('section[id]');
   const links = document.querySelectorAll('.nav-links a');
@@ -977,12 +982,12 @@
     let current = '';
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
     links.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current
-        ? '#fff' : 'rgba(255,255,255,.6)';
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
     });
   });
 </script>
 
 <script src="email-copy.js"></script>
+<script src="redesign.js"></script>
 </body>
 </html>

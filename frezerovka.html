@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://ironex.tech/frezerovka.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -189,10 +189,12 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
   <link rel="stylesheet" href="email-copy.css" />
+  <link rel="stylesheet" href="redesign.css" />
 </head>
-<body>
+<body class="redesign-precision">
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
 <nav>
   <div class="container">
     <div class="nav-inner">
@@ -207,14 +209,14 @@
       </ul>
       <div class="nav-actions">
         <span class="copy-chip"><a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a><button class="copy-icon" onclick="copyVal('+79934904024',this)" title="Скопировать">⧉</button></span>
-        <a href="https://wa.me/79819470402" class="btn btn-amber" style="padding:10px 20px;font-size:14px;" target="_blank">💬 WhatsApp</a>
+        <a href="https://wa.me/79819470402" class="btn btn-amber" style="padding:10px 20px;font-size:14px;" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </div>
-      <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Меню">
+      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-  <div class="mob-menu" id="mob">
+  <div class="mob-menu" id="mobMenu">
     <a href="uslugi.html">Услуги</a>
     <a href="oborudovanie.html">Оборудование</a>
     <a href="ceny.html">Цены</a>
@@ -225,10 +227,12 @@
   </div>
 </nav>
 
+<main id="main-content">
+
 <!-- BREADCRUMB -->
-<div style="padding:14px 0;border-bottom:1px solid var(--border);">
+<div class="breadcrumb-bar">
   <div class="container">
-    <div style="display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);">
+    <div class="breadcrumb">
       <a href="index.html" style="color:var(--muted);text-decoration:none;">Главная</a> ·
       <a href="uslugi.html" style="color:var(--muted);text-decoration:none;">Услуги</a> ·
       <span style="color:var(--text);font-weight:500;">Фрезеровка ЧПУ</span>
@@ -239,21 +243,32 @@
 <!-- HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="eyebrow eyebrow-light" style="color:rgba(255,255,255,.5);">
-      <span style="background:var(--amber);width:20px;height:2px;display:block;"></span>Механообработка ЧПУ
-    </div>
-    <h1>Фрезеровка металла —<br><em>до 5 осей,</em> любая геометрия</h1>
-    <p>Корпусные и фасонные детали по вашим чертежам. Обрабатывающие центры Hermle и DMG Mori, точность ±0,005 мм, от 1 штуки до серии 10 000+.</p>
-    <div class="hero-badges">
-      <span class="hbadge">✓ Точность ±0,005 мм</span>
-      <span class="hbadge">✓ 5 осей непрерывно</span>
-      <span class="hbadge">✓ от 1 800 ₽/нормо-час</span>
-      <span class="hbadge">✓ Расчёт за 3 дня</span>
-      <span class="hbadge">✓ КИМ-контроль включён</span>
-    </div>
-    <div class="hero-cta">
-      <a href="kontakty.html" class="btn btn-amber">Отправить чертёж</a>
-      <a href="tel:+79934904024" class="btn btn-ghost">+7 993 490-40-24</a>
+    <div class="page-hero-inner">
+      <div class="page-hero-content">
+        <div class="eyebrow eyebrow-light" style="color:rgba(255,255,255,.5);">
+          <span style="background:var(--amber);width:20px;height:2px;display:block;"></span>Механообработка ЧПУ
+        </div>
+        <h1>Фрезеровка металла — <em>до 5 осей,</em> любая геометрия</h1>
+        <p>Корпусные и фасонные детали по вашим чертежам. Обрабатывающие центры Hermle и DMG Mori, точность ±0,005 мм, от 1 штуки до серии 10 000+.</p>
+        <div class="hero-cta">
+          <a href="kontakty.html" class="btn btn-amber">Отправить чертёж</a>
+          <a href="tel:+79934904024" class="btn btn-ghost">+7 993 490-40-24</a>
+        </div>
+        <div class="hero-badges">
+          <span class="hbadge">Точность ±0,005 мм</span>
+          <span class="hbadge">5 осей непрерывно</span>
+          <span class="hbadge">от 1 800 ₽/нормо-час</span>
+          <span class="hbadge">Расчёт за 3 дня</span>
+          <span class="hbadge">КИМ-контроль включён</span>
+        </div>
+      </div>
+      <div class="page-hero-media">
+        <picture>
+          <source srcset="images/stock/aluminum-milling-zheng-ji-unsplash-sxtClAGwRck.avif" type="image/avif" />
+          <img class="stock-process stock-process-frez" src="images/stock/aluminum-milling-zheng-ji-unsplash-sxtClAGwRck.jpg" alt="Фрезерование алюминиевой заготовки на станке с ЧПУ — иллюстрация процесса" width="1800" height="1202" fetchpriority="high" decoding="async" />
+        </picture>
+        <span class="page-hero-note">CNC · process view</span>
+      </div>
     </div>
   </div>
 </section>
@@ -294,7 +309,7 @@
     <p class="lead" style="margin-bottom:40px;">Любые корпусные детали, фланцы, матрицы, кронштейны, пресс-формы и нестандартные изделия по чертежам заказчика.</p>
     <div class="feat-grid">
       <div class="feat-card">
-        <div class="feat-icon">🏭</div>
+        <div class="feat-icon">01 / 3 AXIS</div>
         <h3>3-осевая фрезеровка</h3>
         <p>Плоские и ступенчатые детали, пазы, карманы, отверстия. Оптимальна по цене для корпусных изделий без сложных поднутрений.</p>
         <div class="feat-tags">
@@ -304,7 +319,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">🔄</div>
+        <div class="feat-icon">02 / 5 AXIS</div>
         <h3>4–5-осевая фрезеровка</h3>
         <p>Сложные пространственные формы в одной установке. Без переустановок — без погрешностей базирования. Лопатки, пресс-формы, медицинские имплантаты.</p>
         <div class="feat-tags">
@@ -314,7 +329,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">⚡</div>
+        <div class="feat-icon">03 / HSM</div>
         <h3>Высокоскоростная обработка (HSM)</h3>
         <p>Шпиндель 12 000–18 000 об/мин. Мелкие ступенчатые подачи, чистовое фрезерование с Ra 0,8 мкм без шлифовки.</p>
         <div class="feat-tags">
@@ -324,7 +339,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">🔩</div>
+        <div class="feat-icon">04 / THREAD</div>
         <h3>Фрезеровка резьбы и шлицев</h3>
         <p>Резьбофрезерование метрическое и дюймовое. Шлицевые пазы, зубчатые профили, шпоночные пазы по ГОСТ.</p>
         <div class="feat-tags">
@@ -334,7 +349,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">🎯</div>
+        <div class="feat-icon">05 / H6–H7</div>
         <h3>Прецизионная координатная расточка</h3>
         <p>Расточные борштанги для точных отверстий H6–H7. Соосность, цилиндричность — в пределах допуска посадки.</p>
         <div class="feat-tags">
@@ -344,7 +359,7 @@
         </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">📦</div>
+        <div class="feat-icon">06 / SERIES</div>
         <h3>Серийная фрезеровка</h3>
         <p>Спутниковые приспособления, паллетная смена — партии от 10 до 50 000 штук. Авто-загрузка на ночные смены.</p>
         <div class="feat-tags">
@@ -365,42 +380,42 @@
     <p class="lead" style="margin-bottom:36px;">Работаем с заготовкой заказчика или подбираем материал сами. Закупаем у сертифицированных поставщиков с паспортами качества.</p>
     <div class="mat-grid">
       <div class="mat-card">
-        <h4>🔩 Конструкционная сталь</h4>
+        <h3>Конструкционная сталь</h3>
         <p>Наиболее распространённый материал. Хорошая обрабатываемость, широкий выбор размеров проката.</p>
         <div class="mat-grade">Ст20, 40Х, 45, 09Г2С</div>
       </div>
       <div class="mat-card">
-        <h4>✨ Нержавеющая сталь</h4>
+        <h3>Нержавеющая сталь</h3>
         <p>Пищевое оборудование, медтех, химическая промышленность. Требует инструмента со специальными покрытиями.</p>
         <div class="mat-grade">12Х18Н10Т, 08Х18Н10, 316L</div>
       </div>
       <div class="mat-card">
-        <h4>🪶 Алюминий и сплавы</h4>
+        <h3>Алюминий и сплавы</h3>
         <p>Лёгкие корпуса, авиа- и автокомпоненты. Высокие скорости резания, отличное качество поверхности.</p>
         <div class="mat-grade">Д16, АМГ6, В95, 6061-T6</div>
       </div>
       <div class="mat-card">
-        <h4>🔴 Медь и бронза</h4>
+        <h3>Медь и бронза</h3>
         <p>Токопроводящие детали, подшипниковые втулки, декоративные изделия. Мягкий, но требует правильного инструмента.</p>
         <div class="mat-grade">М1, БрАЖ, БрОФ</div>
       </div>
       <div class="mat-card">
-        <h4>⚙️ Инструментальная сталь</h4>
+        <h3>Инструментальная сталь</h3>
         <p>Матрицы, пуансоны, штампы, пресс-формы. Обработка в закалённом состоянии до 60 HRC.</p>
         <div class="mat-grade">У8А, ХВГ, Х12М, Р6М5</div>
       </div>
       <div class="mat-card">
-        <h4>🚀 Титан</h4>
+        <h3>Титан</h3>
         <p>Медицина, аэрокосмос, химическое оборудование. Сложный материал — специальный режущий инструмент и СОЖ.</p>
         <div class="mat-grade">ВТ1-0, ВТ6, Grade 5</div>
       </div>
       <div class="mat-card">
-        <h4>⚫ Чугун</h4>
+        <h3>Чугун</h3>
         <p>Корпуса насосов, станочные детали, контрплиты. Хорошая виброгасящая способность.</p>
         <div class="mat-grade">СЧ20, СЧ25, ВЧ50</div>
       </div>
       <div class="mat-card">
-        <h4>🧪 Пластики и полимеры</h4>
+        <h3>Пластики и полимеры</h3>
         <p>Фторопласт, капролон, текстолит, оргстекло. Прокладки, изоляторы, направляющие.</p>
         <div class="mat-grade">PA6, PTFE, PEEK, PC</div>
       </div>
@@ -412,10 +427,10 @@
 <section class="section" style="background:var(--dark);color:#fff;">
   <div class="container">
     <div class="eyebrow eyebrow-light" style="color:rgba(255,255,255,.5);">
-      <span style="background:var(--amber);width:20px;height:2px;display:block;"></span>Оборудование
+      Оборудование
     </div>
-    <h2 class="h2" style="color:#fff;margin-bottom:8px;">Станочный парк — <em>немецкое качество</em></h2>
-    <p class="lead" style="margin-bottom:36px;color:rgba(255,255,255,.5);">Обрабатывающие центры ведущих мировых производителей. Регулярное ТО, калиброванный инструмент, SPC-контроль.</p>
+    <h2 class="h2" style="color:#fff;margin-bottom:8px;">Пять осей, серия и <em>крупный габарит</em></h2>
+    <p class="lead" style="margin-bottom:36px;color:rgba(255,255,255,.5);">Парк закрывает 3- и 5-осевую обработку: от точных корпусных деталей до плит 1219×508 мм. Регулярное ТО, калиброванный инструмент и SPC-контроль.</p>
     <div class="equip-grid">
       <div class="equip-card">
         <div class="equip-num">01</div>
@@ -482,32 +497,32 @@
     <div class="cases-grid">
       <div class="case-card">
         <div class="case-img">
-          <img src="images/photos/prod-2044.webp" alt="Корпусная деталь 5-осевая фрезеровка" loading="lazy" />
+          <img src="images/cases/korpus-rea-d16t.webp" alt="Корпусная деталь после 5-осевой фрезеровки" width="1200" height="670" loading="lazy" decoding="async" />
         </div>
         <div class="case-body">
-          <h4>Корпус РЭА из Д16Т</h4>
+          <h3>Корпус РЭА из Д16Т</h3>
           <p>5-осевая фрезеровка в одной установке. Точность межосевых расстояний ±0,01 мм. Партия 50 шт.</p>
           <span class="case-tag">алюминий · 5 осей</span>
         </div>
       </div>
       <div class="case-card">
         <div class="case-img">
-          <img src="images/photos/prod-2039.webp" alt="Фрезерованная деталь из нержавеющей стали" loading="lazy" />
+          <img src="images/cases/kronshtein-titan-vt6.webp" alt="Кронштейн медоборудования из титана ВТ6" width="960" height="717" loading="lazy" decoding="async" />
         </div>
         <div class="case-body">
-          <h4>Матрица из Х12М (58 HRC)</h4>
-          <p>Фрезеровка закалённой инструментальной стали. Электроэрозионная доводка рабочего профиля.</p>
-          <span class="case-tag">сталь · инструментальная</span>
+          <h3>Кронштейн медоборудования</h3>
+          <p>Титан ВТ6, 5-осевая обработка и биосовместимая полировка. Контракт на 6 месяцев.</p>
+          <span class="case-tag">титан · 5 осей</span>
         </div>
       </div>
       <div class="case-card">
         <div class="case-img">
-          <img src="images/photos/prod-2045.webp" alt="Кронштейн фрезеровка" loading="lazy" />
+          <img src="images/photos/shop-16.webp" alt="Фрезерованная корпусная деталь" width="700" height="394" loading="lazy" decoding="async" />
         </div>
         <div class="case-body">
-          <h4>Кронштейн титановый ВТ6</h4>
-          <p>Авиационный кронштейн из титана ВТ6. 5-осевая обработка с контролем геометрии КИМ после каждой установки.</p>
-          <span class="case-tag">титан · авиакомпонент</span>
+          <h3>Корпусная деталь</h3>
+          <p>Фрезерованные карманы, посадочные плоскости и отверстия по чертежу заказчика.</p>
+          <span class="case-tag">фрезеровка · корпус</span>
         </div>
       </div>
     </div>
@@ -522,27 +537,27 @@
     <div class="process-steps">
       <div class="step">
         <div class="step-num">1</div>
-        <h4>Чертёж</h4>
+        <h3>Чертёж</h3>
         <p>Присылаете DXF, STEP, PDF или эскиз</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h4>Расчёт</h4>
+        <h3>Расчёт</h3>
         <p>Технолог считает цену и срок за 3 дня</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <h4>Производство</h4>
+        <h3>Производство</h3>
         <p>Программируем и фрезеруем детали</p>
       </div>
       <div class="step">
         <div class="step-num">4</div>
-        <h4>КИМ-контроль</h4>
+        <h3>КИМ-контроль</h3>
         <p>Каждая деталь проверяется КИМ</p>
       </div>
       <div class="step">
         <div class="step-num">5</div>
-        <h4>Отгрузка</h4>
+        <h3>Отгрузка</h3>
         <p>Доставка с протоколом измерений</p>
       </div>
     </div>
@@ -558,21 +573,21 @@
         <a href="kontakty.html" class="btn btn-amber">Запросить расчёт</a>
       </div>
       <div class="cta-channels">
-        <a href="tel:+79934904024" class="cta-ch">
-          <span class="cta-ch-icon">📞</span>
+        <div class="cta-ch">
+          <span class="cta-ch-icon">TEL</span>
           <div><div class="cta-ch-title">Телефон</div><div class="cta-ch-sub">Пн–Пт, 9:00–18:00</div></div>
-          <span class="cta-ch-val">+7 993 490-40-24<button class="copy-icon" onclick="event.preventDefault();copyVal('+79934904024',this)" title="Скопировать" style="margin-left:6px;">⧉</button></span>
-        </a>
+          <span class="cta-ch-actions"><a href="tel:+79934904024" class="cta-ch-val">+7 993 490-40-24</a><button type="button" class="copy-icon" onclick="copyVal('+79934904024',this)" title="Скопировать телефон" aria-label="Скопировать номер телефона">⧉</button></span>
+        </div>
         <div class="cta-ch email-contact-card" data-email-copy>
-          <span class="cta-ch-icon">✉️</span>
+          <span class="cta-ch-icon">EMAIL</span>
           <div><div class="cta-ch-title">Email</div><div class="cta-ch-sub">Написать письмо или скопировать адрес</div></div>
           <span class="email-contact-actions">
             <a href="mailto:info@ironex.tech" class="cta-ch-val email-contact-address" data-email-value>info@ironex.tech</a>
             <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
           </span>
         </div>
-        <a href="https://wa.me/79819470402" class="cta-ch" target="_blank">
-          <span class="cta-ch-icon">💬</span>
+        <a href="https://wa.me/79819470402" class="cta-ch" target="_blank" rel="noopener noreferrer">
+          <span class="cta-ch-icon">WA</span>
           <div><div class="cta-ch-title">WhatsApp</div><div class="cta-ch-sub">Отправьте чертёж в чат</div></div>
           <span class="cta-ch-val">Написать</span>
         </a>
@@ -580,6 +595,8 @@
     </div>
   </div>
 </section>
+</main>
+
 <footer>
   <div class="container">
     <div class="footer-top">
@@ -592,7 +609,7 @@
         </div>
       </div>
       <div class="f-col">
-        <h4>Услуги</h4>
+        <p class="footer-heading">Услуги</p>
         <ul>
           <li><a href="frezerovka.html">Фрезеровка ЧПУ</a></li>
           <li><a href="tokarnaya.html">Токарная обработка</a></li>
@@ -602,7 +619,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Компания</h4>
+        <p class="footer-heading">Компания</p>
         <ul>
           <li><a href="oborudovanie.html">Оборудование</a></li>
           <li><a href="ceny.html">Цены</a></li>
@@ -611,7 +628,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Контакты</h4>
+        <p class="footer-heading">Контакты</p>
         <ul>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><span class="copy-chip" data-email-copy><a href="mailto:info@ironex.tech" class="email-contact-address" data-email-value style="color:inherit;font-weight:inherit;">info@ironex.tech</a><button class="copy-icon copy-icon-dark" data-copy-email style="margin-left:4px;" title="Скопировать email" aria-label="Скопировать адрес электронной почты">⧉</button></span></li>
@@ -635,5 +652,6 @@ function copyVal(val, btn) {
 }
 </script>
 <script src="email-copy.js"></script>
+<script src="redesign.js"></script>
 </body>
 </html>

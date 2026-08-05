@@ -7,7 +7,7 @@
   <meta name="description" content="Контакты IRONEX: +7 993 490-40-24, info@ironex.tech, Telegram, WhatsApp. Изготовление деталей по чертежам — отправьте файл и получите расчёт стоимости за 3 рабочих дня." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -156,10 +156,12 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
   <link rel="stylesheet" href="email-copy.css" />
+  <link rel="stylesheet" href="redesign.css" />
 </head>
-<body>
+<body class="redesign-precision">
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
 
 <!-- NAV -->
 <nav>
@@ -178,12 +180,12 @@
         <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
         <a href="mailto:info@ironex.tech" class="btn-amber-nav">Написать письмо</a>
       </div>
-      <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Меню">
+      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-  <div class="mob-menu" id="mob">
+  <div class="mob-menu" id="mobMenu">
     <a href="uslugi.html">Услуги</a>
     <a href="oborudovanie.html">Оборудование</a>
     <a href="ceny.html">Цены</a>
@@ -194,6 +196,8 @@
     <a href="tel:+79934904024">+7 993 490-40-24</a>
   </div>
 </nav>
+
+<main id="main-content">
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
@@ -207,7 +211,7 @@
   <div class="container">
     <div class="eyebrow" style="color:rgba(255,255,255,.4);"><span style="background:var(--amber);width:20px;height:2px;display:block;"></span>Связаться с нами</div>
     <h1>Контакты <em>IRONEX</em></h1>
-    <p style="font-size:clamp(18px,2.5vw,26px);font-weight:700;color:rgba(255,255,255,.8);margin:12px 0 16px;line-height:1.3;">Пришлите чертёж — вернёмся с расчётом за 3 рабочих дня</p>
+    <p style="font-size:clamp(18px,2.5vw,26px);font-weight:600;color:var(--text);margin:12px 0 16px;line-height:1.3;">Пришлите чертёж — вернёмся с расчётом за 3 рабочих дня</p>
     <p>Любой удобный способ: почта, телефон, Telegram или WhatsApp. Форматы: PDF, DWG, DXF, STEP, IGES, ZIP, JPG.</p>
   </div>
 </section>
@@ -223,7 +227,7 @@
         <h2 class="h2" style="margin-bottom:28px;">Как нас<br><em>найти</em></h2>
         <div class="contact-block">
           <div class="channel-card email-contact-card" data-email-copy>
-            <div class="ch-icon email">✉️</div>
+            <div class="ch-icon email">MAIL</div>
             <div>
               <div class="ch-title">Электронная почта</div>
               <div class="ch-desc">Прикрепите чертёж — ответим с расчётом</div>
@@ -234,7 +238,7 @@
             </div>
           </div>
           <a href="tel:+79934904024" class="channel-card">
-            <div class="ch-icon phone">📞</div>
+            <div class="ch-icon phone">TEL</div>
             <div>
               <div class="ch-title">Телефон</div>
               <div class="ch-desc">Пн–Пт, 09:00–19:00 (МСК)</div>
@@ -242,7 +246,7 @@
             <div class="ch-val">+7 993 490-40-24</div>
           </a>
           <a href="https://t.me/+79819470402" class="channel-card">
-            <div class="ch-icon tg">✈️</div>
+            <div class="ch-icon tg">TG</div>
             <div>
               <div class="ch-title">Telegram</div>
               <div class="ch-desc">Ответим в течение часа · можно прислать файлы</div>
@@ -250,7 +254,7 @@
             <div class="ch-val">@ironex</div>
           </a>
           <a href="https://wa.me/79819470402" class="channel-card">
-            <div class="ch-icon wa">💬</div>
+            <div class="ch-icon wa">WA</div>
             <div>
               <div class="ch-title">WhatsApp</div>
               <div class="ch-desc">Удобно для голосовых и фото-замеров</div>
@@ -294,7 +298,7 @@
           </div>
           <div class="info-row">
             <span class="info-label">НДС</span>
-            <span class="info-val">20% — плательщик</span>
+            <span class="info-val">22% — плательщик</span>
           </div>
           <div class="info-row">
             <span class="info-label">Расчёты</span>
@@ -307,7 +311,7 @@
         </div>
 
         <div style="background:var(--amber3);border:1px solid #FCD34D;border-radius:14px;padding:24px;">
-          <div style="font-size:13px;font-weight:700;color:var(--amber2);margin-bottom:8px;">📎 Как отправить заявку</div>
+          <div style="font-size:13px;font-weight:700;color:var(--amber2);margin-bottom:8px;">FILE · Как отправить заявку</div>
           <div style="font-size:13px;color:#78350F;line-height:1.65;">
             Пришлите чертёж в любом формате: <strong>PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG.</strong>
             Укажите материал, количество деталей и желаемый срок — ответим с расчётом стоимости и срока производства.
@@ -374,6 +378,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
   <div class="container">
@@ -388,7 +394,7 @@
         </div>
       </div>
       <div class="f-col">
-        <h4>Услуги</h4>
+        <p class="footer-heading">Услуги</p>
         <ul>
           <li><a href="frezerovka.html">Фрезерная обработка</a></li>
           <li><a href="tokarnaya.html">Токарная обработка</a></li>
@@ -399,7 +405,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Компания</h4>
+        <p class="footer-heading">Компания</p>
         <ul>
           <li><a href="oborudovanie.html">Оборудование</a></li>
           <li><a href="ceny.html">Цены</a></li>
@@ -409,7 +415,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Связаться</h4>
+        <p class="footer-heading">Связаться</p>
         <ul>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
@@ -426,5 +432,6 @@
 </footer>
 
 <script src="email-copy.js"></script>
+<script src="redesign.js"></script>
 </body>
 </html>

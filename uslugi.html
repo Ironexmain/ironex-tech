@@ -7,7 +7,7 @@
   <meta name="description" content="Услуги металлообработки: токарная и фрезерная обработка ЧПУ, лазерная и гидроабразивная резка, гибка листа, сварка TIG·MIG, порошковая покраска и КИМ-контроль. Пришлите чертёж — подготовим расчёт." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -152,7 +152,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Услуги","item":"https://ironex.tech/uslugi.html"}]},
-    {"@type":"WebPage","url":"https://ironex.tech/uslugi.html","name":"Услуги металлообработки — IRONEX","description":"Полный цикл металлообработки: токарная и фрезерная обработка ЧПУ, лазерная резка, гибка, сварка, порошковая покраска, КИМ-контроль. Изготовление деталей по чертежам.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-04"},
+    {"@type":"WebPage","url":"https://ironex.tech/uslugi.html","name":"Услуги металлообработки — IRONEX","description":"Полный цикл металлообработки: токарная и фрезерная обработка ЧПУ, лазерная резка, гибка, сварка, порошковая покраска, КИМ-контроль. Изготовление деталей по чертежам.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-05"},
     {"@type":"Service","name":"Контрактная металлообработка по чертежам","provider":{"@id":"https://ironex.tech/#org"},"serviceType":"Металлообработка","description":"Полный цикл металлообработки: токарка ЧПУ, фрезеровка 5 осей, лазерная резка, гибка, сварка, порошковая покраска, КИМ-контроль каждой партии.","areaServed":{"@type":"Country","name":"Россия"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Услуги металлообработки","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Токарная обработка ЧПУ"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Фрезерная обработка 5 осей"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Лазерная резка металла"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Гибка листового металла"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Сварка и сборка"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Порошковая покраска"}}]}}
   ]}
   </script>
@@ -165,10 +165,12 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
   <link rel="stylesheet" href="email-copy.css" />
+  <link rel="stylesheet" href="redesign.css" />
 </head>
-<body>
+<body class="redesign-precision">
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
 
 <!-- NAV -->
 <nav>
@@ -187,12 +189,12 @@
         <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
         <a href="kontakty.html" class="btn btn-amber" style="padding:10px 20px;font-size:14px;">Запросить расчёт</a>
       </div>
-      <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Меню">
+      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-  <div class="mob-menu" id="mob">
+  <div class="mob-menu" id="mobMenu">
     <a href="uslugi.html">Услуги</a>
     <a href="oborudovanie.html">Оборудование</a>
     <a href="ceny.html">Цены</a>
@@ -203,6 +205,8 @@
     <a href="tel:+79934904024">+7 993 490-40-24</a>
   </div>
 </nav>
+
+<main id="main-content">
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
@@ -274,7 +278,7 @@
 
     <div class="svc-grid">
       <div class="svc-card">
-        <div class="svc-card-icon">🔩</div>
+        <div class="svc-card-icon">TURN</div>
         <h3>Токарная обработка ЧПУ</h3>
         <p>DMG Mori NLX 2500, приводной инструмент, ось C, противошпиндель. Серии до 50 000 штук с авто-загрузкой.</p>
         <div class="svc-specs">
@@ -285,7 +289,7 @@
         <a href="tokarnaya.html" class="svc-detail-link">Подробнее о токарной обработке →</a>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">✨</div>
+        <div class="svc-card-icon">FIN</div>
         <h3>Чистовая токарная обработка</h3>
         <p>Финишные проходы с минимальным припуском. Шероховатость Ra 0,8–1,6 мкм, посадочные поверхности H6–H7.</p>
         <div class="svc-specs">
@@ -295,7 +299,7 @@
         <div class="svc-price-badge">от 1 600 ₽ / нормо-час</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">⚙️</div>
+        <div class="svc-card-icon">ROUGH</div>
         <h3>Черновая токарная обработка</h3>
         <p>Быстрое снятие большого припуска. Высокие подачи, мощный шпиндель. Подготовка заготовок под чистовую обработку.</p>
         <div class="svc-specs">
@@ -305,7 +309,7 @@
         <div class="svc-price-badge">от 1 100 ₽ / нормо-час</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">🔧</div>
+        <div class="svc-card-icon">CNC</div>
         <h3>Сверление и расточка</h3>
         <p>Точные отверстия диаметром от 1 мм. Расточные оправки для достижения квалитетов H6–H7. Глубокое сверление по запросу.</p>
         <div class="svc-specs">
@@ -315,7 +319,7 @@
         <div class="svc-price-badge">по запросу</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">💎</div>
+        <div class="svc-card-icon">5AX</div>
         <h3>Шлифовка</h3>
         <p>Цилиндрическая и плоская шлифовка. Достижение Ra 0,2–0,4 мкм. Детали после закалки и цементации.</p>
         <div class="svc-specs">
@@ -325,7 +329,7 @@
         <div class="svc-price-badge">по запросу</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">🔄</div>
+        <div class="svc-card-icon">SER</div>
         <h3>Токарно-фрезерная обработка</h3>
         <p>Комбинированные центры с осью Y и приводным инструментом. Сложные детали — вал с фрезерованными пазами — в одной установке.</p>
         <div class="svc-specs">
@@ -350,7 +354,7 @@
     </div>
     <div class="svc-grid">
       <div class="svc-card">
-        <div class="svc-card-icon">⚡</div>
+        <div class="svc-card-icon">LASER</div>
         <h3>Лазерная резка</h3>
         <p>Волоконный лазер D-SOAR 20 кВт. Чистая кромка без термической зоны влияния, высокая скорость, детали от 1 шт.</p>
         <div class="svc-specs">
@@ -361,7 +365,7 @@
         <div class="svc-price-badge">от 80 ₽ / м реза</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">💧</div>
+        <div class="svc-card-icon">WATER</div>
         <h3>Гидроабразивная резка</h3>
         <p>APW2050BA. Любой материал без нагрева: титан, стекло, керамика, резина, композиты. Без изменения структуры материала.</p>
         <div class="svc-specs">
@@ -371,7 +375,7 @@
         <div class="svc-price-badge">по запросу</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">🔥</div>
+        <div class="svc-card-icon">PLASMA</div>
         <h3>Плазменная резка</h3>
         <p>Экономичный раскрой толстого металла. Высокая скорость, широкий диапазон толщин. Подходит для черновых заготовок.</p>
         <div class="svc-specs">
@@ -396,7 +400,7 @@
     </div>
     <div class="svc-grid">
       <div class="svc-card">
-        <div class="svc-card-icon">📐</div>
+        <div class="svc-card-icon">BEND</div>
         <h3>Гибка листового металла</h3>
         <p>Прессы PR6C-150T, VR6-125T. Высокая повторяемость гиба, сложные профили в нескольких установках.</p>
         <div class="svc-specs">
@@ -406,7 +410,7 @@
         <div class="svc-price-badge">от 150 ₽ / гиб</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">🔲</div>
+        <div class="svc-card-icon">ROLL</div>
         <h3>Координатно-пробивные работы</h3>
         <p>VT-300 ЧПУ. Перфорация, вырубка, формовка по программе. Серийные детали с отверстиями любого расположения.</p>
         <div class="svc-specs">
@@ -416,7 +420,7 @@
         <div class="svc-price-badge">по запросу</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">🏭</div>
+        <div class="svc-card-icon">STAMP</div>
         <h3>Штамповка</h3>
         <p>Серийное производство штампованных деталей. Холодная штамповка, вырубные штампы, быстрый цикл на больших объёмах.</p>
         <div class="svc-specs">
@@ -458,21 +462,21 @@
 
     <div class="svc-grid">
       <div class="svc-card">
-        <div class="svc-card-icon">🔵</div>
+        <div class="svc-card-icon">TIG</div>
         <h3>Аргонодуговая сварка TIG</h3>
         <p>WSM-400, WSME-315. Чистый эстетичный шов на нержавейке и алюминии. Пищевое оборудование, медтех, декоративные изделия.</p>
         <div class="svc-specs"><span class="svc-spec">нерж · алюм</span><span class="svc-spec">Ra шва</span></div>
         <div class="svc-price-badge">от 950 ₽ / нормо-час</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">🟠</div>
+        <div class="svc-card-icon">MIG</div>
         <h3>Полуавтоматическая сварка MIG/MAG</h3>
         <p>CO₂ и смесь. Высокая производительность на конструкционной стали. Оптимальна по цене для несущих конструкций и крупных деталей.</p>
         <div class="svc-specs"><span class="svc-spec">сталь</span><span class="svc-spec">высокая скорость</span></div>
         <div class="svc-price-badge">от 800 ₽ / нормо-час</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">🔴</div>
+        <div class="svc-card-icon">LASER</div>
         <h3>Лазерная сварка</h3>
         <p>SUP-AMF-D. Узкий шов с минимальной зоной нагрева — для тонкостенных деталей и там, где важна геометрия после сварки.</p>
         <div class="svc-specs"><span class="svc-spec">тонкостенные</span><span class="svc-spec">мин. деформация</span></div>
@@ -494,35 +498,35 @@
     </div>
     <div class="svc-grid">
       <div class="svc-card">
-        <div class="svc-card-icon">🎨</div>
+        <div class="svc-card-icon">POWDER</div>
         <h3>Порошковая окраска</h3>
         <p>Полимеризационные камеры до 6 м. Любой цвет RAL: матовое, глянцевое, текстурное, «муар». Коррозионная стойкость — класс 5.</p>
         <div class="svc-specs"><span class="svc-spec">любой RAL</span><span class="svc-spec">до 6 м</span></div>
         <div class="svc-price-badge">от 320 ₽ / м²</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">⚗️</div>
+        <div class="svc-card-icon">CHEM</div>
         <h3>Гальваника и покрытия</h3>
         <p>Цинкование, никелирование, анодирование алюминия, хромирование. Сертификаты соответствия по запросу. ГОСТ и импортные аналоги.</p>
         <div class="svc-specs"><span class="svc-spec">цинк · никель · хром</span><span class="svc-spec">анодирование</span></div>
         <div class="svc-price-badge">по запросу</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">🏷️</div>
+        <div class="svc-card-icon">MARK</div>
         <h3>Лазерная маркировка</h3>
         <p>Серийные номера, логотипы, QR-коды, DataMatrix. Постоянная маркировка без краски и наклеек. Нержавейка, алюминий, сталь.</p>
         <div class="svc-specs"><span class="svc-spec">QR · DataMatrix</span><span class="svc-spec">постоянная</span></div>
         <div class="svc-price-badge">по запросу</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">🔧</div>
+        <div class="svc-card-icon">FIN</div>
         <h3>Слесарные работы</h3>
         <p>Зачистка заусенцев, снятие фаски, подгонка, притирка, сборка узлов. Финишная доработка после механообработки.</p>
         <div class="svc-specs"><span class="svc-spec">зачистка</span><span class="svc-spec">сборка</span></div>
         <div class="svc-price-badge">от 800 ₽ / нормо-час</div>
       </div>
       <div class="svc-card">
-        <div class="svc-card-icon">📏</div>
+        <div class="svc-card-icon">CMM</div>
         <h3>Снятие фаски</h3>
         <p>Фаскосниматели ЧПУ и ручные инструменты. Снятие острых кромок после лазерной резки и фрезеровки. Входит в полный цикл.</p>
         <div class="svc-specs"><span class="svc-spec">после резки</span><span class="svc-spec">после фрезеровки</span></div>
@@ -656,7 +660,7 @@
       </div>
       <div class="cta-channels">
         <div class="cta-ch email-contact-card" data-email-copy>
-          <div class="cta-ch-icon">✉️</div>
+          <div class="cta-ch-icon">MAIL</div>
           <div><div class="cta-ch-title">Написать на почту</div><div class="cta-ch-sub">Прикрепите чертёж</div></div>
           <div class="email-contact-actions">
             <a href="mailto:info@ironex.tech" class="cta-ch-val email-contact-address" data-email-value>info@ironex.tech</a>
@@ -664,12 +668,12 @@
           </div>
         </div>
         <a href="tel:+79934904024" class="cta-ch">
-          <div class="cta-ch-icon">📞</div>
+          <div class="cta-ch-icon">TEL</div>
           <div><div class="cta-ch-title">Позвонить</div><div class="cta-ch-sub">Пн–Пт, 09:00–19:00</div></div>
           <div class="cta-ch-val">+7 993 490-40-24</div>
         </a>
         <a href="https://t.me/+79819470402" class="cta-ch">
-          <div class="cta-ch-icon">✈️</div>
+          <div class="cta-ch-icon">TG</div>
           <div><div class="cta-ch-title">Telegram</div><div class="cta-ch-sub">Ответим в течение часа</div></div>
           <div class="cta-ch-val">→ открыть</div>
         </a>
@@ -677,6 +681,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -692,7 +698,7 @@
         </div>
       </div>
       <div class="f-col">
-        <h4>Услуги</h4>
+        <p class="footer-heading">Услуги</p>
         <ul>
           <li><a href="frezerovka.html">Фрезерная обработка</a></li>
           <li><a href="tokarnaya.html">Токарная обработка</a></li>
@@ -703,7 +709,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Компания</h4>
+        <p class="footer-heading">Компания</p>
         <ul>
           <li><a href="oborudovanie.html">Оборудование</a></li>
           <li><a href="ceny.html">Цены</a></li>
@@ -713,7 +719,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Связаться</h4>
+        <p class="footer-heading">Связаться</p>
         <ul>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
@@ -743,5 +749,6 @@
 </script>
 
 <script src="email-copy.js"></script>
+<script src="redesign.js"></script>
 </body>
 </html>

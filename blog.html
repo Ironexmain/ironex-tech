@@ -3,168 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Редакционный план материалов о металлообработке — IRONEX</title>
-  <meta name="description" content="Темы будущих материалов IRONEX о заказе металлических деталей: подготовка чертежа, выбор технологии, экономика серии и контроль качества." />
-  <meta name="robots" content="noindex,follow" />
+  <title>Блог о заказном изготовлении металлических деталей — IRONEX</title>
+  <meta name="description" content="Практические материалы IRONEX для закупщиков и инженеров: чертежи, допуски, технологии, контроль качества, цена и сроки изготовления деталей." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --dark: #18181B; --dark2: #27272A; --amber: #F59E0B; --amber2: #D97706;
-      --amber3: #FEF3C7; --bg: #FAFAF9; --bg2: #F4F4F0; --text: #18181B;
-      --muted: #71717A; --border: #E4E4E7; --white: #FFFFFF; --r: 10px;
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
-    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700;
-               letter-spacing: .1em; text-transform: uppercase; color: var(--amber2); margin-bottom: 18px; }
-    .eyebrow::before { content: ''; display: block; width: 20px; height: 2px; background: var(--amber); }
-    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px;
-           border-radius: 8px; font-weight: 700; font-size: 15px; cursor: pointer;
-           text-decoration: none; transition: all .2s; border: none; font-family: inherit; }
-    .btn-amber { background: var(--amber); color: var(--dark); }
-    .btn-amber:hover { background: var(--amber2); transform: translateY(-1px); }
-    .btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.25); }
-    .btn-ghost:hover { background: rgba(255,255,255,.08); }
-
-    /* NAV */
-    nav { position: sticky; top: 0; z-index: 200; background: rgba(24,24,27,.97);
-          backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,.06); }
-    .nav-inner { display: flex; align-items: center; height: 68px; }
-    .nav-logo { font-size: 21px; font-weight: 900; color: #fff; text-decoration: none;
-                letter-spacing: -.025em; flex-shrink: 0; margin-right: auto; }
-    .nav-logo span { color: var(--amber); }
-    .nav-links { display: flex; gap: 32px; list-style: none; margin-right: 32px; }
-    .nav-links a { color: rgba(255,255,255,.6); text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; }
-    .nav-links a:hover, .nav-links a.active { color: #fff; }
-    .nav-actions { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
-    .nav-phone { color: rgba(255,255,255,.8); font-size: 14px; font-weight: 600; text-decoration: none; }
-    .nav-phone:hover { color: var(--amber); }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer;
-                 background: none; border: none; padding: 4px; margin-left: 16px; }
-    .hamburger span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
-    .mob-menu { display: none; background: var(--dark2); border-top: 1px solid rgba(255,255,255,.08); }
-    .mob-menu.open { display: block; }
-    .mob-menu a { display: block; padding: 13px 24px; color: rgba(255,255,255,.75); font-size: 15px;
-                  font-weight: 500; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.06); }
-
-    /* BREADCRUMB */
-    .breadcrumb { padding: 16px 0; border-bottom: 1px solid var(--border); }
-    .breadcrumb-inner { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--muted); }
-    .breadcrumb a { color: var(--muted); text-decoration: none; }
-    .breadcrumb span { color: var(--text); font-weight: 500; }
-
-    /* PAGE HERO */
-    .page-hero { padding: 64px 0 56px; background: var(--dark); color: #fff; }
-    .page-hero h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 900; line-height: 1.1;
-                    letter-spacing: -.03em; margin-bottom: 16px; }
-    .page-hero h1 em { font-style: normal; color: var(--amber); }
-    .page-hero p { font-size: 16px; color: rgba(255,255,255,.55); line-height: 1.65; max-width: 560px; }
-
-    /* FILTERS */
-    .filters { padding: 24px 0; border-bottom: 1px solid var(--border); background: var(--bg); }
-    .filter-list { display: flex; gap: 8px; flex-wrap: wrap; }
-    .filter-btn { padding: 7px 16px; border-radius: 100px; font-size: 13px; font-weight: 600;
-                  cursor: pointer; border: 1.5px solid var(--border); background: #fff;
-                  color: var(--muted); transition: all .2s; }
-    .filter-btn:hover, .filter-btn.active { background: var(--amber); border-color: var(--amber);
-                                             color: var(--dark); }
-
-    /* FEATURED */
-    .featured { padding: 56px 0 0; }
-    .featured-card { display: grid; grid-template-columns: 1fr 1fr; gap: 0;
-                     border-radius: 16px; overflow: hidden; border: 1px solid var(--border);
-                     margin-bottom: 48px; }
-    .featured-img { aspect-ratio: 4/3; overflow: hidden; }
-    .featured-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
-    .featured-card:hover .featured-img img { transform: scale(1.03); }
-    .featured-body { padding: 40px 40px; display: flex; flex-direction: column; justify-content: center;
-                     background: var(--bg); }
-    .art-cat  { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .08em;
-                text-transform: uppercase; color: var(--amber2); background: var(--amber3);
-                padding: 4px 10px; border-radius: 100px; margin-bottom: 16px; }
-    .featured-body h2 { font-size: clamp(20px, 2.5vw, 26px); font-weight: 800; line-height: 1.25;
-                        letter-spacing: -.02em; margin-bottom: 12px; }
-    .featured-body p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 20px; flex-grow: 1; }
-    .art-meta { display: flex; gap: 16px; align-items: center; font-size: 12px; color: var(--muted); }
-    .art-meta strong { color: var(--text); }
-    .read-link { color: var(--amber2); font-weight: 700; text-decoration: none; font-size: 14px; }
-    .read-link:hover { color: var(--amber); }
-    .article-status { color: var(--amber2); font-weight: 700; font-size: 12px; }
-
-    /* GRID */
-    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 0 0 80px; }
-    .art-card { border-radius: var(--r); overflow: hidden; border: 1px solid var(--border);
-                background: #fff; transition: all .2s; display: flex; flex-direction: column; }
-    .art-card:hover { border-color: var(--amber); box-shadow: 0 8px 32px rgba(0,0,0,.07);
-                      transform: translateY(-2px); }
-    .art-img  { aspect-ratio: 16/9; overflow: hidden; background: var(--bg2); }
-    .art-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s; }
-    .art-card:hover .art-img img { transform: scale(1.04); }
-    .art-body { padding: 22px; flex-grow: 1; display: flex; flex-direction: column; }
-    .art-body h3 { font-size: 16px; font-weight: 700; line-height: 1.35; margin-bottom: 10px; letter-spacing: -.01em; }
-    .art-body p  { font-size: 13px; color: var(--muted); line-height: 1.6; flex-grow: 1; margin-bottom: 16px; }
-    .art-footer { display: flex; justify-content: space-between; align-items: center;
-                  font-size: 12px; color: var(--muted); border-top: 1px solid var(--border);
-                  padding-top: 14px; margin-top: auto; }
-
-    /* CTA */
-    .cta-bar { background: var(--dark); color: #fff; padding: 64px 0; }
-    .cta-bar-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-    .cta-bar h2 { color: #fff; font-size: clamp(22px, 3vw, 32px); font-weight: 900;
-                  letter-spacing: -.025em; margin-bottom: 12px; }
-    .cta-bar p { color: rgba(255,255,255,.55); font-size: 15px; line-height: 1.6; }
-    .cta-channels { display: flex; flex-direction: column; gap: 12px; }
-    .cta-ch { display: flex; align-items: center; gap: 16px; background: rgba(255,255,255,.06);
-              border: 1px solid rgba(255,255,255,.1); border-radius: 10px; padding: 18px 22px;
-              text-decoration: none; color: #fff; transition: all .2s; }
-    .cta-ch:hover { background: rgba(245,158,11,.12); border-color: var(--amber); }
-    .cta-ch-icon { font-size: 22px; flex-shrink: 0; }
-    .cta-ch-title { font-size: 14px; font-weight: 700; }
-    .cta-ch-sub   { font-size: 12px; color: rgba(255,255,255,.4); margin-top: 1px; }
-    .cta-ch-val   { margin-left: auto; font-size: 13px; font-weight: 700; color: var(--amber); white-space: nowrap; }
-
-    /* FOOTER */
-    footer { background: #0A0A0C; color: rgba(255,255,255,.4); padding: 48px 0 24px; }
-    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
-                  padding-bottom: 36px; border-bottom: 1px solid rgba(255,255,255,.07); }
-    .f-logo { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -.025em; margin-bottom: 10px; }
-    .f-logo span { color: var(--amber); }
-    .f-desc { font-size: 13px; line-height: 1.65; max-width: 220px; margin-bottom: 16px; }
-    .f-contacts { display: flex; flex-direction: column; gap: 7px; }
-    .f-contacts a { color: rgba(255,255,255,.6); text-decoration: none; font-size: 13px; }
-    .f-contacts a:hover { color: var(--amber); }
-    .f-col h4 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
-                color: rgba(255,255,255,.3); margin-bottom: 14px; }
-    .f-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
-    .f-col a  { color: rgba(255,255,255,.5); text-decoration: none; font-size: 13px; }
-    .f-col a:hover { color: rgba(255,255,255,.9); }
-    .footer-bottom { display: flex; justify-content: space-between; padding-top: 20px; font-size: 12px; flex-wrap: wrap; gap: 10px; }
-
-    @media (max-width: 768px) {
-      .nav-links, .nav-actions { display: none; }
-      .hamburger { display: flex; }
-      .featured-card { grid-template-columns: 1fr; }
-      .blog-grid { grid-template-columns: 1fr; }
-      .cta-bar-inner { grid-template-columns: 1fr; gap: 36px; }
-      .footer-top { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 480px) { .footer-top { grid-template-columns: 1fr; } }
-  </style>
-
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
   <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
 
   <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
   <link rel="canonical" href="https://ironex.tech/blog.html" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[
-    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://ironex.tech/blog.html"}]},
-    {"@type":"CollectionPage","url":"https://ironex.tech/blog.html","name":"Редакционный план материалов о металлообработке — IRONEX","description":"Темы будущих практических материалов о заказе металлических деталей.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-04"}
-  ]}
+  {"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://ironex.tech/blog.html"}]},{"@type":"CollectionPage","url":"https://ironex.tech/blog.html","name":"Блог о заказном изготовлении металлических деталей — IRONEX","description":"Практические материалы IRONEX для закупщиков и инженеров: чертежи, допуски, технологии, контроль качества, цена и сроки изготовления деталей.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-05"}]}
   </script>
   <!-- ═══ Яндекс Метрика 105009501 ═══ -->
   <script type="text/javascript">
@@ -175,10 +25,12 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/105009501" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
   <link rel="stylesheet" href="email-copy.css" />
+  <link rel="stylesheet" href="redesign.css" />
 </head>
-<body>
+<body class="redesign-precision editorial-page blog-index-page">
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
 
 <!-- NAV -->
 <nav>
@@ -189,231 +41,115 @@
         <li><a href="uslugi.html">Услуги</a></li>
         <li><a href="oborudovanie.html">Оборудование</a></li>
         <li><a href="ceny.html">Цены</a></li>
-        <li><a href="blog.html" class="active">Блог</a></li>
+        <li><a href="blog.html" class="active" aria-current="page">Блог</a></li>
         <li><a href="index.html#cases">Кейсы</a></li>
         <li><a href="kontakty.html">Контакты</a></li>
       </ul>
       <div class="nav-actions">
         <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
-        <a href="kontakty.html" class="btn btn-amber" style="padding:10px 20px;font-size:14px;">Запросить расчёт</a>
+        <a href="kontakty.html" class="btn btn-amber nav-cta">Запросить расчёт</a>
       </div>
-      <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Меню">
+      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-  <div class="mob-menu" id="mob">
+  <div class="mob-menu" id="mobMenu">
     <a href="uslugi.html">Услуги</a>
     <a href="oborudovanie.html">Оборудование</a>
     <a href="ceny.html">Цены</a>
-    <a href="blog.html">Блог</a>
+    <a href="blog.html" aria-current="page">Блог</a>
     <a href="index.html#cases">Кейсы</a>
     <a href="kontakty.html">Контакты</a>
-    <a href="kontakty.html" style="color:var(--amber);">Запросить расчёт</a>
+    <a href="kontakty.html" class="mob-menu-accent">Запросить расчёт</a>
     <a href="tel:+79934904024">+7 993 490-40-24</a>
   </div>
 </nav>
 
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <div class="container">
-    <div class="breadcrumb-inner">
-      <a href="index.html">Главная</a> · <span>Блог</span>
+<main id="main-content">
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb-inner"><a href="index.html">Главная</a><span aria-hidden="true">/</span><span>Блог</span></div>
     </div>
   </div>
-</div>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="container">
-    <div class="eyebrow" style="color:rgba(255,255,255,.5);">
-      <span style="background:var(--amber);width:20px;height:2px;display:block;"></span>
-      Редакционный план
+  <section class="editorial-index-hero">
+    <div class="container editorial-hero-grid">
+      <div class="editorial-hero-copy">
+        <div class="editorial-kicker"><span>IRONEX / БАЗА ЗНАНИЙ</span><span>ВЫПУСК 01</span></div>
+        <h1>Практические материалы о заказном изготовлении деталей</h1>
+        <p>Чек-листы и разборы для закупщиков и инженеров: как подготовить заявку, сравнить предложения и согласовать требования к партии.</p>
+      </div>
+      <dl class="editorial-index-note">
+        <div><dt>Для кого</dt><dd>Закупщик / инженер</dd></div>
+        <div><dt>Формат</dt><dd>Чек-листы и разборы</dd></div>
+        <div><dt>Цель</dt><dd>Сопоставимый расчёт</dd></div>
+      </dl>
     </div>
-    <h1>Готовим материалы о производстве<br><em>металлических деталей</em></h1>
-    <p>Ниже — темы в редакционном плане. Отдельные статьи появятся после технической проверки фактов и будут открываться с собственных страниц.</p>
-  </div>
-</section>
+  </section>
 
-<!-- FEATURED -->
-<div class="featured">
-  <div class="container">
-
-    <!-- Featured 1 -->
-    <div class="featured-card">
-      <div class="featured-img">
-        <img src="images/photos/prod-2045.webp" alt="Как подготовить чертёж для заказа деталей" />
+  <section class="editorial-feature" aria-labelledby="latest-material">
+    <div class="container">
+      <div class="editorial-section-head">
+        <h2 id="latest-material">Новый материал</h2>
+        <span>Обновлено 05.08.2026</span>
       </div>
-      <div class="featured-body">
-        <span class="art-cat">Заказчику</span>
-        <h2>Как подготовить чертёж для передачи в производство: что обязательно, а что лишнее</h2>
-        <p>Идеального комплекта документации для первого заказа не существует. Главное — файл, по которому технолог поймёт задачу. Разбираем форматы, минимальный набор данных и типичные ошибки, из-за которых расчёт затягивается на неделю.</p>
-        <div class="art-meta"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-    <!-- Featured 2 -->
-    <div class="featured-card">
-      <div class="featured-body">
-        <span class="art-cat">Экономика заказа</span>
-        <h2>Почему серия из 50 деталей стоит дешевле, чем 5 × 10 деталей в разное время</h2>
-        <p>Наладка и подготовка производства распределяются на весь объём партии. Разберём, из чего складывается цена и как выбрать размер партии без неподтверждённых обещаний экономии.</p>
-        <div class="art-meta"><span class="article-status">В редакционном плане</span></div>
-      </div>
-      <div class="featured-img">
-        <img src="images/photos/prod-2039.webp" alt="Серийное производство деталей на ЧПУ" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- BLOG GRID -->
-<div class="container">
-  <div class="blog-grid">
-
-    <div class="art-card">
-      <div class="art-img">
-        <img src="images/photos/prod-2035.webp" alt="КИМ-контроль" />
-      </div>
-      <div class="art-body">
-        <span class="art-cat">Контроль качества</span>
-        <h3>Как проверить детали при получении, если у вас нет КИМ</h3>
-        <p>Штангенциркуль, микрометр и шаблоны — что можно проверить самостоятельно на приёмке, а что требует лаборатории. Чек-лист для входного контроля партии.</p>
-        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-    <div class="art-card">
-      <div class="art-img">
-        <img src="images/photos/gen-laser.webp" alt="Лазерная резка металла" />
-      </div>
-      <div class="art-body">
-        <span class="art-cat">Технологии</span>
-        <h3>Лазер, плазма или гидроабразив: как выбрать метод резки для вашей задачи</h3>
-        <p>Три технологии — три разных компромисса по скорости, кромке, тепловому влиянию и цене. Таблица сравнения и алгоритм выбора по материалу и толщине.</p>
-        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-    <div class="art-card">
-      <div class="art-img">
-        <img src="images/photos/shop-01.webp" alt="Материалы для металлообработки" />
-      </div>
-      <div class="art-body">
-        <span class="art-cat">Материалы</span>
-        <h3>Сталь, нержавейка или алюминий: как выбрать материал под нагрузку и среду</h3>
-        <p>Не всегда нержавейка нужна там, где её заказывают. Разбираем ключевые свойства трёх самых распространённых материалов и даём критерии выбора без лишней теории.</p>
-        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-    <div class="art-card">
-      <div class="art-img">
-        <img src="images/photos/gen-bending.webp" alt="Гибка листового металла" />
-      </div>
-      <div class="art-body">
-        <span class="art-cat">Чертежи и допуски</span>
-        <h3>Допуски на чертеже: сколько нулей после запятой реально нужно вашей детали</h3>
-        <p>Каждый лишний квалитет точности — это дополнительные деньги и время. Объясняем, как ISO 2768 закрывает большинство задач, и когда стоит указывать жёсткие допуски явно.</p>
-        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-    <div class="art-card">
-      <div class="art-img">
-        <img src="images/photos/gen-welding.webp" alt="Сварка металлоконструкций" />
-      </div>
-      <div class="art-body">
-        <span class="art-cat">Технологии</span>
-        <h3>TIG, MIG или роботизированная сварка: когда что выбрать</h3>
-        <p>Разные задачи — разная сварка. TIG даёт чистый шов на нержавейке, MIG быстрее на серии, робот незаменим при повторяемости. Разбираем, когда что применять и как это влияет на цену узла.</p>
-        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-    <div class="art-card">
-      <div class="art-img">
-        <img src="images/photos/shop-08.webp" alt="Опытная партия деталей" />
-      </div>
-      <div class="art-body">
-        <span class="art-cat">Заказчику</span>
-        <h3>Опытная партия: зачем делать 5 штук перед тиражом 500</h3>
-        <p>Серийный брак обходится дорого — как финансово, так и по срокам. Рассказываем, что проверяют на опытной партии, как её результаты удешевляют серию и когда можно обойтись без неё.</p>
-        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-    <div class="art-card">
-      <div class="art-img">
-        <img src="images/photos/prod-2044.webp" alt="5-осевая фрезеровка" />
-      </div>
-      <div class="art-body">
-        <span class="art-cat">Технологии</span>
-        <h3>5-осевая обработка: когда она нужна и почему не всегда стоит дороже</h3>
-        <p>Пятиосевой центр может выполнить сложную деталь в одной установке — без переналадки, без погрешностей базирования. В правильной задаче это дешевле, чем три операции на трёхосевом станке.</p>
-        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-    <div class="art-card">
-      <div class="art-img">
-        <img src="images/photos/shop-06.webp" alt="Покрытия для металлических деталей" />
-      </div>
-      <div class="art-body">
-        <span class="art-cat">Материалы</span>
-        <h3>Покрытия для металла: порошковая окраска, анодирование или цинкование — что выбрать</h3>
-        <p>Выбор защитного покрытия зависит не только от внешнего вида, но и от среды эксплуатации, требований к адгезии и бюджета. Сравниваем три самых распространённых варианта.</p>
-        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-    <div class="art-card">
-      <div class="art-img">
-        <img src="images/photos/shop-14.webp" alt="Контрактное производство деталей" />
-      </div>
-      <div class="art-body">
-        <span class="art-cat">Заказчику</span>
-        <h3>Как согласовать многооперационный маршрут изготовления детали</h3>
-        <p>Разберём, как зафиксировать последовательность операций, допуски, точки контроля и ответственность, чтобы избежать рассинхрона между этапами.</p>
-        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- CTA -->
-<section class="cta-bar">
-  <div class="container">
-    <div class="cta-bar-inner">
-      <div>
-        <h2>Есть задача — обсудим</h2>
-        <p>Пришлите чертёж или опишите задачу — технолог вернётся с конкретной стоимостью и сроком. Бесплатно, без обязательств.</p>
-      </div>
-      <div class="cta-channels">
-        <div class="cta-ch email-contact-card" data-email-copy>
-          <div class="cta-ch-icon">✉️</div>
-          <div><div class="cta-ch-title">Написать на почту</div><div class="cta-ch-sub">Прикрепите чертёж</div></div>
-          <div class="email-contact-actions">
-            <a href="mailto:info@ironex.tech" class="cta-ch-val email-contact-address" data-email-value>info@ironex.tech</a>
-            <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
-          </div>
+      <a class="editorial-feature-card" data-seo-slug="kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley" href="blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html">
+        <figure class="editorial-feature-media">
+          <img src="/images/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley-cover.webp" alt="Инженер и закупщик готовят чертежи и спецификацию для расчёта изготовления металлических деталей" width="1200" height="686" decoding="async" />
+          <figcaption><span>Материал 01</span><span>Запрос на производство</span></figcaption>
+        </figure>
+        <div class="editorial-feature-body">
+          <div class="editorial-feature-meta"><span>Заказчику</span><span>7 минут</span></div>
+          <h2>Как составить заявку на изготовление деталей</h2>
+          <p>Как составить заявку на изготовление деталей: 12 пунктов, которые помогут подрядчику рассчитать цену, срок и технологию производства без лишней переписки.</p>
+          <span class="read-link">Открыть чек-лист <span aria-hidden="true">↗</span></span>
         </div>
-        <a href="tel:+79934904024" class="cta-ch">
-          <div class="cta-ch-icon">📞</div>
-          <div><div class="cta-ch-title">Позвонить</div><div class="cta-ch-sub">Пн–Пт, 09:00–19:00</div></div>
-          <div class="cta-ch-val">+7 993 490-40-24</div>
-        </a>
-        <a href="https://t.me/+79819470402" class="cta-ch">
-          <div class="cta-ch-icon">✈️</div>
-          <div><div class="cta-ch-title">Telegram</div><div class="cta-ch-sub">Ответим в течение часа</div></div>
-          <div class="cta-ch-val">→ открыть</div>
-        </a>
+      </a>
+    </div>
+  </section>
+
+  <section class="editorial-archive" aria-label="Другие материалы">
+    <div class="container">
+      <div class="editorial-archive-grid">
+        <!-- SEO ARTICLE LIST -->
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="cta-bar editorial-cta" aria-labelledby="blog-cta-title">
+    <div class="container">
+      <div class="cta-bar-inner">
+        <div>
+          <div class="eyebrow eyebrow-light">Следующий шаг</div>
+          <h2 id="blog-cta-title">Есть задача — обсудим</h2>
+          <p>Пришлите чертёж или опишите задачу — технолог вернётся с конкретной стоимостью и сроком. Бесплатно, без обязательств.</p>
+        </div>
+        <div class="cta-channels">
+          <div class="cta-ch email-contact-card" data-email-copy>
+            <div class="cta-ch-icon">EMAIL</div>
+            <div><div class="cta-ch-title">Написать на почту</div><div class="cta-ch-sub">Прикрепите чертёж</div></div>
+            <div class="email-contact-actions">
+              <a href="mailto:info@ironex.tech" class="cta-ch-val email-contact-address" data-email-value>info@ironex.tech</a>
+              <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
+            </div>
+          </div>
+          <a href="tel:+79934904024" class="cta-ch">
+            <div class="cta-ch-icon">TEL</div>
+            <div><div class="cta-ch-title">Позвонить</div><div class="cta-ch-sub">Пн–Пт, 09:00–19:00</div></div>
+            <div class="cta-ch-val">+7 993 490-40-24</div>
+          </a>
+          <a href="https://t.me/+79819470402" class="cta-ch">
+            <div class="cta-ch-icon">TG</div>
+            <div><div class="cta-ch-title">Telegram</div><div class="cta-ch-sub">Ответим в течение часа</div></div>
+            <div class="cta-ch-val">Открыть ↗</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -429,7 +165,7 @@
         </div>
       </div>
       <div class="f-col">
-        <h4>Услуги</h4>
+        <p class="footer-heading">Услуги</p>
         <ul>
           <li><a href="uslugi.html">Все услуги</a></li>
           <li><a href="frezerovka.html">Фрезерная обработка</a></li>
@@ -439,7 +175,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Компания</h4>
+        <p class="footer-heading">Компания</p>
         <ul>
           <li><a href="index.html#equipment">Оборудование</a></li>
           <li><a href="ceny.html">Цены</a></li>
@@ -449,7 +185,7 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4>Связаться</h4>
+        <p class="footer-heading">Связаться</p>
         <ul>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
@@ -466,5 +202,6 @@
 </footer>
 
 <script src="email-copy.js"></script>
+<script src="redesign.js"></script>
 </body>
 </html>
