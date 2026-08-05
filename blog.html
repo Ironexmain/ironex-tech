@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Блог о производстве металлических деталей — IRONEX</title>
-  <meta name="description" content="Практические статьи о заказе металлических деталей: как подготовить чертёж, выбрать технологию, сэкономить на серии и проверить качество при получении." />
+  <title>Редакционный план материалов о металлообработке — IRONEX</title>
+  <meta name="description" content="Темы будущих материалов IRONEX о заказе металлических деталей: подготовка чертежа, выбор технологии, экономика серии и контроль качества." />
+  <meta name="robots" content="noindex,follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -92,6 +93,7 @@
     .art-meta strong { color: var(--text); }
     .read-link { color: var(--amber2); font-weight: 700; text-decoration: none; font-size: 14px; }
     .read-link:hover { color: var(--amber); }
+    .article-status { color: var(--amber2); font-weight: 700; font-size: 12px; }
 
     /* GRID */
     .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 0 0 80px; }
@@ -161,7 +163,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://ironex.tech/blog.html"}]},
-    {"@type":"CollectionPage","url":"https://ironex.tech/blog.html","name":"Блог о производстве металлических деталей — IRONEX","description":"Практические статьи о заказе металлических деталей: как подготовить чертёж, выбрать технологию, сэкономить на серии и проверить качество при получении.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-07-14"}
+    {"@type":"CollectionPage","url":"https://ironex.tech/blog.html","name":"Редакционный план материалов о металлообработке — IRONEX","description":"Темы будущих практических материалов о заказе металлических деталей.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-04"}
   ]}
   </script>
   <!-- ═══ Яндекс Метрика 105009501 ═══ -->
@@ -226,27 +228,12 @@
   <div class="container">
     <div class="eyebrow" style="color:rgba(255,255,255,.5);">
       <span style="background:var(--amber);width:20px;height:2px;display:block;"></span>
-      Производственный журнал
+      Редакционный план
     </div>
-    <h1>Блог о производстве<br><em>металлических деталей</em></h1>
-    <p>Пишет технолог — без маркетинговой воды. Как подготовить чертёж, выбрать технологию, не переплатить за серию и получить детали точно в допуске.</p>
+    <h1>Готовим материалы о производстве<br><em>металлических деталей</em></h1>
+    <p>Ниже — темы в редакционном плане. Отдельные статьи появятся после технической проверки фактов и будут открываться с собственных страниц.</p>
   </div>
 </section>
-
-<!-- FILTERS -->
-<div class="filters">
-  <div class="container">
-    <div class="filter-list">
-      <button class="filter-btn active">Все статьи</button>
-      <button class="filter-btn">Заказчику</button>
-      <button class="filter-btn">Чертежи и допуски</button>
-      <button class="filter-btn">Технологии</button>
-      <button class="filter-btn">Материалы</button>
-      <button class="filter-btn">Контроль качества</button>
-      <button class="filter-btn">Экономика заказа</button>
-    </div>
-  </div>
-</div>
 
 <!-- FEATURED -->
 <div class="featured">
@@ -261,13 +248,7 @@
         <span class="art-cat">Заказчику</span>
         <h2>Как подготовить чертёж для передачи в производство: что обязательно, а что лишнее</h2>
         <p>Идеального комплекта документации для первого заказа не существует. Главное — файл, по которому технолог поймёт задачу. Разбираем форматы, минимальный набор данных и типичные ошибки, из-за которых расчёт затягивается на неделю.</p>
-        <div class="art-meta">
-          <span><strong>14 июля 2026</strong></span>
-          <span>·</span>
-          <span>8 мин чтения</span>
-          <span>·</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <div class="art-meta"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -276,14 +257,8 @@
       <div class="featured-body">
         <span class="art-cat">Экономика заказа</span>
         <h2>Почему серия из 50 деталей стоит дешевле, чем 5 × 10 деталей в разное время</h2>
-        <p>Большинство заказчиков не догадываются, что наладка ЧПУ-станка стоит одинаково для 1 и 100 деталей. Объясняем, из чего складывается цена, почему партия дешевле поштучного заказа и как правильно планировать закупку, чтобы экономить 20–40%.</p>
-        <div class="art-meta">
-          <span><strong>10 июля 2026</strong></span>
-          <span>·</span>
-          <span>7 мин чтения</span>
-          <span>·</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <p>Наладка и подготовка производства распределяются на весь объём партии. Разберём, из чего складывается цена и как выбрать размер партии без неподтверждённых обещаний экономии.</p>
+        <div class="art-meta"><span class="article-status">В редакционном плане</span></div>
       </div>
       <div class="featured-img">
         <img src="images/photos/prod-2039.webp" alt="Серийное производство деталей на ЧПУ" />
@@ -305,10 +280,7 @@
         <span class="art-cat">Контроль качества</span>
         <h3>Как проверить детали при получении, если у вас нет КИМ</h3>
         <p>Штангенциркуль, микрометр и шаблоны — что можно проверить самостоятельно на приёмке, а что требует лаборатории. Чек-лист для входного контроля партии.</p>
-        <div class="art-footer">
-          <span>7 июля 2026 · 6 мин</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -320,10 +292,7 @@
         <span class="art-cat">Технологии</span>
         <h3>Лазер, плазма или гидроабразив: как выбрать метод резки для вашей задачи</h3>
         <p>Три технологии — три разных компромисса по скорости, кромке, тепловому влиянию и цене. Таблица сравнения и алгоритм выбора по материалу и толщине.</p>
-        <div class="art-footer">
-          <span>3 июля 2026 · 8 мин</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -335,10 +304,7 @@
         <span class="art-cat">Материалы</span>
         <h3>Сталь, нержавейка или алюминий: как выбрать материал под нагрузку и среду</h3>
         <p>Не всегда нержавейка нужна там, где её заказывают. Разбираем ключевые свойства трёх самых распространённых материалов и даём критерии выбора без лишней теории.</p>
-        <div class="art-footer">
-          <span>29 июня 2026 · 7 мин</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -350,10 +316,7 @@
         <span class="art-cat">Чертежи и допуски</span>
         <h3>Допуски на чертеже: сколько нулей после запятой реально нужно вашей детали</h3>
         <p>Каждый лишний квалитет точности — это дополнительные деньги и время. Объясняем, как ISO 2768 закрывает большинство задач, и когда стоит указывать жёсткие допуски явно.</p>
-        <div class="art-footer">
-          <span>25 июня 2026 · 9 мин</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -365,10 +328,7 @@
         <span class="art-cat">Технологии</span>
         <h3>TIG, MIG или роботизированная сварка: когда что выбрать</h3>
         <p>Разные задачи — разная сварка. TIG даёт чистый шов на нержавейке, MIG быстрее на серии, робот незаменим при повторяемости. Разбираем, когда что применять и как это влияет на цену узла.</p>
-        <div class="art-footer">
-          <span>20 июня 2026 · 7 мин</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -380,10 +340,7 @@
         <span class="art-cat">Заказчику</span>
         <h3>Опытная партия: зачем делать 5 штук перед тиражом 500</h3>
         <p>Серийный брак обходится дорого — как финансово, так и по срокам. Рассказываем, что проверяют на опытной партии, как её результаты удешевляют серию и когда можно обойтись без неё.</p>
-        <div class="art-footer">
-          <span>15 июня 2026 · 6 мин</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -395,10 +352,7 @@
         <span class="art-cat">Технологии</span>
         <h3>5-осевая обработка: когда она нужна и почему не всегда стоит дороже</h3>
         <p>Пятиосевой центр может выполнить сложную деталь в одной установке — без переналадки, без погрешностей базирования. В правильной задаче это дешевле, чем три операции на трёхосевом станке.</p>
-        <div class="art-footer">
-          <span>10 июня 2026 · 8 мин</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -410,10 +364,7 @@
         <span class="art-cat">Материалы</span>
         <h3>Покрытия для металла: порошковая окраска, анодирование или цинкование — что выбрать</h3>
         <p>Выбор защитного покрытия зависит не только от внешнего вида, но и от среды эксплуатации, требований к адгезии и бюджета. Сравниваем три самых распространённых варианта.</p>
-        <div class="art-footer">
-          <span>5 июня 2026 · 6 мин</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -423,12 +374,9 @@
       </div>
       <div class="art-body">
         <span class="art-cat">Заказчику</span>
-        <h3>Полный цикл у одного подрядчика vs. несколько специализированных: в чём разница</h3>
-        <p>Кажется, что узкие специалисты делают лучше. Но каждая передача детали между подрядчиками — риск несоответствия, потеря времени и деньги на перевозку. Когда полный цикл выгоднее.</p>
-        <div class="art-footer">
-          <span>1 июня 2026 · 7 мин</span>
-          <a href="#" class="read-link">Читать →</a>
-        </div>
+        <h3>Как согласовать многооперационный маршрут изготовления детали</h3>
+        <p>Разберём, как зафиксировать последовательность операций, допуски, точки контроля и ответственность, чтобы избежать рассинхрона между этапами.</p>
+        <div class="art-footer"><span class="article-status">В редакционном плане</span></div>
       </div>
     </div>
 
@@ -484,8 +432,8 @@
         <h4>Услуги</h4>
         <ul>
           <li><a href="uslugi.html">Все услуги</a></li>
-          <li><a href="uslugi.html">Фрезерная обработка</a></li>
-          <li><a href="uslugi.html">Токарная обработка</a></li>
+          <li><a href="frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="tokarnaya.html">Токарная обработка</a></li>
           <li><a href="uslugi.html">Лазерная резка</a></li>
           <li><a href="uslugi.html">Сварка и сборка</a></li>
         </ul>
@@ -516,15 +464,6 @@
     </div>
   </div>
 </footer>
-
-<script>
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    });
-  });
-</script>
 
 <script src="email-copy.js"></script>
 </body>

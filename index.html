@@ -153,13 +153,15 @@
     .services { background: var(--white); }
     .services-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; margin-bottom: 52px; }
     .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border); border-radius: var(--r); overflow: hidden; }
-    .svc-cell { background: #fff; padding: 28px; transition: background .2s; }
+    .svc-cell { display: block; background: #fff; padding: 28px; transition: background .2s;
+                color: inherit; text-decoration: none; }
     .svc-cell:hover { background: #FFFBEB; }
     .svc-num  { font-size: 11px; font-weight: 700; color: var(--amber2); margin-bottom: 12px; }
     .svc-cell h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
     .svc-cell p  { font-size: 13px; color: var(--muted); line-height: 1.55; margin-bottom: 12px; }
     .svc-price { font-size: 12px; font-weight: 700; color: var(--text); }
     .svc-price span { color: var(--amber2); }
+    .svc-more { display: inline-block; margin-top: 12px; color: var(--amber2); font-size: 12px; font-weight: 700; }
 
     /* ── PROCESS ── */
     .process { background: var(--dark); color: #fff; }
@@ -282,6 +284,7 @@
       .footer-top   { grid-template-columns: 1fr; gap: 32px; }
       .hero-specs   { grid-template-columns: repeat(2, 1fr); }
       .stats-inner  { grid-template-columns: repeat(2, 1fr); }
+      .ind-grid     { grid-template-columns: 1fr; }
     }
   </style>
 
@@ -294,7 +297,7 @@
   {"@context":"https://schema.org","@graph":[
     {"@type":"Organization","@id":"https://ironex.tech/#org","name":"IRONEX","url":"https://ironex.tech","telephone":"+79934904024","email":"info@ironex.tech","description":"Контрактное производство металлических деталей по чертежам. Токарная и фрезерная обработка ЧПУ, лазерная резка, гибка, сварка, КИМ-контроль.","address":{"@type":"PostalAddress","addressCountry":"RU"},"contactPoint":{"@type":"ContactPoint","telephone":"+79934904024","contactType":"customer service","availableLanguage":"Russian"}},
     {"@type":"WebSite","@id":"https://ironex.tech/#website","name":"IRONEX","url":"https://ironex.tech","publisher":{"@id":"https://ironex.tech/#org"}},
-    {"@type":"WebPage","url":"https://ironex.tech/","name":"IRONEX — Контрактное производство деталей по чертежам","description":"Отправьте чертёж — вернём точную цену и срок за 3 рабочих дня. IRONEX: изготовление металлических деталей на ЧПУ. Фрезеровка, токарка, лазерная резка, гибка, сварка, КИМ-контроль. Без форм и посредников.","isPartOf":{"@id":"https://ironex.tech/#website"},"publisher":{"@id":"https://ironex.tech/#org"},"dateModified":"2026-07-16"}
+    {"@type":"WebPage","url":"https://ironex.tech/","name":"IRONEX — Контрактное производство деталей по чертежам","description":"Отправьте чертёж — вернём точную цену и срок за 3 рабочих дня. IRONEX: изготовление металлических деталей на ЧПУ. Фрезеровка, токарка, лазерная резка, гибка, сварка, КИМ-контроль. Без форм и посредников.","isPartOf":{"@id":"https://ironex.tech/#website"},"publisher":{"@id":"https://ironex.tech/#org"},"dateModified":"2026-08-04"}
   ]}
   </script>
   <!-- ═══ Яндекс Метрика 105009501 ═══ -->
@@ -357,7 +360,7 @@
       </div>
       <div class="hero-content">
         <div class="eyebrow eyebrow-light">Контрактное металлопроизводство</div>
-        <h1>Детали по чертежам — <em>полный цикл</em> под одной крышей</h1>
+        <h1>Детали по чертежам — <em>полный производственный цикл</em></h1>
         <p class="hero-lead">
           Пришлите чертёж — вернём точную цену и срок за 3 рабочих дня.
           Прямой контакт с технологом: без онлайн-форм, без колл-центра, без ожиданий.
@@ -445,8 +448,8 @@
 <section class="section equip" id="equipment">
   <div class="container">
     <div class="eyebrow">Парк оборудования</div>
-    <h2 class="h2">Собственный цех.<br><em>47 единиц ЧПУ-оборудования</em> на одной площадке.</h2>
-    <p class="lead">5-осевая фрезеровка, токарка, лазер 20 кВт, гибка до 150 т, сварка TIG·MIG, КИМ Hexagon — без перевозок между подрядчиками.</p>
+    <h2 class="h2">Собственный производственный парк.<br><em>47 единиц ЧПУ-оборудования.</em></h2>
+    <p class="lead">5-осевая фрезеровка, токарка, лазер 20 кВт, гибка до 150 т, сварка TIG·MIG и КИМ Hexagon — подбираем маршрут под чертёж и требования к детали.</p>
     <div class="equip-grid">
 
       <div class="equip-card">
@@ -539,23 +542,25 @@
         <div class="eyebrow">Услуги</div>
         <h2 class="h2">Любая операция —<br>от резки до окраски.</h2>
       </div>
-      <p class="lead">Вы присылаете чертёж — получаете готовую деталь. Без потерь времени между подрядчиками. Цены — ориентир, точная стоимость считается по чертежу.</p>
+      <p class="lead">Вы присылаете чертёж — мы согласуем маршрут и возвращаем готовую деталь. Цены — ориентир, точная стоимость считается по чертежу.</p>
     </div>
     <div class="svc-grid">
 
-      <div class="svc-cell">
+      <a class="svc-cell" href="frezerovka.html">
         <div class="svc-num">01</div>
         <h3>Фрезерная обработка ЧПУ</h3>
         <p>Hermle C500 / DMG Mori. Корпусные и фасонные детали в одной установке, точность ±0,005 мм.</p>
         <div class="svc-price">от <span>1 800 ₽</span> / нормо-час</div>
-      </div>
+        <span class="svc-more">Подробнее о фрезеровке →</span>
+      </a>
 
-      <div class="svc-cell">
+      <a class="svc-cell" href="tokarnaya.html">
         <div class="svc-num">02</div>
         <h3>Токарная обработка ЧПУ</h3>
         <p>DMG Mori NLX 2500 · приводной инструмент, ось C, противошпиндель. Серии до 50 000.</p>
         <div class="svc-price">от <span>1 200 ₽</span> / нормо-час</div>
-      </div>
+        <span class="svc-more">Подробнее о токарной обработке →</span>
+      </a>
 
       <div class="svc-cell">
         <div class="svc-num">03</div>
@@ -624,7 +629,7 @@
           <div class="step-num">01</div>
           <div class="step-body">
             <h4>Заявка и чертёж</h4>
-            <p>Присылаете файл: PDF, DWG, DXF, STEP, IGES, ZIP. NDA по запросу — чертежи не передаём третьим лицам.</p>
+            <p>Присылаете файл: PDF, DWG, DXF, STEP, IGES, ZIP. NDA и режим конфиденциальности согласуем до начала работ.</p>
             <div class="step-note">→ NDA по запросу</div>
           </div>
         </div>
@@ -846,11 +851,11 @@
     <div class="cta-inner">
       <div class="cta-left">
         <div class="eyebrow eyebrow-light">Связаться с нами</div>
-        <h2 class="h2" style="color:#fff;">Пришлите чертёж —<br><em>ответим за 1 день.</em></h2>
-        <p class="lead">Отправьте чертёж или опишите задачу — технолог вернётся с конкретной стоимостью, сроком и маршрутом. Не менеджер, а инженер.</p>
+        <h2 class="h2" style="color:#fff;">Пришлите чертёж —<br><em>подтвердим заявку за 1 рабочий день.</em></h2>
+        <p class="lead">Отправьте чертёж или опишите задачу. Технолог уточнит входные данные; точную стоимость, срок и маршрут подготовим в стандартный срок до 3 рабочих дней.</p>
         <div style="margin-top:28px;display:flex;flex-direction:column;gap:10px;">
           <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.5);">
-            <span style="color:var(--amber);font-size:16px;">✓</span> NDA по запросу — чертежи не передаём третьим лицам
+            <span style="color:var(--amber);font-size:16px;">✓</span> NDA по запросу — режим конфиденциальности фиксируем до начала работ
           </div>
           <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.5);">
             <span style="color:var(--amber);font-size:16px;">✓</span> Расчёт бесплатно, даже на этапе сравнения подрядчиков
@@ -923,8 +928,8 @@
       <div class="f-col">
         <h4>Услуги</h4>
         <ul>
-          <li><a href="#services">Токарная обработка</a></li>
-          <li><a href="#services">Фрезерная обработка</a></li>
+          <li><a href="tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="frezerovka.html">Фрезерная обработка</a></li>
           <li><a href="#services">Лазерная резка</a></li>
           <li><a href="#services">Гибка металла</a></li>
           <li><a href="#services">Сварка и сборка</a></li>

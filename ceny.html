@@ -151,7 +151,14 @@
       .factors-grid { grid-template-columns: 1fr; }
       .cta-bar-inner { grid-template-columns: 1fr; gap: 36px; }
       .footer-top { grid-template-columns: 1fr 1fr; }
+      .price-table, .price-table tbody, .price-table tr, .price-table td { display: block; width: 100%; }
+      .price-table thead { display: none; }
+      .price-table tr { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+      .price-table tr:last-child { border-bottom: none; }
+      .price-table td { padding: 3px 0; border: none; }
       .price-table td:nth-child(2) { display: none; }
+      .price-table td:last-child { text-align: left; white-space: normal; }
+      .price-table tr:hover td { background: transparent; }
     }
     @media (max-width: 480px) {
       .footer-top { grid-template-columns: 1fr; }
@@ -166,7 +173,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Цены","item":"https://ironex.tech/ceny.html"}]},
-    {"@type":"WebPage","url":"https://ironex.tech/ceny.html","name":"Цены на металлообработку — IRONEX","description":"Ориентировочные цены на токарную, фрезерную обработку, лазерную резку, гибку, сварку и покраску. Точный расчёт — по чертежу за 3 рабочих дня.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-07-14"}
+    {"@type":"WebPage","url":"https://ironex.tech/ceny.html","name":"Цены на металлообработку — IRONEX","description":"Ориентировочные цены на токарную, фрезерную обработку, лазерную резку, гибку, сварку и покраску. Точный расчёт — по чертежу за 3 рабочих дня.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-04"}
   ]}
   </script>
   <!-- ═══ Яндекс Метрика 105009501 ═══ -->
@@ -500,7 +507,7 @@
       <div class="factor-card">
         <div class="factor-num">06</div>
         <h3>Полный цикл vs. отдельные операции</h3>
-        <p>Заказ полного цикла у одного подрядчика дешевле, чем разделение по нескольким: нет перевозок, нет рассинхрона, нет дублирующего контроля.</p>
+        <p>Согласованный технологический маршрут помогает сократить лишние перевозки, повторные согласования и дублирующий контроль. Итоговый эффект зависит от состава операций и партии.</p>
       </div>
     </div>
   </div>
@@ -602,8 +609,8 @@
       <div class="f-col">
         <h4>Услуги</h4>
         <ul>
-          <li><a href="index.html#services">Фрезерная обработка</a></li>
-          <li><a href="index.html#services">Токарная обработка</a></li>
+          <li><a href="frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="tokarnaya.html">Токарная обработка</a></li>
           <li><a href="index.html#services">Лазерная резка</a></li>
           <li><a href="index.html#services">Гибка металла</a></li>
           <li><a href="index.html#services">Сварка и сборка</a></li>

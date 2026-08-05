@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Услуги металлообработки — IRONEX</title>
-  <meta name="description" content="Все виды металлообработки под одной крышей: токарка и фрезеровка ЧПУ, лазерная и гидроабразивная резка, гибка листа, сварка TIG·MIG, порошковая покраска и КИМ-контроль. Пришлите чертёж — посчитаем." />
+  <meta name="description" content="Услуги металлообработки: токарная и фрезерная обработка ЧПУ, лазерная и гидроабразивная резка, гибка листа, сварка TIG·MIG, порошковая покраска и КИМ-контроль. Пришлите чертёж — подготовим расчёт." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -88,6 +88,9 @@
     .svc-spec{font-size:11px;background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:3px 9px;font-weight:600;}
     .svc-price-badge{display:inline-block;font-size:12px;font-weight:700;color:var(--amber2);
                      background:var(--amber3);padding:4px 10px;border-radius:6px;margin-top:12px;}
+    .svc-detail-link{display:inline-block;margin:12px 0 0 12px;color:var(--amber2);font-size:12px;
+                     font-weight:700;text-decoration:none;}
+    .svc-detail-link:hover{color:var(--amber);}
 
     /* FULL-WIDTH SERVICE CARD */
     .svc-featured{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:32px;}
@@ -149,7 +152,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Услуги","item":"https://ironex.tech/uslugi.html"}]},
-    {"@type":"WebPage","url":"https://ironex.tech/uslugi.html","name":"Услуги металлообработки — IRONEX","description":"Полный цикл металлообработки: токарная и фрезерная обработка ЧПУ, лазерная резка, гибка, сварка, порошковая покраска, КИМ-контроль. Изготовление деталей по чертежам.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-07-14"},
+    {"@type":"WebPage","url":"https://ironex.tech/uslugi.html","name":"Услуги металлообработки — IRONEX","description":"Полный цикл металлообработки: токарная и фрезерная обработка ЧПУ, лазерная резка, гибка, сварка, порошковая покраска, КИМ-контроль. Изготовление деталей по чертежам.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-04"},
     {"@type":"Service","name":"Контрактная металлообработка по чертежам","provider":{"@id":"https://ironex.tech/#org"},"serviceType":"Металлообработка","description":"Полный цикл металлообработки: токарка ЧПУ, фрезеровка 5 осей, лазерная резка, гибка, сварка, порошковая покраска, КИМ-контроль каждой партии.","areaServed":{"@type":"Country","name":"Россия"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Услуги металлообработки","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Токарная обработка ЧПУ"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Фрезерная обработка 5 осей"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Лазерная резка металла"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Гибка листового металла"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Сварка и сборка"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Порошковая покраска"}}]}}
   ]}
   </script>
@@ -215,7 +218,7 @@
       <span style="background:var(--amber);width:20px;height:2px;display:block;"></span>Каталог услуг
     </div>
     <h1>Любая операция —<br><em>от резки до окраски.</em></h1>
-    <p>Полный цикл под одной крышей: вы присылаете чертёж, мы возвращаем готовую деталь. Без перевозок между подрядчиками, без рассинхрона допусков.</p>
+    <p>Вы присылаете чертёж — мы подбираем и согласуем технологический маршрут, контролируем допуски и возвращаем готовую деталь.</p>
     <div class="hero-badges">
       <span class="hbadge">✓ Расчёт за 3 дня</span>
       <span class="hbadge">✓ КИМ-контроль включён</span>
@@ -265,6 +268,7 @@
           <li>Шпиндель 12 000 об/мин</li>
         </ul>
         <div class="svc-price-badge">от 1 800 ₽ / нормо-час</div>
+        <a href="frezerovka.html" class="svc-detail-link">Подробнее о фрезеровке →</a>
       </div>
     </div>
 
@@ -278,6 +282,7 @@
           <span class="svc-spec">±0,008 мм</span>
         </div>
         <div class="svc-price-badge">от 1 200 ₽ / нормо-час</div>
+        <a href="tokarnaya.html" class="svc-detail-link">Подробнее о токарной обработке →</a>
       </div>
       <div class="svc-card">
         <div class="svc-card-icon">✨</div>
@@ -341,7 +346,7 @@
         <div class="eyebrow">Резка и раскрой</div>
         <h2 class="h2">Лазер, плазма,<br><em>гидроабразив</em></h2>
       </div>
-      <p class="lead">Три технологии под одной крышей — подбираем метод под материал, толщину и требования к кромке. Без передачи между подрядчиками.</p>
+      <p class="lead">Подбираем метод под материал, толщину, требования к кромке и последующий технологический маршрут детали.</p>
     </div>
     <div class="svc-grid">
       <div class="svc-card">
@@ -689,8 +694,8 @@
       <div class="f-col">
         <h4>Услуги</h4>
         <ul>
-          <li><a href="uslugi.html#mechobrabotka">Фрезерная обработка</a></li>
-          <li><a href="uslugi.html#mechobrabotka">Токарная обработка</a></li>
+          <li><a href="frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="tokarnaya.html">Токарная обработка</a></li>
           <li><a href="uslugi.html#rezka">Лазерная резка</a></li>
           <li><a href="uslugi.html#listovaya">Гибка металла</a></li>
           <li><a href="uslugi.html#svarka">Сварка и сборка</a></li>
