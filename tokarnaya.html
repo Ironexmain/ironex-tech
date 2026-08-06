@@ -78,7 +78,7 @@
     /* MATERIALS */
     .mat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
     .mat-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:20px 18px;}
-    .mat-card h4{font-size:14px;font-weight:800;margin-bottom:6px;}
+    body.redesign-precision .mat-card h3{font-size:14px;font-weight:800;margin-bottom:6px;}
     .mat-card p{font-size:12px;color:var(--muted);line-height:1.55;}
     .mat-card .mat-grade{font-size:11px;font-weight:700;color:var(--amber2);margin-top:8px;}
     /* EQUIP */
@@ -96,7 +96,7 @@
     .case-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s;}
     .case-card:hover .case-img img{transform:scale(1.04);}
     .case-body{padding:18px;}
-    .case-body h4{font-size:14px;font-weight:800;margin-bottom:6px;}
+    body.redesign-precision .case-body h3{font-size:14px;font-weight:800;margin-bottom:6px;}
     .case-body p{font-size:12px;color:var(--muted);line-height:1.55;}
     .case-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--amber2);background:var(--amber3);padding:3px 9px;border-radius:6px;margin-top:8px;}
     /* PROCESS */
@@ -104,7 +104,7 @@
     .process-steps::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:2px;background:var(--border);z-index:0;}
     .step{text-align:center;position:relative;z-index:1;padding:0 12px;}
     .step-num{width:56px;height:56px;border-radius:50%;background:var(--amber);color:var(--dark);font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
-    .step h4{font-size:13px;font-weight:700;margin-bottom:4px;}
+    body.redesign-precision .step h3{font-size:13px;font-weight:700;margin-bottom:4px;}
     .step p{font-size:12px;color:var(--muted);}
     /* CTA */
     .cta-bar{background:var(--dark);color:#fff;padding:72px 0;}
@@ -366,42 +366,42 @@
     <p class="lead" style="margin-bottom:36px;">Работаем с заготовками заказчика или закупаем материал с паспортом качества. Сертификаты на материал по запросу.</p>
     <div class="mat-grid">
       <div class="mat-card">
-        <h4>Конструкционная сталь</h4>
+        <h3>Конструкционная сталь</h3>
         <p>Валы, оси, шестерни, болты, гайки. Хорошая обрабатываемость, широкий типоряд прутков.</p>
         <div class="mat-grade">Ст45, 40Х, 30ХГСА, 20</div>
       </div>
       <div class="mat-card">
-        <h4>Нержавеющая сталь</h4>
+        <h3>Нержавеющая сталь</h3>
         <p>Детали насосов, фланцы трубопроводов, медицинские изделия. Аустенитные и мартенситные марки.</p>
         <div class="mat-grade">12Х18Н10Т, 14Х17Н2, 316L</div>
       </div>
       <div class="mat-card">
-        <h4>Алюминий</h4>
+        <h3>Алюминий</h3>
         <p>Лёгкие валы и корпуса, авиа- и автокомпоненты. Высокие скорости, хорошее качество поверхности.</p>
         <div class="mat-grade">Д16Т, В95, АМГ, 6061</div>
       </div>
       <div class="mat-card">
-        <h4>Медь и латунь</h4>
+        <h3>Медь и латунь</h3>
         <p>Электротехнические детали, сантехнические изделия, декоративные элементы.</p>
         <div class="mat-grade">М1, ЛС59, ЛМцА</div>
       </div>
       <div class="mat-card">
-        <h4>Бронза</h4>
+        <h3>Бронза</h3>
         <p>Подшипниковые втулки, червячные колёса, детали арматуры. Антифрикционные марки.</p>
         <div class="mat-grade">БрОЦС, БрАЖ9-4, БрБ2</div>
       </div>
       <div class="mat-card">
-        <h4>Чугун</h4>
+        <h3>Чугун</h3>
         <p>Корпуса, гильзы, направляющие. Серый и высокопрочный чугун. Хорошая виброгасящая способность.</p>
         <div class="mat-grade">СЧ20, ВЧ50, АЧС</div>
       </div>
       <div class="mat-card">
-        <h4>Титан</h4>
+        <h3>Титан</h3>
         <p>Медицинские имплантаты, аэрокосмические детали. Специальный режущий инструмент и СОЖ.</p>
         <div class="mat-grade">ВТ1-0, ВТ6, Grade 2</div>
       </div>
       <div class="mat-card">
-        <h4>Полимеры</h4>
+        <h3>Полимеры</h3>
         <p>Уплотнительные кольца, втулки скольжения, изоляторы. Фторопласт, капролон, полиамид.</p>
         <div class="mat-grade">PA6, PTFE, PEEK, POM</div>
       </div>
@@ -480,30 +480,30 @@
     <div class="cases-grid">
       <div class="case-card">
         <div class="case-img">
-          <img src="images/photos/prod-2035.webp" alt="Вал ступенчатый токарная обработка" loading="lazy" />
+          <img src="images/photos/prod-2035.webp" alt="Вал ступенчатый токарная обработка" width="733" height="1100" loading="lazy" />
         </div>
         <div class="case-body">
-          <h4>Вал ступенчатый 40Х</h4>
+          <h3>Вал ступенчатый 40Х</h3>
           <p>Токарная обработка с приводным инструментом. Посадочные поверхности k6, шпоночный паз, торцевое биение 0,01 мм. Серия 200 шт.</p>
           <span class="case-tag">сталь · вал · серия</span>
         </div>
       </div>
       <div class="case-card">
         <div class="case-img">
-          <img src="images/photos/prod-2039.webp" alt="Втулка бронзовая токарная обработка" loading="lazy" />
+          <img src="images/photos/prod-2039.webp" alt="Втулка бронзовая токарная обработка" width="1100" height="733" loading="lazy" />
         </div>
         <div class="case-body">
-          <h4>Втулка БрАЖ подшипниковая</h4>
+          <h3>Втулка БрАЖ подшипниковая</h3>
           <p>Антифрикционная бронза. Внутренняя поверхность H7, Ra 0,8 мкм. Наружный диаметр k6. Одиночный заказ — 1 шт.</p>
           <span class="case-tag">бронза · втулка · единичная</span>
         </div>
       </div>
       <div class="case-card">
         <div class="case-img">
-          <img src="images/photos/shop-01.webp" alt="Токарная деталь из нержавеющей стали" loading="lazy" />
+          <img src="images/photos/shop-01.webp" alt="Токарная деталь из нержавеющей стали" width="476" height="700" loading="lazy" />
         </div>
         <div class="case-body">
-          <h4>Фланец 316L для трубопровода</h4>
+          <h3>Фланец 316L для трубопровода</h3>
           <p>Нержавеющая сталь. Токарная обработка уплотнительных поверхностей Ra 1,6 мкм, сверление крепёжных отверстий. Партия 40 шт.</p>
           <span class="case-tag">нерж · фланец · химия</span>
         </div>
@@ -520,27 +520,27 @@
     <div class="process-steps">
       <div class="step">
         <div class="step-num">1</div>
-        <h4>Чертёж</h4>
+        <h3>Чертёж</h3>
         <p>Присылаете DXF, STEP, PDF или эскиз</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h4>Расчёт</h4>
+        <h3>Расчёт</h3>
         <p>Технолог считает цену и срок за 3 дня</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <h4>Производство</h4>
+        <h3>Производство</h3>
         <p>Токарная обработка на ЧПУ-центре</p>
       </div>
       <div class="step">
         <div class="step-num">4</div>
-        <h4>КИМ-контроль</h4>
+        <h3>КИМ-контроль</h3>
         <p>Каждая деталь проверяется КИМ</p>
       </div>
       <div class="step">
         <div class="step-num">5</div>
-        <h4>Отгрузка</h4>
+        <h3>Отгрузка</h3>
         <p>Доставка с протоколом измерений</p>
       </div>
     </div>

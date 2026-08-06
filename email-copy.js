@@ -39,15 +39,17 @@
   }
 
   function copyEmail(value) {
-    if (navigator.clipboard && window.isSecureContext) {
-      return navigator.clipboard.writeText(value);
-    }
-
     return new Promise(function (resolve, reject) {
       try {
         fallbackCopy(value);
         resolve();
+        return;
       } catch (error) {
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(value).then(resolve, reject);
+          return;
+        }
+
         reject(error);
       }
     });
