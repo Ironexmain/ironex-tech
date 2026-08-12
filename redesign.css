@@ -172,7 +172,10 @@ body.redesign-precision {
   -webkit-text-stroke: .25px currentColor;
 }
 
-.redesign-precision .nav-logo span,
+.redesign-precision .nav-logo span {
+  color: var(--amber2);
+}
+
 .redesign-precision .f-logo span {
   color: var(--amber);
 }
@@ -185,6 +188,12 @@ body.redesign-precision {
 .redesign-precision .nav-phone {
   color: #4f555c;
   font-size: 14px;
+}
+
+.redesign-precision .nav-inner .copy-icon {
+  color: #4f555c;
+  background: transparent;
+  border: 1px solid var(--border);
 }
 
 .redesign-precision .nav-links a:hover,
@@ -442,8 +451,7 @@ body.redesign-precision {
 }
 
 .redesign-precision .services,
-.redesign-precision .cases,
-.redesign-precision main > section:nth-of-type(even) {
+.redesign-precision .cases {
   background-color: var(--white);
 }
 
@@ -781,6 +789,11 @@ body.redesign-precision {
   border-color: #70767b;
 }
 
+.redesign-precision section[style*="background:var(--dark)"] .equip-spec {
+  color: #f5e6c5;
+  border-color: #8d7852;
+}
+
 .redesign-precision .process-steps::before {
   height: 1px;
   background: #b7b3aa;
@@ -993,6 +1006,10 @@ body.redesign-precision {
   font-size: 10px;
   font-weight: 600;
   letter-spacing: .03em;
+}
+
+.redesign-precision .contacts-section .email-contact-address {
+  color: var(--amber2);
 }
 
 .redesign-precision .svc-spec,
