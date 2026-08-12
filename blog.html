@@ -14,7 +14,7 @@
   <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
   <link rel="canonical" href="https://ironex.tech/blog.html" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://ironex.tech/blog.html"}]},{"@type":"CollectionPage","url":"https://ironex.tech/blog.html","name":"Блог о заказном изготовлении металлических деталей — IRONEX","description":"Практические материалы IRONEX для закупщиков и инженеров: чертежи, допуски, технологии, контроль качества, цена и сроки изготовления деталей.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-05"}]}
+  {"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://ironex.tech/blog.html"}]},{"@type":"CollectionPage","url":"https://ironex.tech/blog.html","name":"Блог о заказном изготовлении металлических деталей — IRONEX","description":"Практические материалы IRONEX для закупщиков и инженеров: чертежи, допуски, технологии, контроль качества, цена и сроки изготовления деталей.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-07"},{"@type":"ItemList","name":"Материалы блога IRONEX","itemListElement":[{"@type":"ListItem","position":1,"name":"Как составить заявку на изготовление деталей","url":"https://ironex.tech/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html"},{"@type":"ListItem","position":2,"name":"Почему партия меняет цену детали","url":"https://ironex.tech/blog/pochemu-partiya-menyaet-tsenu-detali.html"},{"@type":"ListItem","position":3,"name":"Как сравнивать коммерческие предложения на металлообработку","url":"https://ironex.tech/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku.html"}]}]}
   </script>
   <!-- ═══ Яндекс Метрика 105009501 ═══ -->
   <script type="text/javascript">
@@ -27,6 +27,17 @@
   </script>
   <link rel="stylesheet" href="email-copy.css" />
   <link rel="stylesheet" href="redesign.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Блог о заказном изготовлении металлических деталей — IRONEX" />
+  <meta property="og:description" content="Практические материалы IRONEX для закупщиков и инженеров: чертежи, допуски, технологии, контроль качества, цена и сроки изготовления деталей." />
+  <meta property="og:url" content="https://ironex.tech/blog.html" />
+  <meta property="og:image" content="https://ironex.tech/images/og.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Блог о заказном изготовлении металлических деталей — IRONEX" />
+  <meta name="twitter:description" content="Практические материалы IRONEX для закупщиков и инженеров: чертежи, допуски, технологии, контроль качества, цена и сроки изготовления деталей." />
+  <meta name="twitter:image" content="https://ironex.tech/images/og.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
 </head>
 <body class="redesign-precision editorial-page blog-index-page">
 <a class="skip-link" href="#main-content">Перейти к содержанию</a>
@@ -112,9 +123,35 @@
 
   <section class="editorial-archive" aria-label="Другие материалы">
     <div class="container">
-      <div class="editorial-archive-grid">
-        <!-- SEO ARTICLE LIST -->
+      <div class="editorial-filters" role="group" aria-label="Фильтр материалов">
+        <button type="button" class="is-active" data-blog-filter="all">Все материалы</button>
+        <button type="button" data-blog-filter="zakazchiku">Заказчику</button>
+        <button type="button" data-blog-filter="ekonomika-zakaza">Экономика заказа</button>
+        <button type="button" data-blog-filter="tehnologii">Технологии</button>
       </div>
+      <div class="editorial-archive-grid" data-blog-grid data-page-size="6">
+        <!-- SEO ARTICLE LIST -->
+        <a class="editorial-archive-card" data-seo-slug="pochemu-partiya-menyaet-tsenu-detali" data-category="ekonomika-zakaza" href="blog/pochemu-partiya-menyaet-tsenu-detali.html">
+          <figure class="editorial-archive-media"><img src="/images/blog/pochemu-partiya-menyaet-tsenu-detali-cover.webp" alt="Схема распределения затрат при изготовлении партии металлических деталей" width="1200" height="675" loading="lazy" decoding="async" /></figure>
+          <div class="editorial-archive-copy">
+          <div class="editorial-archive-meta"><span>Экономика заказа</span><span>7 минут</span></div>
+          <h3>Почему партия меняет цену детали</h3>
+          <p>Почему цена одной детали зависит от размера партии: подготовка производства, материал, цикл обработки, контроль, упаковка и повторные заказы.</p>
+          <span class="read-link">Открыть материал ↗</span>
+          </div>
+        </a>
+        <a class="editorial-archive-card" data-seo-slug="kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku" data-category="zakazchiku" href="blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku.html">
+          <figure class="editorial-archive-media"><img src="/images/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku-cover.webp" alt="Таблица сравнения коммерческих предложений на изготовление металлических деталей" width="1200" height="675" loading="lazy" decoding="async" /></figure>
+          <div class="editorial-archive-copy">
+          <div class="editorial-archive-meta"><span>Заказчику</span><span>8 минут</span></div>
+          <h3>Как сравнивать коммерческие предложения на металлообработку</h3>
+          <p>Как сопоставить коммерческие предложения на металлообработку по цене, сроку, составу работ, контролю и условиям поставки — без скрытых различий.</p>
+          <span class="read-link">Открыть материал ↗</span>
+          </div>
+        </a>
+      </div>
+      <p class="editorial-empty" data-blog-empty hidden>В этой категории пока нет материалов. Выберите другую тему или вернитесь ко всем статьям.</p>
+      <nav class="blog-pagination" data-blog-pagination aria-label="Страницы блога" hidden></nav>
     </div>
   </section>
 

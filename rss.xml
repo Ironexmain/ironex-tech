@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Блог IRONEX</title>
+    <link>https://ironex.tech/blog.html</link>
+    <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
+    <language>ru</language>
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как сравнивать коммерческие предложения на металлообработку</title>
+      <link>https://ironex.tech/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku.html</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0300</pubDate>
+      <description>Как сопоставить коммерческие предложения по цене, сроку, составу работ, контролю и условиям поставки.</description>
+    </item>
+    <item>
+      <title>Почему партия меняет цену детали</title>
+      <link>https://ironex.tech/blog/pochemu-partiya-menyaet-tsenu-detali.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/pochemu-partiya-menyaet-tsenu-detali.html</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0300</pubDate>
+      <description>Как подготовка производства, материал, цикл обработки, контроль и логистика влияют на цену детали в партии.</description>
+    </item>
+    <item>
+      <title>Как составить заявку на изготовление деталей</title>
+      <link>https://ironex.tech/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0300</pubDate>
+      <description>12 пунктов, которые помогут подрядчику рассчитать цену, срок и технологию производства без лишней переписки.</description>
+    </item>
+  </channel>
+</rss>
