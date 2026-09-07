@@ -70,6 +70,35 @@
   var activeFilter = "all";
   var activePage = 1;
 
+  function validFilter(value) {
+    return filters.some(function (filter) {
+      return filter.getAttribute("data-blog-filter") === value;
+    }) ? value : "all";
+  }
+
+  function readLocation() {
+    var params = new URLSearchParams(window.location.search);
+    activeFilter = validFilter(params.get("category") || "all");
+    activePage = Math.max(1, Number(params.get("page")) || 1);
+  }
+
+  function stateHref(filter, page) {
+    var params = new URLSearchParams();
+    if (filter !== "all") params.set("category", filter);
+    if (page > 1) params.set("page", String(page));
+    var query = params.toString();
+    return "blog.html" + (query ? "?" + query : "") + "#materials";
+  }
+
+  function setLocation(push) {
+    if (!window.history || !window.history.pushState) return;
+    window.history[push ? "pushState" : "replaceState"](
+      { category: activeFilter, page: activePage },
+      "",
+      stateHref(activeFilter, activePage)
+    );
+  }
+
   function filteredCards() {
     return cards.filter(function (card) {
       return activeFilter === "all" || card.getAttribute("data-category") === activeFilter;
@@ -81,22 +110,25 @@
     pagination.innerHTML = "";
     pagination.hidden = pageCount <= 1;
     for (var page = 1; page <= pageCount; page += 1) {
-      var button = document.createElement("button");
-      button.type = "button";
-      button.textContent = String(page);
-      button.setAttribute("aria-label", "Страница " + page);
+      var link = document.createElement("a");
+      link.href = stateHref(activeFilter, page);
+      link.textContent = String(page);
+      link.setAttribute("aria-label", "Страница " + page);
       if (page === activePage) {
-        button.className = "is-active";
-        button.setAttribute("aria-current", "page");
+        link.className = "is-active";
+        link.setAttribute("aria-current", "page");
       }
-      button.addEventListener("click", (function (nextPage) {
-        return function () {
+      link.addEventListener("click", (function (nextPage) {
+        return function (event) {
+          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
           activePage = nextPage;
           render();
+          setLocation(true);
           grid.scrollIntoView({ behavior: "smooth", block: "start" });
         };
       })(page));
-      pagination.appendChild(button);
+      pagination.appendChild(link);
     }
   }
 
@@ -109,21 +141,32 @@
       card.hidden = false;
     });
     if (empty) empty.hidden = visible.length !== 0;
+    filters.forEach(function (item) {
+      var current = item.getAttribute("data-blog-filter") === activeFilter;
+      item.classList.toggle("is-active", current);
+      if (current) item.setAttribute("aria-current", "true");
+      else item.removeAttribute("aria-current");
+    });
     renderPagination(visible.length ? pageCount : 0);
   }
 
-  filters.forEach(function (button) {
-    button.addEventListener("click", function () {
-      activeFilter = button.getAttribute("data-blog-filter") || "all";
+  filters.forEach(function (filter) {
+    filter.addEventListener("click", function (event) {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      activeFilter = filter.getAttribute("data-blog-filter") || "all";
       activePage = 1;
-      filters.forEach(function (item) {
-        var current = item === button;
-        item.classList.toggle("is-active", current);
-        item.setAttribute("aria-pressed", String(current));
-      });
       render();
+      setLocation(true);
+      grid.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
 
+  window.addEventListener("popstate", function () {
+    readLocation();
+    render();
+  });
+
+  readLocation();
   render();
 })();

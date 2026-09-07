@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="825" viewBox="0 0 1100 825" role="img" aria-labelledby="title desc">
+  <title id="title">Схема подшипниковой втулки</title>
+  <desc id="desc">Продольный разрез подшипниковой втулки с обозначениями внутренней посадки H7, наружной посадки k6 и шероховатости Ra 0,8.</desc>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#d8d4ca" stroke-width="1"/></pattern>
+    <pattern id="bronze" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0V14" stroke="#8e551f" stroke-width="4"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#17191c"/></marker>
+  </defs>
+  <rect width="1100" height="825" fill="#f3f1eb"/>
+  <rect x="28" y="28" width="1044" height="769" fill="url(#grid)" stroke="#17191c" stroke-width="2"/>
+  <path d="M66 92H214" stroke="#f2a900" stroke-width="8"/>
+  <text x="66" y="132" fill="#17191c" font-family="IBM Plex Mono, monospace" font-size="23" font-weight="600" letter-spacing="3">ПРОДОЛЬНЫЙ РАЗРЕЗ</text>
+  <text x="66" y="205" fill="#17191c" font-family="IBM Plex Sans, sans-serif" font-size="62" font-weight="700">Втулка БрАЖ</text>
+  <g transform="translate(70 260)">
+    <path d="M170 120H760V420H170Z" fill="url(#bronze)" stroke="#17191c" stroke-width="9"/>
+    <path d="M170 210H760V330H170Z" fill="#f3f1eb" stroke="#17191c" stroke-width="7"/>
+    <path d="M170 120L92 170V370L170 420Z" fill="#c8873c" stroke="#17191c" stroke-width="9"/>
+    <path d="M170 210L132 228V312L170 330Z" fill="#f3f1eb" stroke="#17191c" stroke-width="7"/>
+    <path d="M128 72H762" stroke="#17191c" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <path d="M128 88V118M762 88V118" stroke="#17191c" stroke-width="3"/>
+    <text x="356" y="52" fill="#17191c" font-family="IBM Plex Mono, monospace" font-size="21" font-weight="600">НАРУЖНАЯ k6</text>
+    <path d="M804 210V330" stroke="#17191c" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <path d="M760 210H828M760 330H828" stroke="#17191c" stroke-width="3"/>
+    <text x="842" y="278" fill="#17191c" font-family="IBM Plex Mono, monospace" font-size="21" font-weight="600">H7</text>
+    <path d="M284 254H650" stroke="#f2a900" stroke-width="6" stroke-dasharray="18 10"/>
+    <text x="340" y="500" fill="#17191c" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="600">ВНУТРЕННЯЯ Ra 0,8</text>
+  </g>
+</svg>

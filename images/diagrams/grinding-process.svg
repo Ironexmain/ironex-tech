@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="825" viewBox="0 0 1100 825" role="img" aria-labelledby="title desc">
+  <title id="title">Схема финишного шлифования</title>
+  <desc id="desc">Шлифовальный круг обрабатывает цилиндрическую поверхность детали; показаны направление вращения и шероховатость.</desc>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#d8d4ca" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <path d="M0 0V12" stroke="#a5a097" stroke-width="3"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#17191c"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="825" fill="#f3f1eb"/>
+  <rect x="28" y="28" width="1044" height="769" fill="url(#grid)" stroke="#17191c" stroke-width="2"/>
+  <path d="M66 92H214" stroke="#f2a900" stroke-width="8"/>
+  <text x="66" y="132" fill="#17191c" font-family="IBM Plex Mono, monospace" font-size="23" font-weight="600" letter-spacing="3">ФИНИШНАЯ ОПЕРАЦИЯ</text>
+  <text x="66" y="205" fill="#17191c" font-family="IBM Plex Sans, sans-serif" font-size="62" font-weight="700">Шлифование</text>
+  <g transform="translate(0 8)">
+    <circle cx="760" cy="350" r="172" fill="#e0ddd4" stroke="#17191c" stroke-width="10"/>
+    <circle cx="760" cy="350" r="65" fill="#f3f1eb" stroke="#17191c" stroke-width="8"/>
+    <path d="M681 198A172 172 0 0 1 914 314" fill="none" stroke="#f2a900" stroke-width="18" stroke-linecap="square"/>
+    <path d="M625 271A172 172 0 0 1 671 213" fill="none" stroke="#17191c" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="144" y="482" width="712" height="112" rx="56" fill="url(#hatch)" stroke="#17191c" stroke-width="8"/>
+    <rect x="118" y="457" width="80" height="162" fill="#17191c"/>
+    <rect x="828" y="457" width="80" height="162" fill="#17191c"/>
+    <path d="M154 658H872" stroke="#17191c" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <path d="M154 620V684M872 620V684" stroke="#17191c" stroke-width="3"/>
+    <text x="417" y="706" fill="#17191c" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="600">КРУГЛОЕ + ПЛОСКОЕ</text>
+  </g>
+  <g transform="translate(66 254)">
+    <rect width="310" height="104" fill="#17191c"/>
+    <text x="24" y="42" fill="#f3f1eb" font-family="IBM Plex Mono, monospace" font-size="18" letter-spacing="2">ШЕРОХОВАТОСТЬ</text>
+    <text x="24" y="80" fill="#f2a900" font-family="IBM Plex Sans, sans-serif" font-size="32" font-weight="700">Ra 0,2–0,4</text>
+  </g>
+</svg>

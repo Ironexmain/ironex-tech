@@ -14,7 +14,7 @@
   <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
   <link rel="canonical" href="https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Фрезерная обработка по чертежу: подготовка 3D-модели","description":"Фрезерная обработка по чертежу: как подготовить 3D-модель за 7 шагов, убрать лишние тела и избежать противоречий при расчёте детали.","datePublished":"2026-08-29","dateModified":"2026-08-29","mainEntityOfPage":"https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html","author":{"@type":"Organization","name":"Редакция IRONEX"},"publisher":{"@id":"https://ironex.tech/#org"},"image":"https://ironex.tech/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://ironex.tech/blog.html"},{"@type":"ListItem","position":3,"name":"Фрезерная обработка по чертежу: подготовка 3D-модели","item":"https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Можно ли рассчитать деталь без 3D-модели?","acceptedAnswer":{"@type":"Answer","text":"Да, если чертёж однозначно описывает геометрию, размеры и технические требования. Для сложной пространственной формы исполнитель может запросить модель дополнительно."}},{"@type":"Question","name":"Какой формат лучше: STEP или IGES?","acceptedAnswer":{"@type":"Answer","text":"Для твердотельной модели обычно удобен STEP. IGES также принимается, но после экспорта важно проверить целостность поверхностей и соответствие габаритов."}},{"@type":"Question","name":"Нужно ли добавлять допуски прямо в 3D-модель?","acceptedAnswer":{"@type":"Answer","text":"Необязательно. Надёжнее передать номинальную геометрию в модели, а допуски, шероховатость и требования к контролю зафиксировать в чертеже или техническом задании."}},{"@type":"Question","name":"Можно ли отправить сборку вместо отдельных деталей?","acceptedAnswer":{"@type":"Answer","text":"Сборку можно приложить для понимания взаимного положения компонентов. Для расчёта каждой позиции лучше также передать отдельную модель без крепежа и лишних тел."}},{"@type":"Question","name":"Что делать, если чертёж и модель различаются?","acceptedAnswer":{"@type":"Answer","text":"Не отправлять комплект без пояснения. Сначала синхронизируйте документы либо письменно укажите актуальную ревизию и источник, который следует считать главным."}}]}]}
+  {"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Фрезерная обработка по чертежу: подготовка 3D-модели","description":"Фрезерная обработка по чертежу: как подготовить 3D-модель за 7 шагов, убрать лишние тела и избежать противоречий при расчёте детали.","datePublished":"2026-08-29","dateModified":"2026-08-29","mainEntityOfPage":"https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html","author":{"@type":"Organization","name":"Редакция IRONEX"},"publisher":{"@id":"https://ironex.tech/#org"},"image":"https://ironex.tech/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover-v2.webp"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://ironex.tech/blog.html"},{"@type":"ListItem","position":3,"name":"Фрезерная обработка по чертежу: подготовка 3D-модели","item":"https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Можно ли рассчитать деталь без 3D-модели?","acceptedAnswer":{"@type":"Answer","text":"Да, если чертёж однозначно описывает геометрию, размеры и технические требования. Для сложной пространственной формы исполнитель может запросить модель дополнительно."}},{"@type":"Question","name":"Какой формат лучше: STEP или IGES?","acceptedAnswer":{"@type":"Answer","text":"Для твердотельной модели обычно удобен STEP. IGES также принимается, но после экспорта важно проверить целостность поверхностей и соответствие габаритов."}},{"@type":"Question","name":"Нужно ли добавлять допуски прямо в 3D-модель?","acceptedAnswer":{"@type":"Answer","text":"Необязательно. Надёжнее передать номинальную геометрию в модели, а допуски, шероховатость и требования к контролю зафиксировать в чертеже или техническом задании."}},{"@type":"Question","name":"Можно ли отправить сборку вместо отдельных деталей?","acceptedAnswer":{"@type":"Answer","text":"Сборку можно приложить для понимания взаимного положения компонентов. Для расчёта каждой позиции лучше также передать отдельную модель без крепежа и лишних тел."}},{"@type":"Question","name":"Что делать, если чертёж и модель различаются?","acceptedAnswer":{"@type":"Answer","text":"Не отправлять комплект без пояснения. Сначала синхронизируйте документы либо письменно укажите актуальную ревизию и источник, который следует считать главным."}}]}]}
   </script>
   <!-- ═══ Яндекс Метрика 105009501 ═══ -->
   <script type="text/javascript">
@@ -26,19 +26,19 @@
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
   <link rel="stylesheet" href="/email-copy.css" />
-  <link rel="stylesheet" href="/redesign.css" />
+  <link rel="stylesheet" href="/redesign.css?v=20260907-4" />
 
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Фрезерная обработка по чертежу: подготовка 3D-модели" />
   <meta property="og:description" content="Фрезерная обработка по чертежу: как подготовить 3D-модель за 7 шагов, убрать лишние тела и избежать противоречий при расчёте детали." />
   <meta property="og:url" content="https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html" />
-  <meta property="og:image" content="https://ironex.tech/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover-v2.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="675" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Фрезерная обработка по чертежу: подготовка 3D-модели" />
   <meta name="twitter:description" content="Фрезерная обработка по чертежу: как подготовить 3D-модель за 7 шагов, убрать лишние тела и избежать противоречий при расчёте детали." />
-  <meta name="twitter:image" content="https://ironex.tech/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp" />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover-v2.webp" />
   <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
 </head>
 <body class="redesign-precision editorial-page article-page">
@@ -89,16 +89,16 @@
 
   <section class="editorial-article-hero">
     <div class="container">
-      <div class="editorial-kicker"><span>IRONEX / БАЗА ЗНАНИЙ</span><span>МАТЕРИАЛ 01</span></div>
-  <span class="art-cat">Чертежи и допуски</span>
+
+
   <h1>Фрезерная обработка по чертежу: подготовка 3D-модели</h1>
   <p class="article-lede">Фрезерная обработка по чертежу: как подготовить 3D-модель за 7 шагов, убрать лишние тела и избежать противоречий при расчёте детали.</p>
-  <div class="article-meta"><span>Редакция IRONEX</span><span>Обновлено: 2026-08-29 · 9 мин</span></div>
+  <div class="article-meta"><span>Чертежи и допуски</span><span>Редакция IRONEX</span><time datetime="2026-08-29">Обновлено: 29 августа 2026</time><span>9 минут</span></div>
 </div>
   </section>
 
   <figure class="article-cover-frame">
-    <img class="article-cover" src="/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp" alt="Инженер проверяет STEP-модель металлической детали перед расчётом фрезерной обработки" width="1200" height="675" fetchpriority="high" decoding="async" />
+    <img class="article-cover" src="/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover-v2.webp" alt="Инженерная схема к статье «Фрезерная обработка по чертежу: подготовка 3D-модели»" width="1344" height="768" fetchpriority="high" decoding="async" />
     <figcaption><span>Материал IRONEX</span><span>IRONEX / 2026</span></figcaption>
   </figure>
 
@@ -106,7 +106,7 @@
   <div class="reading-progress" aria-hidden="true"><span></span></div>
   <div class="container article-layout">
     <aside class="article-toc" aria-label="Содержание статьи">
-      <div class="article-toc-index">Содержание / 06</div>
+
       <strong>В статье</strong>
       <a href="#kogda-nuzhna-model"><span>01</span>Когда нужна 3D-модель</a>
       <a href="#podhodyashie-formaty"><span>02</span>В каком формате передавать модель</a>
@@ -259,9 +259,28 @@
 <p>Не отправлять комплект без пояснения. Сначала синхронизируйте документы либо письменно укажите актуальную ревизию и источник, который следует считать главным.</p></article>
   </div>
   <section class="article-author" aria-label="Об авторе">
-    <div class="container article-author-inner"><p class="article-support-label">Автор материала</p><strong>Редакция IRONEX</strong><span>Практические материалы о металлообработке</span></div>
+    <div class="container article-author-inner"><strong>Редакция IRONEX</strong><span>Практические материалы о металлообработке</span></div>
   </section>
-  
+  <section class="article-related" aria-labelledby="related-title">
+    <div class="container">
+      <h2 id="related-title">Материалы по теме</h2>
+      <div class="article-related-grid">
+        <a class="article-related-card" href="/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu.html"><strong>Корпуса на заказ: как подготовить чертёж и модель</strong><span>Семь пунктов для подготовки модели, баз, резьб, покрытия и контроля — чтобы подрядчик точнее рассчитал изготовление корпуса.</span></a>
+        <a class="article-related-card" href="/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku.html"><strong>Сварка на заказ: документация на сварную сборку</strong><span>Сварка на заказ без спорных швов: 7 пунктов документации помогут согласовать сборочные базы, контроль геометрии и финишную обработку изделия.</span></a>
+        <a class="article-related-card" href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html"><strong>Гибка металла на заказ: что приложить к заявке</strong><span>Гибка металла на заказ: 7 данных для расчёта без лишних уточнений — развёртка, материал, толщина, радиусы, количество, допуски и требования к поверхности.</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="article-final-cta" aria-labelledby="article-cta-title">
+    <div class="container article-final-cta-inner">
+      <div>
+        <h2 id="article-cta-title">Нужен расчёт деталей по вашим чертежам?</h2>
+        <p>Пришлите документацию и количество. Технолог проверит задачу и вернётся с вопросами, стоимостью и сроком.</p>
+      </div>
+      <a class="btn btn-amber" href="mailto:info@ironex.tech">Отправить чертёж</a>
+    </div>
+  </section>
+
   <button class="back-to-top" type="button" aria-label="Вернуться к началу страницы">↑</button>
 </main>
 

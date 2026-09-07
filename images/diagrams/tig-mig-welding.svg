@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="825" viewBox="0 0 1100 825" role="img" aria-labelledby="title desc">
+  <title id="title">Схема TIG и MIG/MAG сварки</title>
+  <desc id="desc">Две упрощённые схемы показывают отдельный присадочный пруток TIG и подачу проволоки MIG/MAG.</desc>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#d8d4ca" stroke-width="1"/></pattern>
+    <pattern id="metal" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(25)"><path d="M0 0V14" stroke="#9b978f" stroke-width="3"/></pattern>
+  </defs>
+  <rect width="1100" height="825" fill="#f3f1eb"/>
+  <rect x="28" y="28" width="1044" height="769" fill="url(#grid)" stroke="#17191c" stroke-width="2"/>
+  <path d="M66 92H214" stroke="#f2a900" stroke-width="8"/>
+  <text x="66" y="132" fill="#17191c" font-family="IBM Plex Mono, monospace" font-size="23" font-weight="600" letter-spacing="3">РУЧНЫЕ ПОСТЫ</text>
+  <text x="66" y="205" fill="#17191c" font-family="IBM Plex Sans, sans-serif" font-size="62" font-weight="700">TIG / MIG</text>
+  <path d="M550 245V748" stroke="#17191c" stroke-width="2" stroke-dasharray="10 12"/>
+  <g transform="translate(75 252)">
+    <text x="0" y="40" fill="#17191c" font-family="IBM Plex Mono, monospace" font-size="25" font-weight="700">TIG</text>
+    <text x="0" y="76" fill="#6d6f73" font-family="IBM Plex Sans, sans-serif" font-size="20">нержавейка · алюминий</text>
+    <path d="M104 128L260 284" stroke="#17191c" stroke-width="36" stroke-linecap="square"/>
+    <path d="M256 280L302 326" stroke="#f2a900" stroke-width="8"/>
+    <path d="M385 188L306 326" stroke="#17191c" stroke-width="10"/>
+    <path d="M0 388H214L286 326L358 388H470V470H0Z" fill="url(#metal)" stroke="#17191c" stroke-width="7"/>
+    <path d="M267 330Q286 300 305 330" fill="none" stroke="#f2a900" stroke-width="13"/>
+  </g>
+  <g transform="translate(600 252)">
+    <text x="0" y="40" fill="#17191c" font-family="IBM Plex Mono, monospace" font-size="25" font-weight="700">MIG / MAG</text>
+    <text x="0" y="76" fill="#6d6f73" font-family="IBM Plex Sans, sans-serif" font-size="20">конструкционная сталь</text>
+    <path d="M98 126L270 298" stroke="#17191c" stroke-width="54" stroke-linecap="square"/>
+    <path d="M246 274L306 334" stroke="#e0ddd4" stroke-width="14"/>
+    <path d="M135 88L306 334" stroke="#f2a900" stroke-width="7"/>
+    <path d="M0 388H214L286 326L358 388H430V470H0Z" fill="url(#metal)" stroke="#17191c" stroke-width="7"/>
+    <path d="M267 330Q286 300 305 330" fill="none" stroke="#f2a900" stroke-width="13"/>
+  </g>
+</svg>
