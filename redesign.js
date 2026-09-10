@@ -5,7 +5,35 @@
   // не то, что на десктопе.
   var header = document.querySelector('.site-header');
   var burger = document.querySelector('.burger, .hamburger');
-  if (!header || !burger) return;
+  if (!burger) return;
+
+  // Старые страницы сайта живут на прежней разметке: там нет .site-header,
+  // а меню — отдельный блок, который открывается классом .open. Пока обе
+  // версии стоят рядом на одном домене, один скрипт обслуживает обе.
+  if (!header) {
+    var legacy = burger.getAttribute('aria-controls');
+    var menu = legacy && document.getElementById(legacy);
+    if (!menu) return;
+    var setLegacy = function (open) {
+      menu.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+    };
+    burger.addEventListener('click', function () {
+      setLegacy(burger.getAttribute('aria-expanded') !== 'true');
+    });
+    menu.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setLegacy(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        setLegacy(false);
+        burger.focus();
+      }
+    });
+    setLegacy(false);
+    return;
+  }
 
   function setOpen(open) {
     header.classList.toggle('is-open', open);

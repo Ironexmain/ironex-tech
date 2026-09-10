@@ -743,3 +743,9 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
 /* Тёмный экран уже отделяет себя фоном — полный отступ секции сверху лишний */
 .hero--page + .section { padding-top: clamp(40px, 5vw, 68px); }
 .hero__panel dd a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Инициалы вместо портрета: реального фото Антона пока нет, а сгенерированное
+   лицо рядом с настоящим именем — обман читателя. Вернём <img> в .avatar,
+   когда придёт фотография. */
+.avatar > span { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  background: var(--teal); color: #fff; font-size: 15px; font-weight: 700; letter-spacing: .02em; }
