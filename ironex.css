@@ -114,11 +114,6 @@ p { margin: 0 0 18px; }
 }
 .label--signal { color: var(--signal); }
 
-/* Заголовок секции с выносной линией — приём из чертежа, а не декор */
-.rule-label { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
-.rule-label::before {
-  content: ""; width: 36px; height: 1px; flex: none; background: var(--line-strong);
-}
 
 /* Размерная линия: разделяет смысловые части длинной страницы */
 .dim {
@@ -525,8 +520,8 @@ p { margin: 0 0 18px; }
    на всех коммерческих страницах). */
 
 /* Метка над заголовком — пара, но не сросшаяся: 6 px читались как опечатка */
-.label + h1, .label + h2, .label + h3,
-.rule-label + h1, .rule-label + h2, .rule-label + h3 { margin-top: 12px; }
+.label + h1, .label + h2, .label + h3 { margin-top: 12px; }
+
 
 h1 + .lede, h2 + .lede, h3 + .lede,
 h1 + p, h2 + p, h3 + p,
@@ -547,3 +542,73 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
 
 .panel > * + *, .callout > * + *, .rail__card > * + * { margin-top: 12px; }
 .statement h2 + p { margin-top: 16px; }
+
+/* ═══ Идентичность v2.1 «Цех в кадре» ═══════════════════════════════════════
+   Направление выбрано 10.09 по макету поблочной генерации (SAYT.md, фаза 4).
+   Тёмный верх — шапка и первый экран, светлое тело, тёмный закрывающий блок.
+   Тёмное сверху и снизу держит страницу как переплёт: между ними светлая
+   середина читается легче, а первый экран получает контраст, которого не было. */
+
+:root {
+  --coal: #14191A;          /* земля тёмного верха */
+  --coal-2: #1D2426;        /* блок внутри тёмного верха */
+  --on-dark: #FFFFFF;
+  --on-dark-2: #A9B4B5;
+}
+
+/* ── Шапка ─────────────────────────────────────────────────────────────── */
+.site-header { background: var(--coal); border-bottom: 0; }
+.site-header .logo { color: var(--on-dark); }
+.site-header .logo span { color: var(--on-dark); }
+.site-header .nav a { color: var(--on-dark-2); }
+.site-header .nav a:hover, .site-header .nav a[aria-current] { color: var(--on-dark); }
+.site-header__phone { color: var(--on-dark); }
+.burger span { background: var(--on-dark); }
+@media (max-width: 860px) {
+  .site-header.is-open .nav { background: var(--coal); border-bottom-color: rgba(255,255,255,.12); }
+  .site-header.is-open .nav a { border-bottom-color: rgba(255,255,255,.10); color: var(--on-dark); }
+  .site-header.is-open .nav::after { color: var(--on-dark); }
+}
+
+/* ── Первый экран ──────────────────────────────────────────────────────── */
+.hero { padding-block: 0 0; color: var(--on-dark); background: var(--coal); }
+.hero__inner { padding-block: clamp(44px, 6vw, 84px) clamp(28px, 4vw, 44px); background: var(--coal-2); }
+.hero h1 {
+  max-width: 17ch; margin: 0 0 20px; color: var(--on-dark);
+  font-size: clamp(38px, 6.2vw, 82px); font-weight: 800; line-height: 1.0; letter-spacing: -.04em;
+}
+.hero p { max-width: 54ch; margin: 0 0 28px; color: var(--on-dark-2); font-size: clamp(16px, 1.6vw, 19px); }
+/* Сигнальная точка ставится в конце фразы про срок — метит ровно то, ради чего
+   человек дочитал абзац, а не украшает угол. */
+.hero p .dot { display: inline-block; width: 8px; height: 8px; margin-left: 6px; border-radius: 50%; background: var(--signal); vertical-align: middle; }
+.hero .btn--primary { background: var(--teal); border-radius: var(--r-field); }
+.hero .btn--primary:hover { background: #17545C; }
+
+/* Полоса-кадр: сюда встаёт видео, до него — постер */
+.band { display: block; width: 100%; margin: 0; background: var(--coal); }
+.band img, .band video { display: block; width: 100%; height: clamp(220px, 30vw, 420px); object-fit: cover; }
+
+/* Строка фактов под полосой: пары «подпись — значение» */
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: var(--coal); }
+.facts > div { padding: 20px 24px; border-left: 1px solid rgba(255,255,255,.14); }
+.facts > div:first-child { border-left: 0; padding-left: 0; }
+.facts dt { color: var(--on-dark-2); font-size: 13px; }
+.facts dd { margin: 4px 0 0; color: var(--on-dark); font-size: clamp(18px, 2vw, 24px); font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+
+/* ── Три колонки самопроверки ──────────────────────────────────────────── */
+.cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 28px; }
+.cols3 > div { padding: 0 28px; border-left: 1px solid var(--line); }
+.cols3 > div:first-child { padding-left: 0; border-left: 0; }
+.cols3 h3 { margin-bottom: 14px; font-size: 19px; }
+.cols3 ul { margin: 0; padding: 0; list-style: none; color: var(--ink-2); font-size: 16px; }
+.cols3 li { position: relative; padding-left: 18px; margin-bottom: 10px; }
+.cols3 li::before { position: absolute; top: 9px; left: 0; width: 6px; height: 6px; background: var(--teal); content: ""; }
+
+@media (max-width: 900px) {
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facts > div { padding: 16px 18px; border-top: 1px solid rgba(255,255,255,.14); }
+  .facts > div:nth-child(odd) { border-left: 0; padding-left: 0; }
+  .cols3 { grid-template-columns: minmax(0, 1fr); }
+  .cols3 > div { padding: 22px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .cols3 > div:first-child { padding-top: 0; border-top: 0; }
+}
