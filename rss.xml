@@ -5,27 +5,166 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0300</lastBuildDate>
     <item>
-      <title>Как сравнивать коммерческие предложения на металлообработку</title>
-      <link>https://ironex.tech/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku.html</guid>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0300</pubDate>
-      <description>Как сопоставить коммерческие предложения по цене, сроку, составу работ, контролю и условиям поставки.</description>
+      <title>Как подготовить чертёж вала для расчёта и изготовления</title>
+      <link>https://ironex.tech/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu.html</guid>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Валы на заказ: 7 параметров для точного расчёта — посадки, биение, шлицы, термообработка и контроль готовых деталей перед отгрузкой.</description>
     </item>
     <item>
-      <title>Почему партия меняет цену детали</title>
-      <link>https://ironex.tech/blog/pochemu-partiya-menyaet-tsenu-detali.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/pochemu-partiya-menyaet-tsenu-detali.html</guid>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0300</pubDate>
-      <description>Как подготовка производства, материал, цикл обработки, контроль и логистика влияют на цену детали в партии.</description>
+      <title>Корпуса на заказ: как подготовить чертёж и модель</title>
+      <link>https://ironex.tech/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu.html</guid>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Корпуса на заказ: 7 пунктов для подготовки модели, баз, резьб, покрытия и контроля. Чек-лист поможет точнее рассчитать изготовление корпуса.</description>
     </item>
     <item>
-      <title>Как составить заявку на изготовление деталей</title>
-      <link>https://ironex.tech/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html</guid>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0300</pubDate>
-      <description>12 пунктов, которые помогут подрядчику рассчитать цену, срок и технологию производства без лишней переписки.</description>
+      <title>Аутсорсинг металлообработки: выбор субподрядчика</title>
+      <link>https://ironex.tech/blog/kak-vybrat-subpodryadchika-pri-peregruzke-proizvodstva.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-vybrat-subpodryadchika-pri-peregruzke-proizvodstva.html</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Аутсорсинг металлообработки: проверьте подрядчика по 4 критериям — сроку, контролю качества, конфиденциальности и передаче готовых деталей.</description>
+    </item>
+    <item>
+      <title>Мелкосерийное производство деталей: приёмка образца</title>
+      <link>https://ironex.tech/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii.html</guid>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Мелкосерийное производство деталей: 8 шагов для проверки первой детали, согласования критических параметров и снижения риска брака в серии.</description>
+    </item>
+    <item>
+      <title>Порошковая покраска на заказ: как выбрать покрытие</title>
+      <link>https://ironex.tech/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali.html</guid>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Порошковая покраска на заказ: 6 параметров для выбора цвета, фактуры и подготовки поверхности без ошибок в чертеже и заявке на расчёт.</description>
+    </item>
+    <item>
+      <title>Сварка на заказ: документация на сварную сборку</title>
+      <link>https://ironex.tech/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku.html</guid>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Сварка на заказ без спорных швов: 7 пунктов документации помогут согласовать сборочные базы, контроль геометрии и финишную обработку изделия.</description>
+    </item>
+    <item>
+      <title>Лазерная резка: цена и 6 факторов расчёта</title>
+      <link>https://ironex.tech/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Лазерная резка: цена зависит от 6 факторов — материала, толщины, контура, раскладки, тиража и доработки. Разбираем, что подготовить для расчёта.</description>
+    </item>
+    <item>
+      <title>Гибка металла на заказ: что приложить к заявке</title>
+      <link>https://ironex.tech/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Гибка металла на заказ: 7 данных для расчёта без лишних уточнений — развёртка, материал, толщина, радиусы, количество, допуски и требования к поверхности.</description>
+    </item>
+    <item>
+      <title>Обработка нержавейки ЧПУ: что указать в заявке</title>
+      <link>https://ironex.tech/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html</guid>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Обработка нержавейки ЧПУ: 7 пунктов заявки — марка, поверхность, сварка и контроль. Чек-лист поможет точнее рассчитать детали и снизить число уточнений.</description>
+    </item>
+    <item>
+      <title>Детали из алюминия: что влияет на цену</title>
+      <link>https://ironex.tech/blog/izgotovlenie-detaley-iz-alyuminiya-chto-vliyaet-na-tehnologiyu-i-cenu.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/izgotovlenie-detaley-iz-alyuminiya-chto-vliyaet-na-tehnologiyu-i-cenu.html</guid>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Детали из алюминия: 7 факторов цены — сплав, допуски, геометрия, партия, покрытие и контроль. Чек-лист для подготовки чертежа и расчёта.</description>
+    </item>
+    <item>
+      <title>Изготовление деталей по чертежам: контроль версий</title>
+      <link>https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html</guid>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии.</description>
+    </item>
+    <item>
+      <title>Производство металлических деталей: выбор аналога</title>
+      <link>https://ironex.tech/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html</guid>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Производство металлических деталей без риска: разберём 7 шагов проверки аналога стали и покажем, как согласовать замену материала до запуска.</description>
+    </item>
+    <item>
+      <title>Пятиосевая обработка: когда она оправдана</title>
+      <link>https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html</guid>
+      <pubDate>Sat, 29 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали.</description>
+    </item>
+    <item>
+      <title>Фрезерная обработка по чертежу: подготовка 3D-модели</title>
+      <link>https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html</guid>
+      <pubDate>Sat, 29 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Фрезерная обработка по чертежу: как подготовить 3D-модель за 7 шагов, убрать лишние тела и избежать противоречий при расчёте детали.</description>
+    </item>
+    <item>
+      <title>Расчёт металлообработки: как проверить сроки в КП</title>
+      <link>https://ironex.tech/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp.html</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Расчёт металлообработки без путаницы в сроках: проверьте 3 этапа — подготовку КП, изготовление деталей и доставку партии на ваш склад.</description>
+    </item>
+    <item>
+      <title>Коммерческое предложение на металлообработку: состав</title>
+      <link>https://ironex.tech/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal.html</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Коммерческое предложение на металлообработку: 9 обязательных пунктов для проверки цены, срока изготовления деталей и условий заказа.</description>
+    </item>
+    <item>
+      <title>Серийное производство деталей: как выбрать размер партии</title>
+      <link>https://ironex.tech/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii.html</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Серийное производство деталей: как выбрать размер партии с учётом спроса, запаса, переналадки и повторяемости, чтобы не переплачивать за склад и дозаказы.</description>
+    </item>
+    <item>
+      <title>Мелкосерийное производство деталей: как начать</title>
+      <link>https://ironex.tech/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku.html</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Мелкосерийное производство деталей: 7 данных для запроса подрядчику. Сравните цены пробной партии и серии при одинаковых технических требованиях.</description>
+    </item>
+    <item>
+      <title>Фрезерная обработка по чертежу: допуски без переплат</title>
+      <link>https://ironex.tech/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html</guid>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Фрезерная обработка по чертежу без лишних затрат: 7 шагов, чтобы назначить допуски и шероховатость по функции детали и упростить контроль партии.</description>
+    </item>
+    <item>
+      <title>Производственная кооперация: как передать заказ</title>
+      <link>https://ironex.tech/blog/proizvodstvennaya-kooperaciya-v-metalloobrabotke-kak-peredat-zakaz.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/proizvodstvennaya-kooperaciya-v-metalloobrabotke-kak-peredat-zakaz.html</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Производственная кооперация в металлообработке: чек-лист из 7 шагов поможет передать заказ подрядчику без потери требований, сроков и управляемости процесса.</description>
     </item>
   </channel>
 </rss>
