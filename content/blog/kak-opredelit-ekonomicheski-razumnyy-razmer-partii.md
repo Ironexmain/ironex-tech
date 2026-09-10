@@ -8,7 +8,7 @@ category: "Экономика заказа"
 categorySlug: "ekonomika-zakaza"
 cover: "/images/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii-cover.webp"
 coverAlt: "Инженерная схема к статье «Серийное производство деталей: как выбрать размер партии»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 Экономически разумная партия — не обязательно самая крупная и не обязательно самая дешёвая по цене одной детали. Это объём, который закрывает потребность предприятия без избыточного запаса, частых переналадок и дорогих срочных дозаказов.
 

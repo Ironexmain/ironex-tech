@@ -8,7 +8,7 @@ category: "Материалы"
 categorySlug: "materialy"
 cover: "/images/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali-cover.webp"
 coverAlt: "Инженерная схема к статье «Производство металлических деталей: выбор аналога»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 Материал-аналог нельзя выбирать только по похожему названию, справочной таблице или совету поставщика. Две марки могут иметь близкий химический состав, но по-разному вести себя после термообработки, при сварке, под переменной нагрузкой или во влажной среде.
 

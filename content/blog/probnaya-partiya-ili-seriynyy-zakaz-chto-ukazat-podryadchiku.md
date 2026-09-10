@@ -8,7 +8,7 @@ category: "Экономика заказа"
 categorySlug: "ekonomika-zakaza"
 cover: "/images/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku-cover.webp"
 coverAlt: "Инженерная схема к статье «Мелкосерийное производство деталей: как начать»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 Пробная партия нужна, когда до запуска серии остаются технические вопросы: подходит ли материал, собирается ли узел, выдержаны ли критические размеры. Серийный заказ уместен, если документация уже проверена, а потребность подтверждена.
 

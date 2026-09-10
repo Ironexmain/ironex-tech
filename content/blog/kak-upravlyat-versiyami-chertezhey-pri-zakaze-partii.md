@@ -8,7 +8,7 @@ category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
 cover: "/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover.webp"
 coverAlt: "Инженерная схема к статье «Изготовление деталей по чертежам: контроль версий»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 При заказе партии недостаточно отправить исполнителю файл с названием `деталь_финал.pdf`. Нужно однозначно определить, какой комплект документов действует, чем он отличается от предыдущего и с какого момента его следует применять.
 

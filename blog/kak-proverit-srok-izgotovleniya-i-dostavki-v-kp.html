@@ -32,7 +32,7 @@
         "@id": "https://ironex.tech#website"
       },
       "author": {
-        "@id": "https://ironex.tech#person-redakciya"
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
       },
       "publisher": {
         "@id": "https://ironex.tech#organization"
@@ -58,15 +58,22 @@
     },
     {
       "@type": "Person",
-      "@id": "https://ironex.tech#person-redakciya",
-      "name": "Редакция IRONEX",
-      "jobTitle": "Технические материалы производства",
-      "description": "Материалы готовит производственная команда IRONEX: технологи, которые считают заказы по чертежам, и отдел качества, который принимает партии на КИМ. Каждый разбор опирается на то, что реально происходит в цехе при подготовке заказа.",
-      "image": "https://ironex.tech/images/il/mark-redakciya.webp",
-      "url": "https://ironex.tech/avtor/redakciya.html",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
       "knowsAbout": [
-        "механическая обработка на станках с ЧПУ",
         "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
         "контроль качества деталей и измерения на КИМ"
       ],
       "worksFor": {
@@ -177,7 +184,7 @@
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="logo" href="/index.html">IRON<span>EX</span></a>
-    <ul class="nav">
+    <ul class="nav" data-phone="+7 993 490-40-24">
       <li><a href="/uslugi.html">Услуги</a></li>
       <li><a href="/oborudovanie.html">Оборудование</a></li>
       <li><a href="/ceny.html">Цены</a></li>
@@ -186,7 +193,7 @@
     </ul>
     <div class="site-header__actions">
       <a class="site-header__phone" href="tel:+79934904024">+7 993 490-40-24</a>
-      <a class="btn btn--primary" href="/kontakty.html">Прислать чертёж</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Расчёт металлообработки: как проверить сроки в КП">Прислать чертёж</a>
     </div>
     <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
       <span></span><span></span><span></span>
@@ -209,10 +216,10 @@
 
       <div class="byline">
         <span class="byline__who">
-          <span class="avatar"><img src="/images/il/mark-redakciya.webp" alt="" width="44" height="44" loading="lazy"></span>
+          <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
           <span>
-            <span class="byline__name"><a href="/avtor/redakciya.html" rel="author">Редакция IRONEX</a></span>
-            <span class="byline__role">Технические материалы производства</span>
+            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+            <span class="byline__role">Инженер</span>
           </span>
         </span>
         <span class="byline__meta">
@@ -241,8 +248,8 @@
         </ol>
         <div class="rail__card">
           <strong>Нужен расчёт по вашему чертежу?</strong>
-          <p>Пришлите чертёж или 3D-модель и количество — технолог проверит задачу и вернётся со сроком и ценой.</p>
-          <a class="btn btn--on-dark" href="/kontakty.html">Запросить расчёт</a>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — блог">Отправить чертёж на почту</a>
         </div>
       </aside>
 
@@ -262,8 +269,8 @@
 <p>Такие формулировки не обязательно означают проблему. Они показывают, какие условия нужно зафиксировать в спецификации, счёте или договоре.</p>
 <div class="cta ui" id="cta" data-cta="inline">
           <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
-          <div class="cta__sub">Пришлите чертёж или 3D-модель и количество — технолог проверит задачу и вернётся со сроком и ценой.</div>
-          <a class="btn btn--primary" href="/kontakty.html">Запросить расчёт</a>
+          <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+          <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — блог">Отправить чертёж на почту</a>
         </div>
 <h2 id="ot-kakoy-daty-nachinaetsya-otschet">От какой даты начинается отсчёт</h2>
 <p>Даже точное количество дней бесполезно без стартового события. Формулировка «15 рабочих дней» может дать разные даты, если стороны по-разному понимают начало работ.</p>
@@ -369,9 +376,9 @@
   <section class="statement statement--grid section">
     <div class="container">
       <h2>Нужен расчёт деталей по вашим чертежам?</h2>
-      <p style="max-width:56ch">Пришлите документацию и количество. Технолог проверит задачу и вернётся с вопросами, стоимостью и сроком.</p>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
       <p style="margin:26px 0 0">
-        <a class="btn btn--on-dark" href="/kontakty.html">Отправить чертёж</a>
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — блог">Отправить чертёж на почту</a>
       </p>
     </div>
   </section>
@@ -399,16 +406,15 @@
           <li><a href="/oborudovanie.html">Оборудование</a></li>
           <li><a href="/ceny.html">Цены</a></li>
           <li><a href="/blog.html">Блог</a></li>
-          <li><a href="/avtor/redakciya.html">Редакция</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
         </ul>
       </div>
       <div>
         <h3>Связаться</h3>
         <ul>
-          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
-          <li><a href="https://t.me/+79819470402">Telegram</a></li>
-          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
         </ul>
       </div>
     </div>

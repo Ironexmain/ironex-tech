@@ -5,303 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Изготовление деталей по чертежам — IRONEX</title>
   <meta name="description" content="Изготовление металлических деталей по чертежам: токарка и фрезеровка ЧПУ, резка, гибка, сварка и КИМ-контроль. Расчёт цены и срока за 3 дня." />
-  <meta property="og:title" content="Изготовление деталей по чертежам — IRONEX" />
-  <meta property="og:description" content="Точные детали по вашим чертежам: фрезеровка и токарка ЧПУ, лазер, гибка, сварка, КИМ. Прямой контакт с технологом — расчёт за 3 дня." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ironex.tech" />
-  <meta property="og:image" content="images/og.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --dark:    #18181B;
-      --dark2:   #27272A;
-      --dark3:   #3F3F46;
-      --amber:   #F59E0B;
-      --amber2:  #D97706;
-      --amber3:  #FEF3C7;
-      --bg:      #FAFAF9;
-      --bg2:     #F4F4F0;
-      --text:    #18181B;
-      --muted:   #71717A;
-      --border:  #E4E4E7;
-      --white:   #FFFFFF;
-      --r:       10px;
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
-
-    /* UTILS */
-    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-    .section    { padding: 96px 0; }
-    .section-sm { padding: 64px 0; }
-    .eyebrow    { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700;
-                  letter-spacing: .1em; text-transform: uppercase; color: var(--amber2);
-                  margin-bottom: 18px; }
-    .eyebrow::before { content: ''; display: block; width: 20px; height: 2px; background: var(--amber); }
-    .eyebrow-light { color: rgba(255,255,255,.5); }
-    .eyebrow-light::before { background: var(--amber); }
-    h2.h2   { font-size: clamp(28px, 4vw, 42px); font-weight: 900; line-height: 1.15;
-              letter-spacing: -.025em; margin-bottom: 18px; }
-    h2.h2 em { font-style: normal; color: var(--amber2); }
-    .lead    { font-size: 17px; color: var(--muted); line-height: 1.65; max-width: 580px; }
-    .btn     { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px;
-               border-radius: 8px; font-weight: 700; font-size: 15px; cursor: pointer;
-               text-decoration: none; transition: all .2s; border: none; font-family: inherit; }
-    .btn-amber  { background: var(--amber); color: var(--dark); }
-    .btn-amber:hover { background: var(--amber2); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(245,158,11,.35); }
-    .btn-ghost  { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.25); }
-    .btn-ghost:hover { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.5); }
-    .btn-dark   { background: var(--dark); color: #fff; }
-    .btn-dark:hover { background: var(--dark2); transform: translateY(-1px); }
-    .btn-outline { background: transparent; color: var(--dark); border: 1.5px solid var(--border); }
-    .btn-outline:hover { border-color: var(--dark); }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 200;
-      background: rgba(24,24,27,.97); backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255,255,255,.06);
-    }
-    .nav-inner { display: flex; align-items: center; height: 68px; gap: 0; }
-    .nav-logo  { font-size: 21px; font-weight: 900; color: #fff; text-decoration: none;
-                 letter-spacing: -.025em; flex-shrink: 0; margin-right: auto; }
-    .nav-logo span { color: var(--amber); }
-    .nav-links { display: flex; gap: 32px; list-style: none; margin-right: 32px; }
-    .nav-links a { color: rgba(255,255,255,.6); text-decoration: none; font-size: 14px;
-                   font-weight: 500; transition: color .2s; white-space: nowrap; }
-    .nav-links a:hover { color: #fff; }
-    .nav-actions { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
-    .nav-phone { color: rgba(255,255,255,.8); font-size: 14px; font-weight: 600;
-                 text-decoration: none; white-space: nowrap; }
-    .nav-phone:hover { color: var(--amber); }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer;
-                 background: none; border: none; padding: 4px; margin-left: 16px; }
-    .hamburger span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
-    .mob-menu { display: none; background: var(--dark2); border-top: 1px solid rgba(255,255,255,.08); }
-    .mob-menu.open { display: block; }
-    .mob-menu a { display: block; padding: 13px 24px; color: rgba(255,255,255,.75); font-size: 15px;
-                  font-weight: 500; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.06); }
-    .mob-menu a:hover { color: #fff; }
-
-    /* ── HERO ── */
-    .hero { background: var(--dark); color: #fff; padding: 104px 0 80px; overflow: hidden; position: relative; }
-    .hero::after { content: ''; position: absolute; inset: 0;
-                   background: radial-gradient(ellipse 60% 70% at 0% 60%, rgba(245,158,11,.1) 0%, transparent 60%);
-                   pointer-events: none; }
-    .hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; z-index: 1; }
-    .hero-img   { position: relative; order: -1; }
-    .hero-img img { width: 100%; border-radius: 16px; aspect-ratio: 4/3; object-fit: cover;
-                    display: block; opacity: .9; }
-    .hero-img-badge { position: absolute; top: 24px; right: -20px; background: var(--amber);
-                      color: var(--dark); border-radius: 10px; padding: 12px 18px;
-                      font-weight: 800; font-size: 13px; line-height: 1.3;
-                      box-shadow: 0 8px 32px rgba(245,158,11,.4); }
-    .hero-img-badge strong { display: block; font-size: 24px; }
-    .hero-content {}
-    .hero h1   { font-size: clamp(34px, 5vw, 56px); font-weight: 900; line-height: 1.08;
-                 letter-spacing: -.03em; margin-bottom: 22px; }
-    .hero h1 em { font-style: normal; color: var(--amber); }
-    .hero-lead { font-size: 17px; color: rgba(255,255,255,.6); line-height: 1.65; margin-bottom: 36px; max-width: 460px; }
-    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
-    .hero-specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-    .hero-spec { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
-                 border-radius: 8px; padding: 14px 16px; }
-    .hero-spec-val   { font-size: 20px; font-weight: 800; color: #fff; letter-spacing: -.02em; }
-    .hero-spec-label { font-size: 11px; color: rgba(255,255,255,.45); margin-top: 2px; }
-
-    /* ── TICKER ── */
-    .ticker { background: var(--amber); padding: 11px 0; overflow: hidden; }
-    .ticker-track { display: flex; animation: tick 30s linear infinite; white-space: nowrap; }
-    .ticker-item { padding: 0 28px; font-size: 12px; font-weight: 700; color: var(--dark);
-                   letter-spacing: .07em; text-transform: uppercase;
-                   border-right: 1px solid rgba(0,0,0,.15); }
-    @keyframes tick { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-
-    /* ── STATS ── */
-    .stats-bar { background: var(--dark2); padding: 0; }
-    .stats-inner { display: grid; grid-template-columns: repeat(4, 1fr); }
-    .stat-cell { padding: 36px 32px; border-right: 1px solid rgba(255,255,255,.08); text-align: center; }
-    .stat-cell:last-child { border-right: none; }
-    .stat-num  { font-size: 46px; font-weight: 900; color: var(--amber); letter-spacing: -.04em; line-height: 1; }
-    .stat-sup  { font-size: 22px; vertical-align: super; }
-    .stat-text { font-size: 13px; color: rgba(255,255,255,.45); margin-top: 6px; line-height: 1.4; }
-
-    /* ── EQUIPMENT ── */
-    .equip { background: var(--bg); }
-    .equip-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 52px; }
-    .equip-card { background: #fff; border: 1px solid var(--border); border-radius: var(--r);
-                  padding: 28px; transition: all .2s; }
-    .equip-card:hover { border-color: var(--amber); box-shadow: 0 8px 32px rgba(0,0,0,.06); }
-    .equip-tag  { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .08em;
-                  text-transform: uppercase; background: var(--amber3); color: var(--amber2);
-                  padding: 3px 9px; border-radius: 100px; margin-bottom: 14px; }
-    .equip-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
-    .equip-model { font-size: 12px; color: var(--muted); margin-bottom: 16px; }
-    .equip-params { display: flex; flex-direction: column; gap: 8px; }
-    .equip-param { display: flex; justify-content: space-between; align-items: baseline;
-                   font-size: 13px; padding-bottom: 8px; border-bottom: 1px solid var(--bg); }
-    .equip-param:last-child { border-bottom: none; padding-bottom: 0; }
-    .equip-param span:first-child { color: var(--muted); }
-    .equip-param span:last-child  { font-weight: 600; }
-    .equip-photo { width: 100%; border-radius: 8px; aspect-ratio: 4/3; object-fit: cover;
-                   margin-bottom: 20px; background: var(--bg2); display: block; }
-
-    /* ── SERVICES ── */
-    .services { background: var(--white); }
-    .services-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; margin-bottom: 52px; }
-    .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border); border-radius: var(--r); overflow: hidden; }
-    .svc-cell { display: block; background: #fff; padding: 28px; transition: background .2s;
-                color: inherit; text-decoration: none; }
-    .svc-cell:hover { background: #FFFBEB; }
-    .svc-num  { font-size: 11px; font-weight: 700; color: var(--amber2); margin-bottom: 12px; }
-    .svc-cell h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
-    .svc-cell p  { font-size: 13px; color: var(--muted); line-height: 1.55; margin-bottom: 12px; }
-    .svc-price { font-size: 12px; font-weight: 700; color: var(--text); }
-    .svc-price span { color: var(--amber2); }
-    .svc-more { display: inline-block; margin-top: 12px; color: var(--amber2); font-size: 12px; font-weight: 700; }
-
-    /* ── PROCESS ── */
-    .process { background: var(--dark); color: #fff; }
-    .process-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 52px; }
-    .process-img { border-radius: 16px; overflow: hidden; aspect-ratio: 1; }
-    .process-img img { width: 100%; height: 100%; object-fit: cover; opacity: .85; display: block; }
-    .steps { display: flex; flex-direction: column; gap: 0; }
-    .step-row { display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
-    .step-row:last-child { border-bottom: none; }
-    .step-num { width: 40px; height: 40px; background: var(--amber); color: var(--dark);
-                border-radius: 50%; display: flex; align-items: center; justify-content: center;
-                font-size: 14px; font-weight: 800; flex-shrink: 0; }
-    .step-body h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
-    .step-body p  { font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.5; }
-    .step-note { font-size: 11px; color: var(--amber); margin-top: 4px; font-weight: 600; }
-
-    /* ── INDUSTRIES ── */
-    .industries { background: var(--bg); }
-    .ind-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 52px; }
-    .ind-card { background: #fff; border: 1px solid var(--border); border-radius: var(--r);
-                padding: 24px 20px; cursor: pointer; transition: all .2s; text-decoration: none; color: inherit; }
-    .ind-card:hover { border-color: var(--amber); transform: translateY(-2px);
-                      box-shadow: 0 8px 24px rgba(0,0,0,.06); }
-    .ind-num   { font-size: 10px; font-weight: 700; color: var(--amber2); letter-spacing: .08em;
-                 text-transform: uppercase; margin-bottom: 10px; }
-    .ind-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
-    .ind-count { font-size: 12px; color: var(--muted); }
-
-    /* ── CASES ── */
-    .cases { background: var(--white); }
-    .cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
-    .case-card { border-radius: var(--r); overflow: hidden; border: 1px solid var(--border); }
-    .case-img  { aspect-ratio: 4/3; overflow: hidden; }
-    .case-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
-    .case-card:hover .case-img img { transform: scale(1.04); }
-    .case-body { padding: 20px; }
-    .case-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-    .case-tag  { font-size: 10px; font-weight: 700; background: var(--bg2); color: var(--muted);
-                 padding: 3px 8px; border-radius: 100px; text-transform: uppercase; letter-spacing: .05em; }
-    .case-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
-    .case-card p  { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
-    .case-meta { display: flex; gap: 12px; flex-wrap: wrap; }
-    .case-meta span { font-size: 11px; font-weight: 600; color: var(--text);
-                      background: var(--bg); padding: 3px 8px; border-radius: 4px; }
-
-    /* ── GALLERY ── */
-    .gallery { background: var(--bg); }
-    .gallery-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 40px; }
-    .gallery-item { aspect-ratio: 1; overflow: hidden; border-radius: 8px; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block;
-                        transition: transform .35s; }
-    .gallery-item:hover img { transform: scale(1.06); }
-
-    /* ── CTA ── */
-    .cta-section { background: var(--dark); color: #fff; padding: 100px 0; }
-    .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .cta-left h2 { color: #fff; }
-    .cta-left .lead { color: rgba(255,255,255,.55); }
-    .cta-right { }
-    .cta-channels { display: flex; flex-direction: column; gap: 16px; }
-    .cta-channel { display: flex; align-items: center; gap: 20px;
-                   background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
-                   border-radius: 12px; padding: 24px 28px; text-decoration: none; color: #fff;
-                   transition: all .2s; }
-    .cta-channel:hover { background: rgba(245,158,11,.12); border-color: var(--amber); }
-    .cta-icon { font-size: 28px; flex-shrink: 0; }
-    .cta-channel-title { font-size: 17px; font-weight: 700; margin-bottom: 3px; }
-    .cta-channel-sub   { font-size: 13px; color: rgba(255,255,255,.45); }
-    .cta-channel-val   { margin-left: auto; font-size: 15px; font-weight: 700;
-                         color: var(--amber); white-space: nowrap; }
-    .cta-note { margin-top: 20px; font-size: 13px; color: rgba(255,255,255,.35); line-height: 1.6; }
-    .cta-note strong { color: rgba(255,255,255,.6); }
-
-    /* ── FOOTER ── */
-    footer { background: #0A0A0C; color: rgba(255,255,255,.4); padding: 56px 0 28px; }
-    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px;
-                  border-bottom: 1px solid rgba(255,255,255,.07); }
-    .f-logo { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -.025em; margin-bottom: 12px; }
-    .f-logo span { color: var(--amber); }
-    .f-desc { font-size: 13px; line-height: 1.65; max-width: 220px; margin-bottom: 20px; }
-    .f-contacts { display: flex; flex-direction: column; gap: 7px; }
-    .f-contacts a { color: rgba(255,255,255,.6); text-decoration: none; font-size: 13px; transition: color .2s; }
-    .f-contacts a:hover { color: var(--amber); }
-    .f-col h4 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
-                color: rgba(255,255,255,.3); margin-bottom: 16px; }
-    .f-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
-    .f-col a  { color: rgba(255,255,255,.5); text-decoration: none; font-size: 13px; transition: color .2s; }
-    .f-col a:hover { color: rgba(255,255,255,.9); }
-    .footer-bottom { display: flex; justify-content: space-between; align-items: center;
-                     padding-top: 24px; font-size: 12px; flex-wrap: wrap; gap: 10px; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 1024px) {
-      .equip-grid { grid-template-columns: repeat(2, 1fr); }
-      .svc-grid   { grid-template-columns: repeat(2, 1fr); }
-      .ind-grid   { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 768px) {
-      .nav-links, .nav-actions { display: none; }
-      .hamburger { display: flex; }
-      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
-      .hero-img   { order: 0; }
-      .hero-img-badge { right: 12px; top: 12px; }
-      .hero-specs { grid-template-columns: repeat(2, 1fr); }
-      .stats-inner { grid-template-columns: repeat(2, 1fr); }
-      .stat-cell { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
-      .equip-grid { grid-template-columns: 1fr; }
-      .services-intro { grid-template-columns: 1fr; gap: 32px; }
-      .svc-grid   { grid-template-columns: 1fr; }
-      .process-grid { grid-template-columns: 1fr; }
-      .process-img { display: none; }
-      .cases-grid { grid-template-columns: 1fr; }
-      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-      .cta-inner { grid-template-columns: 1fr; gap: 40px; }
-      .cta-left, .cta-right { min-width: 0; }
-      .footer-top { grid-template-columns: 1fr 1fr; }
-      .ind-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 480px) {
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-top   { grid-template-columns: 1fr; gap: 32px; }
-      .hero-specs   { grid-template-columns: repeat(2, 1fr); }
-      .stats-inner  { grid-template-columns: repeat(2, 1fr); }
-      .ind-grid     { grid-template-columns: 1fr; }
-    }
-  </style>
-
-  <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
   <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
 
-  <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
   <link rel="canonical" href="https://ironex.tech/" />
+  <meta name="robots" content="index, follow" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[
-    {"@type":"Organization","@id":"https://ironex.tech/#org","name":"IRONEX","url":"https://ironex.tech","telephone":"+79934904024","email":"info@ironex.tech","description":"Контрактное производство металлических деталей по чертежам. Токарная и фрезерная обработка ЧПУ, лазерная резка, гибка, сварка, КИМ-контроль.","address":{"@type":"PostalAddress","addressCountry":"RU"},"contactPoint":{"@type":"ContactPoint","telephone":"+79934904024","contactType":"customer service","availableLanguage":"Russian"}},
-    {"@type":"WebSite","@id":"https://ironex.tech/#website","name":"IRONEX","url":"https://ironex.tech","publisher":{"@id":"https://ironex.tech/#org"}},
-    {"@type":"WebPage","url":"https://ironex.tech/","name":"Изготовление деталей по чертежам — IRONEX","description":"Изготовление металлических деталей по чертежам: токарка и фрезеровка ЧПУ, резка, гибка, сварка и КИМ-контроль. Расчёт цены и срока за 3 дня.","isPartOf":{"@id":"https://ironex.tech/#website"},"publisher":{"@id":"https://ironex.tech/#org"},"dateModified":"2026-08-12"}
-  ]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech/#org",
+      "name": "IRONEX",
+      "url": "https://ironex.tech",
+      "telephone": "+79934904024",
+      "email": "info@ironex.tech",
+      "description": "Контрактное производство металлических деталей по чертежам. Токарная и фрезерная обработка ЧПУ, лазерная резка, гибка, сварка, КИМ-контроль.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "RU"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+79934904024",
+        "contactType": "customer service",
+        "availableLanguage": "Russian"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech/#website",
+      "name": "IRONEX",
+      "url": "https://ironex.tech",
+      "publisher": { "@id": "https://ironex.tech/#org" }
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ironex.tech/",
+      "name": "Изготовление деталей по чертежам — IRONEX",
+      "description": "Изготовление металлических деталей по чертежам: токарка и фрезеровка ЧПУ, резка, гибка, сварка и КИМ-контроль. Расчёт цены и срока за 3 дня.",
+      "isPartOf": { "@id": "https://ironex.tech/#website" },
+      "publisher": { "@id": "https://ironex.tech/#org" },
+      "dateModified": "2026-09-10"
+    }
+  ]
+}
   </script>
-  <!-- ═══ Яндекс Метрика 105009501 ═══ -->
   <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -310,704 +62,387 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <link rel="stylesheet" href="email-copy.css" />
-  <link rel="stylesheet" href="redesign.css?v=20260907-4" />
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Изготовление деталей по чертежам — IRONEX" />
+  <meta property="og:description" content="Изготовление металлических деталей по чертежам: токарка и фрезеровка ЧПУ, резка, гибка, сварка и КИМ-контроль. Расчёт цены и срока за 3 дня." />
+  <meta property="og:url" content="https://ironex.tech/" />
+  <meta property="og:image" content="https://ironex.tech/images/og.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="670" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Изготовление деталей по чертежам — IRONEX" />
+  <meta name="twitter:description" content="Изготовление металлических деталей по чертежам: токарка и фрезеровка ЧПУ, резка, гибка, сварка и КИМ-контроль. Расчёт цены и срока за 3 дня." />
+  <meta name="twitter:image" content="https://ironex.tech/images/og.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
 </head>
-<body class="redesign-precision">
-<a class="skip-link" href="#main-content">Перейти к содержанию</a>
-<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
 
-<!-- ═══════ NAV ═══════ -->
-<nav>
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">IRON<span>EX</span></a>
-      <ul class="nav-links">
-        <li><a href="uslugi.html">Услуги</a></li>
-        <li><a href="oborudovanie.html">Оборудование</a></li>
-        <li><a href="ceny.html">Цены</a></li>
-        <li><a href="blog.html">Блог</a></li>
-        <li><a href="#cases">Кейсы</a></li>
-        <li><a href="kontakty.html">Контакты</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
-        <a href="kontakty.html" class="btn btn-amber" style="padding:10px 20px;font-size:14px;">Запросить расчёт</a>
-      </div>
-      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
-        <span></span><span></span><span></span>
-      </button>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href="tel:+79934904024">+7 993 490-40-24</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20главная">Прислать чертёж</a>
     </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <div class="mob-menu" id="mobMenu">
-    <a href="uslugi.html">Услуги</a>
-    <a href="oborudovanie.html">Оборудование</a>
-    <a href="ceny.html">Цены</a>
-    <a href="blog.html">Блог</a>
-    <a href="#cases">Кейсы</a>
-    <a href="kontakty.html">Контакты</a>
-    <a href="kontakty.html" style="color:var(--amber);">Запросить расчёт</a>
-    <a href="tel:+79934904024">+7 993 490-40-24</a>
-  </div>
-</nav>
+</header>
 
-<main id="main-content">
+<main id="main">
 
-<!-- ═══════ HERO ═══════ -->
-<section class="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div class="hero-img">
-        <picture>
-          <source srcset="images/stock/cnc-coolant-daniel-smyth-pexels-8956445.avif" type="image/avif" />
-          <img class="stock-process stock-process-home" src="images/stock/cnc-coolant-daniel-smyth-pexels-8956445.jpg" alt="Фрезерование металлической заготовки с подачей охлаждающей жидкости — иллюстрация процесса" width="1800" height="1200" fetchpriority="high" decoding="async" />
-        </picture>
-        <div class="hero-img-badge"><strong>01 / RFQ</strong>чертёж → маршрут → расчёт</div>
-      </div>
-      <div class="hero-content">
+  <section class="section" id="hero">
+    <div class="container">
+      <span class="label">Контрактная металлообработка</span>
+      <h1>Металлические детали по вашим чертежам — от расчёта до партии</h1>
+      <p class="lede">Пришлите чертёж или 3D-модель и количество — технолог проверит маршрут, материал и контроль и вернётся со стоимостью и сроком: до 3 рабочих дней, без формы и колл-центра.</p>
+      <p>
+        <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20главная">Прислать чертёж на почту</a>
+        <a class="btn btn--ghost" href="#fit">Подходит ли нам заказ</a>
+      </p>
+      <p class="label">Приложите: чертёж или 3D-модель, количество, материал, срок</p>
 
-        <h1>Металлические детали по вашим чертежам — <em>от расчёта до партии</em></h1>
-        <p class="hero-lead">
-          Пришлите комплект файлов и тираж. Технолог проверит маршрут, материал и контроль,
-          затем вернёт стоимость и срок. Без формы и промежуточного колл-центра.
-        </p>
-        <div class="hero-btns">
-          <a href="kontakty.html" class="btn btn-amber">Отправить чертёж</a>
-          <a href="#fit" class="btn btn-ghost">Подходит ли нам заказ</a>
-        </div>
-        <div class="hero-specs">
-          <div class="hero-spec">
-            <div class="hero-spec-val">±0,005 мм</div>
-            <div class="hero-spec-label">точность обработки</div>
-          </div>
-          <div class="hero-spec">
-            <div class="hero-spec-val">5 осей</div>
-            <div class="hero-spec-label">обрабатывающие центры</div>
-          </div>
-          <div class="hero-spec">
-            <div class="hero-spec-val">20 кВт</div>
-            <div class="hero-spec-label">лазерная резка</div>
-          </div>
-          <div class="hero-spec">
-            <div class="hero-spec-val">3 дня</div>
-            <div class="hero-spec-label">расчёт по чертежу</div>
-          </div>
-        </div>
+      <figure class="figure--draft" style="margin-top:48px">
+        <img src="/images/il/chertezh-i-detal.webp" alt="Схема: как размеры и допуски на чертеже превращаются в готовую деталь" width="1600" height="893" fetchpriority="high" decoding="async" />
+        <figcaption>
+          <span>Иллюстрация, не фото с производства</span>
+          <span>Чертёж → маршрут обработки → деталь</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="rule-label"><span class="label">Компания цифрами</span></div>
+      <div class="spec-table">
+        <table>
+          <thead>
+            <tr><th>Показатель</th><th>Значение</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>На рынке контрактной металлообработки</td><td class="num">12+ лет, с 2014 года</td></tr>
+            <tr><td>Собственный парк ЧПУ</td><td class="num">47 станков</td></tr>
+            <tr><td>Выполненных заказов</td><td class="num">4 820+</td></tr>
+            <tr><td>Регионов доставки по РФ и ЕАЭС</td><td class="num">63</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════ STATS ═══════ -->
-<div class="stats-bar">
-  <div class="container">
-    <div class="stats-inner">
-      <div class="stat-cell">
-        <div class="stat-num">12<span class="stat-sup">+</span></div>
-        <div class="stat-text">лет на рынке<br>в работе с 2014 года</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-num">47</div>
-        <div class="stat-text">станков ЧПУ<br>фрезеровка, лазер, токарка, гибка, сварка</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-num">4 820<span class="stat-sup">+</span></div>
-        <div class="stat-text">выполненных заказов<br>прототип, малая и крупная серия</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-num">63</div>
-        <div class="stat-text">региона доставки<br>по России и странам ЕАЭС</div>
+  <section class="section" id="fit">
+    <div class="container">
+      <div class="rule-label"><span class="label">Прежде чем считать цену</span></div>
+      <h2>Смотрим на задачу до расчёта — так предложения подрядчиков проще сравнивать</h2>
+      <p class="lede">Берём в работу детали и узлы для производственных компаний. Чем точнее исходные данные, тем быстрее готово сопоставимое предложение.</p>
+
+      <div class="mat-grid mat-grid--3" style="margin-top:32px">
+        <article class="card">
+          <div class="card__body">
+            <h3>Есть чертёж, материал и партия</h3>
+            <ul>
+              <li>токарные и фрезерованные детали;</li>
+              <li>листовые детали, корпуса и сварные узлы;</li>
+              <li>пробные, малые и серийные партии;</li>
+              <li>требования к допускам, покрытию и контролю.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>Данных пока недостаточно</h3>
+            <ul>
+              <li>нет 3D-модели или части размеров;</li>
+              <li>нужно подобрать материал-аналог;</li>
+              <li>не определены объём партии и приёмка;</li>
+              <li>задача предполагает литьё или единичные детали.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>Минимум для расчёта</h3>
+            <p>Чертёж или 3D-модель, количество, материал, покрытие, требования к контролю и желаемый срок.</p>
+            <p style="margin-top:8px"><a class="btn btn--ghost" href="/kontakty.html">Открыть каналы связи</a></p>
+          </div>
+        </article>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- ═══════ FIT CHECK ═══════ -->
-<section class="section fit-check" id="fit" aria-labelledby="fit-title">
-  <div class="container">
-    <div class="fit-intro">
-      <div>
+  <section class="section section--tint" id="equipment">
+    <div class="container">
+      <div class="rule-label"><span class="label">Оборудование</span></div>
+      <h2>Параметры станков, которые определяют допуск и повторяемость детали</h2>
+      <p class="lede">Показываем характеристики, которые отвечают на вопрос о геометрии детали. Полный парк — на отдельной странице.</p>
 
-        <h2 class="h2" id="fit-title">Поймём задачу до того,<br><em>как считать цену.</em></h2>
+      <div class="spec-table" style="margin-top:32px">
+        <table>
+          <caption>Полный парк оборудования — на странице <a href="/oborudovanie.html">«Оборудование»</a>.</caption>
+          <thead>
+            <tr><th>Оборудование</th><th>Модель</th><th>Параметры</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5-осевой ОЦ · ×1</td>
+              <td>Hermle C500</td>
+              <td class="num">1100×600×600 мм · ±0,005 мм · 12 000 об/мин</td>
+            </tr>
+            <tr>
+              <td>Токарный центр · ×2</td>
+              <td>DMG Mori NLX 2500, приводной инструмент, ось C, противошпиндель</td>
+              <td class="num">⌀380×1500 мм · ±0,008 мм</td>
+            </tr>
+            <tr>
+              <td>Лазерная резка · ×1</td>
+              <td>D-SOAR L25120, 20 кВт (+ TFC6020S 3 кВт)</td>
+              <td class="num">Поле 2500×1200 мм</td>
+            </tr>
+            <tr>
+              <td>Гибка · ×3</td>
+              <td>Листогибочный пресс PR6C-150T (+ VR6 125 т, гидропресс 100 т)</td>
+              <td class="num">Усилие до 150 т</td>
+            </tr>
+            <tr>
+              <td>КИМ-контроль · ×1</td>
+              <td>Hexagon Global S + оптический 2D-измеритель</td>
+              <td class="num">800×600×600 мм · ±0,0025 мм</td>
+            </tr>
+            <tr>
+              <td>Сварка · ×16</td>
+              <td>TIG · MIG/MAG в CO₂ · робот NB-350 ×2 · лазерная SUP-AMF-D</td>
+              <td class="num">Аргон WSM-400 / WSME-315</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <p class="lead">Берём в работу детали и узлы для производственных компаний. Чем точнее исходные данные, тем быстрее предложения разных подрядчиков становятся сопоставимыми.</p>
     </div>
-    <div class="fit-matrix">
-      <article class="fit-column fit-column-primary">
+  </section>
 
-        <h3>Есть чертёж, материал и партия</h3>
+  <hr class="dim" />
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="rule-label"><span class="label">Операции и ставки</span></div>
+      <h2>Маршрут под геометрию детали, а не фиксированный набор операций</h2>
+      <p class="lede">Можно заказать одну операцию или связанный цикл: заготовка, обработка, сварка, покрытие и контроль. Точную комбинацию определяет технолог по чертежу.</p>
+
+      <div class="mat-grid mat-grid--3" style="margin-top:32px">
+        <article class="card"><div class="card__body">
+          <h3>Фрезерная обработка ЧПУ</h3>
+          <p>Hermle C500 / DMG Mori. Корпусные и фасонные детали в одной установке, точность ±0,005 мм.</p>
+          <p><strong>от 1 800 ₽</strong> / нормо-час</p>
+          <p><a href="/frezerovka.html">Подробнее о фрезеровке →</a></p>
+        </div></article>
+
+        <article class="card"><div class="card__body">
+          <h3>Токарная обработка ЧПУ</h3>
+          <p>DMG Mori NLX 2500 · приводной инструмент, ось C, противошпиндель. Серии до 50 000 шт.</p>
+          <p><strong>от 1 200 ₽</strong> / нормо-час</p>
+          <p><a href="/tokarnaya.html">Подробнее о токарной обработке →</a></p>
+        </div></article>
+
+        <article class="card"><div class="card__body">
+          <h3>Лазерная резка</h3>
+          <p>Волоконный лазер 20 кВт. Сталь, нержавейка, алюминий — до 30 мм толщиной.</p>
+          <p><strong>от 80 ₽</strong> / м</p>
+        </div></article>
+
+        <article class="card"><div class="card__body">
+          <h3>Гибка листового металла</h3>
+          <p>Прессы до 150 т усилия. Алюминий, сталь, нержавейка. Высокая повторяемость гиба.</p>
+          <p><strong>от 150 ₽</strong> / гиб</p>
+        </div></article>
+
+        <article class="card"><div class="card__body">
+          <h3>Сварка и сборка</h3>
+          <p>TIG, MIG/MAG, роботизированная и лазерная сварка. Сталь, нержавейка, алюминий.</p>
+          <p><strong>от 950 ₽</strong> / нормо-час</p>
+        </div></article>
+
+        <article class="card"><div class="card__body">
+          <h3>Порошковая окраска</h3>
+          <p>Любой цвет RAL. Камеры до 6 м. Матовое, глянцевое, текстурное покрытие.</p>
+          <p><strong>от 320 ₽</strong> / м²</p>
+        </div></article>
+
+        <article class="card"><div class="card__body">
+          <h3>КИМ-контроль</h3>
+          <p>3D-замер на координатной машине Hexagon. Протокол с допусками — в комплекте к каждой партии.</p>
+          <p><strong>входит</strong> в стоимость заказа</p>
+        </div></article>
+
+        <article class="card"><div class="card__body">
+          <h3>Гидроабразивная резка</h3>
+          <p>Резка любых материалов: титан, стекло, керамика, композиты. Без термического воздействия.</p>
+          <p>по <strong>запросу</strong></p>
+        </div></article>
+
+        <article class="card"><div class="card__body">
+          <h3>Гальваника и покрытия</h3>
+          <p>Цинкование, никелирование, анодирование, хромирование. Сертификаты по запросу.</p>
+          <p>по <strong>запросу</strong></p>
+        </div></article>
+
+        <article class="card"><div class="card__body">
+          <h3>Серийное производство деталей</h3>
+          <p>Пилотная партия, стабильный выпуск, КИМ-контроль и повторные заказы по актуальной ревизии чертежа.</p>
+          <p><strong>расчёт</strong> по количеству</p>
+          <p><a href="/serijnoe-proizvodstvo-detalej.html">Подробнее о серийном выпуске →</a></p>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="cases">
+    <div class="container">
+      <div class="rule-label"><span class="label">Что уже изготовили</span></div>
+      <h2>Реальные заказы: материал, партия и отрасль — без домыслов</h2>
+      <p class="lede">Имена клиентов и чертежи не публикуем — только параметры готовой детали.</p>
+
+      <figure class="figure--draft" style="margin-top:28px">
+        <img src="/images/il/marshrut-detali.webp" alt="Схема маршрута детали: заготовка, обработка, контроль" width="1600" height="893" loading="lazy" decoding="async" />
+        <figcaption>
+          <span>Иллюстрация маршрута, не фото цеха</span>
+          <span>Заготовка → операции → КИМ-контроль</span>
+        </figcaption>
+      </figure>
+
+      <div class="spec-table" style="margin-top:28px">
+        <table>
+          <thead>
+            <tr><th>Кейс</th><th>Материал</th><th>Партия</th><th>Отрасль</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Корпус бортовой РЭА</td>
+              <td>Алюминий Д16Т, допуск ±0,01 мм, чёрное анодирование</td>
+              <td class="num">240 шт. за 11 раб. дней</td>
+              <td>Приборостроение</td>
+            </tr>
+            <tr>
+              <td>Партия валов редуктора</td>
+              <td>Сталь 40Х, шлицы, термообработка и шлифовка</td>
+              <td class="num">1 200 шт., 3 смены</td>
+              <td>Машиностроение</td>
+            </tr>
+            <tr>
+              <td>Каркас серверной стойки 42U</td>
+              <td>Сталь 2 мм, порошковая окраска RAL 9005 муар</td>
+              <td class="num">80 шт.</td>
+              <td>IT-инфраструктура</td>
+            </tr>
+            <tr>
+              <td>Технологический модуль</td>
+              <td>Нержавейка AISI 304, полировка Ra 0,8</td>
+              <td class="num">—</td>
+              <td>Пищевая отрасль</td>
+            </tr>
+            <tr>
+              <td>Кронштейн медоборудования</td>
+              <td>Титан ВТ6, биосовместимая полировка</td>
+              <td class="num">контракт на 6 мес.</td>
+              <td>Медтех</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="rule-label"><span class="label">Отрасли</span></div>
+      <h2>Требования отрасли учитываем до расчёта — допуски, материалы, сертификаты</h2>
+      <p class="lede">В каждой отрасли свой набор материалов, допусков и сертификатов. Ниже — направления, с которыми уже работаем.</p>
+
+      <div class="panel" style="margin-top:28px">
         <ul>
-          <li>токарные и фрезерованные детали;</li>
-          <li>листовые детали, корпуса и сварные узлы;</li>
-          <li>пробные, малые и серийные партии;</li>
-          <li>требования к допускам, покрытию и контролю.</li>
+          <li>Машиностроение</li>
+          <li>Приборостроение</li>
+          <li>Медтех и оборудование</li>
+          <li>Нефть и газ</li>
+          <li>Энергетика</li>
+          <li>Аэрокосмос</li>
+          <li>Транспорт и спецтехника</li>
+          <li>Пищевое оборудование</li>
         </ul>
-      </article>
-      <article class="fit-column">
-
-        <h3>Исходных данных пока недостаточно</h3>
-        <ul>
-          <li>нет 3D-модели или части размеров;</li>
-          <li>нужно подобрать материал-аналог;</li>
-          <li>не определены объём партии и приёмка;</li>
-          <li>задача предполагает литьё или единичные детали.</li>
-        </ul>
-      </article>
-      <aside class="fit-action">
-
-        <h3>Минимум для расчёта</h3>
-        <p>Чертёж или 3D-модель, количество, материал, покрытие, требования к контролю и желаемый срок.</p>
-        <a href="kontakty.html" class="text-link">Открыть каналы связи →</a>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ EQUIPMENT ═══════ -->
-<section class="section equip" id="equipment">
-  <div class="container">
-
-    <h2 class="h2">Оборудование — не витрина.<br><em>Это доказательство маршрута.</em></h2>
-    <p class="lead">Показываем ключевые характеристики там, где они отвечают на вопрос о геометрии, допуске или повторяемости детали. Полный парк — на отдельной странице.</p>
-    <div class="equip-grid">
-
-      <div class="equip-card">
-        <img class="equip-photo" src="images/photos/prod-2044.webp" alt="Пятиосевой обрабатывающий центр" width="1100" height="733" loading="lazy" decoding="async" />
-        <div class="equip-tag">5 осей · ×1</div>
-        <h3>Prim Miller C500</h3>
-        <p class="equip-model">Пятиосевой обрабатывающий центр</p>
-        <div class="equip-params">
-          <div class="equip-param"><span>Рабочая зона</span><span>⌀ 500 мм</span></div>
-          <div class="equip-param"><span>Точность</span><span>±0,005 мм</span></div>
-          <div class="equip-param"><span>Шпиндель</span><span>12 000 об/мин</span></div>
-          <div class="equip-param"><span>Оси</span><span>5</span></div>
-        </div>
-      </div>
-
-      <div class="equip-card">
-        <img class="equip-photo" src="images/photos/gen-laser.webp" alt="Волоконный лазер" width="1100" height="821" loading="lazy" decoding="async" />
-        <div class="equip-tag">Лазер · ×1</div>
-        <h3>D-SOAR L25120 · 20 кВт</h3>
-        <p class="equip-model">Волоконный лазер для раскроя</p>
-        <div class="equip-params">
-          <div class="equip-param"><span>Поле</span><span>2500×1200 мм</span></div>
-          <div class="equip-param"><span>Мощность</span><span>20 кВт</span></div>
-          <div class="equip-param"><span>Ещё лазер</span><span>TFC6020S · 3 кВт</span></div>
-          <div class="equip-param"><span>Гидроабразив</span><span>APW2050BA</span></div>
-        </div>
-      </div>
-
-      <div class="equip-card">
-        <img class="equip-photo" src="images/photos/gen-bending.webp" alt="Листогибочный пресс с ЧПУ" width="1100" height="821" loading="lazy" decoding="async" />
-        <div class="equip-tag">Гибка · ×3</div>
-        <h3>Листогибочный пресс PR6C-150T</h3>
-        <p class="equip-model">Гибочный пресс с ЧПУ</p>
-        <div class="equip-params">
-          <div class="equip-param"><span>Усилие</span><span>до 150 т</span></div>
-          <div class="equip-param"><span>Ещё прессы</span><span>125 т · VR6</span></div>
-          <div class="equip-param"><span>Гидропресс</span><span>100 т</span></div>
-          <div class="equip-param"><span>Перфоратор</span><span>VT-300 ЧПУ</span></div>
-        </div>
-      </div>
-
-      <div class="equip-card">
-        <img class="equip-photo" src="images/photos/prod-2039.webp" alt="Токарный станок с ЧПУ" width="1100" height="733" loading="lazy" decoding="async" />
-        <div class="equip-tag">Токарка · ×2</div>
-        <h3>TaiWan KAIBO CPL-208</h3>
-        <p class="equip-model">Токарный центр с приводным инструментом</p>
-        <div class="equip-params">
-          <div class="equip-param"><span>⌀ обработки</span><span>200 мм</span></div>
-          <div class="equip-param"><span>Длина</span><span>500 мм</span></div>
-          <div class="equip-param"><span>Точность</span><span>±0,005 мм</span></div>
-          <div class="equip-param"><span>Токарно-фрез.</span><span>6045 · ось Y</span></div>
-        </div>
-      </div>
-
-      <div class="equip-card">
-        <img class="equip-photo" src="images/photos/prod-2035.webp" alt="КИМ Hexagon" width="733" height="1100" loading="lazy" decoding="async" />
-        <div class="equip-tag">КИМ · ×1</div>
-        <h3>Hexagon Global S</h3>
-        <p class="equip-model">Координатно-измерительная машина</p>
-        <div class="equip-params">
-          <div class="equip-param"><span>Рабочее поле</span><span>800×600×600</span></div>
-          <div class="equip-param"><span>Точность</span><span>±0,0025 мм</span></div>
-          <div class="equip-param"><span>+ 2D-измеритель</span><span>оптический</span></div>
-          <div class="equip-param"><span>Протокол</span><span>на каждую партию</span></div>
-        </div>
-      </div>
-
-      <div class="equip-card">
-        <img class="equip-photo" src="images/photos/gen-welding.webp" alt="Роботизированная сварка" width="1100" height="821" loading="lazy" decoding="async" />
-        <div class="equip-tag">Сварка · ×16</div>
-        <h3>TIG · MIG · Робот · Лазер</h3>
-        <p class="equip-model">Сварочный участок</p>
-        <div class="equip-params">
-          <div class="equip-param"><span>Роботы</span><span>NB-350 · ×2</span></div>
-          <div class="equip-param"><span>Аргон (TIG)</span><span>WSM-400 · WSME-315</span></div>
-          <div class="equip-param"><span>Полуавтоматы</span><span>MIG/MAG в CO₂</span></div>
-          <div class="equip-param"><span>Лазерная</span><span>SUP-AMF-D</span></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ SERVICES ═══════ -->
-<section class="section services" id="services">
-  <div class="container">
-    <div class="services-intro">
-      <div>
-
-        <h2 class="h2">Маршрут под геометрию,<br><em>а не набор операций.</em></h2>
-      </div>
-      <p class="lead">Можно заказать одну операцию или связанный цикл: заготовка, обработка, сварка, покрытие и контроль. Точную комбинацию определяет технолог по чертежу.</p>
-    </div>
-    <div class="svc-grid">
-
-      <a class="svc-cell" href="frezerovka.html">
-        <div class="svc-num">01</div>
-        <h3>Фрезерная обработка ЧПУ</h3>
-        <p>Hermle C500 / DMG Mori. Корпусные и фасонные детали в одной установке, точность ±0,005 мм.</p>
-        <div class="svc-price">от <span>1 800 ₽</span> / нормо-час</div>
-        <span class="svc-more">Подробнее о фрезеровке →</span>
-      </a>
-
-      <a class="svc-cell" href="tokarnaya.html">
-        <div class="svc-num">02</div>
-        <h3>Токарная обработка ЧПУ</h3>
-        <p>DMG Mori NLX 2500 · приводной инструмент, ось C, противошпиндель. Серии до 50 000.</p>
-        <div class="svc-price">от <span>1 200 ₽</span> / нормо-час</div>
-        <span class="svc-more">Подробнее о токарной обработке →</span>
-      </a>
-
-      <div class="svc-cell">
-        <div class="svc-num">03</div>
-        <h3>Лазерная резка</h3>
-        <p>Волоконный лазер 20 кВт. Сталь, нержавейка, алюминий — до 30 мм толщиной.</p>
-        <div class="svc-price">от <span>80 ₽</span> / м</div>
-      </div>
-
-      <div class="svc-cell">
-        <div class="svc-num">04</div>
-        <h3>Гибка листового металла</h3>
-        <p>Прессы до 150 т усилия. Алюминий, сталь, нержавейка. Высокая повторяемость гиба.</p>
-        <div class="svc-price">от <span>150 ₽</span> / гиб</div>
-      </div>
-
-      <div class="svc-cell">
-        <div class="svc-num">05</div>
-        <h3>Сварка и сборка</h3>
-        <p>TIG, MIG/MAG, роботизированная и лазерная сварка. Сталь, нержавейка, алюминий.</p>
-        <div class="svc-price">от <span>950 ₽</span> / нормо-час</div>
-      </div>
-
-      <div class="svc-cell">
-        <div class="svc-num">06</div>
-        <h3>Порошковая окраска</h3>
-        <p>Любой цвет RAL. Камеры до 6 м. Матовое, глянцевое, текстурное покрытие.</p>
-        <div class="svc-price">от <span>320 ₽</span> / м²</div>
-      </div>
-
-      <div class="svc-cell">
-        <div class="svc-num">07</div>
-        <h3>КИМ-контроль</h3>
-        <p>3D-замер на Hexagon. Протокол с допусками — в комплекте к каждой партии.</p>
-        <div class="svc-price"><span>входит</span> в стоимость заказа</div>
-      </div>
-
-      <div class="svc-cell">
-        <div class="svc-num">08</div>
-        <h3>Гидроабразивная резка</h3>
-        <p>Резка любых материалов: титан, стекло, керамика, композиты. Без термического воздействия.</p>
-        <div class="svc-price">по <span>запросу</span></div>
-      </div>
-
-      <div class="svc-cell">
-        <div class="svc-num">09</div>
-        <h3>Гальваника и покрытия</h3>
-        <p>Цинкование, никелирование, анодирование, хромирование. Сертификаты по запросу.</p>
-        <div class="svc-price">по <span>запросу</span></div>
-      </div>
-
-      <a class="svc-cell" href="serijnoe-proizvodstvo-detalej.html">
-        <div class="svc-num">10</div>
-        <h3>Серийное производство деталей</h3>
-        <p>Пилотная партия, стабильный выпуск, КИМ-контроль и повторные заказы по актуальной ревизии чертежа.</p>
-        <div class="svc-price"><span>расчёт</span> по количеству</div>
-        <span class="svc-more">Подробнее о серийном выпуске →</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ PROCESS ═══════ -->
-<section class="section process" id="process">
-  <div class="container">
-
-    <h2 class="h2" style="color:#fff;">Ваш файл — наш маршрут.<br><em>Пять шагов</em> до готовой детали.</h2>
-    <div class="process-grid">
-      <div class="process-img">
-        <img src="images/photos/prod-2045.webp" alt="Производственный процесс" width="1100" height="733" loading="lazy" decoding="async" />
-      </div>
-      <div class="steps">
-        <div class="step-row">
-          <div class="step-num">01</div>
-          <div class="step-body">
-            <h3>Заявка и чертёж</h3>
-            <p>Присылаете файл: PDF, DWG, DXF, STEP, IGES, ZIP. NDA и режим конфиденциальности согласуем до начала работ.</p>
-            <div class="step-note">→ NDA по запросу</div>
-          </div>
-        </div>
-        <div class="step-row">
-          <div class="step-num">02</div>
-          <div class="step-body">
-            <h3>Расчёт стоимости</h3>
-            <p>Технолог считает маршрут, материал и оснастку. Возвращаем точную стоимость и срок.</p>
-            <div class="step-note">→ 3 рабочих дня</div>
-          </div>
-        </div>
-        <div class="step-row">
-          <div class="step-num">03</div>
-          <div class="step-body">
-            <h3>Производство</h3>
-            <p>Раскрой, обработка, сварка, покрытие. 47 станков, 2 смены. Видео-отчёт по запросу.</p>
-            <div class="step-note">→ статус в любое время</div>
-          </div>
-        </div>
-        <div class="step-row">
-          <div class="step-num">04</div>
-          <div class="step-body">
-            <h3>КИМ-контроль</h3>
-            <p>Каждая партия — на координатной машине Hexagon. Протокол с допусками в комплекте.</p>
-            <div class="step-note">→ точность ±0,0025 мм</div>
-          </div>
-        </div>
-        <div class="step-row">
-          <div class="step-num">05</div>
-          <div class="step-body">
-            <h3>Доставка</h3>
-            <p>Собственный транспорт по ПФО, транспортные компании по всей РФ, экспорт ЕАЭС.</p>
-            <div class="step-note">→ 63 региона</div>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════ INDUSTRIES ═══════ -->
-<section class="section industries" id="industries">
-  <div class="container">
+  <section class="statement statement--grid section" id="cta">
+    <div class="container">
+      <span class="label">Целевое действие — письмо на почту</span>
+      <h2>Пришлите чертёж — ответим стоимостью и сроком за 3 рабочих дня</h2>
+      <p style="max-width:56ch">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — чем понятнее письмо, тем быстрее считаем. Форматы: PDF, DWG, DXF, STEP, IGES, ZIP, RAR, JPG, PNG.</p>
 
-    <h2 class="h2">Знаем требования<br><em>вашей отрасли.</em></h2>
-    <p class="lead">В каждой отрасли свой набор материалов, допусков и сертификатов. Под каждую — выделенный технолог с шаблонами маршрутов.</p>
-    <div class="ind-grid">
-      <a href="#cta" class="ind-card">
-        <div class="ind-num">01</div>
-        <h3>Машиностроение</h3>
-        <div class="ind-count">1 240 заказов</div>
-      </a>
-      <a href="#cta" class="ind-card">
-        <div class="ind-num">02</div>
-        <h3>Приборостроение</h3>
-        <div class="ind-count">980 заказов</div>
-      </a>
-      <a href="#cta" class="ind-card">
-        <div class="ind-num">03</div>
-        <h3>Медтех и оборудование</h3>
-        <div class="ind-count">410 заказов</div>
-      </a>
-      <a href="#cta" class="ind-card">
-        <div class="ind-num">04</div>
-        <h3>Нефть и газ</h3>
-        <div class="ind-count">520 заказов</div>
-      </a>
-      <a href="#cta" class="ind-card">
-        <div class="ind-num">05</div>
-        <h3>Энергетика</h3>
-        <div class="ind-count">380 заказов</div>
-      </a>
-      <a href="#cta" class="ind-card">
-        <div class="ind-num">06</div>
-        <h3>Аэрокосмос</h3>
-        <div class="ind-count">180 заказов</div>
-      </a>
-      <a href="#cta" class="ind-card">
-        <div class="ind-num">07</div>
-        <h3>Транспорт и спецтехника</h3>
-        <div class="ind-count">640 заказов</div>
-      </a>
-      <a href="#cta" class="ind-card">
-        <div class="ind-num">08</div>
-        <h3>Пищевое оборудование</h3>
-        <div class="ind-count">290 заказов</div>
-      </a>
+      <p style="margin-top:28px">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20главная">Написать на info@ironex.tech</a>
+      </p>
+      <p style="margin-top:16px">NDA — по запросу, до начала работ. Расчёт бесплатный, даже на этапе сравнения подрядчиков.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════ CASES ═══════ -->
-<section class="section cases" id="cases">
-  <div class="container">
-
-    <h2 class="h2">Что мы делаем,<br>когда вы присылаете чертёж.</h2>
-    <p class="lead">Реальные работы с нашего производства. Имена клиентов и чертежи не публикуем — только геометрия готовой детали.</p>
-    <div class="cases-grid">
-
-      <div class="case-card">
-        <div class="case-img">
-          <img src="images/cases/korpus-rea-d16t.webp" alt="Корпус бортовой РЭА" width="1200" height="670" loading="lazy" decoding="async" />
-        </div>
-        <div class="case-body">
-          <div class="case-tags">
-            <span class="case-tag">5 осей</span>
-            <span class="case-tag">фрезеровка</span>
-            <span class="case-tag">Д16Т</span>
-          </div>
-          <h3>Корпус бортовой РЭА</h3>
-          <p>Алюминий Д16Т, 48 деталей, допуск ±0,01 мм, чёрное анодирование. Серия 240 шт. за 11 рабочих дней.</p>
-          <div class="case-meta">
-            <span>Приборостроение</span>
-            <span>240 шт.</span>
-            <span>11 дн.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="case-card">
-        <div class="case-img">
-          <img src="images/cases/valy-reduktora-40h.webp" alt="Партия валов редуктора" width="1100" height="738" loading="lazy" decoding="async" />
-        </div>
-        <div class="case-body">
-          <div class="case-tags">
-            <span class="case-tag">токарка</span>
-            <span class="case-tag">сталь 40Х</span>
-          </div>
-          <h3>Партия валов редуктора</h3>
-          <p>Сталь 40Х, шлицы, термообработка и шлифовка. Серия 1 200 шт., трёхсменная работа.</p>
-          <div class="case-meta">
-            <span>Машиностроение</span>
-            <span>1 200 шт.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="case-card">
-        <div class="case-img">
-          <img src="images/cases/server-rack-42u.webp" alt="Каркас серверной стойки" width="960" height="717" loading="lazy" decoding="async" />
-        </div>
-        <div class="case-body">
-          <div class="case-tags">
-            <span class="case-tag">лазер</span>
-            <span class="case-tag">гибка</span>
-            <span class="case-tag">окраска</span>
-          </div>
-          <h3>Каркас серверной стойки 42U</h3>
-          <p>Сталь 2 мм, RAL 9005 муар. Партия 80 шт.</p>
-          <div class="case-meta">
-            <span>IT-инфраструктура</span>
-            <span>80 шт.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="case-card">
-        <div class="case-img">
-          <img src="images/cases/modul-aisi304.webp" alt="Технологический модуль из нержавейки" width="960" height="717" loading="lazy" decoding="async" />
-        </div>
-        <div class="case-body">
-          <div class="case-tags">
-            <span class="case-tag">сварка TIG</span>
-            <span class="case-tag">AISI 304</span>
-          </div>
-          <h3>Технологический модуль</h3>
-          <p>Пищевое оборудование, нержавейка AISI 304, полировка Ra 0,8.</p>
-          <div class="case-meta">
-            <span>Пищевая отрасль</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="case-card">
-        <div class="case-img">
-          <img src="images/cases/kronshtein-titan-vt6.webp" alt="Кронштейн из титана ВТ6" width="960" height="717" loading="lazy" decoding="async" />
-        </div>
-        <div class="case-body">
-          <div class="case-tags">
-            <span class="case-tag">фрезеровка</span>
-            <span class="case-tag">титан</span>
-          </div>
-          <h3>Кронштейн медоборудования</h3>
-          <p>Титан ВТ6, биосовместимая полировка. Контракт на 6 месяцев.</p>
-          <div class="case-meta">
-            <span>Медтех</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ GALLERY ═══════ -->
-<section class="section-sm gallery">
-  <div class="container">
-
-    <h2 class="h2" style="font-size:clamp(22px,3vw,30px);margin-bottom:8px;">Детали с нашего производства.</h2>
-    <p style="font-size:14px;color:var(--muted);margin-bottom:0;">Токарка, фрезеровка, 5 осей. Алюминий, сталь, нержавейка, латунь.</p>
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="images/photos/shop-16.webp" alt="Фрезерованная деталь из алюминия на заказ" width="700" height="394" loading="lazy" decoding="async" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-01.webp" alt="Токарная деталь ЧПУ из нержавеющей стали" width="476" height="700" loading="lazy" decoding="async" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-03.webp" alt="Корпусная деталь металлообработка по чертежу" width="476" height="700" loading="lazy" decoding="async" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-08.webp" alt="Серийные детали из нержавейки AISI 304" width="476" height="700" loading="lazy" decoding="async" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-06.webp" alt="Гнутые листовые детали металлообработка" width="476" height="700" loading="lazy" decoding="async" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-14.webp" alt="Сварной металлический узел контрактное производство" width="394" height="700" loading="lazy" decoding="async" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-05.webp" alt="Прецизионная деталь токарный станок ЧПУ" width="476" height="700" loading="lazy" decoding="async" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-15.webp" alt="Партия деталей металлообработка изготовление" width="700" height="394" loading="lazy" decoding="async" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-11.webp" alt="Фрезерная обработка детали 5-осевой станок" width="476" height="700" loading="lazy" decoding="async" /></div>
-      <div class="gallery-item"><img src="images/photos/shop-17.webp" alt="Прецизионная деталь из стали по чертежу" width="700" height="394" loading="lazy" decoding="async" /></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ CTA ═══════ -->
-<section class="cta-section" id="cta">
-  <div class="container">
-    <div class="cta-inner">
-      <div class="cta-left">
-
-        <h2 class="h2" style="color:#fff;">Пришлите чертёж —<br><em>подтвердим заявку за 1 рабочий день.</em></h2>
-        <p class="lead">Отправьте чертёж или опишите задачу. Технолог уточнит входные данные; точную стоимость, срок и маршрут подготовим в стандартный срок до 3 рабочих дней.</p>
-        <div style="margin-top:28px;display:flex;flex-direction:column;gap:10px;">
-          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.5);">
-            <span style="color:var(--amber);font-size:16px;">✓</span> NDA по запросу — режим конфиденциальности фиксируем до начала работ
-          </div>
-          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.5);">
-            <span style="color:var(--amber);font-size:16px;">✓</span> Расчёт бесплатно, даже на этапе сравнения подрядчиков
-          </div>
-          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.5);">
-            <span style="color:var(--amber);font-size:16px;">✓</span> Пробные и серийные партии; объём уточняем по технологии
-          </div>
-        </div>
-      </div>
-      <div class="cta-right">
-        <div class="cta-channels">
-          <div class="cta-channel email-contact-card" data-email-copy>
-            <div class="cta-icon">EMAIL</div>
-            <div>
-              <div class="cta-channel-title">Написать на почту</div>
-              <div class="cta-channel-sub">Прикрепите чертёж · PDF, DWG, DXF, STEP, IGES, ZIP</div>
-            </div>
-            <div class="email-contact-actions">
-              <a href="mailto:info@ironex.tech" class="cta-channel-val email-contact-address" data-email-value>info@ironex.tech</a>
-              <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
-            </div>
-          </div>
-          <a href="tel:+79934904024" class="cta-channel">
-            <div class="cta-icon">TEL</div>
-            <div>
-              <div class="cta-channel-title">Позвонить</div>
-              <div class="cta-channel-sub">Пн–Пт, 09:00–19:00 по МСК</div>
-            </div>
-            <div class="cta-channel-val">+7 993 490-40-24</div>
-          </a>
-          <a href="https://t.me/+79819470402" class="cta-channel">
-            <div class="cta-icon">TG</div>
-            <div>
-              <div class="cta-channel-title">Написать в Telegram</div>
-              <div class="cta-channel-sub">Ответим в течение часа в рабочее время</div>
-            </div>
-            <div class="cta-channel-val">→ Telegram</div>
-          </a>
-          <a href="https://wa.me/79819470402" class="cta-channel">
-            <div class="cta-icon">WA</div>
-            <div>
-              <div class="cta-channel-title">WhatsApp</div>
-              <div class="cta-channel-sub">Удобно отправить фото или голосовое</div>
-            </div>
-            <div class="cta-channel-val">→ WhatsApp</div>
-          </a>
-        </div>
-        <p class="cta-note">
-          <strong>Форматы чертежей:</strong> PDF, DWG, DXF, STEP, IGES, ZIP, RAR, JPG, PNG.<br>
-          Объём партии зависит от технологии, материала и подготовки производства.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ FOOTER ═══════ -->
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
+    <div class="site-footer__top">
       <div>
-        <div class="f-logo">IRON<span>EX</span></div>
-        <p class="f-desc">Изготовление деталей по чертежам полного цикла. Собственный парк ЧПУ, КИМ-контроль каждой партии.</p>
-        <div class="f-contacts">
-          <a href="tel:+79934904024">+7 993 490-40-24</a>
-          <a href="mailto:info@ironex.tech">info@ironex.tech</a>
-          <span>Пн–Пт, 09:00–19:00 (МСК)</span>
-        </div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Услуги</p>
+      <div>
+        <h3>Услуги</h3>
         <ul>
-          <li><a href="tokarnaya.html">Токарная обработка</a></li>
-          <li><a href="frezerovka.html">Фрезерная обработка</a></li>
-          <li><a href="#services">Лазерная резка</a></li>
-          <li><a href="#services">Гибка металла</a></li>
-          <li><a href="#services">Сварка и сборка</a></li>
-          <li><a href="#services">Порошковая покраска</a></li>
-          <li><a href="#services">КИМ-контроль</a></li>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Компания</p>
+      <div>
+        <h3>Компания</h3>
         <ul>
-          <li><a href="#equipment">Оборудование</a></li>
-          <li><a href="#process">Как работаем</a></li>
-          <li><a href="#industries">Отрасли</a></li>
-          <li><a href="#cases">Кейсы</a></li>
-          <li><a href="#cta">Контакты</a></li>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Связаться</p>
+      <div>
+        <h3>Связаться</h3>
         <ul>
-          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
-          <li><a href="https://t.me/+79819470402">Telegram</a></li>
-          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 IRONEX. Контрактное производство деталей.</span>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
       <span>ООО «Айронекс» · ИНН 7804719856</span>
     </div>
   </div>
 </footer>
 
-<script>
-  // Подсветка активного пункта в навигации при скролле
-  const sections = document.querySelectorAll('section[id]');
-  const links = document.querySelectorAll('.nav-links a');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
-    links.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
-  });
-</script>
-
-<script src="analytics-events.js"></script>
-<script src="email-copy.js"></script>
-<script src="redesign.js"></script>
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
 </body>
 </html>

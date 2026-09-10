@@ -7,147 +7,50 @@
   <meta name="description" content="Контакты IRONEX: +7 993 490-40-24, info@ironex.tech, Telegram, WhatsApp. Изготовление деталей по чертежам — отправьте файл и получите расчёт стоимости за 3 рабочих дня." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --dark:#18181B;--dark2:#27272A;--amber:#F59E0B;--amber2:#D97706;
-      --amber3:#FEF3C7;--bg:#FAFAF9;--bg2:#F4F4F0;--text:#18181B;
-      --muted:#71717A;--border:#E4E4E7;--white:#FFFFFF;--r:10px;
-    }
-    html{scroll-behavior:smooth;}
-    body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;}
-    .container{max-width:1180px;margin:0 auto;padding:0 24px;}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;
-             letter-spacing:.1em;text-transform:uppercase;color:var(--amber2);margin-bottom:18px;}
-    .eyebrow::before{content:'';display:block;width:20px;height:2px;background:var(--amber);}
-    h2.h2{font-size:clamp(24px,3.5vw,36px);font-weight:900;line-height:1.15;letter-spacing:-.025em;margin-bottom:14px;}
-    h2.h2 em{font-style:normal;color:var(--amber2);}
-
-    /* NAV */
-    nav{position:sticky;top:0;z-index:200;background:rgba(24,24,27,.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06);}
-    .nav-inner{display:flex;align-items:center;height:68px;}
-    .nav-logo{font-size:21px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:-.025em;flex-shrink:0;margin-right:auto;}
-    .nav-logo span{color:var(--amber);}
-    .nav-links{display:flex;gap:28px;list-style:none;margin-right:32px;}
-    .nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;}
-    .nav-links a:hover,.nav-links a.active{color:#fff;}
-    .nav-actions{display:flex;align-items:center;gap:20px;flex-shrink:0;}
-    .nav-phone{color:rgba(255,255,255,.8);font-size:14px;font-weight:600;text-decoration:none;}
-    .nav-phone:hover{color:var(--amber);}
-    .btn-amber-nav{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:8px;
-         font-weight:700;font-size:14px;cursor:pointer;text-decoration:none;transition:all .2s;background:var(--amber);color:var(--dark);}
-    .btn-amber-nav:hover{background:var(--amber2);}
-    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;margin-left:16px;}
-    .hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;}
-    .mob-menu{display:none;background:var(--dark2);border-top:1px solid rgba(255,255,255,.08);}
-    .mob-menu.open{display:block;}
-    .mob-menu a{display:block;padding:13px 24px;color:rgba(255,255,255,.75);font-size:15px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);}
-
-    /* BREADCRUMB */
-    .breadcrumb{padding:16px 0;border-bottom:1px solid var(--border);}
-    .breadcrumb-inner{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);}
-    .breadcrumb a{color:var(--muted);text-decoration:none;}
-    .breadcrumb span{color:var(--text);font-weight:500;}
-
-    /* PAGE HERO */
-    .page-hero{padding:64px 0 56px;background:var(--dark);color:#fff;}
-    .page-hero h1{font-size:clamp(32px,5vw,52px);font-weight:900;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px;}
-    .page-hero h1 em{font-style:normal;color:var(--amber);}
-    .page-hero p{font-size:16px;color:rgba(255,255,255,.55);line-height:1.65;max-width:560px;}
-
-    /* CONTACT LAYOUT */
-    .contacts-section{padding:72px 0;}
-    .contacts-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
-    .contact-block{display:flex;flex-direction:column;gap:16px;}
-
-    .channel-card{display:flex;align-items:center;gap:20px;padding:24px;border:1px solid var(--border);border-radius:14px;text-decoration:none;color:var(--text);transition:all .2s;}
-    .channel-card:hover{border-color:var(--amber);box-shadow:0 4px 20px rgba(0,0,0,.07);transform:translateY(-1px);}
-    .ch-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;}
-    .ch-icon.email{background:#EFF6FF;}
-    .ch-icon.phone{background:#F0FDF4;}
-    .ch-icon.tg{background:#EFF6FF;}
-    .ch-icon.wa{background:#F0FDF4;}
-    .ch-title{font-size:15px;font-weight:700;margin-bottom:3px;}
-    .ch-desc{font-size:13px;color:var(--muted);}
-    .ch-val{margin-left:auto;font-size:14px;font-weight:700;color:var(--amber2);white-space:nowrap;}
-
-    /* INFO BLOCK */
-    .info-card{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:32px;}
-    .info-card h3{font-size:18px;font-weight:800;margin-bottom:20px;letter-spacing:-.01em;}
-    .info-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);}
-    .info-row:last-child{border-bottom:none;}
-    .info-label{font-size:13px;color:var(--muted);flex-shrink:0;}
-    .info-val{font-size:13px;font-weight:600;text-align:right;}
-
-    /* HOW IT WORKS */
-    .how-section{padding:72px 0;background:var(--bg);}
-    .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;border:1px solid var(--border);border-radius:14px;overflow:hidden;}
-    .step{padding:28px 24px;border-right:1px solid var(--border);position:relative;}
-    .step:last-child{border-right:none;}
-    .step-num{width:40px;height:40px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--dark);margin-bottom:16px;}
-    body.redesign-precision .step h3{font-size:14px;font-weight:700;margin-bottom:8px;}
-    .step p{font-size:12px;color:var(--muted);line-height:1.6;}
-
-    /* FORMATS */
-    .formats-section{padding:64px 0;}
-    .formats-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:32px;}
-    .fmt-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;}
-    .fmt-ext{font-size:18px;font-weight:900;color:var(--dark);letter-spacing:-.01em;}
-    .fmt-desc{font-size:11px;color:var(--muted);margin-top:4px;}
-
-    /* FOOTER */
-    footer{background:#0A0A0C;color:rgba(255,255,255,.4);padding:48px 0 24px;}
-    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.07);}
-    .f-logo{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.025em;margin-bottom:10px;}
-    .f-logo span{color:var(--amber);}
-    .f-desc{font-size:13px;line-height:1.65;max-width:220px;margin-bottom:16px;}
-    .f-contacts{display:flex;flex-direction:column;gap:7px;}
-    .f-contacts a{color:rgba(255,255,255,.6);text-decoration:none;font-size:13px;}
-    .f-contacts a:hover{color:var(--amber);}
-    .f-col h4{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.3);margin-bottom:14px;}
-    .f-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
-    .f-col a{color:rgba(255,255,255,.5);text-decoration:none;font-size:13px;}
-    .f-col a:hover{color:rgba(255,255,255,.9);}
-    .footer-bottom{display:flex;justify-content:space-between;padding-top:20px;font-size:12px;flex-wrap:wrap;gap:10px;}
-
-    @media(max-width:900px){
-      .contacts-grid{grid-template-columns:1fr;}
-      .steps-grid{grid-template-columns:1fr 1fr;}
-      .step{border-right:1px solid var(--border);}
-      .step:nth-child(2){border-right:none;}
-      .step:nth-child(3){border-right:1px solid var(--border);border-top:1px solid var(--border);}
-      .step:nth-child(4){border-right:none;border-top:1px solid var(--border);}
-      .formats-grid{grid-template-columns:repeat(3,1fr);}
-    }
-    @media(max-width:768px){
-      .nav-links,.nav-actions{display:none;}
-      .hamburger{display:flex;}
-      .footer-top{grid-template-columns:1fr 1fr;}
-    }
-    @media(max-width:480px){
-      .footer-top{grid-template-columns:1fr;}
-      .ch-val{display:none;}
-      .steps-grid{grid-template-columns:1fr;}
-      .step{border-right:none;border-bottom:1px solid var(--border);}
-      .step:last-child{border-bottom:none;}
-      .formats-grid{grid-template-columns:repeat(2,1fr);}
-    }
-  </style>
-
-  <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
   <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
 
-  <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
   <link rel="canonical" href="https://ironex.tech/kontakty.html" />
+  <meta name="robots" content="index, follow" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[
-    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Контакты","item":"https://ironex.tech/kontakty.html"}]},
-    {"@type":"WebPage","url":"https://ironex.tech/kontakty.html","name":"Контакты IRONEX — металлообработка по чертежам, расчёт за 3 дня","description":"Контакты IRONEX: +7 993 490-40-24, info@ironex.tech, Telegram, WhatsApp. Изготовление деталей по чертежам — отправьте файл и получите расчёт стоимости за 3 рабочих дня.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"}},
-    {"@type":"Organization","@id":"https://ironex.tech/#org","name":"IRONEX","url":"https://ironex.tech","telephone":"+79934904024","email":"info@ironex.tech","contactPoint":[{"@type":"ContactPoint","telephone":"+79934904024","contactType":"sales","availableLanguage":"Russian"},{"@type":"ContactPoint","email":"info@ironex.tech","contactType":"customer service","availableLanguage":"Russian"}]}
-  ]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "url": "https://ironex.tech/kontakty.html",
+      "name": "Контакты IRONEX — металлообработка по чертежам, расчёт за 3 дня",
+      "description": "Контакты IRONEX: +7 993 490-40-24, info@ironex.tech, Telegram, WhatsApp. Изготовление деталей по чертежам — отправьте файл и получите расчёт стоимости за 3 рабочих дня.",
+      "inLanguage": "ru-RU",
+      "publisher": { "@id": "https://ironex.tech/#org" },
+      "isPartOf": { "@id": "https://ironex.tech/#website" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech/#org",
+      "name": "IRONEX",
+      "legalName": "ООО «Айронекс»",
+      "url": "https://ironex.tech",
+      "telephone": "+79934904024",
+      "email": "info@ironex.tech",
+      "taxID": "7804719856",
+      "contactPoint": [
+        { "@type": "ContactPoint", "telephone": "+79934904024", "contactType": "sales", "areaServed": "RU", "availableLanguage": "Russian" },
+        { "@type": "ContactPoint", "email": "info@ironex.tech", "contactType": "customer service", "areaServed": "RU", "availableLanguage": "Russian" },
+        { "@type": "ContactPoint", "url": "https://t.me/+79819470402", "contactType": "sales", "areaServed": "RU", "availableLanguage": "Russian" },
+        { "@type": "ContactPoint", "url": "https://wa.me/79819470402", "contactType": "sales", "areaServed": "RU", "availableLanguage": "Russian" }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ironex.tech/" },
+        { "@type": "ListItem", "position": 2, "name": "Контакты", "item": "https://ironex.tech/kontakty.html" }
+      ]
+    }
+  ]
+}
   </script>
-  <!-- ═══ Яндекс Метрика 105009501 ═══ -->
   <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -156,303 +59,210 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <link rel="stylesheet" href="email-copy.css" />
-  <link rel="stylesheet" href="redesign.css?v=20260907-4" />
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Контакты IRONEX — металлообработка по чертежам, расчёт за 3 дня" />
+  <meta property="og:description" content="Контакты IRONEX: +7 993 490-40-24, info@ironex.tech, Telegram, WhatsApp. Изготовление деталей по чертежам — отправьте файл и получите расчёт стоимости за 3 рабочих дня." />
+  <meta property="og:url" content="https://ironex.tech/kontakty.html" />
+  <meta property="og:image" content="https://ironex.tech/images/og.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="670" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Контакты IRONEX — металлообработка по чертежам, расчёт за 3 дня" />
+  <meta name="twitter:description" content="Контакты IRONEX: +7 993 490-40-24, info@ironex.tech, Telegram, WhatsApp. Изготовление деталей по чертежам — отправьте файл и получите расчёт стоимости за 3 рабочих дня." />
+  <meta name="twitter:image" content="https://ironex.tech/images/og.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
 </head>
-<body class="redesign-precision">
-<a class="skip-link" href="#main-content">Перейти к содержанию</a>
-<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
 
-<!-- NAV -->
-<nav>
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">IRON<span>EX</span></a>
-      <ul class="nav-links">
-        <li><a href="uslugi.html">Услуги</a></li>
-        <li><a href="oborudovanie.html">Оборудование</a></li>
-        <li><a href="ceny.html">Цены</a></li>
-        <li><a href="blog.html">Блог</a></li>
-        <li><a href="index.html#cases">Кейсы</a></li>
-        <li><a href="kontakty.html" class="active">Контакты</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
-        <a href="mailto:info@ironex.tech" class="btn-amber-nav">Написать письмо</a>
-      </div>
-      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
-        <span></span><span></span><span></span>
-      </button>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html">Блог</a></li>
+      <li><a href="/kontakty.html" aria-current="page">Контакты</a></li>
+    </ul>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href="tel:+79934904024">+7 993 490-40-24</a>
+      <a class="btn btn--primary" href="/kontakty.html">Прислать чертёж</a>
     </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <div class="mob-menu" id="mobMenu">
-    <a href="uslugi.html">Услуги</a>
-    <a href="oborudovanie.html">Оборудование</a>
-    <a href="ceny.html">Цены</a>
-    <a href="blog.html">Блог</a>
-    <a href="index.html#cases">Кейсы</a>
-    <a href="kontakty.html">Контакты</a>
-    <a href="mailto:info@ironex.tech" style="color:var(--amber);">Написать письмо</a>
-    <a href="tel:+79934904024">+7 993 490-40-24</a>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><span>Контакты</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+    <span class="label">Контакты</span>
+    <h1>Пришлите чертёж — расчёт получите за 3 рабочих дня</h1>
+    <p class="lede">Пришлите чертёж на почту — технолог подтвердит получение файлов, уточнит недостающее и вернётся со стоимостью и сроком.</p>
   </div>
-</nav>
 
-<main id="main-content">
+  <div class="container section section--tint">
+    <div class="rule-label"><span class="label">Как отправить чертёж</span></div>
+    <h2>Опишите задачу и пришлите чертёж на почту</h2>
 
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <div class="container">
-    <div class="breadcrumb-inner"><a href="index.html">Главная</a> · <span>Контакты</span></div>
-  </div>
-</div>
-
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="container">
-    <div class="contact-hero-grid">
-      <div class="page-hero-content">
-
-        <h1>Отправьте чертёж — <em>технолог проверит задачу</em></h1>
-        <p>Напишите на почту или в мессенджер. Мы подтвердим получение файлов, уточним недостающие данные и подготовим стоимость и срок.</p>
-        <div class="hero-badges">
-          <span class="hbadge">Ответ по расчёту до 3 рабочих дней</span>
-          <span class="hbadge">PDF · DWG · DXF · STEP · IGES</span>
-          <span class="hbadge">Почта · телефон · Telegram · WhatsApp</span>
-          <span class="hbadge">NDA согласуем до начала работ</span>
-        </div>
+    <div class="callout channel-card">
+      <div data-email-copy>
+        <span class="label">Почта</span>
+        <h3><a href="mailto:info@ironex.tech" data-email-value>info@ironex.tech</a></h3>
+        <button type="button" class="btn btn--ghost" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать адрес</button>
       </div>
-      <aside class="rfq-sheet" aria-label="Данные для расчёта">
 
-        <h2>Что приложить к заявке</h2>
+      <div class="prose" style="margin-top:24px">
+        <p><strong>Что приложить к письму:</strong></p>
         <ol>
-          <li><span>01</span><strong>Чертёж или 3D-модель</strong></li>
-          <li><span>02</span><strong>Материал и количество</strong></li>
-          <li><span>03</span><strong>Покрытие и контроль</strong></li>
-          <li><span>04</span><strong>Желаемый срок</strong></li>
+          <li>Чертёж или 3D-модель</li>
+          <li>Материал и количество</li>
+          <li>Покрытие и контроль</li>
+          <li>Желаемый срок</li>
         </ol>
-        <a href="mailto:info@ironex.tech" class="btn btn-amber">Написать на почту</a>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACTS -->
-<section class="contacts-section">
-  <div class="container">
-    <div class="contacts-grid">
-
-      <!-- Каналы связи -->
-      <div>
-
-        <h2 class="h2" style="margin-bottom:28px;">Куда отправить<br><em>файлы</em></h2>
-        <div class="contact-block">
-          <div class="channel-card email-contact-card" data-email-copy>
-            <div class="ch-icon email">MAIL</div>
-            <div>
-              <div class="ch-title">Электронная почта</div>
-              <div class="ch-desc">Прикрепите чертёж — ответим с расчётом</div>
-            </div>
-            <div class="email-contact-actions">
-              <a href="mailto:info@ironex.tech" class="ch-val email-contact-address" data-email-value>info@ironex.tech</a>
-              <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
-            </div>
-          </div>
-          <a href="tel:+79934904024" class="channel-card">
-            <div class="ch-icon phone">TEL</div>
-            <div>
-              <div class="ch-title">Телефон</div>
-              <div class="ch-desc">Пн–Пт, 09:00–19:00 (МСК)</div>
-            </div>
-            <div class="ch-val">+7 993 490-40-24</div>
-          </a>
-          <a href="https://t.me/+79819470402" class="channel-card">
-            <div class="ch-icon tg">TG</div>
-            <div>
-              <div class="ch-title">Telegram</div>
-              <div class="ch-desc">Ответим в течение часа · можно прислать файлы</div>
-            </div>
-            <div class="ch-val">→ открыть чат</div>
-          </a>
-          <a href="https://wa.me/79819470402" class="channel-card">
-            <div class="ch-icon wa">WA</div>
-            <div>
-              <div class="ch-title">WhatsApp</div>
-              <div class="ch-desc">Удобно для голосовых и фото-замеров</div>
-            </div>
-            <div class="ch-val">→ открыть чат</div>
-          </a>
-        </div>
       </div>
 
-      <!-- Реквизиты и информация -->
-      <div style="display:flex;flex-direction:column;gap:20px;">
-        <div class="info-card">
-          <h3>Режим работы</h3>
-          <div class="info-row">
-            <span class="info-label">Пн–Пт</span>
-            <span class="info-val">09:00 – 19:00 (МСК)</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">Сб–Вс</span>
-            <span class="info-val">выходной (срочные — по договорённости)</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">Расчёт заявки</span>
-            <span class="info-val">3 рабочих дня</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">Ответ на письмо</span>
-            <span class="info-val">до 24 часов в рабочий день</span>
-          </div>
-        </div>
+      <p style="margin-top:24px"><a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20контакты">Написать на почту</a></p>
 
-        <div class="info-card">
-          <h3>Реквизиты</h3>
-          <div class="info-row">
-            <span class="info-label">Компания</span>
-            <span class="info-val">ООО «Айронекс»</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">ИНН</span>
-            <span class="info-val">7804719856</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">НДС</span>
-            <span class="info-val">22% — плательщик</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">Расчёты</span>
-            <span class="info-val">руб. · р/с в банке Точка</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">Доставка</span>
-            <span class="info-val">63 региона РФ</span>
-          </div>
-        </div>
+      <p style="margin-top:28px">Второй способ — позвонить: <a href="tel:+79934904024">+7 993 490-40-24</a>, Пн–Пт, 09:00–19:00 (МСК).</p>
 
-        <div style="background:var(--amber3);border:1px solid #FCD34D;border-radius:14px;padding:24px;">
-          <div style="font-size:13px;font-weight:700;color:var(--amber2);margin-bottom:8px;">FILE · Как отправить заявку</div>
-          <div style="font-size:13px;color:#78350F;line-height:1.65;">
-            Пришлите чертёж в любом формате: <strong>PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG.</strong>
-            Укажите материал, количество деталей и желаемый срок — ответим с расчётом стоимости и срока производства.
-          </div>
+      <p class="label" style="margin-top:14px">Мессенджеры: <a href="https://t.me/+79819470402">Telegram</a> · <a href="https://wa.me/79819470402">WhatsApp</a></p>
+    </div>
+
+    <figure class="figure--draft" style="margin-top:32px">
+      <img src="/images/il/paket-chertezhey.webp" alt="Комплект файлов для заявки: чертёж, 3D-модель, данные о материале и партии" width="1200" height="896" loading="lazy" decoding="async" />
+      <figcaption><span>Схема комплекта документов к заявке — иллюстрация, а не фотография конкретного чертежа.</span></figcaption>
+    </figure>
+
+    <p style="margin-top:28px">Подойдёт любой формат: PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG, STL, SAT, X_T. Формат другой или комплект неполный — пришлите то, что есть, технолог уточнит, чего не хватает.</p>
+  </div>
+
+  <div class="container section">
+    <div class="rule-label"><span class="label">Как это работает</span></div>
+    <h2>От заявки до готовой детали — 4 шага</h2>
+
+    <div class="mat-grid mat-grid--2" style="margin-top:24px">
+      <div class="card">
+        <div class="card__body">
+          <span class="label">Шаг 01</span>
+          <h3>Вы присылаете чертёж</h3>
+          <p>Пришлите чертёж на почту — укажите материал, количество и желаемый срок.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__body">
+          <span class="label">Шаг 02</span>
+          <h3>Расчёт за 3 дня</h3>
+          <p>Технолог анализирует чертёж, проектирует маршрут обработки и готовит расчёт стоимости и срока производства.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__body">
+          <span class="label">Шаг 03</span>
+          <h3>Производство</h3>
+          <p>После подтверждения согласуем технологический маршрут и запускаем заказ. Производственный парк — 47 станков ЧПУ, стандартный режим — 2 смены.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__body">
+          <span class="label">Шаг 04</span>
+          <h3>Доставка и протокол КИМ</h3>
+          <p>КИМ-контроль каждой партии, протокол с отклонениями. Доставка СДЭК, ПЭК или транспортными компаниями в 63 региона РФ.</p>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- КАК ЭТО РАБОТАЕТ -->
-<section class="how-section">
-  <div class="container">
+  <div class="container section section--tint">
+    <div class="rule-label"><span class="label">Справочно</span></div>
+    <h2>Режим работы, сроки ответа и реквизиты</h2>
 
-    <h2 class="h2">От заявки<br>до <em>готовой детали</em></h2>
-    <div class="steps-grid">
-      <div class="step">
-        <div class="step-num">01</div>
-        <h3>Вы присылаете чертёж</h3>
-        <p>Любой удобный способ — почта, Telegram, WhatsApp. Форматы: PDF, DWG, DXF, STEP, IGES, ZIP, JPG. Укажите материал, кол-во и желаемый срок.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <h3>Расчёт за 3 дня</h3>
-        <p>Технолог анализирует чертёж, проектирует маршрут обработки и готовит расчёт стоимости и срока производства. Вы получаете конкретные цифры.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <h3>Производство</h3>
-        <p>После подтверждения согласуем технологический маршрут и запускаем заказ в производство. Производственный парк — 47 станков ЧПУ, стандартный режим — 2 смены.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <h3>Доставка + протокол КИМ</h3>
-        <p>КИМ-контроль каждой партии, протокол с отклонениями. Доставка СДЭК, ПЭК или транспортными компаниями в 63 региона РФ.</p>
-      </div>
+    <div class="spec-table" style="margin-top:24px">
+      <table>
+        <thead>
+          <tr><th>Параметр</th><th>Значение</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Режим работы</td><td>Пн–Пт, 09:00–19:00 (МСК)</td></tr>
+          <tr><td>Выходные</td><td>Сб–Вс, срочные — по договорённости</td></tr>
+          <tr><td>Расчёт заявки</td><td class="num">3 рабочих дня</td></tr>
+          <tr><td>Ответ на письмо</td><td>до 24 часов в рабочий день</td></tr>
+          <tr><th colspan="2">Реквизиты</th></tr>
+          <tr><td>Компания</td><td>ООО «Айронекс»</td></tr>
+          <tr><td>ИНН</td><td class="num">7804719856</td></tr>
+          <tr><td>НДС</td><td>22% — плательщик</td></tr>
+          <tr><td>Расчёты</td><td>рубли · р/с в банке Точка</td></tr>
+          <tr><td>Доставка</td><td>63 региона РФ</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-</section>
 
-<!-- ФОРМАТЫ ФАЙЛОВ -->
-<section class="formats-section">
-  <div class="container">
-
-    <h2 class="h2" style="margin-bottom:4px;">С каких файлов<br><em>можно начать</em></h2>
-    <p style="color:var(--muted);font-size:15px;margin-bottom:0;">Для точного расчёта лучше приложить чертёж и 3D-модель. Если комплект неполный, пришлите доступные файлы — технолог укажет, чего не хватает.</p>
-    <div class="formats-grid">
-      <div class="fmt-card"><div class="fmt-ext">PDF</div><div class="fmt-desc">Чертежи, эскизы</div></div>
-      <div class="fmt-card"><div class="fmt-ext">DWG</div><div class="fmt-desc">AutoCAD</div></div>
-      <div class="fmt-card"><div class="fmt-ext">DXF</div><div class="fmt-desc">Универсальный 2D</div></div>
-      <div class="fmt-card"><div class="fmt-ext">STEP</div><div class="fmt-desc">3D-модель</div></div>
-      <div class="fmt-card"><div class="fmt-ext">IGES</div><div class="fmt-desc">3D-обмен</div></div>
-      <div class="fmt-card"><div class="fmt-ext">ZIP</div><div class="fmt-desc">Архив файлов</div></div>
-      <div class="fmt-card"><div class="fmt-ext">JPG</div><div class="fmt-desc">Фото детали</div></div>
-      <div class="fmt-card"><div class="fmt-ext">PNG</div><div class="fmt-desc">Скрин чертежа</div></div>
-      <div class="fmt-card"><div class="fmt-ext">STL</div><div class="fmt-desc">3D-прототип</div></div>
-      <div class="fmt-card"><div class="fmt-ext">SAT</div><div class="fmt-desc">ACIS-модели</div></div>
-      <div class="fmt-card"><div class="fmt-ext">X_T</div><div class="fmt-desc">Parasolid</div></div>
-      <div class="fmt-card" style="background:var(--amber3);border-color:#FCD34D;">
-        <div class="fmt-ext" style="color:var(--amber2);">?</div>
-        <div class="fmt-desc" style="color:#92400E;">Другой — спросите</div>
-      </div>
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Пришлите чертёж — ответим в течение 24 часов</h2>
+      <p style="max-width:56ch">Приложите чертёж, материал и количество на info@ironex.tech — вернёмся с вопросами, стоимостью и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20контакты">Написать на почту</a>
+      </p>
     </div>
-  </div>
-</section>
-
+  </section>
 </main>
 
-<!-- FOOTER -->
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
+    <div class="site-footer__top">
       <div>
-        <div class="f-logo">IRON<span>EX</span></div>
-        <p class="f-desc">Изготовление деталей по чертежам полного цикла. 47 станков ЧПУ, КИМ-контроль каждой партии.</p>
-        <div class="f-contacts">
-          <a href="tel:+79934904024">+7 993 490-40-24</a>
-          <a href="mailto:info@ironex.tech">info@ironex.tech</a>
-          <span>Пн–Пт, 09:00–19:00 (МСК)</span>
-        </div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Услуги</p>
+      <div>
+        <h3>Услуги</h3>
         <ul>
-          <li><a href="frezerovka.html">Фрезерная обработка</a></li>
-          <li><a href="tokarnaya.html">Токарная обработка</a></li>
-          <li><a href="uslugi.html#rezka">Лазерная резка</a></li>
-          <li><a href="uslugi.html#listovaya">Гибка металла</a></li>
-          <li><a href="uslugi.html#svarka">Сварка и сборка</a></li>
-          <li><a href="uslugi.html#finish">Порошковая покраска</a></li>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Компания</p>
+      <div>
+        <h3>Компания</h3>
         <ul>
-          <li><a href="oborudovanie.html">Оборудование</a></li>
-          <li><a href="ceny.html">Цены</a></li>
-          <li><a href="blog.html">Блог</a></li>
-          <li><a href="index.html#cases">Кейсы</a></li>
-          <li><a href="kontakty.html">Контакты</a></li>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Связаться</p>
+      <div>
+        <h3>Связаться</h3>
         <ul>
-          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
-          <li><a href="https://t.me/+79819470402">Telegram</a></li>
-          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 IRONEX. Контрактное производство деталей.</span>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
       <span>ООО «Айронекс» · ИНН 7804719856</span>
     </div>
   </div>
 </footer>
 
-<script src="analytics-events.js"></script>
-<script src="email-copy.js"></script>
-<script src="redesign.js"></script>
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
 </body>
 </html>

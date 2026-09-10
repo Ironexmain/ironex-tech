@@ -8,7 +8,7 @@ category: "Заказчику"
 categorySlug: "zakazchiku"
 cover: "/images/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku-cover.webp"
 coverAlt: "Инженерная схема к статье «Как сравнивать коммерческие предложения на металлообработку»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 Чтобы сравнить коммерческие предложения на металлообработку, сначала проверьте, что подрядчики рассчитали один и тот же объём работ. Затем сопоставьте цену по позициям, материал, технологические операции, контроль, срок, доставку и условия начала производства.
 

@@ -1,34 +1,38 @@
 (function () {
-  "use strict";
+  // Мобильное меню собирается из уже существующего списка навигации: отдельной
+  // разметки выпадашки нет намеренно. Дублирующий блок ссылок в каждой странице
+  // рано или поздно разъезжается с основным меню, и на телефоне человек видит
+  // не то, что на десктопе.
+  var header = document.querySelector('.site-header');
+  var burger = document.querySelector('.burger, .hamburger');
+  if (!header || !burger) return;
 
-  var button = document.querySelector(".hamburger[aria-controls]");
-  if (!button) return;
-
-  var menu = document.getElementById(button.getAttribute("aria-controls"));
-  if (!menu) return;
-
-  function setMenu(open) {
-    menu.classList.toggle("open", open);
-    button.setAttribute("aria-expanded", String(open));
-    button.setAttribute("aria-label", open ? "Закрыть меню" : "Открыть меню");
+  function setOpen(open) {
+    header.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
   }
 
-  button.addEventListener("click", function () {
-    setMenu(button.getAttribute("aria-expanded") !== "true");
+  burger.addEventListener('click', function () {
+    setOpen(!header.classList.contains('is-open'));
   });
 
-  menu.addEventListener("click", function (event) {
-    if (event.target.closest("a")) setMenu(false);
+  header.addEventListener('click', function (e) {
+    if (e.target.closest('a')) setOpen(false);
   });
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && button.getAttribute("aria-expanded") === "true") {
-      setMenu(false);
-      button.focus();
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && header.classList.contains('is-open')) {
+      setOpen(false);
+      burger.focus();
     }
   });
 
-  setMenu(false);
+  // Ушли с узкого экрана — состояние сбрасываем, иначе меню залипает открытым
+  var wide = window.matchMedia('(min-width: 861px)');
+  (wide.addEventListener ? wide.addEventListener.bind(wide, 'change') : wide.addListener.bind(wide))(function () {
+    if (wide.matches) setOpen(false);
+  });
 })();
 
 (function () {

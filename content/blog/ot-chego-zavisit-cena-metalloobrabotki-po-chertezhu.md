@@ -8,7 +8,7 @@ category: "Экономика заказа"
 categorySlug: "ekonomika-zakaza"
 cover: "/images/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu-cover.webp"
 coverAlt: "Инженерная схема к статье «Металлообработка: цена детали по чертежу»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 У двух похожих деталей стоимость может различаться в несколько раз. Причина не только в размере или массе. На итог влияют материал, способ получения заготовки, количество установов, машинное время, допуски, контроль и объём партии.
 

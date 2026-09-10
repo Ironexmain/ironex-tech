@@ -8,7 +8,7 @@ category: "Заказчику"
 categorySlug: "zakazchiku"
 cover: "/images/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal-cover.webp"
 coverAlt: "Инженерная схема к статье «Коммерческое предложение на металлообработку: состав»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 Коммерческое предложение на металлообработку должно отвечать на практические вопросы закупщика: что именно посчитал подрядчик, сколько стоит каждая позиция, когда будет готов заказ и какие условия вошли в расчёт.
 

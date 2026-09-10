@@ -8,7 +8,7 @@ category: "Материалы"
 categorySlug: "materialy"
 cover: "/images/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali-cover.webp"
 coverAlt: "Инженерная схема к статье «Порошковая покраска на заказ: как выбрать покрытие»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 Порошковое покрытие выбирают не только по цвету. На результат влияют условия эксплуатации, материал детали, подготовка поверхности, фактура, допустимые следы подвеса и зоны, куда краска не должна попасть.
 

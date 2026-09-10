@@ -4,159 +4,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Услуги металлообработки — IRONEX</title>
-  <meta name="description" content="Услуги металлообработки: токарная и фрезерная обработка ЧПУ, лазерная и гидроабразивная резка, гибка листа, сварка TIG·MIG, порошковая покраска и КИМ-контроль. Пришлите чертёж — подготовим расчёт." />
+  <meta name="description" content="Токарная и фрезерная обработка ЧПУ, лазерная и гидроабразивная резка, гибка листа, сварка TIG/MIG, порошковая покраска, КИМ-контроль партии. Пришлите чертёж — расчёт за 3 рабочих дня." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --dark:#18181B;--dark2:#27272A;--amber:#F59E0B;--amber2:#D97706;
-      --amber3:#FEF3C7;--bg:#FAFAF9;--bg2:#F4F4F0;--text:#18181B;
-      --muted:#71717A;--border:#E4E4E7;--white:#FFFFFF;--r:10px;
-    }
-    html{scroll-behavior:smooth;}
-    body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;}
-    .container{max-width:1180px;margin:0 auto;padding:0 24px;}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;
-             letter-spacing:.1em;text-transform:uppercase;color:var(--amber2);margin-bottom:18px;}
-    .eyebrow::before{content:'';display:block;width:20px;height:2px;background:var(--amber);}
-    h2.h2{font-size:clamp(24px,3.5vw,36px);font-weight:900;line-height:1.15;letter-spacing:-.025em;margin-bottom:14px;}
-    h2.h2 em{font-style:normal;color:var(--amber2);}
-    .lead{font-size:16px;color:var(--muted);line-height:1.65;max-width:600px;}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:8px;
-         font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;transition:all .2s;border:none;font-family:inherit;}
-    .btn-amber{background:var(--amber);color:var(--dark);}
-    .btn-amber:hover{background:var(--amber2);transform:translateY(-1px);}
-    .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.25);}
-    .btn-ghost:hover{background:rgba(255,255,255,.08);}
-
-    /* NAV */
-    nav{position:sticky;top:0;z-index:200;background:rgba(24,24,27,.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06);}
-    .nav-inner{display:flex;align-items:center;height:68px;}
-    .nav-logo{font-size:21px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:-.025em;flex-shrink:0;margin-right:auto;}
-    .nav-logo span{color:var(--amber);}
-    .nav-links{display:flex;gap:28px;list-style:none;margin-right:32px;}
-    .nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;}
-    .nav-links a:hover,.nav-links a.active{color:#fff;}
-    .nav-actions{display:flex;align-items:center;gap:20px;flex-shrink:0;}
-    .nav-phone{color:rgba(255,255,255,.8);font-size:14px;font-weight:600;text-decoration:none;}
-    .nav-phone:hover{color:var(--amber);}
-    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;margin-left:16px;}
-    .hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;}
-    .mob-menu{display:none;background:var(--dark2);border-top:1px solid rgba(255,255,255,.08);}
-    .mob-menu.open{display:block;}
-    .mob-menu a{display:block;padding:13px 24px;color:rgba(255,255,255,.75);font-size:15px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);}
-
-    /* BREADCRUMB */
-    .breadcrumb{padding:16px 0;border-bottom:1px solid var(--border);}
-    .breadcrumb-inner{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);}
-    .breadcrumb a{color:var(--muted);text-decoration:none;}
-    .breadcrumb span{color:var(--text);font-weight:500;}
-
-    /* PAGE HERO */
-    .page-hero{padding:64px 0 56px;background:var(--dark);color:#fff;}
-    .page-hero h1{font-size:clamp(32px,5vw,52px);font-weight:900;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px;}
-    .page-hero h1 em{font-style:normal;color:var(--amber);}
-    .page-hero p{font-size:16px;color:rgba(255,255,255,.55);line-height:1.65;max-width:560px;}
-    .hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
-    .hbadge{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;
-            background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
-            border-radius:100px;padding:7px 14px;color:rgba(255,255,255,.85);}
-
-    /* CATEGORIES NAV */
-    .cat-nav{background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:68px;z-index:100;}
-    .cat-nav-inner{display:flex;gap:0;overflow-x:auto;}
-    .cat-link{display:flex;align-items:center;gap:8px;padding:14px 20px;font-size:13px;font-weight:600;
-              color:var(--muted);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s;}
-    .cat-link:hover{color:var(--text);border-bottom-color:var(--amber);}
-    .cat-link.active{color:var(--amber2);border-bottom-color:var(--amber);}
-
-    /* SERVICE SECTIONS */
-    .svc-section{padding:64px 0;border-bottom:1px solid var(--border);}
-    .svc-section:last-of-type{border-bottom:none;}
-    .section-header{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:40px;}
-    .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-    .svc-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:24px;transition:all .2s;position:relative;}
-    .svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--amber);transform:scaleX(0);transform-origin:left;border-radius:0 0 var(--r) var(--r);transition:transform .2s;}
-    .svc-card:hover{border-color:var(--amber);box-shadow:0 6px 24px rgba(0,0,0,.06);transform:translateY(-1px);}
-    .svc-card:hover::after{transform:scaleX(1);}
-    .svc-card-icon{font-size:28px;margin-bottom:14px;}
-    .svc-card h3{font-size:15px;font-weight:700;margin-bottom:8px;}
-    .svc-card p{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:14px;}
-    .svc-specs{display:flex;flex-wrap:wrap;gap:6px;}
-    .svc-spec{font-size:11px;background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:3px 9px;font-weight:600;}
-    .svc-price-badge{display:inline-block;font-size:12px;font-weight:700;color:var(--amber2);
-                     background:var(--amber3);padding:4px 10px;border-radius:6px;margin-top:12px;}
-    .svc-detail-link{display:inline-block;margin:12px 0 0 12px;color:var(--amber2);font-size:12px;
-                     font-weight:700;text-decoration:none;}
-    .svc-detail-link:hover{color:var(--amber);}
-
-    /* FULL-WIDTH SERVICE CARD */
-    .svc-featured{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:32px;}
-    .svc-featured-img{aspect-ratio:4/3;overflow:hidden;}
-    .svc-featured-img img{width:100%;height:100%;object-fit:cover;display:block;}
-    .svc-featured-body{padding:36px;background:var(--bg);display:flex;flex-direction:column;justify-content:center;}
-    .svc-featured-body h3{font-size:22px;font-weight:800;margin-bottom:12px;letter-spacing:-.015em;}
-    .svc-featured-body p{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:20px;}
-    .svc-featured-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px;}
-    .svc-featured-list li{display:flex;align-items:flex-start;gap:8px;font-size:13px;}
-    .svc-featured-list li::before{content:'—';color:var(--amber2);flex-shrink:0;}
-
-    /* CTA */
-    .cta-bar{background:var(--dark);color:#fff;padding:64px 0;}
-    .cta-bar-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
-    .cta-bar h2{color:#fff;font-size:clamp(22px,3vw,32px);font-weight:900;letter-spacing:-.025em;margin-bottom:12px;}
-    .cta-bar p{color:rgba(255,255,255,.55);font-size:15px;line-height:1.6;}
-    .cta-channels{display:flex;flex-direction:column;gap:12px;}
-    .cta-ch{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:18px 22px;text-decoration:none;color:#fff;transition:all .2s;}
-    .cta-ch:hover{background:rgba(245,158,11,.12);border-color:var(--amber);}
-    .cta-ch-icon{font-size:22px;flex-shrink:0;}
-    .cta-ch-title{font-size:14px;font-weight:700;}
-    .cta-ch-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:1px;}
-    .cta-ch-val{margin-left:auto;font-size:13px;font-weight:700;color:var(--amber);white-space:nowrap;}
-
-    /* FOOTER */
-    footer{background:#0A0A0C;color:rgba(255,255,255,.4);padding:48px 0 24px;}
-    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.07);}
-    .f-logo{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.025em;margin-bottom:10px;}
-    .f-logo span{color:var(--amber);}
-    .f-desc{font-size:13px;line-height:1.65;max-width:220px;margin-bottom:16px;}
-    .f-contacts{display:flex;flex-direction:column;gap:7px;}
-    .f-contacts a{color:rgba(255,255,255,.6);text-decoration:none;font-size:13px;}
-    .f-contacts a:hover{color:var(--amber);}
-    .f-col h4{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.3);margin-bottom:14px;}
-    .f-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
-    .f-col a{color:rgba(255,255,255,.5);text-decoration:none;font-size:13px;}
-    .f-col a:hover{color:rgba(255,255,255,.9);}
-    .footer-bottom{display:flex;justify-content:space-between;padding-top:20px;font-size:12px;flex-wrap:wrap;gap:10px;}
-
-    @media(max-width:768px){
-      .nav-links,.nav-actions{display:none;}
-      .hamburger{display:flex;}
-      .section-header{grid-template-columns:1fr;}
-      .svc-grid{grid-template-columns:1fr;}
-      .svc-featured{grid-template-columns:1fr;}
-      .svc-featured-img{display:none;}
-      .cta-bar-inner{grid-template-columns:1fr;gap:36px;}
-      .footer-top{grid-template-columns:1fr 1fr;}
-    }
-    @media(max-width:480px){.footer-top{grid-template-columns:1fr;}}
-  </style>
-
-  <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
   <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
 
-  <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
   <link rel="canonical" href="https://ironex.tech/uslugi.html" />
+  <meta name="robots" content="index, follow" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[
-    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Услуги","item":"https://ironex.tech/uslugi.html"}]},
-    {"@type":"WebPage","url":"https://ironex.tech/uslugi.html","name":"Услуги металлообработки — IRONEX","description":"Полный цикл металлообработки: токарная и фрезерная обработка ЧПУ, лазерная резка, гибка, сварка, порошковая покраска, КИМ-контроль. Изготовление деталей по чертежам.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-05"},
-    {"@type":"Service","name":"Контрактная металлообработка по чертежам","provider":{"@id":"https://ironex.tech/#org"},"serviceType":"Металлообработка","description":"Полный цикл металлообработки: токарка ЧПУ, фрезеровка 5 осей, лазерная резка, гибка, сварка, порошковая покраска, КИМ-контроль каждой партии.","areaServed":{"@type":"Country","name":"Россия"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Услуги металлообработки","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Токарная обработка ЧПУ"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Фрезерная обработка 5 осей"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Лазерная резка металла"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Гибка листового металла"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Сварка и сборка"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Порошковая покраска"}}]}}
-  ]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://ironex.tech/uslugi.html",
+      "url": "https://ironex.tech/uslugi.html",
+      "name": "Услуги металлообработки — IRONEX",
+      "description": "Токарная и фрезерная обработка ЧПУ, лазерная и гидроабразивная резка, гибка листа, сварка TIG/MIG, порошковая покраска, КИМ-контроль партии. Пришлите чертёж — расчёт за 3 рабочих дня.",
+      "publisher": { "@id": "https://ironex.tech/#org" },
+      "isPartOf": { "@id": "https://ironex.tech/#website" },
+      "dateModified": "2026-09-10"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech/#org",
+      "name": "IRONEX",
+      "legalName": "ООО «Айронекс»",
+      "taxID": "7804719856",
+      "url": "https://ironex.tech",
+      "telephone": "+7-993-490-40-24",
+      "email": "info@ironex.tech"
+    },
+    {
+      "@type": "Service",
+      "name": "Контрактная металлообработка по чертежам",
+      "provider": { "@id": "https://ironex.tech/#org" },
+      "serviceType": "Металлообработка",
+      "description": "Полный цикл металлообработки: токарка ЧПУ, фрезеровка до 5 осей, лазерная резка, гибка, сварка, порошковая покраска, КИМ-контроль каждой партии.",
+      "areaServed": { "@type": "Country", "name": "Россия" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Услуги металлообработки",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Токарная обработка ЧПУ" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Фрезерная обработка до 5 осей" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Лазерная резка металла" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Гибка листового металла" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Сварка и сборка" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Порошковая покраска" } }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ironex.tech/" },
+        { "@type": "ListItem", "position": 2, "name": "Услуги" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какой минимальный заказ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Универсального минимума нет: объём зависит от технологии, материала и подготовки производства. Единичные детали рассматриваем как исключение, основной формат — пробные и серийные партии." }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие форматы чертежей принимаете?",
+          "acceptedAnswer": { "@type": "Answer", "text": "PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG. Если чертежа нет — принимаем эскиз или описание, поможем проработать конструкторскую документацию." }
+        },
+        {
+          "@type": "Question",
+          "name": "Входит ли КИМ-контроль в стоимость заказа?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Да. Координатно-измерительная машина Hexagon Global S — на каждой партии. Протокол измерений с допусками прилагается к заказу без доплат." }
+        },
+        {
+          "@type": "Question",
+          "name": "С какими материалами работаете?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Конструкционная и легированная сталь, нержавейка AISI 304/316, алюминий, медь, латунь, титан и другие сплавы." }
+        },
+        {
+          "@type": "Question",
+          "name": "Подписываете ли NDA?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Да, подписываем соглашение о неразглашении до начала работ — ваши чертежи и технологии остаются конфиденциальными." }
+        }
+      ]
+    }
+  ]
+}
   </script>
-  <!-- ═══ Яндекс Метрика 105009501 ═══ -->
   <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -165,601 +104,419 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <link rel="stylesheet" href="email-copy.css" />
-  <link rel="stylesheet" href="redesign.css?v=20260907-4" />
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Услуги металлообработки — IRONEX" />
+  <meta property="og:description" content="Токарная и фрезерная обработка ЧПУ, лазерная и гидроабразивная резка, гибка листа, сварка TIG/MIG, порошковая покраска, КИМ-контроль партии." />
+  <meta property="og:url" content="https://ironex.tech/uslugi.html" />
+  <meta property="og:image" content="https://ironex.tech/images/il/frezerovka.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="896" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Услуги металлообработки — IRONEX" />
+  <meta name="twitter:description" content="Токарная и фрезерная обработка ЧПУ, лазерная и гидроабразивная резка, гибка листа, сварка TIG/MIG, порошковая покраска, КИМ-контроль партии." />
+  <meta name="twitter:image" content="https://ironex.tech/images/il/frezerovka.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
 </head>
-<body class="redesign-precision">
-<a class="skip-link" href="#main-content">Перейти к содержанию</a>
-<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
 
-<!-- NAV -->
-<nav>
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">IRON<span>EX</span></a>
-      <ul class="nav-links">
-        <li><a href="uslugi.html" class="active">Услуги</a></li>
-        <li><a href="oborudovanie.html">Оборудование</a></li>
-        <li><a href="ceny.html">Цены</a></li>
-        <li><a href="blog.html">Блог</a></li>
-        <li><a href="index.html#cases">Кейсы</a></li>
-        <li><a href="kontakty.html">Контакты</a></li>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html" aria-current="page">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href="tel:+79934904024">+7 993 490-40-24</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20услуги">Прислать чертёж</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><span>Услуги</span>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <span class="label">Услуги</span>
+      <h1>Обработка металла по чертежам — от заготовки до контроля</h1>
+      <p class="lede">Подбираем не отдельную операцию, а связанный маршрут под геометрию, материал, допуски и размер партии. Вы получаете готовую деталь и понятные условия приёмки.</p>
+      <ul>
+        <li>Расчёт до 3 рабочих дней</li>
+        <li>Пробные и серийные партии</li>
+        <li>Контроль по документации</li>
+        <li>NDA по запросу</li>
       </ul>
-      <div class="nav-actions">
-        <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
-        <a href="kontakty.html" class="btn btn-amber" style="padding:10px 20px;font-size:14px;">Запросить расчёт</a>
-      </div>
-      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-  <div class="mob-menu" id="mobMenu">
-    <a href="uslugi.html">Услуги</a>
-    <a href="oborudovanie.html">Оборудование</a>
-    <a href="ceny.html">Цены</a>
-    <a href="blog.html">Блог</a>
-    <a href="index.html#cases">Кейсы</a>
-    <a href="kontakty.html">Контакты</a>
-    <a href="kontakty.html" style="color:var(--amber);">Запросить расчёт</a>
-    <a href="tel:+79934904024">+7 993 490-40-24</a>
-  </div>
-</nav>
+      <p style="margin-top:8px">
+        <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20услуги">Отправить чертёж</a>
+        &nbsp;
+        <a class="btn btn--ghost" href="#mechobrabotka">Выбрать технологию</a>
+      </p>
 
-<main id="main-content">
+      <hr class="dim" />
 
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <div class="container">
-    <div class="breadcrumb-inner"><a href="index.html">Главная</a> · <span>Услуги</span></div>
-  </div>
-</div>
+      <div class="mat-grid mat-grid--2">
+        <figure class="figure--draft">
+          <img src="/images/il/materialy.webp" alt="Профили проката: круглый и шестигранный пруток, квадрат, труба, лист, уголок" width="1200" height="896" loading="lazy" decoding="async" />
+          <figcaption>
+            <span>Сортамент, с которого начинается маршрут: круг, шестигранник, квадрат, труба, лист, уголок</span>
+            <span>Схема профилей, не фото склада заготовок</span>
+          </figcaption>
+        </figure>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="container">
-    <div class="page-hero-inner">
-      <div class="page-hero-content">
-
-        <h1>Металлообработка по чертежам — <em>от заготовки до контроля</em></h1>
-        <p>Подбираем не отдельную операцию, а связанный маршрут под геометрию, материал, допуски и размер партии. Вы получаете готовую деталь и понятные условия приёмки.</p>
-        <div class="hero-cta">
-          <a href="kontakty.html" class="btn btn-amber">Отправить чертёж</a>
-          <a href="#mechobrabotka" class="btn btn-ghost">Выбрать технологию</a>
-        </div>
-        <div class="hero-badges">
-          <span class="hbadge">Расчёт до 3 рабочих дней</span>
-          <span class="hbadge">Пробные и серийные партии</span>
-          <span class="hbadge">Контроль по документации</span>
-          <span class="hbadge">NDA по запросу</span>
+        <div class="panel">
+          <div class="rule-label"><span class="label">Разделы страницы</span></div>
+          <ol class="toc">
+            <li><a href="#mechobrabotka">Механообработка</a></li>
+            <li><a href="#rezka">Резка и раскрой</a></li>
+            <li><a href="#listovaya">Листовая обработка</a></li>
+            <li><a href="#svarka">Сварка и сборка</a></li>
+            <li><a href="#finish">Финиш и покрытия</a></li>
+            <li><a href="#kontrol">Контроль качества</a></li>
+            <li><a href="#polniy-cikl">Полный цикл</a></li>
+          </ol>
         </div>
       </div>
-      <div class="page-hero-media page-hero-media--services">
-        <img src="images/photos/prod-2045.webp" alt="Фрезерование металлической детали на обрабатывающем центре" width="1100" height="733" fetchpriority="high" decoding="async" />
-        <span class="page-hero-note">заготовка → обработка → контроль</span>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CATEGORIES NAV -->
-<div class="cat-nav">
-  <div class="container">
-    <div class="cat-nav-inner">
-      <a href="#mechobrabotka" class="cat-link active">Механообработка</a>
-      <a href="#rezka"         class="cat-link">Резка и раскрой</a>
-      <a href="#listovaya"     class="cat-link">Листовая обработка</a>
-      <a href="#svarka"        class="cat-link">Сварка и сборка</a>
-      <a href="#finish"        class="cat-link">Финиш и покрытия</a>
-      <a href="#kontrol"       class="cat-link">Контроль качества</a>
-      <a href="#polniy-cikl"   class="cat-link">Полный цикл</a>
+  <!-- ═══ МЕХАНООБРАБОТКА ═══ -->
+  <section class="section" id="mechobrabotka">
+    <div class="container">
+      <div class="rule-label"><span class="label">Механообработка</span></div>
+      <h2>Hermle C500 держит ±0,005 мм в пяти осях за одну установку</h2>
+      <p class="lede">Токарные и фрезерные центры ЧПУ — 3, 4 и 5 осей. Детали любой геометрии: от тел вращения до сложных корпусных изделий.</p>
+
+      <figure class="figure--draft" style="margin-top:32px">
+        <img src="/images/il/frezerovka.webp" alt="Схема фрезерования на поворотном столе с указанием осей вращения" width="1200" height="896" loading="lazy" decoding="async" />
+        <figcaption>
+          <span>Фрезерование на поворотном столе — деталь разворачивается под инструмент без переустановки</span>
+          <span>Иллюстрация принципа, не фото конкретного станка</span>
+        </figcaption>
+      </figure>
+
+      <div class="spec-table" style="margin-top:24px">
+        <table>
+          <caption>Ставка нормо-часа — предварительная, итоговая стоимость зависит от материала и партии. «По запросу» — операцию считаем по вашему чертежу.</caption>
+          <thead>
+            <tr><th>Операция</th><th>Оборудование и параметры</th><th>Точность / шероховатость</th><th>Нормо-час</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Фрезерная обработка ЧПУ, до 5 осей</td><td>Hermle C500 · рабочая зона 1100×600×600 мм · шпиндель 12 000 об/мин</td><td class="num">±0,005 мм</td><td class="num">от 1 800 ₽</td></tr>
+            <tr><td>Токарная обработка ЧПУ</td><td>DMG Mori NLX 2500 · ⌀380×1500 мм · ось C, противошпиндель</td><td class="num">±0,008 мм</td><td class="num">от 1 200 ₽</td></tr>
+            <tr><td>Чистовая токарная обработка</td><td>минимальный припуск, посадочные поверхности H6–H7</td><td class="num">Ra 0,8–1,6 мкм</td><td class="num">от 1 600 ₽</td></tr>
+            <tr><td>Черновая токарная обработка</td><td>высокая подача, подготовка заготовки под чистовую обработку</td><td>—</td><td class="num">от 1 100 ₽</td></tr>
+            <tr><td>Сверление и расточка</td><td>расточные оправки, отверстия от ⌀1 мм</td><td class="num">H6–H7</td><td class="warn">по запросу</td></tr>
+            <tr><td>Шлифовка</td><td>цилиндрическая и плоская, для деталей после закалки и цементации</td><td class="num">Ra 0,2–0,4 мкм</td><td class="warn">по запросу</td></tr>
+            <tr><td>Токарно-фрезерная обработка</td><td>комбинированный центр, ось Y, приводной инструмент, 1 установка</td><td>—</td><td class="warn">по запросу</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:16px">Подробнее: <a href="/tokarnaya.html">токарная обработка</a> · <a href="/frezerovka.html">фрезерная обработка</a> · полный список станков — на странице <a href="/oborudovanie.html">оборудования</a>.</p>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- ═══ МЕХАНООБРАБОТКА ═══ -->
-<section class="svc-section" id="mechobrabotka">
-  <div class="container">
-    <div class="section-header">
-      <div>
+  <!-- ═══ РЕЗКА ═══ -->
+  <section class="section section--tint" id="rezka">
+    <div class="container">
+      <div class="rule-label"><span class="label">Резка и раскрой</span></div>
+      <h2>Волоконный лазер D-SOAR режет металл толщиной до 30 мм</h2>
+      <p class="lede">Метод резки подбираем под материал, толщину, требования к кромке и дальнейший технологический маршрут детали.</p>
 
-        <h2 class="h2">Токарка и фрезеровка<br>с точностью <em>±0,005 мм</em></h2>
-      </div>
-      <p class="lead">Обрабатывающие центры 3, 4 и 5 осей. Детали любой геометрии — от простых тел вращения до корпусных изделий сложной формы.</p>
-    </div>
-
-    <div class="svc-featured">
-      <div class="svc-featured-img">
-        <img src="images/photos/prod-2044.webp" alt="5-осевая фрезеровка" width="1100" height="733" loading="lazy" decoding="async" />
-      </div>
-      <div class="svc-featured-body">
-        <h3>Фрезерная обработка ЧПУ · до 5 осей</h3>
-        <p>Обрабатывающие центры Hermle C500 / DMG Mori. Корпусные и фасонные детали в одной установке — без переустановки, без погрешностей базирования.</p>
-        <ul class="svc-featured-list">
-          <li>Рабочая зона 1100×600×600 мм</li>
-          <li>Точность ±0,005 мм</li>
-          <li>5-осевая непрерывная обработка</li>
-          <li>Шпиндель 12 000 об/мин</li>
-        </ul>
-        <div class="svc-price-badge">от 1 800 ₽ / нормо-час</div>
-        <a href="frezerovka.html" class="svc-detail-link">Подробнее о фрезеровке →</a>
-      </div>
-    </div>
-
-    <div class="svc-grid">
-      <div class="svc-card">
-        <div class="svc-card-icon">TURN</div>
-        <h3>Токарная обработка ЧПУ</h3>
-        <p>DMG Mori NLX 2500, приводной инструмент, ось C, противошпиндель. Серии до 50 000 штук с авто-загрузкой.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">⌀ 380×1500 мм</span>
-          <span class="svc-spec">±0,008 мм</span>
-        </div>
-        <div class="svc-price-badge">от 1 200 ₽ / нормо-час</div>
-        <a href="tokarnaya.html" class="svc-detail-link">Подробнее о токарной обработке →</a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">FIN</div>
-        <h3>Чистовая токарная обработка</h3>
-        <p>Финишные проходы с минимальным припуском. Шероховатость Ra 0,8–1,6 мкм, посадочные поверхности H6–H7.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">Ra 0,8 мкм</span>
-          <span class="svc-spec">H6–H7</span>
-        </div>
-        <div class="svc-price-badge">от 1 600 ₽ / нормо-час</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">ROUGH</div>
-        <h3>Черновая токарная обработка</h3>
-        <p>Быстрое снятие большого припуска. Высокие подачи, мощный шпиндель. Подготовка заготовок под чистовую обработку.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">высокая подача</span>
-          <span class="svc-spec">крупные серии</span>
-        </div>
-        <div class="svc-price-badge">от 1 100 ₽ / нормо-час</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">CNC</div>
-        <h3>Сверление и расточка</h3>
-        <p>Точные отверстия диаметром от 1 мм. Расточные оправки для достижения квалитетов H6–H7. Глубокое сверление по запросу.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">от ⌀1 мм</span>
-          <span class="svc-spec">H6–H7</span>
-        </div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">5AX</div>
-        <h3>Шлифовка</h3>
-        <p>Цилиндрическая и плоская шлифовка. Достижение Ra 0,2–0,4 мкм. Детали после закалки и цементации.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">Ra 0,2 мкм</span>
-          <span class="svc-spec">после ТО</span>
-        </div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">SER</div>
-        <h3>Токарно-фрезерная обработка</h3>
-        <p>Комбинированные центры с осью Y и приводным инструментом. Сложные детали — вал с фрезерованными пазами — в одной установке.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">ось Y</span>
-          <span class="svc-spec">1 установка</span>
-        </div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ РЕЗКА ═══ -->
-<section class="svc-section" id="rezka" style="background:var(--bg);">
-  <div class="container">
-    <div class="section-header">
-      <div>
-
-        <h2 class="h2">Лазер, плазма,<br><em>гидроабразив</em></h2>
-      </div>
-      <p class="lead">Подбираем метод под материал, толщину, требования к кромке и последующий технологический маршрут детали.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card">
-        <div class="svc-card-icon">LASER</div>
-        <h3>Лазерная резка</h3>
-        <p>Волоконный лазер D-SOAR 20 кВт. Узкий рез, локальная зона термического влияния и высокая скорость на повторяемых партиях деталей.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">до 30 мм</span>
-          <span class="svc-spec">20 кВт</span>
-          <span class="svc-spec">2500×1200 мм</span>
-        </div>
-        <div class="svc-price-badge">от 80 ₽ / м реза</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">WATER</div>
-        <h3>Гидроабразивная резка</h3>
-        <p>APW2050BA. Любой материал без нагрева: титан, стекло, керамика, резина, композиты. Без изменения структуры материала.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">любой материал</span>
-          <span class="svc-spec">без нагрева</span>
-        </div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">PLASMA</div>
-        <h3>Плазменная резка</h3>
-        <p>Экономичный раскрой толстого металла. Высокая скорость, широкий диапазон толщин. Подходит для черновых заготовок.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">до 100 мм</span>
-          <span class="svc-spec">быстро</span>
-        </div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ ЛИСТОВАЯ ═══ -->
-<section class="svc-section" id="listovaya">
-  <div class="container">
-    <div class="section-header">
-      <div>
-
-        <h2 class="h2">Гибка, штамповка,<br><em>перфорация</em></h2>
-      </div>
-      <p class="lead">Листогибочные прессы до 150 т, координатно-пробивные станки, штамповка серийных деталей. Алюминий, сталь, нержавейка.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card">
-        <div class="svc-card-icon">BEND</div>
-        <h3>Гибка листового металла</h3>
-        <p>Прессы PR6C-150T, VR6-125T. Высокая повторяемость гиба, сложные профили в нескольких установках.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">до 150 т</span>
-          <span class="svc-spec">алюм · сталь · нерж</span>
-        </div>
-        <div class="svc-price-badge">от 150 ₽ / гиб</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">ROLL</div>
-        <h3>Координатно-пробивные работы</h3>
-        <p>VT-300 ЧПУ. Перфорация, вырубка, формовка по программе. Серийные детали с отверстиями любого расположения.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">ЧПУ позиционирование</span>
-          <span class="svc-spec">серия</span>
-        </div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">STAMP</div>
-        <h3>Штамповка</h3>
-        <p>Серийное производство штампованных деталей. Холодная штамповка, вырубные штампы, быстрый цикл на больших объёмах.</p>
-        <div class="svc-specs">
-          <span class="svc-spec">серийная</span>
-          <span class="svc-spec">холодная</span>
-        </div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ СВАРКА ═══ -->
-<section class="svc-section" id="svarka" style="background:var(--bg);">
-  <div class="container">
-    <div class="section-header">
-      <div>
-
-        <h2 class="h2">TIG, MIG, робот —<br><em>стабильный шов</em></h2>
-      </div>
-      <p class="lead">16 сварочных постов, 2 промышленных робота, лазерная сварка. Узлы любой сложности из стали, нержавейки и алюминия.</p>
-    </div>
-
-    <div class="svc-featured">
-      <div class="svc-featured-body">
-        <h3>Роботизированная сварка · NB-350</h3>
-        <p>Два робота-сварщика NB-350 — для серийных узлов, требующих высокой повторяемости. Один раз запрограммировали, далее — одинаковый шов на каждой детали.</p>
-        <ul class="svc-featured-list">
-          <li>Высокая повторяемость геометрии шва</li>
-          <li>Снижение цены на серию vs. ручная сварка</li>
-          <li>Подходит для серий от 20 штук</li>
-          <li>Сталь, нержавейка, алюминий</li>
-        </ul>
-      </div>
-      <div class="svc-featured-img">
-        <img src="images/photos/gen-welding.webp" alt="Иллюстрация роботизированной сварки" width="1100" height="821" loading="lazy" decoding="async" />
-      </div>
-    </div>
-
-    <div class="svc-grid">
-      <div class="svc-card">
-        <div class="svc-card-icon">TIG</div>
-        <h3>Аргонодуговая сварка TIG</h3>
-        <p>WSM-400, WSME-315. Чистый эстетичный шов на нержавейке и алюминии. Пищевое оборудование, медтех, декоративные изделия.</p>
-        <div class="svc-specs"><span class="svc-spec">нерж · алюм</span><span class="svc-spec">Ra шва</span></div>
-        <div class="svc-price-badge">от 950 ₽ / нормо-час</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">MIG</div>
-        <h3>Полуавтоматическая сварка MIG/MAG</h3>
-        <p>CO₂ и смесь. Высокая производительность на конструкционной стали. Оптимальна по цене для несущих конструкций и крупных деталей.</p>
-        <div class="svc-specs"><span class="svc-spec">сталь</span><span class="svc-spec">высокая скорость</span></div>
-        <div class="svc-price-badge">от 800 ₽ / нормо-час</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">LASER</div>
-        <h3>Лазерная сварка</h3>
-        <p>SUP-AMF-D. Узкий шов с минимальной зоной нагрева — для тонкостенных деталей и там, где важна геометрия после сварки.</p>
-        <div class="svc-specs"><span class="svc-spec">тонкостенные</span><span class="svc-spec">мин. деформация</span></div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ ФИНИШ ═══ -->
-<section class="svc-section" id="finish">
-  <div class="container">
-    <div class="section-header">
-      <div>
-
-        <h2 class="h2">Покраска, гальваника,<br><em>маркировка</em></h2>
-      </div>
-      <p class="lead">Защитные и декоративные покрытия под любые условия эксплуатации. Финишная обработка перед КИМ-контролем и отгрузкой.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card">
-        <div class="svc-card-icon">POWDER</div>
-        <h3>Порошковая окраска</h3>
-        <p>Полимеризационные камеры до 6 м. Любой цвет RAL: матовое, глянцевое, текстурное, «муар». Коррозионная стойкость — класс 5.</p>
-        <div class="svc-specs"><span class="svc-spec">любой RAL</span><span class="svc-spec">до 6 м</span></div>
-        <div class="svc-price-badge">от 320 ₽ / м²</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">CHEM</div>
-        <h3>Гальваника и покрытия</h3>
-        <p>Цинкование, никелирование, анодирование алюминия, хромирование. Сертификаты соответствия по запросу. ГОСТ и импортные аналоги.</p>
-        <div class="svc-specs"><span class="svc-spec">цинк · никель · хром</span><span class="svc-spec">анодирование</span></div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">MARK</div>
-        <h3>Лазерная маркировка</h3>
-        <p>Серийные номера, логотипы, QR-коды, DataMatrix. Постоянная маркировка без краски и наклеек. Нержавейка, алюминий, сталь.</p>
-        <div class="svc-specs"><span class="svc-spec">QR · DataMatrix</span><span class="svc-spec">постоянная</span></div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">FIN</div>
-        <h3>Слесарные работы</h3>
-        <p>Зачистка заусенцев, снятие фаски, подгонка, притирка, сборка узлов. Финишная доработка после механообработки.</p>
-        <div class="svc-specs"><span class="svc-spec">зачистка</span><span class="svc-spec">сборка</span></div>
-        <div class="svc-price-badge">от 800 ₽ / нормо-час</div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-card-icon">CMM</div>
-        <h3>Снятие фаски</h3>
-        <p>Фаскосниматели ЧПУ и ручные инструменты. Снятие острых кромок после лазерной резки и фрезеровки. Входит в полный цикл.</p>
-        <div class="svc-specs"><span class="svc-spec">после резки</span><span class="svc-spec">после фрезеровки</span></div>
-        <div class="svc-price-badge">по запросу</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ КОНТРОЛЬ ═══ -->
-<section class="svc-section" id="kontrol" style="background:var(--bg);">
-  <div class="container">
-    <div class="section-header">
-      <div>
-
-        <h2 class="h2">КИМ Hexagon —<br><em>протокол на партию</em></h2>
-      </div>
-      <p class="lead">Координатно-измерительная машина Hexagon Global S на каждой партии. Протокол с допусками — в комплекте к заказу, без доплаты.</p>
-    </div>
-    <div class="svc-featured">
-      <div class="svc-featured-img">
-        <img src="images/photos/prod-2035.webp" alt="КИМ-контроль Hexagon" width="733" height="1100" loading="lazy" decoding="async" />
-      </div>
-      <div class="svc-featured-body">
-        <h3>КИМ-контроль · Hexagon Global S</h3>
-        <p>3D-замер в трёх осях — единственный способ доказать геометрию партии, а не отдельной детали. Штангенциркуль показывает размер, КИМ — подтверждает допуск на всей партии.</p>
-        <ul class="svc-featured-list">
-          <li>Рабочее поле 800×600×600 мм</li>
-          <li>Точность ±0,0025 мм</li>
-          <li>Дополнительный оптический 2D-измеритель</li>
-          <li>Протокол с отклонениями — в комплекте</li>
-          <li>Входит в стоимость каждого заказа</li>
-        </ul>
-        <div class="svc-price-badge" style="background:#dcfce7;color:#16a34a;">включён в заказ</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ ПОЛНЫЙ ЦИКЛ ═══ -->
-<section class="svc-section" id="polniy-cikl">
-  <div class="container">
-    <div class="section-header">
-      <div>
-
-        <h2 class="h2">Изготовление деталей<br><em>по чертежам</em></h2>
-      </div>
-      <p class="lead">Прислали чертёж — получили готовую деталь. Технолог проектирует маршрут, производство выполняет все операции, КИМ подтверждает геометрию.</p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;">
-      <div style="padding:24px 20px;border-right:1px solid var(--border);text-align:center;">
-        <div style="width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--dark);margin:0 auto 12px;">01</div>
-        <div style="font-size:14px;font-weight:700;margin-bottom:6px;">Заявка</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">PDF, DWG, DXF, STEP, IGES, ZIP</div>
-      </div>
-      <div style="padding:24px 20px;border-right:1px solid var(--border);text-align:center;">
-        <div style="width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--dark);margin:0 auto 12px;">02</div>
-        <div style="font-size:14px;font-weight:700;margin-bottom:6px;">Расчёт</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Стоимость и срок за 3 дня</div>
-      </div>
-      <div style="padding:24px 20px;border-right:1px solid var(--border);text-align:center;">
-        <div style="width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--dark);margin:0 auto 12px;">03</div>
-        <div style="font-size:14px;font-weight:700;margin-bottom:6px;">Производство</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">47 станков, 2 смены</div>
-      </div>
-      <div style="padding:24px 20px;border-right:1px solid var(--border);text-align:center;">
-        <div style="width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--dark);margin:0 auto 12px;">04</div>
-        <div style="font-size:14px;font-weight:700;margin-bottom:6px;">КИМ-контроль</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Протокол на партию</div>
-      </div>
-      <div style="padding:24px 20px;text-align:center;">
-        <div style="width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--dark);margin:0 auto 12px;">05</div>
-        <div style="font-size:14px;font-weight:700;margin-bottom:6px;">Доставка</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">63 региона РФ</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ FAQ ═══ -->
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-  {"@type":"Question","name":"Какой минимальный заказ?","acceptedAnswer":{"@type":"Answer","text":"Универсального минимума нет: объём зависит от технологии, материала и подготовки производства. Единичные детали рассматриваем как исключение, основной формат — пробные и серийные партии."}},
-  {"@type":"Question","name":"Какие форматы чертежей принимаете?","acceptedAnswer":{"@type":"Answer","text":"PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG. Если чертежа нет — принимаем эскиз или описание, поможем проработать КД."}},
-  {"@type":"Question","name":"Входит ли КИМ-контроль в стоимость заказа?","acceptedAnswer":{"@type":"Answer","text":"Да. Координатно-измерительная машина Hexagon Global S — на каждой партии. Протокол измерений с допусками прилагается к заказу без доплат."}},
-  {"@type":"Question","name":"С какими материалами работаете?","acceptedAnswer":{"@type":"Answer","text":"Конструкционная и легированная сталь, нержавейка AISI 304/316, алюминий, медь, латунь, титан и другие сплавы."}},
-  {"@type":"Question","name":"Подписываете ли NDA?","acceptedAnswer":{"@type":"Answer","text":"Да, подписываем соглашение о неразглашении до начала работ — ваши чертежи и технологии остаются конфиденциальными."}}
-]}
-</script>
-<section style="padding:80px 0;background:#F5F5F4;">
-  <div class="container">
-
-    <h2 class="h2" style="margin-bottom:40px;">Отвечаем на<br><em>главные вопросы</em></h2>
-    <div style="max-width:760px;">
-      <details style="border:1px solid #E7E5E4;border-radius:12px;margin-bottom:8px;background:#fff;">
-        <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">Какой минимальный заказ?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Универсального минимума нет: объём зависит от технологии, материала и подготовки производства. Единичные детали рассматриваем как исключение, основной формат — пробные и серийные партии.</p>
-      </details>
-      <details style="border:1px solid #E7E5E4;border-radius:12px;margin-bottom:8px;background:#fff;">
-        <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">Какие форматы чертежей принимаете?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG. Если чертежа нет — принимаем эскиз или описание, поможем проработать КД.</p>
-      </details>
-      <details style="border:1px solid #E7E5E4;border-radius:12px;margin-bottom:8px;background:#fff;">
-        <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">Входит ли КИМ-контроль в стоимость?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Да. КИМ Hexagon Global S — на каждой партии. Протокол измерений с допусками прилагается к заказу без доплат.</p>
-      </details>
-      <details style="border:1px solid #E7E5E4;border-radius:12px;margin-bottom:8px;background:#fff;">
-        <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">С какими материалами работаете?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Сталь конструкционная и легированная, нержавейка AISI 304/316, алюминий, медь, латунь, титан — уточняйте при заказе.</p>
-      </details>
-      <details style="border:1px solid #E7E5E4;border-radius:12px;background:#fff;">
-        <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">Подписываете ли NDA?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Да, подписываем соглашение о неразглашении до начала работ — ваши чертежи и технологии остаются конфиденциальными.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-bar">
-  <div class="container">
-    <div class="cta-bar-inner">
-      <div>
-        <h2>Нужна деталь по чертежу?</h2>
-        <p>Пришлите файл — технолог вернётся со стоимостью и сроком за 3 рабочих дня. Бесплатно, без обязательств.</p>
-        <div style="margin-top:20px;display:flex;flex-direction:column;gap:8px;">
-          <span style="font-size:13px;color:rgba(255,255,255,.5);">✓ &nbsp;PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG</span>
-          <span style="font-size:13px;color:rgba(255,255,255,.5);">✓ &nbsp;NDA по запросу</span>
-          <span style="font-size:13px;color:rgba(255,255,255,.5);">✓ &nbsp;Объём партии уточняем по технологии</span>
+      <div class="card" style="margin-top:32px">
+        <figure class="figure--draft">
+          <img src="/images/il/lazernaya-rezka.webp" alt="Схема лазерного раскроя листа: рама станка, режущая головка, вырезанные детали" width="1200" height="896" loading="lazy" decoding="async" />
+          <figcaption>
+            <span>Лазерный раскрой листа по программе — узкий рез и локальный нагрев кромки</span>
+            <span>Иллюстрация процесса, не фото производства</span>
+          </figcaption>
+        </figure>
+        <div class="card__body">
+          <h3>Лазерная резка · волоконный лазер D-SOAR 20 кВт</h3>
+          <p>Узкий рез, локальная зона термического влияния и высокая скорость на повторяемых партиях деталей.</p>
+          <p><span class="label">Толщина</span> до 30 мм · <span class="label">Поле раскроя</span> 2500×1200 мм · <span class="label">Цена</span> от 80 ₽ / м реза</p>
         </div>
       </div>
-      <div class="cta-channels">
-        <div class="cta-ch email-contact-card" data-email-copy>
-          <div class="cta-ch-icon">MAIL</div>
-          <div><div class="cta-ch-title">Написать на почту</div><div class="cta-ch-sub">Прикрепите чертёж</div></div>
-          <div class="email-contact-actions">
-            <a href="mailto:info@ironex.tech" class="cta-ch-val email-contact-address" data-email-value>info@ironex.tech</a>
-            <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
+
+      <div class="spec-table" style="margin-top:24px">
+        <table>
+          <thead><tr><th>Метод</th><th>Параметры</th><th>Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Гидроабразивная резка</td><td>APW2050BA · любой материал без нагрева: титан, стекло, керамика, резина, композиты</td><td class="warn">по запросу</td></tr>
+            <tr><td>Плазменная резка</td><td>раскрой толщиной до 100 мм, высокая скорость, подходит для черновых заготовок</td><td class="warn">по запросу</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ЛИСТОВАЯ ═══ -->
+  <section class="section" id="listovaya">
+    <div class="container">
+      <div class="rule-label"><span class="label">Листовая обработка</span></div>
+      <h2>Гибочные прессы держат до 150 тонн усилия</h2>
+      <p class="lede">Листогибочные прессы, координатно-пробивной станок с ЧПУ и серийная штамповка — алюминий, сталь, нержавейка.</p>
+
+      <div class="mat-grid mat-grid--3" style="margin-top:32px">
+        <div class="card">
+          <figure class="figure--draft">
+            <img src="/images/il/gibka.webp" alt="Схема гибки листового металла на прессе с V-образной матрицей" width="1200" height="896" loading="lazy" decoding="async" />
+            <figcaption>
+              <span>Гибка на прессе — пуансон формирует угол по матрице</span>
+              <span>Иллюстрация, не фото готовой детали</span>
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <h3>Гибка листового металла</h3>
+            <p>Прессы PR6C-150T и VR6-125T. Высокая повторяемость гиба, сложные профили в нескольких установках.</p>
+            <p><span class="label">Усилие</span> до 150 т · <span class="label">Материал</span> алюминий, сталь, нержавейка</p>
+            <p><span class="label">Цена</span> от 150 ₽ / гиб</p>
           </div>
         </div>
-        <a href="tel:+79934904024" class="cta-ch">
-          <div class="cta-ch-icon">TEL</div>
-          <div><div class="cta-ch-title">Позвонить</div><div class="cta-ch-sub">Пн–Пт, 09:00–19:00</div></div>
-          <div class="cta-ch-val">+7 993 490-40-24</div>
-        </a>
-        <a href="https://t.me/+79819470402" class="cta-ch">
-          <div class="cta-ch-icon">TG</div>
-          <div><div class="cta-ch-title">Telegram</div><div class="cta-ch-sub">Ответим в течение часа</div></div>
-          <div class="cta-ch-val">→ открыть</div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-top">
-      <div>
-        <div class="f-logo">IRON<span>EX</span></div>
-        <p class="f-desc">Изготовление деталей по чертежам полного цикла. 47 станков ЧПУ, КИМ-контроль каждой партии.</p>
-        <div class="f-contacts">
-          <a href="tel:+79934904024">+7 993 490-40-24</a>
-          <a href="mailto:info@ironex.tech">info@ironex.tech</a>
-          <span>Пн–Пт, 09:00–19:00 (МСК)</span>
+        <div class="card">
+          <div class="card__body">
+            <h3>Координатно-пробивные работы</h3>
+            <p>VT-300 ЧПУ. Перфорация, вырубка, формовка по программе. Серийные детали с отверстиями любого расположения.</p>
+            <p><span class="label">Позиционирование</span> ЧПУ · <span class="label">Формат</span> серия</p>
+            <p><span class="label label--signal">По запросу</span></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <h3>Штамповка</h3>
+            <p>Серийное производство штампованных деталей. Холодная штамповка, вырубные штампы, быстрый цикл на больших объёмах.</p>
+            <p><span class="label">Формат</span> серийная · <span class="label">Способ</span> холодная штамповка</p>
+            <p><span class="label label--signal">По запросу</span></p>
+          </div>
         </div>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Услуги</p>
+    </div>
+  </section>
+
+  <!-- ═══ СВАРКА ═══ -->
+  <section class="section section--tint" id="svarka">
+    <div class="container">
+      <div class="rule-label"><span class="label">Сварка и сборка</span></div>
+      <h2>Два робота NB-350 варят серии от 20 деталей с одинаковым швом</h2>
+      <p class="lede">16 сварочных постов, 2 промышленных робота и лазерная сварка — узлы любой сложности из стали, нержавейки и алюминия.</p>
+
+      <div class="card" style="margin-top:32px">
+        <figure class="figure--draft">
+          <img src="/images/il/svarka.webp" alt="Схема сварного шва в разрезе с валиком наплавленного металла" width="1200" height="896" loading="lazy" decoding="async" />
+          <figcaption>
+            <span>Сварной шов в разрезе — валик наплавленного металла вдоль стыка</span>
+            <span>Иллюстрация, не фото сварки в цехе</span>
+          </figcaption>
+        </figure>
+        <div class="card__body">
+          <h3>Роботизированная сварка · NB-350</h3>
+          <p>Два робота-сварщика NB-350 — для серийных узлов, где важна высокая повторяемость. Один раз запрограммировали, дальше каждая деталь получает одинаковый шов.</p>
+          <ul>
+            <li>Высокая повторяемость геометрии шва</li>
+            <li>Ниже цена на серию, чем при ручной сварке</li>
+            <li>Подходит для серий от 20 штук</li>
+            <li>Сталь, нержавейка, алюминий</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-table" style="margin-top:24px">
+        <table>
+          <thead><tr><th>Метод</th><th>Оборудование и материал</th><th>Нормо-час</th></tr></thead>
+          <tbody>
+            <tr><td>Аргонодуговая сварка TIG</td><td>WSM-400, WSME-315 · нержавейка, алюминий</td><td class="num">от 950 ₽</td></tr>
+            <tr><td>Полуавтоматическая сварка MIG/MAG</td><td>CO₂ и смесь · конструкционная сталь</td><td class="num">от 800 ₽</td></tr>
+            <tr><td>Лазерная сварка</td><td>SUP-AMF-D · тонкостенные детали, минимальная деформация</td><td class="warn">по запросу</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ФИНИШ ═══ -->
+  <section class="section" id="finish">
+    <div class="container">
+      <div class="rule-label"><span class="label">Финиш и покрытия</span></div>
+      <h2>Порошковая покраска — любой цвет RAL в камерах до 6 метров</h2>
+      <p class="lede">Защитные и декоративные покрытия, маркировка и слесарная доработка — перед КИМ-контролем и отгрузкой.</p>
+
+      <div class="spec-table" style="margin-top:32px">
+        <table>
+          <thead><tr><th>Операция</th><th>Параметры</th><th>Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Порошковая окраска</td><td>камеры до 6 м, любой цвет RAL: матовое, глянцевое, текстурное, «муар», класс коррозионной стойкости 5</td><td class="num">от 320 ₽ / м²</td></tr>
+            <tr><td>Гальваника и покрытия</td><td>цинкование, никелирование, анодирование алюминия, хромирование; сертификаты соответствия по запросу</td><td class="warn">по запросу</td></tr>
+            <tr><td>Лазерная маркировка</td><td>серийные номера, логотипы, QR-коды, DataMatrix; нержавейка, алюминий, сталь</td><td class="warn">по запросу</td></tr>
+            <tr><td>Слесарные работы</td><td>зачистка заусенцев, снятие фаски, подгонка, притирка, сборка узлов</td><td class="num">от 800 ₽</td></tr>
+            <tr><td>Снятие фаски</td><td>фаскосниматели ЧПУ и ручной инструмент, после резки и фрезеровки</td><td class="warn">по запросу</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ КОНТРОЛЬ ═══ -->
+  <section class="section section--tint" id="kontrol">
+    <div class="container">
+      <div class="rule-label"><span class="label">Контроль качества</span></div>
+      <h2>КИМ Hexagon Global S проверяет партию с точностью ±0,0025 мм</h2>
+      <p class="lede">3D-замер в трёх осях — единственный способ доказать геометрию партии, а не отдельной детали. Штангенциркуль показывает размер, КИМ подтверждает допуск на всей партии.</p>
+
+      <div class="card" style="margin-top:32px">
+        <figure class="figure--draft">
+          <img src="/images/il/kim-kontrol.webp" alt="Схема измерения детали на координатно-измерительной машине" width="1200" height="896" loading="lazy" decoding="async" />
+          <figcaption>
+            <span>Координатно-измерительная машина проверяет деталь по контрольным точкам</span>
+            <span>Иллюстрация принципа, не фото контроля в IRONEX</span>
+          </figcaption>
+        </figure>
+        <div class="card__body">
+          <div class="spec-table">
+            <table>
+              <thead><tr><th>Параметр</th><th>Значение</th></tr></thead>
+              <tbody>
+                <tr><td>Рабочее поле</td><td class="num">800×600×600 мм</td></tr>
+                <tr><td>Точность</td><td class="num">±0,0025 мм</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:16px">Дополнительно — оптический 2D-измеритель для плоских и контурных деталей.</p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:24px">
+        <p><strong>КИМ-контроль входит в стоимость каждого заказа.</strong> Протокол с отклонениями прилагается к партии без доплаты.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="dim" /></div>
+
+  <!-- ═══ ПОЛНЫЙ ЦИКЛ ═══ -->
+  <section class="section" id="polniy-cikl">
+    <div class="container">
+      <div class="rule-label"><span class="label">Полный цикл</span></div>
+      <h2>От чертежа до готовой детали — пять шагов, один подрядчик</h2>
+      <p class="lede">Прислали чертёж — получили готовую деталь. Технолог проектирует маршрут, производство выполняет операции, КИМ подтверждает геометрию.</p>
+
+      <div class="panel" style="margin-top:28px">
+        <ol>
+          <li><strong>Заявка.</strong> PDF, DWG, DXF, STEP, IGES, ZIP.</li>
+          <li><strong>Расчёт.</strong> Стоимость и срок — до 3 рабочих дней.</li>
+          <li><strong>Производство.</strong> Токарная, фрезерная, резка, листовая обработка, сварка и финиш — по маршруту.</li>
+          <li><strong>КИМ-контроль.</strong> Протокол с допусками на партию.</li>
+          <li><strong>Доставка.</strong> Отправка по России.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="dim" /></div>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="section section--tint" id="faq">
+    <div class="container">
+      <div class="rule-label"><span class="label">Вопросы</span></div>
+      <h2>Частые вопросы</h2>
+      <div class="faq" style="margin-top:24px">
+        <details open>
+          <summary>Какой минимальный заказ?</summary>
+          <div class="faq__a"><p>Универсального минимума нет: объём зависит от технологии, материала и подготовки производства. Единичные детали рассматриваем как исключение, основной формат — пробные и серийные партии.</p></div>
+        </details>
+        <details>
+          <summary>Какие форматы чертежей принимаете?</summary>
+          <div class="faq__a"><p>PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG. Если чертежа нет — принимаем эскиз или описание, поможем проработать конструкторскую документацию.</p></div>
+        </details>
+        <details>
+          <summary>Входит ли КИМ-контроль в стоимость заказа?</summary>
+          <div class="faq__a"><p>Да. Координатно-измерительная машина Hexagon Global S — на каждой партии. Протокол измерений с допусками прилагается к заказу без доплат.</p></div>
+        </details>
+        <details>
+          <summary>С какими материалами работаете?</summary>
+          <div class="faq__a"><p>Конструкционная и легированная сталь, нержавейка AISI 304/316, алюминий, медь, латунь, титан и другие сплавы.</p></div>
+        </details>
+        <details>
+          <summary>Подписываете ли NDA?</summary>
+          <div class="faq__a"><p>Да, подписываем соглашение о неразглашении до начала работ — ваши чертежи и технологии остаются конфиденциальными.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужна деталь по чертежу?</h2>
+      <p>Пришлите файл — технолог вернётся со стоимостью и сроком за 3 рабочих дня. Бесплатно, без обязательств.</p>
+      <p style="margin-top:26px">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20услуги">Отправить чертёж</a>
+      </p>
+      <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — тема письма подставится автоматически.</p>
+    </div>
+  </section>
+
+  <div class="mobile-bar">
+    <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20услуги">Отправить чертёж</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
         <ul>
-          <li><a href="frezerovka.html">Фрезерная обработка</a></li>
-          <li><a href="tokarnaya.html">Токарная обработка</a></li>
-          <li><a href="uslugi.html#rezka">Лазерная резка</a></li>
-          <li><a href="uslugi.html#listovaya">Гибка металла</a></li>
-          <li><a href="uslugi.html#svarka">Сварка и сборка</a></li>
-          <li><a href="uslugi.html#finish">Порошковая покраска</a></li>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Компания</p>
+      <div>
+        <h3>Компания</h3>
         <ul>
-          <li><a href="oborudovanie.html">Оборудование</a></li>
-          <li><a href="ceny.html">Цены</a></li>
-          <li><a href="blog.html">Блог</a></li>
-          <li><a href="index.html#cases">Кейсы</a></li>
-          <li><a href="kontakty.html">Контакты</a></li>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Связаться</p>
+      <div>
+        <h3>Связаться</h3>
         <ul>
-          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
-          <li><a href="https://t.me/+79819470402">Telegram</a></li>
-          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 IRONEX. Контрактное производство деталей.</span>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
       <span>ООО «Айронекс» · ИНН 7804719856</span>
     </div>
   </div>
 </footer>
 
-<script>
-  // Подсветка активной категории при скролле
-  const sections = document.querySelectorAll('.svc-section[id]');
-  const catLinks = document.querySelectorAll('.cat-link');
-  window.addEventListener('scroll', () => {
-    let cur = '';
-    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 140) cur = s.id; });
-    catLinks.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
-    });
-  });
-</script>
-
-<script src="analytics-events.js"></script>
-<script src="email-copy.js"></script>
-<script src="redesign.js"></script>
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
 </body>
 </html>

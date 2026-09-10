@@ -7,176 +7,66 @@
   <meta name="description" content="Ориентировочные цены на металлообработку: токарные и фрезерные работы, резка, гибка, сварка и покрытия. Точный расчёт по чертежу за 3 рабочих дня." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --dark: #18181B; --dark2: #27272A; --amber: #F59E0B; --amber2: #D97706;
-      --amber3: #FEF3C7; --bg: #FAFAF9; --bg2: #F4F4F0; --text: #18181B;
-      --muted: #71717A; --border: #E4E4E7; --white: #FFFFFF; --r: 10px;
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
-    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700;
-               letter-spacing: .1em; text-transform: uppercase; color: var(--amber2); margin-bottom: 18px; }
-    .eyebrow::before { content: ''; display: block; width: 20px; height: 2px; background: var(--amber); }
-    h1.h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 900; line-height: 1.1;
-             letter-spacing: -.03em; margin-bottom: 18px; }
-    h2.h2 { font-size: clamp(22px, 3vw, 30px); font-weight: 800; line-height: 1.2;
-             letter-spacing: -.02em; margin-bottom: 14px; }
-    .lead { font-size: 17px; color: var(--muted); line-height: 1.65; max-width: 600px; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px;
-           border-radius: 8px; font-weight: 700; font-size: 15px; cursor: pointer;
-           text-decoration: none; transition: all .2s; border: none; font-family: inherit; }
-    .btn-amber { background: var(--amber); color: var(--dark); }
-    .btn-amber:hover { background: var(--amber2); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(245,158,11,.35); }
-    .btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.25); }
-    .btn-ghost:hover { background: rgba(255,255,255,.08); }
-
-    /* NAV */
-    nav { position: sticky; top: 0; z-index: 200; background: rgba(24,24,27,.97);
-          backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,.06); }
-    .nav-inner { display: flex; align-items: center; height: 68px; gap: 0; }
-    .nav-logo { font-size: 21px; font-weight: 900; color: #fff; text-decoration: none;
-                letter-spacing: -.025em; flex-shrink: 0; margin-right: auto; }
-    .nav-logo span { color: var(--amber); }
-    .nav-links { display: flex; gap: 32px; list-style: none; margin-right: 32px; }
-    .nav-links a { color: rgba(255,255,255,.6); text-decoration: none; font-size: 14px;
-                   font-weight: 500; transition: color .2s; }
-    .nav-links a:hover, .nav-links a.active { color: #fff; }
-    .nav-actions { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
-    .nav-phone { color: rgba(255,255,255,.8); font-size: 14px; font-weight: 600;
-                 text-decoration: none; }
-    .nav-phone:hover { color: var(--amber); }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer;
-                 background: none; border: none; padding: 4px; margin-left: 16px; }
-    .hamburger span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
-    .mob-menu { display: none; background: var(--dark2); border-top: 1px solid rgba(255,255,255,.08); }
-    .mob-menu.open { display: block; }
-    .mob-menu a { display: block; padding: 13px 24px; color: rgba(255,255,255,.75); font-size: 15px;
-                  font-weight: 500; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.06); }
-
-    /* BREADCRUMB */
-    .breadcrumb { padding: 16px 0; border-bottom: 1px solid var(--border); }
-    .breadcrumb-inner { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--muted); }
-    .breadcrumb a { color: var(--muted); text-decoration: none; }
-    .breadcrumb a:hover { color: var(--text); }
-    .breadcrumb span { color: var(--text); font-weight: 500; }
-
-    /* HERO */
-    .page-hero { padding: 64px 0 56px; background: var(--bg); border-bottom: 1px solid var(--border); }
-    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-    .price-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-    .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600;
-             background: #fff; border: 1px solid var(--border); border-radius: 100px;
-             padding: 7px 14px; color: var(--text); }
-    .badge::before { content: '✓'; color: var(--amber2); }
-    .hero-note { background: var(--amber3); border: 1px solid #FDE68A; border-radius: var(--r);
-                 padding: 20px 24px; font-size: 14px; line-height: 1.6; color: #78350F; }
-    .hero-note strong { display: block; font-size: 15px; margin-bottom: 6px; color: #92400E; }
-
-    /* PRICE TABLES */
-    .prices-section { padding: 80px 0; }
-    .price-category { margin-bottom: 56px; }
-    .price-category:last-child { margin-bottom: 0; }
-    .cat-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px;
-                  padding-bottom: 16px; border-bottom: 2px solid var(--amber); }
-    .cat-num { width: 36px; height: 36px; background: var(--amber); color: var(--dark);
-               border-radius: 8px; display: flex; align-items: center; justify-content: center;
-               font-size: 14px; font-weight: 800; flex-shrink: 0; }
-    .cat-header h2 { font-size: 20px; font-weight: 800; margin-bottom: 0; }
-    .price-table { width: 100%; border-collapse: collapse; background: #fff;
-                   border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
-    .price-table th { background: var(--dark); color: #fff; font-size: 12px; font-weight: 700;
-                      text-transform: uppercase; letter-spacing: .06em; padding: 12px 20px; text-align: left; }
-    .price-table td { padding: 14px 20px; font-size: 14px; border-bottom: 1px solid var(--border);
-                      vertical-align: middle; }
-    .price-table tr:last-child td { border-bottom: none; }
-    .price-table tr:hover td { background: #FFFBEB; }
-    .price-table td:first-child { font-weight: 600; }
-    .price-table td:nth-child(2) { color: var(--muted); font-size: 13px; }
-    .price-table td:last-child { font-weight: 700; color: var(--amber2); white-space: nowrap; text-align: right; }
-    .price-from { font-size: 11px; font-weight: 400; color: var(--muted); margin-left: 4px; }
-    .tag-request { font-size: 12px; background: var(--bg2); color: var(--muted);
-                   padding: 3px 10px; border-radius: 100px; font-weight: 600; }
-
-    /* FACTORS */
-    .factors { background: var(--bg); padding: 64px 0; }
-    .factors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
-    .factor-card { background: #fff; border: 1px solid var(--border); border-radius: var(--r); padding: 24px; }
-    .factor-num { font-size: 32px; font-weight: 900; color: var(--amber3); letter-spacing: -.03em;
-                  margin-bottom: 10px; -webkit-text-stroke: 1px var(--amber); }
-    .factor-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
-    .factor-card p  { font-size: 13px; color: var(--muted); line-height: 1.6; }
-
-    /* CTA */
-    .cta-bar { background: var(--dark); color: #fff; padding: 64px 0; }
-    .cta-bar-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-    .cta-bar h2 { color: #fff; font-size: clamp(22px, 3vw, 32px); font-weight: 900;
-                  letter-spacing: -.025em; margin-bottom: 12px; }
-    .cta-bar p { color: rgba(255,255,255,.55); font-size: 15px; line-height: 1.6; }
-    .cta-channels { display: flex; flex-direction: column; gap: 12px; }
-    .cta-ch { display: flex; align-items: center; gap: 16px; background: rgba(255,255,255,.06);
-              border: 1px solid rgba(255,255,255,.1); border-radius: 10px; padding: 18px 22px;
-              text-decoration: none; color: #fff; transition: all .2s; }
-    .cta-ch:hover { background: rgba(245,158,11,.12); border-color: var(--amber); }
-    .cta-ch-icon { font-size: 22px; flex-shrink: 0; }
-    .cta-ch-title { font-size: 14px; font-weight: 700; }
-    .cta-ch-sub   { font-size: 12px; color: rgba(255,255,255,.4); margin-top: 1px; }
-    .cta-ch-val   { margin-left: auto; font-size: 13px; font-weight: 700; color: var(--amber); white-space: nowrap; }
-
-    /* FOOTER */
-    footer { background: #0A0A0C; color: rgba(255,255,255,.4); padding: 48px 0 24px; }
-    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
-                  padding-bottom: 36px; border-bottom: 1px solid rgba(255,255,255,.07); }
-    .f-logo { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -.025em; margin-bottom: 10px; }
-    .f-logo span { color: var(--amber); }
-    .f-desc { font-size: 13px; line-height: 1.65; max-width: 220px; margin-bottom: 16px; }
-    .f-contacts { display: flex; flex-direction: column; gap: 7px; }
-    .f-contacts a { color: rgba(255,255,255,.6); text-decoration: none; font-size: 13px; }
-    .f-contacts a:hover { color: var(--amber); }
-    .f-col h4 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
-                color: rgba(255,255,255,.3); margin-bottom: 14px; }
-    .f-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
-    .f-col a  { color: rgba(255,255,255,.5); text-decoration: none; font-size: 13px; }
-    .f-col a:hover { color: rgba(255,255,255,.9); }
-    .footer-bottom { display: flex; justify-content: space-between; padding-top: 20px;
-                     font-size: 12px; flex-wrap: wrap; gap: 10px; }
-
-    @media (max-width: 768px) {
-      .nav-links, .nav-actions { display: none; }
-      .hamburger { display: flex; }
-      .hero-grid { grid-template-columns: 1fr; }
-      .factors-grid { grid-template-columns: 1fr; }
-      .cta-bar-inner { grid-template-columns: 1fr; gap: 36px; }
-      .footer-top { grid-template-columns: 1fr 1fr; }
-      .price-table, .price-table tbody, .price-table tr, .price-table td { display: block; width: 100%; }
-      .price-table thead { display: none; }
-      .price-table tr { padding: 12px 14px; border-bottom: 1px solid var(--border); }
-      .price-table tr:last-child { border-bottom: none; }
-      .price-table td { padding: 3px 0; border: none; }
-      .price-table td:nth-child(2) { display: none; }
-      .price-table td:last-child { text-align: left; white-space: normal; }
-      .price-table tr:hover td { background: transparent; }
-    }
-    @media (max-width: 480px) {
-      .footer-top { grid-template-columns: 1fr; }
-    }
-  </style>
-
-  <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
   <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
 
-  <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
   <link rel="canonical" href="https://ironex.tech/ceny.html" />
+  <meta name="robots" content="index, follow" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Цены","item":"https://ironex.tech/ceny.html"}]},
-    {"@type":"WebPage","url":"https://ironex.tech/ceny.html","name":"Цены на металлообработку — IRONEX","description":"Ориентировочные цены на токарную, фрезерную обработку, лазерную резку, гибку, сварку и покраску. Точный расчёт — по чертежу за 3 рабочих дня.","publisher":{"@id":"https://ironex.tech/#org"},"isPartOf":{"@id":"https://ironex.tech/#website"},"dateModified":"2026-08-05"}
+    {
+      "@type": "WebPage",
+      "@id": "https://ironex.tech/ceny.html",
+      "url": "https://ironex.tech/ceny.html",
+      "name": "Цены на металлообработку — IRONEX",
+      "description": "Ориентировочные цены на металлообработку: токарные и фрезерные работы, резка, гибка, сварка и покрытия. Точный расчёт по чертежу за 3 рабочих дня.",
+      "inLanguage": "ru-RU",
+      "publisher": {"@id": "https://ironex.tech/#org"},
+      "isPartOf": {"@id": "https://ironex.tech/#website"},
+      "dateModified": "2026-09-10"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ironex.tech/"},
+        {"@type": "ListItem", "position": 2, "name": "Цены", "item": "https://ironex.tech/ceny.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Почему нет фиксированного прайса?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Стоимость детали зависит от материала, геометрии, точности, количества операций и объёма партии. Один и тот же контур в нержавейке стоит вдвое дороже, чем в алюминии. Точная цена — только по чертежу."}
+        },
+        {
+          "@type": "Question",
+          "name": "Как получить расчёт стоимости?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Нажмите «Прислать чертёж» или напишите на info@ironex.tech — письмо откроется с темой «Расчёт по чертежу — цены». Ответим с ценой и сроком за 3 рабочих дня: расчёт бесплатный и ни к чему не обязывает."}
+        },
+        {
+          "@type": "Question",
+          "name": "Есть ли скидки на серийные заказы?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Да. Подготовительные операции — наладка и программирование — распределяются на весь тираж, поэтому чем больше партия, тем ниже цена единицы."}
+        },
+        {
+          "@type": "Question",
+          "name": "Включён ли НДС в цены на сайте?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Цены на сайте ориентировочные, без НДС. В коммерческом предложении НДС 22% указывается отдельно. Работаем как с НДС, так и без."}
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech/#org",
+      "name": "IRONEX",
+      "legalName": "ООО «Айронекс»",
+      "taxID": "7804719856",
+      "url": "https://ironex.tech"
+    }
   ]}
   </script>
-  <!-- ═══ Яндекс Метрика 105009501 ═══ -->
   <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -185,476 +75,294 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <link rel="stylesheet" href="email-copy.css" />
-  <link rel="stylesheet" href="redesign.css?v=20260907-4" />
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Цены на металлообработку" />
+  <meta property="og:description" content="Ориентировочные цены на металлообработку: токарные и фрезерные работы, резка, гибка, сварка и покрытия. Точный расчёт по чертежу за 3 рабочих дня." />
+  <meta property="og:url" content="https://ironex.tech/ceny.html" />
+  <meta property="og:image" content="https://ironex.tech/images/og.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Цены на металлообработку" />
+  <meta name="twitter:description" content="Ориентировочные цены на металлообработку: токарные и фрезерные работы, резка, гибка, сварка и покрытия. Точный расчёт по чертежу за 3 рабочих дня." />
+  <meta name="twitter:image" content="https://ironex.tech/images/og.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
 </head>
-<body class="redesign-precision">
-<a class="skip-link" href="#main-content">Перейти к содержанию</a>
-<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
 
-<!-- NAV -->
-<nav>
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">IRON<span>EX</span></a>
-      <ul class="nav-links">
-        <li><a href="uslugi.html">Услуги</a></li>
-        <li><a href="oborudovanie.html">Оборудование</a></li>
-        <li><a href="ceny.html" class="active">Цены</a></li>
-        <li><a href="blog.html">Блог</a></li>
-        <li><a href="index.html#cases">Кейсы</a></li>
-        <li><a href="kontakty.html">Контакты</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
-        <a href="kontakty.html" class="btn btn-amber" style="padding:10px 20px;font-size:14px;">Запросить расчёт</a>
-      </div>
-      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
-        <span></span><span></span><span></span>
-      </button>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html" aria-current="page">Цены</a></li>
+      <li><a href="/blog.html">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href="tel:+79934904024">+7 993 490-40-24</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — цены">Прислать чертёж</a>
     </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <div class="mob-menu" id="mobMenu">
-    <a href="uslugi.html">Услуги</a>
-    <a href="oborudovanie.html">Оборудование</a>
-    <a href="ceny.html">Цены</a>
-    <a href="blog.html">Блог</a>
-    <a href="index.html#cases">Кейсы</a>
-    <a href="kontakty.html">Контакты</a>
-    <a href="kontakty.html" style="color:var(--amber);">Запросить расчёт</a>
-    <a href="tel:+79934904024">+7 993 490-40-24</a>
-  </div>
-</nav>
+</header>
 
-<main id="main-content">
-
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <div class="container">
-    <div class="breadcrumb-inner">
-      <a href="index.html">Главная</a> · <span>Цены</span>
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><span>Цены</span>
     </div>
-  </div>
-</div>
+  </nav>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
+  <section class="section">
+    <div class="container">
+      <span class="label">Механообработка · резка · сварка · финиш</span>
+      <h1>Цены на металлообработку</h1>
+      <p class="lede">Ставки ниже показывают порядок затрат по операциям. Точную стоимость и срок детали технолог считает по вашему чертежу — с учётом материала, допусков, числа установов и объёма партии.</p>
+      <p>
+        <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — цены">Прислать чертёж</a>
+        <a class="btn btn--ghost" href="#price-list">Смотреть ставки</a>
+      </p>
+      <p style="margin-top:14px"><span class="label">Тема письма — «Расчёт по чертежу — цены»</span><br>Приложите чертёж или 3D-модель, количество, материал и срок — так расчёт будет точнее.</p>
 
-        <h1 class="h1">Цены на металлообработку</h1>
-        <p class="lead">Ставки ниже помогают оценить порядок затрат, но не заменяют расчёт детали. Технолог проверит геометрию, материал, допуски и партию, затем вернёт стоимость и срок за 3 рабочих дня.</p>
-        <div class="hero-cta">
-          <a href="kontakty.html" class="btn btn-amber">Получить расчёт</a>
-          <a href="#price-list" class="btn btn-ghost">Смотреть ориентиры</a>
-        </div>
-        <div class="price-badges">
-          <span class="badge">Расчёт по чертежу бесплатно</span>
-          <span class="badge">Снижение цены на серию</span>
-          <span class="badge">КИМ-контроль включён</span>
-          <span class="badge">Заказ от 100 000 ₽</span>
-        </div>
+      <div class="spec-table" style="margin-top:32px">
+        <table>
+          <caption>Полный список ставок и позиций «по запросу» — в таблицах ниже.</caption>
+          <thead>
+            <tr><th>Что нужно знать сразу</th><th>Значение</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ставки по нормо-часу</td><td class="num">1 100–2 400 ₽</td></tr>
+            <tr><td>Минимальная сумма заказа</td><td class="num">100 000 ₽</td></tr>
+            <tr><td>Срок расчёта по чертежу</td><td class="num">3 рабочих дня</td></tr>
+            <tr><td>Куда прислать чертёж</td><td>Кнопкой выше — письмо на info@ironex.tech</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div>
-        <div class="hero-note">
-          <strong>Почему ставка не равна цене детали</strong>
-          Нормо-час — только часть расчёта. На итог влияют материал, подготовка программы и оснастки,
-          число установов, допуски, контроль, покрытия и объём партии. Поэтому сравнивать подрядчиков
-          лучше по итоговой цене одинакового комплекта работ. Ставки ниже — ориентир, не оферта.
-        </div>
+
+      <hr class="dim" />
+
+      <div class="callout">
+        <p><strong>Ставка нормо-часа — не цена детали.</strong> Итог зависит от материала, подготовки программы и оснастки, числа установов, допусков, контроля, покрытий и объёма партии. Сравнивайте подрядчиков по итоговой цене одинакового комплекта работ, а не по ставке из таблицы — ставки ниже ориентир, не оферта.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PRICES -->
-<div class="prices-section" id="price-list">
-  <div class="container">
+  <section class="section section--tint" id="price-list">
+    <div class="container">
+      <div class="rule-label"><span class="label">Прайс-лист</span></div>
+      <h2>Пять видов работ — у каждой своя вилка ставки</h2>
+      <p class="lede">Ниже — минимальные ставки «от» по каждой операции. Позиции без цифры помечены «по запросу»: тариф зависит от материала и партии, называем после короткого уточнения.</p>
 
-    <!-- 1. Механообработка -->
-    <div class="price-category">
-      <div class="cat-header">
-        <div class="cat-num">01</div>
-        <h2 class="h2">Механообработка ЧПУ</h2>
+      <h3 style="margin-top:44px">Механообработка ЧПУ</h3>
+      <div class="spec-table">
+        <table>
+          <thead><tr><th>Услуга</th><th>Оборудование / примечание</th><th>Стоимость</th></tr></thead>
+          <tbody>
+            <tr><td>Фрезерная обработка ЧПУ</td><td>3–5 осей, корпусные и фасонные детали, ±0,005 мм</td><td class="num">от 1 800 ₽ / нормо-час</td></tr>
+            <tr><td>Пятиосевая фрезеровка</td><td>Hermle C500, сложная геометрия в одной установке</td><td class="num">от 2 400 ₽ / нормо-час</td></tr>
+            <tr><td>Токарная обработка ЧПУ</td><td>DMG Mori NLX 2500, ⌀ до 380 мм, длина до 1500 мм, приводной инструмент</td><td class="num">от 1 200 ₽ / нормо-час</td></tr>
+            <tr><td>Чистовая токарная обработка</td><td>Финишные проходы, Ra 0,8–1,6 мкм</td><td class="num">от 1 600 ₽ / нормо-час</td></tr>
+            <tr><td>Черновая токарная обработка</td><td>Снятие припуска, высокая подача</td><td class="num">от 1 100 ₽ / нормо-час</td></tr>
+            <tr><td>Сверление и расточка</td><td>Отверстия, расточные оправки, H6–H7</td><td class="warn">по запросу</td></tr>
+            <tr><td>Шлифовка</td><td>Цилиндрическая и плоская шлифовка</td><td class="warn">по запросу</td></tr>
+          </tbody>
+        </table>
       </div>
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th style="width:35%">Услуга</th>
-            <th style="width:40%">Оборудование / примечание</th>
-            <th style="width:25%">Стоимость</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Фрезерная обработка ЧПУ</td>
-            <td>3–5 осей, корпусные и фасонные детали, ±0,005 мм</td>
-            <td>от 1 800 ₽ <span class="price-from">/ нормо-час</span></td>
-          </tr>
-          <tr>
-            <td>Пятиосевая фрезеровка</td>
-            <td>Prim Miller C500, сложная геометрия в одной установке</td>
-            <td>от 2 400 ₽ <span class="price-from">/ нормо-час</span></td>
-          </tr>
-          <tr>
-            <td>Токарная обработка ЧПУ</td>
-            <td>⌀ до 380 мм, длина до 1500 мм, приводной инструмент</td>
-            <td>от 1 200 ₽ <span class="price-from">/ нормо-час</span></td>
-          </tr>
-          <tr>
-            <td>Чистовая токарная обработка</td>
-            <td>Финишные проходы, Ra 0,8–1,6 мкм</td>
-            <td>от 1 600 ₽ <span class="price-from">/ нормо-час</span></td>
-          </tr>
-          <tr>
-            <td>Черновая токарная обработка</td>
-            <td>Снятие припуска, высокая подача</td>
-            <td>от 1 100 ₽ <span class="price-from">/ нормо-час</span></td>
-          </tr>
-          <tr>
-            <td>Сверление и расточка</td>
-            <td>Отверстия, расточные оправки, H6–H7</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-          <tr>
-            <td>Шлифовка</td>
-            <td>Цилиндрическая и плоская шлифовка</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-        </tbody>
-      </table>
+
+      <h3 style="margin-top:44px">Резка и раскрой</h3>
+      <div class="spec-table">
+        <table>
+          <thead><tr><th>Услуга</th><th>Оборудование / примечание</th><th>Стоимость</th></tr></thead>
+          <tbody>
+            <tr><td>Лазерная резка</td><td>D-SOAR 20 кВт, сталь до 30 мм, нержавейка, алюминий</td><td class="num">от 80 ₽ / м реза</td></tr>
+            <tr><td>Гидроабразивная резка</td><td>APW2050BA, любые материалы без термовлияния</td><td class="warn">по запросу</td></tr>
+            <tr><td>Плазменная резка</td><td>Толстый лист, грубый раскрой, быстро и дёшево</td><td class="warn">по запросу</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="margin-top:44px">Листовая обработка</h3>
+      <div class="spec-table">
+        <table>
+          <thead><tr><th>Услуга</th><th>Оборудование / примечание</th><th>Стоимость</th></tr></thead>
+          <tbody>
+            <tr><td>Гибка листового металла</td><td>Прессы до 150 т, алюминий, сталь, нержавейка</td><td class="num">от 150 ₽ / гиб</td></tr>
+            <tr><td>Координатно-пробивные работы</td><td>VT-300 ЧПУ, перфорация, просечка</td><td class="warn">по запросу</td></tr>
+            <tr><td>Штамповка</td><td>Серийное производство штампованных деталей</td><td class="warn">по запросу</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="margin-top:44px">Сварка и сборка</h3>
+      <div class="spec-table">
+        <table>
+          <thead><tr><th>Услуга</th><th>Оборудование / примечание</th><th>Стоимость</th></tr></thead>
+          <tbody>
+            <tr><td>Сварочные работы TIG / MIG / MAG</td><td>Сталь, нержавейка, алюминий; WSM-400, WSME-315</td><td class="num">от 950 ₽ / нормо-час</td></tr>
+            <tr><td>Роботизированная сварка</td><td>NB-350 × 2, серийные узлы, высокая повторяемость</td><td class="warn">по запросу</td></tr>
+            <tr><td>Лазерная сварка</td><td>SUP-AMF-D, тонкие швы, минимальный нагрев</td><td class="warn">по запросу</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="margin-top:44px">Финиш и контроль</h3>
+      <div class="spec-table">
+        <table>
+          <thead><tr><th>Услуга</th><th>Примечание</th><th>Стоимость</th></tr></thead>
+          <tbody>
+            <tr><td>Порошковая окраска</td><td>Любой цвет RAL, камеры до 6 м, матовое или глянцевое</td><td class="num">от 320 ₽ / м²</td></tr>
+            <tr><td>Гальваника и покрытия</td><td>Цинк, никель, анодирование, хром</td><td class="warn">по запросу</td></tr>
+            <tr><td>Лазерная маркировка</td><td>Серийные номера, логотипы, QR-коды</td><td class="warn">по запросу</td></tr>
+            <tr><td>Слесарные работы</td><td>Зачистка, снятие заусенцев, подгонка</td><td class="num">от 800 ₽ / нормо-час</td></tr>
+            <tr><td>КИМ-контроль Hexagon</td><td>3D-замер, протокол — входит в стоимость заказа</td><td><strong>включён</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="margin-top:32px">В стоимость детали входят материал, программирование ЧПУ, оснастка, обработка и КИМ-контроль. На серию — снижение цены за единицу. Минимальная сумма заказа — <strong>100 000 ₽</strong>. Цены не являются публичной офертой: точную стоимость и срок определяет технолог по чертежу.</p>
     </div>
+  </section>
 
-    <!-- 2. Резка -->
-    <div class="price-category">
-      <div class="cat-header">
-        <div class="cat-num">02</div>
-        <h2 class="h2">Резка и раскрой</h2>
-      </div>
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>Услуга</th>
-            <th>Оборудование / примечание</th>
-            <th>Стоимость</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Лазерная резка</td>
-            <td>D-SOAR 20 кВт, сталь до 30 мм, нержавейка, алюминий</td>
-            <td>от 80 ₽ <span class="price-from">/ м реза</span></td>
-          </tr>
-          <tr>
-            <td>Гидроабразивная резка</td>
-            <td>APW2050BA, любые материалы без термовлияния</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-          <tr>
-            <td>Плазменная резка</td>
-            <td>Толстый лист, грубый раскрой, быстро и дёшево</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-        </tbody>
-      </table>
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Точную цену считает технолог по вашему чертежу</h2>
+      <p style="max-width:56ch">Ставки на этой странице — ориентир. Пришлите чертёж и количество: рассчитаем стоимость и срок за 3 рабочих дня, бесплатно.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — цены">Отправить чертёж</a>
+      </p>
+      <p class="label" style="margin-top:14px">Письмо откроется с темой «Расчёт по чертежу — цены»</p>
     </div>
+  </section>
 
-    <!-- 3. Листовая обработка -->
-    <div class="price-category">
-      <div class="cat-header">
-        <div class="cat-num">03</div>
-        <h2 class="h2">Листовая обработка</h2>
-      </div>
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>Услуга</th>
-            <th>Оборудование / примечание</th>
-            <th>Стоимость</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Гибка листового металла</td>
-            <td>Прессы до 150 т, алюминий / сталь / нержавейка</td>
-            <td>от 150 ₽ <span class="price-from">/ гиб</span></td>
-          </tr>
-          <tr>
-            <td>Координатно-пробивные работы</td>
-            <td>VT-300 ЧПУ, перфорация, просечка</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-          <tr>
-            <td>Штамповка</td>
-            <td>Серийное производство штампованных деталей</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+  <section class="section">
+    <div class="container">
+      <div class="rule-label"><span class="label">Что влияет на цену</span></div>
+      <h2>Шесть параметров чертежа меняют цену детали</h2>
 
-    <!-- 4. Сварка -->
-    <div class="price-category">
-      <div class="cat-header">
-        <div class="cat-num">04</div>
-        <h2 class="h2">Сварка и сборка</h2>
+      <div class="spec-table" style="margin-top:24px">
+        <table>
+          <thead><tr><th>Фактор</th><th>Как он влияет на цену</th></tr></thead>
+          <tbody>
+            <tr><td>Геометрия и сложность</td><td>Чем сложнее деталь — тем больше установов, переустановов и времени программирования. Пятиосевая деталь в одной установке может быть дешевле трёхосевой в трёх.</td></tr>
+            <tr><td>Материал</td><td>Алюминий обрабатывается быстрее стали в 3–4 раза. Нержавейка и титан требуют особого инструмента и режимов. Твёрдые сплавы — отдельный разговор.</td></tr>
+            <tr><td>Допуски и шероховатость</td><td>Каждый квалитет точнее предыдущего удваивает затраты на контроль. Ra 0,8 — это уже шлифовка. Назначайте допуски осознанно — платите только за то, что нужно функции.</td></tr>
+            <tr><td>Объём партии</td><td>Стоимость программирования и наладки делится на количество деталей. Серия 100 штук — принципиально другая цена за единицу, чем 5 штук.</td></tr>
+            <tr><td>Сроки</td><td>Срочный заказ с приоритетом в очереди и сверхурочными сменами стоит дороже стандартного. Планируйте заранее — сэкономите 15–25%.</td></tr>
+            <tr><td>Полный цикл или отдельные операции</td><td>Согласованный технологический маршрут помогает сократить лишние перевозки, повторные согласования и дублирующий контроль. Итоговый эффект зависит от состава операций и партии.</td></tr>
+          </tbody>
+        </table>
       </div>
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>Услуга</th>
-            <th>Оборудование / примечание</th>
-            <th>Стоимость</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Сварочные работы TIG / MIG / MAG</td>
-            <td>Сталь, нержавейка, алюминий; WSM-400, WSME-315</td>
-            <td>от 950 ₽ <span class="price-from">/ нормо-час</span></td>
-          </tr>
-          <tr>
-            <td>Роботизированная сварка</td>
-            <td>NB-350 × 2 — серийные узлы, высокая повторяемость</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-          <tr>
-            <td>Лазерная сварка</td>
-            <td>SUP-AMF-D, тонкие швы, минимальный нагрев</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
-    <!-- 5. Финиш и контроль -->
-    <div class="price-category">
-      <div class="cat-header">
-        <div class="cat-num">05</div>
-        <h2 class="h2">Финиш и контроль</h2>
-      </div>
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>Услуга</th>
-            <th>Примечание</th>
-            <th>Стоимость</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Порошковая окраска</td>
-            <td>Любой цвет RAL, камеры до 6 м, матовое / глянцевое</td>
-            <td>от 320 ₽ <span class="price-from">/ м²</span></td>
-          </tr>
-          <tr>
-            <td>Гальваника и покрытия</td>
-            <td>Цинк, никель, анодирование, хром</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-          <tr>
-            <td>Лазерная маркировка</td>
-            <td>Серийные номера, логотипы, QR-коды</td>
-            <td><span class="tag-request">по запросу</span></td>
-          </tr>
-          <tr>
-            <td>Слесарные работы</td>
-            <td>Зачистка, снятие заусенцев, подгонка</td>
-            <td>от 800 ₽ <span class="price-from">/ нормо-час</span></td>
-          </tr>
-          <tr>
-            <td>КИМ-контроль Hexagon</td>
-            <td>3D-замер, протокол — входит в стоимость заказа</td>
-            <td style="color:#16a34a;font-weight:700;">включён</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p style="font-size:13px;color:var(--muted);line-height:1.7;margin-top:8px;padding:16px;background:var(--bg);border-radius:var(--r);border:1px solid var(--border);">
-      Указаны минимальные ставки «от». В стоимость детали входят: материал, программирование ЧПУ, оснастка, обработка и КИМ-контроль.
-      На серию — снижение цены за единицу. Минимальная сумма заказа — <strong>100 000 ₽</strong>.
-      Цены не являются публичной офертой. Точная стоимость определяется по чертежу.
-    </p>
-
-  </div>
-</div>
-
-<!-- FACTORS -->
-<section class="factors">
-  <div class="container">
-
-    <h2 class="h2">5 факторов, которые определяют стоимость детали</h2>
-    <div class="factors-grid">
-      <div class="factor-card">
-        <div class="factor-num">01</div>
-        <h3>Геометрия и сложность</h3>
-        <p>Чем сложнее деталь — тем больше установок, переустановок и времени программирования. Пятиосевая деталь в одной установке может быть дешевле трёхосевой в трёх.</p>
-      </div>
-      <div class="factor-card">
-        <div class="factor-num">02</div>
-        <h3>Материал</h3>
-        <p>Алюминий обрабатывается быстрее стали в 3–4 раза. Нержавейка и титан требуют особого инструмента и режимов. Твёрдые сплавы — отдельный разговор.</p>
-      </div>
-      <div class="factor-card">
-        <div class="factor-num">03</div>
-        <h3>Допуски и шероховатость</h3>
-        <p>Каждый квалитет точнее предыдущего удваивает затраты на контроль. Ra 0,8 — это уже шлифовка. Назначайте допуски осознанно — платите только за то, что нужно функции.</p>
-      </div>
-      <div class="factor-card">
-        <div class="factor-num">04</div>
-        <h3>Объём партии</h3>
-        <p>Стоимость программирования и наладки делится на количество деталей. Серия 100 штук — принципиально другая цена за единицу, чем 5 штук.</p>
-      </div>
-      <div class="factor-card">
-        <div class="factor-num">05</div>
-        <h3>Сроки</h3>
-        <p>Срочный заказ с приоритетом в очереди и сверхурочными сменами стоит дороже стандартного. Планируйте заранее — сэкономите 15–25%.</p>
-      </div>
-      <div class="factor-card">
-        <div class="factor-num">06</div>
-        <h3>Полный цикл vs. отдельные операции</h3>
-        <p>Согласованный технологический маршрут помогает сократить лишние перевозки, повторные согласования и дублирующий контроль. Итоговый эффект зависит от состава операций и партии.</p>
+      <div class="mat-grid mat-grid--2" style="margin-top:32px">
+        <figure class="figure--draft">
+          <img src="/images/il/seriya.webp" width="1200" height="896" alt="Схема повторяющейся партии одинаковых деталей — иллюстрация к фактору «Объём партии»" loading="lazy" decoding="async" />
+          <figcaption>
+            <span>К фактору «Объём партии»</span>
+            <span>Иллюстрация-схема, не фото цеха или партии IRONEX</span>
+          </figcaption>
+        </figure>
+        <figure class="figure--draft">
+          <img src="/images/il/dopuski-i-posadki.webp" width="1200" height="896" alt="Схема полей допуска и посадок — иллюстрация к фактору «Допуски и шероховатость»" loading="lazy" decoding="async" />
+          <figcaption>
+            <span>К фактору «Допуски и шероховатость»</span>
+            <span>Иллюстрация-схема, не фото детали IRONEX</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══ FAQ ═══ -->
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-  {"@type":"Question","name":"Почему нет фиксированного прайса?","acceptedAnswer":{"@type":"Answer","text":"Стоимость детали зависит от материала, геометрии, точности, количества операций и объёма партии. Один и тот же контур в нержавейке стоит вдвое дороже, чем в алюминии. Точная цена — только по чертежу."}},
-  {"@type":"Question","name":"Как получить расчёт стоимости?","acceptedAnswer":{"@type":"Answer","text":"Пришлите чертёж на info@ironex.tech или в Telegram. Ответим с ценой и сроком за 3 рабочих дня — расчёт бесплатный."}},
-  {"@type":"Question","name":"Есть ли скидки на серийные заказы?","acceptedAnswer":{"@type":"Answer","text":"Да. Подготовительные операции (наладка, программирование) распределяются на весь тираж, поэтому чем больше партия — тем ниже цена единицы."}},
-  {"@type":"Question","name":"Включён ли НДС в цены на сайте?","acceptedAnswer":{"@type":"Answer","text":"Цены на сайте ориентировочные, без НДС. В коммерческом предложении НДС 22% указывается отдельно. Работаем как с НДС, так и без."}}
-]}
-</script>
-<section style="padding:80px 0;background:#F5F5F4;">
-  <div class="container">
-
-    <h2 class="h2" style="margin-bottom:40px;">Понятно о<br><em>стоимости</em></h2>
-    <div style="max-width:760px;">
-      <details style="border:1px solid #E7E5E4;border-radius:12px;margin-bottom:8px;background:#fff;">
-        <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">Почему нет фиксированного прайса?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Стоимость детали зависит от материала, геометрии, точности, количества операций и объёма партии. Один и тот же контур в нержавейке стоит вдвое дороже, чем в алюминии. Точная цена — только по чертежу.</p>
-      </details>
-      <details style="border:1px solid #E7E5E4;border-radius:12px;margin-bottom:8px;background:#fff;">
-        <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">Как получить расчёт стоимости?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Пришлите чертёж на info@ironex.tech или в Telegram. Ответим с ценой и сроком за 3 рабочих дня — расчёт бесплатный и ни к чему не обязывает.</p>
-      </details>
-      <details style="border:1px solid #E7E5E4;border-radius:12px;margin-bottom:8px;background:#fff;">
-        <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">Есть ли скидки на серийные заказы?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Да. Подготовительные операции (наладка, программирование) распределяются на весь тираж, поэтому чем больше партия — тем ниже цена единицы.</p>
-      </details>
-      <details style="border:1px solid #E7E5E4;border-radius:12px;background:#fff;">
-        <summary style="padding:18px 22px;font-weight:700;font-size:16px;cursor:pointer;border-radius:12px;">Включён ли НДС в цены на сайте?</summary>
-        <p style="padding:0 22px 18px;color:#78716C;line-height:1.7;margin:0;">Цены на сайте ориентировочные, без НДС. В коммерческом предложении НДС 22% указывается отдельно. Работаем как с НДС, так и без.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-bar">
-  <div class="container">
-    <div class="cta-bar-inner">
-      <div>
-        <h2>Получите точный расчёт по вашему чертежу</h2>
-        <p>Пришлите файл — технолог вернётся со стоимостью за единицу, сроком и маршрутом. Бесплатно, даже если вы только сравниваете подрядчиков.</p>
-        <div style="margin-top:20px;display:flex;flex-direction:column;gap:8px;">
-          <span style="font-size:13px;color:rgba(255,255,255,.5);">✓ &nbsp;PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG</span>
-          <span style="font-size:13px;color:rgba(255,255,255,.5);">✓ &nbsp;NDA и режим работы с документацией согласуем до запуска</span>
-          <span style="font-size:13px;color:rgba(255,255,255,.5);">✓ &nbsp;Минимальная сумма заказа — 100 000 ₽</span>
-        </div>
-      </div>
-      <div class="cta-channels">
-        <div class="cta-ch email-contact-card" data-email-copy>
-          <div class="cta-ch-icon">MAIL</div>
-          <div>
-            <div class="cta-ch-title">Написать на почту</div>
-            <div class="cta-ch-sub">Прикрепите чертёж — ответим за 3 дня</div>
-          </div>
-          <div class="email-contact-actions">
-            <a href="mailto:info@ironex.tech" class="cta-ch-val email-contact-address" data-email-value>info@ironex.tech</a>
-            <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
-          </div>
-        </div>
-        <a href="tel:+79934904024" class="cta-ch">
-          <div class="cta-ch-icon">TEL</div>
-          <div>
-            <div class="cta-ch-title">Позвонить</div>
-            <div class="cta-ch-sub">Пн–Пт, 09:00–19:00 МСК</div>
-          </div>
-          <div class="cta-ch-val">+7 993 490-40-24</div>
-        </a>
-        <a href="https://t.me/+79819470402" class="cta-ch">
-          <div class="cta-ch-icon">TG</div>
-          <div>
-            <div class="cta-ch-title">Telegram</div>
-            <div class="cta-ch-sub">Ответим в течение часа</div>
-          </div>
-          <div class="cta-ch-val">→ открыть</div>
-        </a>
+  <section class="section section--tint">
+    <div class="container">
+      <div class="rule-label"><span class="label">Вопросы</span></div>
+      <h2>Частые вопросы о цене</h2>
+      <div class="faq">
+        <details open>
+          <summary>Почему нет фиксированного прайса?</summary>
+          <div class="faq__a"><p>Стоимость детали зависит от материала, геометрии, точности, количества операций и объёма партии. Один и тот же контур в нержавейке стоит вдвое дороже, чем в алюминии. Точная цена — только по чертежу.</p></div>
+        </details>
+        <details>
+          <summary>Как получить расчёт стоимости?</summary>
+          <div class="faq__a"><p>Нажмите «Прислать чертёж» или напишите на info@ironex.tech — письмо откроется с темой «Расчёт по чертежу — цены». Ответим с ценой и сроком за 3 рабочих дня: расчёт бесплатный и ни к чему не обязывает.</p></div>
+        </details>
+        <details>
+          <summary>Есть ли скидки на серийные заказы?</summary>
+          <div class="faq__a"><p>Да. Подготовительные операции — наладка и программирование — распределяются на весь тираж, поэтому чем больше партия, тем ниже цена единицы.</p></div>
+        </details>
+        <details>
+          <summary>Включён ли НДС в цены на сайте?</summary>
+          <div class="faq__a"><p>Цены на сайте ориентировочные, без НДС. В коммерческом предложении НДС 22% указывается отдельно. Работаем как с НДС, так и без.</p></div>
+        </details>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section class="section">
+    <div class="container">
+      <div class="panel">
+        <span class="label">Как прислать чертёж</span>
+        <p class="lede" style="margin-top:10px">Приложите PDF, DWG, DXF, STEP, IGES или архив с чертежами, укажите количество, материал и срок — вернёмся со стоимостью за 3 рабочих дня.</p>
+        <p style="margin-top:20px">
+          <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — цены">Прислать чертёж</a>
+        </p>
+        <p class="label" style="margin-top:14px">Письмо откроется с темой «Расчёт по чертежу — цены» на info@ironex.tech</p>
+      </div>
+    </div>
+  </section>
 </main>
 
-<!-- FOOTER -->
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
+    <div class="site-footer__top">
       <div>
-        <div class="f-logo">IRON<span>EX</span></div>
-        <p class="f-desc">Изготовление деталей по чертежам полного цикла. 47 станков ЧПУ, КИМ-контроль каждой партии.</p>
-        <div class="f-contacts">
-          <a href="tel:+79934904024">+7 993 490-40-24</a>
-          <a href="mailto:info@ironex.tech">info@ironex.tech</a>
-          <span>Пн–Пт, 09:00–19:00 (МСК)</span>
-        </div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Услуги</p>
+      <div>
+        <h3>Услуги</h3>
         <ul>
-          <li><a href="frezerovka.html">Фрезерная обработка</a></li>
-          <li><a href="tokarnaya.html">Токарная обработка</a></li>
-          <li><a href="index.html#services">Лазерная резка</a></li>
-          <li><a href="index.html#services">Гибка металла</a></li>
-          <li><a href="index.html#services">Сварка и сборка</a></li>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Компания</p>
+      <div>
+        <h3>Компания</h3>
         <ul>
-          <li><a href="index.html#equipment">Оборудование</a></li>
-          <li><a href="ceny.html">Цены</a></li>
-          <li><a href="blog.html">Блог</a></li>
-          <li><a href="index.html#cases">Кейсы</a></li>
-          <li><a href="index.html#cta">Контакты</a></li>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Связаться</p>
+      <div>
+        <h3>Связаться</h3>
         <ul>
-          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
-          <li><a href="https://t.me/+79819470402">Telegram</a></li>
-          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 IRONEX. Контрактное производство деталей.</span>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
       <span>ООО «Айронекс» · ИНН 7804719856</span>
     </div>
   </div>
 </footer>
 
-<script src="analytics-events.js"></script>
-<script src="email-copy.js"></script>
-<script src="redesign.js"></script>
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
 </body>
 </html>

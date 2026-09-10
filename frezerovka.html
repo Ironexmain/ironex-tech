@@ -5,188 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Фрезерные работы по металлу на заказ — IRONEX</title>
   <meta name="description" content="Фрезерные работы по металлу на заказ: корпусные и фасонные детали по чертежам. ЧПУ до 5 осей, точность ±0,005 мм. Расчёт цены и срока за 3 дня." />
-  <link rel="canonical" href="https://ironex.tech/frezerovka.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --dark:#18181B;--dark2:#27272A;--dark3:#3F3F46;--amber:#F59E0B;--amber2:#D97706;
-      --amber3:#FEF3C7;--bg:#FAFAF9;--bg2:#F4F4F0;--text:#18181B;
-      --muted:#71717A;--border:#E4E4E7;--white:#FFFFFF;--r:10px;
-    }
-    html{scroll-behavior:smooth;}
-    body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;}
-    .container{max-width:1180px;margin:0 auto;padding:0 24px;}
-    .section{padding:80px 0;}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;
-             letter-spacing:.1em;text-transform:uppercase;color:var(--amber2);margin-bottom:18px;}
-    .eyebrow::before{content:'';display:block;width:20px;height:2px;background:var(--amber);}
-    .eyebrow-light::before{background:var(--amber);}
-    h2.h2{font-size:clamp(26px,3.5vw,38px);font-weight:900;line-height:1.15;letter-spacing:-.025em;margin-bottom:14px;}
-    h2.h2 em{font-style:normal;color:var(--amber2);}
-    .lead{font-size:16px;color:var(--muted);line-height:1.65;max-width:600px;}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:8px;
-         font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;transition:all .2s;border:none;font-family:inherit;}
-    .btn-amber{background:var(--amber);color:var(--dark);}
-    .btn-amber:hover{background:var(--amber2);transform:translateY(-1px);}
-    .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.25);}
-    .btn-ghost:hover{background:rgba(255,255,255,.08);}
-    nav{position:sticky;top:0;z-index:200;background:rgba(24,24,27,.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06);}
-    .nav-inner{display:flex;align-items:center;height:68px;}
-    .nav-logo{font-size:21px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:-.025em;flex-shrink:0;margin-right:auto;}
-    .nav-logo span{color:var(--amber);}
-    .nav-links{display:flex;gap:28px;list-style:none;margin-right:32px;}
-    .nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;}
-    .nav-links a:hover,.nav-links a.active{color:#fff;}
-    .nav-actions{display:flex;align-items:center;gap:20px;flex-shrink:0;}
-    .nav-phone{color:rgba(255,255,255,.8);font-size:14px;font-weight:600;text-decoration:none;}
-    .nav-phone:hover{color:var(--amber);}
-    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;margin-left:16px;}
-    .hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;}
-    .mob-menu{display:none;background:var(--dark2);border-top:1px solid rgba(255,255,255,.08);}
-    .mob-menu.open{display:block;}
-    .mob-menu a{display:block;padding:13px 24px;color:rgba(255,255,255,.75);font-size:15px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);}
-    /* HERO */
-    .page-hero{padding:72px 0 60px;background:var(--dark);color:#fff;}
-    .page-hero h1{font-size:clamp(32px,5vw,54px);font-weight:900;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px;}
-    .page-hero h1 em{font-style:normal;color:var(--amber);}
-    .page-hero p{font-size:17px;color:rgba(255,255,255,.55);line-height:1.65;max-width:580px;margin-bottom:32px;}
-    .hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px;}
-    .hbadge{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;
-            background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
-            border-radius:100px;padding:7px 14px;color:rgba(255,255,255,.85);}
-    .hero-cta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
-    /* SPECS BAR */
-    .specs-bar{background:var(--amber);padding:20px 0;}
-    .specs-inner{display:flex;gap:0;justify-content:space-around;flex-wrap:wrap;}
-    .spec-item{text-align:center;padding:8px 24px;}
-    .spec-val{font-size:28px;font-weight:900;color:var(--dark);letter-spacing:-.03em;}
-    .spec-label{font-size:12px;font-weight:700;color:rgba(24,24,27,.65);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;}
-    /* FEATURE GRID */
-    .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-    .feat-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px;transition:all .2s;position:relative;}
-    .feat-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--amber);transform:scaleX(0);transform-origin:left;border-radius:0 0 var(--r) var(--r);transition:transform .2s;}
-    .feat-card:hover{border-color:var(--amber);box-shadow:0 6px 24px rgba(0,0,0,.06);transform:translateY(-2px);}
-    .feat-card:hover::after{transform:scaleX(1);}
-    .feat-icon{font-size:32px;margin-bottom:16px;}
-    .feat-card h3{font-size:16px;font-weight:800;margin-bottom:8px;}
-    .feat-card p{font-size:13px;color:var(--muted);line-height:1.6;}
-    .feat-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;}
-    .feat-tag{font-size:11px;background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:3px 9px;font-weight:600;}
-    /* MATERIALS */
-    .mat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-    .mat-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:20px 18px;}
-    .mat-card h4{font-size:14px;font-weight:800;margin-bottom:6px;}
-    .mat-card p{font-size:12px;color:var(--muted);line-height:1.55;}
-    .mat-card .mat-grade{font-size:11px;font-weight:700;color:var(--amber2);margin-top:8px;}
-    /* EQUIP */
-    .equip-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
-    .equip-card{background:var(--dark);color:#fff;border-radius:14px;padding:32px;display:flex;gap:24px;align-items:flex-start;}
-    .equip-num{font-size:40px;font-weight:900;color:var(--amber);line-height:1;flex-shrink:0;width:48px;}
-    .equip-card h3{font-size:18px;font-weight:800;margin-bottom:8px;}
-    .equip-card p{font-size:13px;color:rgba(255,255,255,.55);line-height:1.6;margin-bottom:12px;}
-    .equip-specs{display:flex;flex-wrap:wrap;gap:6px;}
-    .equip-spec{font-size:11px;background:rgba(255,255,255,.1);border-radius:6px;padding:3px 9px;font-weight:600;}
-    /* CASES */
-    .cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-    .case-card{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
-    .case-img{aspect-ratio:4/3;overflow:hidden;background:var(--bg2);}
-    .case-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s;}
-    .case-card:hover .case-img img{transform:scale(1.04);}
-    .case-body{padding:18px;}
-    .case-body h4{font-size:14px;font-weight:800;margin-bottom:6px;}
-    .case-body p{font-size:12px;color:var(--muted);line-height:1.55;}
-    .case-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--amber2);background:var(--amber3);padding:3px 9px;border-radius:6px;margin-top:8px;}
-    /* PROCESS */
-    .process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;}
-    .process-steps::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:2px;background:var(--border);z-index:0;}
-    .step{text-align:center;position:relative;z-index:1;padding:0 12px;}
-    .step-num{width:56px;height:56px;border-radius:50%;background:var(--amber);color:var(--dark);font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
-    .step h4{font-size:13px;font-weight:700;margin-bottom:4px;}
-    .step p{font-size:12px;color:var(--muted);}
-    /* CTA */
-    .cta-bar{background:var(--dark);color:#fff;padding:72px 0;}
-    .cta-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
-    .cta-bar h2{color:#fff;font-size:clamp(24px,3vw,36px);font-weight:900;letter-spacing:-.025em;margin-bottom:12px;}
-    .cta-bar p{color:rgba(255,255,255,.55);font-size:16px;line-height:1.6;margin-bottom:24px;}
-    .cta-channels{display:flex;flex-direction:column;gap:12px;}
-    .cta-ch{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:18px 22px;text-decoration:none;color:#fff;transition:all .2s;}
-    .cta-ch:hover{background:rgba(245,158,11,.12);border-color:var(--amber);}
-    .cta-ch-icon{font-size:22px;flex-shrink:0;}
-    .cta-ch-title{font-size:14px;font-weight:700;}
-    .cta-ch-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:1px;}
-    .cta-ch-val{margin-left:auto;font-size:13px;font-weight:700;color:var(--amber);white-space:nowrap;}
-    /* FOOTER */
-    footer{background:#0A0A0C;color:rgba(255,255,255,.4);padding:48px 0 24px;}
-    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.07);}
-    .f-logo{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.025em;margin-bottom:10px;}
-    .f-logo span{color:var(--amber);}
-    .f-desc{font-size:13px;line-height:1.65;max-width:220px;margin-bottom:16px;}
-    .f-contacts{display:flex;flex-direction:column;gap:7px;}
-    .f-contacts a{color:rgba(255,255,255,.6);text-decoration:none;font-size:13px;}
-    .f-col h4{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.3);margin-bottom:14px;}
-    .f-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
-    .f-col a{color:rgba(255,255,255,.5);text-decoration:none;font-size:13px;}
-    .f-col a:hover{color:rgba(255,255,255,.9);}
-    .footer-bottom{display:flex;justify-content:space-between;padding-top:20px;font-size:12px;flex-wrap:wrap;gap:10px;}
-    @media(max-width:900px){
-      .feat-grid{grid-template-columns:1fr 1fr;}
-      .mat-grid{grid-template-columns:1fr 1fr;}
-      .equip-grid{grid-template-columns:1fr;}
-      .cases-grid{grid-template-columns:1fr 1fr;}
-      .process-steps{grid-template-columns:1fr 1fr;gap:24px;}
-      .process-steps::before{display:none;}
-    }
-    @media(max-width:768px){
-      .nav-links,.nav-actions{display:none;}
-      .hamburger{display:flex;}
-      .cta-inner{grid-template-columns:1fr;gap:36px;}
-      .footer-top{grid-template-columns:1fr 1fr;}
-      .specs-inner{gap:0;}
-      .spec-item{padding:8px 16px;}
-    }
-    @media(max-width:480px){
-      .feat-grid{grid-template-columns:1fr;}
-      .mat-grid{grid-template-columns:1fr 1fr;}
-      .cases-grid{grid-template-columns:1fr;}
-      .process-steps{grid-template-columns:1fr;}
-      .footer-top{grid-template-columns:1fr;}
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
 
-    .copy-chip{display:inline-flex;align-items:center;gap:6px;cursor:pointer;user-select:none;}
-    .copy-chip .copy-icon{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:rgba(255,255,255,.12);border:none;border-radius:4px;cursor:pointer;font-size:12px;color:rgba(255,255,255,.5);transition:all .2s;flex-shrink:0;}
-    .copy-chip .copy-icon:hover{background:var(--amber);color:var(--dark);}
-    .copy-icon-dark{background:var(--bg2)!important;color:var(--muted)!important;}
-    .copy-icon-dark:hover{background:var(--amber)!important;color:var(--dark)!important;}
-    .cta-ch{cursor:pointer;}
-  </style>
+  <link rel="canonical" href="https://ironex.tech/frezerovka.html" />
+  <meta name="robots" content="index, follow" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"BreadcrumbList","itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},
-      {"@type":"ListItem","position":2,"name":"Услуги","item":"https://ironex.tech/uslugi.html"},
-      {"@type":"ListItem","position":3,"name":"Фрезеровка ЧПУ","item":"https://ironex.tech/frezerovka.html"}
-    ]},
-    {"@type":"Service","name":"Фрезерные работы по металлу на заказ",
-      "provider":{"@id":"https://ironex.tech/#org"},
-      "serviceType":"Фрезеровка ЧПУ",
-      "description":"Фрезеровка металла до 5 осей. Точность ±0,005 мм. Сталь, алюминий, нержавейка. Оборудование Hermle C500, DMG Mori.",
-      "areaServed":{"@type":"Country","name":"Россия"},
-      "offers":{"@type":"Offer","priceCurrency":"RUB","price":"1800","priceSpecification":{"@type":"UnitPriceSpecification","price":"1800","priceCurrency":"RUB","unitText":"нормо-час"}}
+    {
+      "@type": "WebPage",
+      "@id": "https://ironex.tech/frezerovka.html",
+      "url": "https://ironex.tech/frezerovka.html",
+      "name": "Фрезерные работы по металлу на заказ — IRONEX",
+      "description": "Фрезерные работы по металлу на заказ: корпусные и фасонные детали по чертежам. ЧПУ до 5 осей, точность ±0,005 мм. Расчёт цены и срока за 3 дня.",
+      "inLanguage": "ru-RU",
+      "publisher": {"@id": "https://ironex.tech/#org"},
+      "isPartOf": {"@id": "https://ironex.tech/#website"},
+      "dateModified": "2026-09-10"
     },
-    {"@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"Что нужно прислать для расчёта фрезерных работ?","acceptedAnswer":{"@type":"Answer","text":"Пришлите 3D-модель и чертёж, укажите материал, количество, допуски и требования к поверхности. Для плоских контуров можно приложить DXF."}},
-      {"@type":"Question","name":"От чего зависит цена фрезерной детали?","acceptedAnswer":{"@type":"Answer","text":"Цена зависит от материала и заготовки, объёма снимаемого металла, числа установок, доступности инструмента, допусков, поверхности и размера партии."}},
-      {"@type":"Question","name":"Когда нужна пятиосевая обработка?","acceptedAnswer":{"@type":"Answer","text":"Пятиосевая обработка нужна для сложной геометрии и доступа к нескольким поверхностям за один установ. Технолог выбирает маршрут после проверки модели."}},
-      {"@type":"Question","name":"Как контролируются размеры после фрезеровки?","acceptedAnswer":{"@type":"Answer","text":"Размеры и взаимное расположение поверхностей проверяются на координатно-измерительной машине. Протокол измерений прилагается к партии."}}
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ironex.tech/"},
+        {"@type": "ListItem", "position": 2, "name": "Услуги", "item": "https://ironex.tech/uslugi.html"},
+        {"@type": "ListItem", "position": 3, "name": "Фрезерная обработка", "item": "https://ironex.tech/frezerovka.html"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Фрезерные работы по металлу на заказ",
+      "provider": {"@id": "https://ironex.tech/#org"},
+      "serviceType": "Фрезеровка ЧПУ",
+      "description": "Фрезерование корпусных и фасонных деталей до 5 осей на Hermle C500, DMG Mori DMU 50, Haas VF-4 и Mazak Variaxis i-500. Точность до ±0,005 мм, шероховатость Ra 0,8 мкм. Сталь, нержавейка, алюминий, титан, чугун, медь и бронза, инструментальная сталь, пластики.",
+      "areaServed": {"@type": "Country", "name": "Россия"},
+      "offers": {"@type": "Offer", "priceCurrency": "RUB", "price": "1800", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "1800", "priceCurrency": "RUB", "unitText": "нормо-час"}}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Что нужно прислать для расчёта фрезерных работ?", "acceptedAnswer": {"@type": "Answer", "text": "Пришлите 3D-модель и чертёж, укажите материал, количество, допуски и требования к поверхности. Для плоских контуров подойдёт DXF."}},
+        {"@type": "Question", "name": "От чего зависит цена фрезерной детали?", "acceptedAnswer": {"@type": "Answer", "text": "От материала и заготовки, объёма снимаемого металла, числа установок, доступности инструмента, допусков, поверхности и размера партии. Ставки и факторы расчёта — на странице ironex.tech/ceny.html."}},
+        {"@type": "Question", "name": "Когда нужна пятиосевая обработка?", "acceptedAnswer": {"@type": "Answer", "text": "Когда элементы детали расположены на нескольких сторонах или связаны допуском взаимного расположения — одна установка на пятиосевом центре исключает погрешность переустановки. Технолог проверяет это по 3D-модели и чертежу."}},
+        {"@type": "Question", "name": "Как контролируются размеры после фрезеровки?", "acceptedAnswer": {"@type": "Answer", "text": "Размеры и взаимное расположение поверхностей проверяются на координатно-измерительной машине. Протокол измерений прилагается к партии."}}
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech/#org",
+      "name": "IRONEX",
+      "legalName": "ООО «Айронекс»",
+      "taxID": "7804719856",
+      "url": "https://ironex.tech"
+    }
   ]}
   </script>
-  <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
-  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
-  <!-- ═══ Яндекс Метрика 105009501 ═══ -->
   <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -195,480 +69,282 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <link rel="stylesheet" href="email-copy.css" />
-  <link rel="stylesheet" href="redesign.css?v=20260907-4" />
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Фрезерные работы по металлу на заказ" />
+  <meta property="og:description" content="Фрезерные работы по металлу на заказ: корпусные и фасонные детали по чертежам. ЧПУ до 5 осей, точность ±0,005 мм. Расчёт цены и срока за 3 дня." />
+  <meta property="og:url" content="https://ironex.tech/frezerovka.html" />
+  <meta property="og:image" content="https://ironex.tech/images/og.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Фрезерные работы по металлу на заказ" />
+  <meta name="twitter:description" content="Фрезерные работы по металлу на заказ: корпусные и фасонные детали по чертежам. ЧПУ до 5 осей, точность ±0,005 мм. Расчёт цены и срока за 3 дня." />
+  <meta name="twitter:image" content="https://ironex.tech/images/og.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
 </head>
-<body class="redesign-precision">
-<a class="skip-link" href="#main-content">Перейти к содержанию</a>
-<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
-<nav>
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">IRON<span>EX</span></a>
-      <ul class="nav-links">
-        <li><a href="uslugi.html">Услуги</a></li>
-        <li><a href="oborudovanie.html">Оборудование</a></li>
-        <li><a href="ceny.html">Цены</a></li>
-        <li><a href="blog.html">Блог</a></li>
-        <li><a href="index.html#cases">Кейсы</a></li>
-        <li><a href="kontakty.html">Контакты</a></li>
-      </ul>
-      <div class="nav-actions">
-        <span class="copy-chip"><a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a><button class="copy-icon" onclick="copyVal('+79934904024',this)" title="Скопировать">⧉</button></span>
-        <a href="https://wa.me/79819470402" class="btn btn-amber" style="padding:10px 20px;font-size:14px;" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      </div>
-      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
-        <span></span><span></span><span></span>
-      </button>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html" aria-current="page">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href="tel:+79934904024">+7 993 490-40-24</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20фрезерная%20обработка">Прислать чертёж</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/uslugi.html">Услуги</a><span aria-hidden="true">/</span><span>Фрезерная обработка</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+    <span class="label">Фрезеровка ЧПУ · 3–5 осей</span>
+    <h1>Фрезерные работы по металлу — до 5 осей</h1>
+    <p class="lede">Изготавливаем корпусные и фасонные детали по чертежам и 3D-моделям. Первым делом технолог смотрит не на диаметр, а на то, сколько сторон детали нужно обработать и войдёт ли заготовка в рабочую зону станка — это и определяет маршрут, цену и срок.</p>
+    <p>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20фрезерная%20обработка">Прислать чертёж</a>
+      <a class="btn btn--ghost" href="#oborudovanie">Смотреть станки</a>
+    </p>
+    <p style="margin-top:4px">К письму приложите чертёж или 3D-модель, материал, количество и желаемый срок — технолог вернётся с ценой и сроком.</p>
+
+    <div class="spec-table" style="margin-top:32px">
+      <table>
+        <thead>
+          <tr><th>Что нужно знать сразу</th><th>Значение</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Осей одновременно</td><td class="num">5</td></tr>
+          <tr><td>Точность</td><td class="num">±0,005 мм</td></tr>
+          <tr><td>Рабочая зона 5-осевого центра</td><td class="num">1100×600×600 мм</td></tr>
+          <tr><td>Шероховатость</td><td class="num">Ra 0,8 мкм</td></tr>
+          <tr><td>Ставка</td><td class="num">от 1 800 ₽ / нормо-час</td></tr>
+          <tr><td>Расчёт стоимости</td><td class="num">3 рабочих дня</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div class="mob-menu" id="mobMenu">
-    <a href="uslugi.html">Услуги</a>
-    <a href="oborudovanie.html">Оборудование</a>
-    <a href="ceny.html">Цены</a>
-    <a href="blog.html">Блог</a>
-    <a href="index.html#cases">Кейсы</a>
-    <a href="kontakty.html">Контакты</a>
-    <a href="tel:+79934904024">+7 993 490-40-24</a>
-  </div>
-</nav>
 
-<main id="main-content">
+  <div class="container section section--tint">
+    <div class="rule-label"><span class="label">Число осей и рабочая зона</span></div>
+    <h2>Деталь либо проходит в одну установку, либо требует переустановов</h2>
+    <p class="lede">Технолог сравнивает не диаметр и длину, а число сторон детали, допуски взаимного расположения и то, укладывается ли заготовка в рабочую зону станка. Эти два вопроса определяют маршрут раньше, чем материал.</p>
 
-<!-- BREADCRUMB -->
-<div class="breadcrumb-bar">
-  <div class="container">
-    <div class="breadcrumb">
-      <a href="index.html" style="color:var(--muted);text-decoration:none;">Главная</a> ·
-      <a href="uslugi.html" style="color:var(--muted);text-decoration:none;">Услуги</a> ·
-      <span style="color:var(--text);font-weight:500;">Фрезеровка ЧПУ</span>
+    <div class="spec-table" style="margin-top:24px">
+      <table>
+        <thead><tr><th>Деталь</th><th>Маршрут</th></tr></thead>
+        <tbody>
+          <tr><td>Элементы на нескольких сторонах, наклонные плоскости и отверстия</td><td>5 осей в одной установке — меньше переустановок и накопленной погрешности базирования</td></tr>
+          <tr><td>Поверхности связаны допуском соосности, перпендикулярности или позиции</td><td>Одна установка сохраняет единую систему координат станка</td></tr>
+          <tr><td>Все элементы доступны с одной стороны — плоскости, пазы, вертикальные отверстия</td><td>3-осевая обработка дешевле и не теряет в точности</td></tr>
+          <tr><td>Деталь не входит в зону 5-осевого центра (крупнее 1100×600×600 мм)</td><td>3-осевой станок с увеличенным столом до 1219×508 мм или несколько установок</td></tr>
+          <tr><td>Деталь — тело вращения (вал, втулка, фланец)</td><td>Обычно короче маршрут через токарную обработку</td></tr>
+        </tbody>
+      </table>
     </div>
-  </div>
-</div>
 
-<!-- HERO -->
-<section class="page-hero">
-  <div class="container">
-    <div class="page-hero-inner">
-      <div class="page-hero-content">
-
-        <h1>Фрезерные работы по металлу — <em>до 5 осей</em></h1>
-        <p>Изготавливаем корпусные и фасонные детали по чертежам и 3D-моделям. Подбираем маршрут, оборудование и контроль под геометрию, допуски и размер партии.</p>
-        <div class="hero-cta">
-          <a href="kontakty.html" class="btn btn-amber">Отправить чертёж</a>
-          <a href="tel:+79934904024" class="btn btn-ghost">+7 993 490-40-24</a>
-        </div>
-        <div class="hero-badges">
-          <span class="hbadge">Точность ±0,005 мм</span>
-          <span class="hbadge">5 осей непрерывно</span>
-          <span class="hbadge">от 1 800 ₽/нормо-час</span>
-          <span class="hbadge">Расчёт за 3 дня</span>
-          <span class="hbadge">КИМ-контроль включён</span>
-        </div>
-      </div>
-      <div class="page-hero-media">
-        <picture>
-          <source srcset="images/stock/aluminum-milling-zheng-ji-unsplash-sxtClAGwRck.avif" type="image/avif" />
-          <img class="stock-process stock-process-frez" src="images/stock/aluminum-milling-zheng-ji-unsplash-sxtClAGwRck.jpg" alt="Фрезерование алюминиевой заготовки на станке с ЧПУ — иллюстрация процесса" width="1800" height="1202" fetchpriority="high" decoding="async" />
-        </picture>
-        <span class="page-hero-note">CNC · process view</span>
-      </div>
+    <div class="callout">
+      <p>Сокращение переустановок не гарантирует автоматическую экономию — пятиосевое программирование и оснастка тоже требуют ресурсов. Эффект появляется, когда меньше установок и ручных операций компенсирует более сложный маршрут. Критерии разобраны в статье <a href="/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html">«Пятиосевая обработка: когда она оправдана»</a>.</p>
     </div>
-  </div>
-</section>
 
-<!-- SPECS BAR -->
-<div class="specs-bar">
-  <div class="container">
-    <div class="specs-inner">
-      <div class="spec-item">
-        <div class="spec-val">±0,005</div>
-        <div class="spec-label">точность, мм</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-val">5</div>
-        <div class="spec-label">осей обработки</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-val">1100×600</div>
-        <div class="spec-label">рабочая зона, мм</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-val">Ra 0,8</div>
-        <div class="spec-label">шероховатость, мкм</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-val">3 дня</div>
-        <div class="spec-label">расчёт стоимости</div>
-      </div>
+    <figure class="figure--draft">
+      <img src="/images/il/frezerovka.webp" width="1200" height="896" alt="Схема корпусной детали с элементами на нескольких сторонах — иллюстрация обработки за одну установку на пятиосевом центре" loading="lazy" decoding="async" />
+      <figcaption>
+        <span>Иллюстрация-схема одной установки, не фото цеха или детали IRONEX</span>
+        <span>К разделу «Число осей и рабочая зона»</span>
+      </figcaption>
+    </figure>
+
+    <p style="margin-top:28px">Для тел вращения — валов, втулок, фланцев — обычно рациональнее <a href="/tokarnaya.html">токарная обработка</a>. Как выбрать между маршрутами, разобрано в статье <a href="/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut.html">«Токарная или фрезерная обработка: как выбрать маршрут»</a>.</p>
+  </div>
+
+  <div class="container section" id="oborudovanie">
+    <div class="rule-label"><span class="label">Оборудование</span></div>
+    <h2>Три центра на пять осей, один — со столом 1219×508 мм</h2>
+    <p class="lede">Рабочая зона и число осей одновременно определяют, войдёт ли деталь в одну установку и какой станок для неё выбрать.</p>
+
+    <div class="spec-table" style="margin-top:24px">
+      <table>
+        <thead><tr><th>Станок</th><th>Оси</th><th>Рабочая зона</th><th>Точность</th></tr></thead>
+        <tbody>
+          <tr><td>Hermle C500</td><td>5, одновременно</td><td class="num">1100×600×600 мм</td><td class="num">±0,005 мм</td></tr>
+          <tr><td>DMG Mori DMU 50</td><td>5, одновременно</td><td class="num">500×450×400 мм</td><td class="num">±0,005 мм</td></tr>
+          <tr><td>Mazak Variaxis i-500</td><td>5, со сменой паллет</td><td class="num">500×450 мм</td><td class="warn">уточняется</td></tr>
+          <tr><td>Haas VF-4</td><td>3</td><td class="num">1219×508×635 мм</td><td class="num">±0,005 мм</td></tr>
+        </tbody>
+      </table>
     </div>
+
+    <p style="margin-top:24px">Полный парк — 47 единиц ЧПУ-оборудования — на странице <a href="/oborudovanie.html">оборудования</a>. Обычная 3–5-осевая фрезеровка — от 1 800 ₽/нормо-час; когда деталь требует непрерывной пятиосевой обработки на Hermle C500, ставка выше — от 2 400 ₽/нормо-час. Полный список ставок — на странице <a href="/ceny.html">цен</a>.</p>
   </div>
-</div>
 
-<!-- ВИДЫ ФРЕЗЕРОВКИ -->
-<section class="section" style="background:var(--bg);">
-  <div class="container">
+  <div class="container section section--tint">
+    <div class="rule-label"><span class="label">Материалы</span></div>
+    <h2>Восемь групп материалов — от конструкционной стали до фторопласта</h2>
+    <p class="lede">Работаем с заготовкой заказчика или подбираем материал сами — у сертифицированных поставщиков с паспортами качества.</p>
 
-    <h2 class="h2">Что мы фрезеруем</h2>
-    <p class="lead" style="margin-bottom:40px;">Любые корпусные детали, фланцы, матрицы, кронштейны, пресс-формы и нестандартные изделия по чертежам заказчика.</p>
-    <div class="feat-grid">
-      <div class="feat-card">
-        <div class="feat-icon">01 / 3 AXIS</div>
-        <h3>3-осевая фрезеровка</h3>
-        <p>Плоские и ступенчатые детали, пазы, карманы, отверстия. Оптимальна по цене для корпусных изделий без сложных поднутрений.</p>
-        <div class="feat-tags">
-          <span class="feat-tag">корпуса</span>
-          <span class="feat-tag">фланцы</span>
-          <span class="feat-tag">плиты</span>
-        </div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon">02 / 5 AXIS</div>
-        <h3>4–5-осевая фрезеровка</h3>
-        <p>Сложные пространственные формы в одной установке. Без переустановок — без погрешностей базирования. Лопатки, пресс-формы, медицинские имплантаты.</p>
-        <div class="feat-tags">
-          <span class="feat-tag">5 осей</span>
-          <span class="feat-tag">пресс-формы</span>
-          <span class="feat-tag">лопатки</span>
-        </div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon">03 / HSM</div>
-        <h3>Высокоскоростная обработка (HSM)</h3>
-        <p>Шпиндель 12 000–18 000 об/мин. Мелкие ступенчатые подачи, чистовое фрезерование с Ra 0,8 мкм без шлифовки.</p>
-        <div class="feat-tags">
-          <span class="feat-tag">HSM</span>
-          <span class="feat-tag">Ra 0,8 мкм</span>
-          <span class="feat-tag">чистовое</span>
-        </div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon">04 / THREAD</div>
-        <h3>Фрезеровка резьбы и шлицев</h3>
-        <p>Резьбофрезерование метрическое и дюймовое. Шлицевые пазы, зубчатые профили, шпоночные пазы по ГОСТ.</p>
-        <div class="feat-tags">
-          <span class="feat-tag">резьба</span>
-          <span class="feat-tag">шлицы</span>
-          <span class="feat-tag">зубья</span>
-        </div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon">05 / H6–H7</div>
-        <h3>Прецизионная координатная расточка</h3>
-        <p>Расточные борштанги для точных отверстий H6–H7. Соосность, цилиндричность — в пределах допуска посадки.</p>
-        <div class="feat-tags">
-          <span class="feat-tag">H6–H7</span>
-          <span class="feat-tag">соосность</span>
-          <span class="feat-tag">расточка</span>
-        </div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon">06 / SERIES</div>
-        <h3>Серийная фрезеровка</h3>
-        <p>Спутниковые приспособления, паллетная смена — партии от 10 до 50 000 штук. Авто-загрузка на ночные смены.</p>
-        <div class="feat-tags">
-          <span class="feat-tag">серия</span>
-          <span class="feat-tag">спутники</span>
-          <span class="feat-tag">авто-загрузка</span>
-        </div>
-      </div>
+    <div class="spec-table" style="margin-top:24px">
+      <table>
+        <thead><tr><th>Группа</th><th>Марки</th><th>Особенность</th></tr></thead>
+        <tbody>
+          <tr><td>Конструкционная сталь</td><td>Ст20, 40Х, 45, 09Г2С</td><td>Хорошая обрабатываемость, широкий выбор проката</td></tr>
+          <tr><td>Нержавеющая сталь</td><td>12Х18Н10Т, 08Х18Н10, 316L</td><td>Пищевое оборудование, медтех, химия — нужен инструмент со спецпокрытием</td></tr>
+          <tr><td>Алюминий и сплавы</td><td>Д16, АМГ6, В95, 6061-T6</td><td>Лёгкие корпуса, авиа- и автокомпоненты, высокая скорость резания</td></tr>
+          <tr><td>Медь и бронза</td><td>М1, БрАЖ, БрОФ</td><td>Токопроводящие детали, подшипниковые втулки</td></tr>
+          <tr><td>Инструментальная сталь</td><td>У8А, ХВГ, Х12М, Р6М5</td><td>Матрицы, пуансоны, штампы — обработка до 60 HRC</td></tr>
+          <tr><td>Титан</td><td>ВТ1-0, ВТ6, Grade 5</td><td>Медицина, аэрокосмос — нужны специнструмент и СОЖ</td></tr>
+          <tr><td>Чугун</td><td>СЧ20, СЧ25, ВЧ50</td><td>Корпуса насосов, станочные детали, виброгашение</td></tr>
+          <tr><td>Пластики и полимеры</td><td>PA6, PTFE, PEEK, PC</td><td>Прокладки, изоляторы, направляющие</td></tr>
+        </tbody>
+      </table>
     </div>
+
+    <figure class="figure--draft" style="margin-top:24px">
+      <img src="/images/il/materialy.webp" width="1200" height="896" alt="Схема образцов металлов и пластика на фрезерном столе — иллюстрация к разделу о материалах" loading="lazy" decoding="async" />
+      <figcaption>
+        <span>Иллюстрация-схема, не фото материалов IRONEX</span>
+        <span>К разделу «Материалы»</span>
+      </figcaption>
+    </figure>
   </div>
-</section>
 
-<!-- МАТЕРИАЛЫ -->
-<section class="section">
-  <div class="container">
+  <div class="container section">
+    <div class="rule-label"><span class="label">Кейсы</span></div>
+    <h2>Что мы уже изготовили на пятиосевых центрах</h2>
+    <p class="lede">Реальные детали из нашего производства, изготовлены по чертежам заказчика и прошли КИМ-контроль.</p>
 
-    <h2 class="h2">Фрезеруем <em>любые металлы</em></h2>
-    <p class="lead" style="margin-bottom:36px;">Работаем с заготовкой заказчика или подбираем материал сами. Закупаем у сертифицированных поставщиков с паспортами качества.</p>
-    <div class="mat-grid">
-      <div class="mat-card">
-        <h3>Конструкционная сталь</h3>
-        <p>Наиболее распространённый материал. Хорошая обрабатываемость, широкий выбор размеров проката.</p>
-        <div class="mat-grade">Ст20, 40Х, 45, 09Г2С</div>
-      </div>
-      <div class="mat-card">
-        <h3>Нержавеющая сталь</h3>
-        <p>Пищевое оборудование, медтех, химическая промышленность. Требует инструмента со специальными покрытиями.</p>
-        <div class="mat-grade">12Х18Н10Т, 08Х18Н10, 316L</div>
-      </div>
-      <div class="mat-card">
-        <h3>Алюминий и сплавы</h3>
-        <p>Лёгкие корпуса, авиа- и автокомпоненты. Высокие скорости резания, отличное качество поверхности.</p>
-        <div class="mat-grade">Д16, АМГ6, В95, 6061-T6</div>
-      </div>
-      <div class="mat-card">
-        <h3>Медь и бронза</h3>
-        <p>Токопроводящие детали, подшипниковые втулки, декоративные изделия. Мягкий, но требует правильного инструмента.</p>
-        <div class="mat-grade">М1, БрАЖ, БрОФ</div>
-      </div>
-      <div class="mat-card">
-        <h3>Инструментальная сталь</h3>
-        <p>Матрицы, пуансоны, штампы, пресс-формы. Обработка в закалённом состоянии до 60 HRC.</p>
-        <div class="mat-grade">У8А, ХВГ, Х12М, Р6М5</div>
-      </div>
-      <div class="mat-card">
-        <h3>Титан</h3>
-        <p>Медицина, аэрокосмос, химическое оборудование. Сложный материал — специальный режущий инструмент и СОЖ.</p>
-        <div class="mat-grade">ВТ1-0, ВТ6, Grade 5</div>
-      </div>
-      <div class="mat-card">
-        <h3>Чугун</h3>
-        <p>Корпуса насосов, станочные детали, контрплиты. Хорошая виброгасящая способность.</p>
-        <div class="mat-grade">СЧ20, СЧ25, ВЧ50</div>
-      </div>
-      <div class="mat-card">
-        <h3>Пластики и полимеры</h3>
-        <p>Фторопласт, капролон, текстолит, оргстекло. Прокладки, изоляторы, направляющие.</p>
-        <div class="mat-grade">PA6, PTFE, PEEK, PC</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ОБОРУДОВАНИЕ -->
-<section class="section" style="background:var(--dark);color:#fff;">
-  <div class="container">
-
-    <h2 class="h2" style="color:#fff;margin-bottom:8px;">Пять осей, серия и <em>крупный габарит</em></h2>
-    <p class="lead" style="margin-bottom:36px;color:rgba(255,255,255,.5);">Парк закрывает 3- и 5-осевую обработку: от точных корпусных деталей до плит 1219×508 мм. Регулярное ТО, калиброванный инструмент и SPC-контроль.</p>
-    <div class="equip-grid">
-      <div class="equip-card">
-        <div class="equip-num">01</div>
-        <div>
-          <h3>Hermle C500</h3>
-          <p>5-осевой обрабатывающий центр. Непрерывная 5-осевая обработка сложных пространственных поверхностей в одной установке.</p>
-          <div class="equip-specs">
-            <span class="equip-spec">1100×600×500 мм</span>
-            <span class="equip-spec">5 осей</span>
-            <span class="equip-spec">±0,003 мм</span>
-            <span class="equip-spec">18 000 об/мин</span>
-          </div>
+    <div class="mat-grid mat-grid--2" style="margin-top:24px">
+      <article class="card mat-card">
+        <img src="/images/cases/korpus-rea-d16t.webp" alt="Корпусная деталь после 5-осевой фрезеровки, алюминий Д16Т" width="1200" height="670" loading="lazy" decoding="async" />
+        <div class="mat-card__body">
+          <span class="mat-card__meta">Алюминий Д16Т · 5 осей</span>
+          <h3 class="mat-card__title">Корпус РЭА</h3>
+          <p>5-осевая фрезеровка в одной установке, точность межосевых расстояний ±0,01 мм. Серия 240 шт.</p>
         </div>
-      </div>
-      <div class="equip-card">
-        <div class="equip-num">02</div>
-        <div>
-          <h3>DMG Mori DMU 50</h3>
-          <p>Универсальный 5-осевой фрезерный центр. Оптимальное соотношение точности и производительности для среднесерийного производства.</p>
-          <div class="equip-specs">
-            <span class="equip-spec">500×450×400 мм</span>
-            <span class="equip-spec">5 осей</span>
-            <span class="equip-spec">±0,005 мм</span>
-            <span class="equip-spec">12 000 об/мин</span>
-          </div>
-        </div>
-      </div>
-      <div class="equip-card">
-        <div class="equip-num">03</div>
-        <div>
-          <h3>Haas VF-4</h3>
-          <p>3-осевой вертикальный обрабатывающий центр. Рабочий стол 1219×508 мм — для крупногабаритных плит и корпусных деталей.</p>
-          <div class="equip-specs">
-            <span class="equip-spec">1219×508×635 мм</span>
-            <span class="equip-spec">3 оси</span>
-            <span class="equip-spec">±0,005 мм</span>
-            <span class="equip-spec">8 100 об/мин</span>
-          </div>
-        </div>
-      </div>
-      <div class="equip-card">
-        <div class="equip-num">04</div>
-        <div>
-          <h3>Mazak Variaxis i-500</h3>
-          <p>Высокоскоростной 5-осевой центр со спутниковой сменой паллет — для непрерывной серийной работы без простоев.</p>
-          <div class="equip-specs">
-            <span class="equip-spec">500×450 мм</span>
-            <span class="equip-spec">5 осей</span>
-            <span class="equip-spec">смена паллет</span>
-            <span class="equip-spec">12 000 об/мин</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- КЕЙСЫ -->
-<section class="section">
-  <div class="container">
-
-    <h2 class="h2">Что мы уже <em>изготовили</em></h2>
-    <p class="lead" style="margin-bottom:36px;">Реальные детали из нашего производства. Все изготовлены по чертежам заказчика, прошли КИМ-контроль.</p>
-    <div class="cases-grid">
-      <div class="case-card">
-        <div class="case-img">
-          <img src="images/cases/korpus-rea-d16t.webp" alt="Корпусная деталь после 5-осевой фрезеровки" width="1200" height="670" loading="lazy" decoding="async" />
-        </div>
-        <div class="case-body">
-          <h3>Корпус РЭА из Д16Т</h3>
-          <p>5-осевая фрезеровка в одной установке. Точность межосевых расстояний ±0,01 мм. Партия 50 шт.</p>
-          <span class="case-tag">алюминий · 5 осей</span>
-        </div>
-      </div>
-      <div class="case-card">
-        <div class="case-img">
-          <img src="images/cases/kronshtein-titan-vt6.webp" alt="Кронштейн медоборудования из титана ВТ6" width="960" height="717" loading="lazy" decoding="async" />
-        </div>
-        <div class="case-body">
-          <h3>Кронштейн медоборудования</h3>
+      </article>
+      <article class="card mat-card">
+        <img src="/images/cases/kronshtein-titan-vt6.webp" alt="Кронштейн медоборудования из титана ВТ6" width="960" height="717" loading="lazy" decoding="async" />
+        <div class="mat-card__body">
+          <span class="mat-card__meta">Титан ВТ6 · медтех</span>
+          <h3 class="mat-card__title">Кронштейн медоборудования</h3>
           <p>Титан ВТ6, 5-осевая обработка и биосовместимая полировка. Контракт на 6 месяцев.</p>
-          <span class="case-tag">титан · 5 осей</span>
         </div>
-      </div>
-      <div class="case-card">
-        <div class="case-img">
-          <img src="images/photos/shop-16.webp" alt="Фрезерованная корпусная деталь" width="700" height="394" loading="lazy" decoding="async" />
-        </div>
-        <div class="case-body">
-          <h3>Корпусная деталь</h3>
-          <p>Фрезерованные карманы, посадочные плоскости и отверстия по чертежу заказчика.</p>
-          <span class="case-tag">фрезеровка · корпус</span>
-        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="container section section--tint">
+    <div class="rule-label"><span class="label">Маршрут заказа</span></div>
+    <h2>От чертежа до отгрузки — пять шагов с КИМ-контролем на выходе</h2>
+
+    <div class="callout">
+      <div class="prose">
+        <ol>
+          <li><strong>Чертёж.</strong> Присылаете DXF, STEP, PDF или эскиз.</li>
+          <li><strong>Расчёт.</strong> Технолог считает цену и срок за 3 рабочих дня.</li>
+          <li><strong>Производство.</strong> Программируем маршрут и фрезеруем деталь.</li>
+          <li><strong>КИМ-контроль.</strong> Каждая деталь проверяется на координатно-измерительной машине.</li>
+          <li><strong>Отгрузка.</strong> Доставка с протоколом измерений.</li>
+        </ol>
       </div>
     </div>
   </div>
-</section>
 
-<!-- ПРОЦЕСС -->
-<section class="section" style="background:var(--bg);">
-  <div class="container">
-
-    <h2 class="h2" style="margin-bottom:48px;">От чертежа до <em>готовой детали</em></h2>
-    <div class="process-steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>Чертёж</h3>
-        <p>Присылаете DXF, STEP, PDF или эскиз</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>Расчёт</h3>
-        <p>Технолог считает цену и срок за 3 дня</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>Производство</h3>
-        <p>Программируем и фрезеруем детали</p>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h3>КИМ-контроль</h3>
-        <p>Каждая деталь проверяется КИМ</p>
-      </div>
-      <div class="step">
-        <div class="step-num">5</div>
-        <h3>Отгрузка</h3>
-        <p>Доставка с протоколом измерений</p>
-      </div>
+  <div class="container section">
+    <div class="rule-label"><span class="label">Вопросы</span></div>
+    <h2>Частые вопросы о фрезерных работах</h2>
+    <div class="faq">
+      <details open>
+        <summary>Что нужно прислать для расчёта фрезерных работ?</summary>
+        <div class="faq__a"><p>Пришлите 3D-модель и чертёж, укажите материал, количество, допуски и требования к поверхности. Для плоских контуров подойдёт DXF.</p></div>
+      </details>
+      <details>
+        <summary>От чего зависит цена фрезерной детали?</summary>
+        <div class="faq__a"><p>От материала и заготовки, объёма снимаемого металла, числа установок, доступности инструмента, допусков, поверхности и размера партии. Ставки и факторы расчёта — на странице <a href="/ceny.html">цен</a>.</p></div>
+      </details>
+      <details>
+        <summary>Когда нужна пятиосевая обработка?</summary>
+        <div class="faq__a"><p>Когда элементы детали расположены на нескольких сторонах или связаны допуском взаимного расположения — одна установка на пятиосевом центре исключает погрешность переустановки. Разбор критериев — в статье <a href="/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html">о пятиосевой обработке</a>.</p></div>
+      </details>
+      <details>
+        <summary>Как контролируются размеры после фрезеровки?</summary>
+        <div class="faq__a"><p>Размеры и взаимное расположение поверхностей проверяются на координатно-измерительной машине. Протокол измерений прилагается к партии.</p></div>
+      </details>
     </div>
   </div>
-</section>
 
-<!-- FAQ -->
-<section class="section">
-  <div class="container">
-
-    <h2 class="h2">Что влияет на <em>цену фрезерных работ</em></h2>
-    <div class="feat-grid" style="margin-top:36px;">
-      <div class="feat-card"><h3>Какие файлы нужны?</h3><p>Пришлите 3D-модель и чертёж, укажите материал, количество, допуски и требования к поверхности. Для плоских контуров можно приложить DXF.</p></div>
-      <div class="feat-card"><h3>Из чего складывается цена?</h3><p>Из стоимости заготовки, объёма снимаемого металла, числа установок, доступности инструмента, допусков, поверхности и партии. Смотрите также <a href="ceny.html">ставки и факторы расчёта</a>.</p></div>
-      <div class="feat-card"><h3>Когда нужны пять осей?</h3><p>При сложной геометрии и доступе к нескольким поверхностям за один установ. Технолог выбирает маршрут после проверки модели.</p></div>
-      <div class="feat-card"><h3>Как проверяются размеры?</h3><p>Координатно-измерительная машина проверяет размеры и взаимное расположение поверхностей. Протокол прилагается к партии.</p></div>
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Пришлите чертёж — посчитаем за 3 рабочих дня</h2>
+      <p>К письму приложите чертёж или 3D-модель, материал, количество и желаемый срок — технолог вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт%20по%20чертежу%20—%20фрезерная%20обработка">Прислать чертёж</a>
+      </p>
     </div>
-  </div>
-</section>
-
-<section class="cta-bar">
-  <div class="container">
-    <div class="cta-inner">
-      <div>
-        <h2>Пришлите чертёж —<br>посчитаем за 3 дня</h2>
-        <p>Укажите материал, количество, требования по допускам. Технолог свяжется и уточнит детали до выставления счёта.</p>
-        <a href="kontakty.html" class="btn btn-amber">Запросить расчёт</a>
-      </div>
-      <div class="cta-channels">
-        <div class="cta-ch">
-          <span class="cta-ch-icon">TEL</span>
-          <div><div class="cta-ch-title">Телефон</div><div class="cta-ch-sub">Пн–Пт, 9:00–18:00</div></div>
-          <span class="cta-ch-actions"><a href="tel:+79934904024" class="cta-ch-val">+7 993 490-40-24</a><button type="button" class="copy-icon" onclick="copyVal('+79934904024',this)" title="Скопировать телефон" aria-label="Скопировать номер телефона">⧉</button></span>
-        </div>
-        <div class="cta-ch email-contact-card" data-email-copy>
-          <span class="cta-ch-icon">EMAIL</span>
-          <div><div class="cta-ch-title">Email</div><div class="cta-ch-sub">Написать письмо или скопировать адрес</div></div>
-          <span class="email-contact-actions">
-            <a href="mailto:info@ironex.tech" class="cta-ch-val email-contact-address" data-email-value>info@ironex.tech</a>
-            <button type="button" class="email-copy-button" data-copy-email aria-label="Скопировать адрес электронной почты">Скопировать</button>
-          </span>
-        </div>
-        <a href="https://wa.me/79819470402" class="cta-ch" target="_blank" rel="noopener noreferrer">
-          <span class="cta-ch-icon">WA</span>
-          <div><div class="cta-ch-title">WhatsApp</div><div class="cta-ch-sub">Отправьте чертёж в чат</div></div>
-          <span class="cta-ch-val">Написать</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
+    <div class="site-footer__top">
       <div>
-        <div class="f-logo">IRON<span>EX</span></div>
-        <p class="f-desc">Контрактное производство деталей по чертежам. Фрезеровка, токарка, лазер, гибка, сварка, КИМ-контроль.</p>
-        <div class="f-contacts">
-          <a href="tel:+79934904024">+7 993 490-40-24</a>
-          <span class="copy-chip" data-email-copy><a href="mailto:info@ironex.tech" class="email-contact-address" data-email-value style="color:inherit;font-weight:inherit;">info@ironex.tech</a><button class="copy-icon copy-icon-dark" data-copy-email style="margin-left:4px;" title="Скопировать email" aria-label="Скопировать адрес электронной почты">⧉</button></span>
-        </div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Услуги</p>
+      <div>
+        <h3>Услуги</h3>
         <ul>
-          <li><a href="frezerovka.html">Фрезеровка ЧПУ</a></li>
-          <li><a href="tokarnaya.html">Токарная обработка</a></li>
-          <li><a href="uslugi.html#rezka">Лазерная резка</a></li>
-          <li><a href="uslugi.html#svarka">Сварка</a></li>
-          <li><a href="uslugi.html#finish">Покраска</a></li>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Компания</p>
+      <div>
+        <h3>Компания</h3>
         <ul>
-          <li><a href="oborudovanie.html">Оборудование</a></li>
-          <li><a href="ceny.html">Цены</a></li>
-          <li><a href="blog.html">Блог</a></li>
-          <li><a href="kontakty.html">Контакты</a></li>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Контакты</p>
+      <div>
+        <h3>Связаться</h3>
         <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
           <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
-          <li><span class="copy-chip" data-email-copy><a href="mailto:info@ironex.tech" class="email-contact-address" data-email-value style="color:inherit;font-weight:inherit;">info@ironex.tech</a><button class="copy-icon copy-icon-dark" data-copy-email style="margin-left:4px;" title="Скопировать email" aria-label="Скопировать адрес электронной почты">⧉</button></span></li>
-          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 IRONEX. Все права защищены.</span>
-      <span>ironex.tech</span>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
     </div>
   </div>
 </footer>
 
-<script>
-function copyVal(val, btn) {
-  navigator.clipboard.writeText(val).then(function(){
-    var o = btn.innerHTML; btn.innerHTML = '✓'; btn.style.background = '#16a34a'; btn.style.color = '#fff';
-    setTimeout(function(){ btn.innerHTML = o; btn.style.background = ''; btn.style.color = ''; }, 2000);
-  });
-}
-</script>
-<script src="analytics-events.js"></script>
-<script src="email-copy.js"></script>
-<script src="redesign.js"></script>
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
 </body>
 </html>

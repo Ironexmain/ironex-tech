@@ -8,7 +8,7 @@ category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
 cover: "/images/blog/chto-prilozhit-k-zayavke-na-gibku-metalla-cover.webp"
 coverAlt: "Инженерная схема к статье «Гибка металла на заказ: что приложить к заявке»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 Чтобы рассчитать гибку металла на заказ, исполнителю недостаточно фотографии детали и её габаритов. Нужны данные, по которым технолог определит последовательность операций, проверит доступность инструмента и оценит риск деформации.
 

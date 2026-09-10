@@ -8,7 +8,7 @@ category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
 cover: "/images/blog/mozhno-li-zakazat-detal-bez-3d-modeli-cover.webp"
 coverAlt: "Инженерная схема к статье «Изготовление деталей по чертежам без 3D-модели»"
-authorId: "redakciya"
+authorId: "anton-ryabchikov"
 ---
 Да, металлическую деталь можно заказать без 3D-модели. Для расчёта и производства часто достаточно рабочего чертежа, если на нём однозначно заданы геометрия, размеры, допуски, материал и технические требования.
 
