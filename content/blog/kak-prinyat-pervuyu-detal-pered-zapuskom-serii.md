@@ -6,7 +6,7 @@ date: "2026-09-03"
 lastmod: "2026-09-03"
 category: "Контроль качества"
 categorySlug: "kontrol-kachestva"
-cover: "/images/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii-cover-v2.webp"
+cover: "/images/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii-cover.webp"
 coverAlt: "Инженерная схема к статье «Мелкосерийное производство деталей: приёмка образца»"
 authorId: "redakciya"
 ---

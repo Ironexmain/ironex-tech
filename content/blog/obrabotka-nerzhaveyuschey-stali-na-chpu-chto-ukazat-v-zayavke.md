@@ -6,7 +6,7 @@ date: "2026-08-31"
 lastmod: "2026-08-31"
 category: "Материалы"
 categorySlug: "materialy"
-cover: "/images/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke-cover-v2.webp"
+cover: "/images/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke-cover.webp"
 coverAlt: "Инженерная схема к статье «Обработка нержавейки ЧПУ: что указать в заявке»"
 authorId: "redakciya"
 ---

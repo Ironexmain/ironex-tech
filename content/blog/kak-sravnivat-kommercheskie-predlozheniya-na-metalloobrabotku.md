@@ -6,7 +6,7 @@ date: "2026-08-07"
 lastmod: "2026-08-07"
 category: "Заказчику"
 categorySlug: "zakazchiku"
-cover: "/images/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku-cover-v2.webp"
+cover: "/images/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku-cover.webp"
 coverAlt: "Инженерная схема к статье «Как сравнивать коммерческие предложения на металлообработку»"
 authorId: "redakciya"
 ---

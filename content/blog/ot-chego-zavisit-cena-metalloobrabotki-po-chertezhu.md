@@ -6,7 +6,7 @@ date: "2026-08-21"
 lastmod: "2026-08-21"
 category: "Экономика заказа"
 categorySlug: "ekonomika-zakaza"
-cover: "/images/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu-cover-v2.webp"
+cover: "/images/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu-cover.webp"
 coverAlt: "Инженерная схема к статье «Металлообработка: цена детали по чертежу»"
 authorId: "redakciya"
 ---

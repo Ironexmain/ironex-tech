@@ -6,7 +6,7 @@ date: "2026-08-30"
 lastmod: "2026-08-30"
 category: "Материалы"
 categorySlug: "materialy"
-cover: "/images/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali-cover-v2.webp"
+cover: "/images/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali-cover.webp"
 coverAlt: "Инженерная схема к статье «Производство металлических деталей: выбор аналога»"
 authorId: "redakciya"
 ---

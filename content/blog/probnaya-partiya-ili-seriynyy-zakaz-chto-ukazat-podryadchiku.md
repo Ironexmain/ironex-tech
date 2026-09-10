@@ -6,7 +6,7 @@ date: "2026-08-26"
 lastmod: "2026-08-26"
 category: "Экономика заказа"
 categorySlug: "ekonomika-zakaza"
-cover: "/images/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku-cover-v2.webp"
+cover: "/images/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku-cover.webp"
 coverAlt: "Инженерная схема к статье «Мелкосерийное производство деталей: как начать»"
 authorId: "redakciya"
 ---

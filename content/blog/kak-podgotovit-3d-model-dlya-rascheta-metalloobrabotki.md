@@ -6,7 +6,7 @@ date: "2026-08-29"
 lastmod: "2026-08-29"
 category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
-cover: "/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover-v2.webp"
+cover: "/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp"
 coverAlt: "Инженерная схема к статье «Фрезерная обработка по чертежу: подготовка 3D-модели»"
 authorId: "redakciya"
 ---

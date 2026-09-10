@@ -6,7 +6,7 @@ date: "2026-09-02"
 lastmod: "2026-09-02"
 category: "Материалы"
 categorySlug: "materialy"
-cover: "/images/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali-cover-v2.webp"
+cover: "/images/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali-cover.webp"
 coverAlt: "Инженерная схема к статье «Порошковая покраска на заказ: как выбрать покрытие»"
 authorId: "redakciya"
 ---

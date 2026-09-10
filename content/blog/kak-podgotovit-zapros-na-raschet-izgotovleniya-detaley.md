@@ -6,7 +6,7 @@ date: "2026-08-05"
 lastmod: "2026-08-05"
 category: "Заказчику"
 categorySlug: "zakazchiku"
-cover: "/images/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley-cover-v2.webp"
+cover: "/images/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley-cover.webp"
 coverAlt: "Инженерная схема к статье «Как составить заявку на изготовление деталей»"
 authorId: "redakciya"
 ---

@@ -6,7 +6,7 @@ date: "2026-09-01"
 lastmod: "2026-09-01"
 category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
-cover: "/images/blog/chto-prilozhit-k-zayavke-na-gibku-metalla-cover-v2.webp"
+cover: "/images/blog/chto-prilozhit-k-zayavke-na-gibku-metalla-cover.webp"
 coverAlt: "Инженерная схема к статье «Гибка металла на заказ: что приложить к заявке»"
 authorId: "redakciya"
 ---

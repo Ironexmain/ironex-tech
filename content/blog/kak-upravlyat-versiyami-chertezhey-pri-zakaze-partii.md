@@ -6,7 +6,7 @@ date: "2026-08-30"
 lastmod: "2026-08-30"
 category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
-cover: "/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover-v2.webp"
+cover: "/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover.webp"
 coverAlt: "Инженерная схема к статье «Изготовление деталей по чертежам: контроль версий»"
 authorId: "redakciya"
 ---

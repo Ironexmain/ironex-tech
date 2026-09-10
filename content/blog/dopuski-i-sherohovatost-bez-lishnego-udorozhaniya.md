@@ -6,7 +6,7 @@ date: "2026-08-25"
 lastmod: "2026-08-25"
 category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
-cover: "/images/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya-cover-v2.webp"
+cover: "/images/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya-cover.webp"
 coverAlt: "Инженерная схема к статье «Фрезерная обработка по чертежу: допуски без переплат»"
 authorId: "redakciya"
 ---

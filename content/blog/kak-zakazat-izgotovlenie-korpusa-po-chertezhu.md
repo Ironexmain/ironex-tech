@@ -6,7 +6,7 @@ date: "2026-09-05"
 lastmod: "2026-09-05"
 category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
-cover: "/images/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu-cover-v2.webp"
+cover: "/images/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu-cover.webp"
 coverAlt: "Инженерная схема к статье «Корпуса на заказ: как подготовить чертёж и модель»"
 authorId: "redakciya"
 ---

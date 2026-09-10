@@ -6,7 +6,7 @@ date: "2026-08-31"
 lastmod: "2026-08-31"
 category: "Материалы"
 categorySlug: "materialy"
-cover: "/images/blog/izgotovlenie-detaley-iz-alyuminiya-chto-vliyaet-na-tehnologiyu-i-cenu-cover-v2.webp"
+cover: "/images/blog/izgotovlenie-detaley-iz-alyuminiya-chto-vliyaet-na-tehnologiyu-i-cenu-cover.webp"
 coverAlt: "Инженерная схема к статье «Детали из алюминия: что влияет на цену»"
 authorId: "redakciya"
 ---

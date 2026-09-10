@@ -6,7 +6,7 @@ date: "2026-08-27"
 lastmod: "2026-08-27"
 category: "Экономика заказа"
 categorySlug: "ekonomika-zakaza"
-cover: "/images/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii-cover-v2.webp"
+cover: "/images/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii-cover.webp"
 coverAlt: "Инженерная схема к статье «Серийное производство деталей: как выбрать размер партии»"
 authorId: "redakciya"
 ---

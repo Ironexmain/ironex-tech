@@ -6,7 +6,7 @@ date: "2026-08-24"
 lastmod: "2026-08-24"
 category: "Заказчику"
 categorySlug: "zakazchiku"
-cover: "/images/blog/proizvodstvennaya-kooperaciya-v-metalloobrabotke-kak-peredat-zakaz-cover-v2.webp"
+cover: "/images/blog/proizvodstvennaya-kooperaciya-v-metalloobrabotke-kak-peredat-zakaz-cover.webp"
 coverAlt: "Инженерная схема к статье «Производственная кооперация: как передать заказ»"
 authorId: "redakciya"
 ---

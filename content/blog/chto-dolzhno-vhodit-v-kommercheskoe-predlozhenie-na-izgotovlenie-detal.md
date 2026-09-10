@@ -6,7 +6,7 @@ date: "2026-08-28"
 lastmod: "2026-08-28"
 category: "Заказчику"
 categorySlug: "zakazchiku"
-cover: "/images/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal-cover-v2.webp"
+cover: "/images/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal-cover.webp"
 coverAlt: "Инженерная схема к статье «Коммерческое предложение на металлообработку: состав»"
 authorId: "redakciya"
 ---

@@ -6,7 +6,7 @@ date: "2026-08-12"
 lastmod: "2026-08-12"
 category: "Контроль качества"
 categorySlug: "kontrol-kachestva"
-cover: "/images/blog/vhodnoy-kontrol-partii-i-kontrol-na-kim-cover-v2.webp"
+cover: "/images/blog/vhodnoy-kontrol-partii-i-kontrol-na-kim-cover.webp"
 coverAlt: "Инженерная схема к статье «Координатно-измерительная машина: контроль деталей»"
 authorId: "redakciya"
 ---

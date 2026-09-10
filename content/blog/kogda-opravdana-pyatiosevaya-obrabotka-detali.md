@@ -6,7 +6,7 @@ date: "2026-08-29"
 lastmod: "2026-08-29"
 category: "Технологии"
 categorySlug: "tehnologii"
-cover: "/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover-v2.webp"
+cover: "/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover.webp"
 coverAlt: "Инженерная схема к статье «Пятиосевая обработка: когда она оправдана»"
 authorId: "redakciya"
 ---

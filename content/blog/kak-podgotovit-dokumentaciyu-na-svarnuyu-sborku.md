@@ -6,7 +6,7 @@ date: "2026-09-02"
 lastmod: "2026-09-02"
 category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
-cover: "/images/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku-cover-v2.webp"
+cover: "/images/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku-cover.webp"
 coverAlt: "Инженерная схема к статье «Сварка на заказ: документация на сварную сборку»"
 authorId: "redakciya"
 ---

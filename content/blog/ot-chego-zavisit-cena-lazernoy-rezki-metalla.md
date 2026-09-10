@@ -6,7 +6,7 @@ date: "2026-09-01"
 lastmod: "2026-09-01"
 category: "Экономика заказа"
 categorySlug: "ekonomika-zakaza"
-cover: "/images/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla-cover-v2.webp"
+cover: "/images/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla-cover.webp"
 coverAlt: "Инженерная схема к статье «Лазерная резка: цена и 6 факторов расчёта»"
 authorId: "redakciya"
 ---

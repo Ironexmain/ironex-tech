@@ -6,7 +6,7 @@ date: "2026-08-07"
 lastmod: "2026-08-12"
 category: "Экономика заказа"
 categorySlug: "ekonomika-zakaza"
-cover: "/images/blog/pochemu-partiya-menyaet-tsenu-detali-cover-v2.webp"
+cover: "/images/blog/pochemu-partiya-menyaet-tsenu-detali-cover.webp"
 coverAlt: "Инженерная схема к статье «Почему партия меняет цену детали»"
 authorId: "redakciya"
 ---

@@ -6,7 +6,7 @@ date: "2026-08-28"
 lastmod: "2026-08-28"
 category: "Заказчику"
 categorySlug: "zakazchiku"
-cover: "/images/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp-cover-v2.webp"
+cover: "/images/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp-cover.webp"
 coverAlt: "Инженерная схема к статье «Расчёт металлообработки: как проверить сроки в КП»"
 authorId: "redakciya"
 ---

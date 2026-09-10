@@ -6,7 +6,7 @@ date: "2026-08-20"
 lastmod: "2026-08-20"
 category: "Технологии"
 categorySlug: "tehnologii"
-cover: "/images/blog/lazernaya-plazmennaya-ili-gidroabrazivnaya-rezka-cover-v2.webp"
+cover: "/images/blog/lazernaya-plazmennaya-ili-gidroabrazivnaya-rezka-cover.webp"
 coverAlt: "Инженерная схема к статье «Лазерная, плазменная или гидроабразивная резка»"
 authorId: "redakciya"
 ---

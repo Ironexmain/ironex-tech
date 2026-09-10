@@ -6,7 +6,7 @@ date: "2026-09-04"
 lastmod: "2026-09-04"
 category: "Заказчику"
 categorySlug: "zakazchiku"
-cover: "/images/blog/kak-vybrat-subpodryadchika-pri-peregruzke-proizvodstva-cover-v2.webp"
+cover: "/images/blog/kak-vybrat-subpodryadchika-pri-peregruzke-proizvodstva-cover.webp"
 coverAlt: "Инженерная схема к статье «Аутсорсинг металлообработки: выбор субподрядчика»"
 authorId: "redakciya"
 ---

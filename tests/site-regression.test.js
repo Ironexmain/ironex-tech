@@ -22,8 +22,7 @@ const ORIGIN = 'https://ironex.tech';
 const MIN_SITEMAP_URLS = 30;
 const CONTENT_INTEGRATIONS = [
   { name: 'analytics-events.js', pathname: '/analytics-events.js' },
-  { name: 'email-copy.js', pathname: '/email-copy.js' },
-  { name: 'email-copy.css', pathname: '/email-copy.css' }
+  { name: 'email-copy.js', pathname: '/email-copy.js' }
 ];
 const IMAGE_EXTENSIONS = new Set(['.avif', '.gif', '.jpeg', '.jpg', '.png', '.svg', '.webp']);
 
@@ -383,7 +382,9 @@ for (const link of filterLinks) {
 }
 expect('blog contract', /id="materials"/.test(blogIndexHtml), 'blog archive needs the #materials navigation target');
 
-const catalogCardPattern = /<a\s+class="(?:editorial-feature-card|editorial-archive-card)"[^>]*>[\s\S]*?<\/a>/g;
+// Карточка витрины — любой элемент с data-seo-slug: класс может смениться
+// вместе с оформлением, а признак «это карточка статьи» остаётся.
+const catalogCardPattern = /<(a|article)\s+class="[^"]*"\s+data-seo-slug="[\s\S]*?<\/\1>/g;
 for (const card of blogIndexHtml.match(catalogCardPattern) || []) {
   expect('blog contract', /<time\b[^>]*datetime="\d{4}-\d{2}-\d{2}"/.test(card), 'every blog card needs a visible machine-readable date');
 }
@@ -397,10 +398,14 @@ expect('blog contract', blogItemList.itemListElement.length === catalogSlugs.len
 for (const filePath of articleFiles) {
   const html = readText(filePath);
   const file = relative(filePath);
-  expect('blog contract', /<div class="article-meta">[\s\S]*?<time\b[^>]*datetime="\d{4}-\d{2}-\d{2}"/.test(html), `${file} needs a machine-readable visible update date`);
-  expect('blog contract', countPattern(html, /class="article-related-card"/g) === 3, `${file} needs exactly 3 real related materials`);
-  expect('blog contract', countPattern(html, /class="article-final-cta"/g) === 1, `${file} needs one final article CTA`);
-  expect('blog contract', countPattern(html, /class="(?:editorial-kicker|art-cat|article-support-label)"/g) === 0, `${file} reintroduced a decorative overtitle`);
+  expect('blog contract', /<div class="byline">[\s\S]*?<time\b[^>]*datetime="\d{4}-\d{2}-\d{2}"/.test(html), `${file} needs a machine-readable visible date in the byline`);
+  expect('blog contract', /Опубликовано/.test(html), `${file} must label the publication date, not only "Обновлено"`);
+  expect('blog contract', countPattern(html, /class="card mat-card"/g) === 3, `${file} needs exactly 3 real related materials`);
+  expect('blog contract', countPattern(html, /class="statement statement--grid section"/g) === 1, `${file} needs one closing statement block`);
+  expect('blog contract', countPattern(html, /<details\b/g) >= 1, `${file} must render its FAQ as an accordion`);
+  // Дизайн-система: страницы не заводят своих стилей, всё приходит из /ironex.css
+  expect('blog contract', countPattern(html, /<style[\s>]/g) === 0, `${file} must not carry its own <style> block`);
+  expect('blog contract', /<link rel="stylesheet" href="\/ironex\.css"/.test(html), `${file} must load /ironex.css`);
 }
 
 const redesignSource = readText(path.join(ROOT, 'redesign.js'));

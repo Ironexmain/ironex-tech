@@ -6,7 +6,7 @@ date: "2026-08-22"
 lastmod: "2026-08-22"
 category: "Технологии"
 categorySlug: "tehnologii"
-cover: "/images/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut-cover-v2.webp"
+cover: "/images/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut-cover.webp"
 coverAlt: "Инженерная схема к статье «Токарные работы по металлу на заказ: выбор маршрута»"
 authorId: "redakciya"
 ---

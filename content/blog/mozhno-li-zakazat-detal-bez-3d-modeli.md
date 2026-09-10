@@ -6,7 +6,7 @@ date: "2026-08-23"
 lastmod: "2026-08-23"
 category: "Чертежи и допуски"
 categorySlug: "chertezhi-i-dopuski"
-cover: "/images/blog/mozhno-li-zakazat-detal-bez-3d-modeli-cover-v2.webp"
+cover: "/images/blog/mozhno-li-zakazat-detal-bez-3d-modeli-cover.webp"
 coverAlt: "Инженерная схема к статье «Изготовление деталей по чертежам без 3D-модели»"
 authorId: "redakciya"
 ---
