@@ -612,3 +612,134 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
   .cols3 > div { padding: 22px 0 0; border-left: 0; border-top: 1px solid var(--line); }
   .cols3 > div:first-child { padding-top: 0; border-top: 0; }
 }
+
+/* ═══ v2.2 — по референсам Кости: RapidDirect (структура) + Hadrian (характер) ═══
+   От RapidDirect: полоса цифр под первым экраном, карточки услуг с плотными
+   характеристиками, «как с нами работать» тремя шагами.
+   От Hadrian: тёмная земля, живая строка в шапке, срезанный угол как приём,
+   бегущая строка, крупный дисплейный заголовок поверх видео.
+   Движение здесь несёт смысл: часы показывают, работает ли приёмка прямо сейчас,
+   бегущая строка перечисляет реальный сортамент. Декоративной анимации нет. */
+
+/* ── Живая строка в шапке ─────────────────────────────────────────────────── */
+.clockbar { display: flex; gap: 0; margin-left: 28px; border: 1px solid rgba(255,255,255,.22); }
+.clockbar span { padding: 5px 10px; border-left: 1px solid rgba(255,255,255,.22); color: var(--on-dark-2); font-size: 11px; font-weight: 600; letter-spacing: .06em; white-space: nowrap; }
+.clockbar span:first-child { border-left: 0; }
+.clockbar .is-open { color: #7FE3A1; }
+.clockbar .is-closed { color: var(--on-dark-2); }
+
+/* ── Срезанный угол: приём Hadrian, у нас метит рамку целевого действия ───── */
+.notch {
+  --n: 18px;
+  border: 1px solid rgba(255,255,255,.28);
+  clip-path: polygon(0 0, calc(100% - var(--n)) 0, 100% var(--n), 100% 100%, var(--n) 100%, 0 calc(100% - var(--n)));
+}
+
+/* ── Первый экран с видео ─────────────────────────────────────────────────── */
+.hero--video { position: relative; overflow: hidden; background: var(--coal); }
+.hero--video > video, .hero--video > img.hero__poster {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.hero--video::after {
+  position: absolute; inset: 0; content: "";
+  background: linear-gradient(90deg, rgba(10,15,16,.92) 0%, rgba(10,15,16,.78) 46%, rgba(10,15,16,.42) 100%);
+}
+.hero--video .container { position: relative; z-index: 1; padding-block: clamp(72px, 11vw, 168px); }
+.hero--video h1 {
+  max-width: 15ch; margin: 0 0 22px; color: var(--on-dark);
+  font-size: clamp(40px, 7vw, 92px); font-weight: 800; line-height: .98; letter-spacing: -.045em;
+}
+.hero--video p { max-width: 48ch; margin: 0 0 30px; color: #C6D0D1; font-size: clamp(16px, 1.7vw, 20px); }
+.hero__actions { display: inline-flex; flex-wrap: wrap; gap: 10px; padding: 12px; }
+.hero__actions .btn--ghost { color: var(--on-dark); border-color: rgba(255,255,255,.34); }
+.hero__actions .btn--ghost:hover { border-color: var(--on-dark); }
+
+/* ── Полоса цифр под первым экраном ───────────────────────────────────────── */
+.figures { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.figures > div { padding: 26px 22px; border-left: 1px solid var(--line); }
+.figures > div:first-child { border-left: 0; padding-left: 0; }
+.figures dt { color: var(--muted); font-size: 13px; }
+.figures dd { margin: 6px 0 0; font-size: clamp(22px, 2.4vw, 30px); font-weight: 800; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+
+/* ── Бегущая строка: реальный сортамент, а не декор ───────────────────────── */
+.marquee { overflow: hidden; padding: 16px 0; color: var(--on-dark-2); background: var(--coal); border-block: 1px solid rgba(255,255,255,.12); }
+.marquee__track { display: inline-flex; gap: 0; white-space: nowrap; animation: marquee 46s linear infinite; }
+.marquee__track span { padding: 0 22px; font-size: 14px; font-weight: 600; letter-spacing: .04em; }
+.marquee__track span::after { margin-left: 22px; color: rgba(255,255,255,.28); content: "·"; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee:hover .marquee__track { animation-play-state: paused; }
+
+/* ── Плотная карточка услуги ──────────────────────────────────────────────── */
+.svc { display: grid; gap: 0; }
+.svc > article { padding: 26px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) auto; gap: 24px; align-items: start; }
+.svc h3 { font-size: 20px; }
+.svc h3 a { color: inherit; text-decoration: none; }
+.svc h3 a:hover { text-decoration: underline; }
+.svc__spec { margin: 0; color: var(--ink-2); font-size: 15px; }
+.svc__rate { white-space: nowrap; font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.svc__rate small { display: block; color: var(--muted); font-size: 13px; font-weight: 500; }
+
+/* ── Три шага ─────────────────────────────────────────────────────────────── */
+.howto { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 28px; }
+.howto > div { padding: 24px; background: var(--paper-2); border-radius: var(--r-card); }
+.howto b { display: block; margin-bottom: 8px; color: var(--signal); font-size: 12px; font-weight: 700; letter-spacing: .1em; }
+.howto h3 { margin-bottom: 8px; font-size: 19px; }
+.howto p { color: var(--ink-2); font-size: 15px; }
+
+/* ── Появление секций при прокрутке ───────────────────────────────────────── */
+.reveal { transition: opacity .5s ease-out, transform .5s ease-out; }
+.js .reveal { opacity: 0; transform: translateY(14px); }
+.js .reveal.is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .marquee__track { animation: none; }
+}
+
+@media (max-width: 900px) {
+  .clockbar { display: none; }
+  .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .figures > div { padding: 18px; border-top: 1px solid var(--line); }
+  .figures > div:nth-child(odd) { border-left: 0; padding-left: 0; }
+  .svc > article { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .howto { grid-template-columns: minmax(0, 1fr); }
+  .hero--video::after { background: linear-gradient(180deg, rgba(10,15,16,.72) 0%, rgba(10,15,16,.92) 100%); }
+}
+
+/* ── Правки после первого просмотра сборки ────────────────────────────────── */
+/* Кнопка в шапке рвалась на две строки и превращалась в огромный овал */
+.site-header__actions .btn { white-space: nowrap; }
+/* Ставки читаются столбиком справа, как в прайсе */
+.svc__rate { text-align: right; }
+/* Между тонированной и белой секцией набегало по 300+ px пустоты:
+   сама смена фона уже отделяет блоки, столько воздуха не нужно */
+.section--tint + .section, .section + .section--tint { padding-top: clamp(48px, 5vw, 72px); }
+
+/* ── Тёмный первый экран внутренних страниц ───────────────────────────────
+   Шапка на всех страницах угольная; светлый h1 сразу под ней рвал полосу
+   надвое. Здесь тот же приём, что на главной, но без видео — внутренние
+   страницы читают, а не смотрят. */
+.hero--page { background: var(--coal); color: var(--on-dark); }
+.hero--page .crumbs { padding-top: clamp(20px, 3vw, 30px); }
+.hero--page .crumbs, .hero--page .crumbs a, .hero--page .crumbs span { color: var(--on-dark-2); }
+.hero--page .crumbs a:hover { color: var(--on-dark); }
+.hero--page .container > :where(h1, p) { color: inherit; }
+.hero--page__body { padding-block: clamp(26px, 4vw, 44px) clamp(40px, 6vw, 68px); }
+.hero--page h1 { max-width: 20ch; font-size: clamp(32px, 4.6vw, 58px); font-weight: 800; line-height: 1.04; letter-spacing: -.035em; }
+.hero--page .lede { max-width: 58ch; color: #C6D0D1; }
+.hero--page .hint { color: var(--on-dark-2); font-size: 15px; }
+.hero--page .crumbs { border-bottom: 0; }
+.hero--page__body { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, .8fr); gap: clamp(28px, 5vw, 64px); align-items: end; }
+.hero__panel { --n: 16px; padding: 22px 24px; border: 1px solid rgba(255,255,255,.24);
+  clip-path: polygon(0 0, calc(100% - var(--n)) 0, 100% var(--n), 100% 100%, var(--n) 100%, 0 calc(100% - var(--n))); }
+.hero__panel dl { display: grid; gap: 0; margin: 0; }
+.hero__panel div { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; padding: 12px 0; border-top: 1px solid rgba(255,255,255,.14); }
+.hero__panel div:first-child { padding-top: 0; border-top: 0; }
+.hero__panel dt { color: var(--on-dark-2); font-size: 14px; }
+.hero__panel dd { margin: 0; text-align: right; font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; }
+@media (max-width: 900px) {
+  .hero--page__body { grid-template-columns: minmax(0, 1fr); }
+  .hero__panel { margin-top: 6px; }
+}
+/* Тёмный экран уже отделяет себя фоном — полный отступ секции сверху лишний */
+.hero--page + .section { padding-top: clamp(40px, 5vw, 68px); }
+.hero__panel dd a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }

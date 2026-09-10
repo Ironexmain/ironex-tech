@@ -174,3 +174,69 @@
   readLocation();
   render();
 })();
+
+/* ── Живая строка в шапке ───────────────────────────────────────────────────
+   Показывает московское время и работает ли сейчас приёмка чертежей.
+   Приёмка: Пн–Пт 09:00–19:00 МСК. Письмо можно прислать всегда — строка
+   говорит только о том, ответят сегодня или следующим рабочим утром. */
+(function () {
+  var bar = document.querySelector('[data-clockbar]');
+  if (!bar) return;
+  var elTime = bar.querySelector('[data-clock-time]');
+  var elState = bar.querySelector('[data-clock-state]');
+  var fmt = new Intl.DateTimeFormat('ru-RU', {
+    timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', hour12: false
+  });
+  var parts = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Moscow', weekday: 'short', hour: 'numeric', hour12: false
+  });
+
+  function tick() {
+    var now = new Date();
+    elTime.textContent = 'Москва ' + fmt.format(now);
+    var p = parts.formatToParts(now).reduce(function (a, x) { a[x.type] = x.value; return a; }, {});
+    var weekend = p.weekday === 'Sat' || p.weekday === 'Sun';
+    var h = parseInt(p.hour, 10);
+    var open = !weekend && h >= 9 && h < 19;
+    elState.textContent = open ? 'приёмка чертежей открыта' : 'ответим утром в рабочий день';
+    elState.className = open ? 'is-open' : 'is-closed';
+  }
+  tick();
+  setInterval(tick, 30000);
+})();
+
+/* ── Видео первого экрана ───────────────────────────────────────────────────
+   preload="none" в разметке: пока не решено, что видео вообще нужно, качается
+   только постер. Здесь решаем — и не качаем полтора мегабайта тем, кто просил
+   убрать анимацию, и тем, у кого экономия трафика. */
+(function () {
+  var v = document.querySelector('[data-hero-video]');
+  if (!v) return;
+  var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var saver = navigator.connection && (navigator.connection.saveData ||
+              /2g/.test(navigator.connection.effectiveType || ''));
+  if (calm || saver) { v.removeAttribute('autoplay'); v.remove(); return; }
+  v.preload = 'auto';
+  v.load();
+  var play = v.play();
+  if (play && play.catch) play.catch(function () { /* автоплей запрещён — остаётся постер */ });
+})();
+
+/* ── Появление секций при прокрутке ─────────────────────────────────────── */
+(function () {
+  var items = document.querySelectorAll('.reveal');
+  if (!items.length) return;
+  if (!('IntersectionObserver' in window) ||
+      (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+    for (var i = 0; i < items.length; i++) items[i].classList.add('is-in');
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('is-in');
+      io.unobserve(e.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  items.forEach(function (el) { io.observe(el); });
+})();
