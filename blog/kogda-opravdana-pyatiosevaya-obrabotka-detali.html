@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -7,16 +8,148 @@
   <meta name="description" content="Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
   <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
 
-  <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
   <link rel="canonical" href="https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html" />
+  <meta name="robots" content="index, follow" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Пятиосевая обработка: когда она оправдана","description":"Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали.","datePublished":"2026-08-29","dateModified":"2026-08-29","mainEntityOfPage":"https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html","author":{"@type":"Organization","name":"Редакция IRONEX"},"publisher":{"@id":"https://ironex.tech/#org"},"image":"https://ironex.tech/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover-v2.webp"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://ironex.tech/blog.html"},{"@type":"ListItem","position":3,"name":"Пятиосевая обработка: когда она оправдана","item":"https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Пятиосевая обработка всегда точнее трёхосевой?","acceptedAnswer":{"@type":"Answer","text":"Нет. Количество осей само по себе не определяет точность. Преимущество появляется, когда сокращение переустановок помогает сохранить взаимное расположение ответственных поверхностей. Итог также зависит от станка, оснастки, инструмента, программы и контроля."}},{"@type":"Question","name":"Можно ли полностью изготовить деталь за одну установку?","acceptedAnswer":{"@type":"Answer","text":"Иногда можно обработать большинство ответственных поверхностей, но универсального правила нет. Зоны закрепления, обратная сторона детали или последующие операции могут потребовать ещё одной установки."}},{"@type":"Question","name":"Чем режим 3+2 отличается от одновременной работы пяти осей?","acceptedAnswer":{"@type":"Answer","text":"В режиме 3+2 поворотные оси задают положение и остаются неподвижными во время фрезерования. При одновременной обработке линейные и поворотные оси могут двигаться вместе по рассчитанной траектории."}},{"@type":"Question","name":"Подходит ли пятиосевая технология для единичных деталей?","acceptedAnswer":{"@type":"Answer","text":"Технически — да, если размеры и геометрия соответствуют возможностям оборудования. Экономическая целесообразность зависит от сложности программирования, оснастки, числа установок и требований к точности."}},{"@type":"Question","name":"Достаточно ли 3D-модели для расчёта?","acceptedAnswer":{"@type":"Answer","text":"Для предварительной оценки геометрии модель полезна, но обычно не заменяет чертёж. В ней могут отсутствовать допуски, шероховатость, материал, базы, покрытия и требования к контролю. Чтобы выбрать маршрут для конкретной геометрии, отправьте чертёж и 3D-модель при наличии. Необходимость пятиосевой обработки, цена и срок подтверждаются после технологической проверки."}}]}]}
-  </script>
-  <!-- ═══ Яндекс Метрика 105009501 ═══ -->
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html#article",
+      "headline": "Пятиосевая обработка: когда она оправдана",
+      "description": "Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали.",
+      "datePublished": "2026-08-29",
+      "dateModified": "2026-08-29",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover.webp",
+      "articleSection": "Технологии"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/og.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Пятиосевая обработка: когда она оправдана"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Пятиосевая обработка всегда точнее трёхосевой?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Количество осей само по себе не определяет точность. Преимущество появляется, когда сокращение переустановок помогает сохранить взаимное расположение ответственных поверхностей. Итог также зависит от станка, оснастки, инструмента, программы и контроля."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли полностью изготовить деталь за одну установку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Иногда можно обработать большинство ответственных поверхностей, но универсального правила нет. Зоны закрепления, обратная сторона детали или последующие операции могут потребовать ещё одной установки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем режим 3+2 отличается от одновременной работы пяти осей?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В режиме 3+2 поворотные оси задают положение и остаются неподвижными во время фрезерования. При одновременной обработке линейные и поворотные оси могут двигаться вместе по рассчитанной траектории."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Подходит ли пятиосевая технология для единичных деталей?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Технически — да, если размеры и геометрия соответствуют возможностям оборудования. Экономическая целесообразность зависит от сложности программирования, оснастки, числа установок и требований к точности."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Достаточно ли 3D-модели для расчёта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для предварительной оценки геометрии модель полезна, но обычно не заменяет чертёж. В ней могут отсутствовать допуски, шероховатость, материал, базы, покрытия и требования к контролю. Чтобы выбрать маршрут для конкретной геометрии, [отправьте чертёж и 3D-модель при наличии](/kontakty.html). Необходимость пятиосевой обработки, цена и срок подтверждаются после технологической проверки."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
   <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -25,99 +158,110 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <link rel="stylesheet" href="/email-copy.css" />
-  <link rel="stylesheet" href="/redesign.css?v=20260907-4" />
+  <link rel="stylesheet" href="/ironex.css" />
 
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Пятиосевая обработка: когда она оправдана" />
   <meta property="og:description" content="Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали." />
   <meta property="og:url" content="https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html" />
-  <meta property="og:image" content="https://ironex.tech/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover-v2.webp" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-08-29" />
+  <meta property="article:modified_time" content="2026-08-29" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Пятиосевая обработка: когда она оправдана" />
   <meta name="twitter:description" content="Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали." />
-  <meta name="twitter:image" content="https://ironex.tech/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover-v2.webp" />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover.webp" />
   <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
 </head>
-<body class="redesign-precision editorial-page article-page">
-<a class="skip-link" href="#main-content">Перейти к содержанию</a>
-<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
 
-<!-- NAV -->
-<nav>
-  <div class="container">
-    <div class="nav-inner">
-      <a href="/index.html" class="nav-logo">IRON<span>EX</span></a>
-      <ul class="nav-links">
-        <li><a href="/uslugi.html">Услуги</a></li>
-        <li><a href="/oborudovanie.html">Оборудование</a></li>
-        <li><a href="/ceny.html">Цены</a></li>
-        <li><a href="/blog.html" class="active" aria-current="page">Блог</a></li>
-        <li><a href="/index.html#cases">Кейсы</a></li>
-        <li><a href="/kontakty.html">Контакты</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
-        <a href="/kontakty.html" class="btn btn-amber nav-cta">Запросить расчёт</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href="tel:+79934904024">+7 993 490-40-24</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Пятиосевая обработка: когда она оправдана">Прислать чертёж</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Пятиосевая обработка: когда она оправдана</span>
+    </div>
+  </nav>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Пятиосевая обработка: когда она оправдана</h1>
+      <p class="lede">Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали.</p>
+
+      <div class="byline">
+        <span class="byline__who">
+          <span class="avatar"><span class="mono" aria-hidden="true">АР</span></span>
+          <span>
+            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+            <span class="byline__role">Инженер</span>
+          </span>
+        </span>
+        <span class="byline__meta">
+          <span>Технологии</span>
+          <time datetime="2026-08-29">Опубликовано 29 августа 2026</time>
+
+          <span>6 мин чтения</span>
+        </span>
       </div>
-      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
-        <span></span><span></span><span></span>
-      </button>
+
+      <figure class="figure--draft article-cover">
+        <img src="/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover.webp" alt="Пятиосевая обработка: когда она оправдана" width="1200" height="675" fetchpriority="high" decoding="async" />
+      </figure>
     </div>
-  </div>
-  <div class="mob-menu" id="mobMenu">
-    <a href="/uslugi.html">Услуги</a>
-    <a href="/oborudovanie.html">Оборудование</a>
-    <a href="/ceny.html">Цены</a>
-    <a href="/blog.html" aria-current="page">Блог</a>
-    <a href="/index.html#cases">Кейсы</a>
-    <a href="/kontakty.html">Контакты</a>
-    <a href="/kontakty.html" class="mob-menu-accent">Запросить расчёт</a>
-    <a href="tel:+79934904024">+7 993 490-40-24</a>
-  </div>
-</nav>
-
-<main id="main-content">
-  <!-- BREADCRUMB -->
-  <div class="breadcrumb">
-    <div class="container">
-      <div class="breadcrumb-inner"><a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Пятиосевая обработка: когда она оправдана</span></div>
-    </div>
-  </div>
-
-  <section class="editorial-article-hero">
-    <div class="container">
-
-
-  <h1>Пятиосевая обработка: когда она оправдана</h1>
-  <p class="article-lede">Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали.</p>
-  <div class="article-meta"><span>Технологии</span><span>Редакция IRONEX</span><time datetime="2026-08-29">Обновлено: 29 августа 2026</time><span>9 минут</span></div>
-</div>
   </section>
 
-  <figure class="article-cover-frame">
-    <img class="article-cover" src="/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover-v2.webp" alt="Инженерная схема к статье «Пятиосевая обработка: когда она оправдана»" width="1344" height="768" fetchpriority="high" decoding="async" />
-    <figcaption><span>Материал IRONEX</span><span>IRONEX / 2026</span></figcaption>
-  </figure>
+  <div class="container section">
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#kak-rabotaet-pyatiosevaya-obrabotka">Как работает пятиосевая обработка</a></li>
+<li><a href="#kogda-pyat-osey-dayut-polzu">Когда пять осей дают пользу</a></li>
+<li><a href="#chto-daet-odna-ustanovka">Что даёт одна установка</a></li>
+<li><a href="#kogda-pyatiosevaya-obrabotka-ne-nuzhna">Когда пятиосевая обработка не нужна</a></li>
+<li><a href="#chto-podgotovit-dlya-rascheta">Что подготовить для расчёта</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Пятиосевая обработка: когда она оправдана">Отправить чертёж на почту</a>
+        </div>
+      </aside>
 
+      <article class="prose">
+        <p class="prose__lede">Пятиосевая обработка оправдана, когда деталь имеет элементы на нескольких сторонах, наклонные поверхности или зоны, к которым сложно подвести инструмент на обычном трёхосевом станке. Главная польза метода — возможность обработать больше поверхностей за одну установку и сократить число повторных базирований.</p>
 
-  <div class="reading-progress" aria-hidden="true"><span></span></div>
-  <div class="container article-layout">
-    <aside class="article-toc" aria-label="Содержание статьи">
-
-      <strong>В статье</strong>
-      <a href="#princip-raboty"><span>01</span>Как работает пятиосевая обработка</a>
-      <a href="#kriterii-vybora"><span>02</span>Когда пять осей дают пользу</a>
-      <a href="#odna-ustanovka"><span>03</span>Что даёт одна установка</a>
-      <a href="#kogda-ne-nuzhna"><span>04</span>Когда пятиосевая обработка не нужна</a>
-      <a href="#dannye-dlya-rascheta"><span>05</span>Что подготовить для расчёта</a>
-      <a href="#chastye-voprosy"><span>06</span>Частые вопросы</a>
-    </aside>
-    <article class="article-content"><p>Пятиосевая обработка оправдана, когда деталь имеет элементы на нескольких сторонах, наклонные поверхности или зоны, к которым сложно подвести инструмент на обычном трёхосевом станке. Главная польза метода — возможность обработать больше поверхностей за одну установку и сократить число повторных базирований.</p>
-<p>Но наличие сложной формы ещё не означает, что нужны именно 5 осей ЧПУ. Иногда ту же деталь рациональнее изготовить на трёхосевом станке за несколько установок. Выбор зависит от геометрии, допусков, требований к взаимному расположению поверхностей, серийности и доступности инструмента.</p>
-<h2 id="princip-raboty">Как работает пятиосевая обработка</h2>
+        <p>Но наличие сложной формы ещё не означает, что нужны именно 5 осей ЧПУ. Иногда ту же деталь рациональнее изготовить на трёхосевом станке за несколько установок. Выбор зависит от геометрии, допусков, требований к взаимному расположению поверхностей, серийности и доступности инструмента.</p>
+<h2 id="kak-rabotaet-pyatiosevaya-obrabotka">Как работает пятиосевая обработка</h2>
 <p>На трёхосевом фрезерном станке инструмент или стол перемещается по линейным осям X, Y и Z. Пятиосевая схема добавляет две поворотные оси. Они позволяют менять ориентацию заготовки относительно инструмента или наклонять шпиндель — конкретная кинематика зависит от конструкции станка.</p>
 <p>Различают два основных режима.</p>
 <h3>Позиционная обработка 3+2</h3>
@@ -127,33 +271,14 @@
 <p>Все пять осей могут двигаться в процессе резания. Такой режим применяют для криволинейных поверхностей, сложных переходов, поднутрений и участков, где необходимо постоянно менять ориентацию инструмента.</p>
 <p>Одновременное движение осей требует подходящего станка, системы управления, CAM-траектории и проверки возможных столкновений. Оно нужно не каждой сложной детали: если геометрию можно обработать последовательным позиционированием, режим 3+2 может оказаться достаточным.</p>
 <p>Общие возможности фрезерного изготовления деталей описаны на странице <a href="/frezerovka.html">фрезерной обработки</a>.</p>
-<h2 id="kriterii-vybora">Когда пять осей дают пользу</h2>
+<div class="cta ui" id="cta" data-cta="inline">
+          <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+          <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+          <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Пятиосевая обработка: когда она оправдана">Отправить чертёж на почту</a>
+        </div>
+<h2 id="kogda-pyat-osey-dayut-polzu">Когда пять осей дают пользу</h2>
 <p>Решение следует принимать по конкретным элементам детали, а не по общему впечатлению от 3D-модели. Ниже — пять признаков, при которых пятиосевая обработка заслуживает технологической проверки.</p>
-<div class="article-table-wrap"><table><thead><tr>
-<th>Признак детали</th>
-<th>Возможная польза пяти осей</th>
-</tr></thead><tbody>
-<tr>
-<td>Обрабатываемые элементы находятся на нескольких сторонах</td>
-<td>Меньше переустановок и связанных с ними операций базирования</td>
-</tr>
-<tr>
-<td>Есть плоскости и отверстия под произвольными углами</td>
-<td>Инструмент можно ориентировать по нормали к поверхности</td>
-</tr>
-<tr>
-<td>Важны допуски взаимного расположения элементов</td>
-<td>Поверхности можно обработать от одной технологической базы</td>
-</tr>
-<tr>
-<td>Есть глубокие полости или труднодоступные зоны</td>
-<td>Наклон инструмента иногда позволяет использовать более короткую оснастку</td>
-</tr>
-<tr>
-<td>Присутствуют сложные криволинейные поверхности</td>
-<td>Одновременное движение осей помогает вести инструмент по заданной геометрии</td>
-</tr>
-</tbody></table></div>
+<table><thead><tr><th>Признак детали</th><th>Возможная польза пяти осей</th></tr></thead><tbody><tr><td>Обрабатываемые элементы находятся на нескольких сторонах</td><td>Меньше переустановок и связанных с ними операций базирования</td></tr><tr><td>Есть плоскости и отверстия под произвольными углами</td><td>Инструмент можно ориентировать по нормали к поверхности</td></tr><tr><td>Важны допуски взаимного расположения элементов</td><td>Поверхности можно обработать от одной технологической базы</td></tr><tr><td>Есть глубокие полости или труднодоступные зоны</td><td>Наклон инструмента иногда позволяет использовать более короткую оснастку</td></tr><tr><td>Присутствуют сложные криволинейные поверхности</td><td>Одновременное движение осей помогает вести инструмент по заданной геометрии</td></tr></tbody></table>
 <h3>Элементы на разных сторонах</h3>
 <p>Типичный сценарий — корпусная деталь с отверстиями, плоскостями и пазами на нескольких гранях. На трёхосевом оборудовании заготовку приходится переустанавливать или использовать дополнительную оснастку. Пятиосевая схема позволяет последовательно подводить нужную сторону к инструменту.</p>
 <p>Это особенно полезно, если после каждой переустановки требуется заново выставлять базу и контролировать положение уже обработанных элементов.</p>
@@ -166,7 +291,7 @@
 <h3>Пространственные поверхности</h3>
 <p>Лопатки, импеллеры, штампы, пресс-формы и другие детали со сложными поверхностями могут требовать постоянного изменения положения инструмента. Здесь одновременная работа пяти осей помогает выдерживать выбранную ориентацию фрезы и обрабатывать зоны, недоступные при фиксированном положении.</p>
 <p>При этом качество поверхности определяется не только числом осей. Важны стратегия обработки, состояние инструмента, жёсткость системы, режимы резания и точность исходной модели.</p>
-<h2 id="odna-ustanovka">Что даёт одна установка</h2>
+<h2 id="chto-daet-odna-ustanovka">Что даёт одна установка</h2>
 <p>Фраза «обработка за одну установку» не означает, что готовая деталь всегда полностью выходит со станка без дополнительных операций. Заготовку нужно закрепить, а зоны под зажимами могут потребовать отдельного перехода. Иногда после фрезерования остаются токарные, шлифовальные, термические или отделочные операции.</p>
 <p>Практическая польза одной установки заключается в другом.</p>
 <h3>Сохраняется единая система координат</h3>
@@ -178,125 +303,132 @@
 <h3>Упрощается обработка сложного комплекта поверхностей</h3>
 <p>Одна установка особенно полезна не для отдельного размера, а для группы взаимосвязанных элементов. Поэтому конструктору важно обозначить на чертеже базы и допуски взаимного расположения, а не просто назначить жёсткие допуски каждому размеру.</p>
 <p>Посмотреть применяемые типы станков и их заявленные параметры можно в разделе <a href="/oborudovanie.html">оборудования</a>.</p>
-<h2 id="kogda-ne-nuzhna">Когда пятиосевая обработка не нужна</h2>
+<h2 id="kogda-pyatiosevaya-obrabotka-ne-nuzhna">Когда пятиосевая обработка не нужна</h2>
 <p>Пять осей не следует выбирать только потому, что технология считается более современной. Для некоторых деталей обычная <a href="/uslugi.html">обработка на станках с ЧПУ</a> будет проще и экономичнее.</p>
 <p>Пятиосевая схема часто не даёт заметной пользы, если:</p>
-<ul>
-<li>все обрабатываемые элементы доступны с одной стороны;</li>
-<li>деталь состоит преимущественно из плоскостей, пазов и вертикальных отверстий;</li>
-<li>несколько простых установок не влияют на критические допуски;</li>
-<li>нужна токарная деталь с осесимметричной геометрией;</li>
-<li>сложная форма относится только к необрабатываемой поверхности заготовки;</li>
-<li>дополнительное позиционирование легко выполняется в стандартном приспособлении.</li>
-</ul>
+<ul><li>все обрабатываемые элементы доступны с одной стороны;</li><li>деталь состоит преимущественно из плоскостей, пазов и вертикальных отверстий;</li><li>несколько простых установок не влияют на критические допуски;</li><li>нужна токарная деталь с осесимметричной геометрией;</li><li>сложная форма относится только к необрабатываемой поверхности заготовки;</li><li>дополнительное позиционирование легко выполняется в стандартном приспособлении.</li></ul>
 <p>Для тел вращения основной операцией может быть <a href="/tokarnaya.html">токарная обработка</a>, а фрезерование потребуется только для отдельных пазов или отверстий. В таком случае технолог сравнивает токарно-фрезерный маршрут, несколько установок и пятиосевой вариант.</p>
 <p>Также важно учитывать серийность. Для единичной детали сложная подготовка управляющей программы и специальной оснастки может не окупиться. В серии те же подготовительные затраты распределяются по нескольким изделиям, но итог всё равно зависит от конкретного маршрута.</p>
-<h2 id="dannye-dlya-rascheta">Что подготовить для расчёта</h2>
+<h2 id="chto-podgotovit-dlya-rascheta">Что подготовить для расчёта</h2>
 <p>Оценить пользу одной установки можно только по комплекту технических данных. Одного изображения или габаритного размера недостаточно.</p>
 <p>Для технологического анализа желательно передать:</p>
-<ul>
-<li>3D-модель в нейтральном обменном формате;</li>
-<li>чертёж с размерами, базами и допусками;</li>
-<li>марку материала и состояние заготовки;</li>
-<li>требования к шероховатости;</li>
-<li>перечень покрытий, термообработки и других последующих операций;</li>
-<li>количество деталей в партии и возможную повторяемость заказа;</li>
-<li>требования к контролю и комплекту документов;</li>
-<li>допустимые изменения конструкции, если нужна проверка технологичности.</li>
-</ul>
+<ul><li>3D-модель в нейтральном обменном формате;</li><li>чертёж с размерами, базами и допусками;</li><li>марку материала и состояние заготовки;</li><li>требования к шероховатости;</li><li>перечень покрытий, термообработки и других последующих операций;</li><li>количество деталей в партии и возможную повторяемость заказа;</li><li>требования к контролю и комплекту документов;</li><li>допустимые изменения конструкции, если нужна проверка технологичности.</li></ul>
 <p>Особое внимание стоит уделить геометрическим допускам. Если конструктор ожидает пользу от обработки за одну установку, на чертеже должно быть понятно, какие поверхности связаны допуском соосности, перпендикулярности, позиции или профиля.</p>
 <p>Для предварительной оценки полезно ответить на три вопроса:</p>
-<ol>
-<li>Сколько сторон детали требуют обработки?</li>
-<li>Какие элементы нельзя надёжно получить без повторного базирования?</li>
-<li>Какие допуски связывают поверхности на разных сторонах?</li>
-</ol>
+<ol><li>Сколько сторон детали требуют обработки?</li><li>Какие элементы нельзя надёжно получить без повторного базирования?</li><li>Какие допуски связывают поверхности на разных сторонах?</li></ol>
 <p>После этого можно сравнить варианты маршрута: три оси с несколькими установками, позиционная схема 3+2 или одновременная пятиосевая обработка. Стоимость оценивают по всей технологии, включая подготовку, оснастку, машинное время и контроль. Общие факторы формирования расчёта перечислены на странице <a href="/ceny.html">о ценах</a>.</p>
 <p>Чтобы проверить конкретную деталь, пришлите чертёж, 3D-модель, материал, количество и технические требования. По этим данным можно индивидуально оценить, оправдана ли пятиосевая обработка и даст ли одна установка практическую пользу.</p>
-<h2 id="chastye-voprosy">Частые вопросы</h2>
-<h3>Пятиосевая обработка всегда точнее трёхосевой?</h3>
-<p>Нет. Количество осей само по себе не определяет точность. Преимущество появляется, когда сокращение переустановок помогает сохранить взаимное расположение ответственных поверхностей. Итог также зависит от станка, оснастки, инструмента, программы и контроля.</p>
-<h3>Можно ли полностью изготовить деталь за одну установку?</h3>
-<p>Иногда можно обработать большинство ответственных поверхностей, но универсального правила нет. Зоны закрепления, обратная сторона детали или последующие операции могут потребовать ещё одной установки.</p>
-<h3>Чем режим 3+2 отличается от одновременной работы пяти осей?</h3>
-<p>В режиме 3+2 поворотные оси задают положение и остаются неподвижными во время фрезерования. При одновременной обработке линейные и поворотные оси могут двигаться вместе по рассчитанной траектории.</p>
-<h3>Подходит ли пятиосевая технология для единичных деталей?</h3>
-<p>Технически — да, если размеры и геометрия соответствуют возможностям оборудования. Экономическая целесообразность зависит от сложности программирования, оснастки, числа установок и требований к точности.</p>
-<h3>Достаточно ли 3D-модели для расчёта?</h3>
-<p>Для предварительной оценки геометрии модель полезна, но обычно не заменяет чертёж. В ней могут отсутствовать допуски, шероховатость, материал, базы, покрытия и требования к контролю.</p>
-<p>Чтобы выбрать маршрут для конкретной геометрии, <a href="/kontakty.html">отправьте чертёж и 3D-модель при наличии</a>. Необходимость пятиосевой обработки, цена и срок подтверждаются после технологической проверки.</p></article>
-  </div>
-  <section class="article-author" aria-label="Об авторе">
-    <div class="container article-author-inner"><strong>Редакция IRONEX</strong><span>Практические материалы о металлообработке</span></div>
-  </section>
-  <section class="article-related" aria-labelledby="related-title">
-    <div class="container">
-      <h2 id="related-title">Материалы по теме</h2>
-      <div class="article-related-grid">
-        <a class="article-related-card" href="/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut.html"><strong>Токарные работы по металлу на заказ: выбор маршрута</strong><span>Токарные работы по металлу на заказ или фрезеровка: 7 критериев выбора маршрута, которые помогут снизить число установов, риск лишних операций и сроки партии.</span></a>
-        <a class="article-related-card" href="/blog/lazernaya-plazmennaya-ili-gidroabrazivnaya-rezka.html"><strong>Лазерная, плазменная или гидроабразивная резка</strong><span>Лазерная, плазменная или гидроабразивная резка: как выбрать технологию по материалу, толщине, допускам, кромке, нагреву и последующим операциям.</span></a>
-        <a class="article-related-card" href="/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu.html"><strong>Корпуса на заказ: как подготовить чертёж и модель</strong><span>Семь пунктов для подготовки модели, баз, резьб, покрытия и контроля — чтобы подрядчик точнее рассчитал изготовление корпуса.</span></a>
-      </div>
+
+        <h2 id="faq">Частые вопросы</h2>
+        <div class="faq">
+          <details open>
+            <summary>Пятиосевая обработка всегда точнее трёхосевой?</summary>
+            <div class="faq__a"><p>Нет. Количество осей само по себе не определяет точность. Преимущество появляется, когда сокращение переустановок помогает сохранить взаимное расположение ответственных поверхностей. Итог также зависит от станка, оснастки, инструмента, программы и контроля.</p></div>
+          </details>
+<details>
+            <summary>Можно ли полностью изготовить деталь за одну установку?</summary>
+            <div class="faq__a"><p>Иногда можно обработать большинство ответственных поверхностей, но универсального правила нет. Зоны закрепления, обратная сторона детали или последующие операции могут потребовать ещё одной установки.</p></div>
+          </details>
+<details>
+            <summary>Чем режим 3+2 отличается от одновременной работы пяти осей?</summary>
+            <div class="faq__a"><p>В режиме 3+2 поворотные оси задают положение и остаются неподвижными во время фрезерования. При одновременной обработке линейные и поворотные оси могут двигаться вместе по рассчитанной траектории.</p></div>
+          </details>
+<details>
+            <summary>Подходит ли пятиосевая технология для единичных деталей?</summary>
+            <div class="faq__a"><p>Технически — да, если размеры и геометрия соответствуют возможностям оборудования. Экономическая целесообразность зависит от сложности программирования, оснастки, числа установок и требований к точности.</p></div>
+          </details>
+<details>
+            <summary>Достаточно ли 3D-модели для расчёта?</summary>
+            <div class="faq__a"><p>Для предварительной оценки геометрии модель полезна, но обычно не заменяет чертёж. В ней могут отсутствовать допуски, шероховатость, материал, базы, покрытия и требования к контролю. Чтобы выбрать маршрут для конкретной геометрии, <a href="/kontakty.html">отправьте чертёж и 3D-модель при наличии</a>. Необходимость пятиосевой обработки, цена и срок подтверждаются после технологической проверки.</p></div>
+          </details>
+        </div>
+
+      </article>
     </div>
-  </section>
-  <section class="article-final-cta" aria-labelledby="article-cta-title">
-    <div class="container article-final-cta-inner">
-      <div>
-        <h2 id="article-cta-title">Нужен расчёт деталей по вашим чертежам?</h2>
-        <p>Пришлите документацию и количество. Технолог проверит задачу и вернётся с вопросами, стоимостью и сроком.</p>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">
+            <img src="/images/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Обработка нержавейки ЧПУ: что указать в заявке</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">
+            <img src="/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Фрезерная обработка по чертежу: подготовка 3D-модели</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">
+            <img src="/images/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Фрезерная обработка по чертежу: допуски без переплат</span>
+            </span>
+          </a>
+        </article>
       </div>
-      <a class="btn btn-amber" href="mailto:info@ironex.tech">Отправить чертёж</a>
     </div>
   </section>
 
-  <button class="back-to-top" type="button" aria-label="Вернуться к началу страницы">↑</button>
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Пятиосевая обработка: когда она оправдана">Отправить чертёж на почту</a>
+      </p>
+    </div>
+  </section>
 </main>
 
-<!-- FOOTER -->
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
+    <div class="site-footer__top">
       <div>
-        <div class="f-logo">IRON<span>EX</span></div>
-        <p class="f-desc">Изготовление деталей по чертежам полного цикла. 47 станков ЧПУ, КИМ-контроль каждой партии.</p>
-        <div class="f-contacts">
-          <a href="tel:+79934904024">+7 993 490-40-24</a>
-          <a href="mailto:info@ironex.tech">info@ironex.tech</a>
-          <span>Пн–Пт, 09:00–19:00 (МСК)</span>
-        </div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Услуги</p>
+      <div>
+        <h3>Услуги</h3>
         <ul>
           <li><a href="/uslugi.html">Все услуги</a></li>
-          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
           <li><a href="/tokarnaya.html">Токарная обработка</a></li>
-          <li><a href="/uslugi.html">Лазерная резка</a></li>
-          <li><a href="/uslugi.html">Сварка и сборка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Компания</p>
+      <div>
+        <h3>Компания</h3>
         <ul>
-          <li><a href="/index.html#equipment">Оборудование</a></li>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
           <li><a href="/ceny.html">Цены</a></li>
           <li><a href="/blog.html">Блог</a></li>
-          <li><a href="/index.html#cases">Кейсы</a></li>
-          <li><a href="/index.html#cta">Контакты</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Связаться</p>
+      <div>
+        <h3>Связаться</h3>
         <ul>
-          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
-          <li><a href="https://t.me/+79819470402">Telegram</a></li>
-          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 IRONEX. Контрактное производство деталей.</span>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
       <span>ООО «Айронекс» · ИНН 7804719856</span>
     </div>
   </div>

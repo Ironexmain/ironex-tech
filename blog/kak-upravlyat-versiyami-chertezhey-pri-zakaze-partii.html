@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -7,16 +8,148 @@
   <meta name="description" content="Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <!-- ═══ Callibri — коллтрекинг и аналитика лидов ═══ -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
   <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
 
-  <!-- ═══ SEO: Canonical + JSON-LD микроразметка ═══ -->
   <link rel="canonical" href="https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html" />
+  <meta name="robots" content="index, follow" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Изготовление деталей по чертежам: контроль версий","description":"Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии.","datePublished":"2026-08-30","dateModified":"2026-08-30","mainEntityOfPage":"https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html","author":{"@type":"Organization","name":"Редакция IRONEX"},"publisher":{"@id":"https://ironex.tech/#org"},"image":"https://ironex.tech/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover-v2.webp"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://ironex.tech/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://ironex.tech/blog.html"},{"@type":"ListItem","position":3,"name":"Изготовление деталей по чертежам: контроль версий","item":"https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Достаточно ли даты в имени файла?","acceptedAnswer":{"@type":"Answer","text":"Нет. Дата не показывает последовательность версий, если несколько изменений выпущены за один день. Используйте номер ревизии, а дату оставьте дополнительным реквизитом."}},{"@type":"Question","name":"Нужно ли менять ревизию после небольшой правки?","acceptedAnswer":{"@type":"Answer","text":"Да, если правка может изменить трактовку документа, расчёт, технологию или контроль. Новая ревизия снимает вопрос, видел ли исполнитель исправление."}},{"@type":"Question","name":"Что важнее: чертёж или 3D-модель?","acceptedAnswer":{"@type":"Answer","text":"Универсального правила нет. Заказчик должен установить приоритет документов. Часто модель задаёт геометрию, а чертёж — допуски, материал и технические требования, но это нужно зафиксировать при передаче."}},{"@type":"Question","name":"Можно ли заменить чертёж после запуска партии?","acceptedAnswer":{"@type":"Answer","text":"Можно передать новую ревизию, но сначала нужно остановить применение старой и выяснить, какие работы уже выполнены. Затем стороны оценивают возможность продолжения, переделки или нового запуска."}},{"@type":"Question","name":"Что отправить для индивидуального расчёта?","acceptedAnswer":{"@type":"Answer","text":"Пришлите через страницу контактов актуальный чертёж, 3D-модель при наличии, количество деталей, материал, требования к поверхности и контролю. Укажите номер действующей ревизии и перечислите изменения, если документы обновлялись. По этому комплекту можно проверить исходные данные и подготовить расчёт для конкретного заказа."}}]}]}
-  </script>
-  <!-- ═══ Яндекс Метрика 105009501 ═══ -->
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html#article",
+      "headline": "Изготовление деталей по чертежам: контроль версий",
+      "description": "Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии.",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover.webp",
+      "articleSection": "Чертежи и допуски"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/og.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Изготовление деталей по чертежам: контроль версий"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Достаточно ли даты в имени файла?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Дата не показывает последовательность версий, если несколько изменений выпущены за один день. Используйте номер ревизии, а дату оставьте дополнительным реквизитом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли менять ревизию после небольшой правки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если правка может изменить трактовку документа, расчёт, технологию или контроль. Новая ревизия снимает вопрос, видел ли исполнитель исправление."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что важнее: чертёж или 3D-модель?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Универсального правила нет. Заказчик должен установить приоритет документов. Часто модель задаёт геометрию, а чертёж — допуски, материал и технические требования, но это нужно зафиксировать при передаче."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли заменить чертёж после запуска партии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно передать новую ревизию, но сначала нужно остановить применение старой и выяснить, какие работы уже выполнены. Затем стороны оценивают возможность продолжения, переделки или нового запуска."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что отправить для индивидуального расчёта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пришлите через страницу [контактов](/kontakty.html) актуальный чертёж, 3D-модель при наличии, количество деталей, материал, требования к поверхности и контролю. Укажите номер действующей ревизии и перечислите изменения, если документы обновлялись. По этому комплекту можно проверить исходные данные и подготовить расчёт для конкретного заказа."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
   <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -25,307 +158,273 @@
    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
    ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
   </script>
-  <link rel="stylesheet" href="/email-copy.css" />
-  <link rel="stylesheet" href="/redesign.css?v=20260907-4" />
+  <link rel="stylesheet" href="/ironex.css" />
 
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Изготовление деталей по чертежам: контроль версий" />
   <meta property="og:description" content="Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии." />
   <meta property="og:url" content="https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html" />
-  <meta property="og:image" content="https://ironex.tech/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover-v2.webp" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-08-30" />
+  <meta property="article:modified_time" content="2026-08-30" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Изготовление деталей по чертежам: контроль версий" />
   <meta name="twitter:description" content="Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии." />
-  <meta name="twitter:image" content="https://ironex.tech/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover-v2.webp" />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover.webp" />
   <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
 </head>
-<body class="redesign-precision editorial-page article-page">
-<a class="skip-link" href="#main-content">Перейти к содержанию</a>
-<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
 
-<!-- NAV -->
-<nav>
-  <div class="container">
-    <div class="nav-inner">
-      <a href="/index.html" class="nav-logo">IRON<span>EX</span></a>
-      <ul class="nav-links">
-        <li><a href="/uslugi.html">Услуги</a></li>
-        <li><a href="/oborudovanie.html">Оборудование</a></li>
-        <li><a href="/ceny.html">Цены</a></li>
-        <li><a href="/blog.html" class="active" aria-current="page">Блог</a></li>
-        <li><a href="/index.html#cases">Кейсы</a></li>
-        <li><a href="/kontakty.html">Контакты</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="tel:+79934904024" class="nav-phone">+7 993 490-40-24</a>
-        <a href="/kontakty.html" class="btn btn-amber nav-cta">Запросить расчёт</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href="tel:+79934904024">+7 993 490-40-24</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Изготовление деталей по чертежам: контроль версий">Прислать чертёж</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Изготовление деталей по чертежам: контроль версий</span>
+    </div>
+  </nav>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Изготовление деталей по чертежам: контроль версий</h1>
+      <p class="lede">Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии.</p>
+
+      <div class="byline">
+        <span class="byline__who">
+          <span class="avatar"><span class="mono" aria-hidden="true">АР</span></span>
+          <span>
+            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+            <span class="byline__role">Инженер</span>
+          </span>
+        </span>
+        <span class="byline__meta">
+          <span>Чертежи и допуски</span>
+          <time datetime="2026-08-30">Опубликовано 30 августа 2026</time>
+
+          <span>5 мин чтения</span>
+        </span>
       </div>
-      <button class="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
-        <span></span><span></span><span></span>
-      </button>
+
+      <figure class="figure--draft article-cover">
+        <img src="/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover.webp" alt="Изготовление деталей по чертежам: контроль версий" width="1200" height="675" fetchpriority="high" decoding="async" />
+      </figure>
     </div>
-  </div>
-  <div class="mob-menu" id="mobMenu">
-    <a href="/uslugi.html">Услуги</a>
-    <a href="/oborudovanie.html">Оборудование</a>
-    <a href="/ceny.html">Цены</a>
-    <a href="/blog.html" aria-current="page">Блог</a>
-    <a href="/index.html#cases">Кейсы</a>
-    <a href="/kontakty.html">Контакты</a>
-    <a href="/kontakty.html" class="mob-menu-accent">Запросить расчёт</a>
-    <a href="tel:+79934904024">+7 993 490-40-24</a>
-  </div>
-</nav>
-
-<main id="main-content">
-  <!-- BREADCRUMB -->
-  <div class="breadcrumb">
-    <div class="container">
-      <div class="breadcrumb-inner"><a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Изготовление деталей по чертежам: контроль версий</span></div>
-    </div>
-  </div>
-
-  <section class="editorial-article-hero">
-    <div class="container">
-
-
-  <h1>Изготовление деталей по чертежам: контроль версий</h1>
-  <p class="article-lede">Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии.</p>
-  <div class="article-meta"><span>Чертежи и допуски</span><span>Редакция IRONEX</span><time datetime="2026-08-30">Обновлено: 30 августа 2026</time><span>9 минут</span></div>
-</div>
   </section>
 
-  <figure class="article-cover-frame">
-    <img class="article-cover" src="/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover-v2.webp" alt="Инженерная схема к статье «Изготовление деталей по чертежам: контроль версий»" width="1344" height="768" fetchpriority="high" decoding="async" />
-    <figcaption><span>Материал IRONEX</span><span>IRONEX / 2026</span></figcaption>
-  </figure>
+  <div class="container section">
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#pochemu-versii-chertezhey-vazhny">Почему версии чертежей важны</a></li>
+<li><a href="#chto-vklyuchit-v-komplekt-dokumentov">Что включить в комплект документов</a></li>
+<li><a href="#kak-oboznachat-versii">Как обозначать версии</a></li>
+<li><a href="#kak-peredavat-izmeneniya">Как передавать изменения</a></li>
+<li><a href="#chek-list-pered-zakazom-partii">Чек-лист перед заказом партии</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Изготовление деталей по чертежам: контроль версий">Отправить чертёж на почту</a>
+        </div>
+      </aside>
 
+      <article class="prose">
+        <p class="prose__lede">При заказе партии недостаточно отправить исполнителю файл с названием <code>деталь_финал.pdf</code>. Нужно однозначно определить, какой комплект документов действует, чем он отличается от предыдущего и с какого момента его следует применять.</p>
 
-  <div class="reading-progress" aria-hidden="true"><span></span></div>
-  <div class="container article-layout">
-    <aside class="article-toc" aria-label="Содержание статьи">
-
-      <strong>В статье</strong>
-      <a href="#pochemu-versii-vazhny"><span>01</span>Почему версии чертежей важны</a>
-      <a href="#sostav-komplekta"><span>02</span>Что включить в комплект документов</a>
-      <a href="#pravila-versii"><span>03</span>Как обозначать версии</a>
-      <a href="#peredacha-izmenenii"><span>04</span>Как передавать изменения</a>
-      <a href="#chek-list"><span>05</span>Чек-лист перед заказом партии</a>
-      <a href="#chastye-voprosy"><span>06</span>Частые вопросы</a>
-    </aside>
-    <article class="article-content"><p>При заказе партии недостаточно отправить исполнителю файл с названием <code>деталь_финал.pdf</code>. Нужно однозначно определить, какой комплект документов действует, чем он отличается от предыдущего и с какого момента его следует применять.</p>
-<p>Это особенно важно, когда изготовление деталей по чертежам заказчика проходит несколько этапов: предварительный расчёт, согласование технологии, выпуск образца, производство партии и контроль. Если на одном из этапов останется старый файл, стоимость могут рассчитать по одной геометрии, заготовку подготовить по другой, а готовые детали проверить по третьей.</p>
+        <p>Это особенно важно, когда изготовление деталей по чертежам заказчика проходит несколько этапов: предварительный расчёт, согласование технологии, выпуск образца, производство партии и контроль. Если на одном из этапов останется старый файл, стоимость могут рассчитать по одной геометрии, заготовку подготовить по другой, а готовые детали проверить по третьей.</p>
 <p>Ниже — универсальный порядок передачи конструкторской документации. Его можно применять независимо от состава изделия, способа обработки и внутренней системы документооборота заказчика.</p>
-<h2 id="pochemu-versii-vazhny">Почему версии чертежей важны</h2>
+<h2 id="pochemu-versii-chertezhey-vazhny">Почему версии чертежей важны</h2>
 <p>Версия чертежа фиксирует состояние документа на определённый момент. Она помогает ответить на три вопроса:</p>
-<ul>
-<li>какой файл действует сейчас;</li>
-<li>какие параметры изменились;</li>
-<li>какую версию использовали для расчёта и изготовления.</li>
-</ul>
+<ul><li>какой файл действует сейчас;</li><li>какие параметры изменились;</li><li>какую версию использовали для расчёта и изготовления.</li></ul>
 <p>Без этих ответов участники заказа вынуждены сравнивать документы вручную. Названия вроде <code>новый</code>, <code>последний</code>, <code>исправленный</code> и <code>точно_финал</code> не показывают последовательность изменений. После нескольких пересылок невозможно уверенно установить, какой файл новее.</p>
 <p>Риск возрастает, если документы передают по разным каналам. Например, закупщик отправил PDF по электронной почте, конструктор позже переслал исправленную 3D-модель, а ОТК сохранил первую версию чертежа. Каждый участник считает свой файл действующим.</p>
 <p>Последствия зависят от содержания правки:</p>
-<ul>
-<li>изменённый габарит влияет на заготовку и обработку;</li>
-<li>новый допуск может потребовать другого инструмента или дополнительного контроля;</li>
-<li>замена материала меняет технологию и расчёт;</li>
-<li>перенесённое отверстие делает ранее подготовленную программу обработки непригодной;</li>
-<li>новое требование к покрытию влияет на состояние поверхности и размеры после обработки.</li>
-</ul>
+<ul><li>изменённый габарит влияет на заготовку и обработку;</li><li>новый допуск может потребовать другого инструмента или дополнительного контроля;</li><li>замена материала меняет технологию и расчёт;</li><li>перенесённое отверстие делает ранее подготовленную программу обработки непригодной;</li><li>новое требование к покрытию влияет на состояние поверхности и размеры после обработки.</li></ul>
 <p>Поэтому ревизия конструкторской документации должна быть заметна не только внутри файла, но и в перечне переданных документов.</p>
-<h2 id="sostav-komplekta">Что включить в комплект документов</h2>
+<div class="cta ui" id="cta" data-cta="inline">
+          <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+          <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+          <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Изготовление деталей по чертежам: контроль версий">Отправить чертёж на почту</a>
+        </div>
+<h2 id="chto-vklyuchit-v-komplekt-dokumentov">Что включить в комплект документов</h2>
 <p>Для расчёта и запуска партии лучше передавать единый комплект. Его состав зависит от детали, но каждый файл должен иметь понятное назначение.</p>
-<div class="article-table-wrap"><table><thead><tr>
-<th>Документ</th>
-<th>Что в нём проверить</th>
-</tr></thead><tbody>
-<tr>
-<td>Чертёж в PDF</td>
-<td>Размеры, допуски, материал, шероховатость, покрытия, технические требования</td>
-</tr>
-<tr>
-<td>3D-модель</td>
-<td>Геометрию, единицы измерения, соответствие чертежу</td>
-</tr>
-<tr>
-<td>Спецификация</td>
-<td>Обозначения, количество деталей, материал и применяемость</td>
-</tr>
-<tr>
-<td>Требования к контролю</td>
-<td>Контролируемые параметры и документы по результатам проверки</td>
-</tr>
-<tr>
-<td>Перечень файлов</td>
-<td>Название, обозначение детали, ревизию и дату каждого документа</td>
-</tr>
-</tbody></table></div>
+<table><thead><tr><th>Документ</th><th>Что в нём проверить</th></tr></thead><tbody><tr><td>Чертёж в PDF</td><td>Размеры, допуски, материал, шероховатость, покрытия, технические требования</td></tr><tr><td>3D-модель</td><td>Геометрию, единицы измерения, соответствие чертежу</td></tr><tr><td>Спецификация</td><td>Обозначения, количество деталей, материал и применяемость</td></tr><tr><td>Требования к контролю</td><td>Контролируемые параметры и документы по результатам проверки</td></tr><tr><td>Перечень файлов</td><td>Название, обозначение детали, ревизию и дату каждого документа</td></tr></tbody></table>
 <p>Для <a href="/tokarnaya.html">токарной обработки</a> критичны посадочные диаметры, резьбы, биения и требования к базам. Для <a href="/frezerovka.html">фрезерной обработки</a> — расположение отверстий, взаимное положение поверхностей, глубина карманов и доступность зон обработки. Общий перечень доступных способов изготовления приведён на странице <a href="/uslugi.html">услуг</a>.</p>
 <h3>Если чертёж и 3D-модель расходятся</h3>
 <p>Приоритет одного документа над другим нельзя угадывать. Заказчику следует прямо указать, какой источник определяет геометрию и технические требования.</p>
 <p>Например:</p>
-<blockquote>Геометрия — по модели <code>Корпус_A-03.step</code>. Допуски, шероховатость, материал и покрытие — по чертежу <code>АБВГ.745612.003_rev03.pdf</code>.</blockquote>
+<blockquote><p>Геометрия — по модели <code>Корпус_A-03.step</code>. Допуски, шероховатость, материал и покрытие — по чертежу <code>АБВГ.745612.003_rev03.pdf</code>.</p></blockquote>
 <p>Если модель не обновляли после изменения чертежа, это также нужно отметить. Такая пометка безопаснее, чем молчаливое предположение, что файлы совпадают.</p>
-<h2 id="pravila-versii">Как обозначать версии</h2>
+<h2 id="kak-oboznachat-versii">Как обозначать версии</h2>
 <p>Система обозначений может быть любой, если она последовательна и понятна всем участникам. Подойдут числовые ревизии <code>01</code>, <code>02</code>, <code>03</code> или буквенные индексы <code>A</code>, <code>B</code>, <code>C</code>. Важно не смешивать варианты внутри одного заказа.</p>
 <p>Для каждого документа полезно указывать:</p>
-<ul>
-<li>обозначение детали;</li>
-<li>номер или индекс ревизии;</li>
-<li>дату выпуска версии;</li>
-<li>статус документа: для расчёта, на согласование или в производство;</li>
-<li>краткое описание изменения.</li>
-</ul>
+<ul><li>обозначение детали;</li><li>номер или индекс ревизии;</li><li>дату выпуска версии;</li><li>статус документа: для расчёта, на согласование или в производство;</li><li>краткое описание изменения.</li></ul>
 <p>Понятное имя файла выглядит так:</p>
 <p><code>ABVG.745612.003_rev03_2026-08-20.pdf</code></p>
 <p>По имени видно, к какой детали относится документ и какая перед нами версия. Дата помогает ориентироваться, но не заменяет номер ревизии: два изменения могут появиться в один день.</p>
 <h3>Что считать новой ревизией</h3>
 <p>Новую ревизию стоит выпускать при любом изменении, которое может повлиять на расчёт, технологию, изготовление или контроль. К таким изменениям относятся:</p>
-<ul>
-<li>геометрия детали;</li>
-<li>размеры и допуски;</li>
-<li>материал или состояние поставки;</li>
-<li>шероховатость;</li>
-<li>термообработка и покрытие;</li>
-<li>требования к маркировке;</li>
-<li>программа и объём контроля;</li>
-<li>количество, если от него зависит состав заказа или расчёт партии.</li>
-</ul>
+<ul><li>геометрия детали;</li><li>размеры и допуски;</li><li>материал или состояние поставки;</li><li>шероховатость;</li><li>термообработка и покрытие;</li><li>требования к маркировке;</li><li>программа и объём контроля;</li><li>количество, если от него зависит состав заказа или расчёт партии.</li></ul>
 <p>Исправление опечатки тоже лучше обозначить новой версией, если старая формулировка допускает другое толкование. Участникам заказа не придётся решать, существенна правка или нет.</p>
-<h2 id="peredacha-izmenenii">Как передавать изменения</h2>
+<h2 id="kak-peredavat-izmeneniya">Как передавать изменения</h2>
 <p>Новый файл нельзя просто дослать вслед за старым. Вместе с ним нужно отозвать предыдущую версию и получить подтверждение, что исполнитель принял замену.</p>
 <p>Безопасная передача состоит из семи шагов:</p>
-<ol>
-<li>Присвойте документу новый номер ревизии.</li>
-<li>Обновите обозначение версии внутри чертежа и в имени файла.</li>
-<li>Составьте краткий перечень изменений.</li>
-<li>Передайте полный актуальный комплект, а не только исправленный лист.</li>
-<li>Укажите, какие прежние файлы утратили силу.</li>
-<li>Запросите подтверждение полученной ревизии.</li>
-<li>Отдельно согласуйте влияние правок на расчёт и уже начатые работы.</li>
-</ol>
+<ol><li>Присвойте документу новый номер ревизии.</li><li>Обновите обозначение версии внутри чертежа и в имени файла.</li><li>Составьте краткий перечень изменений.</li><li>Передайте полный актуальный комплект, а не только исправленный лист.</li><li>Укажите, какие прежние файлы утратили силу.</li><li>Запросите подтверждение полученной ревизии.</li><li>Отдельно согласуйте влияние правок на расчёт и уже начатые работы.</li></ol>
 <p>Сообщение может выглядеть так:</p>
-<blockquote>Для детали АБВГ.745612.003 действует ревизия 03 от 20.08.2026. Ревизию 02 не использовать. Изменены диаметр отверстия, допуск плоскостности и материал. Просим подтвердить получение комплекта и сообщить, влияет ли замена на расчёт или текущий этап работ.</blockquote>
+<blockquote><p>Для детали АБВГ.745612.003 действует ревизия 03 от 20.08.2026. Ревизию 02 не использовать. Изменены диаметр отверстия, допуск плоскостности и материал. Просим подтвердить получение комплекта и сообщить, влияет ли замена на расчёт или текущий этап работ.</p></blockquote>
 <h3>Если производство уже началось</h3>
 <p>Сначала нужно определить, какие операции успели выполнить. После этого стороны могут оценить применимость новой версии: допускает ли она использование подготовленных заготовок, нужна ли переналадка и можно ли продолжить работу без переделки.</p>
 <p>Не стоит исходить из того, что небольшая правка не влияет на производство. Изменение одной фаски может быть несущественным на раннем этапе, но критичным после завершения обработки соседней поверхности.</p>
 <p>Если новая ревизия появилась после согласования цены, расчёт также нужно проверить заново. На стоимость могут влиять материал, допуски, число установов, контроль и дополнительные операции. Общие факторы расчёта собраны на странице <a href="/ceny.html">о ценах</a>.</p>
-<h2 id="chek-list">Чек-лист перед заказом партии</h2>
+<h2 id="chek-list-pered-zakazom-partii">Чек-лист перед заказом партии</h2>
 <p>Перед отправкой документов проверьте комплект по списку.</p>
 <h3>Обозначения</h3>
-<ul>
-<li>У каждой детали есть уникальное обозначение.</li>
-<li>На чертеже указан номер ревизии.</li>
-<li>Номер ревизии совпадает с именем файла.</li>
-<li>В перечне документов указана та же версия.</li>
-<li>В названиях нет слов <code>финал</code>, <code>новый</code> или <code>последний</code> без номера ревизии.</li>
-</ul>
+<ul><li>У каждой детали есть уникальное обозначение.</li><li>На чертеже указан номер ревизии.</li><li>Номер ревизии совпадает с именем файла.</li><li>В перечне документов указана та же версия.</li><li>В названиях нет слов <code>финал</code>, <code>новый</code> или <code>последний</code> без номера ревизии.</li></ul>
 <h3>Содержание</h3>
-<ul>
-<li>Материал указан однозначно.</li>
-<li>Размеры и допуски читаются.</li>
-<li>Технические требования не противоречат основной надписи.</li>
-<li>Чертёж и 3D-модель согласованы либо установлен приоритет документов.</li>
-<li>Указаны покрытия, термообработка и требования к поверхности, если они нужны.</li>
-<li>Количество деталей соответствует запросу.</li>
-</ul>
+<ul><li>Материал указан однозначно.</li><li>Размеры и допуски читаются.</li><li>Технические требования не противоречат основной надписи.</li><li>Чертёж и 3D-модель согласованы либо установлен приоритет документов.</li><li>Указаны покрытия, термообработка и требования к поверхности, если они нужны.</li><li>Количество деталей соответствует запросу.</li></ul>
 <h3>Передача</h3>
-<ul>
-<li>Исполнителю отправлен полный актуальный комплект.</li>
-<li>Старые версии явно отозваны.</li>
-<li>В сообщении перечислены изменённые параметры.</li>
-<li>Получатель подтвердил номер принятой ревизии.</li>
-<li>Зафиксировано, по какой версии выполняют расчёт.</li>
-<li>Перед запуском партии подтверждена производственная версия.</li>
-<li>Поздние изменения отдельно проверены на влияние на стоимость, срок и выполненные операции.</li>
-</ul>
+<ul><li>Исполнителю отправлен полный актуальный комплект.</li><li>Старые версии явно отозваны.</li><li>В сообщении перечислены изменённые параметры.</li><li>Получатель подтвердил номер принятой ревизии.</li><li>Зафиксировано, по какой версии выполняют расчёт.</li><li>Перед запуском партии подтверждена производственная версия.</li><li>Поздние изменения отдельно проверены на влияние на стоимость, срок и выполненные операции.</li></ul>
 <p>Главный принцип прост: в каждый момент у заказа должна быть одна явно обозначенная действующая ревизия. При этом старые документы можно хранить для истории, но их статус должен исключать случайное применение.</p>
-<h2 id="chastye-voprosy">Частые вопросы</h2>
-<h3>Достаточно ли даты в имени файла?</h3>
-<p>Нет. Дата не показывает последовательность версий, если несколько изменений выпущены за один день. Используйте номер ревизии, а дату оставьте дополнительным реквизитом.</p>
-<h3>Нужно ли менять ревизию после небольшой правки?</h3>
-<p>Да, если правка может изменить трактовку документа, расчёт, технологию или контроль. Новая ревизия снимает вопрос, видел ли исполнитель исправление.</p>
-<h3>Что важнее: чертёж или 3D-модель?</h3>
-<p>Универсального правила нет. Заказчик должен установить приоритет документов. Часто модель задаёт геометрию, а чертёж — допуски, материал и технические требования, но это нужно зафиксировать при передаче.</p>
-<h3>Можно ли заменить чертёж после запуска партии?</h3>
-<p>Можно передать новую ревизию, но сначала нужно остановить применение старой и выяснить, какие работы уже выполнены. Затем стороны оценивают возможность продолжения, переделки или нового запуска.</p>
-<h3>Что отправить для индивидуального расчёта?</h3>
-<p>Пришлите через страницу <a href="/kontakty.html">контактов</a> актуальный чертёж, 3D-модель при наличии, количество деталей, материал, требования к поверхности и контролю. Укажите номер действующей ревизии и перечислите изменения, если документы обновлялись. По этому комплекту можно проверить исходные данные и подготовить расчёт для конкретного заказа.</p></article>
-  </div>
-  <section class="article-author" aria-label="Об авторе">
-    <div class="container article-author-inner"><strong>Редакция IRONEX</strong><span>Практические материалы о металлообработке</span></div>
-  </section>
-  <section class="article-related" aria-labelledby="related-title">
-    <div class="container">
-      <h2 id="related-title">Материалы по теме</h2>
-      <div class="article-related-grid">
-        <a class="article-related-card" href="/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu.html"><strong>Корпуса на заказ: как подготовить чертёж и модель</strong><span>Семь пунктов для подготовки модели, баз, резьб, покрытия и контроля — чтобы подрядчик точнее рассчитал изготовление корпуса.</span></a>
-        <a class="article-related-card" href="/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku.html"><strong>Сварка на заказ: документация на сварную сборку</strong><span>Сварка на заказ без спорных швов: 7 пунктов документации помогут согласовать сборочные базы, контроль геометрии и финишную обработку изделия.</span></a>
-        <a class="article-related-card" href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html"><strong>Гибка металла на заказ: что приложить к заявке</strong><span>Гибка металла на заказ: 7 данных для расчёта без лишних уточнений — развёртка, материал, толщина, радиусы, количество, допуски и требования к поверхности.</span></a>
-      </div>
+
+        <h2 id="faq">Частые вопросы</h2>
+        <div class="faq">
+          <details open>
+            <summary>Достаточно ли даты в имени файла?</summary>
+            <div class="faq__a"><p>Нет. Дата не показывает последовательность версий, если несколько изменений выпущены за один день. Используйте номер ревизии, а дату оставьте дополнительным реквизитом.</p></div>
+          </details>
+<details>
+            <summary>Нужно ли менять ревизию после небольшой правки?</summary>
+            <div class="faq__a"><p>Да, если правка может изменить трактовку документа, расчёт, технологию или контроль. Новая ревизия снимает вопрос, видел ли исполнитель исправление.</p></div>
+          </details>
+<details>
+            <summary>Что важнее: чертёж или 3D-модель?</summary>
+            <div class="faq__a"><p>Универсального правила нет. Заказчик должен установить приоритет документов. Часто модель задаёт геометрию, а чертёж — допуски, материал и технические требования, но это нужно зафиксировать при передаче.</p></div>
+          </details>
+<details>
+            <summary>Можно ли заменить чертёж после запуска партии?</summary>
+            <div class="faq__a"><p>Можно передать новую ревизию, но сначала нужно остановить применение старой и выяснить, какие работы уже выполнены. Затем стороны оценивают возможность продолжения, переделки или нового запуска.</p></div>
+          </details>
+<details>
+            <summary>Что отправить для индивидуального расчёта?</summary>
+            <div class="faq__a"><p>Пришлите через страницу <a href="/kontakty.html">контактов</a> актуальный чертёж, 3D-модель при наличии, количество деталей, материал, требования к поверхности и контролю. Укажите номер действующей ревизии и перечислите изменения, если документы обновлялись. По этому комплекту можно проверить исходные данные и подготовить расчёт для конкретного заказа.</p></div>
+          </details>
+        </div>
+
+      </article>
     </div>
-  </section>
-  <section class="article-final-cta" aria-labelledby="article-cta-title">
-    <div class="container article-final-cta-inner">
-      <div>
-        <h2 id="article-cta-title">Нужен расчёт деталей по вашим чертежам?</h2>
-        <p>Пришлите документацию и количество. Технолог проверит задачу и вернётся с вопросами, стоимостью и сроком.</p>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/mozhno-li-zakazat-detal-bez-3d-modeli.html">
+            <img src="/images/blog/mozhno-li-zakazat-detal-bez-3d-modeli-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Изготовление деталей по чертежам без 3D-модели</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii.html">
+            <img src="/images/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Мелкосерийное производство деталей: приёмка образца</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html">
+            <img src="/images/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Производство металлических деталей: выбор аналога</span>
+            </span>
+          </a>
+        </article>
       </div>
-      <a class="btn btn-amber" href="mailto:info@ironex.tech">Отправить чертёж</a>
     </div>
   </section>
 
-  <button class="back-to-top" type="button" aria-label="Вернуться к началу страницы">↑</button>
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Изготовление деталей по чертежам: контроль версий">Отправить чертёж на почту</a>
+      </p>
+    </div>
+  </section>
 </main>
 
-<!-- FOOTER -->
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
+    <div class="site-footer__top">
       <div>
-        <div class="f-logo">IRON<span>EX</span></div>
-        <p class="f-desc">Изготовление деталей по чертежам полного цикла. 47 станков ЧПУ, КИМ-контроль каждой партии.</p>
-        <div class="f-contacts">
-          <a href="tel:+79934904024">+7 993 490-40-24</a>
-          <a href="mailto:info@ironex.tech">info@ironex.tech</a>
-          <span>Пн–Пт, 09:00–19:00 (МСК)</span>
-        </div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Услуги</p>
+      <div>
+        <h3>Услуги</h3>
         <ul>
           <li><a href="/uslugi.html">Все услуги</a></li>
-          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
           <li><a href="/tokarnaya.html">Токарная обработка</a></li>
-          <li><a href="/uslugi.html">Лазерная резка</a></li>
-          <li><a href="/uslugi.html">Сварка и сборка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Компания</p>
+      <div>
+        <h3>Компания</h3>
         <ul>
-          <li><a href="/index.html#equipment">Оборудование</a></li>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
           <li><a href="/ceny.html">Цены</a></li>
           <li><a href="/blog.html">Блог</a></li>
-          <li><a href="/index.html#cases">Кейсы</a></li>
-          <li><a href="/index.html#cta">Контакты</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
         </ul>
       </div>
-      <div class="f-col">
-        <p class="footer-heading">Связаться</p>
+      <div>
+        <h3>Связаться</h3>
         <ul>
-          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
           <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
-          <li><a href="https://t.me/+79819470402">Telegram</a></li>
-          <li><a href="https://wa.me/79819470402">WhatsApp</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 IRONEX. Контрактное производство деталей.</span>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
       <span>ООО «Айронекс» · ИНН 7804719856</span>
     </div>
   </div>
