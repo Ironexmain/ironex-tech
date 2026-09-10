@@ -198,7 +198,7 @@ p { margin: 0 0 18px; }
 }
 .figure--draft figcaption {
   display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between;
-  margin-top: 10px; color: var(--muted); font-size: 13px;
+  margin-top: 12px; color: var(--muted); font-size: 13px;
 }
 
 /* ── Таблица параметров ───────────────────────────────────────────────────── */
@@ -517,3 +517,33 @@ p { margin: 0 0 18px; }
 @media (max-width: 560px) {
   .steps li { grid-template-columns: 32px 1fr; gap: 12px; }
 }
+
+/* ═══ Вертикальный ритм: что за чем ═════════════════════════════════════════
+   Заголовки в системе идут с margin: 0 — иначе они схлопываются по-разному в
+   разных контекстах. Плата за это: следующий за заголовком блок надо отбивать
+   явно, иначе подводка липнет к заголовку вплотную (замер 10.09: зазор 0 px
+   на всех коммерческих страницах). */
+
+/* Метка над заголовком — пара, но не сросшаяся: 6 px читались как опечатка */
+.label + h1, .label + h2, .label + h3,
+.rule-label + h1, .rule-label + h2, .rule-label + h3 { margin-top: 12px; }
+
+h1 + .lede, h2 + .lede, h3 + .lede,
+h1 + p, h2 + p, h3 + p,
+h1 + ul, h2 + ul, h3 + ul,
+h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
+
+/* Внутри материала свой ритм задаёт .prose — там отступ уже есть в заголовке */
+.prose > h2 + *, .prose > h3 + * { margin-top: 0; }
+
+/* Блок и следующий за ним блок внутри одной секции: воздуха между ними должно
+   хватать, чтобы читались как разные вещи, а не как одна длинная плашка */
+.container > * + .spec-table,
+.container > * + .panel,
+.container > * + .mat-grid,
+.container > * + .faq,
+.container > * + .steps,
+.container > * + .figure--draft { margin-top: 28px; }
+
+.panel > * + *, .callout > * + *, .rail__card > * + * { margin-top: 12px; }
+.statement h2 + p { margin-top: 16px; }
