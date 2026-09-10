@@ -2402,15 +2402,6 @@ body.redesign-precision {
   counter-reset: article-section;
 }
 
-.redesign-precision .article-content > p:first-child {
-  margin: 0 0 20px;
-  color: var(--muted);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-
 .redesign-precision .article-content .b-lede-p {
   margin: 0 0 30px;
   color: var(--text);

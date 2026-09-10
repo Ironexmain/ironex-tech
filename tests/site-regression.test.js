@@ -17,7 +17,9 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const ORIGIN = 'https://ironex.tech';
-const EXPECTED_SITEMAP_URLS = 36;
+// Число страниц растёт с каждой публикацией, поэтому жёсткой цифры здесь нет:
+// гейт держит согласованность (sitemap == индексируемые canonical), а не константу.
+const MIN_SITEMAP_URLS = 30;
 const CONTENT_INTEGRATIONS = [
   { name: 'analytics-events.js', pathname: '/analytics-events.js' },
   { name: 'email-copy.js', pathname: '/email-copy.js' },
@@ -201,8 +203,8 @@ const uniqueSitemapUrls = new Set(sitemapUrls);
 
 expect(
   'sitemap/canonical',
-  sitemapUrls.length === EXPECTED_SITEMAP_URLS,
-  `sitemap.xml must contain ${EXPECTED_SITEMAP_URLS} URLs, found ${sitemapUrls.length}`
+  sitemapUrls.length >= MIN_SITEMAP_URLS,
+  `sitemap.xml must contain at least ${MIN_SITEMAP_URLS} URLs, found ${sitemapUrls.length}`
 );
 expect(
   'sitemap/canonical',
@@ -240,8 +242,8 @@ const indexableCanonicalRecords = canonicalRecords.filter(record => !record.noin
 
 expect(
   'sitemap/canonical',
-  indexableCanonicalRecords.length === EXPECTED_SITEMAP_URLS,
-  `repository must contain ${EXPECTED_SITEMAP_URLS} indexable pages with one canonical, found ${indexableCanonicalRecords.length}`
+  indexableCanonicalRecords.length === sitemapUrls.length,
+  `sitemap.xml has ${sitemapUrls.length} URLs, but repository has ${indexableCanonicalRecords.length} indexable pages with one canonical`
 );
 
 const sitemapPages = [];
