@@ -303,7 +303,7 @@ p { margin: 0 0 18px; }
   .rail__card { margin-top: 20px; }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 940px) {
   :root { --gutter: 16px; }
   .burger { display: block; }
   .site-header__inner { gap: 16px; }
@@ -564,7 +564,7 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
 .site-header .nav a:hover, .site-header .nav a[aria-current] { color: var(--on-dark); }
 .site-header__phone { color: var(--on-dark); }
 .burger span { background: var(--on-dark); }
-@media (max-width: 860px) {
+@media (max-width: 940px) {
   .site-header.is-open .nav { background: var(--coal); border-bottom-color: rgba(255,255,255,.12); }
   .site-header.is-open .nav a { border-bottom-color: rgba(255,255,255,.10); color: var(--on-dark); }
   .site-header.is-open .nav::after { color: var(--on-dark); }
@@ -628,12 +628,8 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
 .clockbar .is-open { color: #7FE3A1; }
 .clockbar .is-closed { color: var(--on-dark-2); }
 
-/* ── Срезанный угол: приём Hadrian, у нас метит рамку целевого действия ───── */
-.notch {
-  --n: 18px;
-  border: 1px solid rgba(255,255,255,.28);
-  clip-path: polygon(0 0, calc(100% - var(--n)) 0, 100% var(--n), 100% 100%, var(--n) 100%, 0 calc(100% - var(--n)));
-}
+/* Срезанный угол переехал в .chamfer (секция v3): срез сменил направление и
+   стал заливкой вместо рамки. */
 
 /* ── Первый экран с видео ─────────────────────────────────────────────────── */
 .hero--video { position: relative; overflow: hidden; background: var(--coal); }
@@ -650,9 +646,6 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
   font-size: clamp(40px, 7vw, 92px); font-weight: 800; line-height: .98; letter-spacing: -.045em;
 }
 .hero--video p { max-width: 48ch; margin: 0 0 30px; color: #C6D0D1; font-size: clamp(16px, 1.7vw, 20px); }
-.hero__actions { display: inline-flex; flex-wrap: wrap; gap: 10px; padding: 12px; }
-.hero__actions .btn--ghost { color: var(--on-dark); border-color: rgba(255,255,255,.34); }
-.hero__actions .btn--ghost:hover { border-color: var(--on-dark); }
 
 /* ── Полоса цифр под первым экраном ───────────────────────────────────────── */
 .figures { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--line); }
@@ -696,7 +689,6 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
 }
 
 @media (max-width: 900px) {
-  .clockbar { display: none; }
   .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .figures > div { padding: 18px; border-top: 1px solid var(--line); }
   .figures > div:nth-child(odd) { border-left: 0; padding-left: 0; }
@@ -775,3 +767,279 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
 .howto b { color: var(--signal-ink); }
 .label--signal { color: var(--signal-ink); }
 .crumbs span[aria-hidden] { color: var(--muted-on-surface); }
+
+/* ═══ v3 — перенос макета Lovable на статические страницы (11.09) ════════════
+   Что переносится: форма (срезанный угол стал заливкой, а не рамкой), крупная
+   и жирная шкала заголовков коммерческих страниц, лёгкая подводка, таблицы без
+   внутренних линеек, списки самопроверки на хайрлайнах вместо маркеров,
+   закрывающий блок с приложением к письму и форматами.
+
+   Палитру макета не переносим: OKLCH-токены Lovable после перевода в sRGB дают
+   ровно то, что уже стоит в :root (earth #1A1F1F ≈ --coal, paper-2 #F4F4F8 ≈
+   --paper-2, line #E3E3E7 ≈ --line, signal #F9586F ≈ --signal). Разошёлся
+   только earth-2 — он ниже.
+
+   Разделение правок. Классы, которых в блоге нет (.spec-table, .svc, .howto,
+   .cols3, .figures, .marquee, .hero--video, .hero__actions, .hero__panel,
+   .mobile-bar), правятся глобально — блог их не увидит. Классы, общие с блогом
+   (h2, .lede, .statement, .btn--on-dark, .hero--page), заперты под .v3: блог
+   принят заказчиком, и его вёрстка не должна поехать из-за коммерческих
+   страниц. Шапка и подвал не трогаются вовсе — они общие со всем сайтом.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --coal-2: #252C2C;   /* earth-2 макета; было #1D2426 */
+  --chamfer: 17px;     /* размер среза угла — единственный в системе */
+}
+
+/* Тёмные поверхности объявляют свои токены текста. .hero раньше в списке не
+   было — поэтому контурная кнопка на первом экране услуг держалась инлайновым
+   color:#fff, то есть ровно тем, что правило запрещает. */
+.hero, .hero__inner, .hero__actions, .hero__panel, .mobile-bar {
+  --ink-on-surface: var(--on-dark);
+  --muted-on-surface: var(--on-dark-2);
+  --line-on-surface: rgba(255, 255, 255, .38);
+}
+
+/* Срез угла — подпись системы. Верхний левый и нижний правый: заливка, без
+   рамки. Приём метит рамку целевого действия и панель характеристик, больше
+   нигде не появляется. */
+.chamfer {
+  clip-path: polygon(
+    var(--chamfer) 0, 100% 0,
+    100% calc(100% - var(--chamfer)), calc(100% - var(--chamfer)) 100%,
+    0 100%, 0 var(--chamfer)
+  );
+}
+
+/* ── Первый экран главной ─────────────────────────────────────────────────── */
+
+.hero--video h1 { font-size: clamp(40px, 6.2vw, 92px); line-height: 1.01; letter-spacing: -.045em; }
+.hero--video p {
+  max-width: 58ch; color: var(--muted-on-surface);
+  font-size: clamp(17px, 1.3vw, 20px); font-weight: 400; line-height: 1.55;
+}
+
+/* Рамка вокруг кнопок стала панелью: внутрь помещается строка «что приложить»,
+   без которой переход по mailto не превращается в письмо. */
+.hero__actions {
+  display: inline-block; max-width: 100%; padding: clamp(20px, 3vw, 32px);
+  background: var(--coal-2); border: 0;
+}
+.hero__buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero__actions .cta-note { margin-top: 20px; }
+.hero__actions .btn--ghost { color: var(--ink-on-surface); border-color: var(--line-on-surface); }
+.hero__actions .btn--ghost:hover { border-color: var(--ink-on-surface); }
+/* В макете пилюля закреплена за главной кнопкой везде, включая тёмный верх */
+.v3 .hero .btn--primary { border-radius: var(--r-pill); }
+
+/* ── Полоса цифр ──────────────────────────────────────────────────────────── */
+
+.figures { border-bottom: 1px solid var(--line); }
+.figures dt { font-size: 13px; font-weight: 500; color: var(--ink-2); }
+.figures dd { font-size: clamp(22px, 2.2vw, 26px); }
+
+/* ── Бегущая строка сортамента ────────────────────────────────────────────── */
+
+.marquee {
+  display: flex; align-items: center; height: 50px; padding: 0;
+  background: var(--coal-2); border-block: 0;
+}
+.marquee__track span { padding: 0 16px; font-size: 14px; font-weight: 500; letter-spacing: 0; }
+.marquee__track span::after { margin-left: 16px; color: var(--signal); }
+
+/* ── Три колонки самопроверки ─────────────────────────────────────────────── */
+/* Колонка объявляет себя жирной верхней линейкой, пункты разделены хайрлайнами.
+   Маркеры-квадратики убраны: линейка уже показывает, где кончается пункт. */
+
+.cols3 { gap: clamp(24px, 3vw, 40px); margin-top: 36px; }
+.cols3 > div { padding: 20px 0 0; border-top: 2px solid var(--ink); border-left: 0; }
+.cols3 > div:first-child { padding-left: 0; }
+.cols3 h3 { margin-bottom: 16px; font-size: 19px; }
+.cols3 ul { font-size: 15px; line-height: 1.5; }
+.cols3 li { padding: 0 0 12px; margin: 0 0 12px; border-bottom: 1px solid var(--line); }
+.cols3 li:last-child { margin-bottom: 0; }
+.cols3 li::before { content: none; }
+.cols3 li { padding-left: 0; }
+
+@media (max-width: 900px) {
+  .cols3 > div { padding: 20px 0 0; border-top: 2px solid var(--ink); }
+  .cols3 > div:first-child { padding-top: 20px; border-top: 2px solid var(--ink); }
+}
+
+/* ── Отрасли: сетка подписей, а не список с маркерами ─────────────────────── */
+
+.tags-grid {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 32px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line);
+}
+.tags-grid li {
+  padding: 18px 16px 18px 0; border-bottom: 1px solid var(--line);
+  font-size: 16px; font-weight: 600;
+}
+@media (max-width: 700px) { .tags-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ── Строка услуги ────────────────────────────────────────────────────────── */
+
+.svc { border-bottom: 1px solid var(--line); }
+.svc > article { padding: 28px 0; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) auto; gap: 32px; }
+.svc h3 { font-size: 20px; line-height: 1.3; }
+.svc__spec { line-height: 1.6; }
+.svc__rate { font-size: 20px; font-weight: 800; }
+.svc__rate small { margin-top: 4px; }
+
+/* ── Три шага ─────────────────────────────────────────────────────────────── */
+
+.howto > div { padding: 28px; }
+.howto b { letter-spacing: .08em; }
+.howto h3 { margin-bottom: 12px; }
+.howto p { font-size: 16px; line-height: 1.7; }
+
+/* ── Таблица параметров ───────────────────────────────────────────────────── */
+/* Из макета: заголовок заливкой, строки без внутренних линеек, чередование
+   вместо них, первая колонка — единственная тёмная. Линейка в каждой строке и
+   зебра одновременно дают рябь, поэтому линейка убрана. */
+
+.spec-table th { padding: 16px 20px; font-size: 12px; }
+.spec-table td {
+  padding: 16px 20px; border-top: 0;
+  color: var(--ink-2); font-size: 15px; line-height: 1.5;
+}
+.spec-table td:first-child { color: var(--ink); font-weight: 600; }
+.spec-table .num { color: var(--ink); }
+.spec-table caption {
+  padding: 14px 20px 16px; border-top: 1px solid var(--line);
+  background: var(--paper); color: var(--ink-2); font-size: 14px; line-height: 1.5;
+}
+/* Таблица от трёх колонок не сжимается в лапшу — прокручивается внутри рамки.
+   Двухколоночные таблицы влезают и на 360 px, им ограничение не нужно. */
+.spec-table table:has(thead th:nth-child(3)) { min-width: 640px; }
+
+/* ── Липкая панель действия на мобильном ──────────────────────────────────── */
+
+@media (max-width: 560px) {
+  .mobile-bar { background: var(--coal); border-top: 1px solid rgba(255, 255, 255, .12); }
+}
+
+/* ═══ Правки классов, общих с блогом: только внутри .v3 ══════════════════════ */
+
+/* Заголовок секции коммерческой страницы крупнее и жирнее заголовка в статье:
+   у них разные роли — витрина и чтение. */
+.v3 h2 { font-size: clamp(28px, 3.4vw, 44px); font-weight: 800; line-height: 1.1; letter-spacing: -.03em; }
+
+/* Подводка легче: 500 при таком кегле спорил с заголовком за внимание */
+.v3 .lede { max-width: 58ch; font-size: clamp(17px, 1.3vw, 20px); font-weight: 400; }
+
+/* Тёмный первый экран внутренней страницы */
+.v3 .hero--page h1 { font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -.04em; }
+.v3 .hero__panel {
+  padding: clamp(22px, 3vw, 32px); background: var(--coal-2); border: 0;
+  clip-path: polygon(
+    var(--chamfer) 0, 100% 0,
+    100% calc(100% - var(--chamfer)), calc(100% - var(--chamfer)) 100%,
+    0 100%, 0 var(--chamfer)
+  );
+}
+.v3 .hero__panel div { padding: 16px 0; border-top-color: rgba(255, 255, 255, .2); }
+.v3 .hero__panel dt { font-size: 14px; }
+
+/* Закрывающий блок: белая кнопка с чернильным текстом, как в макете */
+.v3 .statement h2 { max-width: 20ch; }
+.v3 .btn--on-dark { color: var(--ink); }
+.v3 .btn--on-dark:hover { background: var(--paper-2); }
+
+/* Подпись «что приложить» берёт цвет от поверхности, а не инлайновым стилем */
+.cta-note { color: var(--muted-on-surface); }
+
+/* ── Полная заявка: шесть пунктов в две колонки на хайрлайнах ─────────────── */
+
+.checklist {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 clamp(24px, 4vw, 48px); margin: 32px 0 0; padding: 0; list-style: none;
+  border-top: 1px solid var(--line);
+}
+.checklist li {
+  padding: 16px 0; border-bottom: 1px solid var(--line);
+  color: var(--ink-2); font-size: 16px; line-height: 1.5;
+}
+@media (max-width: 700px) { .checklist { grid-template-columns: minmax(0, 1fr); } }
+
+/* ── Шапка: переполнение контейнера ───────────────────────────────────────── */
+/* Замер 11.09 на нетронутой ceny.html: строка шапки шире своих 1200 px на 80 px,
+   и страница получала горизонтальную прокрутку от 861 до ~1350 px ширины окна
+   (на 1024 — 257 px). Баг живой и общий для всего сайта, блог включительно.
+   Лечение взято из макета: живая строка показывается только с xl (1280 px), а
+   сама строка и промежутки ужаты, чтобы на 1280 хватало места без прокрутки. */
+.site-header__inner { gap: 24px; }
+.nav { gap: 20px; }
+.clockbar { margin-left: 16px; }
+.clockbar span { padding: 5px 9px; letter-spacing: 0; }
+@media (max-width: 1279px) { .clockbar { display: none; } }
+
+/* ── Первый экран страницы услуг ──────────────────────────────────────────── */
+/* Плашка внутри тёмного верха была темнее фона ровно настолько, чтобы читаться
+   отдельным прямоугольником, к левому краю которого текст прилипал вплотную
+   (замер 11.09: край плашки 144 px, край строки 144 px). В макете этот экран —
+   одна сплошная тёмная секция, так и делаем: плашка снимается, отступ у текста
+   задаёт контейнер. */
+.hero__inner { background: transparent; }
+.hero__buttons + .cta-note { margin-top: 18px; }
+
+/* ── Порядок правил: поздние правила выше медиазапросов, заданных раньше ──── */
+/* Секция v3 лежит в конце файла, поэтому её правила перебивают одноимённые
+   селекторы из медиазапросов выше — при равной специфичности побеждает
+   порядок, а не наличие @media. Замер 11.09: строка услуги на 390 px снова
+   рисовалась в три колонки. Поэтому мобильные значения повторяются здесь. */
+@media (max-width: 900px) {
+  .svc > article { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+}
+@media (max-width: 940px) {
+  .site-header__inner { gap: 16px; }
+}
+
+/* Размерная линия, стоящая между секциями отдельным контейнером, добавляла к
+   их собственным отступам ещё 208 px — между блоками набегало 404 px пустоты
+   (замер на uslugi.html). Внутри секции, где линия делит содержимое, поля ей
+   по-прежнему нужны, поэтому обнуляется только случай «линия одна в
+   контейнере». */
+.container > .dim:only-child { margin-block: 0; }
+
+/* ═══ Почта как целевое действие: адрес виден, а не спрятан за кнопкой ═══
+   Костя: «"Прислать чертёж" открывает почту, а это не очевидно». Поэтому рядом
+   с кнопкой всегда стоит сам адрес с копированием: у части людей почтовый клиент
+   не настроен, и mailto для них не срабатывает вовсе. */
+.mailcta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; margin-top: 26px; }
+.mailcta .btn { white-space: nowrap; }
+.mailcta__addr {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 9px 10px 9px 14px; border: 1px solid var(--line-on-surface); border-radius: var(--r-field);
+}
+.mailcta__addr a { color: var(--ink-on-surface); font-weight: 600; text-decoration: none; font-size: 16px; }
+.mailcta__addr a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.mailcta__copy {
+  padding: 6px 11px; border: 1px solid var(--line-on-surface); border-radius: 999px;
+  background: transparent; color: var(--muted-on-surface);
+  font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+.mailcta__copy:hover { color: var(--ink-on-surface); border-color: var(--ink-on-surface); }
+.mailcta__copy[data-copy-state="success"] { color: #7FE3A1; border-color: #7FE3A1; }
+.mailcta__copy[data-copy-state="error"] { color: var(--signal); border-color: var(--signal); }
+.mailcta__hint { margin-top: 14px; color: var(--muted-on-surface); font-size: 15px; max-width: 62ch; }
+.mailcta__hint b { font-weight: 700; color: var(--ink-on-surface); }
+
+@media (max-width: 640px) {
+  .mailcta { gap: 12px; }
+  .mailcta .btn, .mailcta__addr { width: 100%; }
+  .mailcta__addr { justify-content: space-between; }
+}
+/* Подпись кнопки стала длиннее, и рядом появился адрес — шапка перестала помещаться
+   в 1280 и поехала вбок на 163 px. Живая строка и адрес уходят раньше: телефон и
+   кнопка важнее. Замерено, а не на глаз. */
+@media (max-width: 1440px) { .clockbar { display: none; } }
+/* На узком экране подпись кнопки стала длиннее и вытолкнула бургер за край.
+   Телефон на телефоне и так доступен — он в меню и в подвале, а кнопка с
+   явным «на почту» важнее. Замерено на 360 и 390. */
+@media (max-width: 560px) {
+  .site-header__phone { display: none; }
+  .site-header__actions .btn { padding: 9px 13px; font-size: 13px; }
+}
