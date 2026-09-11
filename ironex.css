@@ -1004,6 +1004,12 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
    по-прежнему нужны, поэтому обнуляется только случай «линия одна в
    контейнере». */
 .container > .dim:only-child { margin-block: 0; }
+/* Тот же случай, но линия стоит не в контейнере, а прямо в main между секциями:
+   к их собственным полям добавлялось ещё 208 px и между таблицей и участками
+   набегала мёртвая полоса в 404 px (замер 11.09 на oborudovanie.html, 1440).
+   На ceny.html линия лежит ВНУТРИ контейнера и делит содержимое одной секции —
+   там поля нужны, и этот селектор её не трогает. */
+main > .dim { margin-block: 0; }
 
 /* ═══ Почта как целевое действие: адрес виден, а не спрятан за кнопкой ═══
    Костя: «"Прислать чертёж" открывает почту, а это не очевидно». Поэтому рядом
@@ -1101,3 +1107,74 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
 /* Адрес внутри подписи «что приложить к письму» */
 .hint .mail { white-space: nowrap; font-weight: 700; color: var(--ink-on-surface); }
 .hint .mail a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ═══ Три предела детали: габарит, толщина, допуск ═══════════════════════════
+   Заведено 11.09 вместо декоративной иллюстрации во втором экране страницы
+   оборудования. Кадр там ничего не сообщал, а первый вопрос человека с
+   чертежом — «влезет ли деталь, возьмёте ли толщину, вытянете ли допуск».
+   Блок отвечает на него до таблицы из пятнадцати строк. Своих чисел не
+   вводит: всё, что в нём стоит, повторяет таблица ниже на той же странице. */
+
+.limits {
+  display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 56px); align-items: start; margin-top: clamp(28px, 3vw, 40px);
+}
+@media (max-width: 900px) { .limits { grid-template-columns: minmax(0, 1fr); } }
+
+/* Рисунок рабочих зон: прямоугольники в одном масштабе, клетка сетки — 100 мм.
+   Подписи вынесены списком под рисунок, а не внутрь: текст внутри svg на 360 px
+   ужимается до пяти пикселей и перестаёт читаться. Внутри остаются только
+   цифры-указатели, они переживают сжатие. */
+.zones {
+  display: block; width: 100%; height: auto;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-card);
+}
+.zones text { font-family: inherit; font-weight: 800; fill: var(--ink-2); }
+.zones .z-grid { stroke: var(--line); }
+.zones .z-1 { fill: none; stroke: var(--line-strong); }
+.zones .z-2 { fill: none; stroke: #A9B4B6; }
+.zones .z-3 { fill: var(--teal-tint); stroke: #4E6A6D; }
+.zones .z-4 { fill: none; stroke: var(--teal); }
+.zones .z-tick { stroke: var(--line-strong); fill: none; }
+.zones .z-bend, .zones .z-num--signal { stroke: var(--signal); fill: none; }
+.zones .z-num--signal { fill: var(--signal); stroke: none; }
+
+.keylist {
+  margin: 20px 0 0; padding: 0; list-style: none;
+  counter-reset: key; border-top: 1px solid var(--line);
+}
+.keylist li {
+  counter-increment: key; display: flex; flex-wrap: wrap; gap: 2px 12px; align-items: baseline;
+  padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 15px; line-height: 1.45;
+}
+.keylist li::before {
+  content: counter(key); flex: none; width: 18px;
+  color: var(--muted); font-weight: 800; font-variant-numeric: tabular-nums;
+}
+.keylist li.is-signal::before { color: var(--signal); }
+.keylist b { font-weight: 600; color: var(--ink); }
+.keylist span { margin-left: auto; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.keylist__note { margin: 14px 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+
+/* Две шкалы рядом с рисунком. Формы у них разные намеренно: толщина — полосы,
+   там линейная шкала и разрыв 6 → 200 мм виден глазом; допуск — ранжированный
+   список, потому что двести крат линейной полосой честно не показать. */
+.scale > p { margin: 10px 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+.scale h3 { font-size: 19px; }
+.scale + .scale { margin-top: clamp(28px, 3vw, 36px); }
+.scale dl { margin: 16px 0 0; border-top: 1px solid var(--line); }
+.scale dl > div { padding: 11px 0; border-bottom: 1px solid var(--line); }
+.scale dt { color: var(--ink-2); font-size: 15px; line-height: 1.4; }
+.scale dd { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: center; margin: 9px 0 0; }
+.scale__bar { height: 10px; min-width: 4px; background: var(--teal); }
+.scale__val { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.scale--ranked dl > div { display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: space-between; align-items: baseline; }
+.scale--ranked dd { display: block; margin: 0 0 0 auto; }
+
+/* Длина полосы — это данные, а не оформление, поэтому она задана атрибутом:
+   все значения видно одним списком и их нельзя потерять при правке разметки. */
+.scale__bar[data-w="3"]   { width: 3%; }
+.scale__bar[data-w="6"]   { width: 6%; }
+.scale__bar[data-w="15"]  { width: 15%; }
+.scale__bar[data-w="50"]  { width: 50%; }
+.scale__bar[data-w="100"] { width: 100%; }

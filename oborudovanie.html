@@ -93,14 +93,69 @@
 <a class="btn btn--ghost" href="#tablitsa">Смотреть таблицу</a>
 </p><div class="hero__mail"><b>Пишите на почту:</b><span class="mailcta__addr" data-email-copy><a href="mailto:info@ironex.tech" data-email-value>info@ironex.tech</a><button class="mailcta__copy" type="button" data-copy-email>Скопировать</button></span></div>
 <p class="hint"><span class="label">Тема письма — «Расчёт по чертежу — оборудование»</span><br/>Приложите чертёж или 3D-модель, количество, материал и срок — так технолог быстрее проверит применимость участка.</p>
-</div><div class="hero__panel"><dl><div><dt>Обрабатывающие центры</dt><dd>3</dd></div><div><dt>Листогибочные прессы</dt><dd>3</dd></div><div><dt>Сварочные посты</dt><dd>16</dd></div><div><dt>Контроль</dt><dd>КИМ ±0,0025 мм</dd></div></dl></div></div></section><section class="section" id="hero">
-<div class="container"><figure class="figure--draft" style="margin-top:48px">
-<img alt="Схема пятиосевого обрабатывающего центра — иллюстрация принципа работы" decoding="async" fetchpriority="high" height="893" src="/images/il/oborudovanie.webp" width="1600"/>
-<figcaption>
-<span>Иллюстрация, не фото станка IRONEX</span>
-<span>Станок → оснастка → измерение</span>
-</figcaption>
-</figure>
+</div><div class="hero__panel"><dl><div><dt>Обрабатывающие центры</dt><dd>3</dd></div><div><dt>Листогибочные прессы</dt><dd>3</dd></div><div><dt>Сварочные посты</dt><dd>16</dd></div><div><dt>Контроль</dt><dd>КИМ ±0,0025 мм</dd></div></dl></div></div></section><section class="section" id="predely">
+<div class="container">
+<h2>Габарит, толщина и допуск — три предела, по которым деталь проходит или нет</h2>
+<p class="lede">Три числа с чертежа решают, идёт деталь на участок или нет: наибольший размер, толщина металла и самый плотный допуск. Предельные значения — по паспорту оборудования; построчно ту же фактуру повторяет таблица ниже.</p>
+<div class="limits">
+<div>
+<svg class="zones" viewBox="0 0 960 450" role="img" aria-labelledby="zonesTitle zonesDesc">
+<title id="zonesTitle">Рабочие зоны участков в одном масштабе</title>
+<desc id="zonesDesc">Вложенные прямоугольники в одном масштабе: лист лазерной резки 2500 × 1200 мм, поле координатной пробивки 1500 × 1000 мм, зона фрезеровки 1100 × 600 мм и поле КИМ 800 × 600 мм. Отдельной линией сверху — длина гиба до 3000 мм: она длиннее листа лазерной резки.</desc>
+<defs>
+<pattern height="30" id="zonesGrid" patternUnits="userSpaceOnUse" width="30">
+<path class="z-grid" d="M30 0H0V30" fill="none" stroke-width="1"/>
+</pattern>
+</defs>
+<rect fill="url(#zonesGrid)" height="450" width="960"/>
+<rect class="z-1" height="360" stroke-width="1.5" width="750" x="24" y="60"/>
+<rect class="z-2" height="300" stroke-width="1.5" width="450" x="24" y="120"/>
+<rect class="z-3" height="180" stroke-width="1.5" width="330" x="24" y="240"/>
+<rect class="z-4" height="180" stroke-width="2.5" width="240" x="24" y="240"/>
+<path class="z-tick" d="M774 40V60" stroke-dasharray="4 4" stroke-width="1"/>
+<path class="z-bend" d="M24 40H924M24 30V50M924 30V50" stroke-width="2.5"/>
+<text font-size="26" text-anchor="end" x="758" y="88">1</text>
+<text font-size="26" text-anchor="end" x="458" y="148">2</text>
+<text font-size="26" text-anchor="end" x="338" y="404">3</text>
+<text font-size="26" text-anchor="end" x="248" y="268">4</text>
+<text class="z-num--signal" font-size="26" text-anchor="middle" x="850" y="32">5</text>
+</svg>
+<ol class="keylist">
+<li><b>Лазерная резка</b><span>лист 2500 × 1200 мм</span></li>
+<li><b>Координатная пробивка</b><span>поле 1500 × 1000 мм</span></li>
+<li><b>Фрезеровка 5 осей</b><span>зона 1100 × 600 × 600 мм</span></li>
+<li><b>КИМ-контроль</b><span>поле 800 × 600 × 600 мм</span></li>
+<li class="is-signal"><b>Гибка листа</b><span>длина гиба до 3000 мм</span></li>
+</ol>
+<p class="keylist__note">Клетка сетки — 100 мм. Красная линия длиннее листа лазерной резки: гнуть можно деталь длиннее той, что режется целиком. В масштаб рисунка не попали токарная обработка (⌀380 × 1500 мм) и порошковая окраска (до 6 м).</p>
+</div>
+<div>
+<div class="scale">
+<h3>Толщина металла</h3>
+<p>Шкала линейная — видно, насколько дальше остальных достаёт гидроабразив. Он же единственный режет без нагрева и берёт титан, стекло и композиты.</p>
+<dl>
+<div><dt>Координатная пробивка</dt><dd><span class="scale__bar" data-w="3"></span><b class="scale__val">до 6 мм</b></dd></div>
+<div><dt>Гибка листа</dt><dd><span class="scale__bar" data-w="6"></span><b class="scale__val">до 12 мм</b></dd></div>
+<div><dt>Лазерная резка</dt><dd><span class="scale__bar" data-w="15"></span><b class="scale__val">до 30 мм</b></dd></div>
+<div><dt>Плазменная резка</dt><dd><span class="scale__bar" data-w="50"></span><b class="scale__val">до 100 мм</b></dd></div>
+<div><dt>Гидроабразивная резка</dt><dd><span class="scale__bar" data-w="100"></span><b class="scale__val">до 200 мм</b></dd></div>
+</dl>
+</div>
+<div class="scale scale--ranked">
+<h3>Допуск по операциям</h3>
+<p>От ±0,5 мм на плазме до ±0,0025 мм на КИМ — разброс в двести раз. Гибка нормируется углом, ±0,3°; шлифование задаёт ещё и шероховатость Ra 0,2 мкм.</p>
+<dl>
+<div><dt>Плазменная резка</dt><dd class="scale__val">±0,5 мм</dd></div>
+<div><dt>Лазер, гидроабразив, пробивка, робот-сварка</dt><dd class="scale__val">±0,1 мм</dd></div>
+<div><dt>Токарная обработка</dt><dd class="scale__val">±0,008 мм</dd></div>
+<div><dt>Фрезеровка 3–4 оси</dt><dd class="scale__val">±0,007 мм</dd></div>
+<div><dt>Фрезеровка 5 осей</dt><dd class="scale__val">±0,005 мм</dd></div>
+<div><dt>Шлифование</dt><dd class="scale__val">±0,003 мм</dd></div>
+<div><dt>КИМ-контроль</dt><dd class="scale__val">±0,0025 мм</dd></div>
+</dl>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section class="section section--tint" id="tablitsa">
@@ -139,6 +194,13 @@
 <div class="container">
 <h2>Обрабатывающие центры 3, 4 и 5 осей</h2>
 <p class="lede">Три уровня фрезерной и токарной обработки — от серийных деталей на 3–4 осях до сложной геометрии в одной установке на 5-осевом центре.</p>
+<figure class="figure--draft">
+<img alt="Схема: деталь закреплена в наклонном поворотном столе, фреза идёт по её контуру одной непрерывной траекторией" decoding="async" height="896" loading="lazy" src="/images/il/oc-5-osey.webp" width="1200"/>
+<figcaption>
+<span>Схема, не фото станка IRONEX</span>
+<span>Наклонную грань берём без переустановки</span>
+</figcaption>
+</figure>
 <div class="mat-grid mat-grid--2" style="margin-top:32px">
 <article class="card">
 <div class="card__body">
@@ -175,6 +237,13 @@
 <div class="container">
 <h2>Лазер 20 кВт, гидроабразив, плазма</h2>
 <p class="lede">Раскрой заготовок под деталь и черновую резку — лазером, гидроабразивом или плазмой, в зависимости от материала, толщины и требований к кромке.</p>
+<figure class="figure--draft figure--wide is-centered">
+<img alt="Схема раскроя: контуры разных деталей вырезаны из одного листа вплотную друг к другу, одна заготовка поднята над листом" decoding="async" height="893" loading="lazy" src="/images/il/raskroj-lista.webp" width="1600"/>
+<figcaption>
+<span>Схема, не фото участка IRONEX</span>
+<span>Детали раскладываем на листе вплотную — меньше отхода</span>
+</figcaption>
+</figure>
 <div class="mat-grid mat-grid--3" style="margin-top:32px">
 <article class="card">
 <div class="card__body">
@@ -220,6 +289,13 @@
 </div>
 </article>
 </div>
+<figure class="figure--draft">
+<img alt="Схема: слева плоская развёртка листа с линиями гиба, справа тот же лист, согнутый в корпус" decoding="async" height="805" loading="lazy" src="/images/il/razvertka-i-korpus.webp" width="1200"/>
+<figcaption>
+<span>Схема, не фото участка IRONEX</span>
+<span>Развёртку считаем сами — по модели или по чертежу готовой детали</span>
+</figcaption>
+</figure>
 </div>
 </section>
 <section class="section section--tint" id="svarka">
@@ -249,6 +325,13 @@
 </div>
 </article>
 </div>
+<figure class="figure--draft figure--wide is-centered">
+<img alt="Схема: три одинаковых сварных узла в ряд, шов у всех трёх одинаковой длины и в одном месте" decoding="async" height="764" loading="lazy" src="/images/il/shov-na-serii.webp" width="1800"/>
+<figcaption>
+<span>Схема, не фото участка IRONEX</span>
+<span>Робот программируется один раз — шов одинаковый на каждой детали партии</span>
+</figcaption>
+</figure>
 </div>
 </section>
 <section class="section" id="kontrol">
