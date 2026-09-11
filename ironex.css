@@ -498,7 +498,8 @@ p { margin: 0 0 18px; }
 .steps li:last-child { border-bottom: 1px solid var(--line); }
 .steps li::before {
   content: counter(step, decimal-leading-zero);
-  color: var(--signal); font-size: 12px; font-weight: 700; letter-spacing: .06em; line-height: 1.7;
+  /* сигнальный как ТЕКСТ на светлом даёт 2,9:1 — берём затемнённый */
+  color: var(--signal-ink); font-size: 12px; font-weight: 700; letter-spacing: .06em; line-height: 1.7;
 }
 .steps strong { display: block; margin-bottom: 4px; }
 .steps p { margin: 0; color: var(--ink-2); font-size: 16px; }

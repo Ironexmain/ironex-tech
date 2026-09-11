@@ -149,36 +149,43 @@
 </header>
 
 <main id="main">
-  <nav class="crumbs" aria-label="Хлебные крошки">
-    <div class="container">
-      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><span>Услуги</span>
-    </div>
-  </nav>
 
-  <section class="hero">
-    <div class="container">
-      <div class="hero__inner">
+  <section class="hero hero--page">
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <div class="container">
+        <a href="/index.html">Главная</a><span aria-hidden="true">/</span><span>Услуги</span>
+      </div>
+    </nav>
+    <div class="container hero--page__body">
+      <div>
         <h1>Обработка металла по чертежам — от заготовки до контроля</h1>
-        <p>Подбираем не отдельную операцию, а связанный маршрут под геометрию, материал, допуски и размер партии<span class="dot" aria-hidden="true"></span></p>
-        <div class="hero__buttons">
+        <p class="lede">Механообработка, раскрой, листовая обработка, сварка, покрытия и контроль на одном производстве. Можно заказать одну операцию, можно весь маршрут — тогда деталь не ездит между подрядчиками и за срок отвечает один исполнитель.</p>
+        <p>
           <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=%D0%A0%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D0%BE%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D1%83%20%E2%80%94%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8">Прислать чертёж на почту</a>
-          <a class="btn btn--ghost" href="#mechobrabotka">Выбрать технологию</a>
-        </div>
-        <p class="cta-note">Приложите: чертёж PDF или 3D-модель STEP · количество в партии · марку материала · желаемый срок.</p>
+          <a class="btn btn--ghost" href="#price">Смотреть прайс по операциям</a>
+        </p>
+        <p class="hint">К письму приложите чертёж или 3D-модель, марку материала, количество и желаемый срок.</p>
+      </div>
+      <div class="hero__panel">
+        <dl>
+          <div><dt>Операций в прайсе</dt><dd>20</dd></div>
+          <div><dt>Расчёт по чертежу</dt><dd>3 дня</dd></div>
+          <div><dt>Минимальная партия</dt><dd>1 шт.</dd></div>
+          <div><dt>Приёмка детали</dt><dd>на КИМ</dd></div>
+        </dl>
       </div>
     </div>
-    <figure class="band">
-      <img src="/images/foto/ceh.webp" alt="Производственный участок с обрабатывающими центрами" width="1600" height="900" fetchpriority="high" decoding="async">
-    </figure>
-    <div class="container">
-      <dl class="facts">
-        <div><dt>Расчёт</dt><dd>до 3 рабочих дней</dd></div>
-        <div><dt>Партии</dt><dd>от 1 штуки</dd></div>
-        <div><dt>Контроль</dt><dd>по документации</dd></div>
-        <div><dt>NDA</dt><dd>по запросу</dd></div>
-      </dl>
-    </div>
   </section>
+
+  <div class="container">
+    <dl class="figures">
+      <div><dt>Достижимый допуск</dt><dd>±0,005 мм</dd></div>
+      <div><dt>Рез по стали</dt><dd>до 30 мм</dd></div>
+      <div><dt>Усилие гибки</dt><dd>до 150 т</dd></div>
+      <div><dt>Точность КИМ</dt><dd>±0,0025 мм</dd></div>
+      <div><dt>Протокол измерений</dt><dd>с партией</dd></div>
+    </dl>
+  </div>
 
   <div class="marquee" aria-label="Материалы, с которыми работаем">
     <div class="marquee__track" aria-hidden="true">
@@ -189,299 +196,59 @@
 
   <section class="section">
     <div class="container">
-      
-
-      <div class="mat-grid mat-grid--2">
-        <figure class="figure--draft">
-          <img src="/images/il/materialy.webp" alt="Профили проката: круглый и шестигранный пруток, квадрат, труба, лист, уголок" width="1200" height="896" loading="lazy" decoding="async" />
-          <figcaption>
-            <span>Сортамент, с которого начинается маршрут: круг, шестигранник, квадрат, труба, лист, уголок</span>
-            <span>Схема профилей, не фото склада заготовок</span>
-          </figcaption>
-        </figure>
-
-        <div class="panel">
-      <ol class="toc">
-            <li><a href="#mechobrabotka">Механообработка</a></li>
-            <li><a href="#rezka">Резка и раскрой</a></li>
-            <li><a href="#listovaya">Листовая обработка</a></li>
-            <li><a href="#svarka">Сварка и сборка</a></li>
-            <li><a href="#finish">Финиш и покрытия</a></li>
-            <li><a href="#kontrol">Контроль качества</a></li>
-            <li><a href="#polniy-cikl">Полный цикл</a></li>
-          </ol>
-        </div>
-      </div>
+      <h2>Шесть групп операций — маршрут собираем под геометрию детали</h2>
+      <p class="lede">Ставка нормо-часа здесь ориентир для прикидки. Итог зависит от геометрии, партии, материала и требований к контролю — поэтому цену считает технолог по вашему чертежу, а не калькулятор.</p>
+      <div class="svc"><article id="mehanoobrabotka"><h3><a href="/frezerovka.html">Механообработка ЧПУ</a></h3><p class="svc__spec"><a href="/frezerovka.html">Фрезерная обработка</a> до 5 осей в одной установке, зона 1100 × 600 × 600 мм, шпиндель 12 000 об/мин. <a href="/tokarnaya.html">Токарная</a> — пруток и патрон до ⌀380 × 1500 мм, ось C и противошпиндель. Достижимый допуск ±0,005 мм.</p><p class="svc__rate">от 1 200 ₽<small>нормо-час</small></p></article><article id="rezka"><h3><a href="#rezka">Раскрой листа и заготовки</a></h3><p class="svc__spec">Волоконный лазер 20 кВт, поле 2500 × 1200 мм, сталь до 30 мм — кромка без зачистки. Плазма до 100 мм на черновые заготовки. Гидроабразив для титана, стекла, керамики и композитов — без нагрева.</p><p class="svc__rate">от 80 ₽<small>метр реза</small></p></article><article id="listovaya"><h3><a href="#price">Листовая обработка</a></h3><p class="svc__spec">Гибка на прессах усилием до 150 т, длина гиба до 3000 мм. Координатно-пробивные работы и штамповка серийных позиций. Развёртку считаем сами — по модели или по чертежу готовой детали.</p><p class="svc__rate">от 150 ₽<small>гиб</small></p></article><article id="svarka"><h3><a href="#price">Сварка и сборка</a></h3><p class="svc__spec">Аргонодуговая TIG по нержавейке и алюминию, полуавтомат MIG/MAG по конструкционной стали, лазерная сварка тонкостенных деталей. Роботизированный пост держит одинаковый шов на серии от 20 штук.</p><p class="svc__rate">от 800 ₽<small>нормо-час</small></p></article><article id="finish"><h3><a href="#price">Покрытия и финиш</a></h3><p class="svc__spec">Порошковая окраска в камерах до 6 м: любой цвет RAL, матовое, глянцевое, текстурное и муар. Гальваника: цинк, никель, анодирование, хром. Лазерная маркировка, слесарные работы, снятие фаски.</p><p class="svc__rate">от 320 ₽<small>м²</small></p></article><article id="kontrol"><h3><a href="#price">Контроль и документы</a></h3><p class="svc__spec">Координатно-измерительная машина, рабочее поле 800 × 600 × 600 мм, точность ±0,0025 мм. Протокол измерений с допусками идёт вместе с партией и входит в стоимость заказа.</p><p class="svc__rate">включено<small>в стоимость</small></p></article></div>
     </div>
   </section>
 
-  <!-- ═══ МЕХАНООБРАБОТКА ═══ -->
-  <section class="section" id="mechobrabotka">
+  <section class="section section--tint" id="price">
     <div class="container">
-      <h2>Hermle C500 держит ±0,005 мм в пяти осях за одну установку</h2>
-      <p class="lede">Токарные и фрезерные центры ЧПУ — 3, 4 и 5 осей. Детали любой геометрии: от тел вращения до сложных корпусных изделий.</p>
-
-      <figure class="figure--draft" style="margin-top:32px">
-        <img src="/images/il/frezerovka.webp" alt="Схема фрезерования на поворотном столе с указанием осей вращения" width="1200" height="896" loading="lazy" decoding="async" />
-        <figcaption>
-          <span>Фрезерование на поворотном столе — деталь разворачивается под инструмент без переустановки</span>
-          <span>Иллюстрация принципа, не фото конкретного станка</span>
-        </figcaption>
-      </figure>
-
-      <div class="spec-table" style="margin-top:24px">
+      <h2>Прайс по операциям: что делаем и на каком оборудовании</h2>
+      <p class="lede">Оборудование описано параметрами, которые влияют на вашу деталь: рабочая зона, достижимый допуск, толщина реза. Модели станков называем в переписке под конкретную задачу.</p>
+      <div class="spec-table" style="margin-top:28px">
         <table>
-          <caption>Ставка нормо-часа — предварительная, итоговая стоимость зависит от материала и партии. «По запросу» — операцию считаем по вашему чертежу.</caption>
-          <thead>
-            <tr><th>Операция</th><th>Оборудование и параметры</th><th>Точность / шероховатость</th><th>Нормо-час</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Фрезерная обработка ЧПУ, до 5 осей</td><td>Hermle C500 · рабочая зона 1100×600×600 мм · шпиндель 12 000 об/мин</td><td class="num">±0,005 мм</td><td class="num">от 1 800 ₽</td></tr>
-            <tr><td>Токарная обработка ЧПУ</td><td>DMG Mori NLX 2500 · ⌀380×1500 мм · ось C, противошпиндель</td><td class="num">±0,008 мм</td><td class="num">от 1 200 ₽</td></tr>
-            <tr><td>Чистовая токарная обработка</td><td>минимальный припуск, посадочные поверхности H6–H7</td><td class="num">Ra 0,8–1,6 мкм</td><td class="num">от 1 600 ₽</td></tr>
-            <tr><td>Черновая токарная обработка</td><td>высокая подача, подготовка заготовки под чистовую обработку</td><td>—</td><td class="num">от 1 100 ₽</td></tr>
-            <tr><td>Сверление и расточка</td><td>расточные оправки, отверстия от ⌀1 мм</td><td class="num">H6–H7</td><td class="warn">по запросу</td></tr>
-            <tr><td>Шлифовка</td><td>цилиндрическая и плоская, для деталей после закалки и цементации</td><td class="num">Ra 0,2–0,4 мкм</td><td class="warn">по запросу</td></tr>
-            <tr><td>Токарно-фрезерная обработка</td><td>комбинированный центр, ось Y, приводной инструмент, 1 установка</td><td>—</td><td class="warn">по запросу</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="margin-top:16px">Подробнее: <a href="/tokarnaya.html">токарная обработка</a> · <a href="/frezerovka.html">фрезерная обработка</a> · полный список станков — на странице <a href="/oborudovanie.html">оборудования</a>.</p>
-    </div>
-  </section>
-
-  <!-- ═══ РЕЗКА ═══ -->
-  <section class="section section--tint" id="rezka">
-    <div class="container">
-      <h2>Волоконный лазер D-SOAR режет металл толщиной до 30 мм</h2>
-      <p class="lede">Метод резки подбираем под материал, толщину, требования к кромке и дальнейший технологический маршрут детали.</p>
-
-      <div class="card" style="margin-top:32px">
-        <figure class="figure--draft">
-          <img src="/images/il/lazernaya-rezka.webp" alt="Схема лазерного раскроя листа: рама станка, режущая головка, вырезанные детали" width="1200" height="896" loading="lazy" decoding="async" />
-          <figcaption>
-            <span>Лазерный раскрой листа по программе — узкий рез и локальный нагрев кромки</span>
-            <span>Иллюстрация процесса, не фото производства</span>
-          </figcaption>
-        </figure>
-        <div class="card__body">
-          <h3>Лазерная резка · волоконный лазер D-SOAR 20 кВт</h3>
-          <p>Узкий рез, локальная зона термического влияния и высокая скорость на повторяемых партиях деталей.</p>
-          <p><span class="label">Толщина</span> до 30 мм · <span class="label">Поле раскроя</span> 2500×1200 мм · <span class="label">Цена</span> от 80 ₽ / м реза</p>
-        </div>
-      </div>
-
-      <div class="spec-table" style="margin-top:24px">
-        <table>
-          <thead><tr><th>Метод</th><th>Параметры</th><th>Цена</th></tr></thead>
-          <tbody>
-            <tr><td>Гидроабразивная резка</td><td>APW2050BA · любой материал без нагрева: титан, стекло, керамика, резина, композиты</td><td class="warn">по запросу</td></tr>
-            <tr><td>Плазменная резка</td><td>раскрой толщиной до 100 мм, высокая скорость, подходит для черновых заготовок</td><td class="warn">по запросу</td></tr>
-          </tbody>
+          <thead><tr><th>Операция</th><th>Параметры</th><th>Точность</th><th>Ставка</th></tr></thead>
+          <tbody><tr><td>Фрезерная обработка ЧПУ, до 5 осей</td><td>зона 1100 × 600 × 600 мм, шпиндель 12 000 об/мин</td><td class="num">±0,005 мм</td><td class="num">от 1 800 ₽</td></tr><tr><td>Токарная обработка ЧПУ</td><td>⌀380 × 1500 мм, ось C, противошпиндель</td><td class="num">±0,008 мм</td><td class="num">от 1 200 ₽</td></tr><tr><td>Чистовая токарная обработка</td><td>минимальный припуск, посадочные поверхности H6–H7</td><td class="num">Ra 0,8–1,6 мкм</td><td class="num">от 1 600 ₽</td></tr><tr><td>Черновая токарная обработка</td><td>высокая подача, подготовка под чистовую</td><td class="num">—</td><td class="num">от 1 100 ₽</td></tr><tr><td>Токарно-фрезерная обработка</td><td>ось Y, приводной инструмент, одна установка</td><td class="num">—</td><td class="num">по запросу</td></tr><tr><td>Сверление и расточка</td><td>расточные оправки, отверстия от ⌀1 мм</td><td class="num">H6–H7</td><td class="num">по запросу</td></tr><tr><td>Шлифовка</td><td>цилиндрическая и плоская, после закалки и цементации</td><td class="num">Ra 0,2–0,4 мкм</td><td class="num">по запросу</td></tr><tr><td>Лазерная резка</td><td>волоконный источник 20 кВт, поле 2500 × 1200 мм, сталь до 30 мм</td><td class="num">рез без зачистки</td><td class="num">от 80 ₽ / м</td></tr><tr><td>Плазменная резка</td><td>раскрой до 100 мм, высокая скорость</td><td class="num">черновая заготовка</td><td class="num">по запросу</td></tr><tr><td>Гидроабразивная резка</td><td>без нагрева: титан, стекло, керамика, резина, композиты</td><td class="num">без зоны отпуска</td><td class="num">по запросу</td></tr><tr><td>Гибка листового металла</td><td>усилие до 150 т, длина гиба до 3000 мм</td><td class="num">±0,5°</td><td class="num">от 150 ₽ / гиб</td></tr><tr><td>Сварка TIG</td><td>аргонодуговая: нержавейка, алюминий</td><td class="num">—</td><td class="num">от 950 ₽</td></tr><tr><td>Сварка MIG/MAG</td><td>полуавтомат, CO₂ и смесь: конструкционная сталь</td><td class="num">—</td><td class="num">от 800 ₽</td></tr><tr><td>Лазерная сварка</td><td>тонкостенные детали, минимальная деформация</td><td class="num">—</td><td class="num">по запросу</td></tr><tr><td>Роботизированная сварка</td><td>повторяемость шва по кондуктору, от 20 штук в партии</td><td class="num">±0,1 мм</td><td class="num">по запросу</td></tr><tr><td>Порошковая окраска</td><td>камеры до 6 м, RAL: матовое, глянец, текстура, муар</td><td class="num">стойкость класса 5</td><td class="num">от 320 ₽ / м²</td></tr><tr><td>Гальваника и покрытия</td><td>цинк, никель, анодирование алюминия, хром</td><td class="num">сертификаты по запросу</td><td class="num">по запросу</td></tr><tr><td>Лазерная маркировка</td><td>серийные номера, логотипы, QR, DataMatrix</td><td class="num">—</td><td class="num">по запросу</td></tr><tr><td>Слесарные работы</td><td>зачистка заусенцев, фаска, подгонка, притирка, сборка</td><td class="num">—</td><td class="num">от 800 ₽</td></tr><tr><td>Контроль на КИМ</td><td>поле 800 × 600 × 600 мм, протокол измерений</td><td class="num">±0,0025 мм</td><td class="num">включено</td></tr></tbody>
+          <caption>«По запросу» значит, что цена зависит от геометрии и партии сильнее, чем от времени станка — такие позиции считаем по чертежу.</caption>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- ═══ ЛИСТОВАЯ ═══ -->
-  <section class="section" id="listovaya">
-    <div class="container">
-      <h2>Гибочные прессы держат до 150 тонн усилия</h2>
-      <p class="lede">Листогибочные прессы, координатно-пробивной станок с ЧПУ и серийная штамповка — алюминий, сталь, нержавейка.</p>
-
-      <div class="mat-grid mat-grid--3" style="margin-top:32px">
-        <div class="card">
-          <figure class="figure--draft">
-            <img src="/images/il/gibka.webp" alt="Схема гибки листового металла на прессе с V-образной матрицей" width="1200" height="896" loading="lazy" decoding="async" />
-            <figcaption>
-              <span>Гибка на прессе — пуансон формирует угол по матрице</span>
-              <span>Иллюстрация, не фото готовой детали</span>
-            </figcaption>
-          </figure>
-          <div class="card__body">
-            <h3>Гибка листового металла</h3>
-            <p>Прессы PR6C-150T и VR6-125T. Высокая повторяемость гиба, сложные профили в нескольких установках.</p>
-            <p><span class="label">Усилие</span> до 150 т · <span class="label">Материал</span> алюминий, сталь, нержавейка</p>
-            <p><span class="label">Цена</span> от 150 ₽ / гиб</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__body">
-            <h3>Координатно-пробивные работы</h3>
-            <p>VT-300 ЧПУ. Перфорация, вырубка, формовка по программе. Серийные детали с отверстиями любого расположения.</p>
-            <p><span class="label">Позиционирование</span> ЧПУ · <span class="label">Формат</span> серия</p>
-            <p><span class="label label--signal">По запросу</span></p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__body">
-            <h3>Штамповка</h3>
-            <p>Серийное производство штампованных деталей. Холодная штамповка, вырубные штампы, быстрый цикл на больших объёмах.</p>
-            <p><span class="label">Формат</span> серийная · <span class="label">Способ</span> холодная штамповка</p>
-            <p><span class="label label--signal">По запросу</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ СВАРКА ═══ -->
-  <section class="section section--tint" id="svarka">
-    <div class="container">
-      <h2>Два робота NB-350 варят серии от 20 деталей с одинаковым швом</h2>
-      <p class="lede">16 сварочных постов, 2 промышленных робота и лазерная сварка — узлы любой сложности из стали, нержавейки и алюминия.</p>
-
-      <div class="card" style="margin-top:32px">
-        <figure class="figure--draft">
-          <img src="/images/il/svarka.webp" alt="Схема сварного шва в разрезе с валиком наплавленного металла" width="1200" height="896" loading="lazy" decoding="async" />
-          <figcaption>
-            <span>Сварной шов в разрезе — валик наплавленного металла вдоль стыка</span>
-            <span>Иллюстрация, не фото сварки в цехе</span>
-          </figcaption>
-        </figure>
-        <div class="card__body">
-          <h3>Роботизированная сварка · NB-350</h3>
-          <p>Два робота-сварщика NB-350 — для серийных узлов, где важна высокая повторяемость. Один раз запрограммировали, дальше каждая деталь получает одинаковый шов.</p>
-          <ul>
-            <li>Высокая повторяемость геометрии шва</li>
-            <li>Ниже цена на серию, чем при ручной сварке</li>
-            <li>Подходит для серий от 20 штук</li>
-            <li>Сталь, нержавейка, алюминий</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="spec-table" style="margin-top:24px">
-        <table>
-          <thead><tr><th>Метод</th><th>Оборудование и материал</th><th>Нормо-час</th></tr></thead>
-          <tbody>
-            <tr><td>Аргонодуговая сварка TIG</td><td>WSM-400, WSME-315 · нержавейка, алюминий</td><td class="num">от 950 ₽</td></tr>
-            <tr><td>Полуавтоматическая сварка MIG/MAG</td><td>CO₂ и смесь · конструкционная сталь</td><td class="num">от 800 ₽</td></tr>
-            <tr><td>Лазерная сварка</td><td>SUP-AMF-D · тонкостенные детали, минимальная деформация</td><td class="warn">по запросу</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ ФИНИШ ═══ -->
-  <section class="section" id="finish">
-    <div class="container">
-      <h2>Порошковая покраска — любой цвет RAL в камерах до 6 метров</h2>
-      <p class="lede">Защитные и декоративные покрытия, маркировка и слесарная доработка — перед КИМ-контролем и отгрузкой.</p>
-
-      <div class="spec-table" style="margin-top:32px">
-        <table>
-          <thead><tr><th>Операция</th><th>Параметры</th><th>Цена</th></tr></thead>
-          <tbody>
-            <tr><td>Порошковая окраска</td><td>камеры до 6 м, любой цвет RAL: матовое, глянцевое, текстурное, «муар», класс коррозионной стойкости 5</td><td class="num">от 320 ₽ / м²</td></tr>
-            <tr><td>Гальваника и покрытия</td><td>цинкование, никелирование, анодирование алюминия, хромирование; сертификаты соответствия по запросу</td><td class="warn">по запросу</td></tr>
-            <tr><td>Лазерная маркировка</td><td>серийные номера, логотипы, QR-коды, DataMatrix; нержавейка, алюминий, сталь</td><td class="warn">по запросу</td></tr>
-            <tr><td>Слесарные работы</td><td>зачистка заусенцев, снятие фаски, подгонка, притирка, сборка узлов</td><td class="num">от 800 ₽</td></tr>
-            <tr><td>Снятие фаски</td><td>фаскосниматели ЧПУ и ручной инструмент, после резки и фрезеровки</td><td class="warn">по запросу</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ КОНТРОЛЬ ═══ -->
-  <section class="section section--tint" id="kontrol">
-    <div class="container">
-      <h2>КИМ Hexagon Global S проверяет партию с точностью ±0,0025 мм</h2>
-      <p class="lede">3D-замер в трёх осях — единственный способ доказать геометрию партии, а не отдельной детали. Штангенциркуль показывает размер, КИМ подтверждает допуск на всей партии.</p>
-
-      <div class="card" style="margin-top:32px">
-        <figure class="figure--draft">
-          <img src="/images/il/kim-kontrol.webp" alt="Схема измерения детали на координатно-измерительной машине" width="1200" height="896" loading="lazy" decoding="async" />
-          <figcaption>
-            <span>Координатно-измерительная машина проверяет деталь по контрольным точкам</span>
-            <span>Иллюстрация принципа, не фото контроля в IRONEX</span>
-          </figcaption>
-        </figure>
-        <div class="card__body">
-          <div class="spec-table">
-            <table>
-              <thead><tr><th>Параметр</th><th>Значение</th></tr></thead>
-              <tbody>
-                <tr><td>Рабочее поле</td><td class="num">800×600×600 мм</td></tr>
-                <tr><td>Точность</td><td class="num">±0,0025 мм</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p style="margin-top:16px">Дополнительно — оптический 2D-измеритель для плоских и контурных деталей.</p>
-        </div>
-      </div>
-
-      <div class="callout" style="margin-top:24px">
-        <p><strong>КИМ-контроль входит в стоимость каждого заказа.</strong> Протокол с отклонениями прилагается к партии без доплаты.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="container"><hr class="dim" /></div>
-
-  <!-- ═══ ПОЛНЫЙ ЦИКЛ ═══ -->
-  <section class="section" id="polniy-cikl">
+  <section class="section">
     <div class="container">
       <h2>От чертежа до готовой детали — пять шагов, один подрядчик</h2>
-      <p class="lede">Прислали чертёж — получили готовую деталь. Технолог проектирует маршрут, производство выполняет операции, КИМ подтверждает геометрию.</p>
-
-      <div class="panel" style="margin-top:28px">
-        <ol>
-          <li><strong>Заявка.</strong> PDF, DWG, DXF, STEP, IGES, ZIP.</li>
-          <li><strong>Расчёт.</strong> Стоимость и срок — до 3 рабочих дней.</li>
-          <li><strong>Производство.</strong> Токарная, фрезерная, резка, листовая обработка, сварка и финиш — по маршруту.</li>
-          <li><strong>КИМ-контроль.</strong> Протокол с допусками на партию.</li>
-          <li><strong>Доставка.</strong> Отправка по России.</li>
-        </ol>
-      </div>
+      <p class="lede">Между шагами деталь не уезжает на сторону: маршрут закрывается внутри одного производства.</p>
+      <ol class="steps" style="margin-top:28px">
+        <li><div><strong>Заявка</strong><p>Чертёж или модель в PDF, DWG, DXF, STEP, IGES. Плюс материал, количество и срок.</p></div></li>
+        <li><div><strong>Расчёт</strong><p>Стоимость, срок и маршрут обработки по операциям — до 3 рабочих дней.</p></div></li>
+        <li><div><strong>Производство</strong><p>Механообработка, раскрой, листовая обработка, сварка и финиш по утверждённому маршруту.</p></div></li>
+        <li><div><strong>Контроль</strong><p>Измерения на КИМ, протокол с допусками на партию.</p></div></li>
+        <li><div><strong>Отгрузка</strong><p>Упаковка под перевозку, самовывоз или транспортная компания по России.</p></div></li>
+      </ol>
     </div>
   </section>
 
-  <div class="container"><hr class="dim" /></div>
-
-  <!-- ═══ FAQ ═══ -->
-  <section class="section section--tint" id="faq">
+  <section class="section section--tint">
     <div class="container">
       <h2>Частые вопросы</h2>
-      <div class="faq" style="margin-top:24px">
-        <details open>
-          <summary>Какой минимальный заказ?</summary>
-          <div class="faq__a"><p>Универсального минимума нет: объём зависит от технологии, материала и подготовки производства. Единичные детали рассматриваем как исключение, основной формат — пробные и серийные партии.</p></div>
-        </details>
-        <details>
-          <summary>Какие форматы чертежей принимаете?</summary>
-          <div class="faq__a"><p>PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG. Если чертежа нет — принимаем эскиз или описание, поможем проработать конструкторскую документацию.</p></div>
-        </details>
-        <details>
-          <summary>Входит ли КИМ-контроль в стоимость заказа?</summary>
-          <div class="faq__a"><p>Да. Координатно-измерительная машина Hexagon Global S — на каждой партии. Протокол измерений с допусками прилагается к заказу без доплат.</p></div>
-        </details>
-        <details>
-          <summary>С какими материалами работаете?</summary>
-          <div class="faq__a"><p>Конструкционная и легированная сталь, нержавейка AISI 304/316, алюминий, медь, латунь, титан и другие сплавы.</p></div>
-        </details>
-        <details>
-          <summary>Подписываете ли NDA?</summary>
-          <div class="faq__a"><p>Да, подписываем соглашение о неразглашении до начала работ — ваши чертежи и технологии остаются конфиденциальными.</p></div>
-        </details>
-      </div>
+      <div class="faq" style="margin-top:24px"><details open><summary>Какой минимальный заказ?</summary><p>Универсального минимума по количеству нет: изготавливаем и одну деталь. Ограничение по сумме — заказ от 100 000 ₽, меньше нерентабельно для обеих сторон. На серию цена за деталь снижается.</p></details><details><summary>Какие форматы чертежей принимаете?</summary><p>PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG. Если чертежа нет — примем эскиз или описание и поможем проработать конструкторскую документацию.</p></details><details><summary>Входит ли контроль на КИМ в стоимость?</summary><p>Да. Измерения на координатно-измерительной машине делаются на каждой партии, протокол с допусками прилагается к заказу без доплат.</p></details><details><summary>С какими материалами работаете?</summary><p>Конструкционная и легированная сталь, нержавейка AISI 304 и 316, алюминий, медь, латунь, титан, бронза, а также инженерные пластики.</p></details><details><summary>Подписываете ли NDA?</summary><p>Да, соглашение о неразглашении подписываем до начала работ: чертежи и технологии остаются конфиденциальными.</p></details></div>
     </div>
   </section>
 
   <section class="statement statement--grid section">
     <div class="container">
       <h2>Нужна деталь по чертежу?</h2>
-      <p>Пришлите файл — технолог вернётся со стоимостью и сроком за 3 рабочих дня. Бесплатно, без обязательств.</p>
+      <p style="max-width:56ch">Пришлите файл — технолог вернётся со стоимостью, сроком и маршрутом обработки за 3 рабочих дня. Бесплатно, без обязательств.</p>
       <div class="mailcta"><a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=%D0%A0%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D0%BE%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D1%83%20%E2%80%94%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8">Прислать чертёж на почту</a><span class="mailcta__addr" data-email-copy><a href="mailto:info@ironex.tech" data-email-value>info@ironex.tech</a><button class="mailcta__copy" type="button" data-copy-email>Скопировать</button></span></div><p class="mailcta__hint">Кнопка откроет ваш почтовый клиент с готовой темой письма — или скопируйте адрес и напишите откуда удобно. <b>Минимальная сумма заказа — 100 000 ₽:</b> изготавливаем от 1 штуки, но заказ на меньшую сумму нерентабелен для обеих сторон. На серию цена за деталь снижается.</p>
-      <p class="cta-note" style="margin-top:18px">Приложите: чертёж PDF или 3D-модель STEP · количество в партии · марку материала · желаемый срок. Тема письма подставится автоматически.<br>Форматы: PDF, DWG, DXF, STEP, IGES, ZIP, RAR, JPG, PNG.</p>
     </div>
   </section>
 
   <div class="mobile-bar">
     <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=%D0%A0%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D0%BE%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D1%83%20%E2%80%94%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8">Прислать чертёж на почту</a>
   </div>
+
 </main>
 
 <footer class="site-footer">
