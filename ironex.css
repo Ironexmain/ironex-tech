@@ -1043,3 +1043,9 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
   .site-header__phone { display: none; }
   .site-header__actions .btn { padding: 9px 13px; font-size: 13px; }
 }
+/* На 375 рамка адреса вылезала на 5 px: ширина 100% складывалась со своими полями.
+   Сжимаем поля и разрешаем адресу переноситься — замерено на живом сайте. */
+@media (max-width: 640px) {
+  .mailcta__addr { box-sizing: border-box; max-width: 100%; flex-wrap: wrap; padding: 8px 8px 8px 12px; gap: 8px; }
+  .mailcta__addr a { min-width: 0; overflow-wrap: anywhere; }
+}
