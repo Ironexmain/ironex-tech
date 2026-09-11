@@ -359,7 +359,11 @@ for (const { filePath, html } of sitemapPages) {
   }
 
   expect('integrations', /href=["']tel:\+79934904024["']/i.test(html), `${file} lost the Callibri source telephone`);
-  expect('integrations', /href=["']mailto:info@ironex\.tech["']/i.test(html), `${file} lost the Callibri source email`);
+  // Почтовая подмена Callibri ловит ТОЧНЫЙ href="mailto:info@ironex.tech" и подставляет
+  // трекинговый ящик. Пока он на чужом домене и подписан чужим именем, подмена выключена:
+  // все ссылки несут тему письма и под селектор не попадают. Инвариант теперь другой —
+  // на странице есть собственный адрес сайта.
+  expect('integrations', /href=["']mailto:info@ironex\.tech\?/i.test(html), `${file} lost its own email address`);
 }
 
 const blogIndexPath = path.join(ROOT, 'blog.html');
