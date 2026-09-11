@@ -1003,3 +1003,43 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
    по-прежнему нужны, поэтому обнуляется только случай «линия одна в
    контейнере». */
 .container > .dim:only-child { margin-block: 0; }
+
+/* ═══ Почта как целевое действие: адрес виден, а не спрятан за кнопкой ═══
+   Костя: «"Прислать чертёж" открывает почту, а это не очевидно». Поэтому рядом
+   с кнопкой всегда стоит сам адрес с копированием: у части людей почтовый клиент
+   не настроен, и mailto для них не срабатывает вовсе. */
+.mailcta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; margin-top: 26px; }
+.mailcta .btn { white-space: nowrap; }
+.mailcta__addr {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 9px 10px 9px 14px; border: 1px solid var(--line-on-surface); border-radius: var(--r-field);
+}
+.mailcta__addr a { color: var(--ink-on-surface); font-weight: 600; text-decoration: none; font-size: 16px; }
+.mailcta__addr a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.mailcta__copy {
+  padding: 6px 11px; border: 1px solid var(--line-on-surface); border-radius: 999px;
+  background: transparent; color: var(--muted-on-surface);
+  font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+.mailcta__copy:hover { color: var(--ink-on-surface); border-color: var(--ink-on-surface); }
+.mailcta__copy[data-copy-state="success"] { color: #7FE3A1; border-color: #7FE3A1; }
+.mailcta__copy[data-copy-state="error"] { color: var(--signal); border-color: var(--signal); }
+.mailcta__hint { margin-top: 14px; color: var(--muted-on-surface); font-size: 15px; max-width: 62ch; }
+.mailcta__hint b { font-weight: 700; color: var(--ink-on-surface); }
+
+@media (max-width: 640px) {
+  .mailcta { gap: 12px; }
+  .mailcta .btn, .mailcta__addr { width: 100%; }
+  .mailcta__addr { justify-content: space-between; }
+}
+/* Подпись кнопки стала длиннее, и рядом появился адрес — шапка перестала помещаться
+   в 1280 и поехала вбок на 163 px. Живая строка и адрес уходят раньше: телефон и
+   кнопка важнее. Замерено, а не на глаз. */
+@media (max-width: 1440px) { .clockbar { display: none; } }
+/* На узком экране подпись кнопки стала длиннее и вытолкнула бургер за край.
+   Телефон на телефоне и так доступен — он в меню и в подвале, а кнопка с
+   явным «на почту» важнее. Замерено на 360 и 390. */
+@media (max-width: 560px) {
+  .site-header__phone { display: none; }
+  .site-header__actions .btn { padding: 9px 13px; font-size: 13px; }
+}
