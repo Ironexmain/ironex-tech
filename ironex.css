@@ -1049,3 +1049,34 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
   .mailcta__addr { box-sizing: border-box; max-width: 100%; flex-wrap: wrap; padding: 8px 8px 8px 12px; gap: 8px; }
   .mailcta__addr a { min-width: 0; overflow-wrap: anywhere; }
 }
+
+/* ═══ Уведомление о cookie ═══════════════════════════════════════════════════
+   Баннер именно ИНФОРМАЦИОННЫЙ, а не запрос согласия, и это осознанно:
+   на сайте стоит аналитика и коллтрекинг, вебвизор выключен, форм нет вовсе —
+   значит обработка идёт на законном интересе, а не на согласии. Скрипты не
+   блокируются до клика, кнопка одна.
+   ⚠️ Формулировка «продолжение использования сайта означает согласие» запрещена
+   с 01.09.2025 — не возвращать. Появится вебвизор, запись сессий или рекламный
+   пиксель — баннер обязан стать настоящим гейтом согласия. */
+.cookie-notice {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 60;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px;
+  max-width: 680px; margin-inline: auto; padding: 14px 16px;
+  background: var(--coal-2, #252C2C); color: var(--on-dark-2);
+  border: 1px solid rgba(255, 255, 255, .16); border-radius: var(--r-card);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, .32); font-size: 14px; line-height: 1.5;
+}
+.cookie-notice p { margin: 0; flex: 1 1 320px; }
+.cookie-notice a { color: var(--on-dark); text-decoration: underline; text-underline-offset: 3px; }
+.cookie-notice button {
+  flex: 0 0 auto; padding: 10px 20px; border: 0; border-radius: 999px;
+  background: var(--on-dark); color: var(--coal);
+  font: inherit; font-weight: 700; cursor: pointer;
+}
+.cookie-notice button:hover { background: #E8ECEC; }
+@media (max-width: 560px) {
+  .cookie-notice { left: 10px; right: 10px; bottom: 10px; padding: 13px 14px; font-size: 13px; }
+  .cookie-notice button { width: 100%; }
+  /* липкая панель с целевым действием не должна оказаться под баннером */
+  body:has(.cookie-notice) .mobile-bar { bottom: 92px; }
+}

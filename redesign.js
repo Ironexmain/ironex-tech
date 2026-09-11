@@ -268,3 +268,46 @@
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
   items.forEach(function (el) { io.observe(el); });
 })();
+
+/* ── Уведомление о cookie ───────────────────────────────────────────────────
+   Разметку ставит скрипт, а не каждая страница: иначе баннер пришлось бы
+   вклеивать в 48 файлов и не забыть про новые. */
+(function () {
+  var KEY = 'cookie_notice_ack';
+  var seen;
+  try { seen = !!localStorage.getItem(KEY); } catch (e) { seen = false; }
+  if (seen) return;
+
+  function build() {
+    var box = document.createElement('div');
+    box.className = 'cookie-notice';
+    box.setAttribute('role', 'region');
+    box.setAttribute('aria-label', 'Уведомление об использовании cookie');
+    box.innerHTML =
+      '<p>Сайт использует cookie, Яндекс.Метрику и сервис учёта обращений — они показывают, ' +
+      'какие страницы полезны и откуда пришло письмо. ' +
+      '<a href="/cookie.html">Что именно собирается и как отказаться</a>.</p>' +
+      '<button type="button">Понятно</button>';
+    box.querySelector('button').addEventListener('click', function () {
+      try { localStorage.setItem(KEY, '1'); } catch (e) { /* приватный режим — скроем на сессию */ }
+      box.remove();
+    });
+    document.body.appendChild(box);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build);
+  else build();
+})();
+
+/* ── Ссылка на страницу о cookie в подвале ──────────────────────────────────
+   Скриптом, а не правкой 48 файлов: подвал одинаковый на всём сайте. */
+(function () {
+  var bottom = document.querySelector('.site-footer__bottom');
+  if (!bottom || bottom.querySelector('a[href="/cookie.html"]')) return;
+  var span = document.createElement('span');
+  var a = document.createElement('a');
+  a.href = '/cookie.html';
+  a.textContent = 'Файлы cookie';
+  span.appendChild(a);
+  bottom.appendChild(span);
+})();

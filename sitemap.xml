@@ -61,6 +61,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://ironex.tech/cookie.html</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>https://ironex.tech/razdel/chertezhi-i-dopuski.html</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
