@@ -1081,3 +1081,23 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
   /* липкая панель с целевым действием не должна оказаться под баннером */
   body:has(.cookie-notice) .mobile-bar { bottom: 92px; }
 }
+
+/* ═══ Адрес почты на виду ════════════════════════════════════════════════════
+   Костя: «саму почту почти нигде не видно». Кнопка говорит «на почту», но сам
+   адрес человек не видел — а он нужен тем, у кого почтовый клиент не настроен,
+   и тем, кто пишет с телефона из другого приложения. */
+.site-header__email {
+  color: var(--on-dark); font-size: 15px; font-weight: 600;
+  text-decoration: none; white-space: nowrap;
+}
+.site-header__email:hover { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 1080px) { .site-header__email { display: none; } }
+
+/* Адрес рядом с кнопками первого экрана */
+.hero__mail { display: inline-flex; align-items: center; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+.hero__mail .mailcta__addr { border-color: var(--line-on-surface); }
+.hero__mail b { color: var(--muted-on-surface); font-size: 14px; font-weight: 600; letter-spacing: .02em; }
+
+/* Адрес внутри подписи «что приложить к письму» */
+.hint .mail { white-space: nowrap; font-weight: 700; color: var(--ink-on-surface); }
+.hint .mail a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
