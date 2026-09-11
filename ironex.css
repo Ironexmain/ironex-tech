@@ -749,3 +749,29 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
    Правило держим, чтобы такая статья не разъехалась с остальными. */
 .avatar > span { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
   background: var(--teal); color: #fff; font-size: 15px; font-weight: 700; letter-spacing: .02em; }
+
+/* ═══ Контраст: цвет текста берётся от поверхности, а не назначается вручную ═══
+   Причина правила: .btn--ghost был нарисован под светлые секции (тёмный текст),
+   а потом переиспользован на угольном первом экране — получилось 1,13:1, текст
+   пропал. Ловить такое глазами бесполезно, поэтому теперь тёмная поверхность
+   сама переопределяет три токена, а компоненты красятся только через них.
+   Новый компонент с собственным цветом текста писать нельзя — только через
+   --ink-on-surface / --muted-on-surface / --line-on-surface. */
+:root {
+  --ink-on-surface: var(--ink);
+  --muted-on-surface: var(--muted);
+  --line-on-surface: var(--line-strong);
+  --signal-ink: #C2213A;   /* сигнальный для ТЕКСТА: #FF5061 на светлом даёт 2,9:1 */
+}
+.site-header, .site-footer, .hero--video, .hero--page, .statement, .marquee, .facts {
+  --ink-on-surface: var(--on-dark);
+  --muted-on-surface: var(--on-dark-2);
+  --line-on-surface: rgba(255, 255, 255, .38);
+}
+.btn--ghost { color: var(--ink-on-surface); border-color: var(--line-on-surface); }
+.btn--ghost:hover { border-color: var(--ink-on-surface); }
+.label { color: var(--muted-on-surface); }
+.spec-table .warn { color: var(--signal-ink); }
+.howto b { color: var(--signal-ink); }
+.label--signal { color: var(--signal-ink); }
+.crumbs span[aria-hidden] { color: var(--muted-on-surface); }
