@@ -23,12 +23,44 @@
       <description>Шероховатость поверхности Ra Rz: чем отличаются параметры, как читать обозначение на чертеже и почему требование Ra 0,8 вместо 3,2 удорожает деталь.</description>
     </item>
     <item>
+      <title>Цинк, фосфат или нержавейка: чем закрыть резьбу под среду</title>
+      <link>https://ironex.tech/blog/rezbovye-soedineniya-kakoe-pokrytie-rezby-dlya-kakoy-sredy.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/rezbovye-soedineniya-kakoe-pokrytie-rezby-dlya-kakoy-sredy.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Покрытие резьбы крепежа: 6 типов под среду. Как выбрать антикоррозийное покрытие резьбовых соединений и крепёж, чтобы узел не ржавел на улице и в сыром цехе.</description>
+    </item>
+    <item>
+      <title>Какие бумаги ждать вместе с партией: паспорт и сертификат</title>
+      <link>https://ironex.tech/blog/pasport-kachestva-i-sertifikat-sootvetstviya-chto-vhodit-v-komplekt.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/pasport-kachestva-i-sertifikat-sootvetstviya-chto-vhodit-v-komplekt.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Паспорт качества на деталь: что входит в паспорт и сертификат соответствия на металлопродукцию и как сверить комплект из 2 документов при приёмке партии.</description>
+    </item>
+    <item>
+      <title>Бирка, тара и лист: что должно уехать вместе с партией</title>
+      <link>https://ironex.tech/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Упаковка деталей для отправки: 3 уровня маркировки — деталь, тара и лист. Как собрать партию, чтобы на сборке получателя до приёмки не встала чужая позиция.</description>
+    </item>
+    <item>
       <title>Пометка в чертеже говорит, чей документ открывать при приёмке</title>
       <link>https://ironex.tech/blog/gost-ili-tu-na-detal-v-chem-raznica-dlya-zakazchika.html</link>
       <guid isPermaLink="true">https://ironex.tech/blog/gost-ili-tu-na-detal-v-chem-raznica-dlya-zakazchika.html</guid>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>ГОСТ или ТУ на деталь — указание, чей документ проверять при приёмке. Разбираем 2 пометки в чертеже, чем отличается ГОСТ от ТУ и что спрашивать у изготовителя.</description>
+    </item>
+    <item>
+      <title>Буква и цифра у размера: что они говорят о точности</title>
+      <link>https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Допуски по квалитетам на чертеже: что такое IT7 и IT8, как читать квалитет точности детали и не переплатить за лишнее поле допуска на свободном размере.</description>
     </item>
     <item>
       <title>Оксидный слой или цинк: какое покрытие заказать под деталь</title>
@@ -133,38 +165,6 @@
       <pubDate>Sun, 30 Aug 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Производство металлических деталей без риска: разберём 7 шагов проверки аналога стали и покажем, как согласовать замену материала до запуска.</description>
-    </item>
-    <item>
-      <title>Пятиосевая обработка: когда она оправдана</title>
-      <link>https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html</guid>
-      <pubDate>Sat, 29 Aug 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали.</description>
-    </item>
-    <item>
-      <title>Фрезерная обработка по чертежу: подготовка 3D-модели</title>
-      <link>https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html</guid>
-      <pubDate>Sat, 29 Aug 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Фрезерная обработка по чертежу: как подготовить 3D-модель за 7 шагов, убрать лишние тела и избежать противоречий при расчёте детали.</description>
-    </item>
-    <item>
-      <title>Расчёт металлообработки: как проверить сроки в КП</title>
-      <link>https://ironex.tech/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp.html</guid>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Расчёт металлообработки без путаницы в сроках: проверьте 3 этапа — подготовку КП, изготовление деталей и доставку партии на ваш склад.</description>
-    </item>
-    <item>
-      <title>Коммерческое предложение на металлообработку: состав</title>
-      <link>https://ironex.tech/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal.html</guid>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Коммерческое предложение на металлообработку: 9 обязательных пунктов для проверки цены, срока изготовления деталей и условий заказа.</description>
     </item>
   </channel>
 </rss>
