@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Изготовить деталь по образцу без чертежа: обмер — IRONEX</title>
+  <meta name="description" content="Как изготовить деталь по образцу без чертежа: обмер, 3D-сканирование и КИМ. Что геометрия восстановит, а что нет — и как не скопировать износ в новую деталь." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer.html#article",
+      "headline": "Образец есть, чертежа нет: как провести обмер и заказать деталь",
+      "description": "Как изготовить деталь по образцу без чертежа: обмер, 3D-сканирование и КИМ. Что геометрия восстановит, а что нет — и как не скопировать износ в новую деталь.",
+      "datePublished": "2026-09-12",
+      "dateModified": "2026-09-12",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "изготовить деталь по образцу без чертежа",
+        "реверс-инжиниринг детали",
+        "обмер образца для чертежа",
+        "3D сканирование детали для производства",
+        "деталь по образцу без чертежа",
+        "изготовить деталь по образцу"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Образец есть, чертежа нет: как провести обмер и заказать деталь"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли по образцу заказать не копию, а деталь с изменениями?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Реверс-инжиниринг позволяет отойти от образца: усилить сечение, сменить посадку, убрать выработку. Изменения фиксируют на чертеже до запуска и принимают по новому замыслу, а не «на глаз к оригиналу». Иначе часть контура уйдёт с образца, часть — с устных замечаний, и они не сойдутся."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чертёж и 3D-модель после обмера остаются у заказчика или у подрядчика?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Порядок определяет договор с подрядчиком. Обмер и модель — отдельная работа, не «бесплатное приложение к детали». Если модель нужна для архива или другого изготовителя, формат файла и выпуск чертежа прописывают заранее. Молчание обычно значит, что подрядчик использует модель только чтобы изготовить ваш заказ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Обмер и изготовление — это одна работа или две?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Часто две, даже если делает один подрядчик. Сначала восстанавливают геометрию и чертёж, вы согласовываете, потом запускают обработку. Если слить всё в заявку «сделайте как образец», вы лишаетесь точки, где можно поправить номинальный размер. Как разбить этапы, определяет подрядчик — это спрашивают до передачи образца."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Нет чертежа: 3 способа обмера, чтобы повторить деталь по образцу" />
+  <meta property="og:description" content="Как изготовить деталь по образцу без чертежа: обмер, 3D-сканирование и КИМ. Что геометрия восстановит, а что нет — и как не скопировать износ в новую деталь." />
+  <meta property="og:url" content="https://ironex.tech/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-12" />
+  <meta property="article:modified_time" content="2026-09-12" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Нет чертежа: 3 способа обмера, чтобы повторить деталь по образцу" />
+  <meta name="twitter:description" content="Как изготовить деталь по образцу без чертежа: обмер, 3D-сканирование и КИМ. Что геометрия восстановит, а что нет — и как не скопировать износ в новую деталь." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Образец есть, чертежа нет: как провести обмер и заказать деталь">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Образец есть, чертежа нет: как провести обмер и заказать деталь</span>
+    </div>
+  </nav>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Образец есть, чертежа нет: как провести обмер и заказать деталь</h1>
+      <p class="lede">Как изготовить деталь по образцу без чертежа: обмер, 3D-сканирование и КИМ. Что геометрия восстановит, а что нет — и как не скопировать износ в новую деталь.</p>
+
+      <div class="byline">
+        <span class="byline__who">
+          <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+          <span>
+            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+            <span class="byline__role">Инженер</span>
+          </span>
+        </span>
+        <span class="byline__meta">
+          <span>Чертежи и допуски</span>
+          <time datetime="2026-09-12">Опубликовано 12 сентября 2026</time>
+
+          <span>10 мин чтения</span>
+        </span>
+      </div>
+
+      <figure class="figure--draft article-cover">
+        <img src="https://ironex.tech/images/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer-cover.webp" alt="Образец есть, чертежа нет: как провести обмер и заказать деталь" width="1200" height="675" fetchpriority="high" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#kogda-chertezha-net-a-detal-nuzhna-povtorit">Когда чертежа нет, а деталь нужна повторить</a></li>
+<li><a href="#obmer-i-3d-skanirovanie-v-chem-raznitsa">Обмер и 3D-сканирование — в чём разница</a></li>
+<li><a href="#chto-obmer-pokazhet-a-chto-net">Что обмер покажет, а что — нет</a></li>
+<li><a href="#material-detali-kak-ego-opredelyayut-bez-dokumentov">Материал детали: как его определяют без документов</a></li>
+<li><a href="#kak-podgotovit-obrazets-dlya-obmera">Как подготовить образец для обмера</a></li>
+<li><a href="#kak-iz-obmera-poluchaetsya-chertezh-s-dopuskami">Как из обмера получается чертёж с допусками</a></li>
+<li><a href="#kak-prinyat-pervuyu-detal-izgotovlennuyu-po-obmeru">Как принять первую деталь, изготовленную по обмеру</a></li>
+<li><a href="#chto-podgotovit-do-starta-obmera">Что подготовить до старта обмера</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Образец есть, чертежа нет: как провести обмер и заказать деталь">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <article class="prose">
+        <p class="prose__lede">Изготовить деталь по образцу без чертежа можно через обмер: подрядчик снимает геометрию образца, строит модель и выпускает чертёж с допусками — вы согласовываете его до запуска. Обмер фиксирует фактический размер этого экземпляра, включая износ. Материал, термообработку и поле допуска он не даёт: их назначает инженер по функции детали.</p>
+
+        <h2 id="kogda-chertezha-net-a-detal-nuzhna-povtorit">Когда чертежа нет, а деталь нужна повторить</h2>
+<p>Чертёж пропадает чаще, чем хотелось бы: станок давно сняли с линии, запчасть пришла без комплекта бумаг, архив не отдали при смене изготовителя, импортный узел приехал без конструкторской папки. Повторить деталь всё равно нужно. Тогда исходником становится физический образец — не документ, а тело, с которого ещё только предстоит снять геометрию и назначить требования к новой детали.</p>
+<p>Это другой тип исходника, чем плоский чертёж. Чертёж описывает замысел: номинальный размер, допуск, посадку, шероховатость. Образец показывает, какой деталь стала после работы — с износом, деформацией, следами ремонта. Подрядчик не копирует контур «на глаз»: он проводит реверс-инжиниринг детали и собирает чертёж с технологией, по которым станок повторит функцию, а не случайную форму.</p>
+<p>Если вы уже заказываете <a href="/blog/mozhno-li-zakazat-detal-bez-3d-modeli.html">деталь без 3D-модели</a> по бумажному чертежу, здесь путь обратный: сначала геометрия с образца, потом документ, и только после согласования — обработка.</p>
+<blockquote><p>Обмер снимает геометрию конкретного экземпляра. Изношенный или погнутый образец по умолчанию уйдёт в новую деталь — пока инженер не восстановит номинальный размер.</p></blockquote>
+<p>Выработка посадочного места, смятая кромка, прогиб — прибор снимет это как есть, и станок воспроизведёт. Подрядчику заранее говорят, что копировать нельзя: где тёрлась, где ломалась, какой зазор был у новой. Без оговорки «сделайте как образец» значит «сделайте вместе с дефектами».</p>
+<div class="cta ui" id="cta" data-cta="inline">
+          <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+          <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+          <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Образец есть, чертежа нет: как провести обмер и заказать деталь">Прислать чертёж на почту</a>
+        </div>
+<h2 id="obmer-i-3d-skanirovanie-v-chem-raznitsa">Обмер и 3D-сканирование — в чём разница</h2>
+<p>Метод выбирают по геометрии детали и нужной точности прибора, а не «сканируем всё подряд». Ручной обмер закрывает простые формы. 3D-сканирование детали для производства берут, когда поверхность сложная и её не собрать штангенциркулем. Координатно-измерительная машина (КИМ) нужна там, где щуп должен попасть в точки точнее, чем даёт ручной инструмент. На выходе любого метода — размеры или облако точек, из которых строят модель и чертёж, а не сразу готовую деталь.</p>
+<table><thead><tr><th>Метод</th><th>Чем снимают</th><th>Для какой геометрии</th><th>Что получают</th></tr></thead><tbody><tr><td>Ручной обмер</td><td>микрометр, штангенциркуль, резьбомер, калибры, угломер</td><td>плоскости, цилиндры, резьбы</td><td>набор отдельных размеров</td></tr><tr><td>3D-сканирование</td><td>оптический или лазерный сканер</td><td>литые корпуса, криволинейные стенки</td><td>облако точек по всей поверхности</td></tr><tr><td>КИМ</td><td>контактный щуп в заданных точках</td><td>когда ручного инструмента уже мало</td><td>координаты точек касания</td></tr></tbody></table>
+<p>Ручной обмер понятен на валу, втулке, фланце. На литом корпусе криволинейную стенку штангенциркулем не описать — набор случайных замеров не соберётся в модель. Сканер закрывает такие тела, но оптика не видит полость внутри, пока образец не разберут. КИМ — касание вместо света, выше повторяемость точки. Выбор фиксирует подрядчик, когда увидит образец: сканер на простой втулке не добавит того, что уже даёт микрометр, а один штангенциркуль на кривых стенках оставит дыры для догадки.</p>
+<h2 id="chto-obmer-pokazhet-a-chto-net">Что обмер покажет, а что — нет</h2>
+<p>Обмер восстанавливает геометрию образца в том состоянии, в котором вы его принесли. Он отвечает на вопрос «какой этот экземпляр сейчас», а не «каким его чертили». Фактический размер посадочного места после выработки — это уже не номинальный размер новой детали. Поле допуска, марку материала и режим термообработки с контура не считать: это отдельные решения инженера, а не показания прибора.</p>
+<p>Износ снимается как «настоящий» размер: разбитое отверстие уйдёт в модель разбитым, смятая кромка — смятой. Погнутый рычаг станет эталоном, пока человек не заметит прогиб и не поправит модель вручную.</p>
+<p>Допуск обмером не определяется. Образец даёт одно число на каждый размер, а допуск — поле, внутри которого деталь ещё работает. Его назначают по функции: посадка, зазор, запас под износ. Точность прибора описывает измерение; допуск на чертеже — требование к новой детали.</p>
+<p>Шероховатость с образца не восстанавливают как требование. Полость внутри и поднутрение сканер не видит, пока образец не разберут; канал или резьбу в глухом отверстии снимают отдельным замером.</p>
+<blockquote><p>Обмер не заменяет чертёж без потерь. Он возвращает контур образца с его износом, а допуск, шероховатость и материал назначают отдельно — по тому, как деталь должна работать.</p></blockquote>
+<h2 id="material-detali-kak-ego-opredelyayut-bez-dokumentov">Материал детали: как его определяют без документов</h2>
+<p>Марку металла по геометрии не считают: обмер описывает форму, а не состав. Цвет среза, вес, магнитится ли заготовка, есть ли ржавчина — это предварительная прикидка, не подтверждение. Точный состав даёт спектральный анализ (стилоскопирование) переносным прибором. Если деталь нагружена или стоит в агрессивной среде, анализ обязателен: «на глаз» марку не подтверждают.</p>
+<p>Твёрдость меряют отдельно. Замер твёрдости косвенно указывает, была ли термообработка и насколько поверхность упрочнена. Это не замена спектрального анализа: твёрдая сталь может быть разными марками, а одна марка — в разном состоянии. Когда от материала зависит, чем резать и чем покрывать, подрядчик предлагает либо анализ, либо аналог по свойствам.</p>
+<p>Аналог согласовывают явно, его не подставляют «по умолчанию». Нельзя молча заменить сталь или алюминий: <a href="/blog/izgotovlenie-detaley-iz-alyuminiya-chto-vliyaet-na-tehnologiyu-i-cenu.html">влияние материала на технологию и цену</a> меняет инструмент, режим и покрытие. Если состав некритичен — кронштейн без удара в сухом узле — инженер предлагает аналог и фиксирует его в чертеже. Если критичен — без анализа марку в штамп не ставят.</p>
+<p>Опишите среду сами: масло, вода, абразив, нагрев, удар. Тогда инженер не закладывает лишний запас «на всякий случай». Где хватит прикидки, а где без спектрального анализа нельзя идти дальше, определяет подрядчик вместе с инженером-технологом.</p>
+<h2 id="kak-podgotovit-obrazets-dlya-obmera">Как подготовить образец для обмера</h2>
+<p>На обмер несут сам образец, а не фотографию. Снимок не даёт фактический размер, посадку и полость внутри. Если есть сопрягаемая деталь — её передают вместе с образцом: по ответной части видно, какой зазор и какая посадка нужны, а не какой зазор получился после износа. Формат передачи — очно или курьером; <a href="/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html">что принимает подрядчик кроме чертежа</a> относится к файлам, образец же едет как физическое тело.</p>
+<p>Словами к образцу прикладывают то, чего на поверхности не прочитать. Условия работы: нагрузка, среда, температура. Какие поверхности рабочие, какие только стоят рядом. Ломался ли оригинал, где изнашивался, какой люфт появился к концу срока. Без этого инженер не отличит функциональный размер от случайного следа и либо назначит допуск с запасом — дороже в обработке, — либо промахнётся мимо посадки.</p>
+<blockquote><p>Инженеру нужен не «похожий кусок металла», а контекст: что в детали работает, что уже изношено, чего в новой повторять нельзя.</p></blockquote>
+<p>Фото годится как опись ракурсов и маркировки, но обмер по фото не делают. Резать образец без вашего согласия нельзя: полость внутри вскрывают, только если вы это разрешили. Чем точнее вы опишете функцию, тем меньше подрядчик будет страховаться узким допуском на все размеры подряд.</p>
+<h2 id="kak-iz-obmera-poluchaetsya-chertezh-s-dopuskami">Как из обмера получается чертёж с допусками</h2>
+<p>Цепочка такая: обмер образца для чертежа даёт набор размеров или облако точек, из них собирают 3D-модель или эскиз, инженер назначает допуски и шероховатость по функции, выпускает чертёж — и только после вашего согласования деталь запускают в обработку. Пропускать согласование нельзя: иначе в производство уйдёт копия дефекта, если «как было» уже было браком.</p>
+<p>Допуск не снимают с точности измерительного прибора. Прибор говорит, насколько он уверен в замере. Допуск говорит, насколько новая деталь может отойти от номинального размера и всё ещё сесть на место. Посадка и запас под износ — решения человека. Шероховатость тоже назначают по функции поверхности, а не снимают с образца. Как не переплатить за лишнюю точность, разобрано в материале про <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">допуски и шероховатость без переплат</a>.</p>
+<p>На чертеже появляются и требования, которых на образце не было видно: марка после анализа или согласованный аналог, базы для контроля, какие размеры справочные, какие посадочные. Если образец изношен, инженер восстанавливает номинальный размер по сопряжению, а фактический размер изношенного места оставляет в комментарии.</p>
+<p>Согласование — ваш контроль замысла. Смотрите не «похоже ли на образец», а «сядет ли и можно ли изготовить без лишней точности». Если чертёж копирует выработку, это ловят здесь, а не на готовой партии.</p>
+<h2 id="kak-prinyat-pervuyu-detal-izgotovlennuyu-po-obmeru">Как принять первую деталь, изготовленную по обмеру</h2>
+<p>Первый изготовленный экземпляр после обмера проверяет, что геометрия снята верно и допуски попали в функцию. Это ещё не серийная штука «уже как все». Её сверяют с образцом по посадочным размерам и, если есть ответная часть, по сопряжению: входит, садится, крутится, держит зазор. Пока посадка не подтверждена, партию не запускают.</p>
+<p>Если новая деталь не встаёт, ошибка обмера или допуска вскрывается на одной штуке, а не на всей партии. Либо с образца сняли износ и воспроизвели его, либо поле допуска ушло так, что посадка не сошлась. Разбор начинают с фактического размера на контрольных местах и сравнивают с номинальным размером на согласованном чертеже.</p>
+<blockquote><p>Первую деталь принимают как проверку обмера и допусков, а не как «уже серию». Пока посадка с ответной частью не сошлась, размножать экземпляр рано.</p></blockquote>
+<p>Внешнее сходство с образцом ничего не доказывает: похожий контур может не сесть, если допуск ушёл в другую сторону. Поэтому <a href="/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii.html">приёмка образца перед серией</a> после обмера важнее, чем после обычного чертежа: исходник был телом, не замыслом. Порядок приёмки определяет подрядчик — какие размеры мерить и что считать годным. Его фиксируют в заявке заранее, чтобы критерием не стало «ну почти как образец».</p>
+<h2 id="chto-podgotovit-do-starta-obmera">Что подготовить до старта обмера</h2>
+<p>До передачи образца соберите не «всё подряд», а то, без чего инженер начнёт угадывать функцию и скопирует износ как замысел. Угадывание потом всплывает в лишнем допуске, неверной марке и детали, которая повторила выработку. Ниже — минимум, который стоит приложить к образцу перед стартом.</p>
+<ul><li>Физический образец, не набор фото. Снимок годится как опись, но обмер с него не делают: фактический размер и полость внутри фото не отдаёт.</li><li>Сопрягаемую деталь, если она есть. По ответной части видно посадку и зазор, которые с изношенного образца уже не прочитать.</li><li>Описание условий работы. Нагрузка, среда, температура, удар, абразив — без этого нельзя решить, нужен ли спектральный анализ.</li><li>Список рабочих поверхностей. Инженер отличит функциональный размер от случайного следа, только если вы укажете, что трётся, что уплотняет, что стоит рядом.</li><li>Известные проблемы оригинала. Где ломался, где изнашивался, какой люфт появился — прямое указание не копировать фактический размер как номинальный.</li><li>Решение по материалу. Либо соглашаетесь на анализ, либо готовы обсудить аналог; «поставьте что-нибудь похожее» в чертёж не попадает.</li><li>Критерий приёмки первой детали. Какие размеры контрольные и что считать годным — проговаривают до запуска, а не спорят у готовой штуки.</li></ul>
+<p>Когда набор собран, подрядчику есть из чего строить чертёж, а вам — с чем сверять первую деталь.</p>
+
+        <h2 id="faq">Частые вопросы</h2>
+        <div class="faq">
+          <details open>
+            <summary>Можно ли по образцу заказать не копию, а деталь с изменениями?</summary>
+            <div class="faq__a"><p>Да. Реверс-инжиниринг позволяет отойти от образца: усилить сечение, сменить посадку, убрать выработку. Изменения фиксируют на чертеже до запуска и принимают по новому замыслу, а не «на глаз к оригиналу». Иначе часть контура уйдёт с образца, часть — с устных замечаний, и они не сойдутся.</p></div>
+          </details>
+<details>
+            <summary>Чертёж и 3D-модель после обмера остаются у заказчика или у подрядчика?</summary>
+            <div class="faq__a"><p>Порядок определяет договор с подрядчиком. Обмер и модель — отдельная работа, не «бесплатное приложение к детали». Если модель нужна для архива или другого изготовителя, формат файла и выпуск чертежа прописывают заранее. Молчание обычно значит, что подрядчик использует модель только чтобы изготовить ваш заказ.</p></div>
+          </details>
+<details>
+            <summary>Обмер и изготовление — это одна работа или две?</summary>
+            <div class="faq__a"><p>Часто две, даже если делает один подрядчик. Сначала восстанавливают геометрию и чертёж, вы согласовываете, потом запускают обработку. Если слить всё в заявку «сделайте как образец», вы лишаетесь точки, где можно поправить номинальный размер. Как разбить этапы, определяет подрядчик — это спрашивают до передачи образца.</p></div>
+          </details>
+        </div>
+
+        <h2 id="istochniki">Источники</h2>
+        <ul class="sources">
+          <li><a href="https://www.iso.org/standard/83105.html" rel="noopener" target="_blank">ISO 10303-1:2024. Industrial automation systems and integration — Product data representation and exchange — Part 1: Overview and fundamental principles</a> — International Organization for Standardization</li>
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Федеральное агентство по техническому регулированию и метрологии</a> — Росстандарт</li>
+<li><a href="https://www.bipm.org/en/" rel="noopener" target="_blank">The International Bureau of Weights and Measures</a> — BIPM</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/chertezh-v-dyuymah-kak-zakazat-detal-bez-oshibki-perescheta.html">
+            <img src="https://ironex.tech/images/blog/chertezh-v-dyuymah-kak-zakazat-detal-bez-oshibki-perescheta-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как отдать дюймовый чертёж, чтобы деталь совпала с посадкой</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html">
+            <img src="https://ironex.tech/images/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Буква и цифра у размера: что они говорят о точности</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html">
+            <img src="https://ironex.tech/images/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Образец есть, чертежа нет: как провести обмер и заказать деталь">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
