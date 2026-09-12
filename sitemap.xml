@@ -115,6 +115,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ironex.tech/blog/smena-podryadchika-v-processe-proekta-kak-peredat-dokumentaciyu.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ironex.tech/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -151,6 +157,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ironex.tech/blog/lite-ili-mehanoobrabotka-kak-vybrat-metod-dlya-detali.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ironex.tech/blog/kontrol-svarnogo-shva-uzk-rk-i-vik.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -163,7 +175,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ironex.tech/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ironex.tech/blog/detal-prishla-s-defektom-kak-oformit-pretenziyu.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

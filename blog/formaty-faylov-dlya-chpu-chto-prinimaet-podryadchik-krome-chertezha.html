@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Форматы файлов для ЧПУ обработки — IRONEX</title>
+  <meta name="description" content="Форматы файлов для ЧПУ обработки: STEP для 3D, DXF для листа, PDF с допусками. Какой файл нужен для расчёта детали и что приложить, чтобы не переспрашивали." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html#article",
+      "headline": "Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили",
+      "description": "Форматы файлов для ЧПУ обработки: STEP для 3D, DXF для листа, PDF с допусками. Какой файл нужен для расчёта детали и что приложить, чтобы не переспрашивали.",
+      "datePublished": "2026-09-12",
+      "dateModified": "2026-09-12",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "форматы файлов для ЧПУ обработки",
+        "какой файл нужен для расчёта детали",
+        "STEP DXF для ЧПУ",
+        "3D модель для подрядчика",
+        "DXF для раскроя листа",
+        "чертёж PDF с допусками"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли вместо CAD прислать фото бумажного чертежа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Плоский скан с читаемыми размерами и штампом иногда хватает на предварительный расчёт. Фото под углом, с линейкой в кадре и бликом на листе для запуска не используют: по нему нельзя надёжно снять геометрию. Если CAD нет, уточните, будет ли подрядчик строить модель по скану и как эта работа войдёт в расчёт."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если STEP и чертёж расходятся по размеру?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для допусков, шероховатости и материала ориентир — чертёж. Модель в таком случае не «главнее», а источник расхождения. Напишите об этом в заявке сами: иначе технолог либо остановится с вопросом, либо пойдёт по одному файлу, и на приёмке всплывет второй."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли прикладывать сборку, если заказываете одну деталь?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для расчёта и запуска нужна геометрия самой детали. Сборка полезна, если важно сопряжение, база или запрет менять стык — это лучше сказать текстом и приложить сопряжённую деталь как справочную, а не вместо рабочей. Файл сборки без выгруженной детали подрядчик часто не разберёт: неясно, что резать."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="STEP, DXF и PDF: три файла, без которых ЧПУ не запустить" />
+  <meta property="og:description" content="Форматы файлов для ЧПУ обработки: STEP для 3D, DXF для листа, PDF с допусками. Какой файл нужен для расчёта детали и что приложить, чтобы не переспрашивали." />
+  <meta property="og:url" content="https://ironex.tech/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-12" />
+  <meta property="article:modified_time" content="2026-09-12" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="STEP, DXF и PDF: три файла, без которых ЧПУ не запустить" />
+  <meta name="twitter:description" content="Форматы файлов для ЧПУ обработки: STEP для 3D, DXF для листа, PDF с допусками. Какой файл нужен для расчёта детали и что приложить, чтобы не переспрашивали." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили</span>
+    </div>
+  </nav>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили</h1>
+      <p class="lede">Форматы файлов для ЧПУ обработки: STEP для 3D, DXF для листа, PDF с допусками. Какой файл нужен для расчёта детали и что приложить, чтобы не переспрашивали.</p>
+
+      <div class="byline">
+        <span class="byline__who">
+          <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+          <span>
+            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+            <span class="byline__role">Инженер</span>
+          </span>
+        </span>
+        <span class="byline__meta">
+          <span>Чертежи и допуски</span>
+          <time datetime="2026-09-12">Опубликовано 12 сентября 2026</time>
+
+          <span>8 мин чтения</span>
+        </span>
+      </div>
+
+      <figure class="figure--draft article-cover">
+        <img src="https://ironex.tech/images/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha-cover.webp" alt="Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили" width="1200" height="675" fetchpriority="high" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#zachem-nuzhen-ne-tolko-chertezh">Зачем нужен не только чертёж</a></li>
+<li><a href="#3d-model-kakie-formaty-ponimayut-v-proizvodstve">3D-модель: какие форматы понимают в производстве</a></li>
+<li><a href="#ploskie-detali-dxf-i-dwg-dlya-raskroya">Плоские детали: DXF и DWG для раскроя</a></li>
+<li><a href="#chertezh-s-dopuskami-ostaetsya-obyazatelnym">Чертёж с допусками остаётся обязательным</a></li>
+<li><a href="#minimalnyy-komplekt-dlya-rascheta-i-dlya-zapuska-v-proizvods">Минимальный комплект: для расчёта и для запуска в производство</a></li>
+<li><a href="#kak-sobrat-i-otpravit-komplekt-podryadchiku">Как собрать и отправить комплект подрядчику</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <article class="prose">
+        <p class="prose__lede">Для ЧПУ-обработки подрядчик принимает комплект, а не один чертёж: STEP-модель для фрезеровки и токарки, DXF-развёртку для листового раскроя и PDF с допусками, шероховатостью поверхности и материалом. Какой файл нужен для расчёта детали, зависит от маршрута: без 3D технолог строит геометрию по видам, без чертежа считает по номиналу.</p>
+
+        <h2 id="zachem-nuzhen-ne-tolko-chertezh">Зачем нужен не только чертёж</h2>
+<p>Чертёж закрывает контроль: допуски, шероховатость поверхности, материал, покрытие, термообработку. Управляющую программу для фрезерного или токарного станка с ЧПУ CAM-система строит по 3D-геометрии, а не по видам на листе. Если модели нет, технолог поднимает тело по проекциям сам — эта работа попадает в срок и в <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">цену металлообработки по чертежу</a>. У листовых деталей маршрут другой: лазер, плазма, гидроабразив и координатно-пробивной станок режут по плоскому контуру, им объёмное тело не нужно.</p>
+<blockquote><p>Один чертёж не заменяет комплект: объёмным деталям нужна 3D-модель, листовым — развёртка, контролю — чертёж с допусками.</p></blockquote>
+<p>Дальше деление идёт по типу детали, не по «какой файл удобнее выгрузить из CAD». Корпус с карманами, окнами и резьбами без модели программировать долго: каждый карман технолог восстанавливает по размерам и сечениям, и любая двусмысленность вида даёт развилку. Вал с канавками и фасками проще по видам, но и там 3D снимает вопрос, совпадают ли проекции. Лист с гибами в раскрой идёт развёрткой, а не «коробкой» в объёме: CAM резки ждёт контур в плоскости.</p>
+<p>Форматы файлов для ЧПУ обработки поэтому подбирают под маршрут. Комплект из двух-трёх файлов закрывает и расчёт, и запуск. Один PDF часто хватает только на оценку «примерно так», не на управляющую программу и не на приёмку по полям допуска.</p>
+<div class="cta ui" id="cta" data-cta="inline">
+          <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+          <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+          <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили">Прислать чертёж на почту</a>
+        </div>
+<h2 id="3d-model-kakie-formaty-ponimayut-v-proizvodstve">3D-модель: какие форматы понимают в производстве</h2>
+<p>Для объёмной детали подрядчику нужна точная твердотельная геометрия в STEP (.step или .stp): файл открывается в большинстве CAD-систем, и из него CAM-система строит траектории. IGES (.iges/.igs) — более старый формат обмена; его ещё принимают, но где есть выбор, сохраняйте STEP. Нативные файлы SolidWorks, КОМПАС-3D и Inventor без договорённости о версии часто просят пересохранить. STL для механообработки не подходит: это полигональная треугольная сетка, приближение, а не точная геометрия.</p>
+<blockquote><p>STEP хранит точное тело. STL хранит треугольники. Для фрезеровки и токарки годится STEP, не сетка.</p></blockquote>
+<table><thead><tr><th>Формат</th><th>Что внутри</th><th>Для механообработки</th><th>Чего в файле нет</th></tr></thead><tbody><tr><td>STEP (.step / .stp)</td><td>точная твердотельная геометрия</td><td>основной обменный формат</td><td>допуски и шероховатость</td></tr><tr><td>IGES (.iges / .igs)</td><td>точная геометрия, старше STEP</td><td>принимают; предпочтителен STEP</td><td>то же; на сложных поверхностях при конвертации геометрия иногда ломается</td></tr><tr><td>Нативный CAD (.sldprt, .m3d, .ipt и сборки)</td><td>точная геометрия своей системы</td><td>если версия программы совпала</td><td>иначе файл не откроется</td></tr><tr><td>STL</td><td>треугольная сетка</td><td>нет: печать и визуал</td><td>точные поверхности и рёбра</td></tr></tbody></table>
+<p>Нативные расширения стоит называть прямо, чтобы не путать деталь и сборку: SolidWorks — .sldprt и .sldasm, КОМПАС-3D — .m3d и .a3d, Inventor — .ipt и .iam. Разные версии одной программы не всегда открывают файлы друг друга. Подрядчик либо спрашивает версию, либо сразу просит STEP — так проще, чем выяснять, что «у нас тоже SolidWorks», но другой год выпуска.</p>
+<p>Сама 3D-модель для подрядчика без PMI/MBD не несёт допуски и шероховатость поверхности. В обычной механообработке размеры с полями допуска стоят на чертеже, не внутри тела. Как вычистить геометрию перед выгрузкой — в материале про <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">подготовку 3D-модели для расчёта</a>.</p>
+<h2 id="ploskie-detali-dxf-i-dwg-dlya-raskroya">Плоские детали: DXF и DWG для раскроя</h2>
+<p>Детали из листа программируют по 2D-контуру, не по 3D-телу. Лазерная, плазменная и гидроабразивная резка, вырубка на координатно-пробивном станке читают развёртку — плоский раскроенный контур. Предпочтительный формат — DXF, открытый обмен 2D-контурами. DWG — нативный формат AutoCAD; часть подрядчиков просит DXF вместо DWG, чтобы не зависеть от версии AutoCAD. Толщину листа, марку материала и наличие гибов в самом файле часто нет: их пишут в заявке или на чертеже.</p>
+<blockquote><p>Для раскроя нужна плоская развёртка в DXF, а не объёмная модель уже согнутой детали.</p></blockquote>
+<p>Частая ошибка — прислать 3D-коробку «как будет после гибки». CAM раскроя ждёт контур реза в плоскости. Если гибы есть, развёртку считают в CAD с учётом гиба и выгружают плоский контур. В файле оставляют геометрию реза: размерные выноски и рамки поверх контура CAM может принять за линию реза.</p>
+<p>DXF и DWG закрывают контур и не заменяют чертёж. Посадка после гибки, покрытие, направление проката, сторона и порядок гибов — это текст и виды, не полилиния. STEP-модель листа полезна, когда после резки деталь ещё фрезеруют или сверлят по объёму, но сам раскрой всё равно идёт от развёртки. Если в заявке только «коробка» без плоского контура, подрядчик либо попросит DXF, либо развернёт тело сам и заложит это в расчёт.</p>
+<h2 id="chertezh-s-dopuskami-ostaetsya-obyazatelnym">Чертёж с допусками остаётся обязательным</h2>
+<p>Чертёж — PDF, скан или реже DWG с проставленными размерами — обычно единственное место, где стоят допуски, шероховатость поверхности, материал, покрытие и термообработка. 3D-модель без PMI/MBD чертёж не заменяет: даёт геометрию и молчит про поля допуска. Если прислать только STEP, подрядчик считает по номинальным размерам и стандартной шероховатости — на приёмке это может разойтись с тем, что вы держали в голове.</p>
+<blockquote><p>Модель показывает форму. Чертёж показывает, где форму нельзя нарушить.</p></blockquote>
+<p>При экспорте в PDF размеры должны остаться читаемыми после печати и масштабирования: поля не обрезаны, выноски не уехали за край, шрифт не схлопнулся при сжатии. Скан бумажного листа годится, если виды не смазаны и штамп с материалом виден. Критичные размеры нельзя прятать в общей фразе на поле чертежа: если часть посадок жёсткая, а часть — нет, это видно по разным допускам на самих размерах. Иначе расчёт идёт по худшему сценарию или начинается переписка.</p>
+<p>Не путайте чертёж с «картинкой детали». Сборочный вид без размеров вала или корпуса не даёт ни поля допуска, ни шероховатости поверхности. Как не раздуть требования к посадкам и поверхности — в разборе <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">допусков и шероховатости без лишнего удорожания</a>.</p>
+<h2 id="minimalnyy-komplekt-dlya-rascheta-i-dlya-zapuska-v-proizvods">Минимальный комплект: для расчёта и для запуска в производство</h2>
+<p>Для предварительного расчёта обычно достаточно 3D-модели в STEP или чертежа с размерами, плюс количество и материал. Для запуска в производство комплект полный: чертёж с допусками и шероховатостью, материал и его состояние, покрытие и термообработка, если они есть, количество; для листовых — толщина и развёртка. Разница не в «лишних файлах», а в том, что без допусков станок и ОТК не знают, что считать годным.</p>
+<table><thead><tr><th>Что передаёте</th><th>Для расчёта</th><th>Для запуска</th></tr></thead><tbody><tr><td>STEP для объёмной детали или DXF-развёртка для листа</td><td>да, один из двух по типу</td><td>да</td></tr><tr><td>Чертёж с размерами</td><td>да</td><td>да, уже с допусками и шероховатостью</td></tr><tr><td>Материал</td><td>марка</td><td>марка и состояние</td></tr><tr><td>Количество</td><td>да</td><td>да</td></tr><tr><td>Покрытие и термообработка</td><td>если уже известны</td><td>обязательно, если они есть</td></tr><tr><td>Толщина листа</td><td>для листовых</td><td>для листовых</td></tr></tbody></table>
+<p>Прислали только 3D — считают номинал и типовую шероховатость. Прислали только чертёж без модели — технолог строит тело, расчёт позже по трудозатратам. Для пробной партии перед серией файлы те же: отдельно фиксируют, что нельзя менять при переходе на серию. Об этом — в статье <a href="/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku.html">пробная партия или серийный заказ</a>. Неполный комплект не «ускоряет старт»: подрядчик либо закладывает запас, либо пишет дозапрос и ждёт ответ.</p>
+<h2 id="kak-sobrat-i-otpravit-komplekt-podryadchiku">Как собрать и отправить комплект подрядчику</h2>
+<p>Перед заявкой соберите файлы под тип детали: STEP для объёмных или DXF-развёртку для листовых, PDF-чертёж с допусками, материал, количество, покрытие и термообработку при наличии. Несколько деталей одной сборки назовите в тексте заявки, а не только в именах файлов. Если чертежей несколько ревизий, версия должна быть видна в имени — иначе в работу уйдёт не тот лист; как это фиксировать, разобрано в <a href="/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html">контроле версий чертежей</a>.</p>
+<ul><li>3D-модель в STEP для фрезеровки и токарки либо DXF-развёртка для листа — не оба «на всякий случай» вместо нужного, а тот файл, из которого строится управляющая программа.</li><li>PDF-чертёж с допусками и шероховатостью поверхности — даже если модель «и так всё показывает»; без полей допуска расчёт идёт по номиналу.</li><li>Марка материала и состояние — «сталь» без марки для расчёта мало; для листа отдельно толщина.</li><li>Количество — одна штука, пробная партия или серия: от этого зависит, как закладывают оснастку и контроль.</li><li>Покрытие и термообработка, если они есть — после механообработки или до неё, это меняет припуски; если нет, так и напишите.</li><li>Текст про сборку — какие файлы вместе, какие можно делать порознь; имена вроде <code>detal_02</code> сами это не объяснят.</li><li>Номер версии в имени файла и в штампе чертежа — одна и та же ревизия в модели и в PDF.</li></ul>
+<p>Для корпусов и валов подготовка та же по форматам, но акценты разные: у <a href="/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu.html">корпуса</a> чаще спорят карманы, окна и базы, у <a href="/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu.html">вала</a> — шейки, канавки и соосность. Комплект можно отправить архивом: внутри — файлы с понятными именами, в письме — перечень, что есть STEP, что DXF, что чертёж.</p>
+<p>Если файлы собраны, оставьте заявку с комплектом: по нему можно посчитать маршрут и состав работ, не восстанавливая геометрию наугад.</p>
+
+        <h2 id="faq">Частые вопросы</h2>
+        <div class="faq">
+          <details open>
+            <summary>Можно ли вместо CAD прислать фото бумажного чертежа?</summary>
+            <div class="faq__a"><p>Плоский скан с читаемыми размерами и штампом иногда хватает на предварительный расчёт. Фото под углом, с линейкой в кадре и бликом на листе для запуска не используют: по нему нельзя надёжно снять геометрию. Если CAD нет, уточните, будет ли подрядчик строить модель по скану и как эта работа войдёт в расчёт.</p></div>
+          </details>
+<details>
+            <summary>Что делать, если STEP и чертёж расходятся по размеру?</summary>
+            <div class="faq__a"><p>Для допусков, шероховатости и материала ориентир — чертёж. Модель в таком случае не «главнее», а источник расхождения. Напишите об этом в заявке сами: иначе технолог либо остановится с вопросом, либо пойдёт по одному файлу, и на приёмке всплывет второй.</p></div>
+          </details>
+<details>
+            <summary>Нужно ли прикладывать сборку, если заказываете одну деталь?</summary>
+            <div class="faq__a"><p>Для расчёта и запуска нужна геометрия самой детали. Сборка полезна, если важно сопряжение, база или запрет менять стык — это лучше сказать текстом и приложить сопряжённую деталь как справочную, а не вместо рабочей. Файл сборки без выгруженной детали подрядчик часто не разберёт: неясно, что резать.</p></div>
+          </details>
+        </div>
+
+        <h2 id="istochniki">Источники</h2>
+        <ul class="sources">
+          <li><a href="https://www.iso.org/standard/83105.html" rel="noopener" target="_blank">ISO 10303-1:2024. Industrial automation systems and integration — Product data representation and exchange — Part 1: Overview and fundamental principles</a> — International Organization for Standardization</li>
+<li><a href="https://www.autodesk.com" rel="noopener" target="_blank">Autodesk</a> — разработчик форматов DXF и DWG</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html">
+            <img src="https://ironex.tech/images/blog/chto-prilozhit-k-zayavke-na-gibku-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Гибка металла на заказ: что приложить к заявке</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">
+            <img src="https://ironex.tech/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Фрезерная обработка по чертежу: подготовка 3D-модели</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">
+            <img src="https://ironex.tech/images/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Фрезерная обработка по чертежу: допуски без переплат</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

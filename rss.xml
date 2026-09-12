@@ -23,6 +23,14 @@
       <description>Термообработка металла для деталей: когда нужна закалка и отпуск, как они влияют на цену и срок изготовления. 4 поля в заявке, без которых расчёт неполный.</description>
     </item>
     <item>
+      <title>Как отдать серию другому исполнителю и не потерять чертежи</title>
+      <link>https://ironex.tech/blog/smena-podryadchika-v-processe-proekta-kak-peredat-dokumentaciyu.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/smena-podryadchika-v-processe-proekta-kak-peredat-dokumentaciyu.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Смена подрядчика по металлообработке: соберите 2 акта и полный пакет чертежей, чтобы новый исполнитель принял заказ без повторной оплаты уже сделанной работы.</description>
+    </item>
+    <item>
       <title>Ra и Rz на чертеже: что требовать, чтобы не переплатить за чистоту</title>
       <link>https://ironex.tech/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html</link>
       <guid isPermaLink="true">https://ironex.tech/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html</guid>
@@ -71,6 +79,14 @@
       <description>Упаковка деталей для отправки: 3 уровня маркировки — деталь, тара и лист. Как собрать партию, чтобы на сборке получателя до приёмки не встала чужая позиция.</description>
     </item>
     <item>
+      <title>Когда деталь лить, а когда сразу ставить на станок</title>
+      <link>https://ironex.tech/blog/lite-ili-mehanoobrabotka-kak-vybrat-metod-dlya-detali.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/lite-ili-mehanoobrabotka-kak-vybrat-metod-dlya-detali.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Литьё или механообработка детали: 2 метода. Когда выгоднее литьё, а когда обработка на станке — и как партия с допусками решает выбор метода изготовления.</description>
+    </item>
+    <item>
       <title>Поверхность, эхо-сигнал или снимок: как проверить сварной шов</title>
       <link>https://ironex.tech/blog/kontrol-svarnogo-shva-uzk-rk-i-vik.html</link>
       <guid isPermaLink="true">https://ironex.tech/blog/kontrol-svarnogo-shva-uzk-rk-i-vik.html</guid>
@@ -87,12 +103,28 @@
       <description>ГОСТ или ТУ на деталь — указание, чей документ проверять при приёмке. Разбираем 2 пометки в чертеже, чем отличается ГОСТ от ТУ и что спрашивать у изготовителя.</description>
     </item>
     <item>
+      <title>Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили</title>
+      <link>https://ironex.tech/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Форматы файлов для ЧПУ обработки: STEP для 3D, DXF для листа, PDF с допусками. Какой файл нужен для расчёта детали и что приложить, чтобы не переспрашивали.</description>
+    </item>
+    <item>
       <title>Буква и цифра у размера: что они говорят о точности</title>
       <link>https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html</link>
       <guid isPermaLink="true">https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html</guid>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Допуски по квалитетам на чертеже: что такое IT7 и IT8, как читать квалитет точности детали и не переплатить за лишнее поле допуска на свободном размере.</description>
+    </item>
+    <item>
+      <title>Пришла деталь с дефектом — как зафиксировать и что требовать</title>
+      <link>https://ironex.tech/blog/detal-prishla-s-defektom-kak-oformit-pretenziyu.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/detal-prishla-s-defektom-kak-oformit-pretenziyu.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Деталь пришла с браком: как собрать акт, фото и претензию подрядчику за дефект детали. Порядок оформления рекламации — 4 шага, чтобы требование не отклонили.</description>
     </item>
     <item>
       <title>Оксидный слой или цинк: какое покрытие заказать под деталь</title>
@@ -133,38 +165,6 @@
       <pubDate>Thu, 03 Sep 2026 00:00:00 +0300</pubDate>
       <category>Контроль качества</category>
       <description>Мелкосерийное производство деталей: 8 шагов для проверки первой детали, согласования критических параметров и снижения риска брака в серии.</description>
-    </item>
-    <item>
-      <title>Порошковая покраска на заказ: как выбрать покрытие</title>
-      <link>https://ironex.tech/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali.html</guid>
-      <pubDate>Wed, 02 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Порошковая покраска на заказ: 6 параметров для выбора цвета, фактуры и подготовки поверхности без ошибок в чертеже и заявке на расчёт.</description>
-    </item>
-    <item>
-      <title>Сварка на заказ: документация на сварную сборку</title>
-      <link>https://ironex.tech/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku.html</guid>
-      <pubDate>Wed, 02 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Сварка на заказ без спорных швов: 7 пунктов документации помогут согласовать сборочные базы, контроль геометрии и финишную обработку изделия.</description>
-    </item>
-    <item>
-      <title>Лазерная резка: цена и 6 факторов расчёта</title>
-      <link>https://ironex.tech/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html</guid>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Экономика заказа</category>
-      <description>Лазерная резка: цена зависит от 6 факторов — материала, толщины, контура, раскладки, тиража и доработки. Разбираем, что подготовить для расчёта.</description>
-    </item>
-    <item>
-      <title>Гибка металла на заказ: что приложить к заявке</title>
-      <link>https://ironex.tech/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html</guid>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Гибка металла на заказ: 7 данных для расчёта без лишних уточнений — развёртка, материал, толщина, радиусы, количество, допуски и требования к поверхности.</description>
     </item>
   </channel>
 </rss>
