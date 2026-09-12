@@ -5,7 +5,15 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Когда детали нужна закалка — и что она делает с ценой</title>
+      <link>https://ironex.tech/blog/termoobrabotka-metalla-kogda-ona-nuzhna-i-kak-vliyaet-na-cenu-i-sroki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/termoobrabotka-metalla-kogda-ona-nuzhna-i-kak-vliyaet-na-cenu-i-sroki.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Термообработка металла для деталей: когда нужна закалка и отпуск, как они влияют на цену и срок изготовления. 4 поля в заявке, без которых расчёт неполный.</description>
+    </item>
     <item>
       <title>Как подготовить чертёж вала для расчёта и изготовления</title>
       <link>https://ironex.tech/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu.html</link>
@@ -157,14 +165,6 @@
       <pubDate>Tue, 25 Aug 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Фрезерная обработка по чертежу без лишних затрат: 7 шагов, чтобы назначить допуски и шероховатость по функции детали и упростить контроль партии.</description>
-    </item>
-    <item>
-      <title>Производственная кооперация: как передать заказ</title>
-      <link>https://ironex.tech/blog/proizvodstvennaya-kooperaciya-v-metalloobrabotke-kak-peredat-zakaz.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/proizvodstvennaya-kooperaciya-v-metalloobrabotke-kak-peredat-zakaz.html</guid>
-      <pubDate>Mon, 24 Aug 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Производственная кооперация в металлообработке: чек-лист из 7 шагов поможет передать заказ подрядчику без потери требований, сроков и управляемости процесса.</description>
     </item>
   </channel>
 </rss>
