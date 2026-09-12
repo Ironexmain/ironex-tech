@@ -7,6 +7,14 @@
     <language>ru</language>
     <lastBuildDate>Sat, 12 Sep 2026 00:00:00 +0300</lastBuildDate>
     <item>
+      <title>Как закрыть партию от ржавчины, пока она ждёт монтажа</title>
+      <link>https://ironex.tech/blog/zaschita-detaley-ot-korrozii-na-vremya-hraneniya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/zaschita-detaley-ot-korrozii-na-vremya-hraneniya.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Защита деталей от коррозии при хранении: 4 способа консервации. Как выбрать временную антикоррозийную защиту металла и что указать подрядчику в заявке.</description>
+    </item>
+    <item>
       <title>Когда детали нужна закалка — и что она делает с ценой</title>
       <link>https://ironex.tech/blog/termoobrabotka-metalla-kogda-ona-nuzhna-i-kak-vliyaet-na-cenu-i-sroki.html</link>
       <guid isPermaLink="true">https://ironex.tech/blog/termoobrabotka-metalla-kogda-ona-nuzhna-i-kak-vliyaet-na-cenu-i-sroki.html</guid>
@@ -39,12 +47,36 @@
       <description>Паспорт качества на деталь: что входит в паспорт и сертификат соответствия на металлопродукцию и как сверить комплект из 2 документов при приёмке партии.</description>
     </item>
     <item>
+      <title>Крепёж не из каталога: один подрядчик или два</title>
+      <link>https://ironex.tech/blog/nestandartnyy-krepezh-zakazyvat-vmeste-s-detalyu-ili-otdelno.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/nestandartnyy-krepezh-zakazyvat-vmeste-s-detalyu-ili-otdelno.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Нестандартный крепёж на заказ: 2 схемы поставки — вместе с деталью или у метизного завода. Что писать в заявке и как согласовать покрытие с самой деталью.</description>
+    </item>
+    <item>
+      <title>Почему подрядчик не берёт одну деталь и как пройти порог</title>
+      <link>https://ironex.tech/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Минимальная партия изготовления деталей: почему цена одной штуки выглядит как за 5–10, из чего порог входа и как заявкой снизить его на мелкую партию.</description>
+    </item>
+    <item>
       <title>Бирка, тара и лист: что должно уехать вместе с партией</title>
       <link>https://ironex.tech/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy.html</link>
       <guid isPermaLink="true">https://ironex.tech/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy.html</guid>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Упаковка деталей для отправки: 3 уровня маркировки — деталь, тара и лист. Как собрать партию, чтобы на сборке получателя до приёмки не встала чужая позиция.</description>
+    </item>
+    <item>
+      <title>Поверхность, эхо-сигнал или снимок: как проверить сварной шов</title>
+      <link>https://ironex.tech/blog/kontrol-svarnogo-shva-uzk-rk-i-vik.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kontrol-svarnogo-shva-uzk-rk-i-vik.html</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Контроль сварного шва: ВИК, УЗК и РК. Чем отличаются 3 метода контроля шва, какой запросить под деталь и какие документы подтвердят, что шов проверили.</description>
     </item>
     <item>
       <title>Пометка в чертеже говорит, чей документ открывать при приёмке</title>
@@ -133,38 +165,6 @@
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Гибка металла на заказ: 7 данных для расчёта без лишних уточнений — развёртка, материал, толщина, радиусы, количество, допуски и требования к поверхности.</description>
-    </item>
-    <item>
-      <title>Обработка нержавейки ЧПУ: что указать в заявке</title>
-      <link>https://ironex.tech/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html</guid>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Обработка нержавейки ЧПУ: 7 пунктов заявки — марка, поверхность, сварка и контроль. Чек-лист поможет точнее рассчитать детали и снизить число уточнений.</description>
-    </item>
-    <item>
-      <title>Детали из алюминия: что влияет на цену</title>
-      <link>https://ironex.tech/blog/izgotovlenie-detaley-iz-alyuminiya-chto-vliyaet-na-tehnologiyu-i-cenu.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/izgotovlenie-detaley-iz-alyuminiya-chto-vliyaet-na-tehnologiyu-i-cenu.html</guid>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Детали из алюминия: 7 факторов цены — сплав, допуски, геометрия, партия, покрытие и контроль. Чек-лист для подготовки чертежа и расчёта.</description>
-    </item>
-    <item>
-      <title>Изготовление деталей по чертежам: контроль версий</title>
-      <link>https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html</guid>
-      <pubDate>Sun, 30 Aug 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии.</description>
-    </item>
-    <item>
-      <title>Производство металлических деталей: выбор аналога</title>
-      <link>https://ironex.tech/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html</guid>
-      <pubDate>Sun, 30 Aug 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Производство металлических деталей без риска: разберём 7 шагов проверки аналога стали и покажем, как согласовать замену материала до запуска.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Минимальная партия изготовления деталей: как снизить порог</title>
+  <meta name="description" content="Минимальная партия изготовления деталей: почему цена одной штуки выглядит как за 5–10, из чего порог входа и как заявкой снизить его на мелкую партию." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika.html#article",
+      "headline": "Почему подрядчик не берёт одну деталь и как пройти порог",
+      "description": "Минимальная партия изготовления деталей: почему цена одной штуки выглядит как за 5–10, из чего порог входа и как заявкой снизить его на мелкую партию.",
+      "datePublished": "2026-09-12",
+      "dateModified": "2026-09-12",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika-cover.webp",
+      "articleSection": "Экономика заказа",
+      "keywords": [
+        "минимальная партия изготовления деталей",
+        "минимальный заказ у подрядчика по металлообработке",
+        "порог входа мелкая партия",
+        "пробная партия деталей",
+        "наладка при заказе деталей",
+        "минимальная партия у подрядчика"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Почему подрядчик не берёт одну деталь и как пройти порог"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли привезти свой материал, чтобы подрядчик не закупал целый прокат или лист?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, это стоит предложить, если кусок нужного размера у вас уже есть. Закупка тогда выпадает из запуска, но наладка, программа и первая проверка размеров остаются. Подрядчик может отказать в чужой заготовке: неизвестный прокат, сертификат, скрытые дефекты. Уточните заранее, принимает ли цех давальческий материал и какие документы на него нужны."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Наладку выделяют отдельной строкой или включают в цену штуки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Цех решает сам, как выставлять наладку. Если её спрятали в цене изделия, без расшифровки не видно, что именно вы оплачиваете. Просите в расчёте отдельные строки: наладка, материал, обработка. Тогда при росте количества вы увидите, какая часть перестанет падать на изделие, а какая останется."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Если после пробной партии серии не будет, что происходит с оснасткой и программой ЧПУ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Этого нет в обычном расчёте — условие нужно зафиксировать до запуска. Оснастка может остаться у подрядчика, отойти вам или оказаться разовой. Программа ЧПУ часто живёт у цеха: без договорённости вы не заберёте её к другому исполнителю. Спросите до оплаты, кто хранит приспособление и программу и что будет, если серии не случится."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Цена 1 детали как за 5–10: как снизить порог у подрядчика" />
+  <meta property="og:description" content="Минимальная партия изготовления деталей: почему цена одной штуки выглядит как за 5–10, из чего порог входа и как заявкой снизить его на мелкую партию." />
+  <meta property="og:url" content="https://ironex.tech/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-12" />
+  <meta property="article:modified_time" content="2026-09-12" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Цена 1 детали как за 5–10: как снизить порог у подрядчика" />
+  <meta name="twitter:description" content="Минимальная партия изготовления деталей: почему цена одной штуки выглядит как за 5–10, из чего порог входа и как заявкой снизить его на мелкую партию." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему подрядчик не берёт одну деталь и как пройти порог">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Почему подрядчик не берёт одну деталь и как пройти порог</span>
+    </div>
+  </nav>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Почему подрядчик не берёт одну деталь и как пройти порог</h1>
+      <p class="lede">Минимальная партия изготовления деталей: почему цена одной штуки выглядит как за 5–10, из чего порог входа и как заявкой снизить его на мелкую партию.</p>
+
+      <div class="byline">
+        <span class="byline__who">
+          <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+          <span>
+            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+            <span class="byline__role">Инженер</span>
+          </span>
+        </span>
+        <span class="byline__meta">
+          <span>Экономика заказа</span>
+          <time datetime="2026-09-12">Опубликовано 12 сентября 2026</time>
+
+          <span>10 мин чтения</span>
+        </span>
+      </div>
+
+      <figure class="figure--draft article-cover">
+        <img src="https://ironex.tech/images/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika-cover.webp" alt="Почему подрядчик не берёт одну деталь и как пройти порог" width="1200" height="675" fetchpriority="high" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#pochemu-u-podryadchika-voobsche-est-minimalnaya-partiya">Почему у подрядчика вообще есть минимальная партия</a></li>
+<li><a href="#iz-chego-skladyvaetsya-porog-vhoda">Из чего складывается порог входа</a></li>
+<li><a href="#minimalnaya-partiya-i-minimalnyy-zakaz-v-chem-raznitsa">Минимальная партия и минимальный заказ: в чём разница</a></li>
+<li><a href="#chto-snizhaet-porog-u-konkretnogo-zakaza">Что снижает порог у конкретного заказа</a></li>
+<li><a href="#kak-sformulirovat-zayavku-na-melkuyu-partiyu">Как сформулировать заявку на мелкую партию</a></li>
+<li><a href="#kogda-porog-ne-snizit-i-chto-togda-delat">Когда порог не снизить и что тогда делать</a></li>
+<li><a href="#chto-podgotovit-do-zayavki-na-melkuyu-partiyu">Что подготовить до заявки на мелкую партию</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему подрядчик не берёт одну деталь и как пройти порог">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <article class="prose">
+        <p class="prose__lede">Минимальная партия изготовления деталей — нижняя граница, с которой подрядчик соглашается запустить станок. Ниже неё наладка, программа ЧПУ, оснастка и первая проверка размеров не окупаются: эти работы почти не зависят от числа штук и при одном изделии целиком садятся в его цену. Порог у каждого свой и считается в штуках либо в сумме заказа. Его снижают не скидкой, а заявкой: проще технология, рабочие допуски, материал со склада, явный статус пробной партии.</p>
+
+        <h2 id="pochemu-u-podryadchika-voobsche-est-minimalnaya-partiya">Почему у подрядчика вообще есть минимальная партия</h2>
+<p>Подрядчик вводит минимальную партию, чтобы закрыть фиксированные затраты запуска: они почти не уменьшаются, если вы заказываете одну штуку. Наладка станка, программа ЧПУ, которой для этой детали ещё нет, оснастка и первая проверка размеров нужны и для единичного изделия, и для серии. Разница только в том, на сколько штук эти затраты делят.</p>
+<p>Наладка готовит станок и программу к этой детали. Оснастка — физическое приспособление для базирования: наладка может её включать, но не равна ей. Когда вы приносите чертёж на одну деталь, цех всё равно снимает предыдущую работу, ставит заготовку, подбирает инструмент, пишет или поднимает программу, прогоняет первую проверку. Без второй детали этот пакет не сжимается: те же люди и тот же станок. Поэтому в цене одной штуки вы видите не металл и обработку, а весь запуск.</p>
+<p>Если штук несколько, та же наладка раскладывается на всю партию, и цена изделия падает. Это тот эффект, из-за которого <a href="/blog/pochemu-partiya-menyaet-tsenu-detali.html">партия меняет цену детали</a>: запуск делят на большее число изделий. Порог позволяет не брать работу, где наладку не на что делить.</p>
+<blockquote><p>Порог закрывает запуск, а не отсекает мелкого заказчика. Одна деталь тащит на себе всю наладку.</p></blockquote>
+<p>Сценарий простой. Вы отправляете чертёж и слышите отказ «ниже нашего минимума» либо сумму, которая кажется завышенной для «всего одной штуки». Это не прихоть менеджера: цех считает, окупится ли наладка. Дальше либо принять эту экономику, либо убрать из запуска лишнее.</p>
+<div class="cta ui" id="cta" data-cta="inline">
+          <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+          <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+          <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему подрядчик не берёт одну деталь и как пройти порог">Прислать чертёж на почту</a>
+        </div>
+<h2 id="iz-chego-skladyvaetsya-porog-vhoda">Из чего складывается порог входа</h2>
+<p>Порог не висит на двери цеха одной табличкой: он собирается из вашей детали, материала, допусков и того, на каком станке это будут делать. Чем больше переходов и установов, тем дороже наладка. Если нужного куска материала нет, подрядчик закупает целый прокат или лист. Чем жёстче допуск, тем дольше подбирают режимы и проверяют размеры. Если деталь сажают на дефицитный станок, например пятиосевой, порог обычно выше, чем на обычном трёхосевом.</p>
+<p>Общей цифры по отрасли нет. У каждого подрядчика свои условия: кто-то считает минимум в штуках, кто-то в сумме заказа, кто-то смотрит на загрузку конкретной недели.</p>
+<table><thead><tr><th>Фактор</th><th>Как поднимает порог</th><th>Что можно уточнить</th></tr></thead><tbody><tr><td>Сложность детали</td><td>Больше переходов и установов — дольше наладка</td><td>Можно ли сократить число установов</td></tr><tr><td>Материал</td><td>Нет куска нужного размера — закупка целого проката или листа</td><td>Есть ли материал на складе подрядчика</td></tr><tr><td>Точность и допуски</td><td>Жёстче допуск — больше времени на режимы и контроль</td><td>Какие допуски нужны по функции, а не «с запасом»</td></tr><tr><td>Станок и загрузка</td><td>Дефицитный станок поднимает порог относительно массового</td><td>Можно ли выполнить на другом оборудовании</td></tr></tbody></table>
+<p>Вы присылаете корпус с несколькими установами, редким сплавом и допусками «по максимуму». Цех видит не простую фрезеровку, а пакет: закупка, программа, оснастка, контроль. Соседний цех с этим материалом на складе ответит иначе: порог здесь — смета запуска по чертежу.</p>
+<h2 id="minimalnaya-partiya-i-minimalnyy-zakaz-v-chem-raznitsa">Минимальная партия и минимальный заказ: в чём разница</h2>
+<p>Минимальная партия — количество деталей, ниже которого подрядчику невыгодно браться. Минимальный заказ у подрядчика по металлообработке может измеряться суммой, а не штуками. Пока вы не уточнили, какую метрику ставит конкретный цех, нельзя понять, чего не хватает: ещё нескольких изделий или добора по деньгам.</p>
+<p>Путаница бьёт по заявке. Вы пишете «нужно три штуки» и ждёте цену за изделие, а в ответ приходит отказ по сумме: запуск не набирает внутренний минимум. Или наоборот: штук достаточно, но номенклатура из одной позиции, и цех всё равно считает заказ мелким, потому что смотрит на деньги, а не на количество.</p>
+<blockquote><p>Минимальная партия считается в штуках, минимальный заказ — часто в сумме. Пока метрика не названа, сравнивать предложения нельзя.</p></blockquote>
+<p>Спросите прямо: порог в штуках, в сумме или в загрузке станка. Ответ меняет ваш следующий шаг. Если не хватает штук — имеет смысл добавить позиции с того же чертежа или увеличить количество, которое всё равно понадобится позже. Если не хватает суммы — иногда спокойнее принять цену пробной детали, чем искусственно раздувать партию, которая ляжет на склад.</p>
+<p>Не смешивайте эти слова в переписке. Напишите оба: сколько штук нужно сейчас и готовы ли вы обсудить добор по сумме, если у подрядчика порог денежный.</p>
+<h2 id="chto-snizhaet-porog-u-konkretnogo-zakaza">Что снижает порог у конкретного заказа</h2>
+<p>Порог конкретного заказа падает, когда из запуска убирают лишнюю работу: меньше установов и нестандартных операций, материал уже лежит у подрядчика, допуски не жёстче функции детали, чертёж полный, новая оснастка не нужна. Это не скидка «по знакомству». Это короче наладка и меньше времени инженера до расчёта.</p>
+<p>Практический ход такой. Сначала смотрите чертёж глазами цеха: сколько раз деталь перекладывают, какие поверхности требуют отдельного установа, нет ли допуска, который можно открыть без потери функции. Затем спрашиваете, есть ли материал куском нужного размера. Если подрядчик предлагает свой инструмент и приспособление вместо изготовления нового под вашу деталь — согласие на этот компромисс часто снижает порог сильнее, чем торг о цене штуки.</p>
+<blockquote><p>Порог снижают не просьбой «сделайте дешевле», а тем, что убирают из запуска закупку, лишние установы и новую оснастку.</p></blockquote>
+<p>Полный чертёж сокращает переписку до расчёта. Размеры, допуски, материал, покрытие, что считать базой — без этого инженер пишет уточнения, а не считает. Как собрать такой пакет, разобрано в материале <a href="/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html">как составить заявку на изготовление деталей</a>.</p>
+<p>Сценарий: вы готовы взять заготовку, которая уже есть на складе, и не настаиваете на новой оснастке, если существующая держит базирование. Подрядчик видит запуск без закупки и без изготовления приспособления. Порог для этой заявки ниже, чем для той же геометрии «с нуля и строго по вашему инструменту».</p>
+<h2 id="kak-sformulirovat-zayavku-na-melkuyu-partiyu">Как сформулировать заявку на мелкую партию</h2>
+<p>В заявке на мелкую партию прямо напишите количество и статус: это пробная либо разовая партия, а не задел под будущий поток. Иначе цех закладывает серийную логику — оснастку «навырост», материал с запасом — и порог входа для мелкой партии только растёт. Укажите, готовы ли вы к материалу и допускам подрядчика, если это не критично для функции. Спросите, можно ли снизить наладку за счёт менее жёсткого допуска или замены операции.</p>
+<p>Тот же чертёж стоит отправить в несколько цехов: минимум у каждого свой, и сравнение — единственный способ увидеть цену, а не отказ одного адресата.</p>
+<p>Как отличить формулировки пробной партии от серийного заказа, разобрано на странице <a href="/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku.html">пробная партия или серийный заказ: что указать подрядчику</a>.</p>
+<blockquote><p>Напишите в заявке прямо: сколько штук нужно сейчас и что это пробная партия, а не старт серии.</p></blockquote>
+<p>Сценарий письма. Тема: пробная партия, нужное количество, разовый запуск. В теле — чертёж, материал, какие допуски можно ослабить, можно ли использовать оснастку подрядчика, нужен ли расчёт с выделенной наладкой. Вы услышите либо цену с понятным составом, либо отказ с причиной. Причина важнее вежливого «не берём»: по ней видно, что менять — допуск, материал или количество.</p>
+<h2 id="kogda-porog-ne-snizit-i-chto-togda-delat">Когда порог не снизить и что тогда делать</h2>
+<p>Сложная геометрия, узкие допуски и редкий сплав сами держат порог: торговаться здесь не с чем. Расчёт на одну штуку может прийти с суммой, сопоставимой с 5–10 изделиями, — так выглядит наладка, целиком сидящая в одной детали, а не надбавка «за беспокойство». Тогда остаются рабочие ходы: отдать вместе соседние позиции того же чертежа; взять столько штук, сколько вам и так понадобится следом; либо заплатить за пробную деталь как за разовую затрату и уже потом решать, будет ли серия.</p>
+<p>Не путайте этот случай с тем, где порог ещё можно снять. Здесь вы уже упростили что можно, чертёж полный, материал без замены. Цех назвал сумму. Спорить с фиксированными затратами бессмысленно: они не исчезнут от письма «нам нужна только одна».</p>
+<blockquote><p>Жёсткие допуски, редкий материал и сложная геометрия держат порог. Тогда считают не скидку, а что делать с этой ценой.</p></blockquote>
+<p>Практический выбор. Если соседние позиции чертежа всё равно пойдут в работу, отдайте их одним запуском: наладка частично общая. Если серия вероятна, одна дорогая пробная деталь спокойнее оснастки «сразу на поток». Если серия сомнительна, лучше увидеть дорогую единицу сейчас, чем ждать отказ.</p>
+<p>Когда придёт коммерческое предложение, разберите состав: где наладка, где материал, где обработка. Состав такого документа разобран в статье <a href="/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal.html">о коммерческом предложении на металлообработку</a>.</p>
+<h2 id="chto-podgotovit-do-zayavki-na-melkuyu-partiyu">Что подготовить до заявки на мелкую партию</h2>
+<p>До письма подрядчику соберите пакет, по которому цех считает запуск, а не задаёт вопросы. Без этого порог либо завысят запасом на неизвестность, либо ответят отказом. Ниже — то, что стоит иметь под рукой, прежде чем просить расчёт именно на мелкую партию.</p>
+<ul><li>Чертёж с полной информацией: размеры, допуски, материал, покрытие, базы. По нему считают наладку и контроль; дыры в чертеже превращаются в уточнения и в запас «на неизвестность».</li><li>Количество и статус партии: сколько штук нужно сейчас и что это пробная либо разовая партия, а не старт серии. Иначе цех заложит оснастку и материал «навырост».</li><li>Что можно ослабить: допуск, который не держит функцию, замена операции, согласие на инструмент и приспособление подрядчика. Это прямой рычаг снизить наладку.</li><li>Вопрос про материал: есть ли кусок нужного размера на складе или придётся брать целый прокат либо лист. От ответа зависят и порог, и срок — его уточняют у конкретного цеха.</li><li>Вопрос про метрику порога: минимум в штуках, в сумме заказа или в загрузке станка. Без этой фразы отказ по количеству не отличить от отказа по сумме.</li><li>Состав расчёта: попросите отдельно показать наладку, материал и обработку. Иначе цену одной штуки не с чем сравнить.</li><li>Второй адресат: тот же пакет уходит ещё в один цех. Минимум у каждого свой, один отказ ничего не доказывает.</li></ul>
+<p>Пакет собран — можно отправлять. В письме достаточно этих пунктов и чертежа.</p>
+
+        <h2 id="faq">Частые вопросы</h2>
+        <div class="faq">
+          <details open>
+            <summary>Можно ли привезти свой материал, чтобы подрядчик не закупал целый прокат или лист?</summary>
+            <div class="faq__a"><p>Да, это стоит предложить, если кусок нужного размера у вас уже есть. Закупка тогда выпадает из запуска, но наладка, программа и первая проверка размеров остаются. Подрядчик может отказать в чужой заготовке: неизвестный прокат, сертификат, скрытые дефекты. Уточните заранее, принимает ли цех давальческий материал и какие документы на него нужны.</p></div>
+          </details>
+<details>
+            <summary>Наладку выделяют отдельной строкой или включают в цену штуки?</summary>
+            <div class="faq__a"><p>Цех решает сам, как выставлять наладку. Если её спрятали в цене изделия, без расшифровки не видно, что именно вы оплачиваете. Просите в расчёте отдельные строки: наладка, материал, обработка. Тогда при росте количества вы увидите, какая часть перестанет падать на изделие, а какая останется.</p></div>
+          </details>
+<details>
+            <summary>Если после пробной партии серии не будет, что происходит с оснасткой и программой ЧПУ?</summary>
+            <div class="faq__a"><p>Этого нет в обычном расчёте — условие нужно зафиксировать до запуска. Оснастка может остаться у подрядчика, отойти вам или оказаться разовой. Программа ЧПУ часто живёт у цеха: без договорённости вы не заберёте её к другому исполнителю. Спросите до оплаты, кто хранит приспособление и программу и что будет, если серии не случится.</p></div>
+          </details>
+        </div>
+
+        <h2 id="istochniki">Источники</h2>
+        <ul class="sources">
+          <li><a href="https://www.consultant.ru/document/cons_doc_LAW_5142/ad08909251f4d26ebc935648e4e708a31e160348/" rel="noopener" target="_blank">ГК РФ, статья 421. Свобода договора</a></li>
+<li><a href="https://www.rst.gov.ru" rel="noopener" target="_blank">Федеральное агентство по техническому регулированию и метрологии</a> — Росстандарт</li>
+<li><a href="https://pravo.gov.ru" rel="noopener" target="_blank">Официальный интернет-портал правовой информации</a> — правовой портал</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/pochemu-partiya-menyaet-tsenu-detali.html">
+            <img src="https://ironex.tech/images/blog/pochemu-partiya-menyaet-tsenu-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Экономика заказа</span>
+              <span class="mat-card__title">Почему партия меняет цену детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html">
+            <img src="https://ironex.tech/images/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Экономика заказа</span>
+              <span class="mat-card__title">Лазерная резка: цена и 6 факторов расчёта</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii.html">
+            <img src="https://ironex.tech/images/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Экономика заказа</span>
+              <span class="mat-card__title">Серийное производство деталей: как выбрать размер партии</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему подрядчик не берёт одну деталь и как пройти порог">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
