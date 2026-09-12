@@ -1,0 +1,254 @@
+[
+  {
+    "ref": "/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Коммерческое предложение на металлообработку: состав — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/chto-prilozhit-k-zayavke-na-gibku-metalla",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Гибка металла на заказ: что приложить к заявке — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Фрезерная обработка по чертежу: допуски без переплат — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/izgotovlenie-detaley-iz-alyuminiya-chto-vliyaet-na-tehnologiyu-i-cenu",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Детали из алюминия: что влияет на цену — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Серийное производство деталей: как выбрать размер партии — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Фрезерная обработка по чертежу: подготовка 3D-модели — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Сварка на заказ: документация на сварную сборку — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Как составить заявку на изготовление деталей — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Мелкосерийное производство деталей: приёмка образца — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Расчёт металлообработки: как проверить сроки в КП — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Производство металлических деталей: выбор аналога — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Как сравнивать коммерческие предложения на металлообработку — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Изготовление деталей по чертежам: контроль версий — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Порошковая покраска на заказ: как выбрать покрытие — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-vybrat-subpodryadchika-pri-peregruzke-proizvodstva",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Аутсорсинг металлообработки: выбор субподрядчика — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Корпуса на заказ: как подготовить чертёж и модель — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Валы на заказ: как подготовить чертёж — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Пятиосевая обработка: когда она оправдана — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/lazernaya-plazmennaya-ili-gidroabrazivnaya-rezka",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Лазерная, плазменная или гидроабразивная резка — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/mozhno-li-zakazat-detal-bez-3d-modeli",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Изготовление деталей по чертежам без 3D-модели — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Обработка нержавейки ЧПУ: что указать в заявке — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Лазерная резка: цена и 6 факторов расчёта — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Металлообработка: цена детали по чертежу — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/pochemu-partiya-menyaet-tsenu-detali",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Почему партия меняет цену детали — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Мелкосерийное производство деталей: как начать — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/proizvodstvennaya-kooperaciya-v-metalloobrabotke-kak-peredat-zakaz",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Производственная кооперация: как передать заказ — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Токарные работы по металлу на заказ: выбор маршрута — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  },
+  {
+    "ref": "/blog/vhodnoy-kontrol-partii-i-kontrol-na-kim",
+    "type": "blog",
+    "cluster": "",
+    "primary": "Координатно-измерительная машина: контроль деталей — IRONEX",
+    "secondary": [],
+    "intent": "informational",
+    "canonical": ""
+  }
+]
