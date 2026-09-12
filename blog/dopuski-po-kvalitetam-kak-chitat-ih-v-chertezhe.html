@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Допуски по квалитетам на чертеже: как читать — IRONEX</title>
+  <meta name="description" content="Допуски по квалитетам на чертеже: что такое IT7 и IT8, как читать квалитет точности детали и не переплатить за лишнее поле допуска на свободном размере." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html#article",
+      "headline": "Буква и цифра у размера: что они говорят о точности",
+      "description": "Допуски по квалитетам на чертеже: что такое IT7 и IT8, как читать квалитет точности детали и не переплатить за лишнее поле допуска на свободном размере.",
+      "datePublished": "2026-09-12",
+      "dateModified": "2026-09-12",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "допуски по квалитетам на чертеже",
+        "что такое IT7 IT8",
+        "квалитет точности детали",
+        "система допусков и посадок",
+        "как читать допуск на чертеже",
+        "поле допуска H7"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Буква и цифра у размера: что они говорят о точности"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли на одной детали ставить разные квалитеты на разные размеры?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Так и делают: посадочная поверхность в одном квалитете, свободный габарит — в другом или без отдельного кода. Один номер на весь контур нужен только если так задумал конструктор, а не потому что «так спокойнее»."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Заменяет ли 3D-модель указание квалитета на чертеже?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Модель несёт номинальную геометрию. Коридор размера, поле допуска и посадка живут в чертеже или в явно переданных технических требованиях. Если в модели «в ноль», а на чертеже пусто, изготовитель не обязан угадывать IT7."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Кто согласует отверстие H7 с валом, который рисует другой человек?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не цех. Посадку задаёт тот, кто собирает узел: оба кода должны сойтись на бумаге до запуска. Если отверстие у вас, а вал у смежника, сверьте поля между собой и только потом отправляйте обе заявки."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="H7 и IT8 в чертеже: как не переплатить за лишнюю точность" />
+  <meta property="og:description" content="Допуски по квалитетам на чертеже: что такое IT7 и IT8, как читать квалитет точности детали и не переплатить за лишнее поле допуска на свободном размере." />
+  <meta property="og:url" content="https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-12" />
+  <meta property="article:modified_time" content="2026-09-12" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="H7 и IT8 в чертеже: как не переплатить за лишнюю точность" />
+  <meta name="twitter:description" content="Допуски по квалитетам на чертеже: что такое IT7 и IT8, как читать квалитет точности детали и не переплатить за лишнее поле допуска на свободном размере." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Буква и цифра у размера: что они говорят о точности">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Буква и цифра у размера: что они говорят о точности</span>
+    </div>
+  </nav>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Буква и цифра у размера: что они говорят о точности</h1>
+      <p class="lede">Допуски по квалитетам на чертеже: что такое IT7 и IT8, как читать квалитет точности детали и не переплатить за лишнее поле допуска на свободном размере.</p>
+
+      <div class="byline">
+        <span class="byline__who">
+          <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+          <span>
+            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+            <span class="byline__role">Инженер</span>
+          </span>
+        </span>
+        <span class="byline__meta">
+          <span>Чертежи и допуски</span>
+          <time datetime="2026-09-12">Опубликовано 12 сентября 2026</time>
+
+          <span>9 мин чтения</span>
+        </span>
+      </div>
+
+      <figure class="figure--draft article-cover">
+        <img src="https://ironex.tech/images/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe-cover.webp" alt="Буква и цифра у размера: что они говорят о точности" width="1200" height="675" fetchpriority="high" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-pokazyvaet-kvalitet-v-chertezhe">Что показывает квалитет в чертеже</a></li>
+<li><a href="#kak-vyglyadit-oboznachenie-bukvy-i-tsifry">Как выглядит обозначение: буквы и цифры</a></li>
+<li><a href="#shkala-tochnosti-ot-grubogo-do-sverhtochnogo">Шкала точности: от грубого до сверхточного</a></li>
+<li><a href="#kvalitet-i-sherohovatost-raznye-veschi">Квалитет и шероховатость — разные вещи</a></li>
+<li><a href="#kak-kvalitet-vliyaet-na-tsenu-izgotovleniya">Как квалитет влияет на цену изготовления</a></li>
+<li><a href="#esli-v-chertezhe-kvalitet-ne-ukazan">Если в чертеже квалитет не указан</a></li>
+<li><a href="#chto-proverit-v-chertezhe-do-zakaza">Что проверить в чертеже до заказа</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Буква и цифра у размера: что они говорят о точности">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <article class="prose">
+        <p class="prose__lede">Допуски по квалитетам на чертеже — это не сам размер, а насколько он может отойти от номинала. Конструктор почти не пишет слово «квалитет»: оно спрятано в коде вроде H7 или h6, где цифра задаёт степень точности, а буква — где лежит поле допуска. Меньше номер — уже допуск, деталь точнее и дороже. Путать это с шероховатостью не стоит: требования разные.</p>
+
+        <h2 id="chto-pokazyvaet-kvalitet-v-chertezhe">Что показывает квалитет в чертеже</h2>
+<p>Квалитет говорит, насколько тесный коридор разрешён вокруг номинального размера. Это не длина и не диаметр сами по себе и не «насколько гладко», а степень точности в международной шкале IT. Чем меньше номер, тем уже допуск и тем дороже изготовление. Чем больше номер, тем шире поле — деталь грубее и дешевле. На поле чертежа слово «квалитет» почти не встречается: оно уже зашито в код поля допуска.</p>
+<blockquote><p>Номер квалитета задаёт ширину коридора, а не то, с какой стороны от номинала лежит размер. Уже коридор — точнее и дороже.</p></blockquote>
+<p>IT в этой записи — International Tolerance. Иногда рядом с номером пишут саму аббревиатуру: IT7, IT8. Чаще вы видите не «IT7», а хвост кода: семёрку в H7, восьмёрку в e8. Смысл тот же. Положение поля относительно номинала задаёт буква, не цифра.</p>
+<p>Откройте чертёж и найдите первый размер с буквой и цифрой. Это квалитет точности детали в рабочем виде. Маленькая цифра — узкий коридор, другой станок, другие проходы, другой контроль. Большая — коридор широкий, спорить о микронах на этом размере обычно незачем. Соседние требования к документу собраны в разделе <a href="/razdel/chertezhi-i-dopuski.html">чертежи и допуски</a>.</p>
+<div class="cta ui" id="cta" data-cta="inline">
+          <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+          <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+          <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Буква и цифра у размера: что они говорят о точности">Прислать чертёж на почту</a>
+        </div>
+<h2 id="kak-vyglyadit-oboznachenie-bukvy-i-tsifry">Как выглядит обозначение: буквы и цифры</h2>
+<p>Когда квалитет спрятан в коде, его читают как букву плюс цифру: H7, h6, e8, f7. Заглавная буква относится к отверстию, внутреннему размеру. Строчная — к валу, наружному. Буква ставит поле относительно номинала: выше, ниже или около нуля. Цифра после буквы — номер квалитета, степень точности. Дробь вроде H7/g6 — посадка двух деталей, а не квалитет одной.</p>
+<p>На корпусе и втулке у отверстия чаще заглавная: H7, H8, G7. На валу — строчная: h6, g6, f7. Сменить регистр — сменить, кто охватывает, а кто входит. Для <a href="/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu.html">корпуса по чертежу</a> код обычно сидит на расточке под подшипник, втулку или крышку, а не на габарите плиты.</p>
+<p>Буква и цифра — две оси, не синонимы. Одна семёрка в H7 и в g7 даёт сопоставимую ширину допуска, но поля лежат по разные стороны от номинала.</p>
+<p>Иногда буквенного кода нет. Рядом с размером стоит допуск в миллиметрах в скобках — плюс-минус или несимметрично. Тогда H7 вы не найдёте, хотя коридор никуда не делся: изготовителю нужна граница, в которую размер должен попасть.</p>
+<p>Дробь — отдельный случай. H7/h6 описывает сопряжение отверстия и вала. Каждая деталь несёт свой код; вместе они задают зазор или натяг. Если в заявке только дробь, цех не поймёт, какую половину делать.</p>
+<h2 id="shkala-tochnosti-ot-grubogo-do-sverhtochnogo">Шкала точности: от грубого до сверхточного</h2>
+<p>Цифра в коде — место на шкале IT: от сверхточного IT01 до очень грубого IT18. Чем меньше номер, тем уже допуск. На практике точные квалитеты, как правило IT5–IT8, ставят на сопрягаемые, посадочные поверхности. Средние и грубые, как правило IT9 и выше, оставляют размерам вне сопряжения. Жёсткой границы по номеру нет: её задаёт роль размера в узле, а не линейка.</p>
+<p>Что такое IT7 и IT8 здесь — два соседних точных квалитета, которые чаще других стоят на посадках. IT7 уже, IT8 шире. Какой брать, решает то, собирается ли поверхность с ответной деталью и какой зазор или натяг нужен. На свободной кромке плиты оба, как правило, избыточны.</p>
+<table><thead><tr><th>Ориентир</th><th>Номера, как правило</th><th>Куда смотреть сначала</th></tr></thead><tbody><tr><td>Сверхточные</td><td>IT01–IT4</td><td>Размеры, которые обычный техпроцесс уже не закрывает без отдельной подготовки</td></tr><tr><td>Точные</td><td>IT5–IT8</td><td>Посадочные и другие сопрягаемые поверхности</td></tr><tr><td>Средние и грубые</td><td>IT9 и грубее</td><td>Свободные размеры вне сопряжения</td></tr></tbody></table>
+<blockquote><p>«Точный или грубый» решает не номер сам по себе, а то, участвует ли размер в сопряжении. Номер только показывает, насколько узкий коридор вы за это просите.</p></blockquote>
+<p>Таблицу не читайте как закон. IT8 на посадочном диаметре вала — рабочая точность. Тот же IT8 на длине, которая ни с чем не стыкуется, — лишняя работа. Сначала роль размера, потом буква и цифра. Если семёрки стоят по всему контуру «чтобы собралось», спросите конструктора, какие поверхности действительно садятся.</p>
+<h2 id="kvalitet-i-sherohovatost-raznye-veschi">Квалитет и шероховатость — разные вещи</h2>
+<p>Даже узкий квалитет на шкале IT не говорит, насколько гладкая поверхность. Квалитет держит размер: насколько он может уйти от номинала. Шероховатость — Ra, Rz — описывает микрогеометрию, то есть риски и гребешки. Характеристики независимы. Деталь может держать узкий коридор размера и при этом быть грубой на ощупь — и наоборот: гладкая, но «гуляющая» по диаметру. Завышать оба параметра сразу «на всякий случай» — частая и дорогая ошибка.</p>
+<blockquote><p>Размер в допуске и гладкость поверхности не заменяют друг друга. Можно попасть в H7 и не пройти по Ra — и наоборот.</p></blockquote>
+<p>На чертеже это два разных взгляда. Сначала код у размера: H7, h6, скобки с плюсом-минусом. Потом знак шероховатости на той же кромке или в технических требованиях на вид. Шлифовать «потому что семёрка» не обязательно: семёрка про диаметр, а не про след фрезы. Когда знаки нужно разобрать по отдельности, смотрите <a href="/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html">что означают Ra и Rz на чертеже</a>.</p>
+<p>Сценарий простой. Вал под подшипник: посадочная шейка должна войти в кольцо — здесь квалитет и посадка решают, будет люфт или натяг. Шероховатость на этой же шейке решает, как кольцо сядет. На лыске под ключ точный квалитет часто не нужен, а поверхность может быть грубее. Если в заявке «сделать всё точнее и глаже», изготовитель закладывает худший для цены вариант по всем поверхностям.</p>
+<h2 id="kak-kvalitet-vliyaet-na-tsenu-izgotovleniya">Как квалитет влияет на цену изготовления</h2>
+<p>Когда квалитет и шероховатость уже разведены, цена почти всегда следует за номером квалитета, а не за «глаже». Меньший номер меняет техпроцесс: другое оборудование, дополнительные проходы, отдельный контроль размера. Рост не линейный: скачки появляются на границах того, что станок ещё даёт без специальной оснастки. Тесный коридор на размере вне сопряжения — переплата без функции. Слишком широкий на посадочном месте — узел может не сойтись: люфт или заклинивание.</p>
+<blockquote><p>Точность на свободном размере почти не добавляет функции, зато добавляет операции. На посадке она как раз про функцию: её режут последней.</p></blockquote>
+<p>Найдите в чертеже самые маленькие цифры. На диаметрах, которые входят в ответную деталь, рост цены ожидаем. На габарите, фаске или длине без сопряжения узкий коридор часто копируют с соседнего размера. Тогда дешевле поправить чертёж, чем платить за лишний квалитет по всей партии.</p>
+<p>Из чего ещё складывается <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">цена металлообработки по чертежу</a>, кроме поля допуска: материал, маршрут, объём контроля, покрытие. Как не раздуть сразу допуск и гладкость — в тексте про <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">допуски и шероховатость без лишнего удорожания</a>. Практический ход: выписать сопрягаемые размеры отдельно от свободных и только по первой группе обсуждать номер квалитета.</p>
+<h2 id="esli-v-chertezhe-kvalitet-ne-ukazan">Если в чертеже квалитет не указан</h2>
+<p>Цена и посадка имеют смысл, только когда коридор вообще задан. Если у размера нет ни буквы с цифрой, ни границ в скобках, его читают как свободный: коридор берётся из общего допуска, если тот записан в технических требованиях или на поле. Каким правилом изготовитель закрывает неуказанные размеры, уточняйте у него до запуска, а не оставляйте «как выйдет». Для сопрягаемых и ответственных размеров пустой код — повод вернуть лист конструктору, а не решать точность в цехе.</p>
+<p>Общий допуск не равен «можно как угодно». Он равен тому, что написано в комплекте, плюс практике изготовителя, когда в комплекте пусто. Порядок задаёт запись на чертеже и ответ, какой общий допуск он возьмёт за основу. Если ответов два и они разные — это спор о границах размера. Его лучше закрыть письмом до металла, чем после первого обмера.</p>
+<p>На валу это видно лучше, чем на плите. Посадочные шейки без буквы и без скобок — не свободные размеры, а дыра в задании: их нельзя «додумать» по соседней семёрке. Как собрать пакет, чтобы цех не гадал, разобрано в материале <a href="/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu.html">как заказать изготовление вала по чертежу</a>: на шейках код или скобки нужны, на длинах между буртами часто хватает общего допуска. То же для отверстия в корпусе: если в него что-то садится, коридор должен быть на чертеже.</p>
+<h2 id="chto-proverit-v-chertezhe-do-zakaza">Что проверить в чертеже до заказа</h2>
+<p>Если квалитета на посадке нет или он стоит на каждом габарите, заявку лучше не отправлять «как есть». До старта пройдите лист как изготовитель: не «понятен ли вид», а на каких размерах коридор задан явно, на каких молчит чертёж, и что из этого можно ослабить без потери сборки. Короткий список ниже как раз про это.</p>
+<ul><li>Сопрягаемые размеры с кодом или со скобками. Отверстия и валы, которые входят друг в друга, не должны оставаться голым номиналом: иначе цех либо заложится с запасом в цене, либо сделает размер как свободный.</li><li>Регистр буквы. Заглавная — отверстие, строчная — вал. Один неверный регистр меняет, какую деталь вы описываете.</li><li>Дробь посадки. H7/g6 — пара, не инструкция на одну деталь. В заявке должно быть ясно, какую половину вы заказываете сейчас.</li><li>Шероховатость на тех же поверхностях. Её смотрят отдельно от квалитета, иначе «сделать глаже» уедет в счёт без нужды. Как развести оба требования, чтобы не платить дважды, — в разборе <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">фрезеровки: допуски без переплат</a>.</li><li>Свободные размеры и общий допуск. Если квалитета нет, спросите изготовителя, какой общий допуск он возьмёт для этих размеров, и зафиксируйте ответ.</li><li>Версия чертежа. Пока в заявке старый лист, а в цех ушёл новый, согласованный квалитет бесполезен: вы спорите о разных документах.</li></ul>
+<p>После проверки спорный код на посадке возвращайте конструктору. Изготовитель посчитает то, что написано, а не то, что вы «имели в виду».</p>
+
+        <h2 id="faq">Частые вопросы</h2>
+        <div class="faq">
+          <details open>
+            <summary>Можно ли на одной детали ставить разные квалитеты на разные размеры?</summary>
+            <div class="faq__a"><p>Да. Так и делают: посадочная поверхность в одном квалитете, свободный габарит — в другом или без отдельного кода. Один номер на весь контур нужен только если так задумал конструктор, а не потому что «так спокойнее».</p></div>
+          </details>
+<details>
+            <summary>Заменяет ли 3D-модель указание квалитета на чертеже?</summary>
+            <div class="faq__a"><p>Нет. Модель несёт номинальную геометрию. Коридор размера, поле допуска и посадка живут в чертеже или в явно переданных технических требованиях. Если в модели «в ноль», а на чертеже пусто, изготовитель не обязан угадывать IT7.</p></div>
+          </details>
+<details>
+            <summary>Кто согласует отверстие H7 с валом, который рисует другой человек?</summary>
+            <div class="faq__a"><p>Не цех. Посадку задаёт тот, кто собирает узел: оба кода должны сойтись на бумаге до запуска. Если отверстие у вас, а вал у смежника, сверьте поля между собой и только потом отправляйте обе заявки.</p></div>
+          </details>
+        </div>
+
+        <h2 id="istochniki">Источники</h2>
+        <ul class="sources">
+          <li><a href="https://www.iso.org/standard/45975.html" rel="noopener" target="_blank">ISO 286-1:2010. Geometrical product specifications (GPS) — ISO code system for tolerances on linear sizes — Part 1</a> — ISO</li>
+<li><a href="https://www.iso.org/standard/54915.html" rel="noopener" target="_blank">ISO 286-2:2010. Geometrical product specifications (GPS) — ISO code system for tolerances on linear sizes — Part 2: Tables of standard tolerance classes and limit deviations</a> — ISO</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">
+            <img src="https://ironex.tech/images/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Фрезерная обработка по чертежу: допуски без переплат</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/gost-ili-tu-na-detal-v-chem-raznica-dlya-zakazchika.html">
+            <img src="https://ironex.tech/images/blog/gost-ili-tu-na-detal-v-chem-raznica-dlya-zakazchika-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Пометка в чертеже говорит, чей документ открывать при приёмке</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html">
+            <img src="https://ironex.tech/images/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Ra и Rz на чертеже: что требовать, чтобы не переплатить за чистоту</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Буква и цифра у размера: что они говорят о точности">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
