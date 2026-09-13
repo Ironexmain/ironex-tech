@@ -43,24 +43,30 @@ test.click(element({ href: 'https://wa.me/70000000000', zone: 'footer' }));
 test.click(element({ href: 'https://t.me/example' }));
 test.click(element({ copy: true, zone: 'cta' }));
 
-assert.deepEqual(
-  test.calls.map(call => call[2]),
-  [
-    'contact_phone', 'contact_any',
-    'contact_email', 'contact_any',
-    'contact_whatsapp', 'contact_any',
-    'contact_telegram', 'contact_any',
-    'contact_email', 'contact_any'
-  ]
-);
-assert.equal(test.calls[0][0], 105009501);
+// Каждая цель уходит во все счётчики Метрики, поэтому вызовы идут группами.
+const COUNTERS = [105009501, 105014084, 112539190];
+const goals = [];
+for (let i = 0; i < test.calls.length; i += COUNTERS.length) {
+  const group = test.calls.slice(i, i + COUNTERS.length);
+  assert.deepEqual(group.map(call => call[0]), COUNTERS);
+  assert.deepEqual(group.map(call => call[2]), group.map(() => group[0][2]));
+  goals.push(group[0][2]);
+}
+
+assert.deepEqual(goals, [
+  'contact_phone', 'contact_any',
+  'contact_email', 'contact_any',
+  'contact_whatsapp', 'contact_any',
+  'contact_telegram', 'contact_any',
+  'contact_email', 'contact_any'
+]);
 assert.equal(test.calls[0][1], 'reachGoal');
 assert.equal(test.calls[0][3].page.type, 'article');
 assert.equal(test.calls[0][3].contact.placement, 'navigation');
-assert.equal(test.calls[8][3].contact.method, 'copy');
+assert.equal(test.calls[8 * COUNTERS.length][3].contact.method, 'copy');
 assert.doesNotMatch(JSON.stringify(test.calls), /dynamic@example|70000000000/);
 
 const noMetrika = load('/kontakty.html', false);
 assert.doesNotThrow(() => noMetrika.click(element({ href: 'tel:+70000000000' })));
 
-console.log('analytics-events: 12 assertions passed');
+console.log('analytics-events: проверки пройдены (' + COUNTERS.length + ' счётчика)');

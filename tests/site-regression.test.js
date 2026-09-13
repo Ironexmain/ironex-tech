@@ -17,6 +17,8 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const ORIGIN = 'https://ironex.tech';
+// Счётчики Яндекс.Метрики, обязательные на каждой странице сайта.
+const METRIKA_COUNTERS = [105009501, 105014084, 112539190];
 // Число страниц растёт с каждой публикацией, поэтому жёсткой цифры здесь нет:
 // гейт держит согласованность (sitemap == индексируемые canonical), а не константу.
 const MIN_SITEMAP_URLS = 30;
@@ -335,16 +337,18 @@ for (const { filePath, html } of sitemapPages) {
   const scriptSources = pageScripts.map(script => script.attrs.src).filter(Boolean);
   const callibriSources = scriptSources.filter(src => /(?:^|\/)cdn\.callibri\.ru\/callibri\.js(?:[?#]|$)/i.test(src));
   expect('integrations', callibriSources.length === 1, `${file} must load Callibri exactly once, found ${callibriSources.length}`);
-  expect(
-    'integrations',
-    countPattern(html, /\bym\s*\(\s*105009501\s*,\s*["']init["']/g) === 1,
-    `${file} must initialize Metrika 105009501 exactly once`
-  );
-  expect(
-    'integrations',
-    /https:\/\/mc\.yandex\.ru\/watch\/105009501/i.test(html),
-    `${file} is missing the Metrika 105009501 noscript pixel`
-  );
+  for (const counter of METRIKA_COUNTERS) {
+    expect(
+      'integrations',
+      countPattern(html, new RegExp(`\\bym\\s*\\(\\s*${counter}\\s*,\\s*["']init["']`, 'g')) === 1,
+      `${file} must initialize Metrika ${counter} exactly once`
+    );
+    expect(
+      'integrations',
+      new RegExp(`https://mc\\.yandex\\.ru/watch/${counter}`, 'i').test(html),
+      `${file} is missing the Metrika ${counter} noscript pixel`
+    );
+  }
 
   for (const integration of CONTENT_INTEGRATIONS) {
     const references = referenceAttributes(html).filter(reference => {
@@ -413,7 +417,7 @@ expect('blog contract', /createElement\("a"\)/.test(redesignSource), 'enhanced p
 expect('blog contract', !/createElement\("button"\)/.test(redesignSource), 'blog pagination must not be button-only');
 
 const analyticsSource = readText(path.join(ROOT, 'analytics-events.js'));
-for (const token of ['105009501', 'contact_any', 'contact_phone', 'contact_email', 'contact_whatsapp', 'contact_telegram']) {
+for (const token of [...METRIKA_COUNTERS.map(String), 'contact_any', 'contact_phone', 'contact_email', 'contact_whatsapp', 'contact_telegram']) {
   expect('integration scripts', analyticsSource.includes(token), `analytics-events.js is missing ${token}`);
 }
 for (const token of ["[data-email-value]", "[data-copy-email]", "[data-email-copy]", 'textContent']) {

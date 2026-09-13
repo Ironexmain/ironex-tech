@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var COUNTER_ID = 105009501;
+  var COUNTER_IDS = [105009501, 105014084, 112539190];
   var CONTACT_GOALS = {
     phone: 'contact_phone',
     email: 'contact_email',
@@ -35,7 +35,9 @@
 
   function sendGoal(goal, params) {
     if (typeof window.ym !== 'function') return;
-    window.ym(COUNTER_ID, 'reachGoal', goal, params);
+    for (var i = 0; i < COUNTER_IDS.length; i++) {
+      window.ym(COUNTER_IDS[i], 'reachGoal', goal, params);
+    }
   }
 
   function trackContact(channel, method, element) {
