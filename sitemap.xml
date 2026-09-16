@@ -67,6 +67,12 @@
     <priority>0.2</priority>
   </url>
   <url>
+    <loc>https://ironex.tech/politika.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>https://ironex.tech/razdel/chertezhi-i-dopuski.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>

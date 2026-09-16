@@ -286,7 +286,8 @@
     box.innerHTML =
       '<p>Сайт использует cookie, Яндекс.Метрику и сервис учёта обращений — они показывают, ' +
       'какие страницы полезны и откуда пришло письмо. ' +
-      '<a href="/cookie.html">Что именно собирается и как отказаться</a>.</p>' +
+      '<a href="/cookie.html">Что именно собирается</a> · ' +
+      '<a href="/politika.html">Политика обработки данных</a>.</p>' +
       '<button type="button">Понятно</button>';
     box.querySelector('button').addEventListener('click', function () {
       try { localStorage.setItem(KEY, '1'); } catch (e) { /* приватный режим — скроем на сессию */ }
@@ -299,15 +300,21 @@
   else build();
 })();
 
-/* ── Ссылка на страницу о cookie в подвале ──────────────────────────────────
-   Скриптом, а не правкой 48 файлов: подвал одинаковый на всём сайте. */
+/* ── Ссылки на документы в подвале ──────────────────────────────────────────
+   Скриптом, а не правкой 67 файлов: подвал одинаковый на всём сайте.
+   Политика нужна в подвале, а не только в баннере: тот, кто уже нажал
+   «Понятно», баннера больше не видит, а документ должен оставаться доступен. */
 (function () {
   var bottom = document.querySelector('.site-footer__bottom');
-  if (!bottom || bottom.querySelector('a[href="/cookie.html"]')) return;
-  var span = document.createElement('span');
-  var a = document.createElement('a');
-  a.href = '/cookie.html';
-  a.textContent = 'Файлы cookie';
-  span.appendChild(a);
-  bottom.appendChild(span);
+  if (!bottom) return;
+  [['/politika.html', 'Политика обработки данных'],
+   ['/cookie.html', 'Файлы cookie']].forEach(function (item) {
+    if (bottom.querySelector('a[href="' + item[0] + '"]')) return;
+    var span = document.createElement('span');
+    var a = document.createElement('a');
+    a.href = item[0];
+    a.textContent = item[1];
+    span.appendChild(a);
+    bottom.appendChild(span);
+  });
 })();
