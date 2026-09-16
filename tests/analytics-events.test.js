@@ -44,7 +44,7 @@ test.click(element({ href: 'https://t.me/example' }));
 test.click(element({ copy: true, zone: 'cta' }));
 
 // Каждая цель уходит во все счётчики Метрики, поэтому вызовы идут группами.
-const COUNTERS = [105009501, 105014084, 112539190];
+const COUNTERS = [105009501];
 const goals = [];
 for (let i = 0; i < test.calls.length; i += COUNTERS.length) {
   const group = test.calls.slice(i, i + COUNTERS.length);

@@ -18,7 +18,9 @@ const path = require('node:path');
 const ROOT = path.resolve(__dirname, '..');
 const ORIGIN = 'https://ironex.tech';
 // Счётчики Яндекс.Метрики, обязательные на каждой странице сайта.
-const METRIKA_COUNTERS = [105009501, 105014084, 112539190];
+const METRIKA_COUNTERS = [105009501];
+// Счётчики, снесённые как лишние 2026-09-16: их возврат на страницы — регрессия.
+const REMOVED_METRIKA_COUNTERS = [105014084, 112539190];
 // Число страниц растёт с каждой публикацией, поэтому жёсткой цифры здесь нет:
 // гейт держит согласованность (sitemap == индексируемые canonical), а не константу.
 const MIN_SITEMAP_URLS = 30;
@@ -347,6 +349,14 @@ for (const { filePath, html } of sitemapPages) {
       'integrations',
       new RegExp(`https://mc\\.yandex\\.ru/watch/${counter}`, 'i').test(html),
       `${file} is missing the Metrika ${counter} noscript pixel`
+    );
+  }
+  // Снятые счётчики (2026-09-16) не должны вернуться ни инициализацией, ни пикселем.
+  for (const counter of REMOVED_METRIKA_COUNTERS) {
+    expect(
+      'integrations',
+      !new RegExp(`\\b${counter}\\b`).test(html),
+      `${file} must not reference the removed Metrika counter ${counter}`
     );
   }
 

@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var COUNTER_IDS = [105009501, 105014084, 112539190];
+  var COUNTER_IDS = [105009501];
   var CONTACT_GOALS = {
     phone: 'contact_phone',
     email: 'contact_email',
