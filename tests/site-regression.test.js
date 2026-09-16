@@ -475,6 +475,66 @@ for (const filePath of allImageFiles) {
   );
 }
 
+// ── Шрифты: только свои, Google Fonts не возвращаются ────────────────────────
+// Добавлено 2026-09-16. Google Fonts отдавали render-blocking CSS по 1,0–1,4 с
+// с домашних линий РФ — страница стояла белой. Шрифт самохостится в /fonts/.
+const FONT_FILES = [
+  'fonts/manrope-cyrillic.woff2',
+  'fonts/manrope-latin.woff2',
+  'fonts/manrope-latin-ext.woff2',
+  'fonts/manrope-currency.woff2'
+];
+const PRELOADED_FONTS = ['/fonts/manrope-cyrillic.woff2', '/fonts/manrope-latin.woff2'];
+
+for (const fontFile of FONT_FILES) {
+  expect('fonts', fs.existsSync(path.join(ROOT, fontFile)), `${fontFile} is missing from the repository`);
+}
+expect('fonts', fs.existsSync(path.join(ROOT, 'fonts/OFL.txt')), 'fonts/OFL.txt (SIL Open Font License) is missing');
+
+for (const filePath of allHtmlFiles) {
+  const file = relative(filePath);
+  const html = readText(filePath);
+  expect(
+    'fonts',
+    !/fonts\.(?:googleapis|gstatic)\.com/i.test(html),
+    `${file} loads Google Fonts again; the font is self-hosted in /fonts/`
+  );
+  // Верификационные заглушки Яндекса не подключают стилей и шрифтов не ждут —
+  // preload спрашиваем только со страниц сайта, то есть с потребителей ironex.css.
+  if (!/href=["']\/ironex\.css["']/i.test(html)) continue;
+  for (const font of PRELOADED_FONTS) {
+    expect(
+      'fonts',
+      new RegExp(`rel=["']preload["'][^>]*href=["']${font.replace(/[/.]/g, '\\$&')}["']`, 'i').test(html),
+      `${file} lost the preload for ${font}`
+    );
+  }
+}
+
+// Порядок @font-face в ironex.css несёт смысл: ₽ (U+20BD) входит и в latin-ext,
+// и в currency. При пересечении диапазонов CSS берёт объявленное ПОЗЖЕ, поэтому
+// currency обязан идти последним — иначе ради одного знака рубля снова поедет
+// полный latin-ext на 15 КБ.
+const mainCss = readText(path.join(ROOT, 'ironex.css'));
+const latinExtAt = mainCss.indexOf('/fonts/manrope-latin-ext.woff2');
+const currencyAt = mainCss.indexOf('/fonts/manrope-currency.woff2');
+expect('fonts', latinExtAt !== -1 && currencyAt !== -1, 'ironex.css must declare both latin-ext and currency @font-face');
+expect(
+  'fonts',
+  latinExtAt !== -1 && currencyAt !== -1 && currencyAt > latinExtAt,
+  'ironex.css: the currency @font-face must be declared AFTER latin-ext, otherwise ₽ pulls the full latin-ext file'
+);
+
+// В диапазоне currency обязан быть пропуск под € (U+20AC): евро лежит в latin,
+// в currency-файле его нет, и сплошной диапазон дал бы пустой квадрат.
+const currencyRule = mainCss.slice(currencyAt === -1 ? 0 : currencyAt);
+const currencyRange = (currencyRule.match(/unicode-range:\s*([^;]+);/) || [])[1] || '';
+expect(
+  'fonts',
+  /U\+20A0-20AB/i.test(currencyRange) && /U\+20AD-20C0/i.test(currencyRange) && !/U\+20A0-20C0/i.test(currencyRange),
+  'ironex.css: currency unicode-range must skip U+20AC (€ lives in the latin subset)'
+);
+
 console.log(`Ironex static regression gate: ${relative(ROOT) || ROOT}`);
 for (const [group, result] of checks) {
   const status = result.failed === 0 ? 'PASS' : 'FAIL';
