@@ -491,6 +491,15 @@ for (const fontFile of FONT_FILES) {
 }
 expect('fonts', fs.existsSync(path.join(ROOT, 'fonts/OFL.txt')), 'fonts/OFL.txt (SIL Open Font License) is missing');
 
+// Без _headers Netlify отдаёт шрифты с max-age=0: каждый визит — лишний обход к серверу.
+const headersFile = fs.existsSync(path.join(ROOT, '_headers')) ? readText(path.join(ROOT, '_headers')) : '';
+expect('fonts', /^\/fonts\/\*/m.test(headersFile), '_headers must keep the /fonts/* cache rule');
+expect(
+  'fonts',
+  /\/fonts\/\*[\s\S]{0,200}?max-age=31536000/i.test(headersFile),
+  '_headers: /fonts/* must be cached long-term (max-age=31536000, immutable)'
+);
+
 for (const filePath of allHtmlFiles) {
   const file = relative(filePath);
   const html = readText(filePath);
