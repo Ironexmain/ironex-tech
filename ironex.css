@@ -333,7 +333,22 @@ p { margin: 0 0 18px; }
 .prose ul, .prose ol { margin: 0 0 20px; padding-left: 24px; }
 .prose li { margin-bottom: 8px; }
 .prose li::marker { color: var(--teal); }
-.prose > table { display: block; max-width: 100%; margin: 28px 0; overflow-x: auto; }
+/* Markdown-конвертер отдаёт голый <table> без обёртки и класса — раньше он
+   рендерился дефолтными браузерными отступами между ячейками (border-spacing),
+   без рамки и заливки шапки, из-за чего колонки «плавали» и не читались как
+   таблица. Стиль — тот же ключ, что у .spec-table на страницах услуг: тёмная
+   шапка, чередование строк, единая рамка-карточка. */
+.prose > table {
+  display: block; max-width: 100%; margin: 28px 0; overflow-x: auto;
+  border: 1px solid var(--line); border-radius: var(--r-card);
+  border-collapse: collapse; width: 100%; font-size: 16px;
+}
+.prose > table th {
+  padding: 14px 16px; color: var(--paper); background: var(--teal);
+  font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-align: left;
+}
+.prose > table td { padding: 14px 16px; border-top: 1px solid var(--line); vertical-align: top; }
+.prose > table tbody tr:nth-child(even) { background: var(--paper-2); }
 .prose blockquote { margin: 28px 0; padding-left: 20px; border-left: 2px solid var(--teal); color: var(--ink); font-weight: 500; }
 .prose__lede { color: var(--ink); font-size: clamp(19px, 1.8vw, 21px); font-weight: 500; line-height: 1.55; }
 
