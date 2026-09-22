@@ -311,6 +311,7 @@ p { margin: 0 0 18px; }
 
 .reading { display: grid; grid-template-columns: var(--rail) minmax(0, var(--measure)); justify-content: center; gap: clamp(40px, 6vw, 80px); }
 .rail { position: sticky; top: 96px; align-self: start; }
+.reading__main { min-width: 0; }   /* иначе широкая таблица растягивает колонку */
 .rail__card { margin-top: 28px; padding: 22px; color: var(--paper); background: var(--teal); border-radius: var(--r-card); box-shadow: var(--shadow-float); }
 .rail__card p { color: #C4D3D4; font-size: 15px; }
 .rail__card .btn { width: 100%; }
@@ -360,6 +361,13 @@ p { margin: 0 0 18px; }
   .reading { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .rail { position: static; }
   .rail__card { margin-top: 20px; }
+  /* Одна колонка: обёртка растворяется (display: contents), и порядок задаём
+     явно — заголовок с обложкой, потом оглавление, потом текст. Иначе на
+     телефоне первым экраном шло бы оглавление, а заголовок статьи — под ним. */
+  .reading__main { display: contents; }
+  .article-hero { order: 1; margin-bottom: 0; }
+  .rail { order: 2; }
+  .prose { order: 3; }
 }
 
 @media (max-width: 940px) {
@@ -420,8 +428,10 @@ p { margin: 0 0 18px; }
    Дописано при пересборке блога 10.09. Компоненты общие: тем же байлайном и
    теми же карточками пользуются страницы кейсов и любые будущие материалы. */
 
-.article-hero { padding-block: clamp(36px, 5vw, 64px) 0; }
-.article-hero h1 { max-width: 20ch; margin: 14px 0 20px; }
+/* Шапка статьи стоит в колонке чтения (см. шаблон), поэтому своего верхнего
+   отступа ей не нужно — его даёт .section. Снизу отбиваем от текста. */
+.article-hero { padding-block: 0; margin-bottom: clamp(32px, 4vw, 48px); }
+.article-hero h1 { max-width: 20ch; margin: 0 0 20px; }
 .article-hero .lede { margin: 0 0 32px; }
 
 .byline {
@@ -442,7 +452,13 @@ p { margin: 0 0 18px; }
 .byline__meta { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-left: auto; color: var(--muted); font-size: 14px; }
 .byline__meta time { white-space: nowrap; }
 
-.article-cover { max-width: 760px; margin: clamp(28px, 4vw, 44px) 0 0; }
+/* Обложка занимает всю ширину колонки чтения. До 22.09.2026 у неё стояло
+   max-width: 760px внутри контейнера 1200px, и на десктопе она уезжала влево —
+   рядом оставалось пустое поле в треть экрана. */
+.article-cover { max-width: 100%; margin: clamp(28px, 4vw, 44px) 0 0; }
+.article-cover > img {
+  width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--r-card);
+}
 
 .sources { margin: 0; padding: 0; list-style: none; }
 .sources li { padding-block: 12px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 15px; line-height: 1.5; }
