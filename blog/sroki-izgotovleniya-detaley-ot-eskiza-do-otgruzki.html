@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сроки изготовления деталей: от эскиза до отгрузки</title>
+  <meta name="description" content="От чего зависит срок детали: этапы производства, термообработка, крепёж, срочные заказы и как отследить готовность — конкретные диапазоны по типам." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki/" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki/#article",
+      "headline": "Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа",
+      "description": "От чего зависит срок детали: этапы производства, термообработка, крепёж, срочные заказы и как отследить готовность — конкретные диапазоны по типам.",
+      "datePublished": "2026-09-22",
+      "dateModified": "2026-09-22",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki/"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "сроки изготовления деталей",
+        "производственный цикл металлообработки",
+        "срочные заказы металлообработка",
+        "сроки изготовления крепежа",
+        "когда будет готова деталь",
+        "термообработка сроки"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "От чего зависят сроки изготовления детали?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Срок складывается из сложности геометрии, доступности материала, загрузки станков и необходимости термообработки или покрытия. Простая деталь готова за 1–2 дня, сложная — от недели."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько занимает срочный заказ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ускоряется очередь на станке и расчёт КП, но термообработку и покрытие физически не сжать — они идут своим временем независимо от приоритета заказа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько времени добавляют термообработка и покрытие?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "От одного до пяти дней в зависимости от вида: закалка и отпуск — быстрее, цементация и гальванические покрытия — дольше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как заказчик может сократить срок изготовления?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Прислать чертёж со STEP-моделью и допусками, заранее согласовать материал и объединить несколько позиций в одну партию вместо дробных заказов."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Сколько реально ждать деталь: от чертежа до отгрузки по дням" />
+  <meta property="og:description" content="От чего зависит срок детали: этапы производства, термообработка, крепёж, срочные заказы и как отследить готовность — конкретные диапазоны по типам." />
+  <meta property="og:url" content="https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki/" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-22" />
+  <meta property="article:modified_time" content="2026-09-22" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Сколько реально ждать деталь: от чертежа до отгрузки по дням" />
+  <meta name="twitter:description" content="От чего зависит срок детали: этапы производства, термообработка, крепёж, срочные заказы и как отследить готовность — конкретные диапазоны по типам." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа</span>
+    </div>
+  </nav>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа</h1>
+      <p class="lede">От чего зависит срок детали: этапы производства, термообработка, крепёж, срочные заказы и как отследить готовность — конкретные диапазоны по типам.</p>
+
+      <div class="byline">
+        <span class="byline__who">
+          <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+          <span>
+            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+            <span class="byline__role">Инженер</span>
+          </span>
+        </span>
+        <span class="byline__meta">
+          <span>Заказчику</span>
+          <time datetime="2026-09-22">Опубликовано 22 сентября 2026</time>
+
+          <span>9 мин чтения</span>
+        </span>
+      </div>
+
+      <figure class="figure--draft article-cover">
+        <img src="/images/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki-cover.webp" alt="Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа" width="1200" height="675" fetchpriority="high" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#ot-chego-zavisit-srok-izgotovleniya-detali">От чего зависит срок изготовления детали</a></li>
+<li><a href="#s-kakogo-momenta-schitat-srok-dogovor-predoplata-ili-chertez">С какого момента считать срок: договор, предоплата или чертёж</a></li>
+<li><a href="#put-detali-ot-eskiza-do-otgruzki-etapy-proizvodstvennogo-tsi">Путь детали от эскиза до отгрузки: этапы производственного цикла</a></li>
+<li><a href="#tehnologicheskaya-podgotovka-i-slozhnost-detali">Технологическая подготовка и сложность детали</a></li>
+<li><a href="#termoobrabotka-i-pokrytiya-otdelnyy-etap-so-svoimi-srokami">Термообработка и покрытия: отдельный этап со своими сроками</a></li>
+<li><a href="#edinichnaya-detal-malaya-partiya-i-seriya-kak-schitaetsya-sr">Единичная деталь, малая партия и серия — как считается срок</a></li>
+<li><a href="#sroki-izgotovleniya-krepezha-bolty-shpilki-gayki-shayby">Сроки изготовления крепежа: болты, шпильки, гайки, шайбы</a></li>
+<li><a href="#srochnye-zakazy-chto-mozhno-uskorit-a-chto-upiraetsya-v-fizi">Срочные заказы: что можно ускорить, а что упирается в физику</a></li>
+<li><a href="#dostavka-status-zakaza-i-chto-esli-srok-sorvali">Доставка, статус заказа и что если срок сорвали</a></li>
+<li><a href="#kak-sokratit-srok-chek-list-dlya-zakazchika">Как сократить срок: чек-лист для заказчика</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <article class="prose">
+        <p class="prose__lede">Простая деталь готова за 1–2 дня, сложная — за неделю и больше: срок решает не желание заказчика, а физика процесса — термообработка, доступность заготовки и очередь на станке. Разбираем путь от эскиза до отгрузки по этапам и называем диапазоны, а не пустое «сделаем быстро».</p>
+
+        <h2 id="ot-chego-zavisit-srok-izgotovleniya-detali">От чего зависит срок изготовления детали</h2>
+<p>Единого срока на деталь не существует — есть диапазон, и он складывается из четырёх факторов. Простая втулка из ходовой стали уходит в работу быстрее, чем корпус со сложной геометрией и жёсткими допусками. На срок влияют не пожелания заказчика, а условия конкретного заказа: форма детали, материал, загрузка цеха и точность, которую требует чертёж.</p>
+<ul><li><strong>Сложность геометрии и число установов.</strong> Деталь, которую нужно закрепить и обработать с нескольких сторон, проходит через несколько установов на станке — каждый добавляет время на переустановку и промежуточный контроль.</li><li><strong>Доступность заготовки.</strong> Ходовая марка стали или алюминия лежит на складе поставщика, а редкий профиль или сплав под заказ ждут поставку иногда неделями — заготовка напрямую двигает срок.</li><li><strong>Загрузка станков и очередь в цехе.</strong> Если оборудование занято другими заказами, деталь ждёт своей очереди на обработку.</li><li><strong>Точность допусков по чертежу.</strong> Жёсткий допуск требует медленной чистовой обработки и дополнительных замеров.</li></ul>
+<blockquote><p><strong>Факт.</strong> Наладка станка под новую деталь и переустановка при смене стороны обработки — это отдельное время, не входящее в саму резку металла: чем сложнее геометрия, тем больше таких переустановок закладывает техпроцесс.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если чертёж пока не финализирован, а срок уже поджимает — есть смысл прислать эскиз на предварительный расчёт: подрядчик успеет забронировать материал и место в очереди станка, пока согласовываются детали.</p></blockquote>
+<div class="cta ui" id="cta" data-cta="inline">
+          <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+          <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+          <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа">Прислать чертёж на почту</a>
+        </div>
+<h2 id="s-kakogo-momenta-schitat-srok-dogovor-predoplata-ili-chertez">С какого момента считать срок: договор, предоплата или чертёж</h2>
+<p><img src="/images/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki-1.webp" alt="Рабочий измеряет длинный материал в мастерской" style="aspect-ratio:16/9"></p>
+<p><em>Первоначальная проверка параметров материала по чертежу — момент, с которого начинается отсчет срока производства. Фото: <a href="https://commons.wikimedia.org/wiki/File:Worker_measures_material_in_a_workshop.jpg" rel="nofollow noopener" target="_blank">Shixart1985</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Срок изготовления в договоре отсчитывается от даты, когда подрядчик получил подписанную спецификацию и предоплату — а не от первого звонка или устной договорённости о цене. Это правило снимает большинство споров «обещали одно, вышло другое».</p>
+<p>Дата в договоре и дата фактического старта работ иногда расходятся. Если чертёж пришёл с ошибками и его вернули на доработку, часы на согласование не входят в производственный срок — он стартует заново от исправленной версии. Письменная фиксация даты даёт заказчику конкретный ориентир — не «скоро», а число, — и основание для претензии, если подрядчик его нарушил по своей вине.</p>
+<h2 id="put-detali-ot-eskiza-do-otgruzki-etapy-proizvodstvennogo-tsi">Путь детали от эскиза до отгрузки: этапы производственного цикла</h2>
+<p>Деталь проходит шесть этапов от чертежа до склада готовой продукции, и каждый съедает своё время. Задержка на любом из них сдвигает всю отгрузку — поэтому полезно понимать, где сейчас застрял конкретный заказ.</p>
+<ol><li><strong>Приём чертежа и расчёт КП.</strong> Технолог смотрит геометрию, материал и допуски, оценивает трудоёмкость и присылает коммерческое предложение — <a href="/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley">как составить заявку на расчёт изготовления</a>, чтобы посчитали быстрее и точнее.</li><li><strong>Технологическая подготовка производства.</strong> Идёт до того, как деталь попадает на станок: технолог пишет техпроцесс, программирует траектории для ЧПУ и, если геометрия нестандартная, проектирует оснастку под неё.</li><li><strong>Механическая обработка и промежуточный контроль.</strong> Деталь проходит через станки — токарные, фрезерные, для сложной геометрии добавляется 5-осевой ЧПУ, — а между операциями контролёр проверяет размеры.</li><li><strong>Термообработка и покрытие</strong>, если это требует чертёж. Отдельный технологический цикл, который идёт после мехобработки, а не вместо неё.</li><li><strong>Финальный контроль ОТК.</strong> Деталь сверяют с чертежом по критичным размерам и составляют протокол, если заказчику нужна документация.</li><li><strong>Упаковка и отгрузка.</strong> Деталь маркируют, упаковывают под тип доставки — самовывоз или транспортная компания — и передают на склад отгрузки.</li></ol>
+<h2 id="tehnologicheskaya-podgotovka-i-slozhnost-detali">Технологическая подготовка и сложность детали</h2>
+<p><img src="/images/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki-2.webp" alt="Промышленное оборудование среди организованных полок с материалами и компонентами" style="aspect-ratio:16/9"></p>
+<p><em>Специализированная машина и аккуратное хранение деталей — основа эффективного производственного цикла. Фото: <a href="https://commons.wikimedia.org/wiki/File:Industrial_manufacturing_machine_operating_in_a_well_organized_factory_workshop.jpg" rel="nofollow noopener" target="_blank">Shixart1985</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Чем сложнее геометрия, тем больше времени съедает не сама резка металла, а подготовка к ней. Чертёж задаёт весь техпроцесс: допуски, материал и форма в нём определяют, сколько займёт технологическая подготовка производства и какое оборудование понадобится.</p>
+<p>На нестандартной геометрии техпроцесс и программа для ЧПУ пишутся заново, а не берутся из архива, и часто нужна отдельная оснастка — приспособление, которое держит деталь под нужным углом. Специфичное оборудование вроде 5-осевого ЧПУ обычно одно на цех, и очередь на него длиннее, чем на обычный фрезерный станок.</p>
+<p>Ориентировочно: простая деталь занимает 1–2 дня, деталь средней сложности — 2–4 дня, сложная геометрия — 4–7 дней, а крупная деталь или деталь под собственную оснастку — от недели до двух. Точные цифры по конкретному чертежу называет технолог после расчёта КП.</p>
+<h2 id="termoobrabotka-i-pokrytiya-otdelnyy-etap-so-svoimi-srokami">Термообработка и покрытия: отдельный этап со своими сроками</h2>
+<p>Термообработка и гальваническое покрытие идут строго после механической обработки, а не параллельно с ней: деталь сначала обрабатывают на станке, и только потом закаляют, цементируют или покрывают. Термообработка всегда удлиняет срок изготовления — она добавляет отдельные дни, а не часы, именно из-за этой последовательности.</p>
+<blockquote><p>Термообработка не ускоряется приоритетом заказа — металл остывает и насыщается ровно столько времени, сколько требует технология, вне зависимости от очереди в цехе.</p></blockquote>
+<table><thead><tr><th>Операция</th><th>Типичный срок</th></tr></thead><tbody><tr><td>Закалка и отпуск</td><td>1–3 дня</td></tr><tr><td>Цементация</td><td>2–5 дней</td></tr><tr><td>Хромирование или цинкование</td><td>2–5 дней</td></tr><tr><td>Сварка узла с остыванием</td><td>1–3 дня</td></tr></tbody></table>
+<p>Цинкование и хромирование чаще заказывают под требования нормативов на антикоррозийную защиту — для крепежа и корпусных деталей, которые работают на улице или во влажной среде. Термообработка почти всегда идёт партией, а не по одной детали: если печь загружают на двадцать деталей, а готово только пять, следующего цикла ждут все — включая единичный заказ, который в неё попал.</p>
+<h2 id="edinichnaya-detal-malaya-partiya-i-seriya-kak-schitaetsya-sr">Единичная деталь, малая партия и серия — как считается срок</h2>
+<p>Одна и та же деталь делается по-разному в зависимости от того, сколько экземпляров в заказе. На единичном экземпляре большую часть времени съедает наладка станка, а не сама обработка — и партия влияет на срок сильнее, чем кажется на старте.</p>
+<p>На малой партии наладка распределяется на несколько штук, поэтому время на единицу падает. На серии оно снижается ещё сильнее, но общий срок цикла растёт: через оборудование проходит больше металла, и деталь дольше занимает станок целиком. Если заказчик планирует докупать ту же позицию позже, разумнее сразу собрать заказ в одну партию — заодно стоит свериться, <a href="/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii">как контролировать версии чертежа при заказе партии</a>, чтобы вторая партия не ушла в работу по старой ревизии.</p>
+<h2 id="sroki-izgotovleniya-krepezha-bolty-shpilki-gayki-shayby">Сроки изготовления крепежа: болты, шпильки, гайки, шайбы</h2>
+<p>Крепёж — это тоже деталь, просто с простой токарной геометрией, поэтому болт, шпилька, гайка или шайба обычно готовы быстрее корпусной детали со сложным профилем. Токарная операция без сложных установов занимает меньше времени, чем фрезеровка многогранного корпуса.</p>
+<p>Срок растягивается, если крепёж идёт под покрытие: цинкование добавляет те же 2–5 дней, что и для любой другой детали, потому что гальваническая линия не делает исключений по типу изделия. Заказ партией меняет расчёт так же, как для корпусных деталей — наладка токарного станка распределяется на весь тираж, и время на единицу падает.</p>
+<h2 id="srochnye-zakazy-chto-mozhno-uskorit-a-chto-upiraetsya-v-fizi">Срочные заказы: что можно ускорить, а что упирается в физику</h2>
+<p><img src="/images/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki-diagram.webp" alt="Сколько дней занимает деталь в зависимости от сложности: Простая деталь — 1–2 дня, Средняя сложность — 2–4 дня, Сложная геометрия — 4–7 дней, Крупная деталь или оснастка — 7–14 дней" style="aspect-ratio:16/9"></p>
+<p>Срочный заказ сокращает срок изготовления за счёт очереди на станке и приоритета в расчёте КП — подрядчик может поставить деталь первой в план цеха, и это экономит день-два уже на старте.</p>
+<p>Но часть пути физически не сжать: время термообработки, остывание после сварки, высыхание покрытия идут по своей технологии, а не по графику менеджера. Закалка при сокращённой выдержке даёт непрогретую сердцевину, а недосушенное покрытие отслаивается — ускорение здесь бьёт по качеству детали.</p>
+<p>Приоритетное размещение вне очереди обычно стоит дороже обычного заказа — точный процент зависит от загрузки цеха на момент заявки, и его называют при расчёте КП.</p>
+<table><thead><tr><th>Сложность детали</th><th>Срок</th></tr></thead><tbody><tr><td>Простая деталь</td><td>1–2 дня</td></tr><tr><td>Средняя сложность</td><td>2–4 дня</td></tr><tr><td>Сложная геометрия</td><td>4–7 дней</td></tr><tr><td>Крупная деталь или оснастка</td><td>7–14 дней</td></tr></tbody></table>
+<p>Диапазоны ориентировочные: точный срок технолог называет после того, как увидел чертёж и материал.</p>
+<h2 id="dostavka-status-zakaza-i-chto-esli-srok-sorvali">Доставка, статус заказа и что если срок сорвали</h2>
+<p>Готовая деталь не считается сданной, пока не доехала до заказчика — и здесь тоже есть свои сроки. Транспортная компания везёт груз по России от одного дня до недели в зависимости от расстояния, а самовывоз со склада забирает деталь в день готовности.</p>
+<p>По Москве и области доставка обычно занимает день, в областные центры — несколько дней, в отдалённые регионы — дольше: точный срок и стоимость называет транспортная компания при оформлении накладной. Отследить готовность заказа можно у менеджера — звонком или в переписке: он поднимает статус по номеру заказа и называет, на каком этапе цикла находится деталь сейчас.</p>
+<blockquote><p>Договор фиксирует не только цену, но и точку отсчёта срока — без этой строчки претензия к подрядчику превращается в спор на словах.</p></blockquote>
+<p>Если подрядчик сорвал срок по своей вине — не из-за правок в чертеже или задержки материала со стороны заказчика, — договор обычно предусматривает неустойку или приоритетную допоставку. Эти условия стоит проверять до подписания, а не постфактум.</p>
+<h2 id="kak-sokratit-srok-chek-list-dlya-zakazchika">Как сократить срок: чек-лист для заказчика</h2>
+<p>Часть срока зависит от подрядчика, а часть — от того, как заказчик оформил заявку. Вот что ускоряет заказ уже на старте, без потери в качестве.</p>
+<ul><li>Присылайте чертёж со STEP-моделью и допусками, а не только PDF — технологу не придётся достраивать 3D-модель вручную.</li><li>Заранее уточняйте, есть ли нужный материал на складе поставщика — редкий профиль или сплав под заказ добавляет к сроку недели, а не дни.</li><li>Объединяйте несколько позиций в одну партию вместо дробных заказов — это экономит время на повторных наладках и заодно <a href="/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika">снижает минимальную партию у подрядчика</a>.</li><li>Планируйте заказ на середину месяца, а не в конец, если производство это позволяет — так меньше риск попасть в очередь перед закрытием месячного плана.</li></ul>
+<p>Если чертёж уже готов — пришлите его на расчёт: конкретные срок и цена придут в ответе, без обтекаемых «в течение недели».</p>
+
+        <h2 id="faq">Частые вопросы</h2>
+        <div class="faq">
+          <details open>
+            <summary>От чего зависят сроки изготовления детали?</summary>
+            <div class="faq__a"><p>Срок складывается из сложности геометрии, доступности материала, загрузки станков и необходимости термообработки или покрытия. Простая деталь готова за 1–2 дня, сложная — от недели.</p></div>
+          </details>
+<details>
+            <summary>Сколько занимает срочный заказ?</summary>
+            <div class="faq__a"><p>Ускоряется очередь на станке и расчёт КП, но термообработку и покрытие физически не сжать — они идут своим временем независимо от приоритета заказа.</p></div>
+          </details>
+<details>
+            <summary>Сколько времени добавляют термообработка и покрытие?</summary>
+            <div class="faq__a"><p>От одного до пяти дней в зависимости от вида: закалка и отпуск — быстрее, цементация и гальванические покрытия — дольше.</p></div>
+          </details>
+<details>
+            <summary>Как заказчик может сократить срок изготовления?</summary>
+            <div class="faq__a"><p>Прислать чертёж со STEP-моделью и допусками, заранее согласовать материал и объединить несколько позиций в одну партию вместо дробных заказов.</p></div>
+          </details>
+        </div>
+
+        <h2 id="istochniki">Источники</h2>
+        <ul class="sources">
+          <li><a href="https://www.gost.ru/" rel="noopener" target="_blank">Росстандарт — Федеральное агентство по техническому регулированию и метрологии</a> — Росстандарт</li>
+<li><a href="https://docs.cntd.ru/" rel="noopener" target="_blank">Электронный фонд правовой и нормативно-технической документации</a> — оператор фонда стандартов и ГОСТов</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/garantiya-na-detal-po-chertezhu-chto-mozhno-trebovat.html">
+            <img src="/images/blog/garantiya-na-detal-po-chertezhu-chto-mozhno-trebovat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Если деталь не совпала с чертежом: что вы вправе требовать</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy.html">
+            <img src="/images/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Бирка, тара и лист: что должно уехать вместе с партией</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/nestandartnyy-krepezh-zakazyvat-vmeste-s-detalyu-ili-otdelno.html">
+            <img src="/images/blog/nestandartnyy-krepezh-zakazyvat-vmeste-s-detalyu-ili-otdelno-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Крепёж не из каталога: один подрядчик или два</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

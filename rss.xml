@@ -5,7 +5,15 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 12 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа</title>
+      <link>https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki.html</guid>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>От чего зависит срок детали: этапы производства, термообработка, крепёж, срочные заказы и как отследить готовность — конкретные диапазоны по типам.</description>
+    </item>
     <item>
       <title>Как закрыть партию от ржавчины, пока она ждёт монтажа</title>
       <link>https://ironex.tech/blog/zaschita-detaley-ot-korrozii-na-vremya-hraneniya.html</link>
@@ -157,14 +165,6 @@
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Чертёж в дюймах заказать деталь без ошибки: 1 дюйм = 25,4 мм. Как передать размеры, допуски и резьбу, чтобы пересчёт в миллиметры не сломал посадку узла.</description>
-    </item>
-    <item>
-      <title>Оксидный слой или цинк: какое покрытие заказать под деталь</title>
-      <link>https://ironex.tech/blog/anodirovanie-i-ocinkovka-metalla-chem-otlichayutsya-pokrytiya.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/anodirovanie-i-ocinkovka-metalla-chem-otlichayutsya-pokrytiya.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Анодирование и оцинковка металла: 2 разных покрытия. Чем анодирование отличается от оцинковки и какое антикоррозийное покрытие металла заказать под деталь.</description>
     </item>
   </channel>
 </rss>
