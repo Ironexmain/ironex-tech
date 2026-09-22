@@ -211,34 +211,8 @@
     </div>
   </nav>
 
-  <section class="article-hero">
-    <div class="container">
-      <h1>Изготовление деталей по чертежам: контроль версий</h1>
-      <p class="lede">Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии.</p>
-
-      <div class="byline">
-        <span class="byline__who">
-          <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
-          <span>
-            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
-            <span class="byline__role">Инженер</span>
-          </span>
-        </span>
-        <span class="byline__meta">
-          <span>Чертежи и допуски</span>
-          <time datetime="2026-08-30">Опубликовано 30 августа 2026</time>
-
-          <span>5 мин чтения</span>
-        </span>
-      </div>
-
-      <figure class="figure--draft article-cover">
-        <img src="/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover.webp" alt="Изготовление деталей по чертежам: контроль версий" width="1200" height="675" fetchpriority="high" decoding="async" />
-      </figure>
-    </div>
-  </section>
-
   <div class="container section">
+
     <div class="reading">
       <aside class="rail">
         <span class="label">В статье</span>
@@ -256,7 +230,33 @@
         </div>
       </aside>
 
-      <article class="prose">
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Изготовление деталей по чертежам: контроль версий</h1>
+        <p class="lede">Изготовление деталей по чертежам заказчика: 7 шагов для контроля версий, защиты от устаревших файлов и снижения риска брака во всей партии.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-08-30">Опубликовано 30 августа 2026</time>
+
+            <span>5 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover.webp" alt="Изготовление деталей по чертежам: контроль версий" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
 <p class="prose__lede">При заказе партии недостаточно отправить исполнителю файл с названием <code>деталь_финал.pdf</code>. Нужно однозначно определить, какой комплект документов действует, чем он отличается от предыдущего и с какого момента его следует применять.</p>
 <p>Это особенно важно, когда изготовление деталей по чертежам заказчика проходит несколько этапов: предварительный расчёт, согласование технологии, выпуск образца, производство партии и контроль. Если на одном из этапов останется старый файл, стоимость могут рассчитать по одной геометрии, заготовку подготовить по другой, а готовые детали проверить по третьей.</p>
 <p>Ниже — универсальный порядок передачи конструкторской документации. Его можно применять независимо от состава изделия, способа обработки и внутренней системы документооборота заказчика.</p>
@@ -291,7 +291,7 @@
 <p>По имени видно, к какой детали относится документ и какая перед нами версия. Дата помогает ориентироваться, но не заменяет номер ревизии: два изменения могут появиться в один день.</p>
 <h3>Что считать новой ревизией</h3>
 <p>Новую ревизию стоит выпускать при любом изменении, которое может повлиять на расчёт, технологию, изготовление или контроль. К таким изменениям относятся:</p>
-<ul><li>геометрия детали;</li><li>размеры и допуски;</li><li>материал или состояние поставки;</li><li>шероховатость;</li><li>термообработка и покрытие;</li><li>требования к маркировке;</li><li>программа и объём контроля;</li><li>количество, если от него зависит состав заказа или расчёт партии.</li></ul>
+<ul><li>геометрия детали;</li><li>размеры и допуски;</li><li>материал или состояние поставки;</li><li><a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>;</li><li>термообработка и покрытие;</li><li>требования к маркировке;</li><li>программа и объём контроля;</li><li>количество, если от него зависит состав заказа или расчёт партии.</li></ul>
 <p>Исправление опечатки тоже лучше обозначить новой версией, если старая формулировка допускает другое толкование. Участникам заказа не придётся решать, существенна правка или нет.</p>
 <h2 id="kak-peredavat-izmeneniya">Как передавать изменения</h2>
 <p>Новый файл нельзя просто дослать вслед за старым. Вместе с ним нужно отозвать предыдущую версию и получить подтверждение, что исполнитель принял замену.</p>
@@ -308,7 +308,7 @@
 <h3>Обозначения</h3>
 <ul><li>У каждой детали есть уникальное обозначение.</li><li>На чертеже указан номер ревизии.</li><li>Номер ревизии совпадает с именем файла.</li><li>В перечне документов указана та же версия.</li><li>В названиях нет слов <code>финал</code>, <code>новый</code> или <code>последний</code> без номера ревизии.</li></ul>
 <h3>Содержание</h3>
-<ul><li>Материал указан однозначно.</li><li>Размеры и допуски читаются.</li><li>Технические требования не противоречат основной надписи.</li><li>Чертёж и 3D-модель согласованы либо установлен приоритет документов.</li><li>Указаны покрытия, термообработка и требования к поверхности, если они нужны.</li><li>Количество деталей соответствует запросу.</li></ul>
+<ul><li>Материал указан однозначно.</li><li>Размеры и допуски читаются.</li><li>Технические требования не противоречат основной надписи.</li><li>Чертёж и <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">3D-модель</a> согласованы либо установлен приоритет документов.</li><li>Указаны покрытия, термообработка и требования к поверхности, если они нужны.</li><li>Количество деталей соответствует запросу.</li></ul>
 <h3>Передача</h3>
 <ul><li>Исполнителю отправлен полный актуальный комплект.</li><li>Старые версии явно отозваны.</li><li>В сообщении перечислены изменённые параметры.</li><li>Получатель подтвердил номер принятой ревизии.</li><li>Зафиксировано, по какой версии выполняют расчёт.</li><li>Перед запуском партии подтверждена производственная версия.</li><li>Поздние изменения отдельно проверены на влияние на стоимость, срок и выполненные операции.</li></ul>
 <p>Главный принцип прост: в каждый момент у заказа должна быть одна явно обозначенная действующая ревизия. При этом старые документы можно хранить для истории, но их статус должен исключать случайное применение.</p>
@@ -336,6 +336,7 @@
 </details>
 </div>
 </article>
+      </div>
     </div>
   </div>
 
@@ -353,20 +354,20 @@
           </a>
         </article>
 <article class="card mat-card">
-          <a href="/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii.html">
-            <img src="/images/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+          <a href="/blog/kontrol-svarnogo-shva-uzk-rk-i-vik.html">
+            <img src="/images/blog/kontrol-svarnogo-shva-uzk-rk-i-vik-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
             <span class="mat-card__body">
               <span class="mat-card__meta">Контроль качества</span>
-              <span class="mat-card__title">Мелкосерийное производство деталей: приёмка образца</span>
+              <span class="mat-card__title">Поверхность, эхо-сигнал или снимок: как проверить сварной шов</span>
             </span>
           </a>
         </article>
 <article class="card mat-card">
-          <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html">
-            <img src="/images/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+          <a href="/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy.html">
+            <img src="/images/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
             <span class="mat-card__body">
-              <span class="mat-card__meta">Материалы</span>
-              <span class="mat-card__title">Производство металлических деталей: выбор аналога</span>
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Бирка, тара и лист: что должно уехать вместе с партией</span>
             </span>
           </a>
         </article>
@@ -378,9 +379,9 @@
     <div class="container">
       <h2>Нужен расчёт деталей по вашим чертежам?</h2>
       <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
-      <div class="mailcta">
+      <p style="margin:26px 0 0">
         <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Изготовление деталей по чертежам: контроль версий">Прислать чертёж на почту</a>
-      <span class="mailcta__addr" data-email-copy><a href="mailto:info@ironex.tech" data-email-value>info@ironex.tech</a><button class="mailcta__copy" type="button" data-copy-email>Скопировать</button></span></div><p class="mailcta__hint">Кнопка откроет ваш почтовый клиент с готовой темой письма — или скопируйте адрес и напишите откуда удобно. <b>Минимальная сумма заказа — 100 000 ₽:</b> изготавливаем от 1 штуки, но заказ на меньшую сумму нерентабелен для обеих сторон. На серию цена за деталь снижается.</p>
+      </p>
     </div>
   </section>
 </main>

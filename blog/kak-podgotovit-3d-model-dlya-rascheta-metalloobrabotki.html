@@ -211,34 +211,8 @@
     </div>
   </nav>
 
-  <section class="article-hero">
-    <div class="container">
-      <h1>Фрезерная обработка по чертежу: подготовка 3D-модели</h1>
-      <p class="lede">Фрезерная обработка по чертежу: как подготовить 3D-модель за 7 шагов, убрать лишние тела и избежать противоречий при расчёте детали.</p>
-
-      <div class="byline">
-        <span class="byline__who">
-          <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
-          <span>
-            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
-            <span class="byline__role">Инженер</span>
-          </span>
-        </span>
-        <span class="byline__meta">
-          <span>Чертежи и допуски</span>
-          <time datetime="2026-08-29">Опубликовано 29 августа 2026</time>
-
-          <span>6 мин чтения</span>
-        </span>
-      </div>
-
-      <figure class="figure--draft article-cover">
-        <img src="/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp" alt="Фрезерная обработка по чертежу: подготовка 3D-модели" width="1200" height="675" fetchpriority="high" decoding="async" />
-      </figure>
-    </div>
-  </section>
-
   <div class="container section">
+
     <div class="reading">
       <aside class="rail">
         <span class="label">В статье</span>
@@ -256,7 +230,33 @@
         </div>
       </aside>
 
-      <article class="prose">
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Фрезерная обработка по чертежу: подготовка 3D-модели</h1>
+        <p class="lede">Фрезерная обработка по чертежу: как подготовить 3D-модель за 7 шагов, убрать лишние тела и избежать противоречий при расчёте детали.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-08-29">Опубликовано 29 августа 2026</time>
+
+            <span>6 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp" alt="Фрезерная обработка по чертежу: подготовка 3D-модели" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
 <p class="prose__lede">3D-модель помогает оценить геометрию детали, выбрать заготовку и продумать последовательность операций. Но файл из конструкторской системы нельзя автоматически считать готовым производственным заданием. В нём могут остаться вспомогательные тела, зазоры сборки, скрытые элементы и геометрия из старой ревизии.</p>
 <p>Для расчёта важен согласованный комплект: модель описывает форму, а чертёж — размеры, допуски и технические требования. Если документы противоречат друг другу, исполнитель вынужден уточнять исходные данные или закладывать риск в расчёт.</p>
 <p>Ниже — порядок подготовки файла, который подходит для запроса на <a href="/frezerovka.html">фрезерную обработку</a> и другие операции металлообработки.</p>
@@ -305,7 +305,7 @@
 <p>Требования к возможностям обработки и оборудованию можно предварительно сопоставить на странице <a href="/oborudovanie.html">оборудования</a>. Окончательный маршрут определяют после проверки всей документации, материала и количества деталей.</p>
 <h2 id="chek-list-pered-otpravkoy">Чек-лист перед отправкой</h2>
 <p>Перед запросом расчёта проверьте комплект:</p>
-<ul><li>в модели осталась одна нужная деталь без крепежа и соседних компонентов;</li><li>вспомогательные и дублирующиеся тела удалены;</li><li>единицы измерения и габариты проверены после экспорта;</li><li>файл открывается независимо от исходной CAD-системы;</li><li>модель не содержит разрывов, самопересечений и нулевой толщины;</li><li>обозначение и ревизия совпадают с чертежом;</li><li>геометрия отверстий, карманов, фасок и скруглений согласована;</li><li>на чертеже указаны материал, допуски, шероховатость и резьбы;</li><li>противоречия между документами устранены или явно описаны;</li><li>для каждой позиции указано требуемое количество.</li></ul>
+<ul><li>в модели осталась одна нужная деталь без крепежа и соседних компонентов;</li><li>вспомогательные и дублирующиеся тела удалены;</li><li>единицы измерения и габариты проверены после экспорта;</li><li>файл открывается независимо от исходной CAD-системы;</li><li>модель не содержит разрывов, самопересечений и нулевой толщины;</li><li>обозначение и ревизия совпадают с чертежом;</li><li>геометрия отверстий, карманов, фасок и скруглений согласована;</li><li>на чертеже указаны материал, допуски, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> и резьбы;</li><li>противоречия между документами устранены или явно описаны;</li><li>для каждой позиции указано требуемое количество.</li></ul>
 <p>К комплекту стоит добавить краткую таблицу позиций. В ней достаточно указать обозначение, наименование, ревизию, материал и количество. Если допускаются аналоги материала или изменения неточных поверхностей, это тоже лучше отметить заранее.</p>
 <p>Общий состав работ можно проверить на странице <a href="/uslugi.html">услуг</a>, а требования к запросу и способ передачи файлов — на странице <a href="/kontakty.html">контактов</a>.</p>
 <p>Пришлите чертёж, STEP- или IGES-модель, если она есть, материал, количество и технические требования для индивидуального расчёта. Цена, срок и маршрут зависят от геометрии, допусков, заготовки и состава операций.</p>
@@ -333,6 +333,7 @@
 </details>
 </div>
 </article>
+      </div>
     </div>
   </div>
 
@@ -341,6 +342,15 @@
       <h2 id="smezhnye">Читайте также</h2>
       <div class="related mat-grid mat-grid--3" style="margin-top:28px">
         <article class="card mat-card">
+          <a href="/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html">
+            <img src="/images/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
           <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">
             <img src="/images/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
             <span class="mat-card__body">
@@ -358,15 +368,6 @@
             </span>
           </a>
         </article>
-<article class="card mat-card">
-          <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">
-            <img src="/images/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
-            <span class="mat-card__body">
-              <span class="mat-card__meta">Материалы</span>
-              <span class="mat-card__title">Обработка нержавейки ЧПУ: что указать в заявке</span>
-            </span>
-          </a>
-        </article>
       </div>
     </div>
   </section>
@@ -375,9 +376,9 @@
     <div class="container">
       <h2>Нужен расчёт деталей по вашим чертежам?</h2>
       <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
-      <div class="mailcta">
+      <p style="margin:26px 0 0">
         <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Фрезерная обработка по чертежу: подготовка 3D-модели">Прислать чертёж на почту</a>
-      <span class="mailcta__addr" data-email-copy><a href="mailto:info@ironex.tech" data-email-value>info@ironex.tech</a><button class="mailcta__copy" type="button" data-copy-email>Скопировать</button></span></div><p class="mailcta__hint">Кнопка откроет ваш почтовый клиент с готовой темой письма — или скопируйте адрес и напишите откуда удобно. <b>Минимальная сумма заказа — 100 000 ₽:</b> изготавливаем от 1 штуки, но заказ на меньшую сумму нерентабелен для обеих сторон. На серию цена за деталь снижается.</p>
+      </p>
     </div>
   </section>
 </main>

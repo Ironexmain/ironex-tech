@@ -211,34 +211,8 @@
     </div>
   </nav>
 
-  <section class="article-hero">
-    <div class="container">
-      <h1>Пятиосевая обработка: когда она оправдана</h1>
-      <p class="lede">Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали.</p>
-
-      <div class="byline">
-        <span class="byline__who">
-          <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
-          <span>
-            <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
-            <span class="byline__role">Инженер</span>
-          </span>
-        </span>
-        <span class="byline__meta">
-          <span>Технологии</span>
-          <time datetime="2026-08-29">Опубликовано 29 августа 2026</time>
-
-          <span>6 мин чтения</span>
-        </span>
-      </div>
-
-      <figure class="figure--draft article-cover">
-        <img src="/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover.webp" alt="Пятиосевая обработка: когда она оправдана" width="1200" height="675" fetchpriority="high" decoding="async" />
-      </figure>
-    </div>
-  </section>
-
   <div class="container section">
+
     <div class="reading">
       <aside class="rail">
         <span class="label">В статье</span>
@@ -256,7 +230,33 @@
         </div>
       </aside>
 
-      <article class="prose">
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Пятиосевая обработка: когда она оправдана</h1>
+        <p class="lede">Пятиосевая обработка сокращает число установок при сложной геометрии. Разбираем 5 критериев выбора, ограничения метода и данные для расчёта детали.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-08-29">Опубликовано 29 августа 2026</time>
+
+            <span>6 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover.webp" alt="Пятиосевая обработка: когда она оправдана" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
 <p class="prose__lede">Пятиосевая обработка оправдана, когда деталь имеет элементы на нескольких сторонах, наклонные поверхности или зоны, к которым сложно подвести инструмент на обычном трёхосевом станке. Главная польза метода — возможность обработать больше поверхностей за одну установку и сократить число повторных базирований.</p>
 <p>Но наличие сложной формы ещё не означает, что нужны именно 5 осей ЧПУ. Иногда ту же деталь рациональнее изготовить на трёхосевом станке за несколько установок. Выбор зависит от геометрии, допусков, требований к взаимному расположению поверхностей, серийности и доступности инструмента.</p>
 <h2 id="kak-rabotaet-pyatiosevaya-obrabotka">Как работает пятиосевая обработка</h2>
@@ -310,7 +310,7 @@
 <h2 id="chto-podgotovit-dlya-rascheta">Что подготовить для расчёта</h2>
 <p>Оценить пользу одной установки можно только по комплекту технических данных. Одного изображения или габаритного размера недостаточно.</p>
 <p>Для технологического анализа желательно передать:</p>
-<ul><li>3D-модель в нейтральном обменном формате;</li><li>чертёж с размерами, базами и допусками;</li><li>марку материала и состояние заготовки;</li><li>требования к <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатости</a>;</li><li>перечень покрытий, термообработки и других последующих операций;</li><li>количество деталей в партии и возможную повторяемость заказа;</li><li>требования к контролю и комплекту документов;</li><li>допустимые изменения конструкции, если нужна проверка технологичности.</li></ul>
+<ul><li><a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">3D-модель</a> в нейтральном обменном формате;</li><li>чертёж с размерами, базами и допусками;</li><li>марку материала и состояние заготовки;</li><li>требования к <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатости</a>;</li><li>перечень покрытий, термообработки и других последующих операций;</li><li>количество деталей в партии и возможную повторяемость заказа;</li><li>требования к контролю и комплекту документов;</li><li>допустимые изменения конструкции, если нужна проверка технологичности.</li></ul>
 <p>Особое внимание стоит уделить геометрическим допускам. Если конструктор ожидает пользу от обработки за одну установку, на чертеже должно быть понятно, какие поверхности связаны допуском соосности, перпендикулярности, позиции или профиля.</p>
 <p>Для предварительной оценки полезно ответить на три вопроса:</p>
 <ol><li>Сколько сторон детали требуют обработки?</li><li>Какие элементы нельзя надёжно получить без повторного базирования?</li><li>Какие допуски связывают поверхности на разных сторонах?</li></ol>
@@ -340,6 +340,7 @@
 </details>
 </div>
 </article>
+      </div>
     </div>
   </div>
 
@@ -382,9 +383,9 @@
     <div class="container">
       <h2>Нужен расчёт деталей по вашим чертежам?</h2>
       <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
-      <div class="mailcta">
+      <p style="margin:26px 0 0">
         <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Пятиосевая обработка: когда она оправдана">Прислать чертёж на почту</a>
-      <span class="mailcta__addr" data-email-copy><a href="mailto:info@ironex.tech" data-email-value>info@ironex.tech</a><button class="mailcta__copy" type="button" data-copy-email>Скопировать</button></span></div><p class="mailcta__hint">Кнопка откроет ваш почтовый клиент с готовой темой письма — или скопируйте адрес и напишите откуда удобно. <b>Минимальная сумма заказа — 100 000 ₽:</b> изготавливаем от 1 штуки, но заказ на меньшую сумму нерентабелен для обеих сторон. На серию цена за деталь снижается.</p>
+      </p>
     </div>
   </section>
 </main>
