@@ -5,7 +5,15 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу</title>
+      <link>https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html</guid>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Сравниваем гибку, штамповку и лазерную резку по цене, срокам и порогу тиража — с чек-листом для чертежа и примером расчёта для заказа.</description>
+    </item>
     <item>
       <title>Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа</title>
       <link>https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki.html</link>
@@ -157,14 +165,6 @@
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Контроль качества</category>
       <description>Деталь пришла с браком: как собрать акт, фото и претензию подрядчику за дефект детали. Порядок оформления рекламации — 4 шага, чтобы требование не отклонили.</description>
-    </item>
-    <item>
-      <title>Как отдать дюймовый чертёж, чтобы деталь совпала с посадкой</title>
-      <link>https://ironex.tech/blog/chertezh-v-dyuymah-kak-zakazat-detal-bez-oshibki-perescheta.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/chertezh-v-dyuymah-kak-zakazat-detal-bez-oshibki-perescheta.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Чертёж в дюймах заказать деталь без ошибки: 1 дюйм = 25,4 мм. Как передать размеры, допуски и резьбу, чтобы пересчёт в миллиметры не сломал посадку узла.</description>
     </item>
   </channel>
 </rss>

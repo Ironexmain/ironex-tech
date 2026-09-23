@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Методы обработки листового металла: гибка, штамповка, лазерная резка</title>
+  <meta name="description" content="Сравниваем гибку, штамповку и лазерную резку по цене, срокам и порогу тиража — с чек-листом для чертежа и примером расчёта для заказа." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda/" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda/#article",
+      "headline": "Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу",
+      "description": "Сравниваем гибку, штамповку и лазерную резку по цене, срокам и порогу тиража — с чек-листом для чертежа и примером расчёта для заказа.",
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda/"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "методы обработки листового металла",
+        "гибка на прессе",
+        "штамповая оснастка",
+        "лазерная резка стоимость за единицу",
+        "сравнение методов обработки листового металла",
+        "гибка или штамповка"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "С какого тиража штамповка выгоднее лазерной резки с гибкой?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Универсального числа нет — порог зависит от цены оснастки и сложности детали. Считают точку, где сумма «цена штампа плюс цена детали на штамповке, умноженная на тираж» становится ниже суммы «цена детали лазером и гибкой, умноженная на тот же тираж». До этой точки выгоднее лазер и гибка, после — штамп."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой минимальный радиус гиба на листогибочном прессе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от толщины листа и марки материала: сталь, нержавейка и алюминий гнутся по-разному. Точное значение для своей детали технолог берёт из техкарты конкретного пресса, а не из общего правила для всех металлов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему деталь после гибки не держит заданный угол?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это пружинение: лист частично распрямляется после снятия усилия пресса. Угол гиба в программе закладывают с поправкой на упругий возврат материала — иначе готовая деталь не совпадёт с чертежом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что должно быть в чертеже, чтобы точно рассчитать метод обработки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Материал и толщина, допуски на размеры, минимальные радиусы гибов, точный тираж партии и срок изготовления. Без любого из этих пяти параметров расчёт метода превращается в оценку на глаз."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Гибка, штамповка или лазер: что выгоднее по тиражу" />
+  <meta property="og:description" content="Сравниваем гибку, штамповку и лазерную резку по цене, срокам и порогу тиража — с чек-листом для чертежа и примером расчёта для заказа." />
+  <meta property="og:url" content="https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda/" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-23" />
+  <meta property="article:modified_time" content="2026-09-23" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Гибка, штамповка или лазер: что выгоднее по тиражу" />
+  <meta name="twitter:description" content="Сравниваем гибку, штамповку и лазерную резку по цене, срокам и порогу тиража — с чек-листом для чертежа и примером расчёта для заказа." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#ot-chego-zavisit-vybor">От чего зависит выбор метода</a></li>
+<li><a href="#gibka-na-presse">Гибка на прессе</a></li>
+<li><a href="#shtampovka-etapy-osnastka">Штамповка и оснастка</a></li>
+<li><a href="#lazernaya-rezka-tochnost">Лазерная резка</a></li>
+<li><a href="#sravnenie-metodov-tablitsa">Сравнение методов</a></li>
+<li><a href="#porog-tirazha-ekonomika">Порог тиража</a></li>
+<li><a href="#gibridnyi-marshrut">Лазер плюс гибка</a></li>
+<li><a href="#cheklist-oshibki">Чек-лист и ошибки</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу</h1>
+        <p class="lede">Сравниваем гибку, штамповку и лазерную резку по цене, срокам и порогу тиража — с чек-листом для чертежа и примером расчёта для заказа.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-09-23">Опубликовано 23 сентября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda-cover.webp" alt="Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Метод обработки листа выбирает не станок, а тираж и чертёж: сотня деталей со сложным контуром решается лазером и гибкой, а десять тысяч простых — штампом. Ошибка стоит переплаты за оснастку или цены за деталь, которая не отбивается на партии. Разбираем, где проходит граница и как её посчитать для своего заказа.</p>
+<h2 id="ot-chego-zavisit-vybor">От чего реально зависит выбор метода</h2>
+<p>Метод обработки листового металла решают два параметра: тираж партии и сложность чертежа детали. Не оборудование, которое стоит у подрядчика, и не привычка технолога — именно эти два числа определяют, что выйдет дешевле: <a href="/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html">лазерная резка</a> с гибкой или штамповка.</p>
+<p>Цена за деталь и стоимость оснастки тянут решение в разные стороны. Штамп стоит дорого и делает каждую следующую деталь почти бесплатной. Лазер и гибочный пресс не требуют вложений в оснастку, но цена за единицу почти одинакова что на первой, что на тысячной детали. На маленькой партии выигрывает связка без оснастки, на большой — штамп: тираж окупает вложение в оснастку.</p>
+<p>Частая ошибка — выбирать метод по тому, что умеет конкретный подрядчик, а не расчётом. Цех с одним лазером и прессом предложит их для любого тиража, даже там, где штамп давно окупился бы. Дальше разбираем каждый метод, считаем порог тиража и даём чек-лист для чертежа.</p>
+<blockquote><p><strong>Факт.</strong> Допуски размеров и предельные отклонения металлических деталей в России устанавливает государственный реестр стандартов, который ведёт Росстандарт — федеральный орган по техническому регулированию.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если чертёж не указывает нужный допуск явно, просите технолога сослаться на конкретный ГОСТ, а не «примерно как обычно» — на партии до сотни деталей цена ошибки в допуске выше цены согласования.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу">Прислать чертёж на почту</a>
+</div>
+<h2 id="gibka-na-presse">Гибка на прессе: что умеет и где предел</h2>
+<p><img alt="Робот обрабатывает лист металла для гибки" src="/images/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Робот-манипулятор подает листовую заготовку на гибочный пресс. Фото: <a href="https://commons.wikimedia.org/wiki/File:Bend_press_Robot.png" rel="nofollow noopener" target="_blank">Borowski</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Гибка на листогибочном прессе формирует деталь без нагрева: лист зажимают между матрицей и пуансоном и продавливают до нужного угла. Метод не требует оснастки под конкретную деталь — программу задают на пульте пресса. Поэтому гибка одинаково подходит и для одной детали, и для партии в сотню штук.</p>
+<p>Минимальный внутренний радиус гиба привязан к толщине листа: чем толще металл, тем больше радиус, ниже которого металл трескается по кромке. Радиус на чертеже — не эстетический выбор конструктора, а технологическое ограничение, которое учитывает толщину и марку металла.</p>
+<table><thead><tr><th>Материал</th><th>Минимальный радиус гиба</th><th>Угол пружинения</th></tr></thead><tbody><tr><td>Низкоуглеродистая сталь</td><td>около 1 толщины листа</td><td>1–3°</td></tr><tr><td>Нержавеющая сталь</td><td>1,5–2 толщины листа</td><td>3–5°</td></tr><tr><td>Алюминиевые сплавы</td><td>0,5–2 толщины листа</td><td>2–8°</td></tr></tbody></table>
+<p>Это правило для ориентира, точные цифры для своей детали уточняют по техкарте конкретного пресса. После снятия усилия пресса лист частично распрямляется — это пружинение. Угол в программе закладывают с запасом на упругий возврат, иначе деталь не держит заданный размер.</p>
+<p>Число и порядок сгибов читают с чертежа. Деталь с пятью гибами в разных плоскостях требует переустановки на прессе между операциями, и это время закладывают в срок заказа. Если контур предполагает вытяжку или сложную объёмную форму, одной гибкой не обойтись — нужна штамповая оснастка. Что приложить к чертежу, чтобы технолог сразу увидел эти ограничения, разбирает материал <a href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla">что приложить к заявке на гибку металла</a>.</p>
+<h2 id="shtampovka-etapy-osnastka">Штамповка: этапы, виды и цена оснастки</h2>
+<p>Штамповка выдавливает деталь из листа за один или несколько ходов пресса через готовую оснастку — штамп. В отличие от гибки, здесь форму задаёт не программа станка, а сама оснастка: чтобы получить новую деталь, нужен новый штамп.</p>
+<p>Вид штамповки зависит от тиража и сложности контура:</p>
+<ul><li><strong>Простая штамповка</strong> — один переход, один штамп на одну операцию вырубки или пробивки. Подходит для плоских деталей несложной формы и небольших партий.</li><li><strong>Последовательная штамповка</strong> — несколько отдельных штампов, деталь проходит через них по очереди. Дороже простой, зато собирает сложный контур из простых операций.</li><li><strong>Прогрессивная штамповка</strong> — один составной штамп выполняет все переходы за один ход пресса, лента металла подаётся автоматически. Самая дорогая оснастка и самая низкая <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">цена детали</a> на большом тираже.</li></ul>
+<p>Стоимость изготовления штампа складывается из проектирования, металла для матрицы и пуансона, механической обработки и доводки. Точную цифру для своей детали уточняйте у производства после расчёта техпроцесса, а не берите усреднённую по рынку. <a href="/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp.html">Срок изготовления</a> оснастки часто превышает срок самой штамповки в несколько раз и напрямую двигает срок всего заказа. Сначала делают и испытывают штамп, потом запускают партию.</p>
+<p>Поэтому на партии ниже порога окупаемости штамповка проигрывает по цене лазерной резке с гибкой. Деталь может быть дешевле в производстве, но общая стоимость заказа с учётом оснастки выходит выше.</p>
+<blockquote><p>Штамповка — это не технология одной детали, а инвестиция в оснастку: она окупается тиражом, а не низкой ценой одной штуки.</p></blockquote>
+<h2 id="lazernaya-rezka-tochnost">Лазерная резка: точность, скорость, цена за деталь</h2>
+<p><img alt="Подготовка деталей при штамповке: уголки и рычаги на производстве" src="/images/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda-2.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Этап подготовки штампованных деталей: уголки и рычаги готовы к сборке и отправке. Фото: <a href="https://commons.wikimedia.org/wiki/File:Industries_of_War_-_Hardware_-_SHEET_METAL_department._PREPARING_stamping,_corner_irons_and_levers_in_plant_of_the_Russ_Co.,_Cleveland,_Ohio_doing_war_work_-_NARA_-_31489114.jpg" rel="nofollow noopener" target="_blank">Unknown author Unknown author or not provided</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Лазерная резка выжигает контур детали по программе из чертежа — без оснастки и без минимального тиража. Луч режет один лист так же, как и партию в тысячу штук: разница только в общем времени резки.</p>
+<p>Точность и скорость лазерного раскроя зависят от конкретного станка и толщины металла. Уточняйте паспортные параметры своего оборудования, а не усреднённые цифры по рынку: у разных производителей лазерных комплексов эти показатели заметно отличаются.</p>
+<p>Цена за единицу складывается из трёх переменных: толщины металла, длины реза по контуру и тиража. Толстый лист режут медленнее, деталь со сложным контуром — дольше. На большом тираже растёт только время резки, потому что подготовки под конкретную деталь почти нет.</p>
+<p>На толстом металле лазер экономически уступает плазменной или гидроабразивной резке. После определённой толщины скорость лазера падает сильнее, чем у альтернатив, и цена реза растёт быстрее. Разбор <a href="/blog/lazernaya-plazmennaya-ili-gidroabrazivnaya-rezka">как выбрать между лазерной, плазменной и гидроабразивной резкой</a> даёт границу по толщине для каждого метода.</p>
+<p>Главное преимущество лазера — отсутствие оснастки. Заказ на 3 детали и на 3000 в теории считается по одной формуле, только время в очереди на станке будет разным.</p>
+<h2 id="sravnenie-metodov-tablitsa">Сравнение методов по одним критериям</h2>
+<p>Три метода закрывают разные задачи, и сравнивать их правильно по одним критериям. Нужна ли оснастка, с какого тиража метод имеет смысл, как цена за деталь ведёт себя с ростом партии.</p>
+<table><thead><tr><th>Критерий</th><th>Гибка</th><th>Штамповка</th><th>Лазерная резка</th></tr></thead><tbody><tr><td>Оснастка под деталь</td><td>Не нужна</td><td>Штамп</td><td>Не нужна</td></tr><tr><td>Минимальный тираж</td><td>От 1 детали</td><td>От партии, окупающей штамп</td><td>От 1 детали</td></tr><tr><td>Цена детали на малом тираже</td><td>Низкая</td><td>Высокая</td><td>Низкая</td></tr><tr><td>Цена детали на большом тираже</td><td>Не снижается</td><td>Падает</td><td>Не снижается</td></tr><tr><td>Срок запуска заказа</td><td>Быстрый</td><td>Долгий, сначала штамп</td><td>Быстрый</td></tr></tbody></table>
+<p>Гибка и лазерная резка не требуют вложений на входе — заказ можно запустить хоть на одну деталь, и стоимость линейно растёт с тиражом. Это подходит для опытной партии или заказа, который ещё может измениться.</p>
+<p>Штамповка работает иначе: высокий порог входа окупается только тиражом. Пока партия не набрала нужный объём, штампованная деталь дороже той же детали лазером и гибкой. После порога — дешевле, и разница растёт с каждой следующей тысячей штук.</p>
+<p>Вывод простой: гибка и лазер — для мелкой и средней серии и для деталей, которые ещё могут измениться. Штамповка — для стабильного крупного тиража, где чертёж уже не изменится.</p>
+<blockquote><p>Гибка и лазерная резка занимают партию без оснастки, штамповка занимает тираж, который эту оснастку окупит.</p></blockquote>
+<h2 id="porog-tirazha-ekonomika">Порог тиража: когда штамповка обгоняет лазер с гибкой</h2>
+<p>Штамповая оснастка окупается не ценой одной детали, а тиражом партии. Чтобы сравнить методы честно, считают не цену за штуку, а полную стоимость заказа на конкретном тираже.</p>
+<p>Формула сравнения простая. Сравнивают цену оснастки плюс цену детали на штамповке, умноженную на тираж, — с ценой детали на связке лазер плюс гибка, умноженной на тот же тираж. Штамповка выгоднее там, где первая сумма становится меньше второй.</p>
+<p>Пример на условных числах. Пусть штамп стоит N рублей, деталь на штамповке — A рублей, а та же деталь лазером с гибкой — B рублей. B выше A на разницу в себестоимости резки и переналадки пресса. Точка пересечения — тираж, на котором N + A × тираж сравнивается с B × тираж. До этой точки дешевле лазер и гибка, после этой точки тираж делает штамповку выгодной.</p>
+<p>Порог сдвигается от сложности контура, числа сгибов и толщины материала. Чем сложнее деталь на лазере и гибке, тем выше её цена за штуку B — и тем раньше штамповка становится выгодной. Реальный порог по конкретному чертежу считает технолог по ценам своего производства, а не по усреднённой оценке «несколько тысяч штук». На разных деталях эта цифра отличается в разы.</p>
+<blockquote><p>Штамповая оснастка окупается не низкой ценой одной детали, а тиражом партии — точку пересечения считают по формуле, а не сравнивают цену за деталь напрямую.</p></blockquote>
+<h2 id="gibridnyi-marshrut">Гибридный маршрут: лазерная резка плюс гибка</h2>
+<p>Связка «лазерная резка контура плюс гибка на прессе» — не запасной вариант, а стандартный маршрут для контрактного производства на мелкой и средней серии. Лазер вырезает плоскую заготовку по чертежу, пресс догибает её по программе до готовой формы — без единого штампа.</p>
+<p>Такой маршрут выгоднее штамповки везде, где тираж не набрал порог окупаемости оснастки. Это партия в десятки и сотни деталей, опытная серия перед запуском в крупную и деталь, форма которой ещё может измениться по ходу проекта.</p>
+<p>Проигрывает связка только в скорости на очень большом тираже. Штамп формует деталь за один ход пресса, а лазер и гибка обрабатывают каждую заготовку последовательно. На тысячах одинаковых деталей это складывается в разницу по времени, а значит — и по цене.</p>
+<p>Для контрактного производства это не компромисс, а рабочая схема по умолчанию. Большинство заказов по чертежу заказчика попадают именно в диапазон тиражей, где лазер с гибкой быстрее и дешевле штампа.</p>
+<h2 id="cheklist-oshibki">Чек-лист для чертежа и частые ошибки заказчика</h2>
+<p>Расчёт метода обработки настолько точен, насколько точен чертёж. Пять параметров решают, каким методом деталь выйдет дешевле и в какой срок:</p>
+<ul><li>материал и толщина листа — по ним технолог оценивает нагрузку на оборудование и минимальный радиус гиба;</li><li>допуски на размеры — от них зависит, нужна ли доводка после резки или гибки;</li><li>минимальные радиусы внутренних гибов — если радиус меньше технологического предела для данной толщины, деталь трескается на прессе, и её приходится перечерчивать;</li><li>тираж партии — точное число, а не «примерно сто», иначе расчёт порога штамповки становится неточным;</li><li>срок изготовления — от него зависит, успевает ли завод под штамп или заказ уйдёт на лазер с гибкой.</li></ul>
+<p>Частая ошибка — радиус гиба меньше технологического минимума. Конструктор рисует деталь по эскизу, не сверяясь с толщиной металла, и на прессе кромка идёт трещинами. Вторая частая ошибка — тираж указан приблизительно или не указан вовсе. Без точного числа расчёт метода превращается в оценку на глаз, а не в расчёт.</p>
+<p>Чтобы понять, что расчёт метода сделан верно, сверьте три числа: цена детали, срок и тираж должны складываться в одну картину, а не противоречить друг другу. Штамп, который не успевает окупиться за срок проекта, выбран ошибочно.</p>
+<p>Пришлите чертёж и тираж — посчитаем метод обработки, срок и цену для вашей партии.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>С какого тиража штамповка выгоднее лазерной резки с гибкой?</summary>
+<div class="faq__a"><p>Универсального числа нет — порог зависит от цены оснастки и сложности детали. Считают точку, где сумма «цена штампа плюс цена детали на штамповке, умноженная на тираж» становится ниже суммы «цена детали лазером и гибкой, умноженная на тот же тираж». До этой точки выгоднее лазер и гибка, после — штамп.</p></div>
+</details>
+<details>
+<summary>Какой минимальный радиус гиба на листогибочном прессе?</summary>
+<div class="faq__a"><p>Зависит от толщины листа и марки материала: сталь, нержавейка и алюминий гнутся по-разному. Точное значение для своей детали технолог берёт из техкарты конкретного пресса, а не из общего правила для всех металлов.</p></div>
+</details>
+<details>
+<summary>Почему деталь после гибки не держит заданный угол?</summary>
+<div class="faq__a"><p>Это пружинение: лист частично распрямляется после снятия усилия пресса. Угол гиба в программе закладывают с поправкой на упругий возврат материала — иначе готовая деталь не совпадёт с чертежом.</p></div>
+</details>
+<details>
+<summary>Что должно быть в чертеже, чтобы точно рассчитать метод обработки?</summary>
+<div class="faq__a"><p>Материал и толщина, допуски на размеры, минимальные радиусы гибов, точный тираж партии и срок изготовления. Без любого из этих пяти параметров расчёт метода превращается в оценку на глаз.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://protect.gost.ru/" rel="noopener" target="_blank">Официальный портал Росстандарта</a> — Федеральное агентство по техническому регулированию и метрологии</li>
+<li><a href="https://minpromtorg.gov.ru/" rel="noopener" target="_blank">Минпромторг России</a> — Министерство промышленности и торговли РФ</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html">
+            <img src="/images/blog/chto-prilozhit-k-zayavke-na-gibku-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Гибка металла на заказ: что приложить к заявке</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html">
+            <img src="/images/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Экономика заказа</span>
+              <span class="mat-card__title">Лазерная резка: цена и 6 факторов расчёта</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/lazernaya-plazmennaya-ili-gidroabrazivnaya-rezka.html">
+            <img src="/images/blog/lazernaya-plazmennaya-ili-gidroabrazivnaya-rezka-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Лазерная, плазменная или гидроабразивная резка</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
