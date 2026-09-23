@@ -86,7 +86,7 @@ sources:
   trusted: false
   rel: nofollow noopener
   block: false
-canonicalUrl: https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda/
+canonicalUrl: https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html
 ---
 
 <p class="b-lede-p">Метод обработки листа выбирает не станок, а тираж и чертёж: сотня деталей со сложным контуром решается лазером и гибкой, а десять тысяч простых — штампом. Ошибка стоит переплаты за оснастку или цены за деталь, которая не отбивается на партии. Разбираем, где проходит граница и как её посчитать для своего заказа.</p>

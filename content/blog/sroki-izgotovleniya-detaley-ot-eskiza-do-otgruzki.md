@@ -85,7 +85,7 @@ sources:
   trusted: false
   rel: nofollow noopener
   block: false
-canonicalUrl: https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki/
+canonicalUrl: https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki.html
 ---
 
 <p class="b-lede-p">Простая деталь готова за 1–2 дня, сложная — за неделю и больше: срок решает не желание заказчика, а физика процесса — термообработка, доступность заготовки и очередь на станке. Разбираем путь от эскиза до отгрузки по этапам и называем диапазоны, а не пустое «сделаем быстро».</p>
