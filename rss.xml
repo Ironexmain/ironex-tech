@@ -5,7 +5,15 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Сварка vs пайка vs склеивание: когда какой способ соединения деталей выгоднее</title>
+      <link>https://ironex.tech/blog/svarka-payka-skleivanie-metod-soedineniya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/svarka-payka-skleivanie-metod-soedineniya.html</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Сравниваем сварку, пайку и склеивание по прочности, температуре и цене шва — с таблицей и точными критериями вместо «дороже/дешевле».</description>
+    </item>
     <item>
       <title>Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу</title>
       <link>https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html</link>
@@ -157,14 +165,6 @@
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Допуски по квалитетам на чертеже: что такое IT7 и IT8, как читать квалитет точности детали и не переплатить за лишнее поле допуска на свободном размере.</description>
-    </item>
-    <item>
-      <title>Пришла деталь с дефектом — как зафиксировать и что требовать</title>
-      <link>https://ironex.tech/blog/detal-prishla-s-defektom-kak-oformit-pretenziyu.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/detal-prishla-s-defektom-kak-oformit-pretenziyu.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Контроль качества</category>
-      <description>Деталь пришла с браком: как собрать акт, фото и претензию подрядчику за дефект детали. Порядок оформления рекламации — 4 шага, чтобы требование не отклонили.</description>
     </item>
   </channel>
 </rss>
