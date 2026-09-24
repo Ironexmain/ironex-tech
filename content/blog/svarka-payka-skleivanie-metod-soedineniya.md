@@ -136,7 +136,7 @@ canonicalUrl: https://ironex.tech/blog/svarka-payka-skleivanie-metod-soedineniya
 
 ![Процесс TIG-сварки металлического образца](/images/blog/svarka-payka-skleivanie-metod-soedineniya-2.webp)
 
-*TIG-сварка позволяет соединять металлические детали с высокой точностью и прочностью соединения. Фото: [U.S. Air Force photo by Airman 1st Class Jessi Roth](https://commons.wikimedia.org/wiki/File:Fabrication_Flight,_fixing_the_fleet_(6360305).jpg) · [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)*
+*TIG-сварка позволяет соединять металлические детали с высокой точностью и прочностью соединения. Фото: [U.S. Air Force photo by Airman 1st Class Jessi Roth](https://commons.wikimedia.org/wiki/File:Fabrication_Flight,_fixing_the_fleet_%286360305%29.jpg) · [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)*
 
 
 Пайка делится на два типа не по способу нагрева, а по температуре плавления припоя — и это определяет, для какой задачи метод годится.
