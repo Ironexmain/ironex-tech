@@ -15,6 +15,22 @@
       <description>Сравниваем сварку, пайку и склеивание по прочности, температуре и цене шва — с таблицей и точными критериями вместо «дороже/дешевле».</description>
     </item>
     <item>
+      <title>Заливные детали со встроенными узлами: как выбрать метод под тираж и чертёж</title>
+      <link>https://ironex.tech/blog/proizvodstvo-zalivnyh-detaley-vstroennye-uzly.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/proizvodstvo-zalivnyh-detaley-vstroennye-uzly.html</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Вакуумное литьё в силикон, литьё под давлением, MIM: сравнение по тиражу, сроку и точности. Как закладывать вставки и что передать подрядчику.</description>
+    </item>
+    <item>
+      <title>Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение</title>
+      <link>https://ironex.tech/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Пять ошибок, из-за которых деталь уходит в брак: изношенный инструмент, шероховатость не в чертеже, контроль только на выходе. Во сколько это обходится и как избежать.</description>
+    </item>
+    <item>
       <title>Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу</title>
       <link>https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html</link>
       <guid isPermaLink="true">https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html</guid>
@@ -149,22 +165,6 @@
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Гарантия на деталь по чертежу: что покрывает подрядчик, какие 4 документа фиксируют обязательства и что не входит. Что прописать в договоре до старта работ.</description>
-    </item>
-    <item>
-      <title>Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили</title>
-      <link>https://ironex.tech/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Форматы файлов для ЧПУ обработки: STEP для 3D, DXF для листа, PDF с допусками. Какой файл нужен для расчёта детали и что приложить, чтобы не переспрашивали.</description>
-    </item>
-    <item>
-      <title>Буква и цифра у размера: что они говорят о точности</title>
-      <link>https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Допуски по квалитетам на чертеже: что такое IT7 и IT8, как читать квалитет точности детали и не переплатить за лишнее поле допуска на свободном размере.</description>
     </item>
   </channel>
 </rss>

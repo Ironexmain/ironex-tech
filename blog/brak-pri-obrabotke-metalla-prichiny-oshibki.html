@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Брак при обработке металла: причины, 5 дорогих ошибок — IRONEX</title>
+  <meta name="description" content="Пять ошибок, из-за которых деталь уходит в брак: изношенный инструмент, шероховатость не в чертеже, контроль только на выходе. Во сколько это обходится и как избежать." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html#article",
+      "headline": "Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение",
+      "description": "Пять ошибок, из-за которых деталь уходит в брак: изношенный инструмент, шероховатость не в чертеже, контроль только на выходе. Во сколько это обходится и как избежать.",
+      "datePublished": "2026-09-24",
+      "dateModified": "2026-09-24",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/brak-pri-obrabotke-metalla-prichiny-oshibki-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "брак при обработке металла",
+        "причины брака при обработке металла",
+        "виды брака",
+        "износ режущего инструмента",
+        "проверка первой детали",
+        "шероховатость Ra Rz"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли исправить трещину после гибки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Как правило, нет: трещину по линии сгиба обычно считают неисправимым браком, деталь переделывают. Допустимость ремонта определяют чертёж и договор."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой грат допустим, а какой считается браком?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Допустимый размер грата задаёт чертёж или договор. Универсального числа нет, оно зависит от детали."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему при гибке возникает пружинение?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После снятия нагрузки металл частично возвращается к прежней форме, поэтому угол получается больше заданного. Пружинение компенсируют перегибом; его величина зависит от марки и толщины."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="5 ошибок в металлообработке, из-за которых брак дороже всего" />
+  <meta property="og:description" content="Пять ошибок, из-за которых деталь уходит в брак: изношенный инструмент, шероховатость не в чертеже, контроль только на выходе. Во сколько это обходится и как избежать." />
+  <meta property="og:url" content="https://ironex.tech/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/brak-pri-obrabotke-metalla-prichiny-oshibki-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-24" />
+  <meta property="article:modified_time" content="2026-09-24" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="5 ошибок в металлообработке, из-за которых брак дороже всего" />
+  <meta name="twitter:description" content="Пять ошибок, из-за которых деталь уходит в брак: изношенный инструмент, шероховатость не в чертеже, контроль только на выходе. Во сколько это обходится и как избежать." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/brak-pri-obrabotke-metalla-prichiny-oshibki-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-schitaetsya-brakom-v-metalloobrabotke">Что считается браком в металлообработке</a></li>
+<li><a href="#vo-skolko-obhoditsya-brak-tsena-oshibki-po-stadiyam">Во сколько обходится брак: цена ошибки по стадиям</a></li>
+<li><a href="#oshibka-1-ekonomiya-na-vhodnom-kontrole-zagotovki">Ошибка 1. Экономия на входном контроле заготовки</a></li>
+<li><a href="#oshibka-2-rabota-iznoshennym-instrumentom">Ошибка 2. Работа изношенным инструментом</a></li>
+<li><a href="#oshibka-3-chistota-poverhnosti-ne-ukazana-v-chertezhe">Ошибка 3. Чистота поверхности не указана в чертеже</a></li>
+<li><a href="#oshibka-4-kontrol-tolko-na-vyhode">Ошибка 4. Контроль только на выходе</a></li>
+<li><a href="#oshibka-5-zapusk-partii-bez-proverki-pervoy-detali">Ошибка 5. Запуск партии без проверки первой детали</a></li>
+<li><a href="#kto-platit-za-brak-ispolnitel-ili-zakazchik">Кто платит за брак: исполнитель или заказчик</a></li>
+<li><a href="#chto-zaprosit-u-podryadchika-do-zapuska-zakaza">Что запросить у подрядчика до запуска заказа</a></li>
+<li><a href="#pyat-oshibok-v-odnoy-tablitse">Пять ошибок в одной таблице</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение</h1>
+        <p class="lede">Пять ошибок, из-за которых деталь уходит в брак: изношенный инструмент, шероховатость не в чертеже, контроль только на выходе. Во сколько это обходится и как избежать.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-09-24">Опубликовано 24 сентября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/brak-pri-obrabotke-metalla-prichiny-oshibki-cover.webp" alt="Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">В брак деталь уводят пять ошибок: нет <a href="/blog/vhodnoy-kontrol-partii-i-kontrol-na-kim.html">входного контроля</a> заготовки, инструмент изношен, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> не записана в чертеже, контроль стоит только на выходе, <a href="/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii.html">первую деталь</a> не проверили. Чем позже ошибку нашли, тем дороже она обходится: в условном примере ниже разница составляет 400 ₽ против 5 000 ₽.</p>
+<h2 id="chto-schitaetsya-brakom-v-metalloobrabotke">Что считается браком в металлообработке</h2>
+<p>Браком деталь признают, когда она не соответствует чертежу и договору и передавать её заказчику нельзя. Отклонение в пределах допуска браком не считается. Дефект, который чертёж или договор допускают, тоже не делает деталь браком. Решает документ, а не впечатление приёмщика.</p>
+<p>На практике брак делят по двум признакам: можно ли его исправить и где его нашли.</p>
+<ul><li><strong>Исправимый.</strong> Деталь можно довести: дорезать размер, снять заусенцы, повторить чистовой проход.</li><li><strong>Неисправимый.</strong> Исправить нельзя: вал обточен меньше минимального размера, в металле трещина.</li><li><strong>Внутренний.</strong> Нашли на производстве до отгрузки.</li><li><strong>Внешний.</strong> Нашли у заказчика, после получения партии или при сборке.</li></ul>
+<p>Заказчику важнее не термин, а вопрос: кто, по какому документу и на каком этапе признаёт деталь негодной. Чем раньше это происходит, тем дешевле обходится ошибка.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение">Прислать чертёж на почту</a>
+</div>
+<h2 id="vo-skolko-obhoditsya-brak-tsena-oshibki-po-stadiyam">Во сколько обходится брак: цена ошибки по стадиям</h2>
+<p><img alt="Во сколько обходится одна и та же ошибка на разных стадиях (условный пример): Забраковали заготовку на входе — 400 ₽, Нашли после токарной операции — 1 200 ₽, Нашли на выходном контроле — 2 000 ₽, Нашли у заказчика при сборке — 5 000 ₽" src="/images/blog/brak-pri-obrabotke-metalla-prichiny-oshibki-diagram.webp" style="aspect-ratio:16/9"/></p>
+<p>Одна и та же ошибка стоит тем больше, чем позже её нашли, потому что к цене заготовки добавляется каждая следующая операция. В условном примере брак на входе обходится в 400 ₽, а у заказчика — в 5 000 ₽. Это модель с названными допущениями, а не отраслевая статистика.</p>
+<p>Допущения такие: заготовка стоит 400 ₽, токарная операция добавляет 800 ₽, остальные операции — ещё 800 ₽. У заказчика к стоимости детали прибавляются замена и простой сборки, общая оценка — 5 000 ₽.</p>
+<table><thead><tr><th>Стадия, на которой нашли ошибку</th><th>Сколько уже потеряно</th></tr></thead><tbody><tr><td>Забраковали заготовку на входе</td><td>400 ₽</td></tr><tr><td>Нашли после токарной операции</td><td>1 200 ₽</td></tr><tr><td>Нашли на выходном контроле</td><td>2 000 ₽</td></tr><tr><td>Нашли у заказчика при сборке</td><td>5 000 ₽</td></tr></tbody></table>
+<p>Реальные суммы зависят от детали и партии. В цену брака входят материал, машино-часы, переделка, срыв срока и простой у заказчика.</p>
+<blockquote><p><strong>Факт.</strong> В условном примере ошибка, найденная у заказчика, обходится в 12,5 раза дороже, чем та же ошибка, найденная на входе: 5 000 ₽ против 400 ₽.</p></blockquote>
+<h2 id="oshibka-1-ekonomiya-na-vhodnom-kontrole-zagotovki">Ошибка 1. Экономия на входном контроле заготовки</h2>
+<p>Входной контроль — это проверка заготовки до первой операции: сертификат, марка, размеры, состояние поверхности. Без неё дефект проката находят посреди обработки, когда в деталь уже вложены часы станка. Экономия времени на приёмке заготовки оборачивается переделкой партии.</p>
+<p>Типичная ситуация: сертификат лежит в папке, но с фактической маркой его не сверили. Режимы подобраны под одну сталь, а пришла другая. Она режется иначе, инструмент садится быстрее, цена обработки меняется. Подробнее об этом — в материале про <a href="/razdel/materialy.html">марку металла и её влияние на обработку и цену</a>.</p>
+<p>Что проверить в заготовке до запуска:</p>
+<ul><li>сертификат и марка: совпадают ли они с маркировкой на металле;</li><li>размеры и припуск: хватит ли металла на все операции;</li><li>состояние поверхности: нет ли плен, раковин, трещин;</li><li>маркировка партии: не смешаны ли плавки.</li></ul>
+<p>Если материал даёт заказчик, о его непригодности исполнитель обязан предупредить по ст. 716 ГК РФ. Результат входной проверки фиксируют письменно: такая запись помогает разрешить спор о том, кто привёз негодный металл.</p>
+<h2 id="oshibka-2-rabota-iznoshennym-instrumentom">Ошибка 2. Работа изношенным инструментом</h2>
+<p>Изношенный инструмент не ломает деталь сразу. Он постепенно сдвигает размер и ухудшает шероховатость: первая деталь партии укладывается в допуск, сотая уже нет. Поэтому брак копится по всей партии, а не появляется одной штукой.</p>
+<blockquote><p>Износ инструмента не ломает деталь сразу, он незаметно сдвигает размер и шероховатость, поэтому брак копится по всей партии.</p></blockquote>
+<p>При точении износ обычно измеряют по задней поверхности пластины. Допустимое значение зависит от материала пластины, обрабатываемой стали и операции, его берут из каталога производителя инструмента.</p>
+<p>Износ виден по самой детали: растёт шероховатость, появляются заусенцы, слышны вибрация и шум, растёт усилие резания, размер «уходит» к границе допуска.</p>
+<p>Заменять инструмент «по ощущению» нельзя. Замену привязывают к стойкости и счётчику деталей, а размер замеряют у каждой N-й детали. Значение N задаёт технолог под конкретную операцию.</p>
+<h2 id="oshibka-3-chistota-poverhnosti-ne-ukazana-v-chertezhe">Ошибка 3. Чистота поверхности не указана в чертеже</h2>
+<p>Шероховатость записывают в чертеже параметром и числом: например, Ra 1,6 на посадочной поверхности. Запись «чисто» или «гладко» измерить нельзя. Заказчик и исполнитель читают её по-разному, и спор возникает на приёмке.</p>
+<p>Ra — среднее отклонение профиля от средней линии. Rz — высота неровностей, разброс между выступами и впадинами. Чертёж должен указывать шероховатость на тех поверхностях, где она влияет на работу узла, и задавать допуск на размер.</p>
+<p>Результат определяют режимы резания. При точении главное — подача и радиус при вершине резца. По справочной теоретической оценке Rz ≈ s²/(8r), где s — подача, r — радиус: уменьшите подачу вдвое, и расчётная Rz упадёт вчетверо. На практике добавляются износ инструмента и жёсткость системы.</p>
+<p>Измеряют шероховатость профилометром или сравнением с образцами. Если требования нет, возможны два исхода: переплата за лишний чистовой проход или спор при приёмке. Как записать требование без удорожания, разбирает статья про <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya">допуски и шероховатость без лишнего удорожания</a>.</p>
+<h2 id="oshibka-4-kontrol-tolko-na-vyhode">Ошибка 4. Контроль только на выходе</h2>
+<p>Контроль качества ставят в три точки: на входе, между операциями и на выходе. Одного выходного мало: к нему вся партия уже обработана, и брак находят сразу по всем деталям. Контроль выявляет брак, но цену ошибки определяет то, насколько рано он это делает.</p>
+<ol><li>Входной контроль заготовки: сертификат, марка, размеры.</li><li>Межоперационный замер критичных размеров: после операций, на которых размер уже не исправить.</li><li>Выходной контроль партии: замер по плану контроля перед отгрузкой.</li></ol>
+<p>Для замеров используют калибры, штангенциркуль, координатно-измерительную машину (КИМ) и профилометр. Спросите у подрядчика, когда поверяли измерительный инструмент, которым будут проверять вашу деталь. Для серийных деталей добавляют статистику Cp и Cpk, для малых партий она обычно избыточна.</p>
+<blockquote><p><strong>Мнение.</strong> Если в партии больше нескольких десятков деталей, требуйте межоперационный замер критичных размеров: выходной контроль без него найдёт брак по всей партии сразу.</p></blockquote>
+<h2 id="oshibka-5-zapusk-partii-bez-proverki-pervoy-detali">Ошибка 5. Запуск партии без проверки первой детали</h2>
+<p>Проверка первой детали — полный замер первой изготовленной детали по чертежу до запуска партии. Она входит в контроль качества и ловит ошибку настройки, пока та стоит одной детали, а не всей партии. В англоязычной практике это first article inspection.</p>
+<p>Первая деталь показывает три типичные ошибки: неверную привязку нуля, ошибку коррекции инструмента и ошибку в программе. Такая ошибка тиражируется: станок с одной и той же неверной настройкой выдаёт весь тираж с одним и тем же размером вне допуска.</p>
+<p>Вернёмся к числам из раздела про цену. Первая деталь после всех операций стоит 2 000 ₽. Возьмём допущение: партия — 50 деталей. Ошибка, найденная на первой детали, стоит 2 000 ₽. Найденная на выходе, когда брак уже во всей партии, она стоит 100 000 ₽.</p>
+<p>Заказчику достаточно попросить протокол замеров первой детали или согласовать её до запуска партии.</p>
+<blockquote><p>Ошибка настройки, найденная на первой детали, стоит одной детали, а найденная на выходе — всей партии.</p></blockquote>
+<h2 id="kto-platit-za-brak-ispolnitel-ili-zakazchik">Кто платит за брак: исполнитель или заказчик</h2>
+<p>За брак, как правило, платит тот, чья ошибка к нему привела. Но подрядчик обязан предупредить заказчика о непригодном материале или ошибочных указаниях до начала работы, иначе часть ответственности ложится на него. Точные условия задаёт договор.</p>
+<p>Три типичные ситуации:</p>
+<ul><li><strong>Ошибка исполнителя</strong> (техпроцесс, износ инструмента). Переделка или замена за его счёт, как правило.</li><li><strong>Ошибка в чертеже заказчика.</strong> Если подрядчик её заметил и не предупредил заказчика, он нарушает ст. 716 ГК РФ. Ответственность за ненадлежащее качество работы описана в ст. 723.</li><li><strong>Материал заказчика.</strong> Исполнитель проверяет его и предупреждает о непригодности (ст. 716).</li></ul>
+<p>Брак фиксирует акт о браке, а претензию заказчик оформляет рекламацией. В них указывают партию, описание дефекта, результаты замеров и фото. Сроки подачи — только по договору.</p>
+<blockquote><p>За брак платит тот, чья ошибка привела к нему, но подрядчик обязан предупредить о проблеме в чертеже или материале до начала работы.</p></blockquote>
+<h2 id="chto-zaprosit-u-podryadchika-do-zapuska-zakaza">Что запросить у подрядчика до запуска заказа</h2>
+<p>Перед запуском заказа задайте подрядчику пять вопросов. Ответы показывают, есть ли на производстве контроль, а не только станки. Формулировки можно скопировать в письмо.</p>
+<ul><li>Как вы проверяете материал на входе? Пусть назовут, что сверяют: сертификат, марку, размеры.</li><li>Какой у вас план контроля: что измеряете, чем и как часто?</li><li>По каким критериям меняете инструмент: по стойкости, счётчику деталей или замеру?</li><li>Дадите ли протокол первой детали до запуска партии?</li><li>Что в договоре записано про брак: кто платит за переделку, в какой срок принимаете рекламацию?</li></ul>
+<p>Ответ на последний вопрос лучше видеть в коммерческом предложении. Что там зафиксировать, описано в материале про <a href="/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal">что зафиксировать в коммерческом предложении</a>.</p>
+<h2 id="pyat-oshibok-v-odnoy-tablitse">Пять ошибок в одной таблице</h2>
+<p>Пять ошибок закрываются двумя способами: условиями заказа и дисциплиной на производстве. Сводка ниже помогает решить, с чего начать.</p>
+<table><thead><tr><th>Ошибка</th><th>Причина</th><th>Чем грозит</th><th>Как предотвратить</th></tr></thead><tbody><tr><td>Нет входного контроля</td><td>Сертификат не сверили с маркой</td><td>Дефект проката всплывает посреди обработки</td><td>Проверка заготовки до запуска</td></tr><tr><td>Изношенный инструмент</td><td>Замена «по ощущению»</td><td>Размер и Ra уходят по всей партии</td><td>Регламент замены, замер каждой N-й детали</td></tr><tr><td>Шероховатость не в чертеже</td><td>Записано «чисто» без параметра</td><td>Переплата или спор при приёмке</td><td>Ra или Rz с числом на нужных поверхностях</td></tr><tr><td>Контроль только на выходе</td><td>Нет замеров между операциями</td><td>Брак находят по всей партии сразу</td><td>Три точки контроля</td></tr><tr><td>Первая деталь не проверена</td><td>Партия запущена сразу</td><td>Одна ошибка настройки во всех деталях</td><td>Протокол замеров первой детали</td></tr></tbody></table>
+<p>Условиями заказа закрываются ошибки 3 и 5: запись в чертеже и протокол первой детали. Входной контроль и износ инструмента держатся на дисциплине цеха, её проверяют вопросами из списка выше.</p>
+<p>Если чертёж готов, пришлите его на расчёт: мы уточним допуски и шероховатость до запуска и посчитаем <a href="/tokarnaya.html">токарные работы по вашему чертежу</a>.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Можно ли исправить трещину после гибки?</summary>
+<div class="faq__a"><p>Как правило, нет: трещину по линии сгиба обычно считают неисправимым браком, деталь переделывают. Допустимость ремонта определяют чертёж и договор.</p></div>
+</details>
+<details>
+<summary>Какой грат допустим, а какой считается браком?</summary>
+<div class="faq__a"><p>Допустимый размер грата задаёт чертёж или договор. Универсального числа нет, оно зависит от детали.</p></div>
+</details>
+<details>
+<summary>Почему при гибке возникает пружинение?</summary>
+<div class="faq__a"><p>После снятия нагрузки металл частично возвращается к прежней форме, поэтому угол получается больше заданного. Пружинение компенсируют перегибом; его величина зависит от марки и толщины.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_9027/" rel="noopener" target="_blank">Гражданский кодекс РФ, часть вторая (ст. 716, 723)</a> — КонсультантПлюс</li>
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Росстандарт</a> — Федеральное агентство по техническому регулированию и метрологии</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/nestandartnyy-krepezh-zakazyvat-vmeste-s-detalyu-ili-otdelno.html">
+            <img src="/images/blog/nestandartnyy-krepezh-zakazyvat-vmeste-s-detalyu-ili-otdelno-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Крепёж не из каталога: один подрядчик или два</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html">
+            <img src="/images/blog/chto-prilozhit-k-zayavke-na-gibku-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Гибка металла на заказ: что приложить к заявке</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html">
+            <img src="/images/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
