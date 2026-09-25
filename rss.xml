@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов</title>
+      <link>https://ironex.tech/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo.html</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Лазерная сварка металла глазами заказчика: когда выгоднее TIG/MIG, от чего зависит зазор, что передать подрядчику и как проверяют шов.</description>
+    </item>
+    <item>
+      <title>Фрезеровка металла: какие бывают виды фрезерования и когда какой применять</title>
+      <link>https://ironex.tech/blog/frezerovka-metalla-metody-tehnologiya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/frezerovka-metalla-metody-tehnologiya.html</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Виды фрезерования, режимы резания, точность и факторы цены детали по чертежу. Таблицы и критерии выбора: фрезеровка, точение или лазерная резка.</description>
+    </item>
+    <item>
+      <title>Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись</title>
+      <link>https://ironex.tech/blog/elektroerozionnaya-obrabotka-kogda-nuzhna.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/elektroerozionnaya-obrabotka-kogda-nuzhna.html</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Электроэрозия обрабатывает закалённую сталь и твёрдые сплавы без усилия на деталь. Принцип, виды, точность и что указать в чертеже.</description>
+    </item>
     <item>
       <title>Сварка vs пайка vs склеивание: когда какой способ соединения деталей выгоднее</title>
       <link>https://ironex.tech/blog/svarka-payka-skleivanie-metod-soedineniya.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Технологии</category>
       <description>Литьё или механообработка детали: 2 метода. Когда выгоднее литьё, а когда обработка на станке — и как партия с допусками решает выбор метода изготовления.</description>
-    </item>
-    <item>
-      <title>Поверхность, эхо-сигнал или снимок: как проверить сварной шов</title>
-      <link>https://ironex.tech/blog/kontrol-svarnogo-shva-uzk-rk-i-vik.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kontrol-svarnogo-shva-uzk-rk-i-vik.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Контроль качества</category>
-      <description>Контроль сварного шва: ВИК, УЗК и РК. Чем отличаются 3 метода контроля шва, какой запросить под деталь и какие документы подтвердят, что шов проверили.</description>
-    </item>
-    <item>
-      <title>Пометка в чертеже говорит, чей документ открывать при приёмке</title>
-      <link>https://ironex.tech/blog/gost-ili-tu-na-detal-v-chem-raznica-dlya-zakazchika.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/gost-ili-tu-na-detal-v-chem-raznica-dlya-zakazchika.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>ГОСТ или ТУ на деталь — указание, чей документ проверять при приёмке. Разбираем 2 пометки в чертеже, чем отличается ГОСТ от ТУ и что спрашивать у изготовителя.</description>
-    </item>
-    <item>
-      <title>Если деталь не совпала с чертежом: что вы вправе требовать</title>
-      <link>https://ironex.tech/blog/garantiya-na-detal-po-chertezhu-chto-mozhno-trebovat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/garantiya-na-detal-po-chertezhu-chto-mozhno-trebovat.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Гарантия на деталь по чертежу: что покрывает подрядчик, какие 4 документа фиксируют обязательства и что не входит. Что прописать в договоре до старта работ.</description>
     </item>
   </channel>
 </rss>

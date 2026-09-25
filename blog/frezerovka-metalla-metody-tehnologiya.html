@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фрезеровка металла: виды, режимы, выбор метода — IRONEX</title>
+  <meta name="description" content="Виды фрезерования, режимы резания, точность и факторы цены детали по чертежу. Таблицы и критерии выбора: фрезеровка, точение или лазерная резка." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/frezerovka-metalla-metody-tehnologiya.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/frezerovka-metalla-metody-tehnologiya.html#article",
+      "headline": "Фрезеровка металла: какие бывают виды фрезерования и когда какой применять",
+      "description": "Виды фрезерования, режимы резания, точность и факторы цены детали по чертежу. Таблицы и критерии выбора: фрезеровка, точение или лазерная резка.",
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-09-25",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/frezerovka-metalla-metody-tehnologiya.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/frezerovka-metalla-metody-tehnologiya-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "фрезеровка металла",
+        "виды фрезерования",
+        "виды фрезеровки",
+        "режимы резания при фрезеровании",
+        "фрезерные работы по металлу",
+        "обработка фрезеровкой"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Фрезеровка металла: какие бывают виды фрезерования и когда какой применять"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какие бывают виды фрезеровки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Классификация идёт по трём признакам: тип фрезы, число осей станка и направление подачи. Заказчику обычно достаточно чертежа с допусками и шероховатостью: вид фрезерования выбирает технолог."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда применять попутное, а когда встречное фрезерование?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это решение технолога, заказчику оно нужно только как ориентир: попутное обычно даёт более чистую поверхность, встречное безопаснее на станках с люфтом в приводе подачи. Если для вас важна шероховатость, укажите её на чертеже."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда применять фрезерование, а когда лучше другой метод обработки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Фрезерование подходит, если на детали есть плоскости, пазы, карманы и объёмные контуры. Тела вращения выгоднее точить, плоский контур из листа — резать лазером, закалённый материал и узкие полости — обрабатывать электроэрозией. Если деталь сочетает несколько форм, методы комбинируют: сначала точение, затем фрезерование лысок и пазов."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Фрезеровка металла: виды, режимы и что удорожает деталь" />
+  <meta property="og:description" content="Виды фрезерования, режимы резания, точность и факторы цены детали по чертежу. Таблицы и критерии выбора: фрезеровка, точение или лазерная резка." />
+  <meta property="og:url" content="https://ironex.tech/blog/frezerovka-metalla-metody-tehnologiya.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/frezerovka-metalla-metody-tehnologiya-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-25" />
+  <meta property="article:modified_time" content="2026-09-25" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Фрезеровка металла: виды, режимы и что удорожает деталь" />
+  <meta name="twitter:description" content="Виды фрезерования, режимы резания, точность и факторы цены детали по чертежу. Таблицы и критерии выбора: фрезеровка, точение или лазерная резка." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/frezerovka-metalla-metody-tehnologiya-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Фрезеровка металла: какие бывают виды фрезерования и когда какой применять">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Фрезеровка металла: какие бывают виды фрезерования и когда какой применять</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#frezerovka-i-frezerovanie-chto-eto-i-kak-freza-snimaet-metal">Фрезеровка и фрезерование: что это и как фреза снимает металл</a></li>
+<li><a href="#vidy-frezerovki-po-freze-po-chislu-osey-i-po-napravleniyu-po">Виды фрезеровки: по фрезе, по числу осей и по направлению подачи</a></li>
+<li><a href="#instrument-i-stanok-chto-vybiraet-tehnolog-pod-detal">Инструмент и станок: что выбирает технолог под деталь</a></li>
+<li><a href="#rezhimy-rezaniya-oboroty-podacha-i-chto-lomaetsya-pri-oshibk">Режимы резания: обороты, подача и что ломается при ошибке</a></li>
+<li><a href="#kakuyu-tochnost-i-sherohovatost-daet-frezerovka">Какую точность и шероховатость даёт фрезеровка</a></li>
+<li><a href="#frezerovanie-tochenie-lazernaya-rezka-elektroeroziya-kak-vyb">Фрезерование, точение, лазерная резка, электроэрозия: как выбрать метод</a></li>
+<li><a href="#chto-delaet-frezerovku-po-chertezhu-dorozhe-ili-deshevle">Что делает фрезеровку по чертежу дороже или дешевле</a></li>
+<li><a href="#defekty-frezerovki-vibratsii-naklep-deformatsiya-i-kak-ih-ne">Дефекты фрезеровки: вибрации, наклёп, деформация — и как их не получить</a></li>
+<li><a href="#kak-zakazat-frezerovku-chto-prilozhit-k-zaprosu-i-chto-utoch">Как заказать фрезеровку: что приложить к запросу и что уточнить у подрядчика</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Фрезеровка металла: какие бывают виды фрезерования и когда какой применять">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Фрезеровка металла: какие бывают виды фрезерования и когда какой применять</h1>
+        <p class="lede">Виды фрезерования, режимы резания, точность и факторы цены детали по чертежу. Таблицы и критерии выбора: фрезеровка, точение или лазерная резка.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-09-25">Опубликовано 25 сентября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/frezerovka-metalla-metody-tehnologiya-cover.webp" alt="Фрезеровка металла: какие бывают виды фрезерования и когда какой применять" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Фрезеровка — это снятие слоя металла вращающейся многозубой фрезой: каждый зуб работает как маленький резец. Метод выбирают по форме детали: плоскости, пазы, карманы и сложные контуры — фрезой, тела вращения — точением, тонкий листовой контур — лазером. Дальше — виды фрезерования, режимы резания и то, что удорожает деталь по чертежу.</p>
+<h2 id="frezerovka-i-frezerovanie-chto-eto-i-kak-freza-snimaet-metal">Фрезеровка и фрезерование: что это и как фреза снимает металл</h2>
+<p>Фрезерование — снятие слоя металла вращающейся многозубой фрезой. Каждый зуб врезается в заготовку, срезает тонкую стружку и выходит из реза, а следом в работу входит следующий зуб. Поэтому фреза режет прерывисто, а поверхность получается ровной.</p>
+<p>Процесс держится на трёх движениях. Вращение фрезы задаёт скорость резания. Подача перемещает заготовку или стол относительно фрезы. Глубина резания определяет, какой слой металла уходит за один проход. Эти три величины вместе и называют режимами резания, их разбор ниже.</p>
+<p>«Фрезеровка» — разговорное слово, «фрезерование» — термин из стандартов и технической документации. В чертежах и договорах пишите второе, в переписке с цехом можно первое: смысл один. Статья только про металл: у дерева и пластика другие фрезы и режимы.</p>
+<blockquote><p>Фрезерование — это снятие слоя металла вращающейся многозубой фрезой, где каждый зуб режет как отдельный резец.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Фрезеровка металла: какие бывают виды фрезерования и когда какой применять">Прислать чертёж на почту</a>
+</div>
+<h2 id="vidy-frezerovki-po-freze-po-chislu-osey-i-po-napravleniyu-po">Виды фрезеровки: по фрезе, по числу осей и по направлению подачи</h2>
+<p><img alt="Концевые фрезы BS9 с резьбой и конусным хвостовиком" src="/images/blog/frezerovka-metalla-metody-tehnologiya-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Фрезы Browne &amp; Sharp №9 с двумя типами крепления: резьбовый хвостовик слева и конусный справа. Фото: <a href="https://commons.wikimedia.org/wiki/File:BS9_Drawbar_and_No_Drawbar.jpg" rel="nofollow noopener" target="_blank">Progress and Poverty</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Виды фрезерования удобнее делить по трём независимым признакам: тип фрезы, число управляемых осей и направление подачи. Первый отвечает на вопрос «какую поверхность режем», второй — «сколько раз придётся переустанавливать деталь», третий — «какая получится поверхность». Отдельно станки делят по шпинделю: на вертикальном деталь обрабатывают сверху, на горизонтальном — сбоку.</p>
+<h3>Торцевое, концевое, дисковое, фасонное: какая фреза под какую поверхность</h3>
+<p>Торцевая фреза снимает большие плоскости широкими проходами. Концевая делает пазы, карманы, уступы и контуры. Дисковая прорезает узкие глубокие пазы. Фасонная имеет профиль, обратный профилю детали: скос, радиус, специальный паз.</p>
+<h3>3-, 4- и 5-осевая обработка: когда пятая ось действительно нужна</h3>
+<p>На трёх осях инструмент движется по X, Y и Z, а деталь стоит неподвижно. Четвёртая ось поворачивает заготовку, пятая добавляет ещё один поворот. Критерий простой: если ради доступа инструмента к поверхностям деталь приходится переустанавливать, сравните 4–5 осей с несколькими установами. Один установ экономит время и не копит погрешность.</p>
+<h3>Попутное и встречное фрезерование</h3>
+<p>При попутном фрезеровании фреза вращается в сторону подачи, при встречном — навстречу ей. Попутное требует станка без люфта в приводе подачи, иначе фреза «затягивает» заготовку.</p>
+<h2 id="instrument-i-stanok-chto-vybiraet-tehnolog-pod-detal">Инструмент и станок: что выбирает технолог под деталь</h2>
+<p>Технолог подбирает фрезу и станок по четырём вводным, и от ответов зависят срок и <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">цена детали</a>. Заказчику полезно знать эти вводные заранее: тогда расчёт не пересчитывают после уточнений.</p>
+<ul><li><strong>Материал.</strong> Нержавеющая сталь и титан требуют жёсткой фрезы и осторожных режимов, алюминию нужны фрезы с большими канавками для стружки.</li><li><strong>Размер.</strong> Габариты определяют, встанет ли деталь на станок; максимальный размер заготовки уточняйте у технолога IRONEX до расчёта.</li><li><strong>Серия.</strong> Единичная деталь и партия из сотен штук идут разными путями по инструменту и наладке.</li><li><strong>Точность.</strong> Чем строже допуск, тем больше чистовых проходов и контроля.</li></ul>
+<p>Инструмент бывает монолитным твердосплавным и со сменными пластинами. Монолитная фреза подходит для малых диаметров и единичных деталей. Фреза со сменными пластинами выгоднее на крупных диаметрах и сериях: изношенную пластину меняют, а корпус остаётся. Экономику под ваш материал сверяйте с каталогами производителей инструмента.</p>
+<p>Обрабатывающий центр с ЧПУ выполняет фрезерование по программе и повторяет деталь за деталью с одинаковым размером. Ручной и настольный фрезер годится для разовой подгонки и ремонта, но повторяемости по чертежу не даёт.</p>
+<h2 id="rezhimy-rezaniya-oboroty-podacha-i-chto-lomaetsya-pri-oshibk">Режимы резания: обороты, подача и что ломается при ошибке</h2>
+<p><img alt="Фрезерный станок во время работы" src="/images/blog/frezerovka-metalla-metody-tehnologiya-2.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Фрезерный станок обрабатывает металл. Фото: <a href="https://commons.wikimedia.org/wiki/File:%D0%A4%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9_%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%BA_%D0%B2_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5.jpg" rel="nofollow noopener" target="_blank">Angelikagub</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Режимы резания — скорость резания, подача и глубина резания. Их выбирают по материалу заготовки и фрезе: чем твёрже и вязче металл, тем ниже скорость и аккуратнее подача. От режимов зависят ресурс фрезы и <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> поверхности, поэтому их не «подбирают на глаз».</p>
+<p>Частота вращения шпинделя: n = 1000·v/(π·D), где n — обороты в минуту, v — скорость резания в м/мин, D — диаметр фрезы в мм. Минутная подача: Vf = fz·z·n, где fz — подача на зуб в мм, z — число зубьев.</p>
+<p>Пример для арифметики. Фреза D = 10 мм, z = 4, условно v = 100 м/мин и fz = 0,05 мм. Тогда n ≈ 3 183 об/мин, Vf ≈ 637 мм/мин. Эти v и fz учебные: рабочие значения берите из каталога производителя фрезы для пары «инструмент — материал».</p>
+<table><thead><tr><th>Группа материала</th><th>Скорость резания</th><th>Подача на зуб</th><th>На что обратить внимание</th></tr></thead><tbody><tr><td>Конструкционная сталь (45, 40Х)</td><td>базовая, точка отсчёта</td><td>базовая</td><td>умеренные режимы, СОЖ продлевает жизнь фрезы</td></tr><tr><td>Алюминий (Д16, АМг6)</td><td>выше, чем у стали</td><td>выше, чем у стали</td><td>стружка липнет к зубу, нужен отвод стружки</td></tr><tr><td>Нержавеющая сталь 12Х18Н10Т</td><td>ниже, чем у стали</td><td>не занижать</td><td>наклёп, острый инструмент, охлаждение</td></tr><tr><td>Титан ВТ6</td><td>заметно ниже, чем у стали</td><td>умеренная</td><td>плохо отводит тепло, быстрый износ фрезы</td></tr></tbody></table>
+<p>Завышенная подача даёт вибрации, риск поломки фрезы и потерю размера. Заниженная подача заставляет фрезу тереть, а не резать: растут нагрев и износ, а на нержавейке появляется наклёп.</p>
+<h2 id="kakuyu-tochnost-i-sherohovatost-daet-frezerovka">Какую точность и шероховатость даёт фрезеровка</h2>
+<p>Точность и шероховатость набирают несколькими проходами. Черновой проход быстро снимает основной припуск, получистовой выравнивает поверхность, чистовой снимает тонкий слой и формирует итоговый размер. Чем строже требования чертежа, тем больше проходов и тем дороже деталь.</p>
+<p>Допуски и шероховатость задаёт чертёж. Какая точность достижима на вашей детали, зависит от геометрии и станка, поэтому конкретное значение подтверждает технолог, а не статья.</p>
+<p>Точность зависит не только от станка. На неё влияют жёсткость крепления, износ фрезы, нагрев детали и число установов. Режимы резания влияют на шероховатость напрямую: слишком большая подача оставляет заметные следы зубьев.</p>
+<blockquote><p>Допуск и шероховатость на чертеже — это статья расходов, а не запас надёжности.</p></blockquote>
+<p>Заказчик сам решает, какая точность нужна детали. Строгий допуск на поверхности, где он функционально не нужен, добавляет проходы и контроль. Подробнее — в материале про <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya">допуски и шероховатость без лишних переплат</a>.</p>
+<h2 id="frezerovanie-tochenie-lazernaya-rezka-elektroeroziya-kak-vyb">Фрезерование, точение, лазерная резка, электроэрозия: как выбрать метод</h2>
+<p>Метод выбирают по четырём критериям: форма детали, точность, серийность и относительная стоимость. Ни один метод не лучше остальных вообще: каждый выигрывает на своей геометрии.</p>
+<table><thead><tr><th>Метод</th><th>Форма детали</th><th>Точность</th><th>Серийность</th><th>Относительная стоимость</th></tr></thead><tbody><tr><td>Фрезерование</td><td>плоскости, пазы, карманы, объёмные контуры</td><td>выше лазерной, растёт с числом проходов</td><td>единичные детали и серии</td><td>средняя</td></tr><tr><td>Точение</td><td>тела вращения</td><td>сопоставима с фрезерованием</td><td>выгоднее для серий круглых деталей</td><td>ниже фрезерования на телах вращения</td></tr><tr><td>Лазерная резка</td><td>плоский контур из листа</td><td>ниже механической обработки, кромка требует доработки при строгом допуске</td><td>единичные детали и серии</td><td>ниже для плоских деталей</td></tr><tr><td>Электроэрозия</td><td>твёрдые материалы, узкие полости</td><td>сопоставима с фрезерованием, выше на узких формах</td><td>единичные детали и малые партии</td><td>выше остальных</td></tr></tbody></table>
+<p>Лазер подходит, если деталь плоская и вырезается из листа. Электроэрозия — если материал закалён или полость слишком узкая для фрезы. Точение — если деталь круглая. Фрезерование — если на детали есть плоскости, карманы и объёмные контуры.</p>
+<p>Многие детали требуют двух методов. Заготовку сначала точат, затем фрезеруют на ней лыски и пазы. Точение дополняет фрезерование, а не конкурирует с ним. О точении читайте на странице про <a href="/tokarnaya.html">токарные работы по металлу</a>.</p>
+<h2 id="chto-delaet-frezerovku-po-chertezhu-dorozhe-ili-deshevle">Что делает фрезеровку по чертежу дороже или дешевле</h2>
+<p>Цену фрезерной детали двигают факторы, которые видны на чертеже: число установов, глубокие карманы, тонкие стенки, внутренние радиусы, допуски, материал и тираж. Большинство из них можно смягчить до заказа, если функция детали от этого не страдает.</p>
+<p>Цена складывается из станко-часа, подготовительно-заключительного времени, инструмента и программы ЧПУ. Точную структуру расчёта подтверждает технолог IRONEX. Цифры станко-часа без расчёта по вашему чертежу не имеют смысла.</p>
+<p>Каждый лишний установ добавляет время на переустановку и выверку. Он же копит погрешность там, где чертёж требует соосности. Поэтому число установов повышает стоимость фрезеровки и увеличивает риск брака.</p>
+<blockquote><p><strong>Факт.</strong> Внутренний радиус угла кармана не может быть меньше радиуса фрезы: фреза круглая, острый внутренний угол ею не получить.</p></blockquote>
+<p>Глубокие карманы требуют длинного вылета фрезы, а это вибрации и медленные проходы. Тонкие стенки прогибаются под нагрузкой. Допустимые пределы для стали и алюминия сверяйте с технологом. Ещё дешевле выходит серия: наладка делится на весь тираж.</p>
+<blockquote><p>Цену фрезерной детали двигают установы, глубокие карманы, тонкие стенки и допуски — всё это видно на чертеже до заказа.</p></blockquote>
+<h2 id="defekty-frezerovki-vibratsii-naklep-deformatsiya-i-kak-ih-ne">Дефекты фрезеровки: вибрации, наклёп, деформация — и как их не получить</h2>
+<p>Типичных дефектов четыре: вибрации, наклёп, деформация и перегрев. У каждого своя причина, и все они лечатся режимами, креплением и охлаждением. Схема одна: как выглядит — почему — что делает технолог.</p>
+<ul><li><strong>Вибрации и дребезг.</strong> Волны на поверхности и шум. Причина: большой вылет фрезы, слабое крепление, неверные режимы. Технолог укорачивает вылет, жёстче закрепляет деталь, меняет подачу.</li><li><strong>Задиры и наклёп на нержавейке.</strong> Поверхность твердеет и «рвётся». Причина: тупой инструмент и слишком малая подача. Технолог ставит острую фрезу и не занижает подачу.</li><li><strong>Деформация тонкостенных деталей.</strong> Деталь ведёт после снятия с зажима. Причина: способ закрепления, порядок снятия припуска, остаточные напряжения. Технолог продумывает порядок проходов.</li><li><strong>Перегрев инструмента.</strong> Быстрый износ, цвета побежалости. Причина: трение и плохой отвод тепла. Помогают режимы и СОЖ.</li></ul>
+<p>СОЖ — смазывающе-охлаждающая жидкость. Она отводит тепло и стружку из зоны резания и продлевает жизнь фрезы.</p>
+<p>После обработки размеры проверяют. Штангенциркуля хватает для свободных размеров, микрометр нужен для точных наружных, а КИМ (координатно-измерительная машина) — для сложных поверхностей и взаимного расположения. Цена ошибки в этой цепочке высока: см. <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki">причины брака при обработке металла</a>.</p>
+<blockquote><p><strong>Мнение.</strong> Если деталь тонкостенная или из <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавейки</a>, попросите технолога заранее описать порядок закрепления и снятия припуска: это дешевле, чем переделывать партию.</p></blockquote>
+<h2 id="kak-zakazat-frezerovku-chto-prilozhit-k-zaprosu-i-chto-utoch">Как заказать фрезеровку: что приложить к запросу и что уточнить у подрядчика</h2>
+<p>Точный расчёт с первого раза получается, когда в запросе есть чертёж с допусками, марка материала и тираж. Остальное подрядчик уточнит, но каждое уточнение растягивает срок ответа.</p>
+<ol><li>Приложите чертёж с допусками и шероховатостью. Формат 3D-модели уточните у подрядчика.</li><li>Укажите марку материала: «сталь 45» или «Д16», а не просто «сталь».</li><li>Назовите тираж. Единичная деталь и партия считаются по-разному.</li><li>Впишите требования к покрытию и контролю, если они есть.</li><li>Спросите подрядчика: подходят ли габариты под его станки, каковы сроки для единичной детали и для партии, что эти сроки меняет.</li></ol>
+<p>Корректный расчёт называет материал, допуски, число установов и то, что входит в цену. Если этого нет, попросите уточнить.</p>
+<p>Три вывода статьи. Метод выбирают по форме детали, режимы — по материалу, цену считают по чертежу. Когда чертёж готов, можно <a href="/frezerovka.html">заказать фрезерные работы по чертежу</a> или <a href="/kontakty.html">прислать чертёж на расчёт</a>.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Какие бывают виды фрезеровки?</summary>
+<div class="faq__a"><p>Классификация идёт по трём признакам: тип фрезы, число осей станка и направление подачи. Заказчику обычно достаточно чертежа с допусками и шероховатостью: вид фрезерования выбирает технолог.</p></div>
+</details>
+<details>
+<summary>Когда применять попутное, а когда встречное фрезерование?</summary>
+<div class="faq__a"><p>Это решение технолога, заказчику оно нужно только как ориентир: попутное обычно даёт более чистую поверхность, встречное безопаснее на станках с люфтом в приводе подачи. Если для вас важна шероховатость, укажите её на чертеже.</p></div>
+</details>
+<details>
+<summary>Когда применять фрезерование, а когда лучше другой метод обработки?</summary>
+<div class="faq__a"><p>Фрезерование подходит, если на детали есть плоскости, пазы, карманы и объёмные контуры. Тела вращения выгоднее точить, плоский контур из листа — резать лазером, закалённый материал и узкие полости — обрабатывать электроэрозией. Если деталь сочетает несколько форм, методы комбинируют: сначала точение, затем фрезерование лысок и пазов.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Росстандарт — Федеральное агентство по техническому регулированию и метрологии</a> — национальные стандарты, на которые ссылаются чертежи</li>
+<li><a href="https://www.sandvik.coromant.com/" rel="noopener" target="_blank">Sandvik Coromant — каталог фрезерного инструмента и рекомендации по режимам резания</a></li>
+<li><a href="https://www.iscar.com/" rel="noopener" target="_blank">ISCAR — каталог фрезерного инструмента</a></li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut.html">
+            <img src="/images/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Токарные работы по металлу на заказ: выбор маршрута</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-vybrat-subpodryadchika-pri-peregruzke-proizvodstva.html">
+            <img src="/images/blog/kak-vybrat-subpodryadchika-pri-peregruzke-proizvodstva-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Аутсорсинг металлообработки: выбор субподрядчика</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html">
+            <img src="/images/blog/chto-prilozhit-k-zayavke-na-gibku-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Гибка металла на заказ: что приложить к заявке</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Фрезеровка металла: какие бывают виды фрезерования и когда какой применять">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

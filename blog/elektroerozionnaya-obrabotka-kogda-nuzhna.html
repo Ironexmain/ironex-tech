@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Электроэрозионная обработка: что это и когда она нужна — IRONEX</title>
+  <meta name="description" content="Электроэрозия обрабатывает закалённую сталь и твёрдые сплавы без усилия на деталь. Принцип, виды, точность и что указать в чертеже." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/elektroerozionnaya-obrabotka-kogda-nuzhna.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/elektroerozionnaya-obrabotka-kogda-nuzhna.html#article",
+      "headline": "Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись",
+      "description": "Электроэрозия обрабатывает закалённую сталь и твёрдые сплавы без усилия на деталь. Принцип, виды, точность и что указать в чертеже.",
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-09-25",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/elektroerozionnaya-obrabotka-kogda-nuzhna.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/elektroerozionnaya-obrabotka-kogda-nuzhna-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "электроэрозионная обработка",
+        "электроэрозионная обработка металла",
+        "проволочная электроэрозия",
+        "электроэрозионная резка",
+        "EDM",
+        "станок электроэрозионной обработки"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем электроэрозионная обработка отличается от электрохимической?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Электроэрозия снимает металл тепловым действием искровых разрядов. Электрохимическая обработка растворяет его в электролите, искры там нет. Инструмент в обоих случаях не касается детали."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие материалы можно обрабатывать электроэрозией?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Любые электропроводные: закалённые стали, быстрорежущую сталь, твёрдые сплавы, жаропрочные сплавы, титан. Пластик и стекло не подойдут. Граничные случаи вроде графита, композитов и токопроводящей керамики уточняйте у подрядчика."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Меняет ли электроэрозия свойства поверхности детали?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, на поверхности остаётся тонкий переплавленный слой. После чистовых проходов он тоньше. Глубину слоя и способ его снятия уточняйте у подрядчика."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Когда фреза бессильна: электроэрозия берёт закалённую сталь" />
+  <meta property="og:description" content="Электроэрозия обрабатывает закалённую сталь и твёрдые сплавы без усилия на деталь. Принцип, виды, точность и что указать в чертеже." />
+  <meta property="og:url" content="https://ironex.tech/blog/elektroerozionnaya-obrabotka-kogda-nuzhna.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/elektroerozionnaya-obrabotka-kogda-nuzhna-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-25" />
+  <meta property="article:modified_time" content="2026-09-25" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Когда фреза бессильна: электроэрозия берёт закалённую сталь" />
+  <meta name="twitter:description" content="Электроэрозия обрабатывает закалённую сталь и твёрдые сплавы без усилия на деталь. Принцип, виды, точность и что указать в чертеже." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/elektroerozionnaya-obrabotka-kogda-nuzhna-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-elektroerozionnaya-obrabotka">Что такое электроэрозионная обработка</a></li>
+<li><a href="#kak-eto-rabotaet-ot-razryada-do-gotovogo-kontura">Как это работает: от разряда до готового контура</a></li>
+<li><a href="#provolochnaya-i-proshivnaya-elektroeroziya-chem-otlichayutsy">Проволочная и прошивная электроэрозия: чем отличаются</a></li>
+<li><a href="#kogda-bez-elektroerozii-ne-oboytis">Когда без электроэрозии не обойтись</a></li>
+<li><a href="#eeo-ili-frezerovanie-lazer-gidroabraziv-kak-vybrat">ЭЭО или фрезерование, лазер, гидроабразив: как выбрать</a></li>
+<li><a href="#tochnost-prohody-i-izmenennyy-sloy">Точность, проходы и изменённый слой</a></li>
+<li><a href="#kak-podgotovit-chertezh-i-zakaz-pod-elektroeroziyu">Как подготовить чертёж и заказ под электроэрозию</a></li>
+<li><a href="#chto-opredelyaet-tsenu-i-srok-i-gde-metod-ne-podhodit">Что определяет цену и срок и где метод не подходит</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись</h1>
+        <p class="lede">Электроэрозия обрабатывает закалённую сталь и твёрдые сплавы без усилия на деталь. Принцип, виды, точность и что указать в чертеже.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-09-25">Опубликовано 25 сентября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/elektroerozionnaya-obrabotka-kogda-nuzhna-cover.webp" alt="Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Электроэрозионная обработка снимает металл электрическими разрядами: инструмент не касается детали и не давит на неё. Поэтому она берёт то, что не берёт фреза: закалённую сталь, твёрдый сплав, узкие пазы и малые радиусы в углах. Цена такой возможности — невысокая скорость и тонкий изменённый слой на поверхности.</p>
+<h2 id="chto-takoe-elektroerozionnaya-obrabotka">Что такое электроэрозионная обработка</h2>
+<p>Деталь закалена, а в чертеже стоит узкий глубокий паз с малым радиусом в углу: фреза такую заготовку не берёт. Электроэрозионная обработка (ЭЭО, по-английски EDM, electrical discharge machining) решает задачу иначе. Она снимает металл серией электрических разрядов между электродом и деталью и не касается заготовки. Единственное жёсткое условие — электропроводность материала.</p>
+<p>Резание давит на деталь. Фреза прижимает заготовку, вызывает вибрации и изнашивается о твёрдый металл. У электроэрозии нет усилия резания, поэтому нет ни прижима, ни вибраций, а твёрдость металла на инструмент не влияет. Аббревиатуру EDM вы увидите в каталогах и на шильдиках станков: это тот же метод.</p>
+<blockquote><p>Инструмент не касается детали, поэтому твёрдость материала не мешает. Важно одно: металл должен проводить ток.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись">Прислать чертёж на почту</a>
+</div>
+<h2 id="kak-eto-rabotaet-ot-razryada-do-gotovogo-kontura">Как это работает: от разряда до готового контура</h2>
+<p><img alt="Оборудование электроэрозионной обработки" src="/images/blog/elektroerozionnaya-obrabotka-kogda-nuzhna-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Машина для электроэрозионной обработки деталей. Фото: <a href="https://commons.wikimedia.org/wiki/File:DMM_Funkenerodiermaschine.jpg" rel="nofollow noopener" target="_blank">Dmm2va7</a> · <a href="https://creativecommons.org/licenses/by/3.0" rel="nofollow noopener" target="_blank">CC BY 3.0</a></em></p>
+<p>Между электродом и деталью остаётся тонкий зазор, заполненный диэлектриком — жидкостью, которая не проводит ток. Когда напряжение растёт, жидкость пробивает в самом узком месте, возникает искровой канал, и металл в точке разряда плавится и испаряется. Контур складывается из очень большого числа таких микроразрядов.</p>
+<p>Последовательность выглядит так:</p>
+<ol><li>Зазор между электродом и деталью заполняет диэлектрик.</li><li>Напряжение вызывает пробой, и появляется искровой канал.</li><li>Металл в точке разряда плавится и испаряется.</li><li>Диэлектрик вымывает шлам — застывшие частицы металла.</li><li>Станок удерживает зазор и ведёт электрод по программе.</li></ol>
+<p>Диэлектриком служит деионизованная вода или масло. Разряд происходит именно в этой среде, а поток жидкости уносит шлам. Масляные станки требуют внимания к пожарной безопасности: температуру вспышки смотрите в паспорте конкретного масла.</p>
+<p>Энергия импульсов задаёт баланс. Больше энергии — быстрее съём и грубее поверхность, меньше — медленнее и чище. Числовые режимы подбирает технолог по паспорту генератора. ЧПУ хранит программу контура и следит за зазором.</p>
+<h2 id="provolochnaya-i-proshivnaya-elektroeroziya-chem-otlichayutsy">Проволочная и прошивная электроэрозия: чем отличаются</h2>
+<p>Видов два: проволочная электроэрозия режет сквозные контуры, прошивная копирует форму электрода в глубине заготовки. Оба — разновидности электроэрозионной обработки и работают на разрядах в диэлектрике. Другие варианты, например электроэрозионно-химический, здесь не разбираем. От электрохимической обработки ЭЭО отличается тем, что там нет искры.</p>
+<table><thead><tr><th>Вид</th><th>Инструмент</th><th>Результат</th><th>Типичные детали</th><th>Ограничение</th></tr></thead><tbody><tr><td>Проволочная</td><td>Тонкая проволока, не касается детали</td><td>Сквозной контур, возможен конус</td><td>Пуансоны, матрицы, шаблоны</td><td>Нужно стартовое отверстие</td></tr><tr><td>Прошивная</td><td>Профильный электрод из меди или графита</td><td>Негатив формы электрода, в том числе закрытая полость</td><td>Гнёзда пресс-форм, глухие полости</td><td>Электрод изнашивается</td></tr></tbody></table>
+<h3>Проволочная электроэрозионная резка</h3>
+<p>Проволока диаметром порядка десятых долей миллиметра служит электродом-инструментом. Точное значение зависит от станка. Она движется вдоль контура и деталь не касается. Резка идёт по сквозному контуру, для неё нужно стартовое отверстие. Проволоку можно наклонить и получить конус. Пуансон и матрицу вырезают по одной программе.</p>
+<h3>Прошивная (копировально-прошивочная) электроэрозия</h3>
+<p>Профильный электрод из меди или графита погружается в заготовку и оставляет в ней негатив своей формы. Так делают закрытые полости и гнёзда пресс-форм. Электрод тоже изнашивается, поэтому на одну деталь часто готовят несколько экземпляров.</p>
+<h2 id="kogda-bez-elektroerozii-ne-oboytis">Когда без электроэрозии не обойтись</h2>
+<p><img alt="Станок Ona AE300 для проволочной электроэрозионной резки" src="/images/blog/elektroerozionnaya-obrabotka-kogda-nuzhna-2.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Проволочная электроэрозионная машина Ona AE300 для прецизионной резки металла. Фото: <a href="https://commons.wikimedia.org/wiki/File:Ona_AE300_%28Wire_EDM_Cutting_Machine%29.jpg" rel="nofollow noopener" target="_blank">Ricard Polls</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Без электроэрозии не обойтись, когда деталь нельзя обработать резанием: материал слишком твёрдый, геометрия не пускает фрезу или заготовка не выдерживает усилия. Электроэрозия позволяет обрабатывать закалённую сталь уже после термообработки, когда фрезой её не взять.</p>
+<p>Обращайте внимание на пять признаков детали:</p>
+<ul><li>Материал закалён или твёрже, чем держит фреза: закалённые и быстрорежущие стали, твёрдый сплав.</li><li>Узкие пазы и внутренние углы с малым радиусом, куда фреза физически не входит.</li><li>Тонкостенные и хрупкие зоны, которые не выдерживают усилия резания.</li><li>Контур пуансона и матрицы, который нужно вырезать по одной программе, или закрытая полость.</li><li>Жаропрочные сплавы и титан, где резание быстро изнашивает инструмент.</li></ul>
+<p>Такие детали встречаются в инструментальном производстве, аэрокосмосе и медицине. Подход строится от признаков детали, а не от отрасли: подходит ли метод, решает чертёж.</p>
+<blockquote><p><strong>Факт.</strong> Электроэрозия обрабатывает только электропроводные материалы: стали, твёрдые и жаропрочные сплавы, титан. Пластик и стекло таким способом не обработать.</p></blockquote>
+<blockquote><p>Электроэрозию выбирают не за скорость, а за то, что твёрдость, тонкие стенки и малые радиусы ей не помеха.</p></blockquote>
+<h2 id="eeo-ili-frezerovanie-lazer-gidroabraziv-kak-vybrat">ЭЭО или фрезерование, лазер, гидроабразив: как выбрать</h2>
+<p>Универсально лучшего способа нет: его выбирают по твёрдости материала, толщине, внутренним углам, допуску, размеру серии и стоимости. Ниже все четыре варианта сравниваются по одним критериям. Значения даны без чисел, потому что цифры зависят от конкретного станка.</p>
+<table><thead><tr><th>Способ</th><th>Твёрдость материала</th><th>Толщина</th><th>Внутренние углы</th><th>Допуск</th><th>Серия</th><th>Стоимость детали</th></tr></thead><tbody><tr><td>Электроэрозия</td><td>Не ограничивает</td><td>Ограничена станком</td><td>Малый радиус</td><td>Жёсткий, растёт с числом проходов</td><td>Единичные и малые</td><td>Выше</td></tr><tr><td>Фрезерование</td><td>Ограничена инструментом</td><td>Широкий диапазон</td><td>Радиус не меньше радиуса фрезы</td><td>Жёсткий</td><td>От единичных до больших</td><td>Ниже на простых деталях</td></tr><tr><td>Лазерная резка</td><td>Не критична</td><td>Листовой металл ограниченной толщины</td><td>Малый радиус</td><td>Ниже, чем у ЭЭО</td><td>Средние и большие</td><td>Низкая на листе</td></tr><tr><td>Гидроабразивная резка</td><td>Не критична</td><td>Толстые заготовки</td><td>Ограничены шириной струи</td><td>Ниже, чем у ЭЭО</td><td>Единичные и средние</td><td>Средняя</td></tr></tbody></table>
+<p>Вывод по деталям. Незакалённая деталь и серия — это <a href="/frezerovka.html">фрезерные работы по металлу</a>: они быстрее и дешевле за штуку. Листовой контур без жёсткого допуска режут лазером. Толстую заготовку, которую нельзя нагревать, режут гидроабразивом. Закалённая точная деталь со сложным контуром — задача для электроэрозии.</p>
+<blockquote><p><strong>Мнение.</strong> Если деталь не закалена и нужна серия, начинайте с фрезерования. Электроэрозию подключайте там, где фреза не проходит по твёрдости или геометрии. Лучший способ определяет задача, а не рейтинг методов.</p></blockquote>
+<h2 id="tochnost-prohody-i-izmenennyy-sloy">Точность, проходы и изменённый слой</h2>
+<p>Точность электроэрозии покупается временем. Черновой проход снимает основной припуск быстро, но грубо. Чистовые проходы дорабатывают размер и <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> поверхности, и каждый следующий длиннее по времени. Скорость и точность связаны обратно, поэтому число проходов закладывают в цену заранее. Допуски и Ra берут из паспорта станка, а не из общей таблицы.</p>
+<table><thead><tr><th>Проход</th><th>Что улучшает</th><th>Цена во времени</th></tr></thead><tbody><tr><td>Черновой</td><td>Снимает основной припуск, задаёт контур вчерне</td><td>Самый быстрый</td></tr><tr><td>Чистовой</td><td>Точность размера и шероховатость</td><td>Добавляет время</td></tr><tr><td>Финишный</td><td>Минимальная шероховатость, лучшая точность</td><td>Самый долгий</td></tr></tbody></table>
+<p>После реза на поверхности остаётся изменённый поверхностный слой: тонкая плёнка металла, которая расплавилась и застыла заново. Она переплавлена и закалена, в ней возможны микротрещины. Для нагруженных деталей это важно, потому что слой влияет на усталостную прочность.</p>
+<p>Слой делают тоньше чистовыми проходами, а при необходимости снимают полировкой или обрабатывают отпуском. Подойдёт ли это вашей детали, уточните у технолога. Слой не брак метода, а параметр, который закладывают в план.</p>
+<p>Вторая особенность — поводка. Заготовка держит внутренние напряжения, после реза они перераспределяются, и деталь может повести. Против этого оставляют технологические перемычки и заранее обсуждают порядок операций с термообработкой.</p>
+<h2 id="kak-podgotovit-chertezh-i-zakaz-pod-elektroeroziyu">Как подготовить чертёж и заказ под электроэрозию</h2>
+<p>Чтобы подрядчик посчитал заказ без уточняющих кругов, в чертеже нужны пять вещей: материал и термообработка, функциональные допуски, шероховатость рабочих поверхностей, радиусы углов и схема стартовых отверстий с перемычками. Пройдите их по порядку.</p>
+<ol><li>Укажите марку материала и состояние: до закалки или после. От этого зависит порядок операций.</li><li>Ставьте допуски только там, где они функциональны. Жёсткий допуск на всём контуре добавляет проходы и удорожает резку, а как не переплатить, разобрано в материале про <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya">допуски и шероховатость без лишнего удорожания</a>.</li><li>Задавайте шероховатость только на рабочих поверхностях.</li><li>Не требуйте острого внутреннего угла. Радиус согласуйте с подрядчиком: минимальное значение он назовёт по своему станку.</li><li>Отметьте место стартового отверстия, припуск и технологические перемычки. Формат файла согласуйте заранее: <a href="/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha">какие форматы файлов принимает подрядчик</a>.</li></ol>
+<p>Типичная ошибка — не обсудить порядок операций с термообработкой. Если резать заготовку с внутренними напряжениями без плана, после реза деталь может повести, и высокоточный контур уйдёт в допуск.</p>
+<h2 id="chto-opredelyaet-tsenu-i-srok-i-gde-metod-ne-podhodit">Что определяет цену и срок и где метод не подходит</h2>
+<p>Цену электроэрозии определяет время работы станка, а не объём снятого металла. В неё входят машинное время, толщина и длина реза, число проходов, материал заготовки, подготовка программы и расходники — проволока или электроды. Единичная деталь и серия считаются по-разному: программа и наладка занимают одно и то же время, а на серию оно делится. Цену и срок называют после расчёта по чертежу, общей ставки за метод нет.</p>
+<blockquote><p>Стоимость электроэрозии задаёт машинное время и число проходов, а не объём снятого металла.</p></blockquote>
+<p>Метод не подходит в трёх случаях:</p>
+<ul><li>материал не проводит ток: пластик, стекло, керамика без токопроводящих добавок;</li><li>серия большая, а деталь простая: фрезерование сделает её быстрее;</li><li>габариты или масса заготовки выше возможностей станка: предел смотрят в паспорте конкретной модели.</li></ul>
+<p>Если у вашей детали закалённая сталь, малые радиусы или тонкие стенки, это случай «без ЭЭО не обойтись». Пришлите чертёж через <a href="/kontakty.html">страницу контактов</a> с материалом, состоянием термообработки, допусками и количеством. По ним оценим, каким способом деталь выгоднее делать.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем электроэрозионная обработка отличается от электрохимической?</summary>
+<div class="faq__a"><p>Электроэрозия снимает металл тепловым действием искровых разрядов. Электрохимическая обработка растворяет его в электролите, искры там нет. Инструмент в обоих случаях не касается детали.</p></div>
+</details>
+<details>
+<summary>Какие материалы можно обрабатывать электроэрозией?</summary>
+<div class="faq__a"><p>Любые электропроводные: закалённые стали, быстрорежущую сталь, твёрдые сплавы, жаропрочные сплавы, титан. Пластик и стекло не подойдут. Граничные случаи вроде графита, композитов и токопроводящей керамики уточняйте у подрядчика.</p></div>
+</details>
+<details>
+<summary>Меняет ли электроэрозия свойства поверхности детали?</summary>
+<div class="faq__a"><p>Да, на поверхности остаётся тонкий переплавленный слой. После чистовых проходов он тоньше. Глубину слоя и способ его снятия уточняйте у подрядчика.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Росстандарт</a> — Федеральное агентство по техническому регулированию и метрологии, главная страница</li>
+<li><a href="https://www.sodick.com/" rel="noopener" target="_blank">Sodick</a> — производитель электроэрозионных станков, Sodick Co., Ltd., главная страница</li>
+<li><a href="https://www.gfms.com/" rel="noopener" target="_blank">GF Machining Solutions</a> — производитель электроэрозионных станков, главная страница</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali.html">
+            <img src="/images/blog/kogda-opravdana-pyatiosevaya-obrabotka-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Пятиосевая обработка: когда она оправдана</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">
+            <img src="/images/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Обработка нержавейки ЧПУ: что указать в заявке</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">
+            <img src="/images/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Фрезерная обработка по чертежу: подготовка 3D-модели</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

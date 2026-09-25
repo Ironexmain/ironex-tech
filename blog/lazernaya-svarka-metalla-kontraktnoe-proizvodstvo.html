@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лазерная сварка металла: когда выгоднее TIG/MIG, что подготовить</title>
+  <meta name="description" content="Лазерная сварка металла глазами заказчика: когда выгоднее TIG/MIG, от чего зависит зазор, что передать подрядчику и как проверяют шов." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo.html#article",
+      "headline": "Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов",
+      "description": "Лазерная сварка металла глазами заказчика: когда выгоднее TIG/MIG, от чего зависит зазор, что передать подрядчику и как проверяют шов.",
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-09-25",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "лазерная сварка металла",
+        "лазерная сварка или аргонная",
+        "лазерная сварка и TIG MIG",
+        "зазор при лазерной сварке",
+        "контроль качества сварных швов",
+        "стоимость лазерной сварки"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какие металлы можно сваривать лазером?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Углеродистые и нержавеющие стали, титан, а также алюминий, медь и латунь. Последним трём нужны свои режимы из-за сильного отражения излучения, разнородные пары проверяют на образцах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем лазерная сварка отличается от TIG и MIG?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Лазер греет узкую зону и даёт меньше деформаций, но требует точной сборки и оправдывается на сериях. TIG и MIG терпимее к зазорам и удобнее для разовых заказов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие дефекты бывают в лазерном шве?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Поры, подрезы, непровар, горячие трещины и брызги. Причины — от зазора и чистоты кромок до режима и защитного газа."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Лазерная сварка: когда она выгоднее TIG/MIG и что нужно подрядчику" />
+  <meta property="og:description" content="Лазерная сварка металла глазами заказчика: когда выгоднее TIG/MIG, от чего зависит зазор, что передать подрядчику и как проверяют шов." />
+  <meta property="og:url" content="https://ironex.tech/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-25" />
+  <meta property="article:modified_time" content="2026-09-25" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Лазерная сварка: когда она выгоднее TIG/MIG и что нужно подрядчику" />
+  <meta name="twitter:description" content="Лазерная сварка металла глазами заказчика: когда выгоднее TIG/MIG, от чего зависит зазор, что передать подрядчику и как проверяют шов." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-lazernaya-svarka-i-kak-poluchaetsya-shov">Что такое лазерная сварка и как получается шов</a></li>
+<li><a href="#dva-rezhima-proplavleniya-teploprovodnyy-i-glubokiy">Два режима проплавления: теплопроводный и глубокий</a></li>
+<li><a href="#lazer-ili-tig-mig-gde-kakaya-svarka-vygodnee">Лазер или TIG/MIG: где какая сварка выгоднее</a></li>
+<li><a href="#kakie-metally-i-tolschiny-svarivayut-lazerom">Какие металлы и толщины сваривают лазером</a></li>
+<li><a href="#podgotovka-pod-lazer-zazor-sborka-kromki">Подготовка под лазер: зазор, сборка, кромки</a></li>
+<li><a href="#chto-peredat-podryadchiku-chtoby-poluchit-raschet">Что передать подрядчику, чтобы получить расчёт</a></li>
+<li><a href="#kak-proveryayut-kachestvo-lazernogo-shva">Как проверяют качество лазерного шва</a></li>
+<li><a href="#tipovye-defekty-lazernyh-shvov-i-ih-prichiny">Типовые дефекты лазерных швов и их причины</a></li>
+<li><a href="#iz-chego-skladyvaetsya-tsena-i-kogda-lazer-okupaetsya">Из чего складывается цена и когда лазер окупается</a></li>
+<li><a href="#kogda-lazer-ne-podhodit-i-kak-vybrat-sposob">Когда лазер не подходит и как выбрать способ</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов</h1>
+        <p class="lede">Лазерная сварка металла глазами заказчика: когда выгоднее TIG/MIG, от чего зависит зазор, что передать подрядчику и как проверяют шов.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-09-25">Опубликовано 25 сентября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo-cover.webp" alt="Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Лазерная сварка даёт узкий глубокий шов с малой зоной нагрева, поэтому деталь меньше ведёт. Но выгоду получает не каждый заказ: лазер требует точной сборки, ровных кромок и понятных требований к контролю. Ниже — когда он окупается и что передать подрядчику.</p>
+<h2 id="chto-takoe-lazernaya-svarka-i-kak-poluchaetsya-shov">Что такое лазерная сварка и как получается шов</h2>
+<p>Лазерная сварка соединяет детали сфокусированным лазерным лучом: он плавит кромки, а шов кристаллизуется, когда луч уходит дальше. Дуги и электрода нет, тепло приходит из одного узкого пятна.</p>
+<p>Чаще всего луч даёт волоконный лазер. Излучение идёт по оптоволокну в сварочную головку, оптика фокусирует его на стыке. Если нужно добавить металл в шов или закрыть зазор, в ванну подают присадочную проволоку.</p>
+<p>Ванну расплава защищает газ: аргон, гелий или азот, в зависимости от металла. Без защиты расплав окисляется, а шов получается пористым, так что газ напрямую влияет на число пор. Сварка бывает ручной, автоматической и роботизированной, а излучение — импульсным или непрерывным. Для серий берут автоматическую или роботизированную: положение луча повторяется от детали к детали.</p>
+<p>На схеме ниже видно, как расположены луч, оптика, сопло с газом, ванна расплава и застывший шов.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов">Прислать чертёж на почту</a>
+</div>
+<h2 id="dva-rezhima-proplavleniya-teploprovodnyy-i-glubokiy">Два режима проплавления: теплопроводный и глубокий</h2>
+<p><img alt="Сварные швы на металле" src="/images/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Металлические сварные швы. Фото: <a href="https://commons.wikimedia.org/wiki/File:%D0%97%D0%B2%D0%B0%D1%80%D1%8E%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D1%96_%D1%88%D0%B2%D0%B8_%D0%BF%D0%BE_%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D1%83.jpg" rel="nofollow noopener" target="_blank">Ірина Бучнєва</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Лазер плавит металл в двух режимах. В теплопроводном тепло идёт в деталь с поверхности, шов выходит неглубоким и широким. В режиме глубокого проплавления (keyhole) плотность мощности такая, что металл частично испаряется и в ванне открывается узкий канал. Луч уходит по нему вглубь, поэтому шов узкий и глубокий.</p>
+<p>Режим задают мощность, диаметр пятна и скорость: одна установка при разных настройках даёт разный шов. Порог плотности мощности зависит от металла и оборудования.</p>
+<p>Для детали это значит следующее. Зона термического влияния — участок рядом со швом, где структура металла изменилась от нагрева, — при глубоком режиме уже, чем при дуговой сварке. Меньше нагрева — меньше деформаций и правки после сварки. Платой становится сборка: узкий луч не прощает неточную посадку кромок.</p>
+<blockquote><p>Глубокий режим даёт узкий проплавляющий шов при малом нагреве детали, но платит за это жёсткими требованиями к точности сборки.</p></blockquote>
+<h2 id="lazer-ili-tig-mig-gde-kakaya-svarka-vygodnee">Лазер или TIG/MIG: где какая сварка выгоднее</h2>
+<p>Лазерная сварка выигрывает там, где важны малый нагрев и повторяемость на серии. TIG и MIG выигрывают там, где заготовки неточные, деталь одна или нужен ремонт. Единого «лучшего» способа нет: выбор зависит от детали и тиража. В таблице оба способа сравниваются по одним критериям, оценки сравнительные, без цифр.</p>
+<table><thead><tr><th>Способ</th><th>Зона нагрева и деформации</th><th>Допуск на зазор</th><th>Скорость</th><th>Оснастка</th><th>Выгодная серия</th><th>Постобработка</th></tr></thead><tbody><tr><td>Лазерная сварка</td><td>Узкая зона, деформации малые</td><td>Жёсткий, нужна точная сборка</td><td>Обычно выше на тонких и средних толщинах</td><td>Точная фиксация и прижим</td><td>Серия с повторяющейся сборкой</td><td>Зачистки и правки обычно меньше</td></tr><tr><td>TIG</td><td>Зона шире, деформации заметнее</td><td>Терпимее к зазору</td><td>Ниже</td><td>Простая</td><td>Единичные детали и малые партии</td><td>Зачистка и правка чаще</td></tr><tr><td>MIG</td><td>Зона широкая</td><td>Терпимее к зазору</td><td>Выше, чем у TIG</td><td>Простая</td><td>Малые и средние партии</td><td>Брызги, зачистка</td></tr></tbody></table>
+<p>Скорость зависит от толщины и режима, поэтому цифры берите из паспорта оборудования подрядчика, а не из общих таблиц.</p>
+<blockquote><p><strong>Мнение.</strong> Если деталь единичная, а заготовка неточная, берите TIG или MIG. Если сборка повторяется от детали к детали и вас беспокоят деформации, просите расчёт по лазеру.</p></blockquote>
+<h2 id="kakie-metally-i-tolschiny-svarivayut-lazerom">Какие металлы и толщины сваривают лазером</h2>
+<p><img alt="MIG-сварка металла с использованием защитного газа" src="/images/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo-2.webp" style="aspect-ratio:16/9"/></p>
+<p><em>При газовой металлической сварке расходная проволока подается автоматически, обеспечивая стабильный процесс соединения деталей. Фото: <a href="https://commons.wikimedia.org/wiki/File:GMAW.welding.af.ncs.jpg" rel="nofollow noopener" target="_blank">William M. Plate Jr.</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Марка металла и толщина определяют режим и цену, поэтому называйте их в заявке сразу. Таблица показывает, как ведут себя основные материалы.</p>
+<table><thead><tr><th>Материал</th><th>Как ведёт себя при лазерной сварке</th><th>На что обратить внимание</th></tr></thead><tbody><tr><td>Углеродистая сталь</td><td>Сваривается уверенно</td><td>Марка: при большем содержании углерода шов может закаляться</td></tr><tr><td>Нержавеющая сталь</td><td>Сваривается уверенно</td><td>Газовая защита: без неё шов темнеет</td></tr><tr><td>Алюминий</td><td>Сильно отражает излучение и быстро отводит тепло</td><td>Отдельный режим, риск пор</td></tr><tr><td>Медь и латунь</td><td>Отражение и теплоотвод ещё сильнее</td><td>Источник излучения и режим уточнять; у латуни цинк испаряется и даёт поры</td></tr><tr><td>Титан</td><td>Сваривается, но активно реагирует с воздухом</td><td>Защита газом, в том числе с обратной стороны шва</td></tr></tbody></table>
+<h3>Что сваривается уверенно</h3>
+<p>Углеродистые и нержавеющие стали, а также титан — обычные материалы для лазерной сварки. У <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавейки</a> следят за газовой защитой, иначе шов окисляется. Титан при нагреве жадно берёт кислород из воздуха, поэтому защита нужна и с обратной стороны шва. Для конструкционной стали называйте точную марку: от содержания углерода зависит, не станет ли шов хрупким.</p>
+<h3>Что требует отдельных режимов и проверки</h3>
+<p>Алюминий и медь сильнее отражают излучение волоконного лазера, поэтому под них подбирают режим, а для меди иногда берут другие источники излучения. Разнородные пары, например сталь с алюминием, нельзя ни исключать, ни обещать заранее: на границе металлов появляются хрупкие фазы. Подрядчик проверяет такую пару на образцах, иногда с переходной вставкой. Ваше дело — назвать обе марки и требования к прочности шва.</p>
+<h2 id="podgotovka-pod-lazer-zazor-sborka-kromki">Подготовка под лазер: зазор, сборка, кромки</h2>
+<p>Лазеру нужна заготовка точнее, чем дуге. Пятно луча малое, поэтому зазор между кромками напрямую влияет на шов: чем он больше, тем выше риск непровара и подрезов. Допустимую величину для стыка и нахлёста, с присадкой и без неё, называет технолог под конкретную толщину и режим. Универсального числа нет, значение нужно уточнить у подрядчика.</p>
+<p>Точность зазора начинается с заготовок. Детали, вырезанные лазером и доведённые механической обработкой, обычно ложатся точнее, чем заготовки с неровной кромкой. Собранный узел держит оснастка: прижим и фиксация не дают кромкам разойтись, когда металл нагревается.</p>
+<p>Кромки должны быть чистыми. Масло, окалина, влага и остатки покрытия попадают в ванну расплава и дают поры. Если деталь проходит гальванику или покраску, укажите в чертеже, до сварки это происходит или после.</p>
+<p>Схема ниже показывает стык и нахлёст, допустимый зазор, прижим и оснастку.</p>
+<h2 id="chto-peredat-podryadchiku-chtoby-poluchit-raschet">Что передать подрядчику, чтобы получить расчёт</h2>
+<p>Для расчёта подрядчику нужны данные, из которых видно, что сваривать, из чего и как проверять. Соберите их в таком порядке:</p>
+<ol><li>Чертёж и <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">3D-модель</a> узла с обозначением швов.</li><li>Марка и толщина металла для каждой детали.</li><li>Длина и расположение швов, тип соединения: стык или нахлёст.</li><li>Допуски и требования к деформациям.</li><li><a href="/blog/pochemu-partiya-menyaet-tsenu-detali.html">Объём партии</a> и срок.</li><li>Требования к контролю шва.</li></ol>
+<p>Чаще всего забывают три вещи: тип соединения и требования к самому шву, покрытие детали до и после сварки, допустимые деформации. Из-за них расчёт приходится пересчитывать.</p>
+<p>Дальше заказ идёт через контрактное производство так. Сначала заявка и проверка технологичности, потом согласование материала и режима. Затем пробные образцы, серия, контроль и отгрузка. Что должно входить в предложение подрядчика, разобрано отдельно: <a href="/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal">что должно входить в коммерческое предложение на изготовление детали</a>.</p>
+<h2 id="kak-proveryayut-kachestvo-lazernogo-shva">Как проверяют качество лазерного шва</h2>
+<p>Контроль выявляет дефекты шва, а какие методы применять, задаёт чертёж заказчика. Каждый метод видит своё, поэтому на ответственных узлах их комбинируют.</p>
+<table><thead><tr><th>Метод контроля</th><th>Что выявляет</th><th>Когда применяют</th></tr></thead><tbody><tr><td>Визуальный</td><td>Подрезы, брызги, неровности, трещины на поверхности</td><td>Всегда, первым</td></tr><tr><td>Капиллярный</td><td>Поверхностные трещины и поры, выходящие на поверхность</td><td>Когда нужна проверка трещин на нержавеющих сталях и цветных сплавах</td></tr><tr><td>Ультразвуковой</td><td>Внутренние несплошности, непровар</td><td>Ответственные швы при доступе к контролю</td></tr><tr><td>Рентгеновский</td><td>Внутренние поры и непровары на снимке</td><td>Ответственные швы</td></tr><tr><td>Металлографический шлиф</td><td>Глубину проплавления, структуру, зону термического влияния</td><td>Образцы при подборе режима и проверке первой партии</td></tr></tbody></table>
+<p>Объём контроля задаёт заказчик: какие методы применять и на скольких швах, записывают в чертёж или ТЗ. Чем подробнее это описано до запуска, тем меньше споров при приёмке.</p>
+<h2 id="tipovye-defekty-lazernyh-shvov-i-ih-prichiny">Типовые дефекты лазерных швов и их причины</h2>
+<p>Дефект в лазерном шве почти всегда сводится к причине, которую видно заранее. Заказчик снижает риск образцами и контролем первой партии, подрядчик — настройкой режима и оснастки.</p>
+<table><thead><tr><th>Дефект</th><th>Типичная причина</th><th>Как предотвращают</th></tr></thead><tbody><tr><td>Поры</td><td>Влага, масло или покрытие на кромках, слабая газовая защита</td><td>Чистка кромок, подбор газа и расхода</td></tr><tr><td>Подрезы</td><td>Зазор, неверный режим</td><td>Точная сборка, присадочная проволока, подбор режима</td></tr><tr><td>Непровар</td><td>Зазор, малая мощность, смещение луча от стыка</td><td>Точная фиксация, пробные образцы</td></tr><tr><td>Горячие трещины</td><td>Склонность сплава, жёсткое закрепление, форма шва</td><td>Подбор присадки и режима, сварка на образцах</td></tr><tr><td>Брызги</td><td>Режим, нестабильная защита</td><td>Настройка режима и подачи газа</td></tr><tr><td>Деформации</td><td>Нагрев, неудачный порядок швов</td><td>Малый нагрев лазера, порядок сварки, оснастка</td></tr></tbody></table>
+<p>Большинство дефектов управляемы. Про общие причины брака вне сварки читайте в разборе <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki">типичные причины брака при обработке металла</a>.</p>
+<h2 id="iz-chego-skladyvaetsya-tsena-i-kogda-lazer-okupaetsya">Из чего складывается цена и когда лазер окупается</h2>
+<p>Цену лазерной сварки задают материал и толщина, длина и число швов, серия, оснастка и подготовка, требования к контролю и объём постобработки. Готовой расценки за метр здесь нет: без чертежа она ничего не значит, поэтому цену считают по чертежу.</p>
+<p>Логика окупаемости такая. На серии оснастка и настройка делятся на много деталей, а скорость лазера и меньшая зачистка снижают цену каждой. На единичной детали настройка и оснастка съедают выгоду, и дуговая сварка выходит дешевле.</p>
+<blockquote><p>На серии лазерная сварка окупается скоростью и малой постобработкой, на единичной детали выгода чаще уходит в оснастку и настройку.</p></blockquote>
+<p>Если ваши детали идут партиями, посмотрите, как устроено <a href="/serijnoe-proizvodstvo-detalej.html">серийное производство деталей</a>.</p>
+<h2 id="kogda-lazer-ne-podhodit-i-kak-vybrat-sposob">Когда лазер не подходит и как выбрать способ</h2>
+<p>Лазер не подходит, если заготовки неточные и зазоры большие. Он не подходит для единичного ремонта, для разовой детали и там, где нет оснастки для точной фиксации. В этих случаях TIG или MIG дадут результат проще и дешевле.</p>
+<p>Перед выбором ответьте на четыре вопроса:</p>
+<ul><li>Идёт ли серия, а не одна деталь?</li><li>Собирается ли узел точно и повторяемо?</li><li>Важны ли малые деформации?</li><li>Заданы ли требования к контролю шва?</li></ul>
+<p>Если на большинство ответ «да», лазер стоит рассчитать. Если «нет», начинайте с дуговой сварки.</p>
+<blockquote><p>Лазер выбирают под деталь и серию, а не под моду на технологию.</p></blockquote>
+<p>Когда чертёж, материал и требования к контролю собраны, <a href="/kontakty.html">пришлите чертёж на расчёт</a>: технологи подскажут, какой способ сварки подходит вашему узлу.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Какие металлы можно сваривать лазером?</summary>
+<div class="faq__a"><p>Углеродистые и нержавеющие стали, титан, а также алюминий, медь и латунь. Последним трём нужны свои режимы из-за сильного отражения излучения, разнородные пары проверяют на образцах.</p></div>
+</details>
+<details>
+<summary>Чем лазерная сварка отличается от TIG и MIG?</summary>
+<div class="faq__a"><p>Лазер греет узкую зону и даёт меньше деформаций, но требует точной сборки и оправдывается на сериях. TIG и MIG терпимее к зазорам и удобнее для разовых заказов.</p></div>
+</details>
+<details>
+<summary>Какие дефекты бывают в лазерном шве?</summary>
+<div class="faq__a"><p>Поры, подрезы, непровар, горячие трещины и брызги. Причины — от зазора и чистоты кромок до режима и защитного газа.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.iso.org/" rel="noopener" target="_blank">Каталог международных стандартов ISO</a> — Международная организация по стандартизации</li>
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Национальные стандарты и технические регламенты</a> — Росстандарт</li>
+<li><a href="https://www.ipgphotonics.com/" rel="noopener" target="_blank">Оборудование и технологии волоконных лазеров</a> — IPG Photonics</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/elektroerozionnaya-obrabotka-kogda-nuzhna.html">
+            <img src="/images/blog/elektroerozionnaya-obrabotka-kogda-nuzhna-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/frezerovka-metalla-metody-tehnologiya.html">
+            <img src="/images/blog/frezerovka-metalla-metody-tehnologiya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Фрезеровка металла: какие бывают виды фрезерования и когда какой применять</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/svarka-payka-skleivanie-metod-soedineniya.html">
+            <img src="/images/blog/svarka-payka-skleivanie-metod-soedineniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Сварка vs пайка vs склеивание: когда какой способ соединения деталей выгоднее</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
