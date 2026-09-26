@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Контрактное производство деталей по чертежу: как оно устроено и когда выгоднее своего цеха</title>
+      <link>https://ironex.tech/blog/kontraktnoe-proizvodstvo-detaley-kak-rabotaet.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kontraktnoe-proizvodstvo-detaley-kak-rabotaet.html</guid>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как устроено контрактное производство деталей по чертежу: этапы запуска, из чего складывается цена, приёмка и договор. Когда это выгоднее своего цеха.</description>
+    </item>
+    <item>
+      <title>Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак</title>
+      <link>https://ironex.tech/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html</guid>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Трещины, поры, непровар, подрезы: чем опасны, откуда берутся и что прописать в чертеже, чтобы шов приняли без споров.</description>
+    </item>
+    <item>
+      <title>Алюминиевый сплав для детали по чертежу: чем Д16Т, АМг6 и АД31 отличаются и какой выбрать</title>
+      <link>https://ironex.tech/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie.html</guid>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Сравнение Д16Т, АМг6 и АД31: прочность, сварка, коррозия, обработка на ЧПУ. Таблица и порядок выбора марки под условия работы детали.</description>
+    </item>
     <item>
       <title>Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов</title>
       <link>https://ironex.tech/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Нестандартный крепёж на заказ: 2 схемы поставки — вместе с деталью или у метизного завода. Что писать в заявке и как согласовать покрытие с самой деталью.</description>
-    </item>
-    <item>
-      <title>Почему подрядчик не берёт одну деталь и как пройти порог</title>
-      <link>https://ironex.tech/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Экономика заказа</category>
-      <description>Минимальная партия изготовления деталей: почему цена одной штуки выглядит как за 5–10, из чего порог входа и как заявкой снизить его на мелкую партию.</description>
-    </item>
-    <item>
-      <title>Бирка, тара и лист: что должно уехать вместе с партией</title>
-      <link>https://ironex.tech/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/markirovka-i-upakovka-partii-detaley-pered-otpravkoy.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Упаковка деталей для отправки: 3 уровня маркировки — деталь, тара и лист. Как собрать партию, чтобы на сборке получателя до приёмки не встала чужая позиция.</description>
-    </item>
-    <item>
-      <title>Когда деталь лить, а когда сразу ставить на станок</title>
-      <link>https://ironex.tech/blog/lite-ili-mehanoobrabotka-kak-vybrat-metod-dlya-detali.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/lite-ili-mehanoobrabotka-kak-vybrat-metod-dlya-detali.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Литьё или механообработка детали: 2 метода. Когда выгоднее литьё, а когда обработка на станке — и как партия с допусками решает выбор метода изготовления.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дефекты сварных швов: виды, причины, как не допустить — IRONEX</title>
+  <meta name="description" content="Трещины, поры, непровар, подрезы: чем опасны, откуда берутся и что прописать в чертеже, чтобы шов приняли без споров." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html#article",
+      "headline": "Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак",
+      "description": "Трещины, поры, непровар, подрезы: чем опасны, откуда берутся и что прописать в чертеже, чтобы шов приняли без споров.",
+      "datePublished": "2026-09-26",
+      "dateModified": "2026-09-26",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika-cover.webp",
+      "articleSection": "Контроль качества",
+      "keywords": [
+        "дефекты сварных швов",
+        "виды дефектов сварных швов",
+        "трещины сварного шва",
+        "непровар сварного шва",
+        "поры в сварном шве причины",
+        "как не допустить дефекты сварных швов"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какие дефекты сварных швов бывают?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Трещины, поры, твёрдые включения, непровары и несплавления, а также нарушения формы шва: подрезы, наплывы, прожоги."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем непровар отличается от несплавления?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При непроваре основной металл не проплавлен по сечению. При несплавлении наплавленный металл не сплавился с кромкой или соседним валиком."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие дефекты сварного шва допустимы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Те несплошности, что укладываются в лимиты выбранного по ISO 5817 или ISO 10042 уровня качества. Такой шов проходит контроль. Всё, что выходит за лимиты, считается дефектом, и шов бракуют."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Почему «шов без дефектов» в чертеже — ошибка и что писать вместо" />
+  <meta property="og:description" content="Трещины, поры, непровар, подрезы: чем опасны, откуда берутся и что прописать в чертеже, чтобы шов приняли без споров." />
+  <meta property="og:url" content="https://ironex.tech/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-26" />
+  <meta property="article:modified_time" content="2026-09-26" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Почему «шов без дефектов» в чертеже — ошибка и что писать вместо" />
+  <meta name="twitter:description" content="Трещины, поры, непровар, подрезы: чем опасны, откуда берутся и что прописать в чертеже, чтобы шов приняли без споров." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-schitaetsya-defektom-shva-a-chto-dopustimoy-nesploshnos">Что считается дефектом шва, а что допустимой несплошностью</a></li>
+<li><a href="#kakie-byvayut-defekty-svarnyh-shvov-shest-grupp">Какие бывают дефекты сварных швов: шесть групп</a></li>
+<li><a href="#treschiny-svarnogo-shva-goryachie-holodnye-i-pochemu-oni-poy">Трещины сварного шва: горячие, холодные и почему они появляются позже</a></li>
+<li><a href="#pory-v-shve-i-shlakovye-vklyucheniya-chem-zabit-metall">Поры в шве и шлаковые включения: чем забит металл</a></li>
+<li><a href="#neprovar-i-nesplavlenie-shov-est-a-soedineniya-net">Непровар и несплавление: шов есть, а соединения нет</a></li>
+<li><a href="#podrezy-prozhogi-i-izbytochnoe-usilenie-defekty-formy-shva">Подрезы, прожоги и избыточное усиление: дефекты формы шва</a></li>
+<li><a href="#defekty-po-materialam-nerzhaveyka-alyuminiy-zakalivayuschies">Дефекты по материалам: нержавейка, алюминий, закаливающиеся стали</a></li>
+<li><a href="#kak-ne-dopustit-defekty-prichina-mera">Как не допустить дефекты: причина → мера</a></li>
+<li><a href="#kak-nahodyat-defekty-metody-kontrolya-po-tipu-defekta">Как находят дефекты: методы контроля по типу дефекта</a></li>
+<li><a href="#chto-propisat-v-chertezhe-i-tz-chtoby-poluchit-shov-bez-spor">Что прописать в чертеже и ТЗ, чтобы получить шов без споров</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак</h1>
+        <p class="lede">Трещины, поры, непровар, подрезы: чем опасны, откуда берутся и что прописать в чертеже, чтобы шов приняли без споров.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Контроль качества</span>
+            <time datetime="2026-09-26">Опубликовано 26 сентября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika-cover.webp" alt="Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+          <p class="prose__lede">Дефект сварного шва — это несплошность или отклонение формы, которое вышло за допуск выбранного уровня качества. Сами по себе поры и подрезы браком не считаются: шов бракуют, когда они превышают лимит стандарта. Поэтому в чертеже пишут уровень качества по ISO 5817, а не «шов без дефектов».</p>
+
+          <h2 id="chto-schitaetsya-defektom-shva-a-chto-dopustimoy-nesploshnos">Что считается дефектом шва, а что допустимой несплошностью</h2>
+<p>Дефект сварного шва — несплошность или отклонение формы, которое вышло за допуск выбранного уровня качества. Пора, подрез или небольшой наплыв в пределах допуска браком не считаются. Шов оценивают по ISO 5817 и ISO 10042: стандарты задают лимиты для несплошностей выбранного уровня качества.</p>
+<p>Отсюда следует, что требование «шов без дефектов» в ТЗ ничего не определяет. Если граница допустимого не записана, каждая сторона проводит её сама, и приёмка превращается в спор. Перед ссылкой на стандарт в ТЗ сверьте его действующую редакцию.</p>
+<blockquote><p><strong>Факт.</strong> По ISO 5817 и ISO 10042 шов может содержать несплошности и проходить контроль, пока они не выходят за лимиты выбранного уровня качества.</p></blockquote>
+<blockquote><p>Несплошность в шве ещё не брак. Брак начинается там, где превышен допуск выбранного уровня качества.</p></blockquote>
+<div class="cta ui" id="cta" data-cta="inline">
+            <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+            <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+            <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак">Прислать чертёж на почту</a>
+          </div>
+<h2 id="kakie-byvayut-defekty-svarnyh-shvov-shest-grupp">Какие бывают дефекты сварных швов: шесть групп</h2>
+<p><img src="/images/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika-1.webp" alt="Поврежденный инжектор с трещиной в сварном шве" style="aspect-ratio:16/9"></p>
+<p><em>Инжектор с трещиной в сварном шве на испытательном стенде. Фото: <a href="https://commons.wikimedia.org/wiki/File:DAMAGED_INJECTOR_SERIAL_NUMBER_283_-_CRACKED_WELD_AND_INJECTOR_SERIAL_NUMBER_273_ON_TEST_STAND_-_LOX_LIQUID_OXYGEN_COOLING_PROGRAM_-_NARA_-_17500261.jpg" rel="nofollow noopener" target="_blank">Unknown author Unknown author or not provided</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>В этой статье дефекты собраны в шесть групп: трещины, полости и поры, твёрдые включения, несплавления и непровары, нарушения формы шва и прочие. По расположению они бывают наружными и внутренними.</p>
+<table><thead><tr><th>Группа</th><th>Примеры</th><th>Где виден</th><th>Чем выявляется</th></tr></thead><tbody><tr><td>Трещины</td><td>продольные, поперечные, в кратере</td><td>снаружи и внутри</td><td>визуальный, капиллярный, ультразвуковой контроль</td></tr><tr><td>Полости и поры</td><td>газовые поры, цепочки пор, усадочная раковина</td><td>чаще внутри</td><td>радиография, ультразвуковой контроль</td></tr><tr><td>Твёрдые включения</td><td>шлак, флюс, оксиды, вольфрам</td><td>внутри</td><td>радиография, ультразвуковой контроль</td></tr><tr><td>Несплавления и непровары</td><td>по кромке, между валиками, в корне</td><td>внутри, корень иногда снаружи</td><td>ультразвуковой контроль, радиография</td></tr><tr><td>Нарушения формы шва</td><td>подрез, наплыв, прожог, избыточное усиление</td><td>снаружи</td><td>визуально-измерительный контроль</td></tr><tr><td>Прочие</td><td>прижоги дуги, брызги металла, задиры</td><td>снаружи</td><td>визуальный контроль</td></tr></tbody></table>
+<p>Наружные дефекты видны глазом. Внутренние осмотр не найдёт, и именно они чаще всего всплывают уже в работе. Дальше разберём четыре самые частые группы.</p>
+<h2 id="treschiny-svarnogo-shva-goryachie-holodnye-i-pochemu-oni-poy">Трещины сварного шва: горячие, холодные и почему они появляются позже</h2>
+<p>Трещины бывают горячими и холодными. Горячие возникают во время сварки и остывания шва. Холодные проявляются позже: через часы или даже дни после окончания сварки, чаще на сталях. Поэтому шов, который выглядит чистым сразу после сварки, ещё не прошёл главную проверку.</p>
+<p>Из этого следует практическое правило: контроль сразу после сварки не гарантирует отсутствия трещин. Для ответственных деталей нужна выдержка перед приёмкой. Сколько именно, зависит от стали и толщины: сверяйте по нормативу на эту сталь, общих чисел не берите.</p>
+<p>Профилактика начинается до сварки. Предварительный подогрев и медленное остывание снижают риск трещин. Стали с большим содержанием серы и углерода склонны к трещинам, поэтому марку выбирают с учётом свариваемости и указывают в заказе явно.</p>
+<blockquote><p>Холодная трещина может проявиться через часы или дни, поэтому приёмка ответственной детали не должна быть мгновенной.</p></blockquote>
+<h2 id="pory-v-shve-i-shlakovye-vklyucheniya-chem-zabit-metall">Поры в шве и шлаковые включения: чем забит металл</h2>
+<p>Поры — газовые полости: газ не успел выйти из сварочной ванны до затвердевания. Шлаковые включения — твёрдые частицы внутри шва. Газ и твёрдое тело возникают по разным причинам, и меры против них разные, поэтому путать эти дефекты нельзя.</p>
+<p>Пористость создают влажный или загрязнённый металл, повреждённое покрытие электрода и неверный расход защитного газа. Ошибаются в обе стороны: и заниженный, и завышенный расход запирает газы в шве. Меры простые: очистить и просушить кромки, выставить расход по режиму, проверить электроды. Числа расхода и температуры прокалки берите из карты технологии, а не из общих таблиц.</p>
+<p>Включения не всегда шлаковые. При MIG и TIG источником становятся загрязнения: остатки ржавчины и вольфрам от электрода. Между проходами удаляйте шлак, кромки зачищайте до чистого металла. Чистая ровная кромка снижает риск включений.</p>
+<h2 id="neprovar-i-nesplavlenie-shov-est-a-soedineniya-net">Непровар и несплавление: шов есть, а соединения нет</h2>
+<p>Непровар — основной металл не проплавлен по сечению, чаще всего в корне. Несплавление — нет сплавления наплавленного металла с кромкой или соседним валиком. Снаружи шов выглядит ровно, а нагрузку держит только часть сечения.</p>
+<p>В стыковом соединении непровар дают слишком толстый электрод, быстрое движение ванны, недостаточный ток и неудачная подготовка кромок. Последнюю причину можно снять ещё на чертеже. Ориентир для стыковых швов: V-образная разделка со скосом 60–70°, минимальное притупление в корне и ровный зазор при сборке. Точные значения под вашу толщину и способ сварки задаёт технология сварки.</p>
+<p>Опасен непровар тем, что скрыт внутри. Внешний осмотр его не видит, а реальное сечение шва меньше расчётного. Деталь проходит приёмку и ломается под нагрузкой, на которую была рассчитана. Подготовка кромок остаётся самой дешёвой мерой против этого дефекта.</p>
+<h2 id="podrezy-prozhogi-i-izbytochnoe-usilenie-defekty-formy-shva">Подрезы, прожоги и избыточное усиление: дефекты формы шва</h2>
+<p>Подрез — канавка в основном металле вдоль края шва. Она уменьшает рабочую толщину металла, поэтому соединение склонно к усталостным разрушениям. Глазом подрез виден, но выглядит безобидно.</p>
+<blockquote><p>Подрез не выглядит страшно, но именно он превращает деталь под переменной нагрузкой в кандидата на усталостную трещину.</p></blockquote>
+<p>Причины подреза — избыточный ток и большая скорость перемещения горелки. Помогает многопроходная сварка. Для статичной детали допуск на подрез может быть мягче, для работающей на вибрации — строже. Это решает уровень качества в чертеже.</p>
+<p>Избыточное усиление — слишком выпуклый шов, и его высоту ограничивают проектные требования.</p>
+<blockquote><p><strong>Факт.</strong> Проектные требования обычно ограничивают высоту усиления шва 3 мм над основным металлом.</p></blockquote>
+<p>Прожог — сквозное проплавление. Чаще он случается на тонком металле, но возможен и на толстом при завышенном токе или медленном ходе горелки. Наплыв и натёк — металл лёг на непрогретую кромку и не сплавился с ней. Оба дефекта видны снаружи.</p>
+<h2 id="defekty-po-materialam-nerzhaveyka-alyuminiy-zakalivayuschies">Дефекты по материалам: нержавейка, алюминий, закаливающиеся стали</h2>
+<p>Слабые места шва зависят от металла, поэтому марку указывают в заказе явно. Для сталей, склонных к холодным трещинам, работают подогрев и медленное остывание. Сталь с большим содержанием серы и углерода лучше не варить, а заменить более свариваемой маркой ещё на этапе заказа.</p>
+<p>Для нержавеющих сталей и алюминиевых сплавов набор типичных дефектов зависит от марки и способа сварки. Спросите у технолога, какие дефекты для вашей детали вероятны и чем их контролируют, и запишите ответ в ТЗ.</p>
+<h2 id="kak-ne-dopustit-defekty-prichina-mera">Как не допустить дефекты: причина → мера</h2>
+<p>Профилактика работает, когда каждая причина закрыта конкретным действием, а не советом «соблюдайте технологию». Таблица сводит главные дефекты к причине и мере. Числа температур, расходов газа и прокалки берите из карты технологии на вашу сталь.</p>
+<table><thead><tr><th>Дефект</th><th>Главная причина</th><th>Мера</th></tr></thead><tbody><tr><td>Пористость</td><td>влага и грязь на кромках, неверный расход защитного газа</td><td>очистить и просушить кромки, выставить расход по режиму</td></tr><tr><td>Непровар</td><td>толстый электрод, малый ток, плохая разделка</td><td>V-разделка, минимальное притупление, ровный зазор</td></tr><tr><td>Трещины</td><td>сталь с большим содержанием серы и углерода, быстрое остывание</td><td>подогрев, медленное остывание, свариваемая марка</td></tr><tr><td>Подрез</td><td>избыточный ток, быстрая горелка</td><td>снизить ток и скорость, варить в несколько проходов</td></tr><tr><td>Шлаковые включения</td><td>шлак между проходами, ржавчина, вольфрам</td><td>удалять шлак после каждого прохода, зачищать кромки</td></tr><tr><td>Деформации</td><td>нагрев без закрепления</td><td>оснастка и порядок наложения швов</td></tr></tbody></table>
+<p>Оснастка держит деталь, а продуманный порядок наложения швов распределяет нагрев и снижает коробление. Ещё два условия лежат вне самой сварки: аттестованная технология сварки (WPS) и допуск сварщика. Технология фиксирует режимы, допуск подтверждает, что сварщик их повторит. Наличие аттестации технологии и сварщика сверьте с подрядчиком до заказа. Общие причины производственного брака разобраны в статье про <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki">брак при обработке металла</a>.</p>
+<h2 id="kak-nahodyat-defekty-metody-kontrolya-po-tipu-defekta">Как находят дефекты: методы контроля по типу дефекта</h2>
+<p>Неразрушающий контроль выявляет дефекты шва, но ни один метод не видит всё. Визуально-измерительный контроль нужен всегда, остальные методы добавляют по ответственности детали. Метод выбирают под тип дефекта.</p>
+<table><thead><tr><th>Метод</th><th>Что видит</th><th>Ограничение</th><th>Когда назначать</th></tr></thead><tbody><tr><td>Визуально-измерительный</td><td>подрезы, наплывы, прожоги, усиление, поверхностные трещины</td><td>внутренние дефекты не видит</td><td>всегда</td></tr><tr><td>Капиллярный</td><td>трещины и поры, выходящие на поверхность</td><td>закрытые дефекты не находит</td><td>когда нужны тонкие поверхностные трещины</td></tr><tr><td>Ультразвуковой</td><td>трещины, непровары, несплавления внутри</td><td>нужны доступ и опытный оператор</td><td>ответственные стыковые швы</td></tr><tr><td>Радиографический</td><td>поры, включения, непровар</td><td>нужна защита от излучения</td><td>ответственные детали, нужен снимок в протокол</td></tr><tr><td>Испытание на герметичность</td><td>сквозные дефекты</td><td>несквозные не находит</td><td>ёмкости и трубопроводы</td></tr></tbody></table>
+<p>Для сталей, склонных к трещинам, контроль назначают после выдержки. Вскрытие шва с лабораторным исследованием остаётся для спорных случаев и выборочной проверки. Методику и нормы оценки задаёт стандарт на каждый метод: в ТЗ ссылайтесь на его действующую редакцию.</p>
+<h2 id="chto-propisat-v-chertezhe-i-tz-chtoby-poluchit-shov-bez-spor">Что прописать в чертеже и ТЗ, чтобы получить шов без споров</h2>
+<p>Приёмка становится предсказуемой, когда чертёж и ТЗ задают уровень качества, метод контроля и документ, по которому принимают партию. Вместо «без дефектов» пишут уровень качества по ISO 5817 или ISO 10042. В чертёж или ТЗ на сварную деталь стоит вписать пять строк:</p>
+<ul><li>уровень качества шва по ISO 5817 или ISO 10042, лимиты сверьте по тексту стандарта;</li><li>марку основного металла явно, с учётом свариваемости;</li><li>категорию и объём контроля: какие методы и на какой доле швов, выдержку перед контролем для сталей, склонных к трещинам;</li><li>нормативный документ приёмки партии и состав протокола контроля;</li><li>порядок исправления: выборка дефекта, контроль полноты выборки, заварка, повторный контроль.</li></ul>
+<p>Допустимое число исправлений одного участка найдите в нормативе и укажите отдельно. Для деталей с жидкостью или газом добавьте проверку корневой стороны на «усы». В трубопроводах они перекрывают поток и могут оторваться, повредив оборудование ниже по линии.</p>
+<blockquote><p><strong>Мнение.</strong> Если деталь работает под переменной нагрузкой, просите более строгий уровень качества. Для статичной детали часто хватает более мягкого. Лимиты сверьте по тексту стандарта.</p></blockquote>
+<p>Как подрядчик фиксирует эти условия в расчёте, разобрано в статье про то, <a href="/blog/chto-dolzhno-vhodit-v-kommercheskoe-predlozhenie-na-izgotovlenie-detal">что должно входить в коммерческое предложение</a>. Если чертёж сварной детали уже готов, пришлите его: посмотрим, какой уровень качества и контроль в нём указаны, и посчитаем <a href="/">изготовление деталей по чертежам</a>.</p>
+
+          <h2 id="faq">Частые вопросы</h2>
+          <div class="faq">
+            <details open>
+              <summary>Какие дефекты сварных швов бывают?</summary>
+              <div class="faq__a"><p>Трещины, поры, твёрдые включения, непровары и несплавления, а также нарушения формы шва: подрезы, наплывы, прожоги.</p></div>
+            </details>
+<details>
+              <summary>Чем непровар отличается от несплавления?</summary>
+              <div class="faq__a"><p>При непроваре основной металл не проплавлен по сечению. При несплавлении наплавленный металл не сплавился с кромкой или соседним валиком.</p></div>
+            </details>
+<details>
+              <summary>Какие дефекты сварного шва допустимы?</summary>
+              <div class="faq__a"><p>Те несплошности, что укладываются в лимиты выбранного по ISO 5817 или ISO 10042 уровня качества. Такой шов проходит контроль. Всё, что выходит за лимиты, считается дефектом, и шов бракуют.</p></div>
+            </details>
+          </div>
+
+          <h2 id="istochniki">Источники</h2>
+          <ul class="sources">
+            <li><a href="https://weldguru.com/common-welding-defects/" rel="noopener" target="_blank">Common welding defects</a> — WeldGuru</li>
+<li><a href="https://www.iso.org/" rel="noopener" target="_blank">Международная организация по стандартизации (ISO): каталог стандартов, в том числе ISO 5817 и ISO 10042</a> — ISO</li>
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Федеральное агентство по техническому регулированию и метрологии</a> — Росстандарт</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">
+            <img src="/images/blog/brak-pri-obrabotke-metalla-prichiny-oshibki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/svarka-payka-skleivanie-metod-soedineniya.html">
+            <img src="/images/blog/svarka-payka-skleivanie-metod-soedineniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Сварка vs пайка vs склеивание: когда какой способ соединения деталей выгоднее</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/detal-prishla-s-defektom-kak-oformit-pretenziyu.html">
+            <img src="/images/blog/detal-prishla-s-defektom-kak-oformit-pretenziyu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Пришла деталь с дефектом — как зафиксировать и что требовать</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
