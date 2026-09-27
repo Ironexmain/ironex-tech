@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Деталировка: что входит в комплект чертежей перед запуском</title>
+  <meta name="description" content="Как из сборочного чертежа получить рабочие чертежи деталей: порядок работы, допуски, шероховатость, резьбы и чек-лист проверки перед заказом." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/detalirovka-pered-proizvodstvom.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/detalirovka-pered-proizvodstvom.html#article",
+      "headline": "Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха",
+      "description": "Как из сборочного чертежа получить рабочие чертежи деталей: порядок работы, допуски, шероховатость, резьбы и чек-лист проверки перед заказом.",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/detalirovka-pered-proizvodstvom.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/detalirovka-pered-proizvodstvom-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "деталировка",
+        "что такое деталировка",
+        "деталировка чертежа",
+        "рабочий чертёж детали",
+        "деталировка и спецификация",
+        "порядок деталирования"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем деталировка отличается от спецификации?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Спецификация — перечень состава изделия, деталировка — рабочие чертежи отдельных деталей с размерами, допусками и требованиями. Строки спецификации ссылаются на эти чертежи по обозначениям."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли получить деталировку автоматически из 3D-модели?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "САПР строит чертежи по модели, но резьбы, допуски точнее общих и шероховатость конкретных поверхностей всё равно нужно проставить на чертеже. Модель не заменяет чертёж и не должна ему противоречить."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что входит в комплект документов для запуска детали в производство?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Как минимум рабочие чертежи деталей со спецификацией; для узла добавляют сборочный чертёж, а 3D-модель прикладывают, если она совпадает с чертежом. Форматы файлов уточняйте у подрядчика."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Деталировка: что проверить в чертежах до отправки в цех" />
+  <meta property="og:description" content="Как из сборочного чертежа получить рабочие чертежи деталей: порядок работы, допуски, шероховатость, резьбы и чек-лист проверки перед заказом." />
+  <meta property="og:url" content="https://ironex.tech/blog/detalirovka-pered-proizvodstvom.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/detalirovka-pered-proizvodstvom-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-27" />
+  <meta property="article:modified_time" content="2026-09-27" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Деталировка: что проверить в чертежах до отправки в цех" />
+  <meta name="twitter:description" content="Как из сборочного чертежа получить рабочие чертежи деталей: порядок работы, допуски, шероховатость, резьбы и чек-лист проверки перед заказом." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/detalirovka-pered-proizvodstvom-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-detalirovka-i-chto-vy-poluchaete-na-vyhode">Что такое деталировка и что вы получаете на выходе</a></li>
+<li><a href="#sborochnyy-chertezh-detalirovka-spetsifikatsiya-kto-za-chto">Сборочный чертёж, деталировка, спецификация: кто за что отвечает</a></li>
+<li><a href="#poryadok-detalirovaniya-ot-sborki-k-komplektu-dlya-tseha">Порядок деталирования: от сборки к комплекту для цеха</a></li>
+<li><a href="#iz-chego-sostoit-rabochiy-chertezh-metallicheskoy-detali">Из чего состоит рабочий чертёж металлической детали</a></li>
+<li><a href="#dopuski-sherohovatost-i-rezby-chto-ukazat-a-chto-net">Допуски, шероховатость и резьбы: что указать, а что нет</a></li>
+<li><a href="#3d-model-i-chertezh-chto-peredat-podryadchiku">3D-модель и чертёж: что передать подрядчику</a></li>
+<li><a href="#kak-resheniya-na-chertezhe-vliyayut-na-sposob-izgotovleniya">Как решения на чертеже влияют на способ изготовления и цену</a></li>
+<li><a href="#chastye-oshibki-i-chek-list-pered-otpravkoy-chertezhey">Частые ошибки и чек-лист перед отправкой чертежей</a></li>
+<li><a href="#chto-delat-dalshe">Что делать дальше</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха</h1>
+        <p class="lede">Как из сборочного чертежа получить рабочие чертежи деталей: порядок работы, допуски, шероховатость, резьбы и чек-лист проверки перед заказом.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-09-27">Опубликовано 27 сентября 2026</time>
+
+            <span>7 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/detalirovka-pered-proizvodstvom-cover.webp" alt="Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Деталировка — это перевод сборочного чертежа в рабочие чертежи отдельных деталей: с размерами, допусками, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>ю, материалом и техтребованиями. Пока этого нет, цех не может ни посчитать заказ, ни запустить его: он гадает, что вы имели в виду. Ниже — порядок работы и чек-лист проверки комплекта перед отправкой.</p>
+<h2 id="chto-takoe-detalirovka-i-chto-vy-poluchaete-na-vyhode">Что такое деталировка и что вы получаете на выходе</h2>
+<p>Вы прислали в цех сборку и получили в ответ список вопросов: из какого материала деталь, какой допуск на посадочное отверстие, что за резьба. Значит, деталировки нет. Деталировка — это выполнение рабочих чертежей деталей по сборочному чертежу изделия.</p>
+<p>На выходе получается рабочий чертёж на каждую нестандартную деталь плюс спецификация. По ним цех считает заказ и запускает изготовление. Стандартный крепёж и покупные изделия обычно отдельного чертежа не получают: они остаются строкой в спецификации.</p>
+<p>В цепочке деталировка стоит после проектирования изделия и перед расчётом и запуском в производство. Правила оформления таких документов задаёт ЕСКД.</p>
+<blockquote><p>Деталировка превращает идею сборки в задание, которое цех выполнит без уточняющих звонков.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха">Прислать чертёж на почту</a>
+</div>
+<h2 id="sborochnyy-chertezh-detalirovka-spetsifikatsiya-kto-za-chto">Сборочный чертёж, деталировка, спецификация: кто за что отвечает</h2>
+<p><img alt="Производственный цех с оборудованием для обработки и сборки деталей" src="/images/blog/detalirovka-pered-proizvodstvom-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Цех по производству — место, где техническую документацию воплощают в готовые компоненты для конечной сборки. Фото: <a href="https://commons.wikimedia.org/wiki/File:Tesla_factory_floor.jpg" rel="nofollow noopener" target="_blank">Steve Jurvetson</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Сборочный чертёж показывает, как детали соединены и как устроено изделие. Спецификация перечисляет его состав. Деталировка — работа по сборке, а рабочий чертёж детали — её результат: на каждую нестандартную деталь свой лист.</p>
+<table><thead><tr><th>Документ</th><th>Назначение</th><th>Что содержит</th><th>Кто с ним работает</th></tr></thead><tbody><tr><td>Сборочный чертёж</td><td>Показывает устройство изделия и соединение деталей</td><td>Изображение сборки, габариты, номера позиций</td><td>Конструктор</td></tr><tr><td>Спецификация</td><td>Описывает состав изделия</td><td>Обозначения, названия и количество деталей, стандартных и покупных изделий</td><td>Снабжение и расчёт</td></tr><tr><td>Деталировка</td><td>Превращает сборку в задания на детали</td><td>Комплект рабочих чертежей, выполненных по сборочному чертежу</td><td>Конструктор, технолог</td></tr><tr><td>Рабочий чертёж детали</td><td>Задаёт форму и требования к одной детали</td><td>Изображения, размеры, допуски, шероховатость, материал, техтребования</td><td>Цех</td></tr></tbody></table>
+<p>Документы связаны обозначениями: строка спецификации должна находить свой чертёж. Если обозначение в спецификации не совпало с обозначением на листе, цех не знает, какой чертёж к какой строке относится.</p>
+<h2 id="poryadok-detalirovaniya-ot-sborki-k-komplektu-dlya-tseha">Порядок деталирования: от сборки к комплекту для цеха</h2>
+<p>Деталируют за пять шагов: изучают сборку, отбирают детали под чертёж, выбирают изображения, ставят размеры с допусками и сводят комплект со спецификацией. Рабочий чертёж детали задаёт допуски и посадки в сопряжениях, поэтому на четвёртом шаге нужно понимать, как детали работают в узле.</p>
+<ol><li><strong>Изучите сборку.</strong> Прочитайте основную надпись, спецификацию и описание, выясните принцип работы изделия. Результат: вы знаете функцию каждой детали.</li><li><strong>Отделите детали под чертёж от стандартных и покупных.</strong> Вторые обычно остаются только в спецификации. Результат: список деталей, которым нужен лист.</li><li><strong>Выберите минимальный набор изображений.</strong> Виды, разрезы, сечения — ровно столько, чтобы форма читалась однозначно. Результат: набор изображений на каждый лист.</li><li><strong>Проставьте размеры от баз и назначьте допуски в сопряжениях.</strong> Результат: деталь можно изготовить и проверить по одному листу.</li><li><strong>Присвойте обозначения и сверьте комплект.</strong> Сведите деталировку со спецификацией. Результат: каждая строка спецификации находит свой лист.</li></ol>
+<h2 id="iz-chego-sostoit-rabochiy-chertezh-metallicheskoy-detali">Из чего состоит рабочий чертёж металлической детали</h2>
+<p>Рабочий чертёж — один лист на одну деталь с пятью зонами: изображения, размеры, шероховатость, технические требования и основная надпись.</p>
+<h3>Изображения и размеры от базы</h3>
+<p>Размеры ставьте от одной базы, чтобы погрешность цепочки не копилась. Сначала габариты, затем критичные функциональные размеры, например расстояние между ключевыми отверстиями, и только потом второстепенные. Повторяющийся элемент размечайте один раз с количеством: чертёж короче, а размеры одинаковых элементов не разойдутся.</p>
+<h3>Материал, основная надпись, технические требования</h3>
+<p>Материал и сортамент, термообработку и покрытие пишите на чертеже, а не подразумевайте. Заменить материал на аналог можно только через согласование: <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali">как согласовать аналог материала для детали</a>.</p>
+<h2 id="dopuski-sherohovatost-i-rezby-chto-ukazat-a-chto-net">Допуски, шероховатость и резьбы: что указать, а что нет</h2>
+<p>Чертёж должен говорить только то, что жёстче общих требований, а остальное закрывает ссылка на стандарт. Перегруженный допусками чертёж не безопаснее, он дороже: каждый лишний допуск добавляет операции и контроль.</p>
+<blockquote><p>Допуск на чертеже нужен только там, где он жёстче общих; остальное закрывает ссылка на стандарт общих допусков.</p></blockquote>
+<h3>Допуски: общие и жёсткие</h3>
+<p>Для размеров без допуска достаточно ссылки на стандарт общих допусков. В международной практике это ISO 2768: Hubs, например, работает по нему и для металлов принимает класс medium или fine. Жёсткий допуск на каждом размере, как правило, удорожает деталь без пользы для функции.</p>
+<h3>Шероховатость на самой поверхности</h3>
+<p>Особую шероховатость одной поверхности обозначайте прямо на ней, а не в общих примечаниях. Так цех не пропустит требование и не распространит его на всю деталь.</p>
+<h3>Резьба: обозначение, расположение, длина</h3>
+<p>Резьбу обозначайте стандартно, например М4×0,7, а не диаметром: голый диаметр не говорит, что это резьба и какого профиля. Укажите расположение, размер и длину каждой резьбы.</p>
+<h2 id="3d-model-i-chertezh-chto-peredat-podryadchiku">3D-модель и чертёж: что передать подрядчику</h2>
+<p>Модель есть, а деталь вышла не такой — типовая история. Модель задаёт форму, но резьбы, допуски точнее общих и шероховатость конкретных поверхностей передаются только чертежом.</p>
+<p>Если приложены оба файла, они не должны противоречить друг другу. Особенно это касается основной надписи: материал и покрытие в ней должны совпадать с моделью.</p>
+<blockquote><p><strong>Важно.</strong> Когда основная надпись спорит с моделью, цех получает две версии задания и вынужден выбирать между ними или писать вам с вопросами.</p></blockquote>
+<p>Отдельно проверьте метод проекции. Стандарты ISO и DIN используют проекцию первого угла; если чертёж выполнен по другой системе, а вы этого не заметили, виды читаются переставленными.</p>
+<p>В комплект кладите рабочие чертежи, спецификацию, при необходимости сборочный чертёж и модель. Форматы (PDF, DWG, DXF, STEP) уточняйте у подрядчика.</p>
+<h2 id="kak-resheniya-na-chertezhe-vliyayut-na-sposob-izgotovleniya">Как решения на чертеже влияют на способ изготовления и цену</h2>
+<p>Чем жёстче допуск и чище поверхность, тем больше операций и контроля. Чем проще форма, тем шире выбор способа изготовления. Итоговая цена зависит от материала, партии и оборудования.</p>
+<p>Допуски формы и расположения дополняют допуски и посадки. Позиционный допуск, например, требует, чтобы ось отверстия лежала в воображаемом цилиндре вокруг номинального положения; в примере Hubs диаметр такого цилиндра — 0,1 мм. Такие допуски рекомендуют для критичных сборок и поздних стадий проектирования, включая серию.</p>
+<blockquote><p>Допуски формы и расположения — компромисс: они позволяют ослабить часть допусков, но дороже в контроле, поэтому их ставят там, где без них сборка не работает.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если делаете один прототип, ограничьтесь обычными допусками: сложная метрология удорожит единичную деталь. Если запускаете серию с критичной сборкой, вложитесь в допуски формы и расположения. О других факторах цены — <a href="/blog/izgotovlenie-detaley-iz-alyuminiya-chto-vliyaet-na-tehnologiyu-i-cenu">что влияет на цену детали из алюминия</a>.</p></blockquote>
+<h2 id="chastye-oshibki-i-chek-list-pered-otpravkoy-chertezhey">Частые ошибки и чек-лист перед отправкой чертежей</h2>
+<p>Чаще всего в комплекте не указан материал, нет технических требований, отсутствуют допуски там, где они критичны, или не обозначен метод проекции. Ещё две ошибки: спецификация расходится с чертежами по обозначениям и количеству, а основная надпись противоречит модели. Последствия: уточняющие вопросы, задержка расчёта и риск сделать не то.</p>
+<p>Пройдите комплект по списку:</p>
+<ul><li><strong>Материал.</strong> Указаны материал и сортамент, а термообработка и покрытие — если они нужны.</li><li><strong>Базы и габариты.</strong> Размеры идут от общей базы, габариты на месте.</li><li><strong>Допуски.</strong> Жёсткие стоят только в сопряжениях, для остального есть ссылка на общие.</li><li><strong>Шероховатость.</strong> Особая поставлена на самой поверхности, общая вынесена в примечание.</li><li><strong>Резьбы.</strong> Обозначены стандартно, с расположением и длиной.</li><li><strong>Техтребования.</strong> Они на листе, метод проекции указан.</li><li><strong>Совпадение документов.</strong> Спецификация и чертежи сходятся по обозначениям, количеству и названиям, а основная надпись не спорит с моделью.</li></ul>
+<p>Когда комплект готов, следующий этап — <a href="/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii">как принять первую деталь перед запуском серии</a>.</p>
+<h2 id="chto-delat-dalshe">Что делать дальше</h2>
+<p>Соберите комплект и отправьте его на расчёт: рабочие чертежи, спецификация, при необходимости сборочный чертёж и модель. Три мысли, которые стоит держать в голове.</p>
+<p>Чертёж отвечает за то, чего нет в модели: резьбы, допуски точнее общих, шероховатость отдельных поверхностей. Общие допуски закрывают всё остальное. А комплект должен быть согласован внутри: спецификация, чертежи и модель говорят одно и то же.</p>
+<p>Отправить комплект можно на странице <a href="/kontakty.html">«Пришлите чертёж»</a>: срок расчёта там указан — 3 рабочих дня. О том, какие работы мы делаем, — в разделе <a href="/">изготовление деталей по чертежам</a>. Сомневаетесь, что комплект полный, — пришлите как есть и напишите, что вызывает вопросы.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем деталировка отличается от спецификации?</summary>
+<div class="faq__a"><p>Спецификация — перечень состава изделия, деталировка — рабочие чертежи отдельных деталей с размерами, допусками и требованиями. Строки спецификации ссылаются на эти чертежи по обозначениям.</p></div>
+</details>
+<details>
+<summary>Можно ли получить деталировку автоматически из 3D-модели?</summary>
+<div class="faq__a"><p>САПР строит чертежи по модели, но резьбы, допуски точнее общих и шероховатость конкретных поверхностей всё равно нужно проставить на чертеже. Модель не заменяет чертёж и не должна ему противоречить.</p></div>
+</details>
+<details>
+<summary>Что входит в комплект документов для запуска детали в производство?</summary>
+<div class="faq__a"><p>Как минимум рабочие чертежи деталей со спецификацией; для узла добавляют сборочный чертёж, а 3D-модель прикладывают, если она совпадает с чертежом. Форматы файлов уточняйте у подрядчика.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.hubs.com/knowledge-base/how-prepare-technical-drawing-cnc-machining/" rel="noopener" target="_blank">База знаний Hubs: подготовка технического чертежа для ЧПУ-обработки</a> — Hubs</li>
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Федеральное агентство по техническому регулированию и метрологии</a> — Росстандарт, национальный орган по стандартизации: отсюда можно начать поиск действующих стандартов ЕСКД</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/kontraktnoe-proizvodstvo-detaley-kak-rabotaet.html">
+            <img src="/images/blog/kontraktnoe-proizvodstvo-detaley-kak-rabotaet-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Контрактное производство деталей по чертежу: как оно устроено и когда выгоднее своего цеха</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">
+            <img src="/images/blog/brak-pri-obrabotke-metalla-prichiny-oshibki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/proizvodstvo-zalivnyh-detaley-vstroennye-uzly.html">
+            <img src="/images/blog/proizvodstvo-zalivnyh-detaley-vstroennye-uzly-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Заливные детали со встроенными узлами: как выбрать метод под тираж и чертёж</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
