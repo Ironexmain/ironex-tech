@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Обработка нержавейки и титана: режимы резания, сварка и отделка</title>
+      <link>https://ironex.tech/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html</guid>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Режимы точения и фрезерования нержавейки, особенности титана, сварка и отделка: что учесть технологу и что прописать в чертеже.</description>
+    </item>
+    <item>
+      <title>Как правильно обозначить резьбу на чертеже: метрическая, дюймовая и трубная резьба</title>
+      <link>https://ironex.tech/blog/oboznachenie-rezby-na-chertezhe.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/oboznachenie-rezby-na-chertezhe.html</guid>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Как читать и писать обозначение резьбы на чертеже: метрическая M, дюймовая UNC/UNF, трубная G/R/Rc, классы точности, глубина резьбы и частые ошибки.</description>
+    </item>
+    <item>
+      <title>Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу</title>
+      <link>https://ironex.tech/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat.html</guid>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Чем ЛС59-1 отличается от БрОЦС5-5-5 по прочности, стойкости к обесцинкованию и цене обработки — и как выбрать сплав, а не просто «латунь» или «бронза», под чертёж детали.</description>
+    </item>
     <item>
       <title>Обработка металла: какие бывают виды и как выбрать метод под свою деталь</title>
       <link>https://ironex.tech/blog/obrabotka-metalla-vidy-vybor-metoda.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Термообработка металла для деталей: когда нужна закалка и отпуск, как они влияют на цену и срок изготовления. 4 поля в заявке, без которых расчёт неполный.</description>
-    </item>
-    <item>
-      <title>Как отдать серию другому исполнителю и не потерять чертежи</title>
-      <link>https://ironex.tech/blog/smena-podryadchika-v-processe-proekta-kak-peredat-dokumentaciyu.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/smena-podryadchika-v-processe-proekta-kak-peredat-dokumentaciyu.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Смена подрядчика по металлообработке: соберите 2 акта и полный пакет чертежей, чтобы новый исполнитель принял заказ без повторной оплаты уже сделанной работы.</description>
-    </item>
-    <item>
-      <title>Ra и Rz на чертеже: что требовать, чтобы не переплатить за чистоту</title>
-      <link>https://ironex.tech/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Шероховатость поверхности Ra Rz: чем отличаются параметры, как читать обозначение на чертеже и почему требование Ra 0,8 вместо 3,2 удорожает деталь.</description>
-    </item>
-    <item>
-      <title>Цинк, фосфат или нержавейка: чем закрыть резьбу под среду</title>
-      <link>https://ironex.tech/blog/rezbovye-soedineniya-kakoe-pokrytie-rezby-dlya-kakoy-sredy.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/rezbovye-soedineniya-kakoe-pokrytie-rezby-dlya-kakoy-sredy.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Покрытие резьбы крепежа: 6 типов под среду. Как выбрать антикоррозийное покрытие резьбовых соединений и крепёж, чтобы узел не ржавел на улице и в сыром цехе.</description>
     </item>
   </channel>
 </rss>

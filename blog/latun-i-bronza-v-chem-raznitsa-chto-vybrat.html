@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Латунь и бронза: в чём разница и что выбрать для детали</title>
+  <meta name="description" content="Чем ЛС59-1 отличается от БрОЦС5-5-5 по прочности, стойкости к обесцинкованию и цене обработки — и как выбрать сплав, а не просто «латунь» или «бронза», под чертёж детали." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat.html#article",
+      "headline": "Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу",
+      "description": "Чем ЛС59-1 отличается от БрОЦС5-5-5 по прочности, стойкости к обесцинкованию и цене обработки — и как выбрать сплав, а не просто «латунь» или «бронза», под чертёж детали.",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "латунь и бронза",
+        "марки латуни",
+        "антифрикционные сплавы",
+        "ЛС59-1",
+        "БрОЦС5-5-5",
+        "обесцинкование латуни"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как отличить латунь от бронзы, если нет клейма?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "По цвету и весу точно не определить: жёлтая латунь и некоторые бронзы визуально похожи. Надёжный способ — спектральный анализ или маркировка партии проката."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли использовать ЛС59-1 для деталей с питьевой водой?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Свинец в составе ЛС59-1 облегчает токарную обработку, но такие сплавы могут не проходить требования RoHS и NSF/ANSI для питьевой воды и пищевого контакта — для этих задач нужна бессвинцовая марка."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что прочнее — латунь или бронза?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Однозначного ответа нет: цифры прочности и твёрдости отличаются по конкретным маркам, а не по названию сплава — сравнивать нужно, например, ЛС59-1 с БрОЦС5-5-5."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему бронза обычно дороже латуни в обработке?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Кремнистая и другие бронзы твёрже и абразивнее латуни, из-за чего быстрее изнашивается инструмент и нужны сниженные скорости резания — это увеличивает стоимость механообработки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Подходит ли латунь для деталей в морской воде?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычная латунь с высоким содержанием цинка склонна к обесцинкованию в морской воде — для таких условий берут латунь с добавкой олова или бронзу."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Латунь vs бронза: где ошибка в выборе сплава стоит детали" />
+  <meta property="og:description" content="Чем ЛС59-1 отличается от БрОЦС5-5-5 по прочности, стойкости к обесцинкованию и цене обработки — и как выбрать сплав, а не просто «латунь» или «бронза», под чертёж детали." />
+  <meta property="og:url" content="https://ironex.tech/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-28" />
+  <meta property="article:modified_time" content="2026-09-28" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Латунь vs бронза: где ошибка в выборе сплава стоит детали" />
+  <meta name="twitter:description" content="Чем ЛС59-1 отличается от БрОЦС5-5-5 по прочности, стойкости к обесцинкованию и цене обработки — и как выбрать сплав, а не просто «латунь» или «бронза», под чертёж детали." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#sostav-latuni-marki">Состав латуни и марки</a></li>
+<li><a href="#sostav-bronzy-gruppy">Группы бронзы</a></li>
+<li><a href="#mehanicheskie-svoystva-tablica">Прочность и твёрдость в цифрах</a></li>
+<li><a href="#korroziya-obesczinkovanie">Коррозия и обесцинкование</a></li>
+<li><a href="#antifrikcionnye-svoystva-trenie">Антифрикционные свойства</a></li>
+<li><a href="#obrabatyvaemost-svarka">Обработка и сварка</a></li>
+<li><a href="#elektroprovodnost-teploprovodnost">Электро- и теплопроводность</a></li>
+<li><a href="#kak-vybrat-splav-pod-detal">Как выбрать сплав</a></li>
+<li><a href="#chastye-oshibki-vybora">Частые ошибки</a></li>
+<li><a href="#itog-chto-vybrat">Итог</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу</h1>
+        <p class="lede">Чем ЛС59-1 отличается от БрОЦС5-5-5 по прочности, стойкости к обесцинкованию и цене обработки — и как выбрать сплав, а не просто «латунь» или «бронза», под чертёж детали.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-09-28">Опубликовано 28 сентября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat-cover.webp" alt="Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Латунь и бронза — разные сплавы на основе меди: в латуни главная добавка цинк, в бронзе — олово, кремний или алюминий. Разница не в цвете, а в составе: латунь дешевле обрабатывать и она годится для контактов, но обесцинковывается во влажной среде, а бронза держит узлы трения и агрессивные среды, зато стоит дороже в материале и в станочном времени.</p>
+<h2 id="sostav-latuni-marki">Из чего состоит латунь и почему марка зависит от процента цинка</h2>
+<p>Латунь — сплав меди и цинка, и именно доля цинка определяет, для какой детали марка подойдёт. Диапазоны состава по маркам закреплены в профильном ГОСТ на латунь — при заказе стоит сверяться с действующей редакцией документа, а не ориентироваться на слово «латунь» без марки.</p>
+<ul><li>обычная латунь (Л63, Л68) — универсальная, пластичная;</li><li>автоматная латунь ЛС59-1 — со свинцом, для токарной обработки;</li><li>морская латунь (аналог ЛО62-1) — с оловом, для влажной среды.</li></ul>
+<h3>Обычная латунь: Л63 и Л68</h3>
+<p>Это база линейки: хорошая пластичность, легко штампуется и вытягивается, годится для крепежа, гильз и декоративных деталей. Обрабатывается резанием средне — не хуже стали, но заметно проще большинства бронз.</p>
+<h3>Автоматная латунь ЛС59-1</h3>
+<p>Свинец в составе облегчает токарную обработку: стружка ломается короче, инструмент изнашивается меньше. Но тот же свинец ограничивает применение — для деталей, контактирующих с питьевой водой или пищей, такой сплав может не проходить требования RoHS и NSF/ANSI, и нужна бессвинцовая марка.</p>
+<h3>Морская латунь</h3>
+<p>Добавка олова снижает риск обесцинкования в морской воде и влажной среде. Обычная жёлтая латунь без олова в таких условиях служит заметно меньше.</p>
+<blockquote><p><strong>Факт.</strong> Жёлтой считают латунь с содержанием цинка от 33% и выше — такие марки сильнее подвержены обесцинкованию во влажной среде, и это нужно учитывать при выборе под конкретные условия эксплуатации.</p></blockquote>
+<h2 id="sostav-bronzy-gruppy">Бронза: какие бывают группы помимо оловянной</h2>
+<p><img alt="Древний бронзовый слиток возрастом 4000 лет" src="/images/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Бронзовый слиток из раскопок в Швеции. Исторический материал возрастом около 4000 лет, предназначенный для переплавки. Фото: <a href="https://commons.wikimedia.org/wiki/File:Bronze_ingot_%284663338658%29.jpg" rel="nofollow noopener" target="_blank">The Swedish History Museum, Stockholm from Sweden</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>«Бронза» — не одна марка, а название целой группы сплавов меди с разными легирующими элементами: оловом, алюминием или кремнием. Заказ «бронзы» без уточнения группы часто даёт непредсказуемый результат: вместо привычной оловянной можно получить кремнистую с другими свойствами. Марки и химсостав закреплены в профильных ГОСТах на бронзу — их и стоит запрашивать при заказе конкретной марки.</p>
+<h3>Оловянная бронза</h3>
+<p>Классический состав — медь с оловом, иногда с добавкой цинка и свинца. Антифрикционная БрОЦС5-5-5 из этой ветви — стандартный выбор для подшипников скольжения и втулок, где нужна и прочность, и низкое трение.</p>
+<h3>Безоловянная бронза: алюминиевая и кремнистая</h3>
+<p>Алюминиевая бронза (аналог БрАЖ9-4) сочетает прочность и стойкость к коррозии — подходит для нагруженных деталей в агрессивной среде. Кремнистая бронза (аналог БрКМц3-1) почти не содержит олова: около 96% меди и 2,8–3,8% кремния. Она твёрже латуни, но и абразивнее — это увеличивает износ инструмента при обработке.</p>
+<blockquote><p>Заказывая «бронзу» без марки, можно получить сплав с совсем другими свойствами — уточняйте группу и ГОСТ, а не название.</p></blockquote>
+<h2 id="mehanicheskie-svoystva-tablica">Прочность, твёрдость и температура плавления в цифрах</h2>
+<p>Латунь и бронза различаются по прочности и твёрдости не по названию, а по конкретной марке — сравнивать нужно цифры ЛС59-1 против БрОЦС5-5-5 или БрАЖ9-4, а не общие категории. Точные значения предела прочности, твёрдости и плотности для каждой марки зависят от партии проката и режима термообработки — их нужно брать из паспорта материала или действующего ГОСТа на конкретную марку, а не из общих таблиц в интернете. По группам это выглядит так: Л63 и ЛС59-1 — латуни, БрОЦС5-5-5 — оловянная антифрикционная бронза, БрАЖ9-4 — алюминиевая бронза.</p>
+<p>Температура плавления латуни держится в районе 900–940 °C, у большинства бронз она выше — точное значение зависит от марки и требует уточнения по паспорту материала.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу">Прислать чертёж на почту</a>
+</div>
+<h2 id="korroziya-obesczinkovanie">Коррозия: где латунь подводит, а бронза держится</h2>
+<p><img alt="Древние бронзовые топоры и мечи" src="/images/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat-2.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Топоры, мечи и орудия из бронзы иллюстрируют высокую прочность сплава. Фото: <a href="https://commons.wikimedia.org/wiki/File:Bronze_Age_copper_alloy_ingots_%28FindID_403615%29.jpg" rel="nofollow noopener" target="_blank">The British Museum, Ian Richardson, 2017-10-30 14:42:48</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Обесцинкование — скрытая угроза латуни: это избирательная коррозия, при которой цинк вымывается из сплава, а остаётся пористая ослабленная медная структура. Деталь внешне сохраняет форму, но теряет прочность — и это можно не заметить до отказа узла.</p>
+<p>Латунь плохо переносит хлориды, аммиак, ацетаты и некоторые кислоты — в таких средах срок службы детали резко сокращается. Для агрессивной химии и морской воды нужна другая группа сплавов, например кремнистая бронза, которая устойчивее к обесцинкованию и точечной коррозии в целом.</p>
+<blockquote><p>Деталь из латуни может выглядеть целой снаружи и при этом уже потерять прочность внутри — обесцинкование не видно на глаз.</p></blockquote>
+<p>Морская латунь с добавкой олова частично закрывает этот риск, но обычная жёлтая латунь без олова для влажных и хлоридных сред не подходит вовсе. Если чертёж предполагает контакт с морской водой, растворами хлоридов или аммиаком, бронзу стоит рассматривать по умолчанию, а латунь — только с проверкой конкретной марки.</p>
+<h2 id="antifrikcionnye-svoystva-trenie">Антифрикционные свойства: подшипники и узлы трения</h2>
+<p>Латунь без доработки плохо работает в парах трения и абразивной среде: без поверхностного упрочнения или пары с износостойким материалом деталь быстро истирается. Для подшипников скольжения и нагруженных трущихся узлов выбор латуни требует отдельного обоснования, а не берётся по умолчанию.</p>
+<p>Антифрикционные бронзы — БрОЦС5-5-5 и БрАЖ9-4 — стандартный ответ на эту задачу: их структура держит смазочную пленку и снижает коэффициент трения при контакте со сталью. Диапазон рабочих температур для конкретной марки в узле трения нужно уточнять по паспорту материала, он зависит от смазки и нагрузки.</p>
+<blockquote><p>Латунь в подшипнике без доработки — временный компромисс, а не техническое решение: рано или поздно узел придётся переделывать под бронзу.</p></blockquote>
+<h2 id="obrabatyvaemost-svarka">Обрабатываемость резанием и свариваемость</h2>
+<p>Автоматная латунь ЛС59-1 обрабатывается резанием лучше большинства сплавов на медной основе: свинец дробит стружку и снижает налипание на резец, что сокращает время токарной операции. Это прямо влияет на стоимость партии — чем проще обработка, тем меньше станочного времени в смете.</p>
+<p>Кремнистая бронза твёрже и абразивнее латуни. Из-за этого быстрее изнашивается инструмент, а на точных операциях нужны сниженные скорости резания и иногда специальная оснастка — это увеличивает стоимость механообработки по сравнению с латунью.</p>
+<p>Для сварных конструкций кремнистая бронза удобнее латуни: она хорошо варится TIG и MIG, дуга стабильная, разбрызгивания мало. У латуни с высоким содержанием цинка такого заявленного преимущества нет — при нагреве цинк частично испаряется, и это усложняет сварной шов. Про <a href="/razdel/tehnologii.html">как выбрать маршрут обработки под конкретный сплав</a> стоит уточнить отдельно, если деталь идёт в узел со сваркой.</p>
+<h2 id="elektroprovodnost-teploprovodnost">Электро- и теплопроводность: когда это решает выбор</h2>
+<p>Электропроводность латуни составляет примерно 15–30% IACS в зависимости от состава — этого достаточно для клемм, разъёмов и низковольтных контактов, но заметно ниже чистой меди. Для сильноточных деталей латунь может не подойти вовсе, и здесь выбор смещается в сторону меди или медных сплавов с более высокой проводимостью.</p>
+<p>Температура плавления латуни держится около 900–940 °C, и это ограничивает её применение в горячих средах — против <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавеющей стали</a> и некоторых бронз она проигрывает по термостойкости. Для деталей с постоянным нагревом латунь стоит рассматривать только после проверки рабочей температуры узла.</p>
+<h2 id="kak-vybrat-splav-pod-detal">Как выбрать сплав под конкретную деталь</h2>
+<p>Выбор между латунью и бронзой держится на пяти проверяемых критериях, а не на привычке заказывать «то, что обычно берут». Разбирать деталь стоит именно по ним — тогда марка подбирается под условия, а не наугад.</p>
+<ul><li><strong>Среда.</strong> Влажность, хлориды, морская вода — латунь с оловом или бронза; обычная жёлтая латунь здесь не годится.</li><li><strong>Нагрузка и трение.</strong> Узел скольжения — антифрикционная бронза, а не латунь без доработки.</li><li><strong>Обработка и бюджет.</strong> Латунь обычно дешевле и в материале, и в станочном времени — для точных недорогих деталей это плюс.</li><li><strong>Электрика и тепло.</strong> Латунь — для контактов и низкого нагрева, не для силовых горячих узлов.</li><li><strong>Документы.</strong> В заявке указывайте точную марку и ГОСТ, а при необходимости — требование NSF/RoHS.</li></ul>
+<p>Если бюджет ограничен, а узел работает без экстремальных нагрузок, латунь с поверхностным упрочнением часто закрывает задачу дешевле бронзы — но проверьте это на конкретном чертеже, а не по умолчанию. Похожая логика работает и для других металлов: <a href="/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie">как выбирают алюминиевый сплав для похожей задачи</a> показывает те же критерии на другом материале. Смету по конкретной марке и партии можно прикинуть на странице <a href="/ceny.html">цен на металлообработку</a>, а из чего вообще складывается итоговая стоимость детали — читайте отдельно про <a href="/razdel/ekonomika-zakaza.html">из чего складывается цена детали</a>.</p>
+<h2 id="chastye-oshibki-vybora">Частые ошибки при выборе латуни или бронзы</h2>
+<p>Ошибки в спецификации материала обычно не в самом сплаве, а в недостатке уточнений при заказе — марка и группа теряются, а деталь получает не те свойства, что нужны по чертежу.</p>
+<p>Заказ «бронзы» без уточнения группы — частый случай: вместо привычной оловянной приходит кремнистая с другой твёрдостью и другим поведением при сварке. Второй пример — свинец в ЛС59-1 в деталях для питьевой воды или пищевого контакта без проверки RoHS и NSF: сплав отработает по механике, но не пройдёт санитарные требования. Третий — латунь в узле трения без поверхностного упрочнения или износостойкой пары: деталь истирается быстрее расчётного срока, и узел приходится переделывать под бронзу уже после отказа.</p>
+<h2 id="itog-chto-vybrat">Итог: что выбрать для детали</h2>
+<p>Латунь и бронза решают разные задачи, и выбор между ними определяется условиями эксплуатации, а не привычкой или ценой самой заготовки.</p>
+<ul><li><strong>Латунь</strong> — где важна обрабатываемость резанием, невысокая цена и электропроводность в обычной среде без агрессивной химии.</li><li><strong>Бронза</strong> — где важна прочность в узле трения, стойкость к влажной или химически агрессивной среде, свариваемость конструкции.</li><li><strong>В заявке и чертеже</strong> всегда указывайте точную марку и ГОСТ — «латунь» и «бронза» без марки не спецификация, а направление поиска.</li></ul>
+<p>Если чертёж уже готов и марка сплава определена, оставьте заявку с указанием ГОСТ и требуемых свойств — расчёт по конкретной детали покажет, оправдан ли переход с латуни на бронзу именно в вашем случае.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Как отличить латунь от бронзы, если нет клейма?</summary>
+<div class="faq__a"><p>По цвету и весу точно не определить: жёлтая латунь и некоторые бронзы визуально похожи. Надёжный способ — спектральный анализ или маркировка партии проката.</p></div>
+</details>
+<details>
+<summary>Можно ли использовать ЛС59-1 для деталей с питьевой водой?</summary>
+<div class="faq__a"><p>Свинец в составе ЛС59-1 облегчает токарную обработку, но такие сплавы могут не проходить требования RoHS и NSF/ANSI для питьевой воды и пищевого контакта — для этих задач нужна бессвинцовая марка.</p></div>
+</details>
+<details>
+<summary>Что прочнее — латунь или бронза?</summary>
+<div class="faq__a"><p>Однозначного ответа нет: цифры прочности и твёрдости отличаются по конкретным маркам, а не по названию сплава — сравнивать нужно, например, ЛС59-1 с БрОЦС5-5-5.</p></div>
+</details>
+<details>
+<summary>Почему бронза обычно дороже латуни в обработке?</summary>
+<div class="faq__a"><p>Кремнистая и другие бронзы твёрже и абразивнее латуни, из-за чего быстрее изнашивается инструмент и нужны сниженные скорости резания — это увеличивает стоимость механообработки.</p></div>
+</details>
+<details>
+<summary>Подходит ли латунь для деталей в морской воде?</summary>
+<div class="faq__a"><p>Обычная латунь с высоким содержанием цинка склонна к обесцинкованию в морской воде — для таких условий берут латунь с добавкой олова или бронзу.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.xometry.com/resources/materials/silicon-bronze-vs-brass/" rel="noopener" target="_blank">Silicon Bronze vs Brass</a> — Xometry</li>
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">ГОСТ и стандарты на металлопродукцию</a> — Росстандарт</li>
+<li><a href="https://docs.cntd.ru/" rel="noopener" target="_blank">Электронный фонд нормативно-технической документации</a> — ФГБУ «РСТ»</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie.html">
+            <img src="/images/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Алюминиевый сплав для детали по чертежу: чем Д16Т, АМг6 и АД31 отличаются и какой выбрать</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">
+            <img src="/images/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Экономика заказа</span>
+              <span class="mat-card__title">Металлообработка: цена детали по чертежу</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/anodirovanie-i-ocinkovka-metalla-chem-otlichayutsya-pokrytiya.html">
+            <img src="/images/blog/anodirovanie-i-ocinkovka-metalla-chem-otlichayutsya-pokrytiya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Оксидный слой или цинк: какое покрытие заказать под деталь</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обработка нержавеющей стали: режимы, сварка, титан | IRONEX</title>
+  <meta name="description" content="Режимы точения и фрезерования нержавейки, особенности титана, сварка и отделка: что учесть технологу и что прописать в чертеже." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html#article",
+      "headline": "Обработка нержавейки и титана: режимы резания, сварка и отделка",
+      "description": "Режимы точения и фрезерования нержавейки, особенности титана, сварка и отделка: что учесть технологу и что прописать в чертеже.",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "обработка нержавеющей стали режимы",
+        "режимы резания нержавейки",
+        "титан обработка скорость подачи",
+        "сварка нержавейки особенности",
+        "пассивация нержавейки"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Обработка нержавейки и титана: режимы резания, сварка и отделка"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Почему нержавейка налипает на резец и быстро изнашивает инструмент?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Аустенитная сталь упрочняется под резцом и плохо отводит тепло, поэтому металл налипает на кромку и образует нарост. Помогают острая кромка, подача выше порога трения, непрерывный рез и своевременная смена пластины."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как выбрать скорость и подачу при обработке титана?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Скорость берут ниже, чем для нержавейки, а подачу не занижают. Стартовые значения для ВТ1-0 и ВТ6 берут из каталога производителя инструмента и уточняют по жёсткости станка."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "В чём особенности сварки нержавейки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нужны малое тепловложение, защита шва и корня аргоном и подходящая присадка. Перегрев даёт деформации и риск межкристаллитной коррозии, а после сварки шов травят и пассивируют."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Нержавейка и титан: режимы резания, сварка и отделка без брака" />
+  <meta property="og:description" content="Режимы точения и фрезерования нержавейки, особенности титана, сварка и отделка: что учесть технологу и что прописать в чертеже." />
+  <meta property="og:url" content="https://ironex.tech/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-28" />
+  <meta property="article:modified_time" content="2026-09-28" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Нержавейка и титан: режимы резания, сварка и отделка без брака" />
+  <meta name="twitter:description" content="Режимы точения и фрезерования нержавейки, особенности титана, сварка и отделка: что учесть технологу и что прописать в чертеже." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Обработка нержавейки и титана: режимы резания, сварка и отделка">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Обработка нержавейки и титана: режимы резания, сварка и отделка</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#pochemu-nerzhaveyka-i-titan-obrabatyvayutsya-tyazhelee-obych">Почему нержавейка и титан обрабатываются тяжелее обычной стали</a></li>
+<li><a href="#rezhimy-rezaniya-nerzhaveyuschey-stali-tochenie-frezerovanie">Режимы резания нержавеющей стали: точение, фрезерование, сверление</a></li>
+<li><a href="#titan-skorost-i-podacha-ohlazhdenie-risk-vozgoraniya-struzhk">Титан: скорость и подача, охлаждение, риск возгорания стружки</a></li>
+<li><a href="#instrument-i-sozh-chto-stavit-na-stanok-i-kak-ohlazhdat">Инструмент и СОЖ: что ставить на станок и как охлаждать</a></li>
+<li><a href="#svarka-nerzhaveyki-osobennosti-sposob-i-zaschita-shva">Сварка нержавейки: особенности, способ и защита шва</a></li>
+<li><a href="#svarka-titana-i-raznorodnyh-sochetaniy">Сварка титана и разнородных сочетаний</a></li>
+<li><a href="#otdelka-posle-obrabotki-travlenie-passivatsiya-shlifovka-ele">Отделка после обработки: травление, пассивация, шлифовка, электрополировка</a></li>
+<li><a href="#chto-ukazat-v-chertezhe-i-tz-chtoby-material-ne-uvelichil-ts">Что указать в чертеже и ТЗ, чтобы материал не увеличил цену и срок</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Обработка нержавейки и титана: режимы резания, сварка и отделка">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Обработка нержавейки и титана: режимы резания, сварка и отделка</h1>
+        <p class="lede">Режимы точения и фрезерования нержавейки, особенности титана, сварка и отделка: что учесть технологу и что прописать в чертеже.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-09-28">Опубликовано 28 сентября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka-cover.webp" alt="Обработка нержавейки и титана: режимы резания, сварка и отделка" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Нержавейку и титан режут медленнее обычной стали, но подачу занижать нельзя: под резцом металл упрочняется, а тепло остаётся у кромки. Ниже: как выбрать режимы, чем охлаждать, что учесть при сварке и какую отделку заказать после обработки.</p>
+<h2 id="pochemu-nerzhaveyka-i-titan-obrabatyvayutsya-tyazhelee-obych">Почему нержавейка и титан обрабатываются тяжелее обычной стали</h2>
+<p>Деталь из <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавейки</a> обычно стоит дороже такой же из стали 45: режимы приходится занижать, а инструмент меняют чаще. Причин две. Аустенитная нержавеющая сталь склонна к наклёпу: поверхность под резцом упрочняется, и следующий проход режет уже более твёрдый слой. К этому добавляется низкая теплопроводность: тепло остаётся у кромки и не уходит со стружкой.</p>
+<p>Аустенитные марки — например, 12Х18Н10Т и 08Х18Н10. Стружка у них вязкая и сливная, она липнет к кромке, а налипший металл рвёт режущую грань. Это одна из типичных <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki">причин брака при обработке металла</a>.</p>
+<p>У титановых сплавов ВТ1-0 и ВТ6 теплопроводность тоже низкая, а при нагреве они ещё и реагируют с материалом инструмента. Точные свойства конкретной марки берите из паспорта и сертификата на металл, а не из пересказов: в открытых источниках цифры расходятся. Как <a href="/razdel/materialy.html">марка металла меняет обработку и цену</a>, показано в разделе о материалах.</p>
+<table><thead><tr><th>Материал</th><th>Главная сложность при резании</th><th>Что менять в обработке</th></tr></thead><tbody><tr><td>Аустенитная нержавейка</td><td>Наклёп и налипание стружки</td><td>Острая кромка, подача выше порога трения, непрерывный рез</td></tr><tr><td>Дуплексная сталь</td><td>Больше нагрузка на инструмент</td><td>Жёсткая оснастка, короткий вылет, щадящая скорость</td></tr><tr><td>ВТ1-0</td><td>Тепло у кромки, реакция с инструментом</td><td>Пониженная скорость, обильное охлаждение</td></tr><tr><td>ВТ6</td><td>Хуже отводит тепло, чем ВТ1-0</td><td>Ещё ниже скорость, контроль износа пластины</td></tr></tbody></table>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Обработка нержавейки и титана: режимы резания, сварка и отделка">Прислать чертёж на почту</a>
+</div>
+<h2 id="rezhimy-rezaniya-nerzhaveyuschey-stali-tochenie-frezerovanie">Режимы резания нержавеющей стали: точение, фрезерование, сверление</h2>
+<p><img alt="Точение нержавеющей стали на токарном станке" src="/images/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Токарная обработка нержавеющей стали. Выбор режима резания и охлаждения критичен для предотвращения перегрева и получения требуемой точности. Фото: <a href="https://commons.wikimedia.org/wiki/File:US_Navy_040727-N-5821P-015_Machinery_Repairman_3rd_Class_Desmond_Nelson_of_Stratford,_Conn.,_uses_a_lathe_to_machine_a_piece_of_stainless_steel.jpg" rel="nofollow noopener" target="_blank">U.S. Navy photo by Photographer's Mate 3rd Class Jason T. Poplin</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Порядок выбора такой. Стартовую скорость берут из каталога производителя инструмента. Подачу задают не ниже порога, при котором кромка режет, а не трёт. Глубину назначают больше наклёпанного слоя. Режимы определяют стойкость твёрдосплавного инструмента: неверная подача убивает пластину раньше, чем она отработает свой ресурс.</p>
+<table><thead><tr><th>Операция</th><th>Скорость резания</th><th>Подача</th><th>Глубина резания</th></tr></thead><tbody><tr><td>Точение</td><td>Стартовая из каталога на пластину</td><td>Не ниже порога, где кромка режет</td><td>Больше наклёпанного слоя</td></tr><tr><td>Фрезерование</td><td>Стартовая из каталога на фрезу</td><td>Стабильная на зуб, без выдержек</td><td>Радиальная меньше, чем для стали</td></tr><tr><td>Сверление</td><td>Ниже, чем для стали</td><td>Постоянная, без остановок</td><td>По диаметру и вылету сверла</td></tr></tbody></table>
+<p>Числа не вписаны намеренно: их берут из каталогов Sandvik Coromant, Seco, Iscar или Mitsubishi под конкретную пластину. Итог зависит от жёсткости станка и вылета инструмента.</p>
+<h3>Точение: черновое и чистовое</h3>
+<p>На черновом проходе глубину делают большой, подачу — рабочей. На чистовом глубину не сводят к нулю: резец уйдёт в слой, упрочнённый предыдущим проходом. При слишком малой подаче кромка не режет, а трёт, и нагрев растёт быстрее, чем его уносит СОЖ.</p>
+<h3>Фрезерование и сверление</h3>
+<blockquote><p>Остановка инструмента в резе оставляет упрочнённую зону, поэтому рез должен идти непрерывно.</p></blockquote>
+<p>Кромку фрезы чаще всего ломают на врезании и выходе, поэтому траекторию входа делают плавной. Сверло не должно тереть без реза: подачу держат постоянной и выводят стружку. Отдельные вопросы по ЧПУ разобраны в статье про то, <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke">что указать в заявке на обработку нержавейки на ЧПУ</a>.</p>
+<h2 id="titan-skorost-i-podacha-ohlazhdenie-risk-vozgoraniya-struzhk">Титан: скорость и подача, охлаждение, риск возгорания стружки</h2>
+<p>Скорость резания титана берут ниже, чем для нержавейки, а подачу не занижают. Универсальной цифры нет: стартовые значения для ВТ1-0 и ВТ6 берут из каталога производителя инструмента и уточняют по станку. Любая цифра без источника и без привязки к пластине вводит в заблуждение.</p>
+<blockquote><p>У титана проблема не в твёрдости, а в тепле, которое не уходит в стружку. Режим строят вокруг отвода тепла.</p></blockquote>
+<p>У титановых сплавов низкая теплопроводность, поэтому вся тепловая нагрузка ложится на кромку. Сплав ВТ6 отводит тепло хуже ВТ1-0, значит, для него тепловая нагрузка на инструмент выше. Конкретные значения теплопроводности сверяйте по справочнику.</p>
+<p>Охлаждение нужно обильное. У СОЖ для титана есть ограничения по присадкам, в первую очередь по хлору и сере: требования уточняйте в документации производителя жидкости и инструмента.</p>
+<p>Мелкая стружка и пыль титана пожароопасны. Свои правила здесь придумывать нельзя: работайте по действующим требованиям безопасности предприятия и рекомендациям поставщика материала.</p>
+<h2 id="instrument-i-sozh-chto-stavit-na-stanok-i-kak-ohlazhdat">Инструмент и СОЖ: что ставить на станок и как охлаждать</h2>
+<p><img alt="Каталог станков для обработки металлов" src="/images/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka-2.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Станки для механической обработки металлов. Фото: <a href="https://commons.wikimedia.org/wiki/File:Associated_British_Machine_Tool_Makers00.jpg" rel="nofollow noopener" target="_blank">Associated British Machine Tool Makers</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Под нержавейку и титан ставят твёрдый сплав с износостойким покрытием: TiAlN, AlCrN и аналоги. Кромка острая, геометрия положительная, стружколом рассчитан на вязкую стружку. Пластину меняют по износу задней грани, а не «пока режет»: изношенная кромка трёт металл и запускает наклёп.</p>
+<p>Частый вопрос: почему нельзя просто сильнее охладить? Потому что охлаждение не заменяет режим. Если подача занижена и кромка трёт, тепло рождается быстрее, чем его уносит жидкость. СОЖ снижает нагрев и помогает выводить стружку, но правильную подачу не подменяет.</p>
+<table><thead><tr><th>Материал</th><th>Инструмент и покрытие</th><th>Охлаждение</th><th>Чего избегать</th></tr></thead><tbody><tr><td>Нержавейка</td><td>Твёрдый сплав с TiAlN или AlCrN, острая кромка</td><td>Эмульсия или синтетика, через инструмент, если станок умеет</td><td>Подачи ниже порога трения, изношенной пластины</td></tr><tr><td>Титан</td><td>Твёрдый сплав с покрытием, положительная геометрия</td><td>Обильно, через инструмент, концентрацию держать по паспорту</td><td>Остановок в резе, присадок с хлором и серой без проверки</td></tr></tbody></table>
+<p>Способ подачи и концентрацию СОЖ задаёт технолог под станок: эмульсия, синтетика и масла ведут себя по-разному.</p>
+<h2 id="svarka-nerzhaveyki-osobennosti-sposob-i-zaschita-shva">Сварка нержавейки: особенности, способ и защита шва</h2>
+<p>Сварка нержавейки требует защитного газа аргона и малого тепловложения. Шов и корень защищают от воздуха, присадку подбирают под марку. Перегрев провоцирует межкристаллитную коррозию и деформации. Заказчику это нужно знать, чтобы правильно описать шов в чертеже.</p>
+<p>Способ выбирают под деталь. TIG подходит для тонкостенных деталей и ответственных швов. MIG/MAG даёт производительность на более толстом металле. Лазер вносит мало тепла и меньше ведёт деталь. Присадку берут по марке основного металла, подбор делает технолог по паспорту сварочных материалов.</p>
+<p>Порядок работы:</p>
+<ol><li>Подготовить и обезжирить кромки.</li><li>Защитить корень шва газом.</li><li>Варить на малом тепловложении.</li><li>Проверить цвет шва: цвета побежалости показывают, что защита была неполной.</li><li>Стравить и пассивировать шов.</li></ol>
+<p>Для нержавейки используют отдельный инструмент, чтобы не занести углеродистые частицы, из-за которых потом появляются очаги ржавчины.</p>
+<h2 id="svarka-titana-i-raznorodnyh-sochetaniy">Сварка титана и разнородных сочетаний</h2>
+<p>У титана защита строже, чем у нержавейки. Титановые сплавы при сварке требуют аргона не только для шва, но и для обратной стороны и зоны остывания: металл, пока не остыл, активно тянет из воздуха кислород и азот. Допустимые цвета побежалости берут из нормативов заказчика или подрядчика, а не из общих таблиц.</p>
+<blockquote><p>У титана шов защищают до полного остывания, а сочетание с другими металлами решают в конструкции, а не на сварочном посту.</p></blockquote>
+<p>Подготовка кромок жёстче: любое загрязнение и жир делают шов хрупким, поэтому кромки обезжиривают и чистят перед каждой сваркой.</p>
+<p>Титан со сталью напрямую не сваривают: в шве образуются хрупкие фазы. Какие соединения применяют вместо этого, определяет конструктор по источникам, а не сварщик на месте.</p>
+<p>Нержавейку с конструкционной сталью варить можно, но присадку выбирает технолог. Заказчику достаточно указать назначение узла: среда, нагрузка, требования к коррозионной стойкости. От этого зависит, чем будут варить.</p>
+<h2 id="otdelka-posle-obrabotki-travlenie-passivatsiya-shlifovka-ele">Отделка после обработки: травление, пассивация, шлифовка, электрополировка</h2>
+<p>Отделка для нержавейки — продолжение маршрута детали. Травление и пассивация восстанавливают защитные свойства аустенитной стали после сварки: травление снимает окалину и цвета побежалости, пассивация возвращает защитную плёнку. Шлифовка и полировка меняют вид и <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>, а не коррозионную стойкость.</p>
+<table><thead><tr><th>Операция</th><th>Что убирает или даёт</th><th>Когда просить</th></tr></thead><tbody><tr><td>Травление</td><td>Снимает окалину и цвета побежалости после сварки</td><td>После любой сварки видимого шва</td></tr><tr><td>Пассивация</td><td>Восстанавливает защитную плёнку</td><td>Для деталей в агрессивной среде</td></tr><tr><td>Шлифовка и полировка</td><td>Снижают шероховатость, выравнивают вид</td><td>Когда важен внешний вид или чистота поверхности</td></tr><tr><td>Электрополировка</td><td>Сглаживает микрорельеф, снижает налипание</td><td>Для гигиеничных и медицинских деталей</td></tr></tbody></table>
+<p>Достижимую шероховатость Ra уточняйте у подрядчика до запуска детали в работу.</p>
+<p>Проверяют результат визуально и замером шероховатости. Критерии приёмки заказчик прописывает заранее.</p>
+<blockquote><p><strong>Мнение.</strong> Если шов работает в агрессивной среде, вписывайте травление и пассивацию в чертёж сразу: дописывать их после расчёта значит пересчитывать срок и цену.</p></blockquote>
+<h2 id="chto-ukazat-v-chertezhe-i-tz-chtoby-material-ne-uvelichil-ts">Что указать в чертеже и ТЗ, чтобы материал не увеличил цену и срок</h2>
+<p>Чертёж и ТЗ заказчика задают режимы резания косвенно: марка, допуски и шероховатость определяют инструмент, число проходов и машинное время. Без этих данных подрядчик вернётся с вопросами и срок сдвинется. Материал влияет на цену по одной логике: меньшие режимы дают больше машинного времени, а инструмент изнашивается быстрее.</p>
+<p>Что должно быть в заявке:</p>
+<ul><li>марка, состояние поставки и стандарт, по которому идёт материал;</li><li>сертификат на металл или требование его предоставить;</li><li>допуски и шероховатость с указанием только нужных поверхностей: избыточные допуски удорожают деталь;</li><li>требования к шву: способ сварки, контроль, допустимые дефекты;</li><li>отделка: травление, пассивация, шлифовка, электрополировка;</li><li>назначение узла и среда, в которой он работает;</li><li>количество деталей в партии.</li></ul>
+<p>Чем точнее описан шов и отделка, тем меньше уточнений и тем ближе итоговая цена к первому расчёту.</p>
+<p><a href="/kontakty.html">Пришлите чертёж на расчёт</a>, а если марка или отделка не определены, напишите в заявке назначение узла: технолог подскажет варианты.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Почему нержавейка налипает на резец и быстро изнашивает инструмент?</summary>
+<div class="faq__a"><p>Аустенитная сталь упрочняется под резцом и плохо отводит тепло, поэтому металл налипает на кромку и образует нарост. Помогают острая кромка, подача выше порога трения, непрерывный рез и своевременная смена пластины.</p></div>
+</details>
+<details>
+<summary>Как выбрать скорость и подачу при обработке титана?</summary>
+<div class="faq__a"><p>Скорость берут ниже, чем для нержавейки, а подачу не занижают. Стартовые значения для ВТ1-0 и ВТ6 берут из каталога производителя инструмента и уточняют по жёсткости станка.</p></div>
+</details>
+<details>
+<summary>В чём особенности сварки нержавейки?</summary>
+<div class="faq__a"><p>Нужны малое тепловложение, защита шва и корня аргоном и подходящая присадка. Перегрев даёт деформации и риск межкристаллитной коррозии, а после сварки шов травят и пассивируют.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.rst.gov.ru" rel="noopener" target="_blank">Росстандарт: национальные стандарты</a> — Федеральное агентство по техническому регулированию и метрологии</li>
+<li><a href="https://www.sandvik.coromant.com" rel="noopener" target="_blank">Sandvik Coromant: каталог и рекомендации по обработке нержавеющих сталей и титана</a> — Sandvik Coromant</li>
+<li><a href="https://www.astm.org" rel="noopener" target="_blank">ASTM International: стандарты по очистке и пассивации нержавеющей стали</a> — ASTM International</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">
+            <img src="/images/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Обработка нержавейки ЧПУ: что указать в заявке</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/rezbovye-soedineniya-kakoe-pokrytie-rezby-dlya-kakoy-sredy.html">
+            <img src="/images/blog/rezbovye-soedineniya-kakoe-pokrytie-rezby-dlya-kakoy-sredy-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Цинк, фосфат или нержавейка: чем закрыть резьбу под среду</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku.html">
+            <img src="/images/blog/kak-podgotovit-dokumentaciyu-na-svarnuyu-sborku-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Сварка на заказ: документация на сварную сборку</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Обработка нержавейки и титана: режимы резания, сварка и отделка">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
