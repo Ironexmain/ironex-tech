@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Посадка с натягом, зазором, переходная: как выбрать соединение</title>
+  <meta name="description" content="Разбираем три типа посадок — с зазором, переходные и с натягом: квалитеты, допуски по ЕСДП и алгоритм выбора под задачу." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html#article",
+      "headline": "Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения",
+      "description": "Разбираем три типа посадок — с зазором, переходные и с натягом: квалитеты, допуски по ЕСДП и алгоритм выбора под задачу.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "посадки с зазором",
+        "переходная посадка",
+        "посадка с натягом допуски",
+        "система допусков и посадок",
+        "H7/h6",
+        "квалитет"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем посадка с натягом отличается от переходной?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В посадке с натягом вал больше отверстия у любой пары из допуска. Соединение не рассчитывают на разборку. В переходной поля пересекаются: у одной пары выйдет зазор, у другой — небольшой натяг."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как обозначается посадка с натягом на чертеже?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Дробью. Заглавная буква и номер квалитета — отверстие, строчная буква и номер — вал. Пример записи — H7/u7. Заглавная буква всегда относится к отверстию. Буква сама не заменяет таблицу отклонений для вашего диаметра."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли разобрать соединение с натягом без повреждения деталей?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Распрессовка сминает микрорельеф, и вторая сборка уже не повторяет первую. Если узел должны разбирать, натяг не закладывают: берут зазор или переходную посадку со шпонкой или шлицами."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли указывать шероховатость, если квалитет на диаметре уже стоит?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Квалитет задаёт только допуск на размер. Шероховатость — отдельное требование. ГОСТ 25346-2013 прямо допускает добавить его, когда одного размера мало, чтобы посадка работала."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Три типа посадок и как не ошибиться с выбором для чертежа" />
+  <meta property="og:description" content="Разбираем три типа посадок — с зазором, переходные и с натягом: квалитеты, допуски по ЕСДП и алгоритм выбора под задачу." />
+  <meta property="og:url" content="https://ironex.tech/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-29" />
+  <meta property="article:modified_time" content="2026-09-29" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Три типа посадок и как не ошибиться с выбором для чертежа" />
+  <meta name="twitter:description" content="Разбираем три типа посадок — с зазором, переходные и с натягом: квалитеты, допуски по ЕСДП и алгоритм выбора под задачу." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-posadka-i-zachem-nuzhna-sistema-dopuskov">Что такое посадка и зачем нужна система допусков?</a></li>
+<li><a href="#tri-tipa-posadok-zazor-perehodnaya-i-natyag">Три типа посадок: зазор, переходная и натяг</a></li>
+<li><a href="#kvalitety-i-polya-dopuskov-po-esdp">Квалитеты и поля допусков по ЕСДП</a></li>
+<li><a href="#gde-primenyayutsya-posadki-s-zazorom">Где применяются посадки с зазором?</a></li>
+<li><a href="#perehodnye-posadki-kogda-nuzhen-kompromiss">Переходные посадки: когда нужен компромисс</a></li>
+<li><a href="#kak-schitayut-natyag-i-kontaktnoe-davlenie-pri-posadke">Как считают натяг и контактное давление при посадке?</a></li>
+<li><a href="#algoritm-vybora-posadki-pod-zadachu">Алгоритм выбора посадки под задачу</a></li>
+<li><a href="#sherohovatost-posadochnyh-poverhnostey-i-poterya-natyaga">Шероховатость посадочных поверхностей и потеря натяга</a></li>
+<li><a href="#sborka-i-raspressovka-soedineniy-s-natyagom">Сборка и распрессовка соединений с натягом</a></li>
+<li><a href="#chastye-oshibki-pri-vybore-i-raschete-posadki">Частые ошибки при выборе и расчёте посадки</a></li>
+<li><a href="#itog-kak-ne-oshibitsya-pri-zakaze-detali">Итог: как не ошибиться при заказе детали</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения</h1>
+        <p class="lede">Разбираем три типа посадок — с зазором, переходные и с натягом: квалитеты, допуски по ЕСДП и алгоритм выбора под задачу.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-09-29">Опубликовано 29 сентября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat-cover.webp" alt="Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Посадка с зазором, переходная и с натягом задают, как вал сядет в отверстие: свободно, с лёгким усилием или намертво. От этого зависит, разберётся ли узел на сервисе и выдержит ли нагрузку без шпонки. Ниже — как читать дробь вроде H7/h6 и выбрать тип под задачу.</p>
+<h2 id="chto-takoe-posadka-i-zachem-nuzhna-sistema-dopuskov">Что такое посадка и зачем нужна система допусков?</h2>
+<p>Посадка — соотношение размеров вала и отверстия до сборки. Это не сама запрессовка. По ней видно, войдёт вал свободно, с усилием или намертво.</p>
+<p>В ГОСТ 25346-2013 посадка — соединение отверстия и вала. Тип решает, что будет у любой годной пары: всегда зазор, всегда натяг или оба варианта, если поля пересекаются.</p>
+<p>Поршень ходит в цилиндре, потому что он меньше цилиндра: это зазор. Втулка, которую не снять с вала руками, сидит с натягом: вал больше отверстия.</p>
+<p>Деталь не выходит строго в номинал. Станок, инструмент и температура цеха дают разброс. На чертеже поэтому стоит не одна цифра, а допуск. В стандарте это интервал допуска, в цехе то же называют полем допуска.</p>
+<p>Система нужна для взаимозаменяемости. Деталь с одного завода должна встать в узел, собранный на другом.</p>
+<blockquote><p><strong>Факт.</strong> Таблица допусков в ГОСТ 25346-2013 покрывает квалитеты с IT01 до IT18 включительно. Меньше номер — уже допуск. Начиная с IT6 допуск вырастает в 10 раз на каждые пять квалитетов грубее.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если узел будут разбирать на обслуживании, закладывайте зазор или переходную посадку. Натяг при снятии портит посадочную поверхность.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения">Прислать чертёж на почту</a>
+</div>
+<h2 id="tri-tipa-posadok-zazor-perehodnaya-i-natyag">Три типа посадок: зазор, переходная и натяг</h2>
+<p>Три типа различаются предельными размерами, а не усилием пресса.</p>
+<p>Посадка с зазором устроена так: нижний предельный размер отверстия больше верхнего размера вала или равен ему. Зазор есть у любой годной пары. Соединение двигается или разбирается без разрушения деталей.</p>
+<p>Посадка с натягом — обратный случай. Даже самое большое отверстие из допуска не больше самого малого вала. Натяг есть всегда. Снять такую деталь без повреждения поверхности обычно нельзя.</p>
+<p>Переходная посадка стоит между этими исходами по смыслу, но не «по середине размера». Интервалы допуска отверстия и вала пересекаются. Пока пару не измерили, неизвестно, выйдет зазор или небольшой натяг.</p>
+<p>На чертеже посадку пишут дробью. Заглавная буква — отверстие, строчная — вал, дальше номер квалитета. Буквы IT в этой записи нет: ГОСТ 25346-2013 показывает это на примере класса допуска Н7.</p>
+<p>H7/h6 читается по частям. Отверстие H, квалитет 7, — система отверстия: нижнее отклонение отверстия равно нулю. Вал h, квалитет 6: верхнее отклонение вала равно нулю. Минимальный зазор этой пары равен нулю.</p>
+<blockquote><p>Заглавная буква в дроби — всегда отверстие. Строчная — всегда вал.</p></blockquote>
+<h2 id="kvalitety-i-polya-dopuskov-po-esdp">Квалитеты и поля допусков по ЕСДП</h2>
+<p>Квалитет задаёт ширину допуска. Буква показывает, где эта ширина лежит относительно номинала. Путать их нельзя: одна и та же семёрка с другой буквой — другое соединение.</p>
+<p>Общие правила и квалитеты собраны в ГОСТ 25346-2013 (ISO 286-1:2010). Числовые предельные отклонения по диапазонам диаметров — в ГОСТ 25347-2013 (ISO 286-2:2010). В заявках и на старых штампах эту пару часто называют ЕСДП.</p>
+<p>Меньше номер квалитета — уже допуск. Как эта запись выглядит на поле чертежа, разобрано отдельно: <a href="/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html">как читать квалитет на чертеже</a>.</p>
+<p>Основные отклонения обозначают буквами. У отверстий — прописные, от A до ZC. У валов — строчные, от a до zc.</p>
+<p>Систему отверстия берут, когда проще держать одно базовое отверстие и подгонять вал. Отверстие H делают одной оснасткой. Растачивать каждое отверстие под свой вал — отдельная операция на каждую деталь. Если неясно, даст ли размер литьё или только резание, смотрите <a href="/blog/lite-ili-mehanoobrabotka-kak-vybrat-metod-dlya-detali.html">литьё или механообработка для точных поверхностей</a>.</p>
+<p>Микрометры из чужого интервала диаметров сюда не подставляют. У одного квалитета в таблице своя строка на каждый диапазон размеров. Цифры берут из ГОСТ 25347-2013 для своего интервала.</p>
+<table><thead><tr><th>Квалитет</th><th>Что делает номер</th><th>Пример записи</th></tr></thead><tbody><tr><td>IT5–IT6</td><td>узкий допуск</td><td>H6/h5</td></tr><tr><td>IT7–IT8</td><td>допуск шире</td><td>H7/h6, H8/h7</td></tr><tr><td>IT9–IT11</td><td>допуск ещё шире</td><td>H9/d9, H11/h11</td></tr></tbody></table>
+<h2 id="gde-primenyayutsya-posadki-s-zazorom">Где применяются посадки с зазором?</h2>
+<p>Посадки с зазором ставят там, где деталь должна вращаться, скользить или сниматься без нагрева. Вал в пределах допуска не больше отверстия.</p>
+<p>Буква h даёт валу нулевое верхнее отклонение. В паре с отверстием H минимальный зазор равен нулю: деталь центрируется и обычно снимается без пресса. Буквы от a к g опускают вал ниже номинала, зазор растёт. Величину смотрят в ГОСТ 25347-2013 для своего диаметра.</p>
+<p>Запись подбирают под характер хода, а не по памяти. H7/g6 оставляют зазор даже в самой тесной паре. H7/h6 допускает нулевой зазор. H8/h7 — те же буквы H и h, но допуск шире.</p>
+<p>В контрактной обработке так сидят валы в подшипниках скольжения, штоки гидроцилиндров и сменные втулки. Сборка обходится без нагрева. При большом зазоре пара начинает стучать и перекашиваться, поэтому узел трения смазывают и следят за износом.</p>
+<h2 id="perehodnye-posadki-kogda-nuzhen-kompromiss">Переходные посадки: когда нужен компромисс</h2>
+<p>Переходная посадка нужна там, где деталь должна стоять соосно, а узел всё равно разбирают. Рядом с границей часто пишут H7/js6, H7/k6, H7/n6. Буква тип не гарантирует. Пересекаются ли поля, считают по отклонениям своего диаметра в ГОСТ 25347-2013.</p>
+<p>У одной пары из допуска выйдет лёгкий зазор, у другой — лёгкий натяг. До измерения итог неизвестен. Поэтому переходную посадку не считают «средней» между двумя другими: это отдельный режим.</p>
+<p>Такие записи ставят на зубчатые колёса, муфты, шпоночные и шлицевые соединения. Крутящий момент не вешают на натяг, которого может не оказаться. Рядом оставляют шпонку, шлицы или стопор. Иначе пара с почти нулевым натягом провернётся от вибрации.</p>
+<h2 id="kak-schitayut-natyag-i-kontaktnoe-davlenie-pri-posadke">Как считают натяг и контактное давление при посадке?</h2>
+<p>Натяг — разность размеров отверстия и вала до сборки, когда вал больше. В ГОСТ 25346-2013 эта разность отрицательная. Цеховая фраза «вал толще на столько-то микрон» говорит о том же модуле, но с плюсом. Подставлять плюс в формулу стандарта нельзя: знак развернёт наименьший и наибольший натяг.</p>
+<p>Наименьший натяг считают так: верхний предельный размер отверстия минус нижний предельный размер вала. Наибольший — нижний размер отверстия минус верхний размер вала. По модулю наименьший — самая свободная пара из допуска, наибольший — самая тугая.</p>
+<p>Буква посадки не даёт контактного давления и не проверяет ступицу. Это отдельный расчёт. Слишком большой натяг может расколоть тонкую ступицу при сборке. Слишком малый не удержит нагрузку.</p>
+<p>Буквы p, r, s, u только уводят вал в плюс относительно h. Есть ли натяг на вашем диаметре и сколько он в микрометрах, отвечает таблица ГОСТ 25347-2013. Имя вроде «легкопрессовая» само по себе микрометры не задаёт.</p>
+<table><thead><tr><th>Запись</th><th>Что видно по букве</th><th>Что сверить по таблице</th></tr></thead><tbody><tr><td>H7/h6</td><td>у вала h верхнее отклонение равно нулю</td><td>минимальный зазор равен нулю</td></tr><tr><td>H7/k6</td><td>поле вала сдвинуто относительно h</td><td>пересекаются ли интервалы на вашем диаметре</td></tr><tr><td>H7/p6</td><td>сдвиг в плюс сильнее, чем у k</td><td>есть ли натяг на всём диапазоне размера</td></tr><tr><td>H7/u7</td><td>сдвиг в плюс ещё больше</td><td>выдержит ли ступица наибольший натяг</td></tr></tbody></table>
+<h2 id="algoritm-vybora-posadki-pod-zadachu">Алгоритм выбора посадки под задачу</h2>
+<p>Выбор посадки — цепочка вопросов о нагрузке, разборке и точности. Таблица букв идёт после ответов, не вместо них.</p>
+<ol><li>Определите нагрузку: спокойная, знакопеременная или ударная. Удар и знакопеременный момент не оставляют на одном только трении, если натяг не проверен расчётом ступицы.</li><li>Решите, будут ли узел разбирать в работе или в ремонте. Если да, натяг отпадает. Остаются зазор или переходная посадка.</li><li>Учтите температуру работы и материалы пары. Сталь, чугун и алюминий расширяются по-разному, и натяг в горячем узле уже не тот, что на холодной сборке.</li><li>Оцените, насколько важно центрирование. Для зубчатого колеса и точной втулки соосность важнее лёгкой сборки. Тогда берут переходную посадку или более узкий квалитет.</li><li>Сравните с шпонкой, шлицами, клеем или сваркой. При небольшой нагрузке шпонка на посадке с зазором снимает нагрев и проверку ступицы на разрыв.</li></ol>
+<p>Тот же выбор упирается в технологию. Если посадка требует конкретного способа получить размер, смотрите <a href="/blog/obrabotka-metalla-vidy-vybor-metoda.html">как выбрать метод обработки под точность детали</a>.</p>
+<h2 id="sherohovatost-posadochnyh-poverhnostey-i-poterya-natyaga">Шероховатость посадочных поверхностей и потеря натяга</h2>
+<p>Натяг на чертеже и натяг после сборки — не одно и то же. При запрессовке вершины микронеровностей сминаются. Часть расчётной разницы диаметров уходит в это смятие, а не в ошибку допуска.</p>
+<p>ГОСТ 25346-2013 держит <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> отдельно от допуска на размер. Если одного размера мало, чтобы посадка работала, к нему добавляют требования к поверхности. На сколько именно сядет натяг после смятия микронеровностей, буква посадки не говорит.</p>
+<p>Ra пишут на чертеже отдельно от диаметра. Эти две пометки друг друга не заменяют. Без Ra цех держит только размер: поверхность может выйти грубее, чем нужно стыку. Как читать Ra и Rz, разобрано в статье <a href="/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html">шероховатость на чертеже</a>.</p>
+<h2 id="sborka-i-raspressovka-soedineniy-s-natyagom">Сборка и распрессовка соединений с натягом</h2>
+<p>Способ сборки выбирают по величине натяга и по размеру деталей. Небольшой натяг задавливают прессом вдоль оси. Большой собирают нагревом отверстия или охлаждением вала. Одной температуры на все материалы и все натяги нет.</p>
+<blockquote><p>Повторная запрессовка сажает деталь в уже смятый микрорельеф. Для второй сборки обычно нужна новая деталь.</p></blockquote>
+<h3>Продольная запрессовка</h3>
+<p>Вал вдавливают в отверстие под прессом вдоль оси. Так собирают пары, где усилие ещё по силам цеховому прессу. Перекос на входе задирает поверхность и срезает часть натяга. Соосность здесь не менее важна, чем тоннаж.</p>
+<p>Смазка или сборочная паста на контакте снижает риск задира. Без смазки тяжёлую пару легко порвать уже на входе.</p>
+<h3>Тепловая сборка: нагрев отверстия и охлаждение вала</h3>
+<p>Отверстие нагревают или вал охлаждают, иногда в жидком азоте. Размер на время сборки расходится, и детали входят без усилия пресса. Режим каждый раз считают заново: сталь, чугун и бронза ведут себя по-разному, и натяг у каждой пары свой. Общей температуры на все случаи нет.</p>
+<h2 id="chastye-oshibki-pri-vybore-i-raschete-posadki">Частые ошибки при выборе и расчёте посадки</h2>
+<p>Большая часть брака на посадочных поверхностях начинается на чертеже, а не на прессе.</p>
+<ul><li>Квалитет взяли без своего диапазона диаметра. В таблице ГОСТ 25347-2013 у каждого интервала размеров своя строка, чужой диаметр сюда не подходит.</li><li>Не развели температуру сборки и температуру работы. В горячем узле расчётный натяг уходит, и пара начинает проворачиваться.</li><li>Шероховатость не указали отдельно от размера. После запрессовки стык держит слабее, чем ждали по диаметрам.</li><li>Поставили натяг там, где хватило бы шпонки на посадке с зазором. Появляются нагрев, пресс и проверка ступицы, хотя нагрузку держала бы шпонка.</li></ul>
+<h2 id="itog-kak-ne-oshibitsya-pri-zakaze-detali">Итог: как не ошибиться при заказе детали</h2>
+<p>Три типа закрывают разные задачи. С зазором собирают то, что должно двигаться или сниматься без повреждения. Переходную ставят, где нужно центрирование, а узел всё равно разбирают. Натяг оставляют для соединения, которое не планируют снимать.</p>
+<p>На чертеже нужны и посадка, и шероховатость посадочных поверхностей. Без дроби и без Ra исполнитель видит только номинал и додумывает характер стыка сам.</p>
+<p>Если чертёж уже готов и посадки на нём проставлены, <a href="/">пришлите чертёж с указанными посадками на расчёт</a>. Технолог проверит, совпадает ли квалитет с диапазоном диаметра и подходит ли метод обработки под эту точность.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем посадка с натягом отличается от переходной?</summary>
+<div class="faq__a"><p>В посадке с натягом вал больше отверстия у любой пары из допуска. Соединение не рассчитывают на разборку. В переходной поля пересекаются: у одной пары выйдет зазор, у другой — небольшой натяг.</p></div>
+</details>
+<details>
+<summary>Как обозначается посадка с натягом на чертеже?</summary>
+<div class="faq__a"><p>Дробью. Заглавная буква и номер квалитета — отверстие, строчная буква и номер — вал. Пример записи — H7/u7. Заглавная буква всегда относится к отверстию. Буква сама не заменяет таблицу отклонений для вашего диаметра.</p></div>
+</details>
+<details>
+<summary>Можно ли разобрать соединение с натягом без повреждения деталей?</summary>
+<div class="faq__a"><p>Распрессовка сминает микрорельеф, и вторая сборка уже не повторяет первую. Если узел должны разбирать, натяг не закладывают: берут зазор или переходную посадку со шпонкой или шлицами.</p></div>
+</details>
+<details>
+<summary>Нужно ли указывать шероховатость, если квалитет на диаметре уже стоит?</summary>
+<div class="faq__a"><p>Да. Квалитет задаёт только допуск на размер. Шероховатость — отдельное требование. ГОСТ 25346-2013 прямо допускает добавить его, когда одного размера мало, чтобы посадка работала.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://base.garant.ru/71141738/" rel="noopener" target="_blank">ГОСТ 25346-2013 (ISO 286-1:2010). Основные нормы взаимозаменяемости. Система допусков на линейные размеры. Основные положения, допуски, отклонения и посадки</a> — межгосударственный стандарт</li>
+<li><a href="https://www.iso.org/standard/45975.html" rel="noopener" target="_blank">ISO 286-1:2010. Geometrical product specifications (GPS) — ISO code system for tolerances on linear sizes — Part 1: Basis of tolerances, deviations and fits</a> — ISO</li>
+<li><a href="https://www.iso.org/standard/54915.html" rel="noopener" target="_blank">ISO 286-2:2010. Geometrical product specifications (GPS) — ISO code system for tolerances on linear sizes — Part 2: Tables of standard tolerance classes and limit deviations for holes and shafts</a> — ISO</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer.html">
+            <img src="/images/blog/net-chertezha-est-obrazec-kak-zakazat-detal-cherez-obmer-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Образец есть, чертежа нет: как провести обмер и заказать деталь</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/oboznachenie-rezby-na-chertezhe.html">
+            <img src="/images/blog/oboznachenie-rezby-na-chertezhe-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как правильно обозначить резьбу на чертеже: метрическая, дюймовая и трубная резьба</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/chertezh-v-dyuymah-kak-zakazat-detal-bez-oshibki-perescheta.html">
+            <img src="/images/blog/chertezh-v-dyuymah-kak-zakazat-detal-bez-oshibki-perescheta-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как отдать дюймовый чертёж, чтобы деталь совпала с посадкой</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

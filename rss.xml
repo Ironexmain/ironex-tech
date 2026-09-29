@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ</title>
+      <link>https://ironex.tech/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Какие форматы принимает производство, что требует ЕСКД и какие ошибки в чертеже срывают сроки. Чек-лист комплекта для расчёта.</description>
+    </item>
+    <item>
+      <title>Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения</title>
+      <link>https://ironex.tech/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Разбираем три типа посадок — с зазором, переходные и с натягом: квалитеты, допуски по ЕСДП и алгоритм выбора под задачу.</description>
+    </item>
+    <item>
+      <title>Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве</title>
+      <link>https://ironex.tech/blog/passivaciya-nerzhaveyushchey-stali.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/passivaciya-nerzhaveyushchey-stali.html</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Зачем нержавеющую сталь пассивируют после сварки и обработки, как проходит кислотная ванна и что указать в заказе на деталь — по ASTM A967.</description>
+    </item>
     <item>
       <title>Обработка нержавейки и титана: режимы резания, сварка и отделка</title>
       <link>https://ironex.tech/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Tue, 22 Sep 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>От чего зависит срок детали: этапы производства, термообработка, крепёж, срочные заказы и как отследить готовность — конкретные диапазоны по типам.</description>
-    </item>
-    <item>
-      <title>Как закрыть партию от ржавчины, пока она ждёт монтажа</title>
-      <link>https://ironex.tech/blog/zaschita-detaley-ot-korrozii-na-vremya-hraneniya.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/zaschita-detaley-ot-korrozii-na-vremya-hraneniya.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Защита деталей от коррозии при хранении: 4 способа консервации. Как выбрать временную антикоррозийную защиту металла и что указать подрядчику в заявке.</description>
-    </item>
-    <item>
-      <title>Сначала лист и места, потом подпись на приёмке</title>
-      <link>https://ironex.tech/blog/upakovochnyy-list-i-priemka-partii-kak-ne-poteryat-detal.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/upakovochnyy-list-i-priemka-partii-kak-ne-poteryat-detal.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Упаковочный лист на партию деталей: как проверить поставку по упаковочному листу, принять партию по количеству и не потерять ни одной детали при разгрузке.</description>
-    </item>
-    <item>
-      <title>Когда детали нужна закалка — и что она делает с ценой</title>
-      <link>https://ironex.tech/blog/termoobrabotka-metalla-kogda-ona-nuzhna-i-kak-vliyaet-na-cenu-i-sroki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/termoobrabotka-metalla-kogda-ona-nuzhna-i-kak-vliyaet-na-cenu-i-sroki.html</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Термообработка металла для деталей: когда нужна закалка и отпуск, как они влияют на цену и срок изготовления. 4 поля в заявке, без которых расчёт неполный.</description>
     </item>
   </channel>
 </rss>

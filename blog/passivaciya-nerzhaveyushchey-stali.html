@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пассивация нержавеющей стали: зачем нужна и как её делают</title>
+  <meta name="description" content="Зачем нержавеющую сталь пассивируют после сварки и обработки, как проходит кислотная ванна и что указать в заказе на деталь — по ASTM A967." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/passivaciya-nerzhaveyushchey-stali.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/passivaciya-nerzhaveyushchey-stali.html#article",
+      "headline": "Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве",
+      "description": "Зачем нержавеющую сталь пассивируют после сварки и обработки, как проходит кислотная ванна и что указать в заказе на деталь — по ASTM A967.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/passivaciya-nerzhaveyushchey-stali.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/passivaciya-nerzhaveyushchey-stali-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "пассивация нержавеющей стали",
+        "защитная плёнка нержавейки",
+        "коррозия нержавеющей стали",
+        "ASTM A967",
+        "пассивация сварных швов",
+        "температура пассивации"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем пассивация отличается от травления нержавейки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Травление снимает окалину более сильными кислотами. KEMET среди них называет плавиковую. Пассивация мягче: азотная или лимонная кислота убирает свободное железо и сварную окалину не снимает. После сварки шов сначала травят или шлифуют, потом пассивируют деталь."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как проверить, что пассивация нержавейки прошла успешно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Смотрят, нет ли травления, питтинга и матового налёта. Для партии в ASTM A967/A967M-25 есть альтернативные испытания: вода, влажная камера, соляной туман, сульфат меди, феррицианид с азотной кислотой, влажная ткань и кипящая вода. Срок 24–48 часов относится к росту плёнки на воздухе."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли пассивировать деталь после каждой сварки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Если на шве осталась окалина, одной пассивации мало: она этот слой не снимает. Шов сначала травят или шлифуют до чистого металла, затем пассивируют. Порядок нужен там, где после сварки остались термические оксиды."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Меняются ли размеры и допуски детали после пассивации?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Штатная плёнка имеет толщину 1–3 нанометра и геометрию детали не сдвигает. Если ванна ушла в flash attack, поверхность уже протравлена: это брак, и размеры могли уйти. Травления на принятой детали быть не должно."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Пассивация нержавейки: что скрывается за кислотной ванной" />
+  <meta property="og:description" content="Зачем нержавеющую сталь пассивируют после сварки и обработки, как проходит кислотная ванна и что указать в заказе на деталь — по ASTM A967." />
+  <meta property="og:url" content="https://ironex.tech/blog/passivaciya-nerzhaveyushchey-stali.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/passivaciya-nerzhaveyushchey-stali-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-29" />
+  <meta property="article:modified_time" content="2026-09-29" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Пассивация нержавейки: что скрывается за кислотной ванной" />
+  <meta name="twitter:description" content="Зачем нержавеющую сталь пассивируют после сварки и обработки, как проходит кислотная ванна и что указать в заказе на деталь — по ASTM A967." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/passivaciya-nerzhaveyushchey-stali-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-passivatsiya-nerzhaveyuschey-stali">Что такое пассивация нержавеющей стали?</a></li>
+<li><a href="#chto-budet-s-detalyu-esli-propustit-passivatsiyu">Что будет с деталью, если пропустить пассивацию</a></li>
+<li><a href="#kogda-passivatsiya-nuzhna-v-marshrute-izgotovleniya-detali">Когда пассивация нужна в маршруте изготовления детали?</a></li>
+<li><a href="#kak-prohodit-passivatsiya-etapy-protsessa">Как проходит пассивация: этапы процесса</a></li>
+<li><a href="#kontsentratsiya-kisloty-temperatura-i-vremya-vyderzhki">Концентрация кислоты, температура и время выдержки</a></li>
+<li><a href="#passivatsiya-svarnyh-shvov-otdelnaya-zadacha">Пассивация сварных швов: отдельная задача</a></li>
+<li><a href="#standarty-passivatsii-chto-ukazat-v-zakaze-na-detal">Стандарты пассивации: что указать в заказе на деталь</a></li>
+<li><a href="#tipichnye-oshibki-i-brak-pri-passivatsii">Типичные ошибки и брак при пассивации</a></li>
+<li><a href="#kak-proverit-chto-passivatsiya-sdelala-svoe-delo">Как проверить, что пассивация сделала своё дело?</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве</h1>
+        <p class="lede">Зачем нержавеющую сталь пассивируют после сварки и обработки, как проходит кислотная ванна и что указать в заказе на деталь — по ASTM A967.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-09-29">Опубликовано 29 сентября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/passivaciya-nerzhaveyushchey-stali-cover.webp" alt="Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Пассивация <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавеющей стали</a> — кислотная обработка поверхности. Она снимает вросшее железо и помогает снова закрыть металл оксидной плёнкой после сварки, резки или шлифовки. Без этой операции нержавейка ржавеет там, где её касался инструмент.</p>
+<h2 id="chto-takoe-passivatsiya-nerzhaveyuschey-stali">Что такое пассивация нержавеющей стали?</h2>
+<p>Нержавеющую сталь держит тонкий слой оксида хрома. Хром на поверхности встречается с кислородом воздуха, и на металле собирается плёнка. Она закрывает железо под собой от коррозии.</p>
+<p>Пассивация ускоряет образование этой плёнки. Кислота растворяет свободное железо от резца, абразива и масла. Хрома на поверхности остаётся больше, чем в глубине сплава, поэтому оксидный слой получается толще.</p>
+<p>После ванны оксид дорастает уже на воздухе. На это уходит 24–48 часов. Толщина слоя — 1–3 нанометра, то есть тысячные доли микрона.</p>
+<p>Слой такой толщины геометрию детали не меняет. Вглубь металла штатная пассивация обычно не уходит. Если кислота стравила поверхность, это уже брак ванны.</p>
+<p>Та же плёнка появляется и без ванны, если поверхность чистая. Резка, фрезеровка и сварка оставляют загрязнение. Тогда естественного слоя уже не хватает, и пассивацию закладывают отдельно.</p>
+<blockquote><p><strong>Факт.</strong> После ванны оксид хрома дорастает за 24–48 часов, толщина слоя — 1–3 нанометра.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве">Прислать чертёж на почту</a>
+</div>
+<h2 id="chto-budet-s-detalyu-esli-propustit-passivatsiyu">Что будет с деталью, если пропустить пассивацию</h2>
+<p>Без пассивации на поверхности остаются частицы железа от резца, шлифовального круга и абразива. Они вдавлены в металл. Промывка водой такую грязь не заменяет: её снимают химической обработкой. В этих точках оксид хрома не закрывает сталь. Коррозия начинается очагами, именно там, где работал инструмент.</p>
+<p>Отдельно уязвимы марки, в которые ради обрабатываемости добавили серу. Сульфиды мешают сплошной плёнке и сами становятся очагами. На снимке непассивированной поверхности после обработки видны мелкие точки коррозии.</p>
+<p>Ржавчина на такой детали начинается с грязной поверхности после обработки. Очаги сидят на вросшем железе. На целой плёнке таких пятен не возникает.</p>
+<blockquote><p>Вросшее железо не даёт плёнке закрыть металл. Деталь ржавеет там, где её резали, фрезеровали или шлифовали.</p></blockquote>
+<h2 id="kogda-passivatsiya-nuzhna-v-marshrute-izgotovleniya-detali">Когда пассивация нужна в маршруте изготовления детали?</h2>
+<p>Пассивацию ставят в маршрут в конкретных точках, ещё до пятен на готовой детали.</p>
+<p>Первая точка — любая механообработка: резка, фрезеровка, шлифовка. Инструмент касается металла и оставляет на нём железо.</p>
+<p>Вторая — сварка и термообработка. Там сначала снимают термические оксиды и только потом пассивируют. Этот порядок разобран ниже.</p>
+<p>Третья — заказ под условия работы детали. В описании процесса так отдельно отмечают авиацию, медицину и пищевое оборудование. В чертёж при этом пишут конкретный стандарт, который назвал заказчик.</p>
+<p>Решение фиксируют на технологической подготовке. Позже пятна означают разборку узла и повтор операции.</p>
+<blockquote><p><strong>Мнение.</strong> Если пассивация нужна по чертежу или по среде работы детали, впишите стандарт и тип обработки в маршрут до запуска партии.</p></blockquote>
+<h2 id="kak-prohodit-passivatsiya-etapy-protsessa">Как проходит пассивация: этапы процесса</h2>
+<p>Ниже общий порядок по описанию линий химической подготовки и по открытому тексту ASTM A967/A967M-25. У конкретного цеха бланк может быть своим.</p>
+<ol><li>Щелочное обезжиривание. Оно снимает масло, СОЖ и цеховую грязь. Жир в кислоте собирается пузырями, и под ними раствор до металла не доходит.</li><li>Промывка после мойки. В точном производстве берут воду после деионизации или обратного осмоса: хлоридов в ней меньше, чем в водопроводной.</li><li>Кислотная ванна. Азотная или лимонная кислота. Концентрацию под марку берёт выбранный метод, а не общий шаблон.</li><li>Промывка сразу после ванны. Реакцию кислоты останавливают стоячей водой, противотоком или распылением. Нейтрализацию добавляют по необходимости. В точных линиях промывку ведут в два каскада.</li><li>Сушка и проверка партии. Чем проверять, сказано в разделе про контроль.</li></ol>
+<p>Если обезжиривание пропустили, кислота встречает масло. Покрытие тогда выходит пятнами. Плёнка на воздухе доходит за 24–48 часов, и раньше этого срока о её толщине судить рано.</p>
+<blockquote><p>Обезжиривание решает, дойдёт ли кислота до металла по всей поверхности.</p></blockquote>
+<h2 id="kontsentratsiya-kisloty-temperatura-i-vremya-vyderzhki">Концентрация кислоты, температура и время выдержки</h2>
+<p>Одной концентрации на все марки в открытой аннотации ASTM A967/A967M-25 нет. Там названы виды обработки, без процентов кислоты и без градусов.</p>
+<p>По времени два описания оборудования сходятся: ванна обычно длится 20–30 минут. По температуре они расходятся. В открытом тексте ASTM A967/A967M-25 градусов нет.</p>
+<p>KEMET пишет вилку от комнатной температуры до около 65 °C. Best Technology называет типичными 120–150 °F, в пересчёте около 49–66 °C, и связывает вилку с маркой стали и составом кислоты.</p>
+<table><thead><tr><th>Откуда ориентир</th><th>Температура</th><th>Время выдержки</th></tr></thead><tbody><tr><td>KEMET</td><td>от комнатной до около 65 °C</td><td>20–30 минут</td></tr><tr><td>Best Technology</td><td>обычно 120–150 °F (около 49–66 °C)</td><td>обычно 20–30 минут</td></tr></tbody></table>
+<p>Азотная кислота в этих описаниях — обычная ванна: она растворяет свободное железо. Лимонную стали применять шире из‑за рисков азотной для людей и для среды. Какой раствор взять на конкретную марку, решает метод из стандарта.</p>
+<p>Режим одной марки на другую не переносят. В спецификации несколько методов, и она прямо не рекомендует, какой из них подходит к вашей задаче.</p>
+<h2 id="passivatsiya-svarnyh-shvov-otdelnaya-zadacha">Пассивация сварных швов: отдельная задача</h2>
+<p>Сварка и термообработка оставляют на металле термические оксиды: окалину и цвета побежалости. Пассивация эту окалину не снимает. Ванна для такого слоя слишком слабая.</p>
+<p>Сначала окалину убирают травлением или шлифовкой до чистого металла. Пассивируют уже очищенную поверхность. Иначе обрабатывают шов, с которого оксид ещё не снят.</p>
+<p>В ASTM A967/A967M-25 рядом с двумя ваннами указана и электрохимическая обработка. Для сварной окалины описания процесса называют травление и шлифовку.</p>
+<p>Шов с неснятой окалиной остаётся местом, где плёнка не легла на чистый металл. Режимы резания и сварки нержавейки разобраны <a href="/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka">в отдельном материале</a>.</p>
+<blockquote><p>Окалину после сварки снимают травлением или шлифовкой. Пассивация после этого только восстанавливает плёнку.</p></blockquote>
+<h2 id="standarty-passivatsii-chto-ukazat-v-zakaze-na-detal">Стандарты пассивации: что указать в заказе на деталь</h2>
+<p>Чаще всего для пассивации называют ASTM A967 и AMS 2700. Оба родом из США, и в Европе их тоже широко применяют. Состав AMS 2700 в заказ переписывают с чертежа целиком. Методы ниже — из открытого текста ASTM A967/A967M-25.</p>
+<p>Действующая страница стандарта — редакция A967/A967M-25. Это спецификация химической пассивации деталей из нержавеющей стали. Открытый текст задаёт три типа обработки.</p>
+<table><thead><tr><th>Тип в ASTM A967/A967M-25</th><th>Что это</th></tr></thead><tbody><tr><td>Погружение в азотную кислоту</td><td>Кислотная ванна</td></tr><tr><td>Погружение в лимонную кислоту</td><td>Кислотная ванна</td></tr><tr><td>Электрохимическая обработка</td><td>Отдельный тип, рядом с ваннами</td></tr></tbody></table>
+<p>В заявке или на чертеже нужен стандарт и конкретный тип, а не фраза «пассивировать деталь». Спецификация сама не выбирает метод под вашу среду. В пункте 1.3 записано, что она не рекомендует ни марку, ни обработку, ни критерии приёмки для конкретной задачи.</p>
+<p>Рядом имеет смысл указать марку стали, загрязнение поверхности и какое испытание нужно для приёмки. Если стандарт в заказе пустой, метод выберет исполнитель. Стойкость детали тогда может не совпасть с тем, на что рассчитывал заказчик.</p>
+<p>Что ещё писать в заявке на обработку нержавейки — <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke">в отдельном разборе</a>.</p>
+<h2 id="tipichnye-oshibki-i-brak-pri-passivatsii">Типичные ошибки и брак при пассивации</h2>
+<p>При срыве режима ванна даёт обратный результат: поверхность корродирует прямо в кислоте.</p>
+<p>Flash attack — неконтролируемая коррозия в самой ванне. Металл темнеет и сильно протравливается: это та коррозия, от которой плёнка должна защищать. Так бывает, когда в растворе копится грязь. Раствор меняют по графику. Лишние хлориды в воде тоже участвуют, поэтому промывку и ванну питают водой после обратного осмоса или деионизации.</p>
+<p>Серии 300 и 400 в одной ванне не смешивают: вместе они дают риск гальванической коррозии.</p>
+<p>Масло и СОЖ оставляют на детали пузыри. Кислота под ними до металла не доходит, и поверхность выходит пятнами. Обезжиривание делают до ванны.</p>
+<p>Перед отгрузкой партию смотрят на тёмное травление и фиксируют, каким раствором её обрабатывали.</p>
+<h2 id="kak-proverit-chto-passivatsiya-sdelala-svoe-delo">Как проверить, что пассивация сделала своё дело?</h2>
+<p>Оксид хрома на воздухе дорастает 24–48 часов. Это срок, за который собирается плёнка. Осмотр и испытания из спецификации к этим часам не привязаны.</p>
+<p>На вид деталь должна быть химически чистой: без травления, питтинга и матового налёта. Толщину 1–3 нанометра в цехе глазом не измеряют. В открытом перечне проверок её нет.</p>
+<p>Испытания в A967/A967M-25 подтверждают, что с поверхности ушло постороннее железо. В аннотации для партии названы пять проверок. В пункте 1.4 перечень шире: добавлены влажная ткань и кипящая вода. В области применения эти испытания названы альтернативными.</p>
+<table><thead><tr><th>Практика</th><th>Испытание</th></tr></thead><tbody><tr><td>A</td><td>Погружение в воду</td></tr><tr><td>B</td><td>Влажная камера</td></tr><tr><td>C</td><td>Соляной туман</td></tr><tr><td>D</td><td>Сульфат меди</td></tr><tr><td>E</td><td>Феррицианид с азотной кислотой</td></tr><tr><td>F</td><td>Влажная ткань</td></tr><tr><td>G</td><td>Погружение в кипящую воду</td></tr></tbody></table>
+<p>Какую практику включить в приёмку, пишут в заявке. Одной обязательной проверки на все детали спецификация не назначает.</p>
+<p>Расчёт обработки нержавеющей стали с пассивацией под ваш чертёж — <a href="/ceny.html">на странице цен</a>. Если чертёж, марка и нужный стандарт уже есть, пришлите их одним запросом: режим ванны и срок посчитают под эту деталь.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем пассивация отличается от травления нержавейки?</summary>
+<div class="faq__a"><p>Травление снимает окалину более сильными кислотами. KEMET среди них называет плавиковую. Пассивация мягче: азотная или лимонная кислота убирает свободное железо и сварную окалину не снимает. После сварки шов сначала травят или шлифуют, потом пассивируют деталь.</p></div>
+</details>
+<details>
+<summary>Как проверить, что пассивация нержавейки прошла успешно?</summary>
+<div class="faq__a"><p>Смотрят, нет ли травления, питтинга и матового налёта. Для партии в ASTM A967/A967M-25 есть альтернативные испытания: вода, влажная камера, соляной туман, сульфат меди, феррицианид с азотной кислотой, влажная ткань и кипящая вода. Срок 24–48 часов относится к росту плёнки на воздухе.</p></div>
+</details>
+<details>
+<summary>Нужно ли пассивировать деталь после каждой сварки?</summary>
+<div class="faq__a"><p>Если на шве осталась окалина, одной пассивации мало: она этот слой не снимает. Шов сначала травят или шлифуют до чистого металла, затем пассивируют. Порядок нужен там, где после сварки остались термические оксиды.</p></div>
+</details>
+<details>
+<summary>Меняются ли размеры и допуски детали после пассивации?</summary>
+<div class="faq__a"><p>Штатная плёнка имеет толщину 1–3 нанометра и геометрию детали не сдвигает. Если ванна ушла в flash attack, поверхность уже протравлена: это брак, и размеры могли уйти. Травления на принятой детали быть не должно.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://store.astm.org/a0967_a0967m-25.html" rel="noopener" target="_blank">ASTM A967/A967M-25. Standard Specification for Chemical Passivation Treatments for Stainless Steel Parts</a> — ASTM International</li>
+<li><a href="https://www.kemet.co.uk/blog/cleaning/what-is-passivation-and-when-passivation-is-needed" rel="noopener" target="_blank">What is passivation and when is passivation needed</a> — KEMET</li>
+<li><a href="https://www.besttechnologyinc.com/passivation-systems/what-is-passivation/" rel="noopener" target="_blank">What Is Passivation</a> — Best Technology</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html">
+            <img src="/images/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Обработка нержавейки и титана: режимы резания, сварка и отделка</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/rezbovye-soedineniya-kakoe-pokrytie-rezby-dlya-kakoy-sredy.html">
+            <img src="/images/blog/rezbovye-soedineniya-kakoe-pokrytie-rezby-dlya-kakoy-sredy-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Цинк, фосфат или нержавейка: чем закрыть резьбу под среду</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/argonodugovaya-svarka-tig-i-poluavtomat.html">
+            <img src="/images/blog/argonodugovaya-svarka-tig-i-poluavtomat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Аргонодуговая сварка (TIG): для каких деталей она нужна и когда хватит полуавтомата</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

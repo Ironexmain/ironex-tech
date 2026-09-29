@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Проектирование деталей: чертежи, CAD-форматы и ГОСТ для цеха</title>
+  <meta name="description" content="Какие форматы принимает производство, что требует ЕСКД и какие ошибки в чертеже срывают сроки. Чек-лист комплекта для расчёта." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html#article",
+      "headline": "Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ",
+      "description": "Какие форматы принимает производство, что требует ЕСКД и какие ошибки в чертеже срывают сроки. Чек-лист комплекта для расчёта.",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "проектирование деталей",
+        "чертёж для производства",
+        "формат файла для лазерной резки",
+        "ГОСТ ЕСКД к чертежу",
+        "STEP или DXF",
+        "что нужно для расчёта детали"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Из каких документов состоит комплект технической документации?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Из конструкторской части по ЕСКД и технологической по ЕСТД. Для заказа детали в цехе обычно достаточно конструкторской: чертежа и модели. Технологическую часть, то есть маршрут и режимы обработки, пишет сам цех."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "В какой САПР делать чертёж для производства?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В любой, из которой можно отдать нейтральные форматы: STEP для 3D, DXF для плоских деталей и PDF для чертежа. В России распространены КОМПАС-3D и T-FLEX CAD."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли заказать деталь по эскизу или фото?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Точную цену по эскизу или фото не назвать: цеху нужны размеры, материал и допуски. Надёжнее всего их передаёт чертёж."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Что отдать в цех: чертёж, STEP или DXF — и не получить брак" />
+  <meta property="og:description" content="Какие форматы принимает производство, что требует ЕСКД и какие ошибки в чертеже срывают сроки. Чек-лист комплекта для расчёта." />
+  <meta property="og:url" content="https://ironex.tech/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-29" />
+  <meta property="article:modified_time" content="2026-09-29" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Что отдать в цех: чертёж, STEP или DXF — и не получить брак" />
+  <meta name="twitter:description" content="Какие форматы принимает производство, что требует ЕСКД и какие ошибки в чертеже срывают сроки. Чек-лист комплекта для расчёта." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-vhodit-v-komplekt">Что входит в комплект</a></li>
+<li><a href="#formaty-fajlov-dlya-proizvodstva">Форматы файлов</a></li>
+<li><a href="#trebovaniya-gost-eskd">Требования ЕСКД к чертежу</a></li>
+<li><a href="#dopuski-i-sherohovatost">Допуски и шероховатость</a></li>
+<li><a href="#3d-ili-chertezh">Модель и чертёж расходятся</a></li>
+<li><a href="#oshibki-v-chertezhah">Ошибки в чертежах и моделях</a></li>
+<li><a href="#chek-list-dlya-zaprosa">Чек-лист для запроса расчёта</a></li>
+<li><a href="#rossiyskie-sapr">КОМПАС-3D, T-FLEX и другие САПР</a></li>
+<li><a href="#chto-delat-dalshe">Что делать дальше</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ</h1>
+        <p class="lede">Какие форматы принимает производство, что требует ЕСКД и какие ошибки в чертеже срывают сроки. Чек-лист комплекта для расчёта.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-09-29">Опубликовано 29 сентября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost-cover.webp" alt="Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Чтобы цех посчитал и изготовил деталь, нужен чертёж по ЕСКД и <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">3D-модель</a> в нейтральном формате: STEP для механической обработки, DXF для <a href="/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html">лазерной резки</a>. Если в чертеже нет допусков, материала и баз, размеры цех додумывает сам. Так появляются сорванные сроки и брак. Ниже: что и в каком виде отдать.</p>
+<h2 id="chto-vhodit-v-komplekt">Что входит в комплект документации для производства</h2>
+<p>Цеху нужен не файл с картинкой детали, а набор однозначных условий: чертёж, 3D-модель и параметры заказа. По ним технолог понимает, из чего делать деталь, с какой точностью и в каком количестве. Пока хотя бы одного ответа нет, расчёт стоит.</p>
+<p>Конструкторские документы, то есть чертёж и модель, оформляют по ЕСКД. Технологические документы, то есть маршрут и режимы обработки, оформляют по ЕСТД, и пишет их цех. От вас нужна конструкторская часть.</p>
+<p>Чертёж и модель решают разные задачи. Модель показывает форму и даёт станку геометрию. Чертёж фиксирует то, чего в геометрии нет: допуски, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>, материал, термообработку, покрытие. Поэтому 3D-модель дополняет чертёж, но не заменяет его. Оба документа создают в САПР, системе автоматизированного проектирования.</p>
+<p>Статья про подготовку документов для заказа на изготовление. Расчёт деталей на прочность здесь не разбираем.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ">Прислать чертёж на почту</a>
+</div>
+<h2 id="formaty-fajlov-dlya-proizvodstva">Форматы файлов: какой нужен для фрезеровки, лазера и гибки</h2>
+<p><img alt="Фрезеровочная установка для производства деталей" src="/images/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Оборудование для фрезеровки в лаборатории. Фото: <a href="https://commons.wikimedia.org/wiki/File:Milling_machine_setup.jpg" rel="nofollow noopener" target="_blank">Chopshop23</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Для фрезеровки на ЧПУ отдавайте 3D-модель в STEP, для лазерной резки плоской детали — контур в DXF, а к любому из них добавляйте чертёж в PDF. STEP и DXF читают почти все программы, поэтому цех откроет их без вашей САПР.</p>
+<table><thead><tr><th>Формат</th><th>Что содержит</th><th>Для каких операций</th><th>Что теряется при конвертации</th></tr></thead><tbody><tr><td>STEP (AP203, AP214, AP242)</td><td>3D-геометрия твёрдого тела</td><td>Фрезеровка на ЧПУ; гибка, если в модели заданы толщина и радиусы</td><td>Цвет, допуски и аннотации (PMI): зависит от версии протокола и настроек экспорта</td></tr><tr><td>IGES</td><td>3D-поверхности</td><td>Фрезеровка, если нет STEP</td><td>Поверхности могут не сшиться в тело, проверьте после импорта</td></tr><tr><td>DXF</td><td>Плоские контуры в 2D</td><td>Лазерная резка, плоские детали</td><td>Толщина, материал, допуски</td></tr><tr><td>DWG</td><td>Плоские контуры в 2D, формат AutoCAD</td><td>Лазерная резка</td><td>Открывается не в каждой программе</td></tr><tr><td>PDF</td><td>Чертёж с размерами и требованиями</td><td>Все операции как эталон рядом с моделью</td><td>Редактировать нельзя, контур для резки из него не взять</td></tr><tr><td>Нативные (.m3d, .cdw и другие)</td><td>Полная модель или чертёж в САПР</td><td>Только если у цеха та же программа</td><td>Не откроются без нужной САПР</td></tr></tbody></table>
+<p>В DXF проверьте четыре вещи: масштаб 1:1, единицы в миллиметрах, замкнутые контуры, отсутствие лишних слоёв и дублей линий.</p>
+<blockquote><p><strong>Мнение.</strong> Если сомневаетесь в формате, отправляйте сразу три файла: STEP, DXF (для плоской детали) и PDF. Лишний файл технолог отложит, а недостающий превращается в письмо с вопросом и потерянный день.</p></blockquote>
+<h2 id="trebovaniya-gost-eskd">Что требует ГОСТ ЕСКД к оформлению чертежа</h2>
+<p>ЕСКД, Единая система конструкторской документации, задаёт правила оформления чертежа, и каждое правило отвечает за своё. Если чертёж оформлен по ЕСКД, цех читает его одинаково у любого заказчика: одни и те же линии, размеры и надписи. Ниже то, что стоит проверить на листе до отправки.</p>
+<table><thead><tr><th>Элемент чертежа</th><th>Что проверить</th></tr></thead><tbody><tr><td>Формат листа</td><td>Рамка на месте, лист читается целиком</td></tr><tr><td>Масштаб</td><td>Указан в основной надписи и совпадает с изображением</td></tr><tr><td>Линии</td><td>Контур, осевые и размерные линии различимы</td></tr><tr><td>Шрифт</td><td>Надписи читаются после печати и в PDF</td></tr><tr><td>Размеры</td><td>Не повторяются и не противоречат друг другу</td></tr><tr><td>Шероховатость</td><td>Знак стоит на поверхностях, где она важна</td></tr><tr><td>Основная надпись</td><td>Заполнены обозначение, наименование, материал, масса, масштаб</td></tr><tr><td>Технические требования</td><td>Термообработка, покрытие и общие допуски записаны текстом на поле чертежа</td></tr></tbody></table>
+<p>Основная надпись входит в состав чертежа, и цеху она нужна не для порядка. Из неё технолог берёт материал и массу детали, из технических требований — термообработку и покрытие.</p>
+<h2 id="dopuski-i-sherohovatost">Допуски и шероховатость: без них цех считает «как получится»</h2>
+<p><img alt="Чертежная доска с угольником и треугольником" src="/images/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost-2.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Инструменты для создания технических чертежей. Фото: <a href="https://commons.wikimedia.org/wiki/File:Drafting_board_with_T_Square.jpg" rel="nofollow noopener" target="_blank">Swtpc6800 en:User:Swtpc6800 Michael Holley</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Допуск — это разрешённое отклонение размера, и его задаёт чертёж. Если допуска на размере нет и общих допусков на чертеже тоже нет, цех либо задаёт вопрос, либо выбирает точность сам. Оба исхода плохи: вы теряете время или получаете деталь, не подходящую в сборку.</p>
+<blockquote><p>Размер без допуска цех вынужден читать по общим допускам или гадать, и цена с итогом зависят от этого выбора.</p></blockquote>
+<p>Общие допуски — разновидность допусков: они действуют на все размеры, у которых свой допуск не указан. Достаточно записать в технических требованиях ссылку на стандарт общих допусков и класс точности.</p>
+<p>Индивидуальный допуск нужен там, где деталь стыкуется с другой: посадочные отверстия, валы, пазы. Шероховатость проставляют на поверхностях, от которых зависит работа детали: посадочных, уплотняемых, трущихся.</p>
+<p>Ужесточать допуски «на всякий случай» невыгодно. Каждый более жёсткий допуск может добавить операцию и потребовать другого контроля, а значит, вырастит срок и цену. Точность нужна там, где она влияет на работу узла.</p>
+<h2 id="3d-ili-chertezh">3D-модель и чертёж расходятся: что считается главным</h2>
+<p>Что главнее, модель или чертёж, лучше решить до запуска и записать в письме или договоре. Иначе цех выберет сам, и вы узнаете об этом на готовой партии.</p>
+<p>Типичный случай: правку внесли в модель, а чертёж не обновили. Или наоборот. Цех получает два документа с разными размерами и вынужден остановить расчёт.</p>
+<blockquote><p>Приоритет между моделью и чертежом лучше зафиксировать до запуска, а не выяснять на готовой партии.</p></blockquote>
+<p>Что делать заказчику:</p>
+<ul><li>назначьте приоритетный документ и напишите об этом в письме или договоре;</li><li>держите одну актуальную версию: дата и индекс изменения стоят в основной надписи;</li><li>не правьте файлы после отправки без нового индекса.</li></ul>
+<blockquote><p><strong>Мнение.</strong> Если заказываете партию, а не единичную деталь, назначайте приоритетным чертёж: в нём записаны допуски и требования, которых в модели нет. Модель тогда служит геометрией для станка.</p></blockquote>
+<p>Подробнее о порядке работы с редакциями: <a href="/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii">как управлять версиями чертежей при заказе партии</a>.</p>
+<h2 id="oshibki-v-chertezhah">Ошибки в чертежах и моделях, которые срывают сроки и дают брак</h2>
+<p>Цех возвращает запрос с вопросами, когда в комплекте не хватает данных или файлы противоречат друг другу. Расчёт при этом встаёт на паузу. Проверьте комплект по шести ошибкам до отправки. У каждой указано, чем она кончается.</p>
+<h3>Ошибки в 2D-чертеже</h3>
+<ul><li>Не заданы базы. Размеры отсчитываются непонятно от чего, технолог не знает, как контролировать деталь, и присылает вопрос.</li><li>Нет допусков и общих допусков. Точность выбирает цех, и итог расходится с вашими ожиданиями.</li><li>Материал указан как «сталь» без марки. Расчёт невозможен, пока технолог не получит ответ.</li></ul>
+<h3>Ошибки в 3D-модели и DXF</h3>
+<ul><li>Модель и чертёж расходятся, файл устарел. Цех делает по одному документу, а принимаете вы по другому: возможен брак партии.</li><li>В DXF незамкнутые контуры и дубли линий. Раскрой считается неверно, лазер режет лишнее или пропускает участок.</li><li>Неверный масштаб и единицы измерения. Деталь выходит в другом размере, чем задумано.</li></ul>
+<h2 id="chek-list-dlya-zaprosa">Чек-лист: что приложить к запросу расчёта</h2>
+<p>Полный комплект — чертёж, модель и условия заказа в одном письме — избавляет технолога от уточняющих вопросов. Порядок ниже помогает избежать лишнего круга переписки. Пункты короткие, как в письме технологу.</p>
+<ol><li>Проверьте версию: дата и индекс изменения в основной надписи актуальны.</li><li>Сверьте модель и чертёж: размеры, отверстия и радиусы совпадают.</li><li>Экспортируйте 3D в STEP, для плоской детали сделайте DXF.</li><li>Добавьте чертёж в PDF, при необходимости и в редактируемом виде.</li><li>Опишите условия: материал и его марку, термообработку, покрытие, размер партии, сроки, повторяемость заказа, требования к контролю и приёмке.</li></ol>
+<p>Если модели нет, читайте, как <a href="/blog/mozhno-li-zakazat-detal-bez-3d-modeli">заказать деталь без 3D-модели</a>: чертёж в PDF при этом должен быть полным. Комплект по чек-листу проверит технолог цеха, где делают <a href="/">детали по чертежам</a>: если данных не хватит, он вернётся с вопросами.</p>
+<h2 id="rossiyskie-sapr">КОМПАС-3D, T-FLEX и другие САПР: как отдать файл, который откроют</h2>
+<p>Программа, в которой сделан чертёж, для цеха не важна. Важно, чтобы вы отдали нейтральный экспорт и проверили его после сохранения. Нативные форматы российских САПР, .m3d и .cdw у КОМПАС-3D, открываются не везде: у цеха может быть другая система.</p>
+<p>Экспортируйте модель в STEP, плоский контур в DXF, а чертёж в PDF. Затем откройте полученные файлы в другой программе и сверьте несколько размеров с оригиналом. Так вы поймёте, что потерялось при экспорте, до того как это увидит технолог.</p>
+<p>Файлы из AutoCAD, SolidWorks и Inventor проходят ту же процедуру: нейтральный экспорт и проверка.</p>
+<h2 id="chto-delat-dalshe">Что делать дальше: от готового комплекта к расчёту</h2>
+<p>Готовый комплект — это чертёж по ЕСКД, модель в STEP или DXF и условия заказа: материал, партия, сроки, контроль. После отправки технолог проверяет файлы, задаёт вопросы, <a href="/razdel/tehnologii.html">выбирает маршрут обработки под деталь</a> и считает срок и цену.</p>
+<blockquote><p>Полный комплект сокращает переписку с цехом и делает расчёт предсказуемым.</p></blockquote>
+<blockquote><p><strong>Факт.</strong> IRONEX обещает расчёт по присланному чертежу за 3 рабочих дня.</p></blockquote>
+<p>Если комплект собран по чек-листу выше, отправьте его через страницу <a href="/kontakty.html">контактов</a>: технолог посмотрит файлы и вернётся с расчётом или уточнениями.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Из каких документов состоит комплект технической документации?</summary>
+<div class="faq__a"><p>Из конструкторской части по ЕСКД и технологической по ЕСТД. Для заказа детали в цехе обычно достаточно конструкторской: чертежа и модели. Технологическую часть, то есть маршрут и режимы обработки, пишет сам цех.</p></div>
+</details>
+<details>
+<summary>В какой САПР делать чертёж для производства?</summary>
+<div class="faq__a"><p>В любой, из которой можно отдать нейтральные форматы: STEP для 3D, DXF для плоских деталей и PDF для чертежа. В России распространены КОМПАС-3D и T-FLEX CAD.</p></div>
+</details>
+<details>
+<summary>Можно ли заказать деталь по эскизу или фото?</summary>
+<div class="faq__a"><p>Точную цену по эскизу или фото не назвать: цеху нужны размеры, материал и допуски. Надёжнее всего их передаёт чертёж.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Росстандарт</a> — Федеральное агентство по техническому регулированию и метрологии</li>
+<li><a href="https://www.gostinfo.ru/" rel="noopener" target="_blank">Стандартинформ</a> — издания национальных стандартов</li>
+<li><a href="https://kompas.ru/" rel="noopener" target="_blank">КОМПАС-3D</a> — АСКОН</li>
+<li><a href="https://www.tflex.ru/" rel="noopener" target="_blank">T-FLEX CAD</a> — Топ Системы</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu.html">
+            <img src="/images/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как подготовить чертёж вала для расчёта и изготовления</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu.html">
+            <img src="/images/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Корпуса на заказ: как подготовить чертёж и модель</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha.html">
+            <img src="/images/blog/formaty-faylov-dlya-chpu-chto-prinimaet-podryadchik-krome-chertezha-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Какие файлы приложить к чертежу, чтобы деталь посчитали и запустили</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
