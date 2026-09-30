@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Минимальный объём заказа деталей: одна деталь или партия</title>
+      <link>https://ironex.tech/blog/minimalnyy-obem-zakaza-detal-ili-partiya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/minimalnyy-obem-zakaza-detal-ili-partiya.html</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Почему одна деталь по чертежу дороже штуки в партии. Наладка станка, точка безубыточности и как выбрать объём без переплаты.</description>
+    </item>
+    <item>
+      <title>Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода</title>
+      <link>https://ironex.tech/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz.html</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как заказать болты, винты и шпильки по чертежу: классы прочности, допуски резьбы, выбор между точением и штамповкой по объёму партии.</description>
+    </item>
+    <item>
+      <title>Гальваническое покрытие металла: какой вид выбрать для детали по чертежу</title>
+      <link>https://ironex.tech/blog/galvanicheskoe-pokrytie-vidy-i-kogda-primenyat.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/galvanicheskoe-pokrytie-vidy-i-kogda-primenyat.html</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как выбрать гальваническое покрытие под материал детали, что указать в чертеже по ГОСТ 9.306-85 и как принять партию у подрядчика.</description>
+    </item>
     <item>
       <title>Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ</title>
       <link>https://ironex.tech/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Thu, 24 Sep 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Вакуумное литьё в силикон, литьё под давлением, MIM: сравнение по тиражу, сроку и точности. Как закладывать вставки и что передать подрядчику.</description>
-    </item>
-    <item>
-      <title>Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение</title>
-      <link>https://ironex.tech/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html</guid>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Пять ошибок, из-за которых деталь уходит в брак: изношенный инструмент, шероховатость не в чертеже, контроль только на выходе. Во сколько это обходится и как избежать.</description>
-    </item>
-    <item>
-      <title>Гибка, штамповка или лазерная резка: как выбрать метод по чертежу и тиражу</title>
-      <link>https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html</guid>
-      <pubDate>Wed, 23 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Сравниваем гибку, штамповку и лазерную резку по цене, срокам и порогу тиража — с чек-листом для чертежа и примером расчёта для заказа.</description>
-    </item>
-    <item>
-      <title>Сроки изготовления деталей по чертежу: от эскиза до отгрузки заказа</title>
-      <link>https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki.html</guid>
-      <pubDate>Tue, 22 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>От чего зависит срок детали: этапы производства, термообработка, крепёж, срочные заказы и как отследить готовность — конкретные диапазоны по типам.</description>
     </item>
   </channel>
 </rss>

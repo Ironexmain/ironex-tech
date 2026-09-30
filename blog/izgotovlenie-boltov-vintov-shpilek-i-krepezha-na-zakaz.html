@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Изготовление болтов, винтов и шпилек на заказ по чертежу</title>
+  <meta name="description" content="Как заказать болты, винты и шпильки по чертежу: классы прочности, допуски резьбы, выбор между точением и штамповкой по объёму партии." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz.html#article",
+      "headline": "Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода",
+      "description": "Как заказать болты, винты и шпильки по чертежу: классы прочности, допуски резьбы, выбор между точением и штамповкой по объёму партии.",
+      "datePublished": "2026-09-30",
+      "dateModified": "2026-09-30",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "изготовление болтов",
+        "класс прочности болта",
+        "холодная штамповка крепежа",
+        "допуски резьбы",
+        "крепёж по чертежу",
+        "гост на болты"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем отличается точение болта от холодной штамповки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Точение снимает материал резцом на токарном станке. Его берут для мелких партий и для сложной формы головки. Холодная штамповка формует головку давлением, без снятия металла, и на большом тираже обычно дешевле за штуку, когда оснастка уже окуплена. Резьбу при этом накатывают отдельно, не в том же ходе, что и головку."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие виды резьбы используют для крепежа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для стяжки соединения основной считают метрическую резьбу. Трапецеидальную и упорную ставят там, где резьба передаёт движение, а не только держит затяжку."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какое покрытие защищает крепёж от коррозии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "От коррозии в обычной среде чаще всего заказывают цинк. Никель выбирают, когда важен вид детали и стойкость поверхности к истиранию. Фосфат оставляют основой под окраску или масло. Класс прочности эту защиту не заменяет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как проходит согласование чертежа при заказе крепежа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Заказчик присылает чертёж с резьбой, классом прочности и материалом. Дальше сверяют допуск резьбы, форму перехода под головкой и способ изготовления: точение или штамповку. После этого подбирают металл и запускают партию."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Точение или штамповка: как выбрать способ изготовления крепежа" />
+  <meta property="og:description" content="Как заказать болты, винты и шпильки по чертежу: классы прочности, допуски резьбы, выбор между точением и штамповкой по объёму партии." />
+  <meta property="og:url" content="https://ironex.tech/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-09-30" />
+  <meta property="article:modified_time" content="2026-09-30" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Точение или штамповка: как выбрать способ изготовления крепежа" />
+  <meta name="twitter:description" content="Как заказать болты, винты и шпильки по чертежу: классы прочности, допуски резьбы, выбор между точением и штамповкой по объёму партии." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<!-- seo-zavod-article-template -->
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#zachem-zakazyvat-bolty-i-shpilki-po-chertezhu-a-ne-pokupat-g">Зачем заказывать болты и шпильки по чертежу, а не покупать готовые?</a></li>
+<li><a href="#chto-oznachaet-markirovka-klassa-prochnosti-na-golovke-bolta">Что означает маркировка класса прочности на головке болта?</a></li>
+<li><a href="#rezba-shag-hod-i-zahodnost-pochemu-eto-vazhno-dlya-zatyazhki">Резьба: шаг, ход и заходность — почему это важно для затяжки</a></li>
+<li><a href="#material-zagotovki-stal-nerzhaveyka-latun-titan">Материал заготовки: сталь, нержавейка, латунь, титан</a></li>
+<li><a href="#tochenie-ili-holodnaya-shtampovka-chto-vygodnee-pri-vashem-t">Точение или холодная штамповка: что выгоднее при вашем тираже</a></li>
+<li><a href="#dopuski-i-klassy-tochnosti-rezby">Допуски и классы точности резьбы</a></li>
+<li><a href="#skruglenie-pod-golovkoy-pochemu-rezkiy-perehod-secheniya-raz">Скругление под головкой: почему резкий переход сечения разрушает крепёж</a></li>
+<li><a href="#kakie-defekty-vyyavlyaet-kontrol-kachestva-krepezha">Какие дефекты выявляет контроль качества крепежа?</a></li>
+<li><a href="#zaschitnoe-pokrytie-tsink-nikel-fosfatirovanie">Защитное покрытие: цинк, никель, фосфатирование</a></li>
+<li><a href="#chto-ukazat-v-chertezhe-i-zayavke-chtoby-poluchit-tochnyy-ra">Что указать в чертеже и заявке, чтобы получить точный расчёт</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода</h1>
+        <p class="lede">Как заказать болты, винты и шпильки по чертежу: классы прочности, допуски резьбы, выбор между точением и штамповкой по объёму партии.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-09-30">Опубликовано 30 сентября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz-cover.webp" alt="Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Изготовление болтов, винтов и шпилек под заказ нужно, когда деталь не совпадает с каталогом: другой диаметр, шаг, длина, класс прочности или покрытие. Её делают по вашему чертежу, а не подбирают из готового ряда. Дальше — что указать, чтобы крепёж встал в соединение без подгонки: материал, допуск резьбы и метод, точение или холодная штамповка.</p>
+<h2 id="zachem-zakazyvat-bolty-i-shpilki-po-chertezhu-a-ne-pokupat-g">Зачем заказывать болты и шпильки по чертежу, а не покупать готовые?</h2>
+<p>Болт — стержень с головкой и резьбой. Резьба держит соединение под нагрузкой. Крепёж со склада подходит, когда диаметр, шаг и длина есть в каталоге производителя. Изготовление по чертежу нужно, когда соединение задаёт свои величины: нестандартную длину, редкий шаг, свой материал или своё покрытие.</p>
+<p>Для мебели и бытовых узлов обычно хватает метиза с нужной маркировкой из розницы. По чертежу идут, когда размер не входит в стандартный ряд или готовая деталь не живёт в среде узла: вибрация, нагрев, агрессивная химия. Если крепёж нужен вместе с основной деталью, его <a href="/blog/nestandartnyy-krepezh-zakazyvat-vmeste-s-detalyu-ili-otdelno">заказывают вместе с деталью или отдельно</a>. Выбор зависит от тиража и срока.</p>
+<p>Три признака, что крепёж стоит делать под заказ:</p>
+<ul><li>длина, диаметр или шаг резьбы не входят в ряд каталога;</li><li>нужен материал или класс прочности, которого в каталоге нет;</li><li>партия крупная, и чертёж убирает подгонку на монтаже.</li></ul>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода">Прислать чертёж на почту</a>
+</div>
+<h2 id="chto-oznachaet-markirovka-klassa-prochnosti-na-golovke-bolta">Что означает маркировка класса прочности на головке болта?</h2>
+<p><img alt="Фрезерование двойной резьбы на рулевом винте" src="/images/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Нарезание двойной резьбы на рулевом винте методом фрезерования на станке. Фото: <a href="https://commons.wikimedia.org/wiki/File:Industries_of_War_-_Machinery_-_Miscellaneous_-_Milling_the_threads_on_the_double_threaded_steering_screw_of_A.A._Ambulance_Jacox_Steering_Gear,_Saginaw,_Michigan_-_NARA_-_45486729.jpg" rel="nofollow noopener" target="_blank">Unknown author Unknown author or not provided</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>На головке болта стоит маркировка класса прочности. Для болтов, винтов и шпилек из углеродистой и легированной стали механические свойства этого класса задаёт ISO 898-1:2013. Их оценивают при температуре от 10 °C до 35 °C. Выше или ниже этого диапазона указанные свойства могут не сохраниться.</p>
+<p>Стандарт покрывает крупный шаг резьбы от M1,6 до M39 и мелкий от M8×1 до M39×3. В заявке пишите класс из расчёта узла. Соседняя, более высокая маркировка этот расчёт не заменяет.</p>
+<p>У болта или винта с низкой или потайной головкой геометрия головки уменьшает площадь среза относительно резьбы. Такая деталь может не выполнить требования стандарта по растяжению и кручению. Класс при этом на головке уже стоит.</p>
+<p>Класс прочности не описывает коррозию, свариваемость и усталость. Эти свойства ISO 898-1:2013 не нормирует. Стойкость к среде задают материалом и покрытием. Ресурс при повторной нагрузке зависит ещё и от формы перехода под головкой.</p>
+<table><thead><tr><th>Вопрос</th><th>Что говорит ISO 898-1:2013</th></tr></thead><tbody><tr><td>Чьи механические свойства задаёт</td><td>Болты, винты и шпильки из углеродистой и легированной стали</td></tr><tr><td>При какой температуре их оценивают</td><td>От 10 °C до 35 °C</td></tr><tr><td>Коррозия и свариваемость</td><td>Не задаёт</td></tr><tr><td>Усталость</td><td>Не задаёт</td></tr></tbody></table>
+<blockquote><p>Класс берите из расчёта соединения. Более высокая маркировка этот расчёт не заменяет.</p></blockquote>
+<p>Номер стандарта на класс прочности не подставляйте по памяти. Легко указать документ, который задаёт другую вещь: размеры головки, гайки или обозначения покрытий. Для механических свойств углеродистого и легированного крепежа опора — ISO 898-1:2013.</p>
+<h2 id="rezba-shag-hod-i-zahodnost-pochemu-eto-vazhno-dlya-zatyazhki">Резьба: шаг, ход и заходность — почему это важно для затяжки</h2>
+<p>У резьбы есть шаг и ход. Шаг — расстояние между соседними витками. Ход — путь, на который болт или винт смещается вдоль оси за один оборот. У однозаходной резьбы ход равен шагу. Угол подъёма — угол между ходом и длиной одного оборота резьбы.</p>
+<p>Резьба бывает полной и неполной. Полная идёт по всей длине стержня под головкой. Неполная занимает только часть длины.</p>
+<p>У полной резьбы большое усилие затяжки. Если между двумя стягиваемыми деталями остаётся зазор, полная резьба его не убирает: стянуть пластины вплотную не получится. Неполная резьба передаёт усилие на одну из деталей и стягивает две части без зазора между ними.</p>
+<p>Плотность посадки в ответной детали задаёт не шаг, а допуск резьбы. Его пишут отдельно. В чертеже нужны тип резьбы, шаг, число заходов и длина резьбовой части. Без этих данных производство подставит свои величины. Деталь тогда может не встать в соединение с первого раза.</p>
+<blockquote><p>Полная резьба даёт сильное усилие затяжки, но не убирает зазор между двумя деталями. Для стяжки без зазора нужна неполная резьба.</p></blockquote>
+<p>Если узел должен сойтись без щели, заложите неполную резьбу в чертёж сразу. Иначе на сборке зазор останется, и его будут закрывать шайбами.</p>
+<h2 id="material-zagotovki-stal-nerzhaveyka-latun-titan">Материал заготовки: сталь, нержавейка, латунь, титан</h2>
+<p>Материал выбирают по среде и по нагрузке. Углеродистая и легированная сталь — обычный выбор для нагруженного крепежа. Именно для них ISO 898-1:2013 задаёт классы прочности. Нержавеющую сталь берут во влаге, в химии и в пищевом производстве. Класс прочности эту стойкость не заменяет: стандарт её не нормирует.</p>
+<p>Латунь и бронза закрывают узкие задачи. Их берут, где нужна электропроводность или где нельзя искрение. Титан берут, где вместе нужны малый вес и высокая прочность. В заявке назовите марку или хотя бы группу материала. Одной пометки «сталь» мало: под ней одинаково читаются и углеродистая, и нержавеющая.</p>
+<p>Температура узла тоже ограничивает выбор. Свойства класса оценены при 10–35 °C. На нагреве и на морозе они могут не сохраниться. Если деталь работает вне этого окна, напишите температуру в заявке отдельно от класса.</p>
+<h2 id="tochenie-ili-holodnaya-shtampovka-chto-vygodnee-pri-vashem-t">Точение или холодная штамповка: что выгоднее при вашем тираже</h2>
+<p>Метод выбирают по тиражу и по форме головки. Точение снимает материал резцом. Оно удобно для штучных и мелких партий. И для головки, которую трудно получить штампом.</p>
+<p>Холодная штамповка формует головку давлением, без снятия металла. Резьбу после этого обычно накатывают.</p>
+<p>На большой партии цена за штуку после оснастки обычно ниже, чем у точения. С какого тиража штамповка обгоняет точение, считают по чертежу. На порог влияют сложность головки и диаметр резьбы. Готового порога «от стольких штук» нет.</p>
+<table><thead><tr><th>Критерий</th><th>Точение</th><th>Холодная штамповка</th></tr></thead><tbody><tr><td>Объём партии</td><td>Штучно и мелкими сериями</td><td>Крупные тиражи</td></tr><tr><td>Форма головки</td><td>Любая, включая нестандартную</td><td>Ограничена штампом</td></tr><tr><td>Перед стартом</td><td>Короткий запуск</td><td>Время на оснастку</td></tr><tr><td>Цена за штуку на большом тираже</td><td>Выше</td><td>Ниже, когда оснастка окуплена</td></tr></tbody></table>
+<p>Срок тоже разный. На малом тираже точение стартует раньше: оснастку делать не нужно. Штамповка ждёт наладки, зато дальше выдаёт детали быстрее.</p>
+<p>Точный срок под тираж и материал называйте в заявке. Как тираж меняет цену, разобрано в материале <a href="/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii">как выбрать размер партии</a>. Если резьбовая деталь сложная и партия небольшая, посмотрите <a href="/tokarnaya.html">токарную обработку резьбовых деталей</a>.</p>
+<h2 id="dopuski-i-klassy-tochnosti-rezby">Допуски и классы точности резьбы</h2>
+<p>Допуск резьбы показывает, насколько профиль может отойти от номинала. От него зависит, туго ли крепёж сядет в ответную деталь. Шаг и диаметр этот зазор не задают.</p>
+<p>Для крепёжной метрической резьбы от M1,6 до M100 предельные размеры среднего диаметра и диаметра по вершинам заданы для классов допусков 6H и 6g. Для резьб от M1 до M1,4 те же пределы заданы для классов 5H и 6h. Это ISO 965-2:2024. Числа отклонений под ваш диаметр и шаг берите из документа, а не из памяти цеха.</p>
+<p>ISO 898-1:2013 для допусков резьбы своего крепежа отсылает к ISO 965-1, ISO 965-2 и ISO 965-4. В чертеже класс допуска пишут отдельно от шага. Более жёсткий класс не делает соединение надёжнее само по себе. Он добавляет работы. Выигрыш есть там, где резьба ещё и ставит деталь на место, а не только стягивает её.</p>
+<blockquote><p>Класс допуска пишите под задачу узла. Самый жёсткий не нужен, если резьба только стягивает.</p></blockquote>
+<h2 id="skruglenie-pod-golovkoy-pochemu-rezkiy-perehod-secheniya-raz">Скругление под головкой: почему резкий переход сечения разрушает крепёж</h2>
+<p>Резкий переход сечения между головкой и стержнем собирает напряжения в этой точке. Под повторной нагрузкой головка может отломиться от усталости. Отказ приходит не с первого цикла. Пока его нет, место выглядит целым.</p>
+<p>Чтобы снять концентрацию, под головкой делают скругление. Ровная поверхность без неровностей тоже поднимает усталостную прочность. Сочетание скругления и конусной кромки лучше всего снимает эту концентрацию. Форму перехода напишите в чертеже. Если её не задать, переход останется на усмотрение производства.</p>
+<p>Для авиационных болтов двигателей скругление под головкой делают высокоточной накаткой. Там нужна особо высокая прочность. Обычному промышленному крепежу такая точность часто избыточна. Принцип общий: переход от головки к стержню несёт нагрузку. Это не декоративная кромка.</p>
+<blockquote><p>Сочетание скругления и конусной кромки под головкой лучше всего снимает концентрацию напряжений. Форму перехода укажите в чертеже.</p></blockquote>
+<h2 id="kakie-defekty-vyyavlyaet-kontrol-kachestva-krepezha">Какие дефекты выявляет контроль качества крепежа?</h2>
+<p>Дефект зоны под головкой часто сидит в настройке оснастки. Тогда он повторяется не на одной детали, а на многих. Смотреть одну штуку из партии мало.</p>
+<p>Типичный набор такой: заусенцы, трещины, сколы, деформация, отклонение размеров и дефект формы самого скругления. С таким дефектом крепёж не держит соединение. Изделие, в которое его поставили, может быть повреждено.</p>
+<p>Форму скругления легко снять неправильно. На оптическом компараторе зона под головкой объёмная: свет трудно сфокусировать на всю поверхность сразу. Разные операторы получают разный результат. Числовое отличие от чертежа с проекции не снять.</p>
+<p>Профилометр требует выставить деталь и обойти профиль щупом. На это уходит время, а сам обход даёт погрешность. Поэтому форму галтели задайте в чертеже явно и спросите, чем её проверят на партии. Одной визуальной отметки «годная» здесь мало.</p>
+<h2 id="zaschitnoe-pokrytie-tsink-nikel-fosfatirovanie">Защитное покрытие: цинк, никель, фосфатирование</h2>
+<p>Покрытие выбирают по среде. Класс прочности коррозию не нормирует, так что слой надо назвать отдельно: тип и толщину. Без этого производство либо спросит, либо оставит крепёж без защиты.</p>
+<p>Цинк заказывают как защиту от коррозии в обычных условиях: в помещении и на улице без агрессивной химии. Никель берут, когда важен вид детали и поверхность должна держать истирание. Фосфат чаще оставляют основой под окраску или масло, а не единственным слоем.</p>
+<table><thead><tr><th>Покрытие</th><th>Зачем заказывают</th><th>Где ставят</th></tr></thead><tbody><tr><td>Цинк</td><td>Защита от коррозии в обычной среде</td><td>Массовый промышленный крепёж</td></tr><tr><td>Никель</td><td>Вид детали и стойкость к истиранию</td><td>Видимый крепёж</td></tr><tr><td>Фосфат</td><td>Основа под окраску или масло</td><td>Крепёж под дальнейшую отделку</td></tr></tbody></table>
+<p>Толщину слоя и способ нанесения напишите числом и словом, как в вашем чертеже узла. Чужой номер стандарта на покрытия сюда не подставляйте: легко назвать документ про обозначения, а ждать от него таблицу толщин.</p>
+<h2 id="chto-ukazat-v-chertezhe-i-zayavke-chtoby-poluchit-tochnyy-ra">Что указать в чертеже и заявке, чтобы получить точный расчёт</h2>
+<p>Расчёт партии точен, когда комплект данных полный. Если чего-то нет, производство останавливается на вопросе. Либо подставляет свою величину. Второе — риск получить не ту деталь.</p>
+<p>Что приложить к заявке:</p>
+<ol><li>Чертёж: тип резьбы, диаметр, шаг, число заходов и длина резьбы.</li><li>Класс прочности и материал заготовки. Для углеродистой и легированной стали класс сверяют с ISO 898-1:2013.</li><li>Тип и толщина защитного покрытия.</li><li>Точный <a href="/blog/pochemu-partiya-menyaet-tsenu-detali.html">объём партии</a>, без «примерно».</li><li>Форма скругления под головкой и класс допуска резьбы, если они важны для узла. Для классов 6H и 6g опора по предельным размерам — ISO 965-2:2024.</li><li>Температура узла, если она вне окна 10–35 °C, и срок, к которому нужна партия.</li></ol>
+<p>Чем полнее заявка, тем меньше кругов уточнений до расчёта метода и цены. Тираж и материал как раз и решают, будет это точение или холодная штамповка.</p>
+<p>Если чертёж на болты, винты или шпильки уже готов, пришлите его на расчёт. По тиражу и материалу назовут метод изготовления и срок.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем отличается точение болта от холодной штамповки?</summary>
+<div class="faq__a"><p>Точение снимает материал резцом на токарном станке. Его берут для мелких партий и для сложной формы головки. Холодная штамповка формует головку давлением, без снятия металла, и на большом тираже обычно дешевле за штуку, когда оснастка уже окуплена. Резьбу при этом накатывают отдельно, не в том же ходе, что и головку.</p></div>
+</details>
+<details>
+<summary>Какие виды резьбы используют для крепежа?</summary>
+<div class="faq__a"><p>Для стяжки соединения основной считают метрическую резьбу. Трапецеидальную и упорную ставят там, где резьба передаёт движение, а не только держит затяжку.</p></div>
+</details>
+<details>
+<summary>Какое покрытие защищает крепёж от коррозии?</summary>
+<div class="faq__a"><p>От коррозии в обычной среде чаще всего заказывают цинк. Никель выбирают, когда важен вид детали и стойкость поверхности к истиранию. Фосфат оставляют основой под окраску или масло. Класс прочности эту защиту не заменяет.</p></div>
+</details>
+<details>
+<summary>Как проходит согласование чертежа при заказе крепежа?</summary>
+<div class="faq__a"><p>Заказчик присылает чертёж с резьбой, классом прочности и материалом. Дальше сверяют допуск резьбы, форму перехода под головкой и способ изготовления: точение или штамповку. После этого подбирают металл и запускают партию.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.keyence.com/products/3d-measure/roughness-measure/applications/bolts-and-screws-underhead-shape-measurement.jsp" rel="noopener" target="_blank">Bolts and Screws Underhead Shape Measurement</a> — Keyence</li>
+<li><a href="https://www.iso.org/standard/60610.html" rel="noopener" target="_blank">ISO 898-1:2013. Mechanical properties of fasteners made of carbon steel and alloy steel — Part 1: Bolts, screws and studs with specified property classes — Coarse thread and fine pitch thread</a> — ISO</li>
+<li><a href="https://www.iso.org/standard/87890.html" rel="noopener" target="_blank">ISO 965-2:2024. ISO general purpose metric screw threads — Tolerances — Part 2: Limits of sizes for internal and external threads (tolerance classes 6H and 6g for M1,6 to M100 and 5H and 6h for M1 to M1,4)</a> — ISO</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">
+            <img src="/images/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Фрезерная обработка по чертежу: допуски без переплат</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut.html">
+            <img src="/images/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Токарные работы по металлу на заказ: выбор маршрута</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/detalirovka-pered-proizvodstvom.html">
+            <img src="/images/blog/detalirovka-pered-proizvodstvom-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
