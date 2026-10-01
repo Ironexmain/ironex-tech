@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как разработать чертежи и техническую документацию для производства детали</title>
+      <link>https://ironex.tech/blog/razrabotka-chertezhey-i-kd-dlya-proizvodstva.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/razrabotka-chertezhey-i-kd-dlya-proizvodstva.html</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Из чего состоит комплект КД по ЕСКД, как сделать чертёж по образцу или 3D-модели и какие ошибки удорожают деталь. Чек-лист для расчёта заказа.</description>
+    </item>
+    <item>
+      <title>Радиальное и торцевое биение: что это, чем отличаются и как измерить допуск</title>
+      <link>https://ironex.tech/blog/radialnoe-torcevoe-bienie-dopusk-izmerenie.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/radialnoe-torcevoe-bienie-dopusk-izmerenie.html</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Радиальное и торцевое биение: чем отличаются зоны допуска, как читать рамку на чертеже и как снять разницу показаний индикатора.</description>
+    </item>
+    <item>
+      <title>Лазерная резка металла: в каких случаях она оправдана, а в каких лучше другой способ</title>
+      <link>https://ironex.tech/blog/lazernaya-rezka-metalla-kogda-ispolzovat.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/lazernaya-rezka-metalla-kogda-ispolzovat.html</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Когда лазерная резка металла даёт точность и скорость, а когда выгоднее плазма, гидроабразив или штамповка. Что указать в чертеже и заявке.</description>
+    </item>
     <item>
       <title>Минимальный объём заказа деталей: одна деталь или партия</title>
       <link>https://ironex.tech/blog/minimalnyy-obem-zakaza-detal-ili-partiya.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0300</pubDate>
       <category>Технологии</category>
       <description>Виды фрезерования, режимы резания, точность и факторы цены детали по чертежу. Таблицы и критерии выбора: фрезеровка, точение или лазерная резка.</description>
-    </item>
-    <item>
-      <title>Электроэрозионная обработка: как она работает и в каких случаях без неё не обойтись</title>
-      <link>https://ironex.tech/blog/elektroerozionnaya-obrabotka-kogda-nuzhna.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/elektroerozionnaya-obrabotka-kogda-nuzhna.html</guid>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Электроэрозия обрабатывает закалённую сталь и твёрдые сплавы без усилия на деталь. Принцип, виды, точность и что указать в чертеже.</description>
-    </item>
-    <item>
-      <title>Сварка vs пайка vs склеивание: когда какой способ соединения деталей выгоднее</title>
-      <link>https://ironex.tech/blog/svarka-payka-skleivanie-metod-soedineniya.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/svarka-payka-skleivanie-metod-soedineniya.html</guid>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Сравниваем сварку, пайку и склеивание по прочности, температуре и цене шва — с таблицей и точными критериями вместо «дороже/дешевле».</description>
-    </item>
-    <item>
-      <title>Заливные детали со встроенными узлами: как выбрать метод под тираж и чертёж</title>
-      <link>https://ironex.tech/blog/proizvodstvo-zalivnyh-detaley-vstroennye-uzly.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/proizvodstvo-zalivnyh-detaley-vstroennye-uzly.html</guid>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Вакуумное литьё в силикон, литьё под давлением, MIM: сравнение по тиражу, сроку и точности. Как закладывать вставки и что передать подрядчику.</description>
     </item>
   </channel>
 </rss>
