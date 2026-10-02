@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Подготовка чертежа для производства: комплект, допуски, файлы</title>
+  <meta name="description" content="Что должно быть на чертеже для заказа детали: размеры, допуски, шероховатость, задание, форматы файлов. Чек-лист перед отправкой в цех." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/podgotovka-chertezha-dlya-proizvodstva.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/podgotovka-chertezha-dlya-proizvodstva.html#article",
+      "headline": "Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки",
+      "description": "Что должно быть на чертеже для заказа детали: размеры, допуски, шероховатость, задание, форматы файлов. Чек-лист перед отправкой в цех.",
+      "datePublished": "2026-10-02",
+      "dateModified": "2026-10-02",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/podgotovka-chertezha-dlya-proizvodstva.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/podgotovka-chertezha-dlya-proizvodstva-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "подготовка чертежа для производства",
+        "чертёж для изготовления детали",
+        "размеры и допуски на чертеже",
+        "техническое задание на изготовление детали",
+        "шероховатость на чертеже"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем чертёж отличается от эскиза?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чертёж оформляют по стандартам; по нему изготавливают и принимают деталь. Эскиз — быстрый рисунок с размерами для предварительной оценки. Для партии, повторного заказа и точных посадок нужен полноценный чертёж."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Бумага или CAD: в каком виде присылать чертёж?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пришлите читаемый PDF. Если подготовлена 3D-модель, приложите STEP. Бумажный документ лучше отсканировать без теней и перекосов. Остальные форматы согласуйте с технологом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие ошибки в чертеже встречаются чаще всего?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Размеры противоречат друг другу, отсутствуют допуски и шероховатость, модель расходится с чертежом, а скан не позволяет прочитать обозначения."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Чертёж для цеха: что указать, чтобы расчёт пришёл без уточнений" />
+  <meta property="og:description" content="Что должно быть на чертеже для заказа детали: размеры, допуски, шероховатость, задание, форматы файлов. Чек-лист перед отправкой в цех." />
+  <meta property="og:url" content="https://ironex.tech/blog/podgotovka-chertezha-dlya-proizvodstva.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/podgotovka-chertezha-dlya-proizvodstva-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-02" />
+  <meta property="article:modified_time" content="2026-10-02" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Чертёж для цеха: что указать, чтобы расчёт пришёл без уточнений" />
+  <meta name="twitter:description" content="Что должно быть на чертеже для заказа детали: размеры, допуски, шероховатость, задание, форматы файлов. Чек-лист перед отправкой в цех." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/podgotovka-chertezha-dlya-proizvodstva-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-tsehu-nuzhno-na-vhode-komplekt-a-ne-odin-list">Что цеху нужно на входе: комплект, а не один лист</a></li>
+<li><a href="#eskiz-ili-chertezh-kogda-eskiza-hvatit-dlya-rascheta">Эскиз или чертёж: когда эскиза хватит для расчёта</a></li>
+<li><a href="#vidy-masshtab-i-osnovnaya-nadpis-minimum-kotoryy-nuzhen-tseh">Виды, масштаб и основная надпись: минимум, который нужен цеху</a></li>
+<li><a href="#kak-prostavit-razmery-i-bazy-chtoby-detal-mozhno-bylo-sdelat">Как проставить размеры и базы, чтобы деталь можно было сделать и проверить</a></li>
+<li><a href="#dopuski-gde-nuzhna-tochnost-a-gde-ona-tolko-dorozhaet">Допуски: где нужна точность, а где она только дорожает</a></li>
+<li><a href="#sherohovatost-i-tehnicheskie-trebovaniya">Шероховатость и технические требования</a></li>
+<li><a href="#tehnologichnost-chto-stanok-sdelat-ne-smozhet">Технологичность: что станок сделать не сможет</a></li>
+<li><a href="#fayly-i-tipichnye-oshibki-peredachi-v-proizvodstvo">Файлы и типичные ошибки передачи в производство</a></li>
+<li><a href="#chek-list-pered-otpravkoy-i-chto-budet-dalshe">Чек-лист перед отправкой и что будет дальше</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки</h1>
+        <p class="lede">Что должно быть на чертеже для заказа детали: размеры, допуски, шероховатость, задание, форматы файлов. Чек-лист перед отправкой в цех.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-10-02">Опубликовано 2 октября 2026</time>
+
+            <span>7 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/podgotovka-chertezha-dlya-proizvodstva-cover.webp" alt="Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Чтобы цех посчитал заказ без переписки, пришлите комплект: чертёж с размерами, допусками и <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>ю, <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">3D-модель</a> в STEP и короткое задание — материал, количество, покрытие. Эскиз подходит для оценки, но допуски и базы на нём всё равно придётся указать. Остальное уточнит технолог.</p>
+<h2 id="chto-tsehu-nuzhno-na-vhode-komplekt-a-ne-odin-list">Что цеху нужно на входе: комплект, а не один лист</h2>
+<p>Если в запросе есть только изображение детали, цех отвечает вопросами вместо расчёта. Чертёж содержит размеры, допуски и требования, по которым технолог выбирает способ обработки, а контролёр проверяет готовую деталь. Техническое задание дополняет чертёж сведениями о партии и условиях заказа.</p>
+<table><thead><tr><th>Указать на чертеже</th><th>Приложить отдельно</th><th>Уточнит технолог</th></tr></thead><tbody><tr><td>Размеры, базы, допуски, шероховатость</td><td>3D-модель, если она подготовлена</td><td>Способ обработки и последовательность операций</td></tr><tr><td>Материал и обозначение детали</td><td>Задание с количеством и сроком</td><td>Возможность выполнить спорные элементы</td></tr><tr><td>Покрытие, термообработка, требования к приёмке</td><td>Образец или фотографии при восстановлении детали</td><td>Средства контроля и потребность в оснастке</td></tr></tbody></table>
+<p>3D-модель должна совпадать с чертежом. При расхождении цеху нужно заранее сообщить, какой документ считать главным. Для партии также пригодится <a href="/blog/detalirovka-pered-proizvodstvom">описание того, что входит в комплект чертежей перед запуском</a>.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки">Прислать чертёж на почту</a>
+</div>
+<h2 id="eskiz-ili-chertezh-kogda-eskiza-hvatit-dlya-rascheta">Эскиз или чертёж: когда эскиза хватит для расчёта</h2>
+<p><img alt="Чертёж с деталями механизма добычи угля" src="/images/blog/podgotovka-chertezha-dlya-proizvodstva-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Схема конвейерной системы и её механических элементов с обозначением отдельных компонентов. Фото: <a href="https://commons.wikimedia.org/wiki/File:Schematic_for_a_conveyor_system_and_its_mechanical_parts_-_DPLA_-_84ed6205884ada1435a3693619b7fe74.jpg" rel="nofollow noopener" target="_blank">This file was contributed to Wikimedia Commons by University of Colorado Boulde…</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Эскиз служит исходником для чертежа и помогает предварительно оценить простую деталь. Даже рисунок от руки должен показывать габариты, материал, количество и сопрягаемые поверхности. Без этих данных технолог не поймёт, какие размеры влияют на работу узла.</p>
+<h3>Когда достаточно эскиза</h3>
+<p>Эскиза обычно хватает для предварительного расчёта, если деталь проста и образец доступен для замеров. Изношенную деталь измеряют в нескольких местах, а следы износа отмечают отдельно. Иначе цех воспроизведёт текущий износ вместо исходной геометрии.</p>
+<h3>Когда нужен полноценный чертёж</h3>
+<p>Чертёж нужен для точных посадок, повторных заказов, партии и приёмки по документу. Он фиксирует базы, предельные отклонения и требования к поверхностям. Технолог может уточнить конструкцию, но не должен угадывать назначение сопряжений.</p>
+<blockquote><p>Эскиз подходит для оценки, чертёж — для изготовления и приёмки. Размеры и сопрягаемые поверхности нужны в обоих документах.</p></blockquote>
+<h2 id="vidy-masshtab-i-osnovnaya-nadpis-minimum-kotoryy-nuzhen-tseh">Виды, масштаб и основная надпись: минимум, который нужен цеху</h2>
+<p>Чертёж должен однозначно показывать форму детали. Выберите главный вид, добавьте только нужные разрезы и сечения. Если отверстие, паз или внутренняя полость не читаются на основном изображении, покажите их отдельным видом или разрезом.</p>
+<p>Для компактной детали удобен масштаб 1:1. При уменьшении или увеличении укажите масштаб в основной надписи, а размеры оставьте действительными.</p>
+<p>Видимый контур, осевые линии и невидимые элементы должны различаться по начертанию. В основной надписи заполните наименование, обозначение, материал и масштаб.</p>
+<p>Шрифты, рамка и формат листа важны для читаемости, но не заменяют производственные данные. Цеху полезнее ясный разрез и заполненный материал, чем учебная обводка без допусков.</p>
+<h2 id="kak-prostavit-razmery-i-bazy-chtoby-detal-mozhno-bylo-sdelat">Как проставить размеры и базы, чтобы деталь можно было сделать и проверить</h2>
+<p>Размеры привязывают к поверхностям, от которых деталь устанавливают на станке и измеряют после обработки. Такие поверхности становятся базами. Если размеры идут от разных случайных граней, накопленная погрешность может сместить отверстие или уступ.</p>
+<p>Представим пластину с двумя отверстиями. Если одно отверстие задано от левого края, второе — от первого отверстия, а общий размер снова замыкает цепочку, значения могут противоречить друг другу. Оставьте один размер справочным либо перестройте цепочку от общей базы.</p>
+<p>Диаметр обозначайте знаком Ø, радиус — R. Для резьбы укажите обозначение, глубину и требование к выходу инструмента. Фаски и скругления тоже требуют размеров.</p>
+<p>По умолчанию размеры читают в миллиметрах. Если модель или задание используют дюймы, напишите единицы явно.</p>
+<h2 id="dopuski-gde-nuzhna-tochnost-a-gde-ona-tolko-dorozhaet">Допуски: где нужна точность, а где она только дорожает</h2>
+<p>Допуск ограничивает отклонение размера и прямо влияет на обработку и контроль. Узкое поле допуска ставят на посадочных и сопрягаемых поверхностях. Для нерабочих элементов часто достаточно общих допусков.</p>
+<h3>Допуски на размеры: квалитеты и посадки</h3>
+<p>Квалитет определяет величину допуска, а буквенное обозначение задаёт положение поля относительно номинального размера. Для соединения отверстия и вала можно задать поля отдельно либо обозначить посадку. Кодовую систему допусков для линейных размеров цилиндров и двух параллельных противоположных поверхностей задаёт ISO 286-1.</p>
+<h3>Общие допуски на неуказанные размеры</h3>
+<p>Вместо повторения одинаковых отклонений у каждого размера запишите класс общих допусков в технических требованиях.</p>
+<blockquote><p><strong>Факт.</strong> ISO 2768-1 задаёт общие допуски в четырёх классах и применяется к размерам деталей, полученных снятием материала или формовкой листового металла.</p></blockquote>
+<h3>Допуски формы и расположения</h3>
+<p>Плоскостность, перпендикулярность, соосность и биение задают отдельно, когда функция детали зависит от геометрии поверхности, а обычного размерного допуска недостаточно.</p>
+<blockquote><p>Допуск задаёт цену точности: чем уже разрешённое отклонение, тем сложнее обработка и контроль. Жёсткое требование оправдано там, где оно влияет на работу детали.</p></blockquote>
+<p>Достижимую точность для конкретного материала и оборудования уточняет технолог. Подробнее — в статье о том, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya">как не переплатить за допуски и шероховатость</a>.</p>
+<h2 id="sherohovatost-i-tehnicheskie-trebovaniya">Шероховатость и технические требования</h2>
+<p>Шероховатость обозначают на чертеже для конкретной поверхности либо группой для нескольких поверхностей. Параметр Ra не стоит назначать одинаковым для рабочих и нерабочих граней. Чем строже требование, тем больше операций может понадобиться.</p>
+<p>В технических требованиях запишите:</p>
+<ul><li>термообработку и контролируемый результат;</li><li>вид покрытия и поверхности, которые нужно защитить;</li><li>требование убрать заусенцы и обработать острые кромки;</li><li>маркировку детали и место её нанесения;</li><li>порядок контроля и документ для приёмки.</li></ul>
+<p>Правила обозначения структуры поверхности (surface texture), в том числе шероховатости, профильными методами в технической документации с помощью графических символов задаёт ISO 21920-1. Значения Ra для конкретного способа обработки нельзя выбирать по универсальной таблице без проверки материала, станка и функции поверхности.</p>
+<blockquote><p><strong>Мнение.</strong> Если поверхность не сопрягается, не уплотняет и не направляет другую деталь, согласуйте её шероховатость с технологом до назначения жёсткого значения.</p></blockquote>
+<h2 id="tehnologichnost-chto-stanok-sdelat-ne-smozhet">Технологичность: что станок сделать не сможет</h2>
+<p>Что произойдёт, если внутри кармана нарисован острый угол? При фрезеровании инструмент оставит радиус, потому что рабочая часть фрезы круглая. Технолог предложит увеличить радиус, изменить способ обработки или добавить выборку для сопрягаемой детали.</p>
+<blockquote><p>Фреза формирует внутренний радиус. Острый внутренний угол без пояснения почти неизбежно вернёт чертёж на уточнение.</p></blockquote>
+<p>Проверьте глубину отверстий и возможность выхода инструмента. Для глубокого отверстия технолог сопоставит диаметр, материал и доступное оборудование. Числовой предел без данных производства лучше не назначать.</p>
+<p>Тонкие стенки и рёбра могут деформироваться при закреплении или обработке. Для резьбы нужен подход инструмента, а для детали — поверхности под установку и зажим.</p>
+<p>Ограничения зависят от процесса. Лазер режет плоский контур, гибка требует места для инструмента и учитывает радиус, механическая обработка требует доступа фрезы или резца. Технолог оценивает технологичность и предлагает изменение, которое сохраняет функцию детали.</p>
+<h2 id="fayly-i-tipichnye-oshibki-peredachi-v-proizvodstvo">Файлы и типичные ошибки передачи в производство</h2>
+<p>Для расчёта пришлите читаемый PDF. Для плоских контуров могут понадобиться DXF или DWG, для объёмной детали — STEP. Принимаемые форматы подтвердите у технолога, а перед отправкой откройте каждый файл на другом устройстве.</p>
+<p>Пять ошибок задерживают расчёт:</p>
+<ul><li>PDF выведен в неверном масштабе — размеры расходятся с изображением;</li><li>единицы не указаны — модель можно прочитать в другом размере;</li><li>3D-модель расходится с чертежом — технолог не знает, чему доверять;</li><li>вместо файла прислано тёмное фото — обозначения и допуски не читаются;</li><li>в архиве лежат разные версии — цех не может выбрать актуальную.</li></ul>
+<p>Для модели используйте отдельный <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki">чек-лист подготовки 3D-файла к расчёту</a>. В имени файла укажите обозначение детали и версию, а в задании назовите главный документ.</p>
+<h2 id="chek-list-pered-otpravkoy-i-chto-budet-dalshe">Чек-лист перед отправкой и что будет дальше</h2>
+<p>Перед отправкой откройте комплект как получатель и проверьте пять пунктов. Такая проверка убирает большинство вопросов о геометрии и составе заказа.</p>
+<ol><li>Сверьте размеры, базы, единицы и незамкнутые размерные цепочки.</li><li>Проверьте допуски, посадки, шероховатость и общие допуски.</li><li>Укажите материал, количество, покрытие, термообработку и приёмку.</li><li>Сопоставьте 3D-модель с чертежом и удалите устаревшие версии.</li><li>Откройте PDF, STEP и другие файлы после упаковки или пересылки.</li></ol>
+<p>После проверки <a href="/kontakty.html">отправьте чертёж на расчёт</a>. Приложите короткое описание назначения детали и отметьте места, где допускаете изменение конструкции. Технолог проверит технологичность, задаст оставшиеся вопросы и подтвердит порядок расчёта.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем чертёж отличается от эскиза?</summary>
+<div class="faq__a"><p>Чертёж оформляют по стандартам; по нему изготавливают и принимают деталь. Эскиз — быстрый рисунок с размерами для предварительной оценки. Для партии, повторного заказа и точных посадок нужен полноценный чертёж.</p></div>
+</details>
+<details>
+<summary>Бумага или CAD: в каком виде присылать чертёж?</summary>
+<div class="faq__a"><p>Пришлите читаемый PDF. Если подготовлена 3D-модель, приложите STEP. Бумажный документ лучше отсканировать без теней и перекосов. Остальные форматы согласуйте с технологом.</p></div>
+</details>
+<details>
+<summary>Какие ошибки в чертеже встречаются чаще всего?</summary>
+<div class="faq__a"><p>Размеры противоречат друг другу, отсутствуют допуски и шероховатость, модель расходится с чертежом, а скан не позволяет прочитать обозначения.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.iso.org/standard/7748.html" rel="noopener" target="_blank">ISO 2768-1 — General tolerances</a> — International Organization for Standardization</li>
+<li><a href="https://www.iso.org/standard/45975.html" rel="noopener" target="_blank">ISO 286-1 — Code system for tolerances and fits</a> — International Organization for Standardization</li>
+<li><a href="https://www.iso.org/standard/72196.html" rel="noopener" target="_blank">ISO 21920-1 — Indication of surface texture</a> — International Organization for Standardization</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu.html">
+            <img src="/images/blog/kak-zakazat-izgotovlenie-vala-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как подготовить чертёж вала для расчёта и изготовления</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu.html">
+            <img src="/images/blog/kak-zakazat-izgotovlenie-korpusa-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Корпуса на заказ: как подготовить чертёж и модель</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html">
+            <img src="/images/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

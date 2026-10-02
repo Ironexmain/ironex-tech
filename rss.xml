@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки</title>
+      <link>https://ironex.tech/blog/podgotovka-chertezha-dlya-proizvodstva.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/podgotovka-chertezha-dlya-proizvodstva.html</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Что должно быть на чертеже для заказа детали: размеры, допуски, шероховатость, задание, форматы файлов. Чек-лист перед отправкой в цех.</description>
+    </item>
+    <item>
+      <title>Какую сталь выбрать для детали: марки, свойства и что записать в чертёж</title>
+      <link>https://ironex.tech/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok.html</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как выбрать сталь для деталей: что значит марка, как углерод и легирование влияют на обработку и что записать в чертёж, чтобы не получить замену.</description>
+    </item>
+    <item>
+      <title>Гибкое производство: как меняются цена, срок и контроль от одной детали до серии</title>
+      <link>https://ironex.tech/blog/gibkoe-proizvodstvo-ot-odnoj-detali-do-serii.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/gibkoe-proizvodstvo-ot-odnoj-detali-do-serii.html</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Как гибкое производство считает единичную деталь, партию и серию: наладка, оснастка, контроль и цена за штуку. Таблица и порядок перехода к серии.</description>
+    </item>
     <item>
       <title>Как разработать чертежи и техническую документацию для производства детали</title>
       <link>https://ironex.tech/blog/razrabotka-chertezhey-i-kd-dlya-proizvodstva.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sat, 26 Sep 2026 00:00:00 +0300</pubDate>
       <category>Контроль качества</category>
       <description>Трещины, поры, непровар, подрезы: чем опасны, откуда берутся и что прописать в чертеже, чтобы шов приняли без споров.</description>
-    </item>
-    <item>
-      <title>Алюминиевый сплав для детали по чертежу: чем Д16Т, АМг6 и АД31 отличаются и какой выбрать</title>
-      <link>https://ironex.tech/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie.html</guid>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Сравнение Д16Т, АМг6 и АД31: прочность, сварка, коррозия, обработка на ЧПУ. Таблица и порядок выбора марки под условия работы детали.</description>
-    </item>
-    <item>
-      <title>Лазерная сварка металла в контрактном производстве: когда она нужна, что подготовить и как проверяют шов</title>
-      <link>https://ironex.tech/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/lazernaya-svarka-metalla-kontraktnoe-proizvodstvo.html</guid>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Лазерная сварка металла глазами заказчика: когда выгоднее TIG/MIG, от чего зависит зазор, что передать подрядчику и как проверяют шов.</description>
-    </item>
-    <item>
-      <title>Фрезеровка металла: какие бывают виды фрезерования и когда какой применять</title>
-      <link>https://ironex.tech/blog/frezerovka-metalla-metody-tehnologiya.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/frezerovka-metalla-metody-tehnologiya.html</guid>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Виды фрезерования, режимы резания, точность и факторы цены детали по чертежу. Таблицы и критерии выбора: фрезеровка, точение или лазерная резка.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сталь для деталей: как выбрать марку под условия работы</title>
+  <meta name="description" content="Как выбрать сталь для деталей: что значит марка, как углерод и легирование влияют на обработку и что записать в чертёж, чтобы не получить замену." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok.html#article",
+      "headline": "Какую сталь выбрать для детали: марки, свойства и что записать в чертёж",
+      "description": "Как выбрать сталь для деталей: что значит марка, как углерод и легирование влияют на обработку и что записать в чертёж, чтобы не получить замену.",
+      "datePublished": "2026-10-02",
+      "dateModified": "2026-10-02",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "сталь для деталей",
+        "выбор стали для детали",
+        "марки стали",
+        "расшифровка марки стали",
+        "легированные стали",
+        "нержавеющая сталь"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Какую сталь выбрать для детали: марки, свойства и что записать в чертёж"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как выбрать марку стали под деталь?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Определите вид нагрузки, износ, температуру и среду. Затем выберите класс стали по углероду и легированию, проверьте прокаливаемость самого толстого сечения и оцените резание, сварку и термообработку. В чертёж запишите одну марку по ГОСТ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как расшифровать марку стали, например 40Х?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В российском обозначении конструкционной стали число `40` указывает примерно на 0,40 % углерода, а буква `Х` — на хром. Допустимые пределы состава и состояние поставки нужно проверить по стандарту на выбранный прокат."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли заменить отечественную марку стали зарубежной?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно только после сравнения стандартов и согласования с заказчиком. Близкий состав не делает стали полностью равнозначными: различаться могут допуски, механические свойства, прокаливаемость и состояние поставки. Решение подтверждают сертификатом конкретной плавки."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Сталь для детали: 8 ходовых марок и чек-лист выбора" />
+  <meta property="og:description" content="Как выбрать сталь для деталей: что значит марка, как углерод и легирование влияют на обработку и что записать в чертёж, чтобы не получить замену." />
+  <meta property="og:url" content="https://ironex.tech/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-02" />
+  <meta property="article:modified_time" content="2026-10-02" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Сталь для детали: 8 ходовых марок и чек-лист выбора" />
+  <meta name="twitter:description" content="Как выбрать сталь для деталей: что значит марка, как углерод и легирование влияют на обработку и что записать в чертёж, чтобы не получить замену." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какую сталь выбрать для детали: марки, свойства и что записать в чертёж">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Какую сталь выбрать для детали: марки, свойства и что записать в чертёж</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#kak-chitat-marku">Как читать марку стали</a></li>
+<li><a href="#uglerod-prochnost">Как углерод меняет свойства</a></li>
+<li><a href="#legirovanie">Что даёт легирование</a></li>
+<li><a href="#matrica-detal-marka">Матрица выбора марки</a></li>
+<li><a href="#obrabotka-termoobrabotka">Обработка и термообработка</a></li>
+<li><a href="#nerzhaveyushchie-stali">Семейства нержавеющих сталей</a></li>
+<li><a href="#temperatura-sreda">Температура и среда</a></li>
+<li><a href="#chto-ukazat-v-chertezhe">Что записать в чертёж</a></li>
+<li><a href="#analogi-i-zamena">Аналоги и замена</a></li>
+<li><a href="#chek-list-vybora">Шесть шагов выбора</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какую сталь выбрать для детали: марки, свойства и что записать в чертёж">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Какую сталь выбрать для детали: марки, свойства и что записать в чертёж</h1>
+        <p class="lede">Как выбрать сталь для деталей: что значит марка, как углерод и легирование влияют на обработку и что записать в чертёж, чтобы не получить замену.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-10-02">Опубликовано 2 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok-cover.webp" alt="Какую сталь выбрать для детали: марки, свойства и что записать в чертёж" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Сталь для детали выбирают по трём вещам: как деталь нагружена, что с ней делают на станке и в печи, и в какой среде она работает. Начните с углерода и легирования, затем проверьте обрабатываемость и прокаливаемость. В чертёж запишите одну конкретную марку по ГОСТ, а не диапазон.</p>
+<h2 id="kak-chitat-marku">Как читать марку стали: 40Х, 09Г2С, 12Х18Н10Т</h2>
+<p>Марка 40Х сообщает две основные вещи: среднее содержание углерода и наличие хрома. В российских обозначениях конструкционных сталей начальные цифры обычно показывают углерод в сотых долях процента, а буквы — легирующие элементы. Точную расшифровку и допустимый состав проверяют по ГОСТ на нужный вид проката.</p>
+<p>Марку 40Х можно прочитать так:</p>
+<ul><li><code>40</code> — около 0,40 % углерода;</li><li><code>Х</code> — хром;</li><li><code>Г</code> в марке 09Г2С — марганец;</li><li><code>Н</code> и <code>Т</code> в 12Х18Н10Т — никель и титан.</li></ul>
+<p>В SAE/AISI действует другая логика. У четырёхзначных обозначений последние две цифры показывают номинальный углерод в сотых долях процента: 1010 означает около 0,10 %. Приравнивать такую марку к российской по одному числу нельзя.</p>
+<blockquote><p><strong>Факт.</strong> Запись <code>1008/1010</code> на чертежах — это не одна марка, а две разные, с разными допустимыми составами.</p></blockquote>
+<p>Такая запись оставляет выбор поставщику. По той же причине в чертеже не стоит писать <code>08/10</code> или <code>45/40Х</code>. Индексы <code>кп</code>, <code>пс</code> и <code>сп</code> тоже влияют на материал; их значение для Ст0–Ст6 берут из стандарта на сталь, а не из памяти.</p>
+<blockquote><p><strong>Мнение.</strong> Если чертёж получают несколько подрядчиков, указывайте одну марку и один норматив: так предложения можно сравнить без скрытой разницы в материале.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какую сталь выбрать для детали: марки, свойства и что записать в чертёж">Прислать чертёж на почту</a>
+</div>
+<h2 id="uglerod-prochnost">Углерод: прочность растёт, пластичность и свариваемость падают</h2>
+<p><img alt="Токарная обработка углеродистой стали для нарезания резьбы" src="/images/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Обработка куска углеродистой стали на токарном станке: подготовка к нарезанию резьбы. Фото: <a href="https://commons.wikimedia.org/wiki/File:US_Navy_050620-N-7869M-092_Machinery_Repairman_3rd_Class_Richard_Henegar_uses_a_lathe_machine_to_turndown_a_piece_of_carbon_steel_to_3-8_of_an_inch_for_threading.jpg" rel="nofollow noopener" target="_blank">U.S. Navy photo by Photographer's Mate Airman Brian May</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Углерод — первый ориентир при выборе конструкционной стали. С его ростом обычно повышается прочность, но уменьшается пластичность и усложняется свариваемость. Это правило помогает отсеять неподходящие варианты, однако не предсказывает свойства конкретной плавки без учёта легирования, состояния поставки и термообработки.</p>
+<blockquote><p>Чем больше углерода, тем прочнее и менее пластична сталь и тем сложнее её сваривать. Это ориентир, а не обещание свойств конкретной заготовки.</p></blockquote>
+<p>У каждой марки свой допустимый диапазон состава. Поэтому последние цифры полезно сравнивать внутри одной системы и между заметно разными марками, но не при приёмке материала.</p>
+<p>Углеродистые стали обыкновенного качества Ст0–Ст6 применяют прежде всего для проката и сварных конструкций. Конструкционные стали 08–60 выбирают для деталей, где важны состав, обработка и итоговые свойства. Допустимые примеси серы и фосфора проверяют по стандарту на конкретную марку, не перенося числа из сводных таблиц без указания состояния материала.</p>
+<h2 id="legirovanie">Легирование: что добавляют и что за это платят</h2>
+<p>Легированную сталь выбирают, когда одного углерода недостаточно для требуемой прочности, прокаливаемости, хладостойкости или работы при нагреве. К низколегированным относят, например, 09Г2С, к конструкционным хромистым — 20Х и 40Х. Категорию марки проверяют по профильному стандарту.</p>
+<p>С ростом легирования обычно увеличивается прокаливаемость: мартенсит может формироваться глубже в сечении и при менее резком охлаждении. Поэтому термообработка легированной стали позволяет работать с более крупными деталями. Цена такого решения — более сложные режимы закалки, резания и сварки.</p>
+<p>Высоколегированные Cr-Mo стали способны формировать твёрдую и хрупкую мартенситную структуру даже при сравнительно медленном охлаждении. Сварное соединение становится чувствительнее к водороду и трещинам. Для деталей, работающих при нагреве, хром и молибден дают жаропрочность, а ванадий и ниобий усиливают этот эффект. Российский аналог конкретной Cr-Mo марки нужно уточнять по составу и нормативу.</p>
+<h2 id="matrica-detal-marka">Матрица выбора: деталь, условия работы, марка</h2>
+<p><img alt="Металлические слитки" src="/images/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok-2.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Фрагменты металлических слитков. Фото: <a href="https://commons.wikimedia.org/wiki/File:Undiagnostic_metal_ingots_of_unknown_date_%28FindID_741659%29.jpg" rel="nofollow noopener" target="_blank">West Yorkshire Archaeology Advisory Service, Amy Downes, 2017-10-06 11:43:48</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Марку выбирают по месту приложения нагрузки. Для поверхности, которая трётся или контактирует с другой деталью, важны твёрдость и износостойкость слоя. Для вала, оси или корпуса под изгибом и кручением нужны свойства всего сечения. Таблица даёт кандидата для расчёта, а не готовое назначение материала.</p>
+<table><thead><tr><th>Деталь</th><th>Условия работы</th><th>Марка-кандидат</th><th>Почему рассматривают</th></tr></thead><tbody><tr><td>Вал или ось</td><td>Изгиб, кручение</td><td>45, 40Х</td><td>40Х выбирают при повышенных требованиях к прокаливаемости</td></tr><tr><td>Шестерня</td><td>Износ зубьев, удар</td><td>20Х, 40Х</td><td>20Х подходит под цементацию, 40Х — под объёмное улучшение</td></tr><tr><td>Втулка</td><td>Трение по поверхности</td><td>20, 45</td><td>Марку связывают с покрытием, закалкой или цементацией</td></tr><tr><td>Крепёж</td><td>Растяжение, срез</td><td>20, 35, 40Х</td><td>Выбор зависит от требуемого класса прочности и технологии</td></tr><tr><td>Сварная рама</td><td>Статическая и переменная нагрузка</td><td>Ст3, 09Г2С</td><td>Учитывают свариваемость, толщину и температуру работы</td></tr><tr><td>Пружина</td><td>Многократная упругая деформация</td><td>65Г</td><td>Пружинную сталь назначают вместе с термообработкой</td></tr><tr><td>Подшипниковое кольцо</td><td>Контактная усталость</td><td>ШХ15</td><td>Подшипниковая сталь рассчитана на твёрдую рабочую поверхность</td></tr><tr><td>Корпус во влажной среде</td><td>Коррозия</td><td>12Х18Н10Т</td><td>Хром формирует защитную плёнку, никель стабилизирует структуру</td></tr></tbody></table>
+<p>Окончательный выбор зависит от размера детали, расчётной нагрузки, доступного проката и маршрута изготовления. Марка, подходящая тонкой оси, может не дать нужную структуру в массивном валу.</p>
+<h2 id="obrabotka-termoobrabotka">Как марка ведёт себя в обработке и в печи</h2>
+<p>Марка влияет на весь маршрут изготовления: закупку проката, резание, сварку, закалку и финишную обработку. Обрабатываемость резанием зависит не только от химического состава. Её меняют твёрдость и состояние поставки: горячекатаный, калиброванный или шлифованный пруток потребует разного припуска.</p>
+<blockquote><p>Марку подбирают под свойства готовой детали и под то, как заготовка переживёт станок, сварку и печь.</p></blockquote>
+<p>Прокаливаемость показывает, на какую глубину при закалке сформируется нужная структура. Даже легированная сталь не всегда прокаливается насквозь в крупном сечении. Критический диаметр и режим охлаждения берут из справочника технолога для выбранной марки.</p>
+<p>Перепады толщины, острые переходы и несимметричная форма повышают риск коробления и трещин. Конструктор предусматривает технологичные радиусы и припуск под обработку после печи. Термообработка зависит от прокаливаемости: чем глубже должна закалиться деталь, тем важнее сечение и выбранная охлаждающая среда.</p>
+<p>Для сварных Cr-Mo узлов обычно нужна послесварочная термообработка, а режимы сварки и подогрева задаёт конкретный свод правил. Эти требования нельзя автоматически переносить на обычные детали без сварки. Подходящий <a href="/razdel/tehnologii.html">маршрут обработки под конкретную деталь</a> определяют до закупки материала.</p>
+<h2 id="nerzhaveyushchie-stali">Нержавеющие стали: семейства и цена замены</h2>
+<p>Нержавеющая сталь получает коррозионную стойкость благодаря хрому. Он образует на поверхности тонкую оксидную плёнку, ограничивающую дальнейшее окисление. В международной классификации нижний ориентир — 10 % хрома; российскую марку и её состав проверяют по стандарту на коррозионностойкие стали.</p>
+<table><thead><tr><th>Семейство</th><th>Примеры</th><th>Что даёт</th><th>Чем приходится платить</th></tr></thead><tbody><tr><td>Аустенитное</td><td>12Х18Н10Т</td><td>Формуемость и коррозионная стойкость</td><td>Цена никеля, упрочнение при резании</td></tr><tr><td>Ферритное</td><td>08Х17Т, 12Х17</td><td>Меньше никеля, стойкость к коррозии</td><td>Ограниченная формуемость, нет упрочнения закалкой</td></tr><tr><td>Мартенситное</td><td>20Х13, 30Х13, 40Х13</td><td>Твёрдость после термообработки</td><td>Коррозионная стойкость ниже</td></tr></tbody></table>
+<p>Замена аустенитной стали на ферритную снижает долю дорогого никеля, но может потребовать изменить форму детали или процесс штамповки. Мартенситную марку выбирают для износостойкой детали, когда твёрдость важнее максимальной коррозионной стойкости. Дуплексные и дисперсионно-твердеющие стали подбирают отдельно, по стандарту и режиму термообработки. Точное соответствие зарубежной серии российской марке подтверждают стандартом и сертификатом плавки.</p>
+<h2 id="temperatura-sreda">Температура и среда: где кончается углеродистая сталь</h2>
+<p>Обычная углеродистая сталь перестаёт быть подходящим кандидатом, когда деталь долго работает при нагреве, на морозе или в агрессивной среде. В этих условиях проверяют не только прочность при комнатной температуре, но и длительную прочность, хладостойкость, окалиностойкость и характер коррозии.</p>
+<p>Для жаропрочных ферритных сталей основными легирующими элементами служат хром и молибден. Хром также снижает образование окалины. У каждой марки есть сочетание температуры и напряжения, выше которого её применять нельзя. Для наиболее легированных сталей источник указывает уровень до 650 °C, но это число не заменяет расчёт по конкретной марке и норме.</p>
+<p>При низкой температуре марку проверяют по допустимой температуре эксплуатации и ударной вязкости. Значения для 09Г2С или 12Х18Н10Т нельзя назначать по названию семейства.</p>
+<p>Во влажной неагрессивной среде иногда достаточно покрытия углеродистой стали. Нержавеющую марку выбирают, если покрытие трудно обновлять, повреждение опасно или среда разрушает обычную сталь быстрее допустимого срока.</p>
+<h2 id="chto-ukazat-v-chertezhe">Что указать в чертеже и заявке, чтобы получить нужную сталь</h2>
+<p>В чертеже должна стоять одна марка, норматив на материал и требования к состоянию детали после обработки. Запись <code>45/40Х</code> разрешает подрядчику выбрать удобный вариант, хотя эти стали различаются составом, прокаливаемостью, ценой и маршрутом изготовления.</p>
+<p>Укажите:</p>
+<ul><li>марку и ГОСТ на конкретный вид проката;</li><li>состояние поставки заготовки;</li><li>требуемую твёрдость HRC или HB после термообработки;</li><li>необходимость сертификата на материал;</li><li>допустимость замены и порядок её согласования.</li></ul>
+<blockquote><p>В чертёж записывают одну марку по ГОСТ, состояние поставки и итоговую твёрдость. Иначе часть решения о материале незаметно переходит подрядчику.</p></blockquote>
+<p>Если замена возможна, задайте проверяемые критерии: состав, механические свойства, состояние поставки и термообработку. Подробный порядок описан в материале о том, <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali">как согласовать аналог материала</a>.</p>
+<p>К заявке приложите чертёж, <a href="/blog/pochemu-partiya-menyaet-tsenu-detali.html">объём партии</a> и требования к документам. Перед отправкой проверьте, <a href="/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley">как составить заявку на изготовление деталей</a>, чтобы подрядчик оценивал один и тот же объём работ.</p>
+<h2 id="analogi-i-zamena">Аналоги и замена: отечественные и зарубежные марки</h2>
+<p>Зарубежный аналог марки почти всегда приблизителен. Совпадение углерода и основных легирующих элементов даёт сходный материал, но стандарты могут задавать разные пределы состава, механические свойства, размеры образцов и состояния поставки. Замену подтверждают сравнением нормативов и сертификатом конкретной плавки.</p>
+<p>Совпадение по классу прочности тоже не гарантирует одинаковый состав. Для ответственной детали одного сходства названий недостаточно: заказчик должен письменно принять замену до запуска партии, сверив требования чертежа, форму проката и свойства после термообработки.</p>
+<p>В нержавеющих сталях номер зарубежной серии сам по себе не подтверждает замену российской марки. Пределы состава и свойств берут из стандарта на конкретный вид проката.</p>
+<h2 id="chek-list-vybora">Чек-лист выбора стали за шесть шагов</h2>
+<p>Выбор марки удобно вести от нагрузки к записи в чертеже. Такой порядок не даёт начать с доступного прутка и только потом подгонять под него требования детали.</p>
+<ol><li>Опишите нагрузку: изгиб, кручение, удар, контакт или трение.</li><li>Зафиксируйте среду: влага, реагенты, нагрев или мороз.</li><li>Выберите класс стали по углероду и легированию.</li><li>Проверьте прокаливаемость по самому толстому сечению.</li><li>Оцените резание, сварку, коробление и риск трещин.</li><li>Запишите марку, ГОСТ, состояние поставки, твёрдость и условия замены.</li></ol>
+<table><thead><tr><th>Марка</th><th>Доступность проката</th><th>Обрабатываемость</th><th>Типовые детали</th></tr></thead><tbody><tr><td>Ст3</td><td>широкая</td><td>обычная</td><td>рамы, корпуса</td></tr><tr><td>20</td><td>широкая</td><td>удобная</td><td>втулки, малонагруженные детали</td></tr><tr><td>45</td><td>широкая</td><td>обычная</td><td>валы, оси</td></tr><tr><td>40Х</td><td>широкая</td><td>сложнее стали 45</td><td>нагруженные валы</td></tr><tr><td>30ХГСА</td><td>зависит от сортамента</td><td>требует настройки режима</td><td>нагруженные узлы</td></tr><tr><td>09Г2С</td><td>широкая</td><td>обычная</td><td>сварные конструкции</td></tr><tr><td>12Х18Н10Т</td><td>широкая</td><td>склонна к наклёпу</td><td>коррозионностойкие корпуса</td></tr><tr><td>ШХ15</td><td>профильная</td><td>зависит от состояния</td><td>кольца, тела качения</td></tr></tbody></table>
+<p>Относительная доступность меняется по региону и размеру проката, поэтому её уточняют перед утверждением чертежа. Если нужна оценка технологии и материала, отправьте чертёж на <a href="/">изготовление деталей по чертежам</a>: технолог проверит марку, сортамент и маршрут до расчёта заказа.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Как выбрать марку стали под деталь?</summary>
+<div class="faq__a"><p>Определите вид нагрузки, износ, температуру и среду. Затем выберите класс стали по углероду и легированию, проверьте прокаливаемость самого толстого сечения и оцените резание, сварку и термообработку. В чертёж запишите одну марку по ГОСТ.</p></div>
+</details>
+<details>
+<summary>Как расшифровать марку стали, например 40Х?</summary>
+<div class="faq__a"><p>В российском обозначении конструкционной стали число <code>40</code> указывает примерно на 0,40 % углерода, а буква <code>Х</code> — на хром. Допустимые пределы состава и состояние поставки нужно проверить по стандарту на выбранный прокат.</p></div>
+</details>
+<details>
+<summary>Можно ли заменить отечественную марку стали зарубежной?</summary>
+<div class="faq__a"><p>Можно только после сравнения стандартов и согласования с заказчиком. Близкий состав не делает стали полностью равнозначными: различаться могут допуски, механические свойства, прокаливаемость и состояние поставки. Решение подтверждают сертификатом конкретной плавки.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.thefabricator.com/thefabricator/article/metalsmaterials/metal-grades-designations-for-grading-sheet-metals" rel="noopener" target="_blank">Metal Grades: Designations for grading sheet metals</a> — The Fabricator</li>
+<li><a href="https://www.twi-global.com/technical-knowledge/job-knowledge/welding-of-ferritic-creep-resistant-steels-099" rel="noopener" target="_blank">Welding of Ferritic Creep-resistant Steels</a> — TWI</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat.html">
+            <img src="/images/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html">
+            <img src="/images/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Обработка нержавейки и титана: режимы резания, сварка и отделка</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie.html">
+            <img src="/images/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Алюминиевый сплав для детали по чертежу: чем Д16Т, АМг6 и АД31 отличаются и какой выбрать</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какую сталь выбрать для детали: марки, свойства и что записать в чертёж">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
