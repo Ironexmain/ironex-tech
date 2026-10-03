@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Сертификация производства и допуски: что она гарантирует, а что нет</title>
+      <link>https://ironex.tech/blog/sertifikaciya-proizvodstva-i-dopuski.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/sertifikaciya-proizvodstva-i-dopuski.html</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Что подтверждает сертификация производства по ISO 9001, чем она отличается от допусков на чертеже и как проверить подрядчика до заказа деталей.</description>
+    </item>
+    <item>
+      <title>Сборка и комплектование деталей: как проходит финальный этап заказа</title>
+      <link>https://ironex.tech/blog/sborka-i-komplektovanie-metallicheskih-detaley.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/sborka-i-komplektovanie-metallicheskih-detaley.html</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Сборка металлических деталей и комплектование заказа: входной контроль, консервация и упаковка партии перед отгрузкой заказчику.</description>
+    </item>
+    <item>
+      <title>Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы</title>
+      <link>https://ironex.tech/blog/radius-giba-listovogo-metalla.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/radius-giba-listovogo-metalla.html</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Минимальный радиус гибки по толщине и марке: правило 1×S, цифры для стали и алюминия, разгрузочные вырезы и чек-лист для чертежа.</description>
+    </item>
     <item>
       <title>Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки</title>
       <link>https://ironex.tech/blog/podgotovka-chertezha-dlya-proizvodstva.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Как из сборочного чертежа получить рабочие чертежи деталей: порядок работы, допуски, шероховатость, резьбы и чек-лист проверки перед заказом.</description>
-    </item>
-    <item>
-      <title>Аргонодуговая сварка (TIG): для каких деталей она нужна и когда хватит полуавтомата</title>
-      <link>https://ironex.tech/blog/argonodugovaya-svarka-tig-i-poluavtomat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/argonodugovaya-svarka-tig-i-poluavtomat.html</guid>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>TIG даёт чистый шов на нержавейке и алюминии, полуавтомат быстрее на металле потолще. Таблица различий и как указать процесс в чертеже.</description>
-    </item>
-    <item>
-      <title>Контрактное производство деталей по чертежу: как оно устроено и когда выгоднее своего цеха</title>
-      <link>https://ironex.tech/blog/kontraktnoe-proizvodstvo-detaley-kak-rabotaet.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kontraktnoe-proizvodstvo-detaley-kak-rabotaet.html</guid>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как устроено контрактное производство деталей по чертежу: этапы запуска, из чего складывается цена, приёмка и договор. Когда это выгоднее своего цеха.</description>
-    </item>
-    <item>
-      <title>Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак</title>
-      <link>https://ironex.tech/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html</guid>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Контроль качества</category>
-      <description>Трещины, поры, непровар, подрезы: чем опасны, откуда берутся и что прописать в чертеже, чтобы шов приняли без споров.</description>
     </item>
   </channel>
 </rss>

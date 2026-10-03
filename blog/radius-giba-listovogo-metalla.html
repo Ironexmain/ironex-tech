@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Радиус гиба листового металла: минимальный радиус и таблица</title>
+  <meta name="description" content="Минимальный радиус гибки по толщине и марке: правило 1×S, цифры для стали и алюминия, разгрузочные вырезы и чек-лист для чертежа." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/radius-giba-listovogo-metalla.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/radius-giba-listovogo-metalla.html#article",
+      "headline": "Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы",
+      "description": "Минимальный радиус гибки по толщине и марке: правило 1×S, цифры для стали и алюминия, разгрузочные вырезы и чек-лист для чертежа.",
+      "datePublished": "2026-10-03",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/radius-giba-listovogo-metalla.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/radius-giba-listovogo-metalla-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "радиус гиба листового металла",
+        "минимальный радиус гибки",
+        "гибка листа",
+        "разгрузочный вырез",
+        "минимальная полка при гибке",
+        "направление проката при гибке"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какой минимальный радиус гибки для стали?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для пластичной стали ориентир — внутренний радиус, равный толщине листа. Меньшее значение закладывайте только после согласования марки, состояния материала и оснастки с производством."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда нужен разгрузочный вырез?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Когда гиб идёт не по всей ширине заготовки либо подходит к отверстию, пазу, краю или другому гибу. Вырез снижает концентрацию деформации и риск надрыва в углу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли гнуть с радиусом меньше толщины листа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно, если материал и оснастка допускают такую деформацию. Решение нужно проверить у исполнителя: уменьшение радиуса повышает риск трещин и может потребовать отдельного инструмента."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Какой радиус гиба заложить в чертёж, чтобы лист не треснул" />
+  <meta property="og:description" content="Минимальный радиус гибки по толщине и марке: правило 1×S, цифры для стали и алюминия, разгрузочные вырезы и чек-лист для чертежа." />
+  <meta property="og:url" content="https://ironex.tech/blog/radius-giba-listovogo-metalla.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/radius-giba-listovogo-metalla-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-03" />
+  <meta property="article:modified_time" content="2026-10-03" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Какой радиус гиба заложить в чертёж, чтобы лист не треснул" />
+  <meta name="twitter:description" content="Минимальный радиус гибки по толщине и марке: правило 1×S, цифры для стали и алюминия, разгрузочные вырезы и чек-лист для чертежа." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/radius-giba-listovogo-metalla-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-radius-giba-i-kakoy-iz-nih-ukazyvat-v-chertezhe">Что такое радиус гиба и какой из них указывать в чертеже</a></li>
+<li><a href="#pochemu-list-treskaetsya-deformatsiya-i-napravlenie-volokon">Почему лист трескается: деформация и направление волокон</a></li>
+<li><a href="#pravilo-radius-raven-tolschine-i-ot-chego-ono-zavisit">Правило «радиус равен толщине» и от чего оно зависит</a></li>
+<li><a href="#tablitsa-minimalnyh-radiusov-v-millimetrah">Таблица минимальных радиусов в миллиметрах</a></li>
+<li><a href="#radius-i-osnastka-pri-chem-zdes-v-matritsa">Радиус и оснастка: при чём здесь V-матрица</a></li>
+<li><a href="#minimalnaya-polka-i-pruzhinenie-chto-esche-ogranichivaet-gib">Минимальная полка и пружинение: что ещё ограничивает гиб</a></li>
+<li><a href="#razgruzochnyy-vyrez-kogda-nuzhen-i-kak-ego-rasschitat">Разгрузочный вырез: когда нужен и как его рассчитать</a></li>
+<li><a href="#napravlenie-prokata-i-lazernaya-rezka-popravki-k-minimumu">Направление проката и лазерная резка: поправки к минимуму</a></li>
+<li><a href="#chto-ukazat-v-chertezhe-i-kak-izbezhat-otkaza-tehnologa">Что указать в чертеже и как избежать отказа технолога</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы</h1>
+        <p class="lede">Минимальный радиус гибки по толщине и марке: правило 1×S, цифры для стали и алюминия, разгрузочные вырезы и чек-лист для чертежа.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-10-03">Опубликовано 3 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/radius-giba-listovogo-metalla-cover.webp" alt="Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Для стали закладывайте внутренний радиус, равный толщине листа. Для алюминия 6061-T6 — не меньше шести толщин. Меньший радиус даёт трещины, а радиус, не согласованный с исполнителем, плавает от партии к партии. Рядом с отверстиями и в углах нужен разгрузочный вырез.</p>
+<h2 id="chto-takoe-radius-giba-i-kakoy-iz-nih-ukazyvat-v-chertezhe">Что такое радиус гиба и какой из них указывать в чертеже</h2>
+<p>Если в модели стоит радиус 0,5 мм, пресс не обязан повторить его без подходящей оснастки. В чертеже указывают внутренний радиус: технолог сопоставляет его с толщиной листа, материалом, пуансоном и V-матрицей. Наружный радиус равен внутреннему радиусу плюс толщина листа.</p>
+<p>При гибке наружные слои металла растягиваются, а внутренние сжимаются. Между ними проходит нейтральный слой, длина которого меняется меньше. Его положение учитывают при построении развёртки, но для согласования заказа нужны материал, толщина и внутренний радиус.</p>
+<p>Фактический радиус зависит от способа гибки и установленного инструмента. Без специальной оснастки один и тот же файл может дать разные результаты на двух производствах или в двух партиях. Если радиус влияет на сборку, зазор либо прочность, его нельзя оставлять значением по умолчанию из САПР.</p>
+<p>В обозначении стоит прямо написать «R внутренний» и поставить допуск, если разброс критичен. Исполнитель проверит цифру до раскроя, а не после пробного гиба готовых заготовок.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы">Прислать чертёж на почту</a>
+</div>
+<h2 id="pochemu-list-treskaetsya-deformatsiya-i-napravlenie-volokon">Почему лист трескается: деформация и направление волокон</h2>
+<p><img alt="Гибка листовых деталей в авиапроизводстве" src="/images/blog/radius-giba-listovogo-metalla-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Гибка листовых деталей при производстве авиационных конструкций. Фото: <a href="https://commons.wikimedia.org/wiki/File:111-SC-591_-_Airplane_production_-_Bending_sheet_metal_fittings_-_NARA_-_55162517.jpg" rel="nofollow noopener" target="_blank">Unknown author Unknown author or not provided</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Чем меньше внутренний радиус, тем сильнее растягивается наружная сторона гиба. Когда деформация превышает запас пластичности материала, на наружной поверхности появляются надрывы и трещины. Дефект ослабляет деталь и может раскрыться после окраски, сборки или рабочей нагрузки.</p>
+<blockquote><p>Меньший радиус повышает деформацию металла. Если пластичности не хватает, наружные слои растрескиваются вместо равномерного растяжения.</p></blockquote>
+<p>Риск зависит от марки, состояния поставки, оснастки и направления проката. Холоднокатаная пластичная сталь допускает меньший относительный радиус, чем твёрдый алюминиевый сплав. После наклёпа или термообработки поведение той же марки тоже меняется.</p>
+<p>Линия гиба поперёк направления проката обычно переносит деформацию лучше. При гибе вдоль волокон наружная сторона чаще растрескивается, особенно когда радиус близок к минимальному. Поэтому на критичных деталях направление проката задают в чертеже и сохраняют при раскладке на листе.</p>
+<p>Осматривать нужно всю наружную дугу и края полки. Сетка мелких трещин, отдельные надрывы либо раскрытый угол означают, что радиус, ориентацию заготовки или режим гибки следует пересмотреть до запуска серии.</p>
+<h2 id="pravilo-radius-raven-tolschine-i-ot-chego-ono-zavisit">Правило «радиус равен толщине» и от чего оно зависит</h2>
+<p>Для пластичной стали и <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавеющей стали</a> рабочий ориентир прост: внутренний радиус R принимают равным толщине листа S. Например, для листа 2 мм начинают с R2. Радиус меньше толщины согласовывают с производством до подготовки развёртки.</p>
+<blockquote><p>Для пластичной стали отправная точка — R = S. Для алюминия 6061-T6 безопасный ориентир начинается с R = 6S.</p></blockquote>
+<p>Минимальный внутренний радиус зависит сразу от толщины листа и пластичности материала. При увеличении толщины растёт и абсолютный радиус. При снижении пластичности одной толщины уже недостаточно: изгиб приходится делать плавнее.</p>
+<p>Для сплава 6061-T6 нужен внутренний радиус не меньше шести толщин. У листа 3 мм это R18. Для АМг, АМц и других марок это значение не переносят: радиус сверяют по сертификату материала и возможностям цеха.</p>
+<p>Радиус около толщины оставляет исполнителю больше вариантов пуансона и матрицы. Это сокращает число пробных настроек и риск брака. Малый или нестандартный радиус может потребовать отдельного инструмента.</p>
+<blockquote><p><strong>Мнение.</strong> Если радиус не задан конструкцией сопряжения, для пластичной стали берите R = S и перед выпуском чертежа согласуйте его с выбранным производством.</p></blockquote>
+<h2 id="tablitsa-minimalnyh-radiusov-v-millimetrah">Таблица минимальных радиусов в миллиметрах</h2>
+<p>Таблица даёт стартовые значения внутреннего радиуса для типовых толщин. Она подходит для предварительной проверки модели, но не заменяет согласование марки, состояния поставки, направления проката и оснастки. Буква S означает толщину листа.</p>
+<table><thead><tr><th>Материал</th><th>S = 1 мм</th><th>S = 2 мм</th><th>S = 3 мм</th><th>S = 4 мм</th><th>S = 6 мм</th></tr></thead><tbody><tr><td>Пластичная сталь, ориентир 1×S</td><td>1 мм</td><td>2 мм</td><td>3 мм</td><td>4 мм</td><td>6 мм</td></tr><tr><td>Пластичная нержавеющая сталь, ориентир 1×S</td><td>1 мм</td><td>2 мм</td><td>3 мм</td><td>4 мм</td><td>6 мм</td></tr><tr><td>Алюминий 6061-T6, не менее 6×S</td><td>6 мм</td><td>12 мм</td><td>18 мм</td><td>24 мм</td><td>36 мм</td></tr></tbody></table>
+<p>Для листа 3 мм предварительно закладывают R3 у пластичной стали и не менее R18 у 6061-T6. Для конкретных марок вроде Ст3, 09Г2С, AISI 304, АМг или Д16 подтверждённых значений здесь нет: радиус для них согласуют с производством по сертификату материала. Подбирать значение по похожему обозначению нельзя, потому что состояние поставки и направление проката могут изменить результат.</p>
+<p>Сильнее всего на минимум влияют марка и состояние поставки. Затем проверяют ориентацию линии гиба и инструмент. Если производство предлагает больший радиус из своего ряда оснастки, такой вариант обычно повторяемее, чем радиус между стандартными значениями.</p>
+<blockquote><p><strong>Факт.</strong> Для алюминиевого сплава 6061-T6 источник указывает минимальный внутренний радиус 6×S.</p></blockquote>
+<h2 id="radius-i-osnastka-pri-chem-zdes-v-matritsa">Радиус и оснастка: при чём здесь V-матрица</h2>
+<p>При воздушной гибке радиус формирует сочетание пуансона, ширины ручья V-матрицы и глубины хода. Поэтому одна цифра в модели не описывает процесс полностью. Смена матрицы меняет фактический радиус, минимальную полку, усилие и следы инструмента.</p>
+<p>Для пластичных материалов ширину V-матрицы обычно выбирают в диапазоне 5–8 толщин листа. Для хрупких материалов используют более широкий диапазон — 8–12 толщин. Эти значения служат отправной точкой: итоговый выбор технолог делает по таблицам инструмента и характеристикам пресса.</p>
+<p>Узкая матрица повышает давление на лист. Получаемый радиус сильнее приближается к радиусу пуансона, но на поверхности могут остаться полосы вдоль полки. Более широкая матрица формирует плавный гиб и снижает требуемое усилие, одновременно увеличивая радиус и минимальную длину полки.</p>
+<p>Радиус из имеющегося ряда инструмента проще повторить в следующей партии. Нестандартное значение потребует специальной оснастки либо дополнительных проб. Заказчику стоит запросить доступные сочетания пуансона и матрицы до фиксации критичного радиуса в сборочной модели.</p>
+<p>Для выбора всей технологии полезно сравнить <a href="/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda">методы обработки листового металла: гибка, штамповка, лазерная резка</a>.</p>
+<h2 id="minimalnaya-polka-i-pruzhinenie-chto-esche-ogranichivaet-gib">Минимальная полка и пружинение: что ещё ограничивает гиб</h2>
+<p>При воздушной гибке ориентир для минимальной полки — три толщины листа. Полка листа 2 мм начинается примерно от 6 мм, а листа 4 мм — от 12 мм. Точную возможность проверяют по ширине V-матрицы и геометрии пуансона.</p>
+<p>Ограничения связаны между собой:</p>
+<ul><li>внутренний радиус должен соответствовать пластичности материала;</li><li>лист должен перекрывать ручей V-матрицы;</li><li>полка должна опираться на обе стороны матрицы;</li><li>инструменту нужен доступ без столкновения с соседними стенками;</li><li>допуск на угол должен учитывать пружинение.</li></ul>
+<p>Если полка короче ориентира, технолог меняет инструмент, способ гибки или предлагает изменить деталь.</p>
+<p>После снятия нагрузки металл частично возвращается к исходной форме. Для компенсации пружинения пресс выполняет перегиб. Итоговые угол и радиус зависят от материала и режима, поэтому чрезмерно узкий допуск на угол увеличивает число настроек и контрольных операций.</p>
+<h2 id="razgruzochnyy-vyrez-kogda-nuzhen-i-kak-ego-rasschitat">Разгрузочный вырез: когда нужен и как его рассчитать</h2>
+<p>Разгрузочный вырез нужен там, где линия гиба заканчивается внутри контура, подходит к пазу или пересекается с другим гибом. Вырез освобождает участок, которому некуда сместиться при формовании. Без него металл тянет соседнюю область, угол надрывается, а край полки уходит от заданного размера.</p>
+<blockquote><p>Разгрузочный вырез закладывают там, где гиб упирается в край, паз или отверстие. Он разрывает концентрацию деформации и снижает риск трещины в углу.</p></blockquote>
+<p>Типовые случаи:</p>
+<ul><li>гиб проходит только по части ширины заготовки;</li><li>линия гиба заканчивается у внутреннего угла;</li><li>рядом расположены отверстие или продольный паз;</li><li>две линии гиба пересекаются;</li><li>соседние полки должны разойтись без нахлёста.</li></ul>
+<p>Прямоугольный вырез легко контролировать по размерам. Круглый конец убирает острый угол, в котором концентрируется напряжение. Комбинированная форма подходит для пересечения нескольких полок. <a href="/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html">Лазерная резка</a> позволяет получить любую из этих форм, но геометрию всё равно нужно связать с инструментом и последовательностью гибов.</p>
+<p>Ширину, глубину и расстояние до отверстия нельзя назначать одной формулой для всех деталей. В расчёте учитывают толщину, внутренний радиус, положение линии гиба, марку и способ раскроя. Размеры выреза передают технологу на проверку. В чертеже показывают контур и привязку к линии гиба, а не только пометку «сделать разгрузку».</p>
+<h2 id="napravlenie-prokata-i-lazernaya-rezka-popravki-k-minimumu">Направление проката и лазерная резка: поправки к минимуму</h2>
+<p>При минимальном радиусе линию гиба лучше располагать поперёк направления проката. Такой гиб прочнее и меньше склонен к растрескиванию. Если линия идёт вдоль волокон, радиус увеличивают либо проверяют решение на пробной заготовке.</p>
+<p>Направление проката нужно передать производству до раскладки деталей. Иначе раскройщик может повернуть контур ради экономии листа, а технолог получит другую ориентацию волокон. У критичных гибов направление отмечают стрелкой и текстовой пометкой на чертеже.</p>
+<p>После лазерной или <a href="/blog/lazernaya-plazmennaya-ili-gidroabrazivnaya-rezka.html">плазменной резки</a> состояние кромки зависит от материала, режима и последующей обработки. Заусенец и термически изменённая зона могут повлиять на начало трещины, но универсальную поправку к радиусу без проверки назначать нельзя. Требования к снятию заусенца и ориентации кромки согласовывают с технологом.</p>
+<p>Если раскладка не позволяет повернуть деталь поперёк проката, безопаснее увеличить радиус и подтвердить его пробным гибом. Свойства конкретной марки и их влияние на производство можно уточнить в материале о том, <a href="/razdel/materialy.html">как марка металла меняет обработку и цену</a>.</p>
+<h2 id="chto-ukazat-v-chertezhe-i-kak-izbezhat-otkaza-tehnologa">Что указать в чертеже и как избежать отказа технолога</h2>
+<p>Технологу нужны данные, по которым можно выбрать материал, оснастку и последовательность операций. Критичный радиус указывают явно: без этого фактическое значение может меняться вместе с матрицей, партией листа или производственной площадкой.</p>
+<ol><li>Укажите внутренний радиус и его допуск.</li><li>Запишите марку, состояние поставки и толщину листа.</li><li>Отметьте направление проката для критичных гибов.</li><li>Задайте номинальный угол и допустимое отклонение.</li><li>Проверьте длину самой короткой полки.</li><li>Покажите форму и привязку разгрузочных вырезов.</li><li>Приложите плоский чертёж и модель готовой детали.</li></ol>
+<p>Технолог вернёт чертёж на доработку, если радиус слишком мал для материала, полка не перекрывает матрицу, у отверстия нет разгрузки или ориентация проката не определена. Причиной также становится недоступный инструменту второй гиб: это часто встречается у узких П-образных деталей.</p>
+<p>Перед передачей модели проверьте, <a href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla">что приложить к заявке на гибку металла</a>. Если размеры и допуски уже определены, отправьте чертёж на расчёт <a href="/">изготовления деталей по вашим чертежам</a>: исполнитель подберёт доступный радиус и сообщит о конфликтующих местах до раскроя.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Какой минимальный радиус гибки для стали?</summary>
+<div class="faq__a"><p>Для пластичной стали ориентир — внутренний радиус, равный толщине листа. Меньшее значение закладывайте только после согласования марки, состояния материала и оснастки с производством.</p></div>
+</details>
+<details>
+<summary>Когда нужен разгрузочный вырез?</summary>
+<div class="faq__a"><p>Когда гиб идёт не по всей ширине заготовки либо подходит к отверстию, пазу, краю или другому гибу. Вырез снижает концентрацию деформации и риск надрыва в углу.</p></div>
+</details>
+<details>
+<summary>Можно ли гнуть с радиусом меньше толщины листа?</summary>
+<div class="faq__a"><p>Можно, если материал и оснастка допускают такую деформацию. Решение нужно проверить у исполнителя: уменьшение радиуса повышает риск трещин и может потребовать отдельного инструмента.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.thefabricator.com/thefabricator/article/shopmanagement/what-to-know-about-sheet-metal-bend-radius-and-minimum-flange" rel="noopener" target="_blank">What to know about sheet metal bend radius and minimum flange</a> — The Fabricator</li>
+<li><a href="https://www.thefabricator.com/thefabricator/article/bending/grain-directions-effect-on-sheet-metal-bending" rel="noopener" target="_blank">Grain direction’s effect on sheet metal bending</a> — The Fabricator</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html">
+            <img src="/images/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/gibkoe-proizvodstvo-ot-odnoj-detali-do-serii.html">
+            <img src="/images/blog/gibkoe-proizvodstvo-ot-odnoj-detali-do-serii-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Гибкое производство: как меняются цена, срок и контроль от одной детали до серии</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/lazernaya-rezka-metalla-kogda-ispolzovat.html">
+            <img src="/images/blog/lazernaya-rezka-metalla-kogda-ispolzovat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Лазерная резка металла: в каких случаях она оправдана, а в каких лучше другой способ</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

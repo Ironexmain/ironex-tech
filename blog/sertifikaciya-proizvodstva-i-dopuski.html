@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сертификация производства и допуски: что проверяет заказчик</title>
+  <meta name="description" content="Что подтверждает сертификация производства по ISO 9001, чем она отличается от допусков на чертеже и как проверить подрядчика до заказа деталей." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/sertifikaciya-proizvodstva-i-dopuski.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/sertifikaciya-proizvodstva-i-dopuski.html#article",
+      "headline": "Сертификация производства и допуски: что она гарантирует, а что нет",
+      "description": "Что подтверждает сертификация производства по ISO 9001, чем она отличается от допусков на чертеже и как проверить подрядчика до заказа деталей.",
+      "datePublished": "2026-10-03",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/sertifikaciya-proizvodstva-i-dopuski.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/sertifikaciya-proizvodstva-i-dopuski-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "сертификация производства",
+        "сертификат ISO 9001",
+        "допуски на чертеже",
+        "ГОСТ 25346",
+        "проверка подрядчика",
+        "контроль качества деталей"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Сертификация производства и допуски: что она гарантирует, а что нет"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сертификация производства обязательна?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сертификация системы менеджмента добровольна сама по себе. Её могут потребовать документы закупки, правила отраслевой цепочки или конкретный заказчик. Проверяйте условие в техническом задании и договоре."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой срок действия сертификата ISO 9001?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "По схеме TÜV Rheinland ресертификационный аудит проводится каждые три года. Точные даты и статус нужно смотреть в сертификате, реестре и правилах выдавшего его органа."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Сертификат ISO на заводе: гарантия детали или только порядка?" />
+  <meta property="og:description" content="Что подтверждает сертификация производства по ISO 9001, чем она отличается от допусков на чертеже и как проверить подрядчика до заказа деталей." />
+  <meta property="og:url" content="https://ironex.tech/blog/sertifikaciya-proizvodstva-i-dopuski.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/sertifikaciya-proizvodstva-i-dopuski-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-03" />
+  <meta property="article:modified_time" content="2026-10-03" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Сертификат ISO на заводе: гарантия детали или только порядка?" />
+  <meta name="twitter:description" content="Что подтверждает сертификация производства по ISO 9001, чем она отличается от допусков на чертеже и как проверить подрядчика до заказа деталей." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/sertifikaciya-proizvodstva-i-dopuski-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сертификация производства и допуски: что она гарантирует, а что нет">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Сертификация производства и допуски: что она гарантирует, а что нет</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-na-samom-dele-sertifitsiruyut-sistemu-a-ne-detal">Что на самом деле сертифицируют: систему, а не деталь?</a></li>
+<li><a href="#komu-sertifikat-nuzhen-a-komu-dostatochno-proverki-obraztsa">Кому сертификат нужен, а кому достаточно проверки образца?</a></li>
+<li><a href="#dopuski-chto-na-chertezhe-opredelyaet-godnost-detali">Допуски: что на чертеже определяет годность детали</a></li>
+<li><a href="#kak-sistema-kachestva-vyglyadit-v-tsehe">Как система качества выглядит в цехе?</a></li>
+<li><a href="#iso-9001-iatf-16949-iso-3834-iso-14001-iso-45001-chto-iz-eto">ISO 9001, IATF 16949, ISO 3834, ISO 14001, ISO 45001: что из этого про детали</a></li>
+<li><a href="#chek-list-kak-proverit-podryadchika-do-zakaza">Чек-лист: как проверить подрядчика до заказа</a></li>
+<li><a href="#put-k-sertifikatu-ot-zayavki-do-nadzornogo-audita">Путь к сертификату: от заявки до надзорного аудита</a></li>
+<li><a href="#tipichnye-oshibki-pri-vybore-podryadchika">Типичные ошибки при выборе подрядчика</a></li>
+<li><a href="#chto-delat-zakazchiku-poryadok-resheniy">Что делать заказчику: порядок решений</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сертификация производства и допуски: что она гарантирует, а что нет">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Сертификация производства и допуски: что она гарантирует, а что нет</h1>
+        <p class="lede">Что подтверждает сертификация производства по ISO 9001, чем она отличается от допусков на чертеже и как проверить подрядчика до заказа деталей.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-10-03">Опубликовано 3 октября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/sertifikaciya-proizvodstva-i-dopuski-cover.webp" alt="Сертификация производства и допуски: что она гарантирует, а что нет" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Сертификат ISO 9001 подтверждает, что на заводе выстроена система управления качеством. Что конкретная деталь уложится в допуски чертежа, он не подтверждает: это проверяют замерами. Заказчику нужны оба подтверждения, и ниже разобрано, как их различить и что спросить у подрядчика.</p>
+<h2 id="chto-na-samom-dele-sertifitsiruyut-sistemu-a-ne-detal">Что на самом деле сертифицируют: систему, а не деталь?</h2>
+<p>Частая ошибка заказчика — считать любую деталь годной, если у подрядчика есть сертификат ISO 9001. Сертификат СМК подтверждает организацию процессов: управление документацией, контроль операций, работу с измерительным оборудованием и несоответствиями. Соответствие конкретной детали чертежу подтверждает приёмка партии.</p>
+<p>Актуальная международная редакция — ISO 9001:2026. ISO помечает редакцию ISO 9001:2015 как отозванную. При этом российский договор, сертификат или тендерная документация могут ссылаться на национальный стандарт прежней редакции. Поэтому проверять нужно обозначение в самом документе, область сертификации и переходные правила органа.</p>
+<p>Сертификат или декларация на продукцию решают другую задачу: подтверждают соответствие изделия установленным требованиям. Такой документ нужен для продукции, которая попадает под обязательное подтверждение соответствия, либо когда его требует заказчик. Наличие СМК не создаёт такого подтверждения автоматически.</p>
+<blockquote><p>Сертификат ISO 9001 говорит о порядке управления производством. Допуск подтверждает только измерение конкретной детали по чертежу.</p></blockquote>
+<blockquote><p><strong>Факт.</strong> ISO указывает ISO 9001:2026 как текущую редакцию, а ISO 9001:2015 — как отозванную.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сертификация производства и допуски: что она гарантирует, а что нет">Прислать чертёж на почту</a>
+</div>
+<h2 id="komu-sertifikat-nuzhen-a-komu-dostatochno-proverki-obraztsa">Кому сертификат нужен, а кому достаточно проверки образца?</h2>
+<p><img alt="Отбор образца для контроля качества" src="/images/blog/sertifikaciya-proizvodstva-i-dopuski-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Образец куколок отбирается для проведения контрольных тестов качества. Фото: <a href="https://commons.wikimedia.org/wiki/File:Quality_Control_Test_%2808010466%29_%2827096361308%29.jpg" rel="nofollow noopener" target="_blank">IAEA Imagebank</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Сертификат нужен, когда его прямо требует договор, закупочная документация или правила цепочки поставок. Сама сертификация по ISO 9001 добровольна: ISO отдельно оговаривает, что она не обязательна.</p>
+<p>В автомобильных, оборонных и других регулируемых цепочках заказчик может установить отраслевые требования к поставщику. Проверять их следует по техническому заданию, договору и перечню допущенных стандартов. Сертификат с неподходящей областью не закрывает такое условие.</p>
+<p>Для разовой детали или малой партии полезнее согласовать приёмку первого образца. Если сертификата нет, запросите порядок <a href="/blog/vhodnoy-kontrol-partii-i-kontrol-na-kim.html">входного контроля</a> металла, образец протокола измерений, перечень приборов и схему управления версиями чертежа. Эти сведения показывают, способен ли цех подтвердить результат заказа.</p>
+<blockquote><p><strong>Мнение.</strong> Если заказ не входит в регулируемую цепочку поставок, сначала проверяйте образец и измерительный контроль. Сертификат без этих данных не снижает риск брака.</p></blockquote>
+<h2 id="dopuski-chto-na-chertezhe-opredelyaet-godnost-detali">Допуски: что на чертеже определяет годность детали</h2>
+<p>Допуски и посадки ЕСДП указывают на чертеже заказчика. Они задают допустимые отклонения размера и характер соединения деталей. Квалитет определяет величину допуска: чем точнее квалитет, тем уже поле допустимых размеров и тем требовательнее обработка и контроль.</p>
+<p>Международную основу задаёт ISO 286: ISO 286-1:2010 устанавливает систему кодов допусков для линейных размеров. При чтении обозначений помогает отдельный разбор о том, <a href="/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe">как читать допуски по квалитетам на чертеже</a>.</p>
+<p>Чертёж определяет несколько независимых требований: размер с предельными отклонениями, общие допуски для неуказанных размеров, допуски формы и расположения поверхностей, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>. На какие стандарты ссылается каждое из них, видно по самому чертежу и условиям договора. Эти ссылки стоит сверить до запуска в работу.</p>
+<p>Допуск задаёт границу годности, а не пожелание получить размер ближе к номиналу. Излишне узкий допуск требует более точного оборудования, дополнительных переходов и более трудоёмких замеров. До заказа стоит проверить <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya">допуски и шероховатость без лишнего удорожания</a>.</p>
+<h2 id="kak-sistema-kachestva-vyglyadit-v-tsehe">Как система качества выглядит в цехе?</h2>
+<p>Работающая СМК оставляет проверяемые следы. Заказчик может увидеть, какой материал поступил, по какой <a href="/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html">версии чертежа</a> изготовили деталь, чем её измеряли и что сделали с выявленным несоответствием.</p>
+<p>У подрядчика можно запросить пять подтверждений:</p>
+<ul><li>сертификат на материал с привязкой к партии заготовок;</li><li>зарегистрированную версию чертежа и согласованные изменения;</li><li>маршрут или технологическую карту изготовления;</li><li>сведения о поверке либо калибровке применённых средств измерений;</li><li>протокол контроля с фактическими результатами замеров.</li></ul>
+<p>Сертификат на материал подтверждает марку и заявленные свойства металла партии. Само название сплава в счёте этого не доказывает. Прослеживаемость должна связывать документ поставщика с заготовкой и готовыми деталями.</p>
+<p>Российский закон об обеспечении единства измерений устанавливает поверку для средств измерений, применяемых в сфере государственного регулирования. В остальных случаях спросите, как подрядчик подтверждает пригодность приборов: поверкой, калибровкой или по собственной процедуре.</p>
+<p>Протокол контроля завершает цепочку: требование чертежа, применённый прибор, результат и решение о годности. При несоответствии СМК должна обеспечить изоляцию детали, разбор причины и согласование дальнейших действий.</p>
+<h2 id="iso-9001-iatf-16949-iso-3834-iso-14001-iso-45001-chto-iz-eto">ISO 9001, IATF 16949, ISO 3834, ISO 14001, ISO 45001: что из этого про детали</h2>
+<p>Стандарты подтверждают разные части работы предприятия. Для заказа деталей важно выбирать документ по операции и отрасли, а не собирать максимум логотипов в анкете поставщика.</p>
+<table><thead><tr><th>Стандарт</th><th>Что регулирует</th><th>Где особенно важен</th><th>Что проверяет заказчик</th></tr></thead><tbody><tr><td>ISO 9001</td><td>Систему менеджмента качества</td><td>Производство любых деталей и узлов</td><td>Область сертификата и управление процессами</td></tr><tr><td>IATF 16949</td><td>СМК автомобильной цепочки поставок</td><td>Автокомпоненты</td><td>Соответствие отраслевым требованиям заказчика</td></tr><tr><td>ISO 3834</td><td>Требования к качеству сварки</td><td>Сварные детали и узлы</td><td>Какие сварочные процессы входят в область</td></tr><tr><td>ISO 14001</td><td>Экологический менеджмент</td><td>Заказы с экологическими требованиями</td><td>Нужен ли стандарт по условиям поставки</td></tr><tr><td>ISO 45001</td><td>Охрану труда и безопасность</td><td>Производственные площадки подрядчика</td><td>Требует ли его договор или политика закупок</td></tr></tbody></table>
+<p>Если в анкете поставщика указаны устаревшие обозначения стандартов, запросите действующий сертификат: иногда компания показывает архивный документ.</p>
+<p>Ни один из перечисленных стандартов не устанавливает размер конкретной детали. Даже профильный ISO 3834 подтверждает управление качеством сварки, а геометрию сварного узла принимают по чертежу и протоколу контроля.</p>
+<h2 id="chek-list-kak-proverit-podryadchika-do-zakaza">Чек-лист: как проверить подрядчика до заказа</h2>
+<p>Проверка начинается с области сертификации. В сертификате должны совпадать юридическое лицо, площадка и процессы, которые относятся к заказу. Документ на торговую компанию не подтверждает СМК стороннего цеха.</p>
+<ol><li><strong>Что охватывает сертификат?</strong> Нормальный ответ содержит адрес площадки, процессы и область деятельности.</li><li><strong>Кто выдал документ?</strong> Проверьте орган в <a href="https://pub.fsa.gov.ru/ral" rel="noopener" target="_blank">реестре аккредитованных лиц Росаккредитации</a> и посмотрите его статус.</li><li><strong>Действует ли сертификат?</strong> Сверьте срок, статус и сведения о надзорном контроле.</li><li><strong>Как контролируют первый образец?</strong> Подрядчик должен назвать размеры, приборы и форму протокола.</li><li><strong>Как подтверждают металл?</strong> Запросите обезличенный пример сертификата на материал и способ привязки к партии.</li><li><strong>Чем измеряют детали?</strong> Сопоставьте диапазон и точность приборов с допусками чертежа.</li><li><strong>Как управляют изменениями?</strong> В работе должна оставаться одна согласованная версия чертежа.</li></ol>
+<p>Отказ показать коммерческие сведения допустим. Отсутствие понятного ответа о приборах, документах и приёмке — причина начать с образца или выбрать другого исполнителя.</p>
+<h2 id="put-k-sertifikatu-ot-zayavki-do-nadzornogo-audita">Путь к сертификату: от заявки до надзорного аудита</h2>
+<p>Сертифицированный статус появляется после оценки системы органом по сертификации. Самостоятельно выпущенная декларация предприятия или изображение знака ISO не заменяют эту процедуру.</p>
+<ol><li>Предприятие подаёт заявку и определяет область сертификации.</li><li>Орган оценивает документы и готовность системы.</li><li>Аудиторы проверяют процессы на площадке.</li><li>Предприятие устраняет выявленные несоответствия.</li><li>Орган принимает решение и регистрирует сертификат.</li><li>В сертификационном цикле проходят надзорные аудиты.</li><li>Для следующего цикла проводят ресертификацию.</li></ol>
+<p>Критическое несоответствие может остановить выдачу сертификата или повлиять на его статус. Менее значимое нарушение обычно требует корректирующих действий и подтверждения их выполнения. Классификацию и сроки задают правила конкретного органа.</p>
+<p>Срок и стоимость зависят от числа площадок, сотрудников, процессов и выбранной области. Универсальная цена без изучения предприятия мало что говорит о предстоящем аудите.</p>
+<h2 id="tipichnye-oshibki-pri-vybore-podryadchika">Типичные ошибки при выборе подрядчика</h2>
+<p>Сертификат СМК не заменяет приёмку партии. Деталь может не пройти контроль даже у сертифицированного предприятия: решение о годности принимают по требованиям чертежа и результатам измерений.</p>
+<p>Область сертификата ограничивает заявления подрядчика. Если документ охватывает один цех или процесс, его нельзя без проверки переносить на другую площадку и другой вид работ.</p>
+<p>Неуказанные отклонения тоже нельзя игнорировать. Если чертёж ссылается на общие допуски, приёмка использует указанный на нём класс. Несогласованная марка материала или устаревшая версия чертежа создают отдельное несоответствие.</p>
+<blockquote><p>Если критичный допуск не задан явно, стороны могут обнаружить разные представления о годности только при сдаче партии.</p></blockquote>
+<h2 id="chto-delat-zakazchiku-poryadok-resheniy">Что делать заказчику: порядок решений</h2>
+<p>Сначала определите, требует ли заказ сертификат СМК или отраслевой стандарт. Затем проверьте область и статус документа. Сертификат должен относиться к нужной площадке и процессу.</p>
+<p>На чертеже обозначьте критичные размеры, посадки, геометрические допуски и шероховатость. Для остальных размеров согласуйте стандарт общих допусков. Зафиксируйте материал и допустимые аналоги.</p>
+<p>До серии согласуйте контроль первого образца: какие параметры измеряют, какими приборами и в каком виде передают результаты. Запросите документы по чек-листу и включите требования к приёмке в заказ.</p>
+<blockquote><p>Сертификат отвечает за порядок, чертёж — за требования к точности, приёмка — за результат конкретного заказа.</p></blockquote>
+<p>Если область сертификата и схема контроля подходят задаче, <a href="/kontakty.html">пришлите чертёж на расчёт</a> вместе с объёмом партии и перечнем требуемых документов.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Сертификация производства обязательна?</summary>
+<div class="faq__a"><p>Сертификация системы менеджмента добровольна сама по себе. Её могут потребовать документы закупки, правила отраслевой цепочки или конкретный заказчик. Проверяйте условие в техническом задании и договоре.</p></div>
+</details>
+<details>
+<summary>Какой срок действия сертификата ISO 9001?</summary>
+<div class="faq__a"><p>По схеме TÜV Rheinland ресертификационный аудит проводится каждые три года. Точные даты и статус нужно смотреть в сертификате, реестре и правилах выдавшего его органа.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.iso.org/standard/9001" rel="noopener" target="_blank">ISO 9001:2026 — Quality management systems — Requirements</a> — International Organization for Standardization</li>
+<li><a href="https://www.iso.org/standard/45975.html" rel="noopener" target="_blank">ISO 286-1:2010 — Basis of tolerances, deviations and fits</a> — International Organization for Standardization</li>
+<li><a href="http://pravo.gov.ru/proxy/ips/?docbody=&amp;nd=102122832" rel="noopener" target="_blank">Федеральный закон № 102-ФЗ «Об обеспечении единства измерений»</a> — Официальный интернет-портал правовой информации</li>
+<li><a href="https://www.tuv.com/usa/en/iso-9001-certification.html" rel="noopener" target="_blank">ISO 9001 Certification Process</a> — TÜV Rheinland</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/podgotovka-chertezha-dlya-proizvodstva.html">
+            <img src="/images/blog/podgotovka-chertezha-dlya-proizvodstva-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/radialnoe-torcevoe-bienie-dopusk-izmerenie.html">
+            <img src="/images/blog/radialnoe-torcevoe-bienie-dopusk-izmerenie-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Радиальное и торцевое биение: что это, чем отличаются и как измерить допуск</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html">
+            <img src="/images/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сертификация производства и допуски: что она гарантирует, а что нет">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
