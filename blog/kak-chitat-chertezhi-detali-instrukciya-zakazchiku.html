@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Как читать чертежи деталей: порядок и чек-лист заказчика</title>
+  <meta name="description" content="С чего начать чтение чертежа: основная надпись, виды, допуски, Ra и техтребования. Чек-лист, что проверить до расчёта у подрядчика." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku.html#article",
+      "headline": "Как читать чертёж детали: инструкция для заказчика",
+      "description": "С чего начать чтение чертежа: основная надпись, виды, допуски, Ra и техтребования. Чек-лист, что проверить до расчёта у подрядчика.",
+      "datePublished": "2026-10-04",
+      "dateModified": "2026-10-04",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "как читать чертежи",
+        "как правильно читать чертежи",
+        "основная надпись",
+        "обозначения на чертеже",
+        "допуск",
+        "цена детали по чертежу"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как читать чертёж детали: инструкция для заказчика"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как научиться читать чертежи?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Начните с чертежа простой детали и идите по порядку: основная надпись, виды, размеры, допуски, техтребования. Сверяйте прочитанное с 3D-моделью или готовой деталью."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое основная надпись на чертеже?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это блок в правом нижнем углу листа с наименованием и обозначением детали, материалом, массой, масштабом и данными об изменениях. С неё начинается чтение любого чертежа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если чертёж неполный или устарел?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не запускайте деталь в работу. Запросите у автора актуальную ревизию и перечислите подрядчику, чего не хватает: материала, допусков, размеров или связанных документов."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Как читать чертёж и не ошибиться с заказом: чек-лист из 10 пунктов" />
+  <meta property="og:description" content="С чего начать чтение чертежа: основная надпись, виды, допуски, Ra и техтребования. Чек-лист, что проверить до расчёта у подрядчика." />
+  <meta property="og:url" content="https://ironex.tech/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-04" />
+  <meta property="article:modified_time" content="2026-10-04" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Как читать чертёж и не ошибиться с заказом: чек-лист из 10 пунктов" />
+  <meta name="twitter:description" content="С чего начать чтение чертежа: основная надпись, виды, допуски, Ra и техтребования. Чек-лист, что проверить до расчёта у подрядчика." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как читать чертёж детали: инструкция для заказчика">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Как читать чертёж детали: инструкция для заказчика</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#s-chego-nachat-chtenie-lista">С чего начать чтение листа?</a></li>
+<li><a href="#osnovnaya-nadpis-pasport-detali">Основная надпись: паспорт детали</a></li>
+<li><a href="#vidy-razrezy-masshtab-i-linii-kak-ponyat-formu">Виды, разрезы, масштаб и линии: как понять форму</a></li>
+<li><a href="#kak-chitat-razmery-i-dopuski">Как читать размеры и допуски?</a></li>
+<li><a href="#sherohovatost-poverhnosti-znaki-ra-i-rz">Шероховатость поверхности: знаки Ra и Rz</a></li>
+<li><a href="#tehnicheskie-trebovaniya-material-termoobrabotka-pokrytie">Технические требования: материал, термообработка, покрытие</a></li>
+<li><a href="#kakie-oboznacheniya-vliyayut-na-tsenu-i-srok">Какие обозначения влияют на цену и срок?</a></li>
+<li><a href="#uzly-s-podshipnikami-posadki-i-sherohovatost-posadochnyh-mes">Узлы с подшипниками: посадки и шероховатость посадочных мест</a></li>
+<li><a href="#chek-list-pered-otpravkoy-chertezha-na-raschet">Чек-лист перед отправкой чертежа на расчёт</a></li>
+<li><a href="#kakie-oshibki-i-voprosy-zametit-podryadchik">Какие ошибки и вопросы заметит подрядчик?</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как читать чертёж детали: инструкция для заказчика">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Как читать чертёж детали: инструкция для заказчика</h1>
+        <p class="lede">С чего начать чтение чертежа: основная надпись, виды, допуски, Ra и техтребования. Чек-лист, что проверить до расчёта у подрядчика.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-10-04">Опубликовано 4 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku-cover.webp" alt="Как читать чертёж детали: инструкция для заказчика" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Читайте чертёж в таком порядке: основная надпись, виды и размеры, допуски и <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>, технические требования. Чертить уметь не нужно. Нужно найти материал, номер ревизии, самые жёсткие допуски и всё неоднозначное до того, как чертёж уйдёт подрядчику на расчёт.</p>
+<h2 id="s-chego-nachat-chtenie-lista">С чего начать чтение листа?</h2>
+<p>Сначала определите, какой документ перед вами и к какой детали он относится. Затем прочитайте технические требования, сопоставьте главный и дополнительные виды, найдите размеры, допуски и обозначения шероховатости. Такой порядок помогает отделить исходные данные заказа от графических подробностей.</p>
+<p>На листе обычно есть рамка, основная надпись, изображения детали, разрезы, сечения и размерные линии. Технические требования стоят рядом с изображением или над основной надписью. Общий знак шероховатости может находиться в правом верхнем углу.</p>
+<p>Если вместе с чертежом пришли спецификация, модель или сборочный документ, сверьте обозначение детали во всех файлах. По сборке можно понять назначение отверстия, паза или посадочной поверхности. Расхождение между файлами нужно передать автору документации.</p>
+<blockquote><p><strong>Факт.</strong> Стандарт ISO 7200 задаёт поля данных для основных надписей и заголовков технических документов.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если нужно заказать простую деталь, сначала проверяйте материал, ревизию и критичные размеры: эти данные сильнее влияют на расчёт, чем второстепенные обозначения.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как читать чертёж детали: инструкция для заказчика">Прислать чертёж на почту</a>
+</div>
+<h2 id="osnovnaya-nadpis-pasport-detali">Основная надпись: паспорт детали</h2>
+<p><img alt="Чертёж профиля и плана палубы лодки Wiking XI, 1930" src="/images/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Чертёж корпусной крейсерской моторной лодки Wiking XI: профиль и план палубы. Длина 10,0 м, ширина 2,75 м, мощность двигателя 18 л.с. Penta A4. Фото: <a href="https://commons.wikimedia.org/wiki/File:Ritning_Wiking_XI_Profil_och_d%C3%A4cksplan_-_1980_22_775_2_B.jpg" rel="nofollow noopener" target="_blank">Maritime Museum (Stockholm)</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Основная надпись входит в состав чертежа детали и помогает быстро определить предмет заказа. Найдите её в правом нижнем углу. За минуту из неё можно выписать наименование, обозначение, материал, массу, масштаб и сведения об изменениях.</p>
+<table><thead><tr><th>Графа</th><th>Что указано</th><th>Что проверить заказчику</th></tr></thead><tbody><tr><td>Наименование</td><td>Название детали</td><td>Совпадает ли оно со спецификацией и заявкой</td></tr><tr><td>Обозначение</td><td>Код документа или детали</td><td>Один ли код стоит на чертеже, модели и в переписке</td></tr><tr><td>Материал</td><td>Марка и ссылка на документ</td><td>Достаточно ли данных для закупки заготовки</td></tr><tr><td>Масса</td><td>Расчётная или справочная масса</td><td>Не подменяет ли она количество деталей</td></tr><tr><td>Масштаб</td><td>Отношение изображения к детали</td><td>Не измеряются ли размеры по картинке</td></tr><tr><td>Изменения</td><td>Номер или индекс ревизии</td><td>Передана ли подрядчику последняя версия</td></tr></tbody></table>
+<p>Основная надпись может содержать данные о ревизии напрямую или связываться с таблицей изменений. Старая версия делает расчёт ненадёжным: подрядчик оценит другой материал, геометрию или маршрут. Если статус документа непонятен, запросите у автора актуальный файл и перечень изменений.</p>
+<h2 id="vidy-razrezy-masshtab-i-linii-kak-ponyat-formu">Виды, разрезы, масштаб и линии: как понять форму</h2>
+<p>Главный вид показывает наиболее характерную форму детали, а остальные изображения раскрывают скрытые элементы. Сопоставляйте одинаковые кромки, отверстия и оси на разных видах. У условной втулки наружный контур виден сбоку, отверстие — на торце, а продольный разрез показывает его глубину и внутреннюю ступень.</p>
+<p>Разрез показывает предмет после условного рассечения и включает то, что находится за секущей плоскостью. Сечение передаёт только фигуру в самой плоскости. Штриховка помогает увидеть рассечённый материал.</p>
+<p>Масштаб относится к изображению. Размер детали читают по размерному числу, поэтому измерять геометрию линейкой по распечатке нельзя.</p>
+<p>Чаще всего заказчику встречаются такие линии:</p>
+<ul><li>сплошная толстая — видимый контур;</li><li>сплошная тонкая — размеры, выноски и штриховка;</li><li>штриховая — невидимые кромки;</li><li>штрихпунктирная тонкая — оси и центры;</li><li>разомкнутая или утолщённая линия — положение секущей плоскости.</li></ul>
+<p>Если виды противоречат друг другу, не выбирайте трактовку самостоятельно. Зафиксируйте расхождение на снимке листа и запросите исправление.</p>
+<h2 id="kak-chitat-razmery-i-dopuski">Как читать размеры и допуски?</h2>
+<p>Размер задаёт номинал, а допуск — допустимую область отклонений от него. Запись без отдельного допуска тоже требует проверки: на неё могут действовать неоговорённые допуски из технических требований. Посадку сопрягаемых деталей определяют поля допусков отверстия и вала.</p>
+<h3>Размер с допуском и квалитет</h3>
+<p>В записи <code>Ø20 H7</code> знак диаметра указывает на цилиндрическую поверхность, число задаёт номинальный размер, буква — положение поля допуска, а цифра — квалитет. Квалитет задаёт величину допуска для соответствующего диапазона размеров. Точные значения берут из применимого стандарта, а не оценивают по обозначению на глаз.</p>
+<p>Запись с верхним и нижним отклонением читают как два предела для действительного размера. Чем уже допустимый диапазон, тем сложнее подобрать обработку, измерительный инструмент и режим контроля. Подробный разбор приведён в материале о том, <a href="/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe">как читать допуски по квалитетам</a>.</p>
+<h3>Неоговорённые допуски</h3>
+<p>Неоговорённые допуски действуют на размеры чертежа детали, для которых не указаны отдельные отклонения. Ссылку на систему общих допусков и класс точности ищут в технических требованиях. Если такой записи нет, подрядчику нужно уточнение от конструктора.</p>
+<p>Явно проставленный допуск обычно относится к конкретному размеру. Конфликт между ним и общим требованием нельзя разрешать выбором более удобного варианта.</p>
+<blockquote><p>Размер без отдельного допуска не означает изготовление точно в номинал. Его допустимые отклонения нужно искать в общих требованиях документа.</p></blockquote>
+<h2 id="sherohovatost-poverhnosti-znaki-ra-i-rz">Шероховатость поверхности: знаки Ra и Rz</h2>
+<p>Шероховатость описывает микронеровности поверхности после обработки. Обозначение ставят на линии поверхности или на выноске. Общий знак в углу листа распространяет требование на поверхности без локального обозначения, поэтому пропуск такого знака меняет оценку маршрута.</p>
+<p>Ra и Rz — разные параметры оценки профиля. Подменять один другим без указания конструктора нельзя. Расшифровка параметров и обозначений есть в статье о том, <a href="/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe">что означают Ra и Rz на чертеже</a>.</p>
+<p>Способ достижения нужной шероховатости выбирает технолог с учётом материала, геометрии и допуска размера. Иногда хватает чистового точения или фрезерования. Более строгое требование может добавить шлифование, доводку и отдельный контроль.</p>
+<p>Проверьте, нет ли разных значений на соседних поверхностях. Локальное обозначение может выделять посадочную шейку, уплотнительную плоскость или другую функциональную зону.</p>
+<h2 id="tehnicheskie-trebovaniya-material-termoobrabotka-pokrytie">Технические требования: материал, термообработка, покрытие</h2>
+<p>Технические требования дополняют виды, разрезы и сечения: в них записывают условия, которые невозможно или неудобно передать одной геометрией. Этот блок способен изменить заготовку, последовательность операций, контроль и передачу заказа смежному подрядчику.</p>
+<p>В первую очередь проверьте пункты, которые влияют на маршрут:</p>
+<ul><li>марку материала и требования к заготовке;</li><li>термообработку и требуемое состояние материала;</li><li>покрытие и подготовку поверхности;</li><li>требования к кромкам, заусенцам и радиусам;</li><li>неоговорённые размеры, допуски и шероховатость;</li><li>маркировку, контроль и сопроводительные документы.</li></ul>
+<p>Ссылку на незнакомый стандарт передайте технологу или автору документации. Не восстанавливайте смысл требования по похожему номеру или старому чертежу.</p>
+<p>Марка материала без данных о сортаменте может не отвечать на вопрос, какую заготовку закупать. Если чертёж относится к сборке, проверьте спецификацию: в ней могут находиться количество, комплектующие и ссылки на документы для других деталей.</p>
+<h2 id="kakie-oboznacheniya-vliyayut-na-tsenu-i-srok">Какие обозначения влияют на цену и срок?</h2>
+<p>На расчёт сильнее всего влияют требования, которые добавляют установы, отдельные операции, специальный инструмент или расширенный контроль. Один жёсткий допуск на посадочной поверхности может определить маршрут всей детали, даже если остальные размеры допускают обычную обработку.</p>
+<table><thead><tr><th>Обозначение или требование</th><th>Что потребуется</th><th>Влияние на цену и срок</th></tr></thead><tbody><tr><td>Узкий допуск или точный квалитет</td><td>Стабильная операция и точное измерение</td><td>Растут требования к оборудованию и контролю</td></tr><tr><td>Низкая шероховатость Ra или Rz</td><td>Чистовая операция, иногда шлифование</td><td>Добавляется переход и проверка поверхности</td></tr><tr><td>Геометрический допуск</td><td>Базирование и контроль формы или положения</td><td>Усложняются установка и приёмка</td></tr><tr><td>Термообработка</td><td>Передача на отдельную операцию, контроль твёрдости</td><td>Удлиняется маршрут</td></tr><tr><td>Покрытие</td><td>Подготовка, нанесение и учёт слоя</td><td>Появляется смежная операция</td></tr><tr><td>Расширенный контроль</td><td>Протоколы и дополнительные измерения</td><td>Увеличивается объём приёмки</td></tr></tbody></table>
+<p>Требования «с запасом» нельзя убирать по инициативе производства. Конструктор должен подтвердить, какие поверхности и размеры отвечают за работу узла.</p>
+<blockquote><p><a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">Цена детали</a> зависит от сочетания геометрии, точности, состояния поверхности и контроля. Считать эти требования по отдельности недостаточно.</p></blockquote>
+<h2 id="uzly-s-podshipnikami-posadki-i-sherohovatost-posadochnyh-mes">Узлы с подшипниками: посадки и шероховатость посадочных мест</h2>
+<p>На чертеже вала найдите шейки под внутренние кольца подшипников, а на чертеже корпуса — отверстия под наружные кольца. Их можно узнать по диаметрам, полям допусков, требованиям к шероховатости и привязке к торцам. Посадка определяется допусками сопрягаемых размеров.</p>
+<p>Для шариковых и роликовых подшипников нельзя выбирать посадку только по общей таблице. Нужны тип и размер подшипника, характер нагрузки, вращающееся кольцо, температура и рекомендации производителя узла или подшипника.</p>
+<p>Заказчику стоит проверить три связи: обозначен ли сам подшипник в спецификации, совпадают ли его присоединительные размеры с валом и корпусом, отмечены ли посадочные поверхности на обоих чертежах. Требования к этим местам часто строже требований к соседним поверхностям.</p>
+<p>Если модель показывает одну ступень вала, а чертёж — другую, запросите решение конструктора. Технолог не должен угадывать, какой файл считать главным.</p>
+<h2 id="chek-list-pered-otpravkoy-chertezha-na-raschet">Чек-лист перед отправкой чертежа на расчёт</h2>
+<p>Проверяйте лист по одному маршруту и записывайте найденные вопросы. Такой список сокращает переписку после запроса цены и помогает передать всем участникам один комплект документации.</p>
+<ol><li>Проверьте ревизию в основной надписи и таблице изменений.</li><li>Сверьте наименование и обозначение со спецификацией и заявкой.</li><li>Найдите материал; при неполной записи запросите уточнение.</li><li>Укажите количество деталей отдельно от массы и номера позиции.</li><li>Найдите общие допуски в технических требованиях.</li><li>Отметьте размеры с отдельными допусками и геометрическими требованиями.</li><li>Проверьте локальные знаки Ra, Rz и общий знак шероховатости.</li><li>Выпишите термообработку, покрытие, маркировку и контроль.</li><li>Сопоставьте PDF с исходником или STEP-моделью, если она есть.</li><li>Откройте все стандарты и связанные документы, на которые ссылается лист.</li></ol>
+<p>Для сборочной единицы приложите спецификацию и комплект деталировки. Отдельно проверьте, <a href="/blog/detalirovka-pered-proizvodstvom">что входит в комплект чертежей перед запуском</a>. Подрядчику удобнее получить PDF для просмотра и исходный файл либо STEP для проверки геометрии.</p>
+<h2 id="kakie-oshibki-i-voprosy-zametit-podryadchik">Какие ошибки и вопросы заметит подрядчик?</h2>
+<p>Нормальный расчёт включает уточняющие вопросы. Подрядчик сопоставляет виды, размеры, модель, материал и технические требования. Если данные конфликтуют, точную цену и маршрут нельзя зафиксировать без решения заказчика или конструктора.</p>
+<p>Частые причины уточнений — разные размеры на видах, расхождение модели с PDF, материал без полного обозначения, отсутствующие общие допуски и старая ревизия. Технолог также спросит, какие размеры критичны, нужен ли измерительный протокол и какая версия файла главная.</p>
+<p>Полезный запрос автору документации выглядит так: «В PDF указан один размер, в модели — другой. Подтвердите главный файл, значение размера и актуальную ревизию». Для нескольких вопросов составьте таблицу: место на листе, противоречие, требуемое решение.</p>
+<blockquote><p>Вопрос подрядчика до запуска обходится дешевле переделки детали, изготовленной по неверно понятому чертежу.</p></blockquote>
+<p>После проверки <a href="/kontakty.html">пришлите чертёж на расчёт</a> вместе с количеством, сроком потребности и файлами, которые нужно считать исходными.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Как научиться читать чертежи?</summary>
+<div class="faq__a"><p>Начните с чертежа простой детали и идите по порядку: основная надпись, виды, размеры, допуски, техтребования. Сверяйте прочитанное с 3D-моделью или готовой деталью.</p></div>
+</details>
+<details>
+<summary>Что такое основная надпись на чертеже?</summary>
+<div class="faq__a"><p>Это блок в правом нижнем углу листа с наименованием и обозначением детали, материалом, массой, масштабом и данными об изменениях. С неё начинается чтение любого чертежа.</p></div>
+</details>
+<details>
+<summary>Что делать, если чертёж неполный или устарел?</summary>
+<div class="faq__a"><p>Не запускайте деталь в работу. Запросите у автора актуальную ревизию и перечислите подрядчику, чего не хватает: материала, допусков, размеров или связанных документов.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.iso.org/standard/35446.html" rel="noopener" target="_blank">ISO 7200:2004 — Technical product documentation — Data fields in title blocks and document headers</a> — International Organization for Standardization</li>
+<li><a href="https://www.iso.org/standard/11500.html" rel="noopener" target="_blank">ISO 5455:1979 — Technical drawings — Scales</a> — International Organization for Standardization</li>
+<li><a href="https://www.iso.org/standard/45975.html" rel="noopener" target="_blank">ISO 286-1:2010 — ISO code system for tolerances on linear sizes</a> — International Organization for Standardization</li>
+<li><a href="https://www.iso.org/standard/72196.html" rel="noopener" target="_blank">ISO 21920-1:2021 — Surface texture: Profile — Indication of surface texture</a> — International Organization for Standardization</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/sertifikaciya-proizvodstva-i-dopuski.html">
+            <img src="/images/blog/sertifikaciya-proizvodstva-i-dopuski-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Сертификация производства и допуски: что она гарантирует, а что нет</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/podgotovka-chertezha-dlya-proizvodstva.html">
+            <img src="/images/blog/podgotovka-chertezha-dlya-proizvodstva-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html">
+            <img src="/images/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как читать чертёж детали: инструкция для заказчика">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

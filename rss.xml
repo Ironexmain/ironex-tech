@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как читать чертёж детали: инструкция для заказчика</title>
+      <link>https://ironex.tech/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku.html</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>С чего начать чтение чертежа: основная надпись, виды, допуски, Ra и техтребования. Чек-лист, что проверить до расчёта у подрядчика.</description>
+    </item>
+    <item>
+      <title>Изготовление прототипов и опытных образцов из металла по вашему чертежу</title>
+      <link>https://ironex.tech/blog/izgotovlenie-prototipov-iz-metalla.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/izgotovlenie-prototipov-iz-metalla.html</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Чем макет отличается от опытного образца, какой метод выбрать для металла, от чего зависят цена и срок и как принять образец перед серией.</description>
+    </item>
+    <item>
+      <title>Глухие и сквозные отверстия: как проектировать их под механообработку</title>
+      <link>https://ironex.tech/blog/glukhoe-otverstie-kak-proektirovat.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/glukhoe-otverstie-kak-proektirovat.html</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Как записать глухое и сквозное отверстие на чертеже, сколько запаса глубины заложить под резьбу и когда вместо сверла нужен резец.</description>
+    </item>
     <item>
       <title>Сертификация производства и допуски: что она гарантирует, а что нет</title>
       <link>https://ironex.tech/blog/sertifikaciya-proizvodstva-i-dopuski.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Как читать и писать обозначение резьбы на чертеже: метрическая M, дюймовая UNC/UNF, трубная G/R/Rc, классы точности, глубина резьбы и частые ошибки.</description>
-    </item>
-    <item>
-      <title>Латунь и бронза: в чём разница и как выбрать сплав под деталь по чертежу</title>
-      <link>https://ironex.tech/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/latun-i-bronza-v-chem-raznitsa-chto-vybrat.html</guid>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Чем ЛС59-1 отличается от БрОЦС5-5-5 по прочности, стойкости к обесцинкованию и цене обработки — и как выбрать сплав, а не просто «латунь» или «бронза», под чертёж детали.</description>
-    </item>
-    <item>
-      <title>Обработка металла: какие бывают виды и как выбрать метод под свою деталь</title>
-      <link>https://ironex.tech/blog/obrabotka-metalla-vidy-vybor-metoda.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/obrabotka-metalla-vidy-vybor-metoda.html</guid>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Пять групп методов обработки металла, сводная таблица по точности и серийности и порядок выбора под деталь: материал, допуск, партия, срок.</description>
-    </item>
-    <item>
-      <title>Деталировка перед производством: как превратить сборочный чертёж в комплект для цеха</title>
-      <link>https://ironex.tech/blog/detalirovka-pered-proizvodstvom.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/detalirovka-pered-proizvodstvom.html</guid>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как из сборочного чертежа получить рабочие чертежи деталей: порядок работы, допуски, шероховатость, резьбы и чек-лист проверки перед заказом.</description>
     </item>
   </channel>
 </rss>
