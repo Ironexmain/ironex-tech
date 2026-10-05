@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как заказать детали по чертежу: пошаговая инструкция от запроса до приёмки</title>
+      <link>https://ironex.tech/blog/kak-zakazat-detali-po-chertezhu.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-zakazat-detali-po-chertezhu.html</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Как заказать детали по чертежу: что приложить к запросу, как проходит согласование, оплата и приёмка. Расчёт — за 3 рабочих дня.</description>
+    </item>
+    <item>
+      <title>Горячекатаная и холоднокатаная сталь: как выбор проката меняет готовую деталь</title>
+      <link>https://ironex.tech/blog/holodnokatanaya-stal-ili-goryachekatanaya-dlya-detalej.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/holodnokatanaya-stal-ili-goryachekatanaya-dlya-detalej.html</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Чем холоднокатаный лист отличается от горячекатаного по точности, короблению, гибке и цене детали. Таблица выбора и чек-лист заявки.</description>
+    </item>
+    <item>
+      <title>Цементация стали: что это и для каких деталей она нужна</title>
+      <link>https://ironex.tech/blog/cementaciya-stali-dlya-kakih-detalej.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/cementaciya-stali-dlya-kakih-detalej.html</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Цементация даёт детали поверхность 55–64 HRC и вязкую сердцевину. Какие стали и детали подходят, как указать слой в чертеже и что проверить.</description>
+    </item>
     <item>
       <title>Как читать чертёж детали: инструкция для заказчика</title>
       <link>https://ironex.tech/blog/kak-chitat-chertezhi-detali-instrukciya-zakazchiku.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Tue, 29 Sep 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Разбираем три типа посадок — с зазором, переходные и с натягом: квалитеты, допуски по ЕСДП и алгоритм выбора под задачу.</description>
-    </item>
-    <item>
-      <title>Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве</title>
-      <link>https://ironex.tech/blog/passivaciya-nerzhaveyushchey-stali.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/passivaciya-nerzhaveyushchey-stali.html</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Зачем нержавеющую сталь пассивируют после сварки и обработки, как проходит кислотная ванна и что указать в заказе на деталь — по ASTM A967.</description>
-    </item>
-    <item>
-      <title>Обработка нержавейки и титана: режимы резания, сварка и отделка</title>
-      <link>https://ironex.tech/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/obrabotka-nerzhaveyushchey-stali-rezhimy-titan-svarka.html</guid>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Режимы точения и фрезерования нержавейки, особенности титана, сварка и отделка: что учесть технологу и что прописать в чертеже.</description>
-    </item>
-    <item>
-      <title>Как правильно обозначить резьбу на чертеже: метрическая, дюймовая и трубная резьба</title>
-      <link>https://ironex.tech/blog/oboznachenie-rezby-na-chertezhe.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/oboznachenie-rezby-na-chertezhe.html</guid>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Как читать и писать обозначение резьбы на чертеже: метрическая M, дюймовая UNC/UNF, трубная G/R/Rc, классы точности, глубина резьбы и частые ошибки.</description>
     </item>
   </channel>
 </rss>
