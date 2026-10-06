@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Минимальный заказ на металлообработку: можно ли одну деталь</title>
+  <meta name="description" content="Можно ли заказать одну деталь по чертежу и почему малая партия дороже за штуку: наладка, материал, оснастка и что приложить к заявке." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal.html#article",
+      "headline": "Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог",
+      "description": "Можно ли заказать одну деталь по чертежу и почему малая партия дороже за штуку: наладка, материал, оснастка и что приложить к заявке.",
+      "datePublished": "2026-10-06",
+      "dateModified": "2026-10-06",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "минимальный заказ",
+        "одна деталь",
+        "малые партии",
+        "наладка станка",
+        "штучное производство",
+        "цена за деталь"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли заказать одну деталь?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На токарной и фрезерной обработке с ЧПУ единичный заказ обычно возможен. У IRONEX детали делают от 1 штуки, а минимальная сумма заказа — 100 000 ₽. Для штамповки и литья нужна оснастка, поэтому порог по количеству выше. Точный ответ зависит от чертежа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему малая партия дороже за штуку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Наладка станка и программа ЧПУ нужны при любом тираже. Это время подготовки. При малом числе деталей его делят на меньшее число штук, и вклад запуска в цену одной детали выше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что значит производство под заказ (MTO)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Деталь делают после получения чертежа и заказа. Склада готовых изделий нет. Каждый заказ начинается с подготовки: материал, программа, наладка, проверка первой детали."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как снизить стоимость малой партии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Уберите из запуска лишние марки, лишние допуски и разрозненные позиции: соберите их в один заказ из одной заготовки. Если потребность на месяцы уже известна, закажите этот объём одним тиражом, чтобы время подготовки разделилось на большее число штук."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Одну деталь сделают? Почему цена падает с ростом партии" />
+  <meta property="og:description" content="Можно ли заказать одну деталь по чертежу и почему малая партия дороже за штуку: наладка, материал, оснастка и что приложить к заявке." />
+  <meta property="og:url" content="https://ironex.tech/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-06" />
+  <meta property="article:modified_time" content="2026-10-06" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Одну деталь сделают? Почему цена падает с ростом партии" />
+  <meta name="twitter:description" content="Можно ли заказать одну деталь по чертежу и почему малая партия дороже за штуку: наладка, материал, оснастка и что приложить к заявке." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#est-li-minimalnyy-zakaz-v-kontraktnoy-metalloobrabotke">Есть ли минимальный заказ в контрактной металлообработке</a></li>
+<li><a href="#iz-chego-skladyvaetsya-tsena-naladka-programma-i-mashinnoe-v">Из чего складывается цена: наладка, программа и машинное время</a></li>
+<li><a href="#kak-tsena-za-detal-menyaetsya-ot-tirazha-1-5-10-50-100-i-500">Как цена за деталь меняется от тиража: 1, 5, 10, 50, 100 и 500 штук</a></li>
+<li><a href="#gde-edinichnyy-zakaz-normalen-a-gde-porog-obektiven-po-vidam">Где единичный заказ нормален, а где порог объективен: по видам обработки</a></li>
+<li><a href="#material-zagotovka-othody-i-minimalnaya-zakupka">Материал: заготовка, отходы и минимальная закупка</a></li>
+<li><a href="#kogda-osnastka-delaet-porog-zhestkim">Когда оснастка делает порог жёстким</a></li>
+<li><a href="#kak-udeshevit-maluyu-partiyu">Как удешевить малую партию</a></li>
+<li><a href="#chto-prilozhit-k-zayavke-na-edinichnuyu-detal-ili-maluyu-par">Что приложить к заявке на единичную деталь или малую партию</a></li>
+<li><a href="#ot-prototipa-k-serii-chto-menyaetsya-pri-povtornom-zakaze">От прототипа к серии: что меняется при повторном заказе</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог</h1>
+        <p class="lede">Можно ли заказать одну деталь по чертежу и почему малая партия дороже за штуку: наладка, материал, оснастка и что приложить к заявке.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-10-06">Опубликовано 6 октября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal-cover.webp" alt="Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">На токарной и фрезерной обработке с ЧПУ одну деталь заказать обычно можно, но стоить она будет дороже в пересчёте на штуку: наладка и программа ложатся на одну деталь целиком. Жёсткий минимум появляется там, где нужна оснастка, например при штамповке и литье. Точный порог по вашему чертежу называет технолог после расчёта.</p>
+<h2 id="est-li-minimalnyy-zakaz-v-kontraktnoy-metalloobrabotke">Есть ли минимальный заказ в контрактной металлообработке</h2>
+<p>Одна деталь в контрактной металлообработке — обычный заказ, если её делают на станке с ЧПУ. У IRONEX детали изготавливают от 1 штуки, а денежный порог задан суммой: минимальный заказ 100 000 ₽. Жёсткий минимум по количеству появляется там, где под деталь нужна оснастка, например штамп или пресс-форма. Итог по вашему чертежу называет технолог после расчёта.</p>
+<p>Порог считают в штуках или в сумме. При денежном пороге хватает одной детали, если сумма закрывает запуск. Метрику называет подрядчик.</p>
+<p>Это производство под заказ, коротко MTO: деталь делают после чертежа, склада изделий нет. Порог собирает программу, наладку, закупку и проверку <a href="/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii.html">первой детали</a>.</p>
+<blockquote><p>На обработке с ЧПУ порог задаёт стоимость запуска заказа. Программа, наладка и контроль первой детали ложатся на партию целиком, даже если в ней одна штука.</p></blockquote>
+<blockquote><p><strong>Факт.</strong> У IRONEX минимальная сумма заказа — 100 000 ₽, и при этом детали делают от 1 штуки: заказ на меньшую сумму цех считает нерентабельным для обеих сторон.</p></blockquote>
+<p>Единичное производство — малый объём одинаковых изделий: партия в нём может состоять из одной детали.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог">Прислать чертёж на почту</a>
+</div>
+<h2 id="iz-chego-skladyvaetsya-tsena-naladka-programma-i-mashinnoe-v">Из чего складывается цена: наладка, программа и машинное время</h2>
+<p><img alt="Лазерный станок ЧПУ Trumpf TruLaser" src="/images/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal-1.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Лазерный станок ЧПУ Trumpf TruLaser — промышленное оборудование для резки и обработки металла. Фото: <a href="https://commons.wikimedia.org/wiki/File:CNC_Laser_Cutting_Machine.jpg" rel="nofollow noopener" target="_blank">S zillayali</a> · <a href="https://creativecommons.org/licenses/by/3.0" rel="nofollow noopener" target="_blank">CC BY 3.0</a></em></p>
+<p>Цена одной детали складывается из доли подготовки, машинного времени и материала. Подготовку делают и для одной штуки, и для ста: до резания она почти не меняется. При малом тираже эта доля занимает большую часть цены штуки, поэтому та же деталь дешевеет в пересчёте на штуку, когда партию увеличивают.</p>
+<p>Время подготовки в нормативах называют подготовительно-заключительным. В него входит наладка станка: снять прошлую работу, поставить инструмент, выставить базу, закрепить заготовку. В него входит и программа ЧПУ: технолог читает чертёж и пишет траектории. Больше установов — длиннее программа. Сюда же относят контроль первой детали. ГОСТ 3.1109-82 описывает этот интервал как подготовку исполнителя и оснащения к операции и приведение их в порядок после партии.</p>
+<p>Машинное время и металл повторяются на каждую штуку. Эту часть называют штучным временем.</p>
+<p>В межотраслевых укрупнённых нормативах времени обе части записаны одной формулой: норма на операцию Нвр = Тш + tпз / n, где Тш — штучное время, tпз — подготовительно-заключительное, n — число деталей в партии. Партия сокращает долю наладки внутри этого времени, сами минуты подготовки от числа штук не уменьшаются. Сколько их выйдет по чертежу, считает технолог: вал из прутка и корпус с пятью установами готовят разное время.</p>
+<h2 id="kak-tsena-za-detal-menyaetsya-ot-tirazha-1-5-10-50-100-i-500">Как цена за деталь меняется от тиража: 1, 5, 10, 50, 100 и 500 штук</h2>
+<p>В условном примере время подготовки — 120 минут на весь запуск, машинное время — 15 минут на деталь. Материал, покрытие и отдельная оснастка в пример не входят. Цифры иллюстративные: по ним видно, как доля подготовки тает. Это не прайс и не норма времени IRONEX.</p>
+<table><thead><tr><th>Тираж, шт.</th><th>Время подготовки на деталь, мин</th><th>Машинное время, мин</th><th>Итого на деталь, мин</th></tr></thead><tbody><tr><td>1</td><td>120</td><td>15</td><td>135</td></tr><tr><td>5</td><td>24</td><td>15</td><td>39</td></tr><tr><td>10</td><td>12</td><td>15</td><td>27</td></tr><tr><td>50</td><td>2,4</td><td>15</td><td>17,4</td></tr><tr><td>100</td><td>1,2</td><td>15</td><td>16,2</td></tr><tr><td>500</td><td>0,24</td><td>15</td><td>15,24</td></tr></tbody></table>
+<p>Одна деталь в примере забирает 135 минут, пять штук — 39, десять — уже 27, пятьсот — 15,24. Дальше рост тиража почти замирает.</p>
+<blockquote><p>Основной выигрыш в этом примере приходится на первые десятки деталей. Между одной и десятью штуками время на деталь падает со 135 минут до 27, а от ста к пятистам — уже с 16,2 до 15,24.</p></blockquote>
+<p>Дальше кривая выходит на полку. Наращивать тираж ради минут подготовки имеет смысл, пока доля запуска ещё видна в итоге. Когда она сжалась до пары минут, цену штуки двигают цикл, материал и контроль.</p>
+<p>Редкая марка, покрытие или отдельный штамп в таблицу не попали. Деньги по чертежу считают отдельно, уже с металлом и с той оснасткой, которая нужна.</p>
+<h2 id="gde-edinichnyy-zakaz-normalen-a-gde-porog-obektiven-po-vidam">Где единичный заказ нормален, а где порог объективен: по видам обработки</h2>
+<p><img alt="Обработка детали на токарном станке" src="/images/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal-2.webp" style="aspect-ratio:16/9"/></p>
+<p><em>Механическая обработка детали на токарном станке. Операции машинной обработки выполняются на разных типах оборудования и влияют на итоговую стоимость производства. Фото: <a href="https://commons.wikimedia.org/wiki/File:WomanFactory1940s.jpg" rel="nofollow noopener" target="_blank">Howard R. Hollem</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Единичный заказ нормален там, где станок перестраивают программой и инструментом. Порог по количеству объективен там, где сначала делают оснастку и только потом саму деталь. Сводка ниже — отраслевая логика запуска по видам работ, и расчёт по вашему чертежу она не заменяет.</p>
+<table><thead><tr><th>Вид обработки</th><th>Единичная деталь</th><th>Что задаёт порог</th></tr></thead><tbody><tr><td>Токарная на ЧПУ</td><td>Обычный заказ</td><td>Программа, наладка, число установов</td></tr><tr><td>Фрезерная на ЧПУ</td><td>Обычный заказ</td><td>Программа, крепление, число установов</td></tr><tr><td>Лазерная резка</td><td>Обычно берут</td><td>Раскрой листа и оплата остатка</td></tr><tr><td>Гибка</td><td>Обычно берут</td><td>Переналадка инструмента</td></tr><tr><td>Сварка</td><td>Зависит от состава узла</td><td>Швы и сборка узла</td></tr><tr><td>Штамповка и литьё</td><td>Порог из-за оснастки</td><td>Штамп или пресс-форма на весь тираж</td></tr></tbody></table>
+<h3>Токарная и фрезерная обработка на ЧПУ</h3>
+<p>Токарный и фрезерный станок с ЧПУ перестраивают программой, без штампа под геометрию. Единичная деталь здесь привычна. Время подготовки растёт от отдельного приспособления и нескольких установов: у каждого своя база и повторный контроль. На <a href="/frezerovka.html">фрезерных работах по металлу</a> глубокий карман добавляет минуты к программе и не закрывает заказ из одной штуки.</p>
+<h3>Резка, гибка и сварка</h3>
+<p>Лазер режет контур из листа, и в цену входит остаток, если другой заказ его не заберёт. Гибка добавляет переналадку инструмента под радиус и угол. Сварной узел — это заготовки, швы и сборка, поэтому порог считают по составу изделия. Файлы на гибку разобраны отдельно: <a href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla">что приложить к заявке</a>.</p>
+<h3>Штамповка и литьё</h3>
+<p>Штамп и пресс-форма стоят дороже одной детали. Их делают один раз, стоимость делят на тираж. Пока тираж мал, доля оснастки в штуке выше цены металла и хода пресса. Для малой партии смотрят точение или фрезерование: там хватает программы и стандартного крепления.</p>
+<h2 id="material-zagotovka-othody-i-minimalnaya-zakupka">Материал: заготовка, отходы и минимальная закупка</h2>
+<p>Заготовку под одну деталь почти никогда не продают в размер готовой детали. Пруток и лист идут стандартными сечениями и мерными длинами, в заказ попадает кусок с припуском на зажим и рез. Этот кусок целиком, вместе с отходом реза, оплачивает заказчик.</p>
+<p>Горячекатаный лист по ГОСТ 19903-2015 выпускают шириной 500 мм и более, толщина листа — от 0,4 мм до 160,0 мм. Длины заданы рядом, среди них 2000, 2500 и 6000 мм. Из такого листа вырезают контур, а остальное уходит в остаток или в отход.</p>
+<p>Остаток остаётся в заказе, если кусок не уйдёт в другую работу. Нестандартная марка добавляет минимальную закупку и ожидание проката. Ходовая сталь или алюминий из цеха часто дешевле редкого сплава под одну штуку. Пруток берут мерной длины, с запасом на отрез и патрон: размер заготовки задаёт и отход, и сумму закупки. Припуск на патрон тоже входит в оплачиваемый пруток.</p>
+<h2 id="kogda-osnastka-delaet-porog-zhestkim">Когда оснастка делает порог жёстким</h2>
+<p>Оснастка делает порог жёстким там, где её нельзя заменить программой. Штамп, пресс-форма и специальное приспособление существуют в одном экземпляре, стоимость делят на тираж. При малом числе штук доля оснастки больше, чем работа пресса, и заказ по количеству уже не сходится.</p>
+<p>Под одну деталь хватает тисков, патрона или прихватов, отдельный проект не открывают. Оснастку под серию делают под одну геометрию, без тиража она не окупается. Для штамповки нужен штамп, для литья — пресс-форма.</p>
+<blockquote><p>Штамп и пресс-форма окупаются тиражом, поэтому у штамповки и литья порог по количеству объективен. На токарной и фрезерной обработке с ЧПУ хватает программы и стандартного крепления, и порог остаётся денежным.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если тираж мал, а деталь можно получить точением или фрезерованием, берите механообработку: отдельный штамп при нескольких штуках дороже самого заказа.</p></blockquote>
+<p>Если заказ из-за оснастки не сходится, смените способ изготовления.</p>
+<h2 id="kak-udeshevit-maluyu-partiyu">Как удешевить малую партию</h2>
+<p>Малую партию удешевляют решениями в заявке, до того как технолог сядет за программу. Речь о чертеже и комплекте деталей. Скидку на ту же самую работу эти ходы не обещают. Как подрядчик снижает собственный порог входа, разобрано отдельно: <a href="/blog/minimalnaya-partiya-kak-snizit-porog-vhoda-u-podryadchika">как снизить порог входа у подрядчика</a>.</p>
+<ul><li>Объедините детали в один заказ. Одна наладка закрывает несколько позиций, если они идут на одном станке и из близкого материала.</li><li>Унифицируйте марку и размер заготовки. Несколько деталей берут из одного прутка или одного листа, и остаток не становится отходом единственной позиции.</li><li>Согласуйте допуски и <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> с функцией детали. Лишняя точность добавляет проходы, инструмент и контроль, а на сборке часто не используется.</li><li>Соберите известную потребность на несколько месяцев в один запуск. Время подготовки разделится на больший тираж, если эти детали всё равно понадобятся.</li></ul>
+<p>Четыре хода не заменяют расчёт. Они убирают из запуска то, что иначе оплачивают один раз и раскладывают на малое число штук: лишнюю марку, лишний установ, лишний допуск и разрыв между заказами, которые можно было слить в один. Если две позиции и так нужны в одном узле, разносить их по разным письмам значит дважды платить за подготовку.</p>
+<h2 id="chto-prilozhit-k-zayavke-na-edinichnuyu-detal-ili-maluyu-par">Что приложить к заявке на единичную деталь или малую партию</h2>
+<p>Расчёт без цепочки уточнений получается из полного комплекта: технологу нужны геометрия, материал и количество в одном письме. Пустое поле превращает заявку в вопросы, и сумма появляется только после ответа. Четыре шага закрывают основные вопросы технолога ещё до расчёта.</p>
+<ol><li>Приложите чертёж и, если она есть, <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">3D-модель</a>. Для IRONEX подходят PDF, DWG, DXF, STEP, IGES, ZIP, JPG, PNG, STL, SAT и X_T. Формат другой — пришлите то, что есть: технолог напишет, чего не хватает.</li><li>Укажите материал и марку, допуски, шероховатость, термообработку и покрытие. Без марки заготовку не закупают, без покрытия операция не попадает в цену.</li><li>Напишите количество сейчас, возможный объём дальше и срок. Будущий объём не обязывает к серии, но показывает, есть ли смысл делить программу на большее число штук.</li><li>Если чертежа нет, приложите эскиз, образец или модель и напишите об этом прямо. Обмер — отдельная работа, её лучше назвать до расчёта.</li></ol>
+<p>Допуск «на всякий случай» и покрытие, о котором вспомнили после цены, лучше поставить в первое письмо.</p>
+<h2 id="ot-prototipa-k-serii-chto-menyaetsya-pri-povtornom-zakaze">От прототипа к серии: что меняется при повторном заказе</h2>
+<p>Первая деталь и повтор считаются по-разному, даже при том же чертеже. Сначала геометрию проверяют на прототипе, чертёж правят, и только затем запускают партию. Прототип предшествует партии: время подготовки будущего тиража на него не делят. В малой партии это время видно в цене штуки.</p>
+<p>ГОСТ 14.004-83 различает три типа. Единичное — малый объём, повтор, как правило, не предусмотрен. Серийное — партии повторяются. Массовое — большой объём долгое время, на большинстве мест одна операция. На штамп переходят, когда оснастка на штуку дешевле механообработки.</p>
+<p>Повтор дешевле, если программу ЧПУ и оснастку сохранили. Условия хранения уточняйте до запуска: скидку заранее обещать нельзя.</p>
+<blockquote><p>Первая деталь оплачивает подготовку. Повторный заказ дешевле только тогда, когда программу и оснастку сохранили и станок под них свободен.</p></blockquote>
+<p>Отправьте чертёж и количество: <a href="/kontakty.html">пришлите чертёж для расчёта</a>. Технолог скажет, упирается ли заказ в сумму, в материал или в оснастку. Расчёт по чертежу готовят за 3 рабочих дня.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Можно ли заказать одну деталь?</summary>
+<div class="faq__a"><p>На токарной и фрезерной обработке с ЧПУ единичный заказ обычно возможен. У IRONEX детали делают от 1 штуки, а минимальная сумма заказа — 100 000 ₽. Для штамповки и литья нужна оснастка, поэтому порог по количеству выше. Точный ответ зависит от чертежа.</p></div>
+</details>
+<details>
+<summary>Почему малая партия дороже за штуку?</summary>
+<div class="faq__a"><p>Наладка станка и программа ЧПУ нужны при любом тираже. Это время подготовки. При малом числе деталей его делят на меньшее число штук, и вклад запуска в цену одной детали выше.</p></div>
+</details>
+<details>
+<summary>Что значит производство под заказ (MTO)?</summary>
+<div class="faq__a"><p>Деталь делают после получения чертежа и заказа. Склада готовых изделий нет. Каждый заказ начинается с подготовки: материал, программа, наладка, проверка первой детали.</p></div>
+</details>
+<details>
+<summary>Как снизить стоимость малой партии?</summary>
+<div class="faq__a"><p>Уберите из запуска лишние марки, лишние допуски и разрозненные позиции: соберите их в один заказ из одной заготовки. Если потребность на месяцы уже известна, закажите этот объём одним тиражом, чтобы время подготовки разделилось на большее число штук.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://normativ.kontur.ru/document?moduleId=9&amp;documentId=356673" rel="noopener" target="_blank">ГОСТ 14.004-83. Технологическая подготовка производства. Термины и определения основных понятий</a> — Госстандарт СССР</li>
+<li><a href="https://www.opengost.ru/1719-gost-3.1109-82-estd.-terminy-i-opredeleniya-osnovnyh-ponyatiy.html" rel="noopener" target="_blank">ГОСТ 3.1109-82. ЕСТД. Термины и определения основных понятий</a> — Госстандарт СССР</li>
+<li><a href="https://meganorm.ru/Data2/1/4293850/4293850530.htm" rel="noopener" target="_blank">Межотраслевые укрупненные нормативы времени на работы, выполняемые на отделочно-расточных станках (единичное и мелкосерийное производство)</a></li>
+<li><a href="https://meganorm.ru/mega_doc/norm/gost_gosudarstvennyj-standart/2/gost_19903-2015_mezhgosudarstvennyy_standart_prokat_listovoy.html" rel="noopener" target="_blank">ГОСТ 19903-2015. Прокат листовой горячекатаный. Сортамент</a></li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/minimalnyy-obem-zakaza-detal-ili-partiya.html">
+            <img src="/images/blog/minimalnyy-obem-zakaza-detal-ili-partiya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Экономика заказа</span>
+              <span class="mat-card__title">Минимальный объём заказа деталей: одна деталь или партия</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/frezerovka-metalla-metody-tehnologiya.html">
+            <img src="/images/blog/frezerovka-metalla-metody-tehnologiya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Фрезеровка металла: какие бывают виды фрезерования и когда какой применять</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/izgotovlenie-prototipov-iz-metalla.html">
+            <img src="/images/blog/izgotovlenie-prototipov-iz-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Изготовление прототипов и опытных образцов из металла по вашему чертежу</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

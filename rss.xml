@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Диаметр отверстия под резьбу: какое сверло брать для метрической резьбы и почему</title>
+      <link>https://ironex.tech/blog/otverstie-pod-rezbu-tablica-sverl-metricheskaya-rezba.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/otverstie-pod-rezbu-tablica-sverl-metricheskaya-rezba.html</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Таблица сверл под метрическую резьбу М3–М30: крупный и мелкий шаг, поправки на материал, глубина глухого отверстия и проверка калибрами.</description>
+    </item>
+    <item>
+      <title>Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог</title>
+      <link>https://ironex.tech/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal.html</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Можно ли заказать одну деталь по чертежу и почему малая партия дороже за штуку: наладка, материал, оснастка и что приложить к заявке.</description>
+    </item>
+    <item>
+      <title>Измерение шероховатости поверхности: когда хватит образцов сравнения, а когда нужен профилометр</title>
+      <link>https://ironex.tech/blog/izmerenie-sherohovatosti-poverhnosti-profilometr-obrazcy.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/izmerenie-sherohovatosti-poverhnosti-profilometr-obrazcy.html</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Как проверить Ra на металлической детали: образцы сравнения, контактный профилометр, базовая длина, число замеров и что вписать в протокол.</description>
+    </item>
     <item>
       <title>Как заказать детали по чертежу: пошаговая инструкция от запроса до приёмки</title>
       <link>https://ironex.tech/blog/kak-zakazat-detali-po-chertezhu.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Wed, 30 Sep 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Как заказать болты, винты и шпильки по чертежу: классы прочности, допуски резьбы, выбор между точением и штамповкой по объёму партии.</description>
-    </item>
-    <item>
-      <title>Гальваническое покрытие металла: какой вид выбрать для детали по чертежу</title>
-      <link>https://ironex.tech/blog/galvanicheskoe-pokrytie-vidy-i-kogda-primenyat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/galvanicheskoe-pokrytie-vidy-i-kogda-primenyat.html</guid>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Как выбрать гальваническое покрытие под материал детали, что указать в чертеже по ГОСТ 9.306-85 и как принять партию у подрядчика.</description>
-    </item>
-    <item>
-      <title>Проектирование деталей под производство: какой чертёж, формат и ГОСТ нужны цеху, чтобы посчитать и сделать заказ</title>
-      <link>https://ironex.tech/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Какие форматы принимает производство, что требует ЕСКД и какие ошибки в чертеже срывают сроки. Чек-лист комплекта для расчёта.</description>
-    </item>
-    <item>
-      <title>Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения</title>
-      <link>https://ironex.tech/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Разбираем три типа посадок — с зазором, переходные и с натягом: квалитеты, допуски по ЕСДП и алгоритм выбора под задачу.</description>
     </item>
   </channel>
 </rss>
