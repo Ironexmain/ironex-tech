@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PPAP: уровни, пакет документов и одобрение первой партии</title>
+  <meta name="description" content="PPAP: пять уровней подачи, что входит в пакет, какой индекс Cpk требуют и как не провалить одобрение первой серийной партии деталей." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/ppap-protsedura-odobreniya-proizvodstva-detaley.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/ppap-protsedura-odobreniya-proizvodstva-detaley.html#article",
+      "headline": "PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз",
+      "description": "PPAP: пять уровней подачи, что входит в пакет, какой индекс Cpk требуют и как не провалить одобрение первой серийной партии деталей.",
+      "datePublished": "2026-10-07",
+      "dateModified": "2026-10-07",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/ppap-protsedura-odobreniya-proizvodstva-detaley.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/ppap-protsedura-odobreniya-proizvodstva-detaley-cover.webp",
+      "articleSection": "Контроль качества",
+      "keywords": [
+        "ppap",
+        "одобрение производства",
+        "первая партия",
+        "ppap уровни",
+        "ppap apple",
+        "индекс возможностей процесса"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько уровней у PPAP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пять. Уровень называет заказчик. От него зависит, что вы отправляете, а что храните у себя и показываете по запросу. Если в заказе уровня нет, по умолчанию ориентируются на уровень 3 и подтверждают это письмом до сборки архива. Сами элементы при этом всё равно собирают: уровень не отменяет работу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем PPAP отличается от первой партии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Первая партия проверяет, что получилось в поставке сейчас. PPAP доказывает, что процесс повторит результат в серии, цикл за циклом. Годные штуки в ящике закрывают проверку поставки. Повторяемость подтверждают прогоном и индексом, до отгрузки серии."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое PPAP Apple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Подтверждённого публичного перечня, равного пакету AIAG PPAP, мы не нашли. Требования такого заказчика задают отдельно, в договоре или в стандарте поставщика. Их запрашивают напрямую, до запуска оснастки. Автомобильный комплект по догадке туда не подставляют."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="PPAP простыми словами: что подать заказчику до первой партии" />
+  <meta property="og:description" content="PPAP: пять уровней подачи, что входит в пакет, какой индекс Cpk требуют и как не провалить одобрение первой серийной партии деталей." />
+  <meta property="og:url" content="https://ironex.tech/blog/ppap-protsedura-odobreniya-proizvodstva-detaley.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/ppap-protsedura-odobreniya-proizvodstva-detaley-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-07" />
+  <meta property="article:modified_time" content="2026-10-07" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PPAP простыми словами: что подать заказчику до первой партии" />
+  <meta name="twitter:description" content="PPAP: пять уровней подачи, что входит в пакет, какой индекс Cpk требуют и как не провалить одобрение первой серийной партии деталей." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/ppap-protsedura-odobreniya-proizvodstva-detaley-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-ppap-i-zachem-on-zakazchiku">Что такое PPAP и зачем он заказчику</a></li>
+<li><a href="#ppap-apqp-fai-i-priemka-pervoy-partii-chem-oni-otlichayutsya">PPAP, APQP, FAI и приёмка первой партии: чем они отличаются</a></li>
+<li><a href="#pyat-urovney-ppap-chto-podavat-a-chto-hranit-u-sebya">Пять уровней PPAP: что подавать, а что хранить у себя</a></li>
+<li><a href="#iz-chego-sostoit-paket-dlya-mehanoobrabotannoy-detali">Из чего состоит пакет для механообработанной детали</a></li>
+<li><a href="#cpk-i-ppk-kakuyu-chast-dopuska-zabiraet-trebovanie-zakazchik">Cpk и Ppk: какую часть допуска забирает требование заказчика</a></li>
+<li><a href="#kak-podgotovit-protsess-chtoby-proyti-issledovanie-s-pervogo">Как подготовить процесс, чтобы пройти исследование с первого раза</a></li>
+<li><a href="#posle-podachi-reshenie-zakazchika-otkazy-i-povtornaya-podach">После подачи: решение заказчика, отказы и повторная подача</a></li>
+<li><a href="#s-chego-nachat-voprosy-zakazchiku-i-podgotovka-postavschika">С чего начать: вопросы заказчику и подготовка поставщика</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз</h1>
+        <p class="lede">PPAP: пять уровней подачи, что входит в пакет, какой индекс Cpk требуют и как не провалить одобрение первой серийной партии деталей.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Контроль качества</span>
+            <time datetime="2026-10-07">Опубликовано 7 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/ppap-protsedura-odobreniya-proizvodstva-detaley-cover.webp" alt="PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+          <p class="prose__lede">PPAP — пакет документов, который поставщик подаёт заказчику до отгрузки первой серийной партии. Он доказывает, что процесс делает годную деталь не один раз, а цикл за циклом. Состав пакета зависит от уровня подачи, от 1 до 5, и называет его заказчик.</p>
+
+          <h2 id="chto-takoe-ppap-i-zachem-on-zakazchiku">Что такое PPAP и зачем он заказчику</h2>
+<p>Инженер заказчика спрашивает просто: откуда мы знаем, что вторая тысяча деталей будет как первая. PPAP, одобрение производства деталей, отвечает пакетом документов до отгрузки первой серийной партии. Поставщик показывает, что процесс выдаёт годную деталь при каждом запуске цикла, на том же станке и той же оснастке.</p>
+<p>Заказчику пакет нужен, чтобы снять риск. Если процесс держит размер с запасом внутри допуска, можно перестать проверять каждую деталь и опереться на процесс. С ростом серии сплошной контроль перестаёт успевать за станком: микрометр в руках контролёра не масштабируется так же, как шпиндель. Крупный заказ упирается в доверие к процессу. PPAP собирает доказательства заранее, на том же процессе, которым пойдёт серия.</p>
+<p>Часть пакета — показатель возможностей процесса. Он показывает, с каким запасом размер сидит внутри допуска, сверх простой отметки «годен» на одной детали. Допуск на размер остаётся границей чертежа: деталь вне поля бракуют в любом случае. Показатель добавляет второе условие. Между средним и границей должен остаться запас на обычный разброс от цикла к циклу.</p>
+<blockquote><p>PPAP доказывает, что процесс держит размер каждый цикл. Одной годной детали для одобрения производства мало.</p></blockquote>
+<div class="cta ui" id="cta" data-cta="inline">
+            <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+            <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+            <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз">Прислать чертёж на почту</a>
+          </div>
+<h2 id="ppap-apqp-fai-i-priemka-pervoy-partii-chem-oni-otlichayutsya">PPAP, APQP, FAI и приёмка первой партии: чем они отличаются</h2>
+<p><img src="/images/blog/ppap-protsedura-odobreniya-proizvodstva-detaley-1.webp" alt="Оператор контроля качества на производстве" style="aspect-ratio:16/9"></p>
+<p><em>Специалист по контролю качества проверяет выпускаемую продукцию. Контроль качества — критический этап производства, обеспечивающий соответствие требованиям заказчика. Фото: <a href="https://commons.wikimedia.org/wiki/File:Quality_control_operator_at_General_Engineering_Company_%28Canada%29_%28I0058214%29.jpg" rel="nofollow noopener" target="_blank">All images from the General Engineering Company (Canada) fonds were uploaded as…</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Четыре названия часто стоят в одном письме и требуют разного. APQP описывает, как в автомобильной отрасли ведут разработку изделия до запуска, и идёт раньше PPAP. Затем на станке проверяют, что оснастка и люди дают запланированную деталь.</p>
+<p>FAI по AS9102 — другой документ. Отчёт фиксирует, что образец изготовлен и проверен по требованиям заказчика. Его применяют в авиации и оборонной отрасли. Автомобильный заказчик не заменит PPAP отчётом FAI, пока сам не напишет этого в требованиях.</p>
+<p>Приёмка первой партии сверяет размеры поставки с чертежом. Запас процесса в эту проверку не входит. Цех может сдать годные штуки, пока заказчик ждал доказательство на следующую тысячу.</p>
+<table><thead><tr><th>Процедура</th><th>Что подтверждает</th><th>Где применяют</th><th>Когда подают</th></tr></thead><tbody><tr><td>PPAP</td><td>Стабильность процесса</td><td>Автомобильная отрасль</td><td>До серийной отгрузки</td></tr><tr><td>APQP</td><td>План разработки и качества</td><td>Автомобильная отрасль</td><td>Раньше PPAP</td></tr><tr><td>FAI по AS9102</td><td>Образец против требований заказчика</td><td>Авиация и оборонная отрасль</td><td>Для первого образца</td></tr><tr><td>Приёмка первой партии</td><td>Размеры поставки</td><td>По договору с заказчиком</td><td>При поставке</td></tr></tbody></table>
+<p>Как сверяют размеры до серии: <a href="/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii">как принять первую деталь перед запуском серии</a>.</p>
+<h2 id="pyat-urovney-ppap-chto-podavat-a-chto-hranit-u-sebya">Пять уровней PPAP: что подавать, а что хранить у себя</h2>
+<p>Уровень подачи определяет, какую долю PPAP увидит заказчик, и называет его сам заказчик. Если уровень не назван, по умолчанию берут уровень 3 и подтверждают это письмом до сборки архива. От цифры зависит, что уедет заказчику, а что останется на площадке.</p>
+<p>При любом уровне применимые элементы собирают и хранят. На уровне 1 заказчику уходит свидетельство подачи (PSW), для деталей с требованиями к внешнему виду добавляют отчёт о внешнем виде. Уровень 2 стоит между первым и третьим, его состав берите из требований заказчика. На уровне 3 уходит вся документация, кроме эталонного образца и контрольных приспособлений: их хранят у поставщика.</p>
+<table><thead><tr><th>Уровень</th><th>Что уходит заказчику</th></tr></thead><tbody><tr><td>1</td><td>PSW; для деталей с требованиями к внешнему виду ещё отчёт о внешнем виде</td></tr><tr><td>2</td><td>Состав задан требованиями заказчика</td></tr><tr><td>3</td><td>PSW и вся документация, кроме элементов 15 и 16: эталонного образца и контрольных приспособлений</td></tr><tr><td>4</td><td>PSW и то, что назвал заказчик; фиксированного списка нет</td></tr><tr><td>5</td><td>Тот же полный комплект, что на уровне 3, но его смотрят на площадке поставщика</td></tr></tbody></table>
+<p>Уровень 4 без фиксированного списка: что приложить, называет заказчик до сборки. Уровень 5 по составу совпадает с третьим, отличается место проверки.</p>
+<blockquote><p>Уровень подачи решает, что уедет заказчику. Применимые элементы собирают при любом уровне и держат готовыми к запросу.</p></blockquote>
+<h2 id="iz-chego-sostoit-paket-dlya-mehanoobrabotannoy-detali">Из чего состоит пакет для механообработанной детали</h2>
+<p>Для детали по чужому чертежу пакет собирают по конкретной штуке. Корпус подшипникового узла: посадка, плоскостность фланца, положение крепежа. Размер на чертеже получает номер, в протоколе стоят тот же номер, прибор и результат.</p>
+<p>Неприменимый элемент закрывают пометкой и согласуют с заказчиком. План управления входит в PPAP: что, чем и как часто меряют в серии и что делают при уходе размера. Анализ измерительной системы (MSA) подтверждает, что КИМ, калибр и микрометр годны для этого поля. PSW — свидетельство подачи, на нём заказчик возвращает своё решение.</p>
+<ol><li>Чертёж с номерами — сверка, что меряли тот же контур.</li><li>Протокол замеров — результат и допуск у каждого номера.</li><li>Сертификаты материала — марка и свойства, помимо геометрии.</li><li>Схема процесса — путь от заготовки до упаковки.</li><li>FMEA процесса — где ждёте брак и чем его ловите.</li><li>План управления — частота контроля и реакция на уход размера.</li><li>MSA — пригодность КИМ, калибров и микрометров.</li><li>Исследование процесса — индекс пробной серии на критичных размерах.</li><li>Образцы и эталон — с чем сравнивают следующую серию.</li><li>PSW — свидетельство подачи с решением заказчика.</li></ol>
+<h2 id="cpk-i-ppk-kakuyu-chast-dopuska-zabiraet-trebovanie-zakazchik">Cpk и Ppk: какую часть допуска забирает требование заказчика</h2>
+<p>Индекс возможностей процесса входит в PPAP и сокращает рабочую часть допуска. Минимум называет заказчик: встречаются 1,00, 1,33, 1,67 и 2,00. На практике теряют от трети до половины поля: чертёж ±0,0020 дюйма, около ±0,051 мм, настраивают ближе к ±0,0012 дюйма, около ±0,030 мм.</p>
+<blockquote><p>Жёсткий допуск — граница. Часть поля забирает требование к индексу.</p></blockquote>
+<blockquote><p><strong>Факт.</strong> При центровке по середине поля Cpk 1,33 оставляет около трёх четвертей допуска, Cpk 1,67 — около 60 %.</p></blockquote>
+<h3>Cpk и Ppk: короткий период и долгий</h3>
+<p>Один показатель описывает короткий период: детали подряд. Другой — длинный, партию за дни или недели. Оба индекса считают через стандартное отклонение. Меньше разброс от детали к детали — выше индекс. Центровка двигает число так же сильно. Узкий процесс проваливает показатель, если среднее прижато к границе.</p>
+<p>Какой из двух индексов и на какой выборке требует заказчик, написано в его требованиях. Это уточняют до прогона. Данные для расчёта даёт пробная серия, выпущенная подряд.</p>
+<h3>Односторонний допуск: годные детали и проваленный индекс</h3>
+<p>У плоскостности и других допусков с одной границей одна стенка, идеал — ноль. Если среднее лежит у стенки, детали остаются годными. Индекс при этом низкий: формуле нужно расстояние от среднего до предела. Отметка «в допуске» это расстояние не заменяет.</p>
+<p>На корпусе так ведёт себя фланец. Партия проходит проверку и собирается, а исследование падает: среднее прижато к границе. Его сдвигают к нулю, насколько позволяют припуск и станок. Иначе детали годные, а одобрения нет.</p>
+<h2 id="kak-podgotovit-protsess-chtoby-proyti-issledovanie-s-pervogo">Как подготовить процесс, чтобы пройти исследование с первого раза</h2>
+<p>Пробная серия даёт данные для расчёта индекса, поэтому к ней готовят сам процесс на станке. Критичный размер уже сидит в жёстком допуске, и сверху лежит требование к возможностям. Пересчёт на половину поля нередко меняет саму операцию.</p>
+<p>Отверстие после круговой интерполяции может потребовать растачивания или развёртывания: разброс интерполяции терпим на полном допуске и критичен на суженном. Приспособление проверяют щупом, деталь должна вставать одинаково. Инструмент меняют по графику, до износа не доводят. Биение оснастки тоже входит в разброс.</p>
+<p>Станок прогревают до замера. Прогон на холодной машине проваливает индекс: температурный дрейф раздувает разброс. Объём берут из договора. Если заказчик молчит, ориентир — от одного до восьми часов и не меньше 300 деталей подряд, на производственной оснастке и в производственном темпе. Цифру фиксируют до пуска.</p>
+<ol><li>Уточните минимальный индекс и объём пробной серии у заказчика.</li><li>Прогрейте станок до режима, в котором пойдёт серия.</li><li>Проверьте приспособление щупом и уберите люфт, который раньше считали мелочью.</li><li>Выпустите серию подряд, без подналадки посередине выборки.</li><li>Замерьте критичные размеры тем средством, которое стоит в плане управления.</li><li>Посчитайте индекс и решите, подавать пакет или менять операцию.</li></ol>
+<blockquote><p><strong>Мнение.</strong> Если серия пойдёт сотнями и сплошной контроль съест срок, сужайте настройку до пробного прогона. После проваленного индекса операцию всё равно придётся менять, уже на сдвинутом сроке.</p></blockquote>
+<h2 id="posle-podachi-reshenie-zakazchika-otkazy-i-povtornaya-podach">После подачи: решение заказчика, отказы и повторная подача</h2>
+<p>Заказчик возвращает решение на свидетельстве подачи, и оно бывает трёх видов: одобрено, временное разрешение, отклонено. Условия временного разрешения смотрите в самом решении. Отклонённый пакет возвращается на правку.</p>
+<p>Пакет вернут, если размер вне допуска, индекс ниже заданного, система измерения не подтверждена или в документах разные ревизии чертежа. Лечат причину: новый прогон, исправленная операция, подтверждённый прибор. Повторная подпись при тех же цифрах положение не меняет.</p>
+<p>Что считать изменением процесса и когда уведомлять заказчика, определяют его требования. Уточняйте это до смены оснастки, площадки или субпоставщика, а не после.</p>
+<h2 id="s-chego-nachat-voprosy-zakazchiku-i-podgotovka-postavschika">С чего начать: вопросы заказчику и подготовка поставщика</h2>
+<p>До пуска запрашивают пять вещей: уровень подачи, минимальный индекс, размер пробной серии, формат протокола и требования к измерениям. Без этих пяти пунктов цех собирает лишний архив и всё равно промахивается мимо ожидания заказчика.</p>
+<p>Готовят нумерованный чертёж, план контроля, приборы с подтверждённой пригодностью и график инструмента. На корпусе подшипникового узла сразу смотрят посадку, фланец и крепёж: там индекс сузит поле сильнее.</p>
+<p>Публичного перечня «PPAP Apple», равного пакету AIAG, мы не нашли. Требования такого заказчика живут в договоре и в его собственном стандарте. Их запрашивают напрямую. Автомобильный комплект по догадке не подставляют.</p>
+<ol><li>Запросите уровень, индекс, объём серии, формат протокола и правила измерений.</li><li>Подготовьте процесс под суженное поле: операция, база, инструмент, прогрев.</li><li>Выпустите пробную серию подряд и посчитайте индекс.</li><li>Подайте пакет названного уровня, остальное храните у себя.</li></ol>
+<p>Дальше решает экономика запуска: <a href="/serijnoe-proizvodstvo-detalej.html">серийное производство деталей</a> и <a href="/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii">как выбрать размер партии</a>. Сверка поставки с чертежом — отдельный контур, <a href="/razdel/kontrol-kachestva.html">как принять партию и убедиться, что деталь соответствует чертежу</a>.</p>
+<p>Если пять пунктов уже в запросе, считайте настройку и собирайте свидетельство. Если нет, остановите пуск. Когда уровень и индекс известны, <a href="/kontakty.html">пришлите чертёж</a> на расчёт.</p>
+
+          <h2 id="faq">Частые вопросы</h2>
+          <div class="faq">
+            <details open>
+              <summary>Сколько уровней у PPAP?</summary>
+              <div class="faq__a"><p>Пять. Уровень называет заказчик. От него зависит, что вы отправляете, а что храните у себя и показываете по запросу. Если в заказе уровня нет, по умолчанию ориентируются на уровень 3 и подтверждают это письмом до сборки архива. Сами элементы при этом всё равно собирают: уровень не отменяет работу.</p></div>
+            </details>
+<details>
+              <summary>Чем PPAP отличается от первой партии?</summary>
+              <div class="faq__a"><p>Первая партия проверяет, что получилось в поставке сейчас. PPAP доказывает, что процесс повторит результат в серии, цикл за циклом. Годные штуки в ящике закрывают проверку поставки. Повторяемость подтверждают прогоном и индексом, до отгрузки серии.</p></div>
+            </details>
+<details>
+              <summary>Что такое PPAP Apple?</summary>
+              <div class="faq__a"><p>Подтверждённого публичного перечня, равного пакету AIAG PPAP, мы не нашли. Требования такого заказчика задают отдельно, в договоре или в стандарте поставщика. Их запрашивают напрямую, до запуска оснастки. Автомобильный комплект по догадке туда не подставляют.</p></div>
+            </details>
+          </div>
+
+          <h2 id="istochniki">Источники</h2>
+          <ul class="sources">
+            <li><a href="https://www.aiag.org/training-and-resources/manuals/details/PPAP-4" rel="noopener" target="_blank">Production Part Approval Process (PPAP)</a> — Automotive Industry Action Group</li>
+<li><a href="https://www.aiag.org/training-and-resources/elearning/details/IAPE" rel="noopener" target="_blank">Advanced Product Quality Planning (APQP), введение</a> — Automotive Industry Action Group</li>
+<li><a href="https://www.mmsonline.com/articles/how-to-certify-production-at-scale-with-ppap" rel="noopener" target="_blank">How to Certify Production at Scale With PPAP</a> — Modern Machine Shop</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/kak-polzovatsya-shtangencirkulem-i-mikrometrom.html">
+            <img src="/images/blog/kak-polzovatsya-shtangencirkulem-i-mikrometrom-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Как пользоваться штангенциркулем и микрометром: инструкция по шагам и как не ошибиться в замере детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html">
+            <img src="/images/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/sertifikaciya-proizvodstva-i-dopuski.html">
+            <img src="/images/blog/sertifikaciya-proizvodstva-i-dopuski-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Сертификация производства и допуски: что она гарантирует, а что нет</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

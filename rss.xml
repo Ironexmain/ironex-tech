@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз</title>
+      <link>https://ironex.tech/blog/ppap-protsedura-odobreniya-proizvodstva-detaley.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/ppap-protsedura-odobreniya-proizvodstva-detaley.html</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>PPAP: пять уровней подачи, что входит в пакет, какой индекс Cpk требуют и как не провалить одобрение первой серийной партии деталей.</description>
+    </item>
+    <item>
+      <title>Попутное и встречное фрезерование: в чём разница и как она отражается на детали</title>
+      <link>https://ironex.tech/blog/popputnoe-i-vstrechnoe-frezerovanie-raznica.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/popputnoe-i-vstrechnoe-frezerovanie-raznica.html</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Как попутное и встречное фрезерование меняют стружку, чистоту поверхности и стойкость фрезы. Когда какое выбрать и что учесть в чертеже.</description>
+    </item>
+    <item>
+      <title>Как пользоваться штангенциркулем и микрометром: инструкция по шагам и как не ошибиться в замере детали</title>
+      <link>https://ironex.tech/blog/kak-polzovatsya-shtangencirkulem-i-mikrometrom.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-polzovatsya-shtangencirkulem-i-mikrometrom.html</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Проверка нуля, замер наружных, внутренних размеров и глубины, чтение нониуса, микрометр с трещоткой, источники погрешности и таблица выбора инструмента.</description>
+    </item>
     <item>
       <title>Диаметр отверстия под резьбу: какое сверло брать для метрической резьбы и почему</title>
       <link>https://ironex.tech/blog/otverstie-pod-rezbu-tablica-sverl-metricheskaya-rezba.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Thu, 01 Oct 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Радиальное и торцевое биение: чем отличаются зоны допуска, как читать рамку на чертеже и как снять разницу показаний индикатора.</description>
-    </item>
-    <item>
-      <title>Лазерная резка металла: в каких случаях она оправдана, а в каких лучше другой способ</title>
-      <link>https://ironex.tech/blog/lazernaya-rezka-metalla-kogda-ispolzovat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/lazernaya-rezka-metalla-kogda-ispolzovat.html</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Когда лазерная резка металла даёт точность и скорость, а когда выгоднее плазма, гидроабразив или штамповка. Что указать в чертеже и заявке.</description>
-    </item>
-    <item>
-      <title>Минимальный объём заказа деталей: одна деталь или партия</title>
-      <link>https://ironex.tech/blog/minimalnyy-obem-zakaza-detal-ili-partiya.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/minimalnyy-obem-zakaza-detal-ili-partiya.html</guid>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Экономика заказа</category>
-      <description>Почему одна деталь по чертежу дороже штуки в партии. Наладка станка, точка безубыточности и как выбрать объём без переплаты.</description>
-    </item>
-    <item>
-      <title>Изготовление болтов, винтов и шпилек по чертежу: классы прочности, допуски и выбор метода</title>
-      <link>https://ironex.tech/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/izgotovlenie-boltov-vintov-shpilek-i-krepezha-na-zakaz.html</guid>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как заказать болты, винты и шпильки по чертежу: классы прочности, допуски резьбы, выбор между точением и штамповкой по объёму партии.</description>
     </item>
   </channel>
 </rss>
