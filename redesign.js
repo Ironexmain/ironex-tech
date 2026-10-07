@@ -119,7 +119,10 @@
     if (filter !== "all") params.set("category", filter);
     if (page > 1) params.set("page", String(page));
     var query = params.toString();
-    return "blog.html" + (query ? "?" + query : "") + "#materials";
+    // Та же сетка стоит и на страницах разделов (/razdel/*.html) — адрес
+    // берём текущий, иначе пейджер раздела уводил бы в общий блог.
+    var base = window.location.pathname.split("/").pop() || "blog.html";
+    return base + (query ? "?" + query : "") + "#materials";
   }
 
   function setLocation(push) {
@@ -137,30 +140,62 @@
     });
   }
 
+  function pageLink(page, text, label) {
+    var link = document.createElement("a");
+    link.href = stateHref(activeFilter, page);
+    link.textContent = text;
+    link.setAttribute("aria-label", label);
+    if (page === activePage && text === String(page)) {
+      link.className = "is-active";
+      link.setAttribute("aria-current", "page");
+    }
+    link.addEventListener("click", function (event) {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      activePage = page;
+      render();
+      setLocation(true);
+      grid.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    return link;
+  }
+
+  // Номера страниц — первая, последняя и соседи текущей, остальное «…».
+  // Блог прирастает на 3 статьи в день: полный ряд номеров через месяц
+  // растянулся бы на три строки.
+  function pageNumbers(pageCount) {
+    var out = [];
+    for (var page = 1; page <= pageCount; page += 1) {
+      if (page === 1 || page === pageCount || Math.abs(page - activePage) <= 1 ||
+          (activePage <= 3 && page <= 4) || (activePage >= pageCount - 2 && page >= pageCount - 3)) {
+        if (out.length && page - out[out.length - 1] > 1) out.push(0);
+        out.push(page);
+      }
+    }
+    return out;
+  }
+
   function renderPagination(pageCount) {
     if (!pagination) return;
     pagination.innerHTML = "";
     pagination.hidden = pageCount <= 1;
-    for (var page = 1; page <= pageCount; page += 1) {
-      var link = document.createElement("a");
-      link.href = stateHref(activeFilter, page);
-      link.textContent = String(page);
-      link.setAttribute("aria-label", "Страница " + page);
-      if (page === activePage) {
-        link.className = "is-active";
-        link.setAttribute("aria-current", "page");
+    if (pageCount <= 1) return;
+    if (activePage > 1) {
+      pagination.appendChild(pageLink(activePage - 1, "←", "Предыдущая страница"));
+    }
+    pageNumbers(pageCount).forEach(function (page) {
+      if (!page) {
+        var gap = document.createElement("span");
+        gap.className = "pager__gap";
+        gap.setAttribute("aria-hidden", "true");
+        gap.textContent = "…";
+        pagination.appendChild(gap);
+        return;
       }
-      link.addEventListener("click", (function (nextPage) {
-        return function (event) {
-          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-          event.preventDefault();
-          activePage = nextPage;
-          render();
-          setLocation(true);
-          grid.scrollIntoView({ behavior: "smooth", block: "start" });
-        };
-      })(page));
-      pagination.appendChild(link);
+      pagination.appendChild(pageLink(page, String(page), "Страница " + page));
+    });
+    if (activePage < pageCount) {
+      pagination.appendChild(pageLink(activePage + 1, "→", "Следующая страница"));
     }
   }
 

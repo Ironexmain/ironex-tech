@@ -89,12 +89,12 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="materials">
     <div class="container">
       <nav class="filters" aria-label="Разделы блога">
         <a href="/blog.html">Все материалы</a><a href="/razdel/chertezhi-i-dopuski.html">Чертежи и допуски</a><a href="/razdel/ekonomika-zakaza.html">Экономика заказа</a><span aria-current="page">Технологии</span><a href="/razdel/materialy.html">Материалы</a><a href="/razdel/kontrol-kachestva.html">Контроль качества</a><a href="/razdel/zakazchiku.html">Заказчику</a>
       </nav>
-      <div class="mat-grid mat-grid--3" style="margin-top:28px">
+      <div class="mat-grid mat-grid--3" data-blog-grid data-page-size="6" style="margin-top:28px">
         <article class="card mat-card" data-category="tehnologii" data-date="2026-10-07" data-read-min="10" data-seo-slug="popputnoe-i-vstrechnoe-frezerovanie-raznica">
 <a href="/blog/popputnoe-i-vstrechnoe-frezerovanie-raznica.html">
 <img alt="" decoding="async" height="686" loading="lazy" src="/images/blog/popputnoe-i-vstrechnoe-frezerovanie-raznica-cover.webp" width="1200"/>
@@ -225,6 +225,7 @@
 </a>
 </article>
       </div>
+      <nav class="pager" data-blog-pagination aria-label="Страницы раздела" hidden></nav>
     </div>
   </section>
 
