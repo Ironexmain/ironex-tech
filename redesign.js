@@ -31,6 +31,13 @@
         burger.focus();
       }
     });
+    // Тап/клик куда угодно за пределы меню и кнопки — закрывает (owner, 06.10.2026:
+    // открытое меню раньше оставалось открытым при клике мимо на всех страницах сайта).
+    document.addEventListener('pointerdown', function (e) {
+      if (burger.getAttribute('aria-expanded') === 'true' && !menu.contains(e.target) && !burger.contains(e.target)) {
+        setLegacy(false);
+      }
+    });
     setLegacy(false);
     return;
   }
@@ -53,6 +60,14 @@
     if (e.key === 'Escape' && header.classList.contains('is-open')) {
       setOpen(false);
       burger.focus();
+    }
+  });
+
+  // Тап/клик куда угодно за пределы шапки — закрывает (owner, 06.10.2026: открытое
+  // меню раньше оставалось открытым при клике мимо на всех страницах сайта).
+  document.addEventListener('pointerdown', function (e) {
+    if (header.classList.contains('is-open') && !header.contains(e.target)) {
+      setOpen(false);
     }
   });
 
@@ -352,4 +367,29 @@
     span.appendChild(a);
     bottom.appendChild(span);
   });
+})();
+
+/* ── Подпись столбца в таблицах на телефоне ─────────────────────────────────
+   Сайт статический: HTML таблиц из завода и ручных страниц приходит готовым,
+   без шага рендера, который мог бы проставить data-label сам. На узком экране
+   (ironex.css, @container tbl) строки раскладываются карточками, шапку скрывают —
+   без подписи столбца в карточке остаётся голое значение без подписи, к чему
+   оно относится (методичка сайтов 05 §7, правка вёрстки 06–07.10.2026). */
+(function () {
+  function label(table) {
+    var head = table.tHead && table.tHead.rows[0];
+    if (!head) return;
+    var labels = Array.prototype.map.call(head.cells, function (th) {
+      return (th.textContent || '').replace(/\s+/g, ' ').trim();
+    });
+    Array.prototype.forEach.call(table.tBodies || [], function (tbody) {
+      Array.prototype.forEach.call(tbody.rows, function (row) {
+        Array.prototype.forEach.call(row.cells, function (cell, i) {
+          if (i === 0 || cell.hasAttribute('data-label') || !labels[i]) return;
+          cell.setAttribute('data-label', labels[i]);
+        });
+      });
+    });
+  }
+  document.querySelectorAll('.prose > table, .spec-table table').forEach(label);
 })();

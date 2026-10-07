@@ -256,19 +256,47 @@ p { margin: 0 0 18px; }
 }
 
 /* ── Таблица параметров ───────────────────────────────────────────────────── */
-
-.spec-table { width: 100%; overflow-x: auto; border-radius: var(--r-card); border: 1px solid var(--line); }
+/* Вбок не прокручивается и не обрезается ни на какой ширине (методичка сайтов
+   05 §7; правка вёрстки 06–07.10.2026). Прежняя `overflow-x: auto` на обёртке
+   давала ленту, которую листают пальцем, — та же поломка, что прокрутка страницы.
+   container: … — порог карточек ниже считаем по ширине самой таблицы, а не окна. */
+.spec-table { width: 100%; border-radius: var(--r-card); border: 1px solid var(--line); overflow: hidden; container: tbl / inline-size; }
 .spec-table table { width: 100%; border-collapse: collapse; font-size: 16px; }
 .spec-table th {
   padding: 14px 16px; color: var(--paper); background: var(--teal);
   font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-align: left;
 }
-.spec-table td { padding: 14px 16px; border-top: 1px solid var(--line); vertical-align: top; }
+.spec-table td {
+  padding: 14px 16px; border-top: 1px solid var(--line); vertical-align: top;
+  overflow-wrap: break-word; hyphens: auto; hyphenate-limit-chars: 10 4 4;
+}
 .spec-table tbody tr:nth-child(even) { background: var(--paper-2); }
 .spec-table .num { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
 /* Сигнальный цвет = «требует уточнения», и рядом всегда слово, не только цвет */
 .spec-table .warn { color: var(--signal); font-weight: 600; }
 .spec-table caption { caption-side: bottom; padding: 10px 2px 0; color: var(--muted); font-size: 14px; text-align: left; }
+
+/* Тесно — строки карточками: первая ячейка — заголовок карточки, остальные —
+   «подпись столбца / значение» (data-label ставит redesign.js). 1 колонка остаётся
+   таблицей всегда (условие ниже требует минимум 3 <th>). */
+@container tbl (max-width: 520px) {
+  .spec-table:has(th:nth-child(3)) thead { display: none; }
+  .spec-table:has(th:nth-child(3)) :is(table, tbody, tr, td, caption) { display: block; width: 100%; }
+  .spec-table:has(th:nth-child(3)) tr { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-top: 1px solid var(--line); }
+  .spec-table:has(th:nth-child(3)) tr:first-child { border-top: 0; }
+  .spec-table:has(th:nth-child(3)) td { padding: 0; border: 0; hyphens: manual; }
+  .spec-table:has(th:nth-child(3)) td:first-child { font-weight: 700; color: var(--ink); }
+  .spec-table:has(th:nth-child(3)) td:not(:first-child)[data-label]::before { content: attr(data-label); display: block; font-size: 12px; color: var(--muted); }
+}
+@container tbl (max-width: 759px) {
+  .spec-table:has(th:nth-child(5)) thead { display: none; }
+  .spec-table:has(th:nth-child(5)) :is(table, tbody, tr, td, caption) { display: block; width: 100%; }
+  .spec-table:has(th:nth-child(5)) tr { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-top: 1px solid var(--line); }
+  .spec-table:has(th:nth-child(5)) tr:first-child { border-top: 0; }
+  .spec-table:has(th:nth-child(5)) td { padding: 0; border: 0; hyphens: manual; }
+  .spec-table:has(th:nth-child(5)) td:first-child { font-weight: 700; color: var(--ink); }
+  .spec-table:has(th:nth-child(5)) td:not(:first-child)[data-label]::before { content: attr(data-label); display: block; font-size: 12px; color: var(--muted); }
+}
 
 /* ── Аккордеон вопросов ───────────────────────────────────────────────────── */
 
@@ -326,7 +354,7 @@ p { margin: 0 0 18px; }
 
 /* ── Тело материала ───────────────────────────────────────────────────────── */
 
-.prose { font-size: 18px; color: var(--ink-2); }
+.prose { font-size: 18px; color: var(--ink-2); container: tbl / inline-size; }
 .prose > h2 { margin: 64px 0 18px; color: var(--ink); }
 .prose > h3 { margin: 36px 0 12px; color: var(--ink); }
 .prose > h2:first-child, .prose > h3:first-child { margin-top: 0; }
@@ -337,18 +365,46 @@ p { margin: 0 0 18px; }
    рендерился дефолтными браузерными отступами между ячейками (border-spacing),
    без рамки и заливки шапки, из-за чего колонки «плавали» и не читались как
    таблица. Стиль — тот же ключ, что у .spec-table на страницах услуг: тёмная
-   шапка, чередование строк, единая рамка-карточка. */
+   шапка, чередование строк, единая рамка-карточка.
+   Вбок не прокручивается и не обрезается ни на какой ширине (методичка сайтов
+   05 §7; правка вёрстки 06–07.10.2026): прежняя `display:block; overflow-x:auto`
+   давала ленту, которую листают пальцем. `.prose` выше — именованный контейнер
+   `tbl`: порог карточек ниже считаем по ширине колонки статьи, а не окна. */
 .prose > table {
-  display: block; max-width: 100%; margin: 28px 0; overflow-x: auto;
+  width: 100%; margin: 28px 0; overflow: hidden;
   border: 1px solid var(--line); border-radius: var(--r-card);
-  border-collapse: collapse; width: 100%; font-size: 16px;
+  border-collapse: collapse; font-size: 16px;
 }
 .prose > table th {
   padding: 14px 16px; color: var(--paper); background: var(--teal);
   font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-align: left;
 }
-.prose > table td { padding: 14px 16px; border-top: 1px solid var(--line); vertical-align: top; }
+.prose > table td {
+  padding: 14px 16px; border-top: 1px solid var(--line); vertical-align: top;
+  overflow-wrap: break-word; hyphens: auto; hyphenate-limit-chars: 10 4 4;
+}
 .prose > table tbody tr:nth-child(even) { background: var(--paper-2); }
+
+/* Тесно — строки карточками: первая ячейка — заголовок карточки, остальные —
+   «подпись столбца / значение» (data-label ставит redesign.js на всех таблицах). */
+@container tbl (max-width: 520px) {
+  .prose > table:has(th:nth-child(3)) thead { display: none; }
+  .prose > table:has(th:nth-child(3)) :is(tbody, tr, td, caption) { display: block; width: 100%; }
+  .prose > table:has(th:nth-child(3)) tr { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-top: 1px solid var(--line); }
+  .prose > table:has(th:nth-child(3)) tr:first-child { border-top: 0; }
+  .prose > table:has(th:nth-child(3)) td { padding: 0; border: 0; hyphens: manual; }
+  .prose > table:has(th:nth-child(3)) td:first-child { font-weight: 700; color: var(--ink); }
+  .prose > table:has(th:nth-child(3)) td:not(:first-child)[data-label]::before { content: attr(data-label); display: block; font-size: 12px; color: var(--muted); }
+}
+@container tbl (max-width: 759px) {
+  .prose > table:has(th:nth-child(5)) thead { display: none; }
+  .prose > table:has(th:nth-child(5)) :is(tbody, tr, td, caption) { display: block; width: 100%; }
+  .prose > table:has(th:nth-child(5)) tr { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-top: 1px solid var(--line); }
+  .prose > table:has(th:nth-child(5)) tr:first-child { border-top: 0; }
+  .prose > table:has(th:nth-child(5)) td { padding: 0; border: 0; hyphens: manual; }
+  .prose > table:has(th:nth-child(5)) td:first-child { font-weight: 700; color: var(--ink); }
+  .prose > table:has(th:nth-child(5)) td:not(:first-child)[data-label]::before { content: attr(data-label); display: block; font-size: 12px; color: var(--muted); }
+}
 .prose blockquote { margin: 28px 0; padding-left: 20px; border-left: 2px solid var(--teal); color: var(--ink); font-weight: 500; }
 .prose__lede { color: var(--ink); font-size: clamp(19px, 1.8vw, 21px); font-weight: 500; line-height: 1.55; }
 
@@ -1008,9 +1064,10 @@ h1 + ol, h2 + ol, h3 + ol { margin-top: 14px; }
   padding: 14px 20px 16px; border-top: 1px solid var(--line);
   background: var(--paper); color: var(--ink-2); font-size: 14px; line-height: 1.5;
 }
-/* Таблица от трёх колонок не сжимается в лапшу — прокручивается внутри рамки.
-   Двухколоночные таблицы влезают и на 360 px, им ограничение не нужно. */
-.spec-table table:has(thead th:nth-child(3)) { min-width: 640px; }
+/* Прежний `min-width: 640px` у таблиц от трёх колонок убран 07.10.2026: именно он
+   заставлял .spec-table листаться вбок лентой на телефоне (overflow-x:auto выше
+   в файле) — методичка сайтов 05 §7 требует переноса по слогам и карточек вместо
+   прокрутки, см. @container tbl в начале файла. */
 
 /* ── Липкая панель действия на мобильном ──────────────────────────────────── */
 
