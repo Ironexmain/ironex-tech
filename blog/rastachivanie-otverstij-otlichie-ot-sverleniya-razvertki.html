@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Растачивание отверстий: отличие от сверления и развёртки — IRONEX</title>
+  <meta name="description" content="Чем растачивание отличается от сверления и развёртывания: что исправляет ось, какие нужны припуски и что указать в чертеже при заказе." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html#article",
+      "headline": "Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно",
+      "description": "Чем растачивание отличается от сверления и развёртывания: что исправляет ось, какие нужны припуски и что указать в чертеже при заказе.",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "растачивание отверстий",
+        "чистовое растачивание",
+        "развёртывание отверстий",
+        "точность отверстия",
+        "квалитет отверстия",
+        "припуск под растачивание"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Когда сверления с развёрткой недостаточно и нужно растачивание?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Когда надо исправить положение оси, получить диаметр вне ряда развёрток или выдержать соосность двух отверстий. Развёртка идёт по оси, которую оставило сверло, и увод сохраняет. На серии стандартных диаметров без требования к положению сверления с развёрткой достаточно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Исправляет ли растачивание овальность, конусность и смещение оси?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Резец снимает металл по траектории станка и может поправить форму и положение отверстия. Предел задают жёсткость оправки и вылет: прогиб растёт с кубом длины, и слишком длинная оправка добавляет свой конус."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какую точность даёт чистовое растачивание?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Одной цифры нет. На средних цеховых условиях справочная таблица даёт квалитеты 10–11 и Ra 3,2–6,3 мкм, тонкое растачивание — квалитет 8 и Ra 1,0–1,6 мкм. Однокромочное чистовое растачивание при глубине обычно до 0,5 мм относят к IT6–IT8. Под свой станок, инструмент и материал квалитет и Ra сверяют по справочнику."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Развёртка не исправит увод оси — это делает растачивание" />
+  <meta property="og:description" content="Чем растачивание отличается от сверления и развёртывания: что исправляет ось, какие нужны припуски и что указать в чертеже при заказе." />
+  <meta property="og:url" content="https://ironex.tech/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-08" />
+  <meta property="article:modified_time" content="2026-10-08" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Развёртка не исправит увод оси — это делает растачивание" />
+  <meta name="twitter:description" content="Чем растачивание отличается от сверления и развёртывания: что исправляет ось, какие нужны припуски и что указать в чертеже при заказе." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-rastachivanie-i-chem-otlichaetsya-ot-sverleniya">Что такое растачивание и чем отличается от сверления</a></li>
+<li><a href="#sverlenie-zenkerovanie-razvertyvanie-rastachivanie-sravnenie">Сверление, зенкерование, развёртывание, растачивание: сравнение по критериям</a></li>
+<li><a href="#razvertyvanie-ili-rastachivanie-glavnoe-razlichie-chto-prois">Развёртывание или растачивание: главное различие — что происходит с осью</a></li>
+<li><a href="#marshrut-obrabotki-otverstiya-perehody-i-pripuski">Маршрут обработки отверстия: переходы и припуски</a></li>
+<li><a href="#chto-lomaet-tochnost-pri-rastachivanii-vylet-struzhka-polozh">Что ломает точность при растачивании: вылет, стружка, положение вершины</a></li>
+<li><a href="#rezhimy-i-nastroyka-chistovogo-rastachivaniya">Режимы и настройка чистового растачивания</a></li>
+<li><a href="#chto-ukazat-v-chertezhe-i-zayavke-chtoby-rastochku-poschital">Что указать в чертеже и заявке, чтобы расточку посчитали без уточнений</a></li>
+<li><a href="#kontrol-razmera-i-tipovye-defekty-prichiny-i-mery">Контроль размера и типовые дефекты: причины и меры</a></li>
+<li><a href="#itog-kogda-hvatit-sverleniya-s-razvertkoy-a-kogda-nuzhno-ras">Итог: когда хватит сверления с развёрткой, а когда нужно растачивание</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно</h1>
+        <p class="lede">Чем растачивание отличается от сверления и развёртывания: что исправляет ось, какие нужны припуски и что указать в чертеже при заказе.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-10-08">Опубликовано 8 октября 2026</time>
+
+            <span>11 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki-cover.webp" alt="Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Сверление и развёртывание ведут инструмент по уже существующей оси: развёртка калибрует диаметр и чистоту поверхности, но увод оси не исправляет. Растачивание резцом переносит ось на нужное место и доводит размер, поэтому его выбирают, когда важны соосность, положение отверстия и жёсткий допуск. Для обычной посадки в небольшом отверстии часто хватает сверления с развёртыванием.</p>
+<h2 id="chto-takoe-rastachivanie-i-chem-otlichaetsya-ot-sverleniya">Что такое растачивание и чем отличается от сверления</h2>
+<p>Почему просто не рассверлить? Сверло уже открыло отверстие, и кажется, что больший диаметр закроет размер. Рассверливание ведёт новое сверло по той же оси: куда ушло первое, туда встанет и второе. Растачивание снимает металл резцом на расточной оправке, её же называют борштангой. Диаметр задаёт вылет резца, центр отверстия задаёт станок, поэтому ось можно перенести.</p>
+<p>Сверление создаёт отверстие в сплошном металле и оставляет ось там, где шло сверло. Растачивание работает по уже открытому отверстию. Оно нужно, когда важен допуск на положение: соосность, межосевое расстояние, привязка к базе. И тогда, когда диаметра нет в ряду свёрл и развёрток. Резец настраивают на размер в пределах хода оправки — от нескольких миллиметров до крупного гнезда в корпусе.</p>
+<p>Операцию выполняют на токарном станке, расточном станке или обрабатывающем центре с ЧПУ. Меняется только то, что вращается: деталь или инструмент. Резец идёт по траектории, которую задал станок. Именно положение оси решает, соберётся ли узел: без правки оси сборка разъедется по базам.</p>
+<blockquote><p>Сверление создаёт отверстие и оставляет ось там, куда ушло сверло. Растачивание резцом задаёт и диаметр, и место этой оси.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно">Прислать чертёж на почту</a>
+</div>
+<h2 id="sverlenie-zenkerovanie-razvertyvanie-rastachivanie-sravnenie">Сверление, зенкерование, развёртывание, растачивание: сравнение по критериям</h2>
+<p><img alt="Горизонтальная расточная машина 1967 года" decoding="async" height="667" loading="lazy" src="/images/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki-1.webp" width="1000"/></p>
+<p><em>Горизонтальная расточная машина 1967 года выпуска из коллекции музея станков. Фото: <a href="https://commons.wikimedia.org/wiki/File:Horizontal_Boring_Machine_%2821032514581%29.jpg" rel="nofollow noopener" target="_blank">先従隗始</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>Квалитет — номер ширины допуска: IT7 уже, чем IT11. С основным отклонением он даёт поле вроде H7. Ra — среднее отклонение профиля <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатости</a>. Одно число без станка ничего не обещает.</p>
+<p>Средние квалитеты и Ra — из таблицы средней точности обработки, приложение к пособию НГТУ, обычный цех. Однокромочное чистовое растачивание при глубине обычно до 0,5 мм относят к IT6–IT8: один резец, диаметр правят настройкой, ось ставят координатой.</p>
+<table><thead><tr><th>Операция</th><th>Квалитет</th><th>Ra, мкм</th><th>Ось отверстия</th><th>Диаметр</th><th>Типовое применение</th></tr></thead><tbody><tr><td>Сверление</td><td>12</td><td>12,5–25</td><td>не правит</td><td>ряд свёрл</td><td>сплошной металл</td></tr><tr><td>Зенкерование</td><td>11</td><td>3,2–6,3</td><td>почти не правит</td><td>ряд зенкеров</td><td>переход после сверла</td></tr><tr><td>Развёртывание чистовое</td><td>7–8</td><td>0,4–0,8</td><td>не правит</td><td>ряд развёрток</td><td>серия стандартных диаметров</td></tr><tr><td>Чистовое растачивание, средние условия</td><td>10–11</td><td>3,2–6,3</td><td>правит</td><td>настройка резца</td><td>обычный станок</td></tr><tr><td>Тонкое растачивание, средние условия</td><td>8</td><td>1,0–1,6</td><td>правит</td><td>настройка резца</td><td>малый припуск</td></tr><tr><td>Однокромочное чистовое</td><td>IT6–IT8</td><td>по подаче и радиусу</td><td>правит положение</td><td>настройка резца</td><td>глубина до 0,5 мм</td></tr></tbody></table>
+<p>Предварительное развёртывание там же — квалитеты 9–10 и Ra 1,0–2,0 мкм, черновое растачивание — 12–13 и Ra 6,3–10 мкм. Растачивание берут, когда развёртке не по силам ось или нужный диаметр.</p>
+<h2 id="razvertyvanie-ili-rastachivanie-glavnoe-razlichie-chto-prois">Развёртывание или растачивание: главное различие — что происходит с осью</h2>
+<p>За уже существующей осью отверстия развёртывание только следует. Развёртка калибрует диаметр и снижает шероховатость, увод после сверления она сохраняет. Растачивание позволяет исправить положение оси: резец снимает металл по траектории станка и заодно убирает овальность и конус, пока хватает жёсткости оправки.</p>
+<p>Отверстие под штифт. Соосности чертёж не просит, диаметр стандартный, партия повторяется. Сверло открывает отверстие, развёртка доводит посадку и оставляет ось на месте.</p>
+<p>Пара гнёзд под подшипник в корпусе. Нужны общая ось и межосевое расстояние от баз. Развёртка повторит увод сверла в каждом гнезде. Растачивание от тех же баз ставит оба отверстия на нужные координаты.</p>
+<p>Выбор держат четыре вещи. Допуск диаметра: чистовая развёртка на средних условиях выходит на квалитеты 7–8. Соосность: развёртка сохраняет увод. Длинное отверстие растит прогиб оправки. Серия стандартных диаметров быстрее на развёртке, одна деталь и нестандартный размер — на резце.</p>
+<p>Диаметр развёртки берётся из ряда, результат зависит от предыдущей операции. Сверление предшествует развёртыванию: в сплошной металл развёрткой не входят.</p>
+<blockquote><p>Развёртка доводит диаметр и чистоту поверхности и идёт по уже существующей оси. Положение оси переносит растачивание.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если ось свободна, диаметр есть в ряду развёрток и партия большая, оставьте сверление с развёртыванием. Растачивание заказывайте, когда нужна соосность, нестандартный диаметр или правка уже уведённой оси.</p></blockquote>
+<h2 id="marshrut-obrabotki-otverstiya-perehody-i-pripuski">Маршрут обработки отверстия: переходы и припуски</h2>
+<p><img alt="Развёртка с режущими кромками" decoding="async" height="613" loading="lazy" src="/images/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki-2.webp" width="1000"/></p>
+<p><em>Развёртка — ротирующий инструмент для финишной обработки отверстий. Фото: <a href="https://commons.wikimedia.org/wiki/File:Reamer_3_%28PSF%29.png" rel="nofollow noopener" target="_blank">Pearson Scott Foresman</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Цепочка решений и есть маршрут отверстия. Под посадочное место обычно идут пять шагов, и у каждого своя задача. Сверление создаёт ось отверстия. Развёртывание эту ось сохраняет. Растачивание переносит ось, когда под проход оставлен припуск. Без этого порядка допуск на чертеже не говорит, каким инструментом его закрывать.</p>
+<ol><li>Сверление открывает отверстие в сплошном металле. Ось появляется здесь.</li><li>Рассверливание или черновое растачивание снимает основной припуск. Ось правят на этом шаге, если сверло увело, а допуск на положение жёсткий.</li><li>Получистовой проход оставляет припуск под чистовой. Слишком тонкий слой опасен: при малой глубине сила резания радиальная и отжимает пластину от стенки.</li><li>Чистовое растачивание или развёртывание доводит диаметр. Развёртку ставят, только если ось уже на месте. Растачивание оставляет припуск именно под этот проход.</li><li>Контроль диаметра, формы и положения делают до снятия детали. Лишняя переустановка добавляет свою погрешность.</li></ol>
+<p>Припуск по диаметру берут из справочника под этот диаметр: одной цифры на все отверстия нет. Для чистового прохода глубина резания — от 2/3 радиуса при вершине. При малых глубинах порог — 1/3 радиуса. Тоньше кромка трёт, растут вибрация и разброс размера.</p>
+<p>Два гнезда в одном установе получают общую базу. Новый зажим после снятия корпуса добавляет свою погрешность к погрешности оси.</p>
+<h2 id="chto-lomaet-tochnost-pri-rastachivanii-vylet-struzhka-polozh">Что ломает точность при растачивании: вылет, стружка, положение вершины</h2>
+<p>Растачивание сложнее наружного точения: оправка работает с вылетом, а стружке некуда упасть. Потеря 10 % опоры в гнезде пластины снижает допустимую силу резания на 20 %. Расточная оправка не держит ту же глубину и подачу, что державочный резец снаружи. Поэтому размер уходит из допуска.</p>
+<h3>Вылет и прогиб оправки</h3>
+<p>Длина от опоры до вершины — вылет оправки. Прогиб — её упругий отжим.</p>
+<blockquote><p><strong>Факт.</strong> Твердосплавная оправка диаметром 6,35 мм в стали при глубине 0,30 мм и подаче 0,13 мм/об даёт около 0,013 мм прогиба на вылете 25,4 мм и около 0,025 мм на вылете 31,75 мм.</p></blockquote>
+<p>Стальная оправка прогнулась бы на 50 % сильнее. Вылет свыше 4 диаметров соединения требует виброгасящую оправку: берут наибольшее соединение и наименьший вылет.</p>
+<blockquote><p>Прогиб оправки растёт пропорционально кубу вылета. Удлинение на четверть почти удваивает погрешность.</p></blockquote>
+<h3>Стружка в отверстии</h3>
+<p>Растачивание требует отвода стружки. Она остаётся в отверстии, зажимается между оправкой и стенкой и портит поверхность, поэтому Ra зависит и от подачи, и от формы стружки. Длинная стружка заклинивает и ломает пластину.</p>
+<p>У диаметра, близкого к минимальному для оправки, зазор почти исчезает: снижают глубину и подачу, чтобы стружка выходила. В глухом отверстии она забивает дно. Как заложить отвод на чертеже — в материале про <a href="/blog/glukhoe-otverstie-kak-proektirovat.html">глухое отверстие и отвод стружки</a>.</p>
+<h3>Вершина относительно оси</h3>
+<p>Прогиб оправки уводит вершину от расчётного положения, и диаметр выходит не таким, как в программе. Чтобы компенсировать оставшийся прогиб, вершину ставят выше оси отверстия. Поднимать её слишком высоко нельзя: над пластиной остаётся меньше места для стружки, и она хуже формируется.</p>
+<h2 id="rezhimy-i-nastroyka-chistovogo-rastachivaniya">Режимы и настройка чистового растачивания</h2>
+<p>Чем длиннее вылет, тем ниже скорость резания: иначе растут прогиб и вибрация. Стартовые значения для отвода стружки — ориентир, марка металла там не указана: черновая около 200 м/мин, чистовая около 240 м/мин. Для тонкого растачивания старт зависит от оправки: короткие стальные и твердосплавные со вставками — 120 м/мин, длинные стальные — 90 м/мин, цельные твердосплавные со шлифованной геометрией — 60 м/мин. Режимы стали, чугуна и алюминия сверяют со справочником под марку и пластину. Это старт, не норма на конкретную марку.</p>
+<p>Больший радиус при вершине даёт прочную кромку и меньшую шероховатость, но легче возбуждает вибрацию. Если она уже есть, радиус уменьшают. Для малых диаметров ориентир — 0,2 мм, выше 0,4 мм на чистовой оправке обычно не идут. СОЖ выносит стружку: ориентир смеси — 5–8 % растворимого масла, подача ближе к кромке.</p>
+<p>Если отверстие вибрирует, меняют конкретный параметр:</p>
+<ul><li>укоротить вылет или взять больший диаметр оправки;</li><li>поставить виброгасящую оправку при вылете больше 4 диаметров соединения;</li><li>уменьшить радиус при вершине;</li><li>снизить скорость резания;</li><li>уменьшить подачу и глубину, если стружка не выходит.</li></ul>
+<h2 id="chto-ukazat-v-chertezhe-i-zayavke-chtoby-rastochku-poschital">Что указать в чертеже и заявке, чтобы расточку посчитали без уточнений</h2>
+<p>Чтобы расточку посчитали без паузы на вопросы, в чертеже должны быть данные, по которым выбирают оправку, установ и контроль. Квалитет и Ra без материала и длины отверстия цикл не объясняют. Жёсткий допуск на коротком сквозном отверстии и тот же допуск на длинном глухом — разная работа.</p>
+<p>Чем жёстче квалитет точности и соосность, тем больше установов и тем строже станок и контроль. Отсюда растут цена и срок. Сумму без чертежа не называют. Завышать допуск на все отверстия подряд незачем. Если ось не критична и диаметр стандартный, хватает развёртки или одного чистового прохода. Партия в одну деталь и партия в сотню меняют этот выбор.</p>
+<p>В заявке проверяют семь пунктов:</p>
+<ul><li>диаметр с квалитетом или полем допуска, номинал вместе с допуском;</li><li>шероховатость Ra;</li><li>допуск соосности и межосевое расстояние, если отверстия связаны;</li><li>материал и твёрдость;</li><li>длина отверстия;</li><li>сквозное отверстие или глухое;</li><li>число деталей в партии.</li></ul>
+<p>Заявки на <a href="/">изготовление деталей по чертежам</a> считают по этим же данным. Как допуск попадает в расчёт, видно на странице <a href="/ceny.html">цены на металлообработку</a>: фиксированной цены «за расточку» там нет, цикл зависит от квалитета, установов и габарита.</p>
+<h2 id="kontrol-razmera-i-tipovye-defekty-prichiny-i-mery">Контроль размера и типовые дефекты: причины и меры</h2>
+<p>Размер проверяют индикаторным нутромером, калибром-пробкой или на контрольно-измерительной машине. Нутромер даёт число, пробка отвечает «годится или нет», машина снимает диаметр и положение. Мерить стоит при стабильной температуре и на чистой поверхности. Предел погрешности берут из паспорта прибора, допуск чертежа его не заменяет.</p>
+<table><thead><tr><th>Дефект</th><th>Вероятная причина</th><th>Что менять</th></tr></thead><tbody><tr><td>Конусность</td><td>прогиб оправки на большом вылете: резец уходит по мере захода</td><td>укоротить вылет, взять жёсткую оправку, вершину поставить выше оси на величину прогиба</td></tr><tr><td>Овальность</td><td>зажим тонкой стенки: после раскрепления отверстие пружинит</td><td>сменить схему зажима, замерить диаметр до снятия детали и после</td></tr><tr><td>Вибрационные следы</td><td>вылет, крупный радиус при вершине, скорость выше той, что держит оправка</td><td>укоротить вылет, уменьшить радиус, снизить скорость</td></tr><tr><td>Дрейф размера по циклу</td><td>нагрев детали и оправки на длинной серии</td><td>дать температуре выровняться, подать СОЖ, замерить после прогрева</td></tr></tbody></table>
+<p>Конус связан с прогибом, овал — с зажимом, след вибрации — с вылетом и скоростью, уход размера по партии — с теплом. Смежные срывы разобраны в материале про <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">причины брака при обработке металла</a>.</p>
+<h2 id="itog-kogda-hvatit-sverleniya-s-razvertkoy-a-kogda-nuzhno-ras">Итог: когда хватит сверления с развёрткой, а когда нужно растачивание</h2>
+<p>Сверления с развёрткой хватает, когда диаметр стандартный, ось отверстия не критична и партия большая. Цикл тогда короче: инструмент из ряда закрывает размер. Растачивание нужно, когда надо выдержать соосность, получить нестандартный диаметр, поправить положение оси или сделать одну-две детали. Развёртку под них заказывать дольше, чем настроить резец.</p>
+<p>Перед заказом сверьте допуск с посадкой, которая реально нужна. Лишний квалитет добавляет установы и контроль. Зазор и натяг задают поле с чертежа узла. Самый жёсткий номер из каталога для этой посадки не обязателен. На одной детали резец настраивают быстрее, чем ждут специальную развёртку.</p>
+<blockquote><p>Развёртка доводит размер по существующей оси. Растачивание ещё и выбирает, где эта ось будет.</p></blockquote>
+<p>Пришлите чертёж на расчёт. По квалитету, соосности и длине отверстия будет видно, хватит ли развёртки или нужна расточка.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Когда сверления с развёрткой недостаточно и нужно растачивание?</summary>
+<div class="faq__a"><p>Когда надо исправить положение оси, получить диаметр вне ряда развёрток или выдержать соосность двух отверстий. Развёртка идёт по оси, которую оставило сверло, и увод сохраняет. На серии стандартных диаметров без требования к положению сверления с развёрткой достаточно.</p></div>
+</details>
+<details>
+<summary>Исправляет ли растачивание овальность, конусность и смещение оси?</summary>
+<div class="faq__a"><p>Да. Резец снимает металл по траектории станка и может поправить форму и положение отверстия. Предел задают жёсткость оправки и вылет: прогиб растёт с кубом длины, и слишком длинная оправка добавляет свой конус.</p></div>
+</details>
+<details>
+<summary>Какую точность даёт чистовое растачивание?</summary>
+<div class="faq__a"><p>Одной цифры нет. На средних цеховых условиях справочная таблица даёт квалитеты 10–11 и Ra 3,2–6,3 мкм, тонкое растачивание — квалитет 8 и Ra 1,0–1,6 мкм. Однокромочное чистовое растачивание при глубине обычно до 0,5 мм относят к IT6–IT8. Под свой станок, инструмент и материал квалитет и Ra сверяют по справочнику.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://ctemag.com/articles/strictly-boring/" rel="noopener" target="_blank">Strictly Boring: Turning Performance</a> — Cutting Tool Engineering, разбор прогиба оправки, стружки и положения вершины при растачивании</li>
+<li><a href="https://www.sandvik.coromant.com/en-gb/knowledge/boring/how-to-apply-boring" rel="noopener" target="_blank">How to apply boring</a> — Sandvik Coromant, вылет, отвод стружки, глубина резания и стартовые скорости</li>
+<li><a href="https://www.sandvik.coromant.com/en-gb/knowledge/boring/finish-boring" rel="noopener" target="_blank">Finish boring</a> — Sandvik Coromant, однокромочное чистовое растачивание и допуск IT6–IT8</li>
+<li><a href="https://fdp.nntu.ru/books/proektirovanie%20mashinostroitelnogo%20proizvodstva/files/assets/basic-html/page138.html" rel="noopener" target="_blank">Таблица П.1.1. Средняя точность и шероховатость обработки на металлорежущих станках</a> — учебное пособие «Проектирование машиностроительного производства», НГТУ им. Р. Е. Алексеева</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/popputnoe-i-vstrechnoe-frezerovanie-raznica.html">
+            <img src="/images/blog/popputnoe-i-vstrechnoe-frezerovanie-raznica-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Попутное и встречное фрезерование: в чём разница и как она отражается на детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/cementaciya-stali-dlya-kakih-detalej.html">
+            <img src="/images/blog/cementaciya-stali-dlya-kakih-detalej-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Цементация стали: что это и для каких деталей она нужна</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/radius-giba-listovogo-metalla.html">
+            <img src="/images/blog/radius-giba-listovogo-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

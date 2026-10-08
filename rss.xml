@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно</title>
+      <link>https://ironex.tech/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Чем растачивание отличается от сверления и развёртывания: что исправляет ось, какие нужны припуски и что указать в чертеже при заказе.</description>
+    </item>
+    <item>
+      <title>Предел текучести и предел прочности: что эти цифры значат для детали</title>
+      <link>https://ironex.tech/blog/predel-tekuchesti-i-predel-prochnosti.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/predel-tekuchesti-i-predel-prochnosti.html</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Чем предел текучести отличается от предела прочности, как читать диаграмму растяжения и сертификат и по какой цифре считать запас детали.</description>
+    </item>
+    <item>
+      <title>Концентрация напряжений: почему детали ломаются в углах и отверстиях</title>
+      <link>https://ironex.tech/blog/kontsentratsiya-napryazheniy-v-uglakh-i-otverstiyakh.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kontsentratsiya-napryazheniy-v-uglakh-i-otverstiyakh.html</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Круглое отверстие утраивает напряжение у кромки пластины. Разбираем коэффициент Kt, радиус перехода и что указать в чертеже.</description>
+    </item>
     <item>
       <title>PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз</title>
       <link>https://ironex.tech/blog/ppap-protsedura-odobreniya-proizvodstva-detaley.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Fri, 02 Oct 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Как выбрать сталь для деталей: что значит марка, как углерод и легирование влияют на обработку и что записать в чертёж, чтобы не получить замену.</description>
-    </item>
-    <item>
-      <title>Гибкое производство: как меняются цена, срок и контроль от одной детали до серии</title>
-      <link>https://ironex.tech/blog/gibkoe-proizvodstvo-ot-odnoj-detali-do-serii.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/gibkoe-proizvodstvo-ot-odnoj-detali-do-serii.html</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Как гибкое производство считает единичную деталь, партию и серию: наладка, оснастка, контроль и цена за штуку. Таблица и порядок перехода к серии.</description>
-    </item>
-    <item>
-      <title>Как разработать чертежи и техническую документацию для производства детали</title>
-      <link>https://ironex.tech/blog/razrabotka-chertezhey-i-kd-dlya-proizvodstva.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/razrabotka-chertezhey-i-kd-dlya-proizvodstva.html</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Из чего состоит комплект КД по ЕСКД, как сделать чертёж по образцу или 3D-модели и какие ошибки удорожают деталь. Чек-лист для расчёта заказа.</description>
-    </item>
-    <item>
-      <title>Радиальное и торцевое биение: что это, чем отличаются и как измерить допуск</title>
-      <link>https://ironex.tech/blog/radialnoe-torcevoe-bienie-dopusk-izmerenie.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/radialnoe-torcevoe-bienie-dopusk-izmerenie.html</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Радиальное и торцевое биение: чем отличаются зоны допуска, как читать рамку на чертеже и как снять разницу показаний индикатора.</description>
     </item>
   </channel>
 </rss>
