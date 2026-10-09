@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Шлифование металла: виды и когда деталь нужно шлифовать — IRONEX</title>
+  <meta name="description" content="Круглое и плоское шлифование, какая шероховатость получается и в каких случаях точения не хватает. Критерии для чертежа и что учесть при заказе." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/shlifovanie-metalla-vidy-kogda-shlifovat.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/shlifovanie-metalla-vidy-kogda-shlifovat.html#article",
+      "headline": "Шлифование металла: какие бывают виды и в каких случаях без него не обойтись",
+      "description": "Круглое и плоское шлифование, какая шероховатость получается и в каких случаях точения не хватает. Критерии для чертежа и что учесть при заказе.",
+      "datePublished": "2026-10-09",
+      "dateModified": "2026-10-09",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/shlifovanie-metalla-vidy-kogda-shlifovat.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/shlifovanie-metalla-vidy-kogda-shlifovat-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "шлифование металла",
+        "когда деталь нужно шлифовать",
+        "круглое шлифование",
+        "плоское шлифование",
+        "шероховатость после шлифовки",
+        "припуск под шлифование"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Шлифование металла: какие бывают виды и в каких случаях без него не обойтись"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Когда деталь нужно шлифовать, а когда хватит точения?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Шлифование добавляют, когда точение или фрезерование не держит заданный допуск, форму либо Ra. Оно также нужно для исправления геометрии после закалки. Для свободных размеров и некритичных поверхностей отдельная финишная операция обычно не нужна."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какая шероховатость получается после шлифовки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Результат зависит от стадии обработки, круга, режима, материала и жёсткости установки. Требуемую Ra задают на чертеже, а после обработки измеряют профилометром. Универсального значения для любого шлифовального процесса нет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем опасна пыль от шлифования чёрных металлов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В пыль входят частицы металла, абразива и связки. Мелкие частицы загрязняют воздух, а металлическая пыль при подходящих условиях может гореть или взрываться. Цеху нужны аспирация, организованный сбор и обращение с отходами по их составу."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Когда деталь нужно шлифовать, а когда хватит точения" />
+  <meta property="og:description" content="Круглое и плоское шлифование, какая шероховатость получается и в каких случаях точения не хватает. Критерии для чертежа и что учесть при заказе." />
+  <meta property="og:url" content="https://ironex.tech/blog/shlifovanie-metalla-vidy-kogda-shlifovat.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/shlifovanie-metalla-vidy-kogda-shlifovat-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-09" />
+  <meta property="article:modified_time" content="2026-10-09" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Когда деталь нужно шлифовать, а когда хватит точения" />
+  <meta name="twitter:description" content="Круглое и плоское шлифование, какая шероховатость получается и в каких случаях точения не хватает. Критерии для чертежа и что учесть при заказе." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/shlifovanie-metalla-vidy-kogda-shlifovat-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Шлифование металла: какие бывают виды и в каких случаях без него не обойтись">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Шлифование металла: какие бывают виды и в каких случаях без него не обойтись</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-shlifovanie-i-chem-ono-otlichaetsya-ot-tocheniya">Что такое шлифование и чем оно отличается от точения и фрезерования</a></li>
+<li><a href="#kogda-detal-nuzhno-shlifovat-kriterii-resheniya">Когда деталь нужно шлифовать: критерии решения</a></li>
+<li><a href="#krugloe-shlifovanie-valy-otverstiya-i-bestsentrovaya-shema">Круглое шлифование: валы, отверстия и бесцентровая схема</a></li>
+<li><a href="#ploskoe-shlifovanie-ploskosti-plity-i-napravlyayuschie">Плоское шлифование: плоскости, плиты и направляющие</a></li>
+<li><a href="#kakaya-sherohovatost-poluchaetsya-posle-shlifovki">Какая шероховатость получается после шлифовки</a></li>
+<li><a href="#pripusk-i-zakalka-v-kakoy-moment-marshruta-shlifovat">Припуск и закалка: в какой момент маршрута шлифовать</a></li>
+<li><a href="#pyl-i-poroshok-ot-shlifovaniya-chto-eto-i-chem-opasno">Пыль и порошок от шлифования: что это и чем опасно</a></li>
+<li><a href="#defekty-shlifovaniya-i-kak-ih-kontroliruyut">Дефекты шлифования и как их контролируют</a></li>
+<li><a href="#chto-ukazat-v-zakaze-esli-detal-nuzhno-shlifovat">Что указать в заказе, если деталь нужно шлифовать</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Шлифование металла: какие бывают виды и в каких случаях без него не обойтись">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Шлифование металла: какие бывают виды и в каких случаях без него не обойтись</h1>
+        <p class="lede">Круглое и плоское шлифование, какая шероховатость получается и в каких случаях точения не хватает. Критерии для чертежа и что учесть при заказе.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-10-09">Опубликовано 9 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/shlifovanie-metalla-vidy-kogda-shlifovat-cover.webp" alt="Шлифование металла: какие бывают виды и в каких случаях без него не обойтись" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Деталь шлифуют, когда точение или фрезерование не дают нужного допуска или <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатости</a>. Или когда её закалили и геометрия «повела». Круглое шлифование доводит валы и отверстия, плоское — плоскости и направляющие. Ниже — как решить, нужна ли шлифовка вашей детали, и что написать в чертеже.</p>
+<h2 id="chto-takoe-shlifovanie-i-chem-ono-otlichaetsya-ot-tocheniya">Что такое шлифование и чем оно отличается от точения и фрезерования</h2>
+<p>При точении и фрезеровании металл снимает режущая кромка инструмента. При шлифовании работают зёрна абразивного круга. Каждое зерно действует как микрорезец и снимает тонкую стружку. За счёт малого съёма шлифование точнее доводит размер и снижает шероховатость поверхности Ra.</p>
+<p>Контакт круга с металлом нагревает деталь. Для отвода тепла и удаления частиц применяют охлаждающую жидкость. Режим подбирают под материал, твёрдость, припуск и требуемое состояние поверхности.</p>
+<p>Шлифование металла обычно ставят после чернового и чистового точения либо фрезерования. Оно позволяет обрабатывать закалённый металл и исправлять небольшие отклонения после термообработки. Выбор всей последовательности зависит от геометрии детали: подробнее — в материале о том, <a href="/blog/obrabotka-metalla-vidy-vybor-metoda.html">как выбрать метод обработки под деталь</a>.</p>
+<blockquote><p>Шлифование доводит деталь до заданного размера и состояния поверхности после основных операций обработки.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Шлифование металла: какие бывают виды и в каких случаях без него не обойтись">Прислать чертёж на почту</a>
+</div>
+<h2 id="kogda-detal-nuzhno-shlifovat-kriterii-resheniya">Когда деталь нужно шлифовать: критерии решения</h2>
+<p><img alt="Шлифование сварных кромок металлического каркаса" decoding="async" height="656" loading="lazy" src="/images/blog/shlifovanie-metalla-vidy-kogda-shlifovat-1.webp" width="1000"/></p>
+<p><em>Шлифование удаляет сварные кромки и неровности поверхности, подготавливая металлический каркас к дальнейшей обработке. Фото: <a href="https://commons.wikimedia.org/wiki/File:US_Navy_050723-N-5549O-099_Sparks_fly_as_Hull_Technician_3rd_Class_Ryan_Rousseau_of_St._Charles,_Mich.,_grinds_welding_edges_on_a_metal_support_frame_for_a_washing_machine.jpg" rel="nofollow noopener" target="_blank">U.S. Navy photo by Photographer's Mate 3rd class Kevin S. O'Brien</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Шлифовка нужна, если функциональная поверхность требует точности, которую выбранный токарный или фрезерный процесс не держит стабильно. Решение принимают по чертежу, материалу и маршруту обработки. Само название детали ничего не доказывает: две одинаковые втулки могут иметь разные требования к отверстию.</p>
+<p>Проверьте пять признаков:</p>
+<ul><li>Допуск на размер требует отдельной финишной операции. Предельные отклонения и квалитет сверяют с чертежом, стандартом и возможностями оборудования.</li><li>На поверхности задана малая Ra. Чем строже требование, тем больше внимания нужно кругу, режиму, охлаждению и контролю.</li><li>Деталь проходит закалку. Термообработка может изменить размер, цилиндричность или плоскостность, поэтому окончательную геометрию получают позже.</li><li>Поверхность работает в посадке или паре трения. Это характерно для шеек валов, отверстий под подшипники и направляющих.</li><li>Поверхность служит базой либо контактирует с уплотнением. Здесь отклонение формы влияет на сборку и герметичность.</li></ul>
+<p>Для свободного размера, необрабатываемой зоны или некритичной наружной поверхности часто хватает точения либо фрезерования. Требование шлифовать всю деталь увеличивает число установов и контрольных операций.</p>
+<blockquote><p><strong>Мнение.</strong> Если поверхность не участвует в посадке, уплотнении или базировании, сначала проверьте необходимость строгих допуска и Ra. Обоснованное ослабление требования сокращает маршрут детали.</p></blockquote>
+<h2 id="krugloe-shlifovanie-valy-otverstiya-i-bestsentrovaya-shema">Круглое шлифование: валы, отверстия и бесцентровая схема</h2>
+<p>Круглое шлифование применяют к телам вращения: валам, осям, втулкам и кольцам. Абразивный круг обрабатывает наружный диаметр или отверстие, пока поверхность не войдёт в заданные пределы размера и формы. Схему выбирают по длине, жёсткости, доступным базам и размеру партии.</p>
+<h3>Наружное и внутреннее шлифование</h3>
+<p>Вал можно установить между центрами или закрепить в патроне. Круг снимает припуск с шеек, посадочных поясков и других цилиндрических поверхностей. Установка в центрах помогает сохранить общую ось нескольких шеек, если центровые отверстия подготовлены и не повреждены.</p>
+<p>При внутреннем шлифовании круг работает внутри втулки, кольца или корпуса. Деталь базируют по наружной поверхности, торцу либо подготовленной технологической базе. Жёсткость системы здесь особенно важна: длинный шпиндель и малый диаметр круга чувствительнее к нагрузке.</p>
+<h3>Бесцентровое шлифование</h3>
+<p>При бесцентровой схеме цилиндрическую деталь не зажимают в центрах. Она лежит на опорном ноже между шлифующим и ведущим кругами. Ведущий круг вращает деталь и задаёт подачу.</p>
+<p>Такая схема подходит для серийной обработки роликов, пальцев и гладких валиков. Для ступенчатых деталей, коротких участков и поверхностей с требованиями к общей оси может понадобиться другая установка.</p>
+<h2 id="ploskoe-shlifovanie-ploskosti-plity-i-napravlyayuschie">Плоское шлифование: плоскости, плиты и направляющие</h2>
+<p>Плоское шлифование доводит базовые плоскости, плиты, направляющие и рабочие поверхности инструмента. Деталь часто крепят на магнитной плите. Для немагнитного материала, сложной формы или тонкой стенки нужна отдельная оснастка.</p>
+<p>Тонкая деталь может прогнуться при закреплении и распрямиться после снятия. Тогда станок покажет ровную поверхность в установленном состоянии, а свободная деталь получит отклонение. Технолог учитывает жёсткость, распределяет съём и проверяет геометрию после раскрепления.</p>
+<table><thead><tr><th>Вид шлифования</th><th>Что обрабатывают</th><th>Как базируют деталь</th><th>Типовые детали</th></tr></thead><tbody><tr><td>Круглое наружное</td><td>Наружные цилиндры и шейки</td><td>Между центрами или в патроне</td><td>Валы, оси, пальцы</td></tr><tr><td>Круглое внутреннее</td><td>Цилиндрические отверстия</td><td>По наружной базе и торцу</td><td>Втулки, кольца, корпуса</td></tr><tr><td>Бесцентровое</td><td>Наружный диаметр по длине</td><td>На опорном ноже между кругами</td><td>Ролики, гладкие валики</td></tr><tr><td>Плоское</td><td>Плоскости и направляющие</td><td>На магнитной плите или в оснастке</td><td>Плиты, планки, инструмент</td></tr></tbody></table>
+<p>Плоскостность, параллельность и размер задают отдельно. Одно требование не заменяет остальные.</p>
+<h2 id="kakaya-sherohovatost-poluchaetsya-posle-shlifovki">Какая шероховатость получается после шлифовки</h2>
+<p>Шлифование обычно снижает Ra по сравнению с предшествующей обработкой. Единого значения для любой детали нет. Результат зависит от зернистости и состояния круга, материала, жёсткости установки, величины съёма и охлаждения.</p>
+<p>Черновое шлифование снимает основной припуск. Чистовое доводит размер и поверхность. Тонкое применяют, когда чертёж требует следующей ступени обработки. Квалитет размера и Ra связаны с назначением поверхности, но прямого соответствия между ними нет: точный диаметр может иметь неподходящий рельеф, а гладкая поверхность — выйти из допуска.</p>
+<table><thead><tr><th>Стадия</th><th>Как назначают Ra</th><th>Как назначают допуск</th><th>Когда достаточно</th></tr></thead><tbody><tr><td>Черновое шлифование</td><td>По технологическому переходу</td><td>С запасом на чистовой проход</td><td>После операции остаётся припуск</td></tr><tr><td>Чистовое шлифование</td><td>По требованию чертежа</td><td>По конечному размеру</td><td>Размер, форма и Ra подтверждены контролем</td></tr><tr><td>Тонкое шлифование</td><td>По требованию функциональной поверхности</td><td>Отдельно от Ra</td><td>Обычная чистовая стадия не даёт нужного результата</td></tr></tbody></table>
+<p>Ra измеряет профилометр. Значение и способ обработки указывают на чертеже по правилам ЕСКД. Если шлифования недостаточно, технолог рассматривает хонингование для отверстий, суперфиниш для рабочих поверхностей вращения или полирование для снижения неровностей без исправления формы.</p>
+<blockquote><p><strong>Факт.</strong> ГОСТ 2.309-73 устанавливает обозначения шероховатости поверхностей и правила нанесения этих обозначений на чертежах.</p></blockquote>
+<h2 id="pripusk-i-zakalka-v-kakoy-moment-marshruta-shlifovat">Припуск и закалка: в какой момент маршрута шлифовать</h2>
+<p>Закалка может изменить размер и геометрию детали. Поэтому функциональные поверхности часто шлифуют после термообработки. На токарной или фрезерной операции для них заранее оставляют припуск, который снимет абразивный круг.</p>
+<p>Величина припуска зависит от размера детали, материала, ожидаемой деформации, способа базирования и требований чертежа. Универсальное число здесь опасно: малого припуска не хватит для исправления формы, а избыточный увеличит нагрев и число проходов.</p>
+<p>Рабочий маршрут выглядит так:</p>
+<ol><li>Из заготовки получают исходную геометрию.</li><li>Деталь точат или фрезеруют, оставляя согласованный припуск.</li><li>Выполняют термообработку и проверяют полученную геометрию.</li><li>Припуск снимают шлифованием до конечного размера.</li><li>Контролируют размер, форму и шероховатость.</li></ol>
+<p>Если убрать весь металл до закалки, исправлять деформацию будет нечем. Маршрут нужно согласовать до запуска заготовки, включая базы для повторной установки.</p>
+<blockquote><p>Закалка влияет на геометрию и требуемый припуск, поэтому финишное шлифование планируют вместе с термообработкой.</p></blockquote>
+<h2 id="pyl-i-poroshok-ot-shlifovaniya-chto-eto-i-chem-opasno">Пыль и порошок от шлифования: что это и чем опасно</h2>
+<p>Шлифование образует пыль и шлам. В отход попадают частицы металла, зёрна абразива и материал связки круга. При мокром процессе эти компоненты смешиваются со смазочно-охлаждающей жидкостью.</p>
+<p>Мелкодисперсная металлическая пыль требует местной аспирации и регулярного сбора. При определённых условиях частицы железа и других металлов образуют с воздухом горючую смесь. Накопившийся слой пыли также нельзя сдувать так, чтобы он снова попадал в рабочую зону.</p>
+<blockquote><p>Пыль и шлам шлифования — смесь металла, абразива, связки и иногда СОЖ. Для неё нужны организованный сбор, вентиляция и отдельное обращение с отходами.</p></blockquote>
+<p>Цех подбирает вентиляцию, средства защиты и способ очистки под материал и технологию. Шлам собирают отдельно от обычной стружки. Его состав зависит от металла, круга и применённой жидкости, а от состава зависит способ утилизации.</p>
+<p>Для заказчика детали это критерий выбора подготовленного производства. Организация аспирации, защиты оператора и утилизации остаётся ответственностью цеха.</p>
+<blockquote><p><strong>Факт.</strong> OSHA указывает, что железо при подходящих условиях может быть взрывоопасным в виде пыли, хотя крупные куски материала не горят.</p></blockquote>
+<h2 id="defekty-shlifovaniya-i-kak-ih-kontroliruyut">Дефекты шлифования и как их контролируют</h2>
+<p>Нарушенный режим шлифования вызывает прижоги, микротрещины и изменение состояния поверхностного слоя. Затупленный или засаленный круг начинает хуже резать и сильнее нагружает контакт. Нежёсткая установка может оставить волнистость или огранку.</p>
+<p>Прижог заметен по изменению цвета не всегда, поэтому внешний осмотр не заменяет контроль. Микротрещина опасна тем, что может развиваться под нагрузкой уже после сборки. Волнистость мешает равномерному контакту, а огранка нарушает форму цилиндрической поверхности.</p>
+<p>Размер проверяют микрометром, нутромером или калибром. Профилометр измеряет шероховатость Ra. Геометрию сложных поверхностей и взаимное положение элементов контролируют подходящим измерительным оборудованием, включая координатно-измерительную машину.</p>
+<blockquote><p>Шлифованную поверхность принимают по трём группам требований: размеру, геометрии и шероховатости. Проверка одного параметра не подтверждает остальные.</p></blockquote>
+<p>Причины дефектов часто появляются раньше самой шлифовки: в базировании, термообработке или назначении припуска. Отдельно разобрано, <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">почему при обработке металла появляется брак</a> и <a href="/razdel/kontrol-kachestva.html">как принять партию по чертежу</a>.</p>
+<h2 id="chto-ukazat-v-zakaze-esli-detal-nuzhno-shlifovat">Что указать в заказе, если деталь нужно шлифовать</h2>
+<p>Для расчёта нужен чертёж, где отмечены конкретные шлифуемые поверхности. Общая запись «шлифовать» не объясняет, какой диаметр, торец или плоскость влияет на работу узла.</p>
+<p>Проверьте комплект данных:</p>
+<ul><li>материал и его состояние;</li><li>твёрдость после термообработки;</li><li>поверхности, которые нужно шлифовать;</li><li>допуск размера и формы для каждой поверхности;</li><li>требуемую Ra;</li><li>габариты заготовки и готовой детали;</li><li>количество деталей в партии.</li></ul>
+<p>Отдельно укажите базы и требования к взаимному положению поверхностей. Для вала важна связь шеек с общей осью, для плиты — плоскостность и параллельность рабочих сторон.</p>
+<p>Не назначайте шлифование для всех поверхностей по умолчанию. Технолог сначала подбирает <a href="/oborudovanie.html">оборудование под маршрут детали</a>, затем проверяет доступность поверхностей и последовательность установов.</p>
+<p>Перед запросом расчёта сверьте чертёж с этим списком. Если способ обработки ещё не выбран, отправьте требования к готовой детали через страницу <a href="/">изготовления деталей по чертежам</a>: технологический маршрут можно определить по допускам, материалу и назначению поверхностей.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Когда деталь нужно шлифовать, а когда хватит точения?</summary>
+<div class="faq__a"><p>Шлифование добавляют, когда точение или фрезерование не держит заданный допуск, форму либо Ra. Оно также нужно для исправления геометрии после закалки. Для свободных размеров и некритичных поверхностей отдельная финишная операция обычно не нужна.</p></div>
+</details>
+<details>
+<summary>Какая шероховатость получается после шлифовки?</summary>
+<div class="faq__a"><p>Результат зависит от стадии обработки, круга, режима, материала и жёсткости установки. Требуемую Ra задают на чертеже, а после обработки измеряют профилометром. Универсального значения для любого шлифовального процесса нет.</p></div>
+</details>
+<details>
+<summary>Чем опасна пыль от шлифования чёрных металлов?</summary>
+<div class="faq__a"><p>В пыль входят частицы металла, абразива и связки. Мелкие частицы загрязняют воздух, а металлическая пыль при подходящих условиях может гореть или взрываться. Цеху нужны аспирация, организованный сбор и обращение с отходами по их составу.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://docs.cntd.ru/document/1200005419" rel="noopener" target="_blank">ГОСТ 2.309-73 «ЕСКД. Обозначения шероховатости поверхностей»</a> — Межгосударственный стандарт</li>
+<li><a href="https://www.osha.gov/combustible-dust" rel="noopener" target="_blank">Combustible Dust: An Explosion Hazard</a> — Occupational Safety and Health Administration</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/chto-prilozhit-k-zayavke-na-gibku-metalla.html">
+            <img src="/images/blog/chto-prilozhit-k-zayavke-na-gibku-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Гибка металла на заказ: что приложить к заявке</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html">
+            <img src="/images/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Ra и Rz на чертеже: что требовать, чтобы не переплатить за чистоту</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html">
+            <img src="/images/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Шлифование металла: какие бывают виды и в каких случаях без него не обойтись">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

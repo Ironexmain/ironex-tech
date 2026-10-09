@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Как создать проект нестандартной детали: от эскиза до заказа</title>
+  <meta name="description" content="Из чего состоит проект нестандартной детали: эскиз, модель, чертёж, допуски, материал. Что передать подрядчику, чтобы получить расчёт без уточнений." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/sozdat-proekt-nestandartnoy-detali.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/sozdat-proekt-nestandartnoy-detali.html#article",
+      "headline": "Как создать проект нестандартной детали: путь от идеи до пробной партии",
+      "description": "Из чего состоит проект нестандартной детали: эскиз, модель, чертёж, допуски, материал. Что передать подрядчику, чтобы получить расчёт без уточнений.",
+      "datePublished": "2026-10-09",
+      "dateModified": "2026-10-09",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/sozdat-proekt-nestandartnoy-detali.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/sozdat-proekt-nestandartnoy-detali-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "нестандартные детали",
+        "как спроектировать деталь",
+        "проектирование деталей",
+        "специальные детали",
+        "как заказать изготовление детали по чертежу"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как создать проект нестандартной детали: путь от идеи до пробной партии"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как спроектировать деталь для изготовления на заказ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Начните с функции: что деталь выдерживает и с чем соединяется. Затем сделайте эскиз, 3D-модель и чертёж с допусками, материалом и шероховатостью — по этому комплекту подрядчик считает цену."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что считается нестандартной деталью?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Деталь, которой нет в каталогах стандартных изделий и которую изготавливают по чертежу заказчика под конкретную задачу."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Нестандартная деталь: что подготовить, чтобы заказ приняли без вопросов" />
+  <meta property="og:description" content="Из чего состоит проект нестандартной детали: эскиз, модель, чертёж, допуски, материал. Что передать подрядчику, чтобы получить расчёт без уточнений." />
+  <meta property="og:url" content="https://ironex.tech/blog/sozdat-proekt-nestandartnoy-detali.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/sozdat-proekt-nestandartnoy-detali-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-09" />
+  <meta property="article:modified_time" content="2026-10-09" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Нестандартная деталь: что подготовить, чтобы заказ приняли без вопросов" />
+  <meta name="twitter:description" content="Из чего состоит проект нестандартной детали: эскиз, модель, чертёж, допуски, материал. Что передать подрядчику, чтобы получить расчёт без уточнений." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/sozdat-proekt-nestandartnoy-detali-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как создать проект нестандартной детали: путь от идеи до пробной партии">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Как создать проект нестандартной детали: путь от идеи до пробной партии</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-nestandartnaya-detal-i-kogda-ee-zakazyvayut">Что такое нестандартная деталь и когда её заказывают</a></li>
+<li><a href="#put-ot-idei-do-detali-shest-etapov">Путь от идеи до детали: шесть этапов</a></li>
+<li><a href="#eskiz-i-3d-model-s-chego-nachat-esli-chertezha-esche-net">Эскиз и 3D-модель: с чего начать, если чертежа ещё нет</a></li>
+<li><a href="#chertezh-chto-na-nem-dolzhno-byt-chtoby-detal-poluchilas-toy">Чертёж: что на нём должно быть, чтобы деталь получилась той же</a></li>
+<li><a href="#material-dopuski-i-sherohovatost-naznachat-po-zadache-a-ne-s">Материал, допуски и шероховатость: назначать по задаче, а не «с запасом»</a></li>
+<li><a href="#tehnologichnost-kak-forma-detali-opredelyaet-metod-obrabotki">Технологичность: как форма детали определяет метод обработки</a></li>
+<li><a href="#chto-peredat-podryadchiku-chtoby-poluchit-raschet-s-pervogo">Что передать подрядчику, чтобы получить расчёт с первого раза</a></li>
+<li><a href="#opytnyy-obrazets-probnaya-partiya-seriya-kak-dvigatsya-bez-l">Опытный образец, пробная партия, серия: как двигаться без лишних рисков</a></li>
+<li><a href="#chastye-oshibki-v-chertezhah-i-zadaniyah">Частые ошибки в чертежах и заданиях</a></li>
+<li><a href="#itog-chto-sdelat-segodnya">Итог: что сделать сегодня</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как создать проект нестандартной детали: путь от идеи до пробной партии">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Как создать проект нестандартной детали: путь от идеи до пробной партии</h1>
+        <p class="lede">Из чего состоит проект нестандартной детали: эскиз, модель, чертёж, допуски, материал. Что передать подрядчику, чтобы получить расчёт без уточнений.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-10-09">Опубликовано 9 октября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/sozdat-proekt-nestandartnoy-detali-cover.webp" alt="Как создать проект нестандартной детали: путь от идеи до пробной партии" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Чтобы создать проект нестандартной детали, нужны эскиз с размерами, <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">3D-модель</a> и чертёж с допусками, материалом и <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>ю. Метод обработки подрядчик подберёт сам, но только по полному комплекту. Ниже — путь от идеи до <a href="/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku.html">пробной партии</a> и ошибки, из-за которых заказ возвращается с вопросами.</p>
+<h2 id="chto-takoe-nestandartnaya-detal-i-kogda-ee-zakazyvayut">Что такое нестандартная деталь и когда её заказывают</h2>
+<p>Сломалась шестерня в редукторе, а купить такую уже нельзя: станок снят с производства, в каталогах её нет. Деталь придётся сделать заново. Это нестандартная деталь: её нет в каталогах стандартных изделий, и делают её под конкретный узел. Нет чертежа — нет и заказа: цех не сделает «такую же, только лучше» по описанию на словах.</p>
+<p>Поводов заказывать обычно три: замена снятой с производства детали, новый узел, доработка существующего изделия. Во всех случаях работа начинается с проекта.</p>
+<p>Проект детали — не презентация идеи. Это набор документов и решений: что деталь делает, из чего сделана, с какой точностью и как обрабатывается. Всё записано на чертеже, чтобы другой человек изготовил ту же деталь без звонков автору.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как создать проект нестандартной детали: путь от идеи до пробной партии">Прислать чертёж на почту</a>
+</div>
+<h2 id="put-ot-idei-do-detali-shest-etapov">Путь от идеи до детали: шесть этапов</h2>
+<p><img alt="Обработка металла на станке с ЧПУ" decoding="async" height="666" loading="lazy" src="/images/blog/sozdat-proekt-nestandartnoy-detali-1.webp" width="1000"/></p>
+<p><em>ЧПУ станок — основной метод обработки при производстве металлических деталей. Фото: <a href="https://commons.wikimedia.org/wiki/File:Forging_the_Fight-_378th_EMXS_fabrication_flight_maintains_laser-focused_precision_%289264882%29.jpg" rel="nofollow noopener" target="_blank">U.S. Air Force photo by Senior Airman Erin Dunkleberger</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Путь состоит из шести этапов: задача, эскиз, 3D-модель, чертёж, расчёт у подрядчика и опытный образец. После образца идут пробная партия и серия. Первые четыре этапа заказчик проходит сам или с конструктором, пятый и шестой — вместе с подрядчиком.</p>
+<ol><li><strong>Задача и условия работы.</strong> Результат: записано, что деталь выдерживает и с чем соединяется.</li><li><strong>Эскиз.</strong> Результат: лист с формой и ключевыми размерами.</li><li><strong>3D-модель.</strong> Результат: файл, в котором видны сопряжения с соседними деталями.</li><li><strong>Чертёж.</strong> Результат: документ с допусками, материалом и техническими требованиями.</li><li><strong>Расчёт и разбор технологичности.</strong> Результат: стоимость, срок и замечания подрядчика к конструкции.</li><li><strong>Опытный образец.</strong> Результат: деталь, проверенная в узле.</li></ol>
+<p>Маршрут можно сократить, если деталь простая, а материал известен: тогда модель необязательна, хватит эскиза и чертежа. Чертёж и расчёт пропускать нельзя. Без чертежа нечего изготавливать, без расчёта неизвестны цена и срок.</p>
+<p>Этап закончен, когда есть его результат. Чертёж не готов — рано просить образец. Сроки этапов зависят от детали, их называет подрядчик после расчёта.</p>
+<h2 id="eskiz-i-3d-model-s-chego-nachat-esli-chertezha-esche-net">Эскиз и 3D-модель: с чего начать, если чертежа ещё нет</h2>
+<p><img alt="3D принтер Objet Eden 260V для создания высокоточных прототипов" decoding="async" height="1347" loading="lazy" src="/images/blog/sozdat-proekt-nestandartnoy-detali-2.webp" width="1000"/></p>
+<p><em>3D принтер Objet Eden 260V с технологией Polyjet — инструмент для быстрого прототипирования деталей. Фото: <a href="https://commons.wikimedia.org/wiki/File:Objet_Eden_260V.jpg" rel="nofollow noopener" target="_blank">Vigh Előd</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>Если чертежа нет, начните с эскиза от руки: форма, ключевые размеры, посадочные места. Затем сделайте 3D-модель: она покажет, как деталь встанет рядом с соседними, и вскроет столкновения элементов. Модель дополняет чертёж, но не заменяет его: допуски, материал и шероховатость фиксирует чертёж.</p>
+<p>Начинайте с функции. Ответьте на три вопроса: что деталь выдерживает, с чем сопрягается, где стоит. Ответы покажут, какие размеры критичны, а какие можно не уточнять.</p>
+<p>Если есть образец, снимите размеры штангенциркулем и сфотографируйте деталь с нескольких сторон. Отметьте изношенные места: износ показывает, где реальная нагрузка. Эту часть заказчик вполне делает сам, без конструктора.</p>
+<blockquote><p>Модель показывает форму, чертёж фиксирует требования. Производство ведётся по чертежу.</p></blockquote>
+<h2 id="chertezh-chto-na-nem-dolzhno-byt-chtoby-detal-poluchilas-toy">Чертёж: что на нём должно быть, чтобы деталь получилась той же</h2>
+<p>Чертёж нестандартной детали оформляют по правилам ЕСКД. Деталь изготавливают по чертежу, и всё, чего на нём нет, подрядчику приходится выяснять или додумывать.</p>
+<p>Перед отправкой проверьте по списку:</p>
+<ol><li>Виды и разрезы показывают всю форму, скрытые полости не оставлены на догадку.</li><li>Размеры проставлены так, что прочитать их можно одним способом, без «двойных» цепочек.</li><li>В основной надписи указаны обозначение и марка материала.</li><li>Допуски стоят там, где они нужны.</li><li>Шероховатость указана на функциональных поверхностях.</li><li>Технические требования записаны: термообработка, покрытие, острые кромки.</li><li>Указаны версия и дата чертежа.</li></ol>
+<p>Чаще всего пропускают материал и версию. Без материала цех не рассчитает стоимость. Без версии при доработках неясно, по какой редакции идёт работа.</p>
+<h2 id="material-dopuski-i-sherohovatost-naznachat-po-zadache-a-ne-s">Материал, допуски и шероховатость: назначать по задаче, а не «с запасом»</h2>
+<p>Материал, допуски и шероховатость назначают по задаче детали. Допуск влияет на стоимость и срок изготовления: чем строже требование, тем больше операций и проверок. Строгие допуски и чистая поверхность нужны там, где деталь сопрягается или трётся. На остальных поверхностях они только удорожают работу.</p>
+<h3>Материал: что решить до чертежа</h3>
+<p>Исходите из условий работы: нагрузка, среда, температура. Материал влияет на метод обработки: от него зависят режимы резания, гибка и сварка. Если нужен аналог, согласуйте замену письменно и впишите марку в основную надпись чертежа.</p>
+<h3>Допуски и шероховатость: где нужны, а где нет</h3>
+<p>Точные размеры оставьте посадочным местам, для остальных укажите общие допуски в технических требованиях. Шероховатость проставьте на поверхностях, которые сопрягаются или трутся. Термообработку и покрытие вынесите отдельной строкой в технические требования. Численные значения и достижимую точность называет технолог подрядчика: они зависят от оборудования.</p>
+<blockquote><p>Чем строже допуск и чище поверхность, тем дороже и дольше. Ужесточайте только сопрягаемые места.</p></blockquote>
+<h2 id="tehnologichnost-kak-forma-detali-opredelyaet-metod-obrabotki">Технологичность: как форма детали определяет метод обработки</h2>
+<p>Технологичность конструкции определяет выбор метода обработки. Форма подсказывает способ: тело вращения точат, корпус с плоскостями и карманами фрезеруют, листовую заготовку режут и гнут, сборную конструкцию сваривают. Один узел часто можно сделать разными способами, но цена и срок у них разные.</p>
+<table><thead><tr><th>Метод</th><th>Для каких деталей подходит</th><th>Что усложняет</th></tr></thead><tbody><tr><td>Токарная обработка</td><td>валы, втулки, фланцы</td><td>длинные тонкие детали, несоосные элементы</td></tr><tr><td>Фрезерная обработка</td><td>корпуса с плоскостями, пазами и карманами</td><td>глубокие узкие карманы, острые внутренние углы, тонкие стенки</td></tr><tr><td>Лазерная резка</td><td>плоские детали из листа</td><td>мелкие элементы контура относительно толщины листа</td></tr><tr><td>Гибка</td><td>листовые детали с изгибами</td><td>малый радиус гибки, отверстия рядом с линией сгиба</td></tr><tr><td>Сварка</td><td>сборные конструкции из нескольких заготовок</td><td>недоступный для горелки шов, коробление тонких деталей</td></tr></tbody></table>
+<h3>Токарная или фрезерная обработка</h3>
+<p>Тела вращения идут на токарный станок, корпусные детали — на <a href="/frezerovka.html">фрезерный</a>. Если деталь сочетает то и другое, её обрабатывают в два приёма. Недоступные для инструмента места лучше убрать из конструкции ещё на чертеже, иначе цех предложит переделку. Как выбрать маршрут обработки под деталь, помогает разобраться <a href="/razdel/tehnologii.html">раздел «Технологии»</a>.</p>
+<h3>Лазерная резка, гибка и сварка</h3>
+<p>Листовые и сборные детали закладывают с учётом гибки и шва: радиусы сгиба и доступ к сварному соединению задают в чертеже заранее. Технологичность обсуждают с подрядчиком до утверждения чертежа, а не после: правка на бумаге ничего не стоит.</p>
+<h2 id="chto-peredat-podryadchiku-chtoby-poluchit-raschet-s-pervogo">Что передать подрядчику, чтобы получить расчёт с первого раза</h2>
+<p>Для расчёта передайте PDF-чертёж, модель в нейтральном формате (например, STEP), для листовых деталей — DXF, а также материал, количество, термообработку и покрытие. Допуски и шероховатость уже на чертеже. Список форматов, которые принимает производство, уточните у технолога до отправки.</p>
+<table><thead><tr><th>Элемент пакета</th><th>Зачем нужен</th><th>Что без него</th></tr></thead><tbody><tr><td>PDF-чертёж</td><td>по нему считают и изготавливают деталь</td><td>расчёт невозможен или идёт с допущениями</td></tr><tr><td>3D-модель (STEP)</td><td>показывает форму и упрощает подготовку обработки</td><td>форму приходится читать только по видам</td></tr><tr><td>DXF для листовых деталей</td><td>задаёт контур для резки</td><td>контур строят по чертежу, растёт риск ошибки</td></tr><tr><td>Материал и марка</td><td>определяет метод и стоимость заготовки</td><td>уточняющие вопросы, потеря срока</td></tr><tr><td>Количество</td><td>цена единицы зависит от объёма</td><td>расчёт на одну штуку вместо партии</td></tr><tr><td>Термообработка и покрытие</td><td>отдельные операции</td><td>не попадают в цену и срок</td></tr></tbody></table>
+<p>Если планируете партию, скажите об этом сразу. Цену единицы считают от объёма, и разовый расчёт для партии не подойдёт. Подробнее о заявке написано в статье <a href="/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html">как подготовить запрос на расчёт изготовления деталей</a>.</p>
+<h2 id="opytnyy-obrazets-probnaya-partiya-seriya-kak-dvigatsya-bez-l">Опытный образец, пробная партия, серия: как двигаться без лишних рисков</h2>
+<p>Опытный образец проверяет, что деталь встаёт на место и работает, а вместе с ней — технологичность конструкции. Замечания правят в чертеже, а не в голове: иначе следующая партия повторит ту же ошибку. Образец принимают по чертежу: сверяют размеры и посадки в узле, а не «на глаз».</p>
+<p>Пробная партия нужна, когда деталей много или сборка чувствительна к разбросу размеров. Кроме размеров в ней смотрят повторяемость и то, как детали собираются в узел. Что указать подрядчику, разобрано в статье про <a href="/blog/probnaya-partiya-ili-seriynyy-zakaz-chto-ukazat-podryadchiku.html">пробную партию перед серийным заказом</a>.</p>
+<p>К серии переходят, когда образец принят, а чертёж исправлен. Сроки и стоимость называет подрядчик после расчёта.</p>
+<blockquote><p><strong>Мнение.</strong> Если деталей нужно больше нескольких штук, начните с одного образца: ошибка в одной детали дешевле ошибки в партии.</p></blockquote>
+<h2 id="chastye-oshibki-v-chertezhah-i-zadaniyah">Частые ошибки в чертежах и заданиях</h2>
+<p>Заказ возвращается с вопросами или деталь выходит негодной обычно по пяти причинам. Каждая стоит времени, а иногда и денег.</p>
+<ul><li><strong>Чертёж без материала или с неясной маркой.</strong> Цех не рассчитает стоимость и вернёт вопросы.</li><li><strong>Одинаково жёсткие допуски на все размеры.</strong> Цена и срок растут без пользы для узла.</li><li><strong>Модель не совпадает с чертежом.</strong> Цех не знает, чему верить, и запрашивает уточнение.</li><li><strong>В работе старая версия.</strong> Деталь делают по устаревшему чертежу, итог — брак.</li><li><strong>Конструкция, к которой инструмент не может подойти.</strong> Деталь придётся переделывать в чертеже.</li></ul>
+<h2 id="itog-chto-sdelat-segodnya">Итог: что сделать сегодня</h2>
+<p>Перед отправкой ответьте на три вопроса. Понятна ли функция детали? Указаны ли размеры и материал? Зафиксирована ли версия чертежа? Если на все три ответ «да», комплект готов к расчёту.</p>
+<p>Если чертежа нет, отправьте эскиз, образец или фото с размерами: технолог скажет, чего не хватает. После отправки будет расчёт, затем вопросы по конструкции и согласование. Когда комплект собран, пришлите его на страницу <a href="/">изготовления деталей по вашим чертежам</a>: дальше расчёт и разбор технологичности берёт на себя подрядчик.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Как спроектировать деталь для изготовления на заказ?</summary>
+<div class="faq__a"><p>Начните с функции: что деталь выдерживает и с чем соединяется. Затем сделайте эскиз, 3D-модель и чертёж с допусками, материалом и шероховатостью — по этому комплекту подрядчик считает цену.</p></div>
+</details>
+<details>
+<summary>Что считается нестандартной деталью?</summary>
+<div class="faq__a"><p>Деталь, которой нет в каталогах стандартных изделий и которую изготавливают по чертежу заказчика под конкретную задачу.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Росстандарт: федеральное агентство по техническому регулированию и метрологии</a> — Росстандарт</li>
+<li><a href="https://docs.cntd.ru/" rel="noopener" target="_blank">Электронный фонд правовых и нормативно-технических документов</a> — Техэксперт</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">
+            <img src="/images/blog/brak-pri-obrabotke-metalla-prichiny-oshibki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/nestandartnyy-krepezh-zakazyvat-vmeste-s-detalyu-ili-otdelno.html">
+            <img src="/images/blog/nestandartnyy-krepezh-zakazyvat-vmeste-s-detalyu-ili-otdelno-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Крепёж не из каталога: один подрядчик или два</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kontsentratsiya-napryazheniy-v-uglakh-i-otverstiyakh.html">
+            <img src="/images/blog/kontsentratsiya-napryazheniy-v-uglakh-i-otverstiyakh-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Концентрация напряжений: почему детали ломаются в углах и отверстиях</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как создать проект нестандартной детали: путь от идеи до пробной партии">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

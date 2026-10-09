@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Срочное производство деталей по чертежу: как ускорить заказ и не потерять качество</title>
+      <link>https://ironex.tech/blog/srochnoe-proizvodstvo-ekspress-zakaz.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/srochnoe-proizvodstvo-ekspress-zakaz.html</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как работает срочное производство деталей по чертежу: уровни срочности, наценка за скорость, ограничения и контроль качества экспресс-заказа.</description>
+    </item>
+    <item>
+      <title>Как создать проект нестандартной детали: путь от идеи до пробной партии</title>
+      <link>https://ironex.tech/blog/sozdat-proekt-nestandartnoy-detali.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/sozdat-proekt-nestandartnoy-detali.html</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Из чего состоит проект нестандартной детали: эскиз, модель, чертёж, допуски, материал. Что передать подрядчику, чтобы получить расчёт без уточнений.</description>
+    </item>
+    <item>
+      <title>Шлифование металла: какие бывают виды и в каких случаях без него не обойтись</title>
+      <link>https://ironex.tech/blog/shlifovanie-metalla-vidy-kogda-shlifovat.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/shlifovanie-metalla-vidy-kogda-shlifovat.html</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Круглое и плоское шлифование, какая шероховатость получается и в каких случаях точения не хватает. Критерии для чертежа и что учесть при заказе.</description>
+    </item>
     <item>
       <title>Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно</title>
       <link>https://ironex.tech/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sat, 03 Oct 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Сборка металлических деталей и комплектование заказа: входной контроль, консервация и упаковка партии перед отгрузкой заказчику.</description>
-    </item>
-    <item>
-      <title>Минимальный радиус гиба листового металла: правила, таблица и разгрузочные вырезы</title>
-      <link>https://ironex.tech/blog/radius-giba-listovogo-metalla.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/radius-giba-listovogo-metalla.html</guid>
-      <pubDate>Sat, 03 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Минимальный радиус гибки по толщине и марке: правило 1×S, цифры для стали и алюминия, разгрузочные вырезы и чек-лист для чертежа.</description>
-    </item>
-    <item>
-      <title>Как подготовить чертёж для производства, чтобы цех посчитал заказ без переписки</title>
-      <link>https://ironex.tech/blog/podgotovka-chertezha-dlya-proizvodstva.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/podgotovka-chertezha-dlya-proizvodstva.html</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Что должно быть на чертеже для заказа детали: размеры, допуски, шероховатость, задание, форматы файлов. Чек-лист перед отправкой в цех.</description>
-    </item>
-    <item>
-      <title>Какую сталь выбрать для детали: марки, свойства и что записать в чертёж</title>
-      <link>https://ironex.tech/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kakuyu-stal-vybrat-dlya-detalej-spravochnik-marok.html</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Как выбрать сталь для деталей: что значит марка, как углерод и легирование влияют на обработку и что записать в чертёж, чтобы не получить замену.</description>
     </item>
   </channel>
 </rss>
