@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как подготовить чертёж кронштейна, чтобы деталь подошла к узлу</title>
+      <link>https://ironex.tech/blog/izgotovlenie-kronshtejnov-po-chertezham.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/izgotovlenie-kronshtejnov-po-chertezham.html</guid>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Что указать в чертеже кронштейна: материал, толщину, базы отверстий, гибы, сварку и покрытие. Как согласовать сборку и приёмку до изготовления.</description>
+    </item>
+    <item>
+      <title>Фрезерная обработка на станках с ЧПУ: как выбрать маршрут изготовления детали</title>
+      <link>https://ironex.tech/blog/frezernaya-obrabotka-chpu-po-chertezham.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/frezernaya-obrabotka-chpu-po-chertezham.html</guid>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Как выбрать фрезерную обработку под геометрию детали, согласовать допуски и проверить результат. Разбираем число осей, ограничения, расчёт и приёмку.</description>
+    </item>
+    <item>
+      <title>Что такое алюминий и как его свойства влияют на изготовление деталей</title>
+      <link>https://ironex.tech/blog/alyuminiy-eto-metall-i-ego-svoystva.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/alyuminiy-eto-metall-i-ego-svoystva.html</guid>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Алюминий — металл. Разбираем его физические и химические свойства, отличия от сплавов и стали, ограничения коррозионной стойкости и требования к заказу детали.</description>
+    </item>
     <item>
       <title>Срочное производство деталей по чертежу: как ускорить заказ и не потерять качество</title>
       <link>https://ironex.tech/blog/srochnoe-proizvodstvo-ekspress-zakaz.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sun, 04 Oct 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Чем макет отличается от опытного образца, какой метод выбрать для металла, от чего зависят цена и срок и как принять образец перед серией.</description>
-    </item>
-    <item>
-      <title>Глухие и сквозные отверстия: как проектировать их под механообработку</title>
-      <link>https://ironex.tech/blog/glukhoe-otverstie-kak-proektirovat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/glukhoe-otverstie-kak-proektirovat.html</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Как записать глухое и сквозное отверстие на чертеже, сколько запаса глубины заложить под резьбу и когда вместо сверла нужен резец.</description>
-    </item>
-    <item>
-      <title>Сертификация производства и допуски: что она гарантирует, а что нет</title>
-      <link>https://ironex.tech/blog/sertifikaciya-proizvodstva-i-dopuski.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/sertifikaciya-proizvodstva-i-dopuski.html</guid>
-      <pubDate>Sat, 03 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Что подтверждает сертификация производства по ISO 9001, чем она отличается от допусков на чертеже и как проверить подрядчика до заказа деталей.</description>
-    </item>
-    <item>
-      <title>Сборка и комплектование деталей: как проходит финальный этап заказа</title>
-      <link>https://ironex.tech/blog/sborka-i-komplektovanie-metallicheskih-detaley.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/sborka-i-komplektovanie-metallicheskih-detaley.html</guid>
-      <pubDate>Sat, 03 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Сборка металлических деталей и комплектование заказа: входной контроль, консервация и упаковка партии перед отгрузкой заказчику.</description>
     </item>
   </channel>
 </rss>
