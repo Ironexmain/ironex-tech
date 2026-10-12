@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как купить лист стали 45: сравнить предложения и выбрать заготовку</title>
+      <link>https://ironex.tech/blog/stal-45-kupit-list-tsena-tolshchina-ves.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/stal-45-kupit-list-tsena-tolshchina-ves.html</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Как сравнить цены листа стали 45, рассчитать массу и согласовать толщину, резку и документы. Что подготовить для заказа детали по чертежу.</description>
+    </item>
+    <item>
+      <title>Сталь 45 для детали по чертежу: свойства, закалка и требования к заказу</title>
+      <link>https://ironex.tech/blog/stal-45-harakteristiki-gost-tverdost-zakalka.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/stal-45-harakteristiki-gost-tverdost-zakalka.html</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Характеристики стали 45: как связать ГОСТ, состояние заготовки, закалку и отпуск с требованиями к детали. Что указать в чертеже и проверить при приёмке.</description>
+    </item>
+    <item>
+      <title>Как выбрать листогибочный станок под ваши детали и сравнить модели</title>
+      <link>https://ironex.tech/blog/listogibochnyj-stanok-modeli-i-harakteristiki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/listogibochnyj-stanok-modeli-i-harakteristiki.html</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Как сравнить листогибочные станки по материалу, геометрии деталей, оснастке и затратам на запуск. Какие характеристики проверить в паспорте и на пробной гибке.</description>
+    </item>
     <item>
       <title>Как выбрать аппарат аргонодуговой сварки под материалы и задачи мастерской</title>
       <link>https://ironex.tech/blog/kupit-apparat-argonodugovoy-svarki.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Tue, 06 Oct 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Можно ли заказать одну деталь по чертежу и почему малая партия дороже за штуку: наладка, материал, оснастка и что приложить к заявке.</description>
-    </item>
-    <item>
-      <title>Измерение шероховатости поверхности: когда хватит образцов сравнения, а когда нужен профилометр</title>
-      <link>https://ironex.tech/blog/izmerenie-sherohovatosti-poverhnosti-profilometr-obrazcy.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/izmerenie-sherohovatosti-poverhnosti-profilometr-obrazcy.html</guid>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Контроль качества</category>
-      <description>Как проверить Ra на металлической детали: образцы сравнения, контактный профилометр, базовая длина, число замеров и что вписать в протокол.</description>
-    </item>
-    <item>
-      <title>Как заказать детали по чертежу: пошаговая инструкция от запроса до приёмки</title>
-      <link>https://ironex.tech/blog/kak-zakazat-detali-po-chertezhu.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-zakazat-detali-po-chertezhu.html</guid>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Как заказать детали по чертежу: что приложить к запросу, как проходит согласование, оплата и приёмка. Расчёт — за 3 рабочих дня.</description>
-    </item>
-    <item>
-      <title>Горячекатаная и холоднокатаная сталь: как выбор проката меняет готовую деталь</title>
-      <link>https://ironex.tech/blog/holodnokatanaya-stal-ili-goryachekatanaya-dlya-detalej.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/holodnokatanaya-stal-ili-goryachekatanaya-dlya-detalej.html</guid>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Чем холоднокатаный лист отличается от горячекатаного по точности, короблению, гибке и цене детали. Таблица выбора и чек-лист заявки.</description>
     </item>
   </channel>
 </rss>
