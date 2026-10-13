@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как обрабатывают детали на токарном станке: от заготовки до контроля</title>
+      <link>https://ironex.tech/blog/obrabotka-na-tokarnom-stanke.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/obrabotka-na-tokarnom-stanke.html</guid>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Виды токарной обработки, инструмент и порядок операций на примере детали по чертежу. Как выбирают режимы, проверяют размеры и готовят заказ.</description>
+    </item>
+    <item>
+      <title>Что такое фреза, как она устроена и какие детали ею обрабатывают</title>
+      <link>https://ironex.tech/blog/freza-eto.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/freza-eto.html</guid>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Что такое фреза и как она снимает металл. Разбираем устройство, виды и назначение инструмента: от обработки плоскостей до пазов и сложных контуров.</description>
+    </item>
+    <item>
+      <title>Что означает валидация и как подтвердить пригодность детали, процесса или данных</title>
+      <link>https://ironex.tech/blog/chto-takoe-validaciya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/chto-takoe-validaciya.html</guid>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Валидация подтверждает пригодность для заданного применения. Разберём отличие от верификации, примеры в производстве и IT, этапы проверки и документы.</description>
+    </item>
     <item>
       <title>Как купить лист стали 45: сравнить предложения и выбрать заготовку</title>
       <link>https://ironex.tech/blog/stal-45-kupit-list-tsena-tolshchina-ves.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Wed, 07 Oct 2026 00:00:00 +0300</pubDate>
       <category>Технологии</category>
       <description>Как попутное и встречное фрезерование меняют стружку, чистоту поверхности и стойкость фрезы. Когда какое выбрать и что учесть в чертеже.</description>
-    </item>
-    <item>
-      <title>Как пользоваться штангенциркулем и микрометром: инструкция по шагам и как не ошибиться в замере детали</title>
-      <link>https://ironex.tech/blog/kak-polzovatsya-shtangencirkulem-i-mikrometrom.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-polzovatsya-shtangencirkulem-i-mikrometrom.html</guid>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Контроль качества</category>
-      <description>Проверка нуля, замер наружных, внутренних размеров и глубины, чтение нониуса, микрометр с трещоткой, источники погрешности и таблица выбора инструмента.</description>
-    </item>
-    <item>
-      <title>Диаметр отверстия под резьбу: какое сверло брать для метрической резьбы и почему</title>
-      <link>https://ironex.tech/blog/otverstie-pod-rezbu-tablica-sverl-metricheskaya-rezba.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/otverstie-pod-rezbu-tablica-sverl-metricheskaya-rezba.html</guid>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Таблица сверл под метрическую резьбу М3–М30: крупный и мелкий шаг, поправки на материал, глубина глухого отверстия и проверка калибрами.</description>
-    </item>
-    <item>
-      <title>Минимальный заказ в металлообработке: можно ли заказать одну деталь и от чего зависит порог</title>
-      <link>https://ironex.tech/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/minimalnyy-zakaz-metalloobrabotka-odna-detal.html</guid>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Можно ли заказать одну деталь по чертежу и почему малая партия дороже за штуку: наладка, материал, оснастка и что приложить к заявке.</description>
     </item>
   </channel>
 </rss>
