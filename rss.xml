@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Что такое сталь D2 и для каких деталей она подходит</title>
+      <link>https://ironex.tech/blog/stal-d2.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/stal-d2.html</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Сталь D2: износостойкость, коррозия, обработка и термообработка. Как выбрать материал для инструмента и детали и проверить предложенный аналог.</description>
+    </item>
+    <item>
+      <title>Сталь 40Х для деталей по чертежу: свойства, термообработка и контроль твёрдости</title>
+      <link>https://ironex.tech/blog/stal-40h-sostav-svoystva-tverdost-primenenie.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/stal-40h-sostav-svoystva-tverdost-primenenie.html</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Состав и свойства стали 40Х, твёрдость после термообработки, применение и ограничения. Как выбрать заготовку и задать требования к детали в чертеже.</description>
+    </item>
+    <item>
+      <title>Как выбрать ГОСТ для оформления проектной документации и чертежей на изготовление</title>
+      <link>https://ironex.tech/blog/gost-proektnaya-i-rabochaya-dokumentaciya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/gost-proektnaya-i-rabochaya-dokumentaciya.html</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как выбрать стандарт для строительной документации и чертежей деталей: СПДС, ЕСКД, основные надписи, изменения и проверка комплекта перед заказом.</description>
+    </item>
     <item>
       <title>Как обрабатывают детали на токарном станке: от заготовки до контроля</title>
       <link>https://ironex.tech/blog/obrabotka-na-tokarnom-stanke.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Thu, 08 Oct 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Чем предел текучести отличается от предела прочности, как читать диаграмму растяжения и сертификат и по какой цифре считать запас детали.</description>
-    </item>
-    <item>
-      <title>Концентрация напряжений: почему детали ломаются в углах и отверстиях</title>
-      <link>https://ironex.tech/blog/kontsentratsiya-napryazheniy-v-uglakh-i-otverstiyakh.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kontsentratsiya-napryazheniy-v-uglakh-i-otverstiyakh.html</guid>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Круглое отверстие утраивает напряжение у кромки пластины. Разбираем коэффициент Kt, радиус перехода и что указать в чертеже.</description>
-    </item>
-    <item>
-      <title>PPAP: как поставщик доказывает, что процесс выдаёт годные детали стабильно, а не один раз</title>
-      <link>https://ironex.tech/blog/ppap-protsedura-odobreniya-proizvodstva-detaley.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/ppap-protsedura-odobreniya-proizvodstva-detaley.html</guid>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Контроль качества</category>
-      <description>PPAP: пять уровней подачи, что входит в пакет, какой индекс Cpk требуют и как не провалить одобрение первой серийной партии деталей.</description>
-    </item>
-    <item>
-      <title>Попутное и встречное фрезерование: в чём разница и как она отражается на детали</title>
-      <link>https://ironex.tech/blog/popputnoe-i-vstrechnoe-frezerovanie-raznica.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/popputnoe-i-vstrechnoe-frezerovanie-raznica.html</guid>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Как попутное и встречное фрезерование меняют стружку, чистоту поверхности и стойкость фрезы. Когда какое выбрать и что учесть в чертеже.</description>
     </item>
   </channel>
 </rss>
