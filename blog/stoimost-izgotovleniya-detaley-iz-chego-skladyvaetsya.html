@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стоимость изготовления деталей: из чего складывается цена</title>
+  <meta name="description" content="Стоимость изготовления деталей: материал, станко-час, оператор, наладка, инструмент и накладные. Формула часа станка, условный пример и ошибки в заявке." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya.html#article",
+      "headline": "Из чего складывается стоимость изготовления металлических деталей",
+      "description": "Стоимость изготовления деталей: материал, станко-час, оператор, наладка, инструмент и накладные. Формула часа станка, условный пример и ошибки в заявке.",
+      "datePublished": "2026-10-15",
+      "dateModified": "2026-10-15",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya-cover.webp",
+      "articleSection": "Экономика заказа",
+      "keywords": [
+        "стоимость изготовления деталей",
+        "из чего складывается стоимость заказа",
+        "станко-час",
+        "себестоимость детали",
+        "калькуляция"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Из чего складывается стоимость изготовления металлических деталей"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Почему одинаковые на вид детали стоят по-разному у разных подрядчиков?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Цену собирают из нескольких статей, и у цехов они разные. Своя ставка станко-часа, своя загрузка, свой техпроцесс, своё число установок."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что дешевле — заказать одну деталь или партию?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В пересчёте на штуку партия дешевле, когда наладка заметна на фоне обработки. Её делят на все детали партии. Если наладка короткая, а почти всю цену составляет металл, разница меньше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как снизить стоимость заказа, не теряя в качестве детали?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Дайте чертёж с реальными допусками. Уточните число установок. Если срок позволяет, укрупните партию. Доля наладки и лишняя трудоёмкость в цене штуки при этом падают. Геометрию детали для этого менять не нужно."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Что реально входит в цену детали: станко-час, материал, наладка" />
+  <meta property="og:description" content="Стоимость изготовления деталей: материал, станко-час, оператор, наладка, инструмент и накладные. Формула часа станка, условный пример и ошибки в заявке." />
+  <meta property="og:url" content="https://ironex.tech/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-15" />
+  <meta property="article:modified_time" content="2026-10-15" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Что реально входит в цену детали: станко-час, материал, наладка" />
+  <meta name="twitter:description" content="Стоимость изготовления деталей: материал, станко-час, оператор, наладка, инструмент и накладные. Формула часа станка, условный пример и ошибки в заявке." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Из чего складывается стоимость изготовления металлических деталей">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Из чего складывается стоимость изготовления металлических деталей</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#iz-chego-skladyvaetsya-tsena-detali-shest-statey-zatrat">Из чего складывается цена детали: шесть статей затрат</a></li>
+<li><a href="#stoimost-materiala-i-koeffitsient-ispolzovaniya-metalla">Стоимость материала и коэффициент использования металла</a></li>
+<li><a href="#kak-schitaetsya-stoimost-stanko-chasa">Как считается стоимость станко-часа?</a></li>
+<li><a href="#trudoemkost-operatsii-i-stoimost-truda-operatora">Трудоёмкость операции и стоимость труда оператора</a></li>
+<li><a href="#pochemu-chislo-ustanovok-detali-opredelyaet-tsenu">Почему число установок детали определяет цену?</a></li>
+<li><a href="#rashod-instrumenta-i-ohlazhdayuschey-zhidkosti">Расход инструмента и охлаждающей жидкости</a></li>
+<li><a href="#nakladnye-rashody-tseha">Накладные расходы цеха</a></li>
+<li><a href="#chem-raschet-edinichnogo-zakaza-otlichaetsya-ot-serii">Чем расчёт единичного заказа отличается от серии?</a></li>
+<li><a href="#primer-rascheta-sebestoimosti-detali">Пример расчёта себестоимости детали</a></li>
+<li><a href="#tipovye-oshibki-pri-raschete-stoimosti-zakaza">Типовые ошибки при расчёте стоимости заказа</a></li>
+<li><a href="#kak-snizit-tsenu-zakaza-ne-teryaya-v-kachestve">Как снизить цену заказа, не теряя в качестве?</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Из чего складывается стоимость изготовления металлических деталей">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Из чего складывается стоимость изготовления металлических деталей</h1>
+        <p class="lede">Стоимость изготовления деталей: материал, станко-час, оператор, наладка, инструмент и накладные. Формула часа станка, условный пример и ошибки в заявке.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Экономика заказа</span>
+            <time datetime="2026-10-15">Опубликовано 15 октября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya-cover.webp" alt="Из чего складывается стоимость изготовления металлических деталей" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Стоимость изготовления детали складывается из шести статей: материал, станко-час, труд оператора, наладка, инструмент и накладные. Калькуляцию считают заново на каждый чертёж. Поэтому похожие детали стоят по-разному. Иногда цех с более дорогим станком называет цену ниже.</p>
+<h2 id="iz-chego-skladyvaetsya-tsena-detali-shest-statey-zatrat">Из чего складывается цена детали: шесть статей затрат</h2>
+<p>В контрактной обработке <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">цену детали</a> собирают из шести статей. Это материал, станко-час, труд оператора, наладка, инструмент и накладные расходы цеха. Доля каждой статьи зависит от операции и от станка.</p>
+<p>Загрузка резанием — доля времени, когда шпиндель снимает металл. Остальное время станок ждёт смену инструмента или заготовки.</p>
+<p>Цифры ниже — опыт одного цеха, Advance CNC. На вертикальном станке опытный оператор в удачный день мог держать два станка в резании 75% времени. На горизонтальных внимательный оператор в обычный день держал два станка в резании больше 90% времени. Пока одна палета в работе, вторую готовят к запуску.</p>
+<p>Чем меньше станок режет, тем дороже минута полезной работы. Ставку часа поэтому считают по конкретному станку. Одна цифра на весь цех для этого слишком груба.</p>
+<blockquote><p><strong>Факт.</strong> В цехе Advance CNC опытный оператор в удачный день держал на вертикальных станках два станка в резании 75% времени. На горизонтальных внимательный оператор в обычный день держал два станка в резании больше 90% времени.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Одна ставка «рубль в час» на любую деталь и любой станок — грубая прикидка. Станко-час для расчёта привязывают к станку, на котором деталь будут делать.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Из чего складывается стоимость изготовления металлических деталей">Прислать чертёж на почту</a>
+</div>
+<h2 id="stoimost-materiala-i-koeffitsient-ispolzovaniya-metalla">Стоимость материала и коэффициент использования металла</h2>
+<p><img alt="Чугунный лом для производства деталей" decoding="async" height="667" loading="lazy" src="/images/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya-1.webp" width="1000"/></p>
+<p><em>Чугунный лом - основной материал, стоимость которого определяет расходы на производство деталей. Фото: <a href="https://commons.wikimedia.org/wiki/File:Waste_-_Schrap_metal.jpg" rel="nofollow noopener" target="_blank">User:Nino Barbieri</a> · <a href="https://creativecommons.org/licenses/by/2.5" rel="nofollow noopener" target="_blank">CC BY 2.5</a></em></p>
+<p>Материал в чертеже задаёт марку и форму заготовки. От формы зависит, сколько металла уйдёт в стружку. В цену входит вся заготовка, вместе со стружкой и обрезью.</p>
+<p>Долю отходов считают по технологической карте этой детали. Она зависит от геометрии и от раскроя. Средний процент отходов по отрасли про ваш чертёж почти ничего не говорит. Спросите коэффициент использования металла по своей детали.</p>
+<p>Марка задаёт цену заготовки. Нержавеющая сталь, алюминиевый сплав и конструкционная сталь стоят по-разному. Цена заготовки входит в смету.</p>
+<p>Что указать в заявке, чтобы материал не раздувал расчёт:</p>
+<ul><li>точная марка стали или сплава, если «любая» для детали не годится</li><li>допустимые аналоги, если основной материал в дефиците</li><li>форма заготовки, если металл у вас уже есть</li><li>требования к сертификату на металл, если они для заказа обязательны</li></ul>
+<p>Что приложить к заявке, чтобы технолог посчитал деталь, разобрано отдельно: <a href="/blog/kak-zakazat-detal-po-chertezhu">как заказать деталь по чертежу</a>.</p>
+<h2 id="kak-schitaetsya-stoimost-stanko-chasa">Как считается стоимость станко-часа?</h2>
+<p>Станко-час в этом расчёте — стоимость часа для самого цеха. Нижняя граница — платёж по кредиту или лизингу за месяц, делённый на часы реальной работы станка.</p>
+<p>В расчёт часа стоит включить и содержание станка. Плановое обслуживание, смазку, СОЖ и ремонт после поломки. Если оставить только лизинговый платёж, ремонт после поломки в базу не попадает.</p>
+<p>Некоторые компании добавляют в стоимость часа ещё и площадь под станком. Имеет смысл спросить, так ли считает ваш подрядчик.</p>
+<p>Одна ставка на простой фрезер и на обрабатывающий центр годится для грубой прикидки. Для расчёта конкретной детали её мало.</p>
+<p>Дальше цифры одного цеха, Advance CNC. Цех поднял часовую ставку на работу на горизонтальных центрах на 50%. Детали при этом шли быстрее. Отпускные цены регулярно оказывались на 25% ниже лучшего уровня того же цеха, когда он работал только на вертикальных станках.</p>
+<h2 id="trudoemkost-operatsii-i-stoimost-truda-operatora">Трудоёмкость операции и стоимость труда оператора</h2>
+<p><img alt="Токарный станок Clausing 5912" decoding="async" height="750" loading="lazy" src="/images/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya-2.webp" width="1000"/></p>
+<p><em>Токарный станок Clausing 5912 с диаметром обработки 12,25 дюйма и расстоянием между центрами 36 дюймов. Фото: <a href="https://commons.wikimedia.org/wiki/File:Clausing_5912_metalworking_lathe.jpg" rel="nofollow noopener" target="_blank">Darron Birgenheier from Reno, NV, USA</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Стоимость часа оператора для компании шире его оплаты за час. В неё входят страховка, налоги с зарплаты и взносы в пенсионный фонд. Сумма этих начислений нередко равна ставке или превышает её. Когда раскладки льгот нет, Майк Линч в примерах для Modern Machine Shop берёт двойную часовую ставку.</p>
+<p>Трудоёмкость задаёт чертёж. Число поверхностей, допуски, требования к чистоте. Чем больше ручной работы и контроля, тем выше доля труда в цене.</p>
+<p>У экономии на многостаночном обслуживании есть потолок. Если один оператор ведёт два станка вместо отдельного человека на каждом, выигрыш за час не больше стоимости одного оператора.</p>
+<p>Завышенная ставка оператора или заниженная ставка станка портят решение. На бумаге один человек на двух станках выглядит выгоднее, чем выходит по деньгам.</p>
+<h2 id="pochemu-chislo-ustanovok-detali-opredelyaet-tsenu">Почему число установок детали определяет цену?</h2>
+<p>Число установок — сколько раз деталь снимают и ставят заново. Так обрабатывают другую грань. Каждая установка добавляет выверку и пробные проходы. Это время оплачивается и на партии из одной штуки.</p>
+<p>У того же цеха есть пример одной детали. Её там называли «коленом». Раньше она требовала семи операций на трёх вертикальных центрах. На горизонтальном центре те же поверхности закрывают две установки.</p>
+<p>Время обработки этой детали сократилось с 14 часов до 6. В цифру не входит сэкономленная наладка. Срок сжался по двум причинам: меньше циклов и высокоскоростное фрезерование.</p>
+<p>Шесть часов вместо четырнадцати — это время обработки. Сокращение часов ещё не равно такому же сокращению себестоимости. Ставка часа на горизонтальных станках у этого цеха была на 50% выше.</p>
+<p>Долгая наладка делает мелкую партию неудобной для цеха. При долгой установке выгоднее закрыть весь объём за один заход. Смена палет и обработка нескольких граней за одну установку снимают часть этого ограничения. Партию тогда можно дробить под график заказчика.</p>
+<p>Перед сравнением цен спросите у каждого подрядчика, сколько установок потребует деталь. Это время входит в смету отдельно от самой обработки.</p>
+<h2 id="rashod-instrumenta-i-ohlazhdayuschey-zhidkosti">Расход инструмента и охлаждающей жидкости</h2>
+<p>Инструмент и СОЖ в чертёж обычно не выносят. В цену операции они входят. В расчёте часа станка инструмент оставляют отдельной статьёй.</p>
+<p>На одной круглой детали тот же цех заменил черновое точение фрезерованием. Одна концевая фреза сняла объём, на который раньше уходило с десяток кромок токарных пластин и больше.</p>
+<p>Там же лёгкие проходы на высокой подаче часто давали более короткий цикл, чем глубокое фрезерование. Глубокий проход при этом выглядит производительнее. Режим меняет и время станка, и расход инструмента.</p>
+<p>СОЖ тоже не константа в смете. Её закладывают в содержание станка, вместе со смазкой и обслуживанием. Переход на более производительный станок в том же цехе потянул другие траты: оснастку, инструмент и более подходящую СОЖ.</p>
+<h2 id="nakladnye-rashody-tseha">Накладные расходы цеха</h2>
+<p>Часть расходов не относится к одному заказу. Их разносят на все заказы цеха. Площадь под станком некоторые компании уже включают в ставку часа. Второй раз в накладные её тогда не кладут.</p>
+<p>При тех же постоянных расходах большее число отработанных часов уменьшает долю этих расходов на одну деталь. Простой станка эту долю увеличивает.</p>
+<h2 id="chem-raschet-edinichnogo-zakaza-otlichaetsya-ot-serii">Чем расчёт единичного заказа отличается от серии?</h2>
+<p>Партия снижает цену штуки, когда наладку и подготовку делят на все детали. Час наладки на одной детали ложится на неё целиком. Если деталей 50, на каждую приходится одна пятидесятая этого часа. Так распределяют время наладки по партии.</p>
+<p>Когда наладка долгая относительно самой обработки, даже короткая партия заметно меняет цену штуки. С какого количества это станет заметно, решает техпроцесс вашей детали.</p>
+<p>Если нужна именно мелкая партия, смотрите, как цех сокращает наладку. Зачем сначала короткий тираж, а не сразу большая серия, разобрано отдельно: <a href="/blog/opytnaya-partiya-pered-seriynym-proizvodstvom">опытная партия перед серией</a>.</p>
+<h2 id="primer-rascheta-sebestoimosti-detali">Пример расчёта себестоимости детали</h2>
+<p>Ниже учебная калькуляция на округлённых цифрах. Цена вашей детали будет другой. В сумме шесть слагаемых: материал, станко-час на время обработки, труд оператора, доля наладки на партию, инструмент и накладные.</p>
+<table><thead><tr><th>Статья затрат</th><th>Точёная деталь, партия 50 шт</th><th>Фрезерованная деталь, партия 20 шт</th></tr></thead><tbody><tr><td>Материал</td><td>120 ₽</td><td>340 ₽</td></tr><tr><td>Станко-час × время</td><td>280 ₽</td><td>950 ₽</td></tr><tr><td>Труд оператора</td><td>90 ₽</td><td>260 ₽</td></tr><tr><td>Доля наладки на партию</td><td>40 ₽</td><td>210 ₽</td></tr><tr><td>Инструмент</td><td>15 ₽</td><td>60 ₽</td></tr><tr><td>Накладные расходы</td><td>55 ₽</td><td>180 ₽</td></tr><tr><td>Итого</td><td>600 ₽</td><td>2000 ₽</td></tr></tbody></table>
+<h3>Пример: точёная деталь из круга</h3>
+<p>В примере точёная втулка из круга Ø30 мм, партия 50 штук. Заготовка и станко-час дают 400 ₽ из 600 ₽. Наладка на эту партию — 40 ₽ на деталь. Чем короче цикл, тем заметнее в штуке доля заготовки, а не работы станка.</p>
+<h3>Пример: фрезерованная деталь по чертежу с несколькими гранями</h3>
+<p>В примере фрезерованная деталь, партия 20 штук, обработка нескольких граней. В таблицу заложен вариант с более коротким циклом, уже после сокращения числа установок. Если установок больше, растут станко-час и доля наладки. Каждая переустановка добавляет выверку. В строках этого примера станко-час и наладка вместе больше стоимости материала.</p>
+<h2 id="tipovye-oshibki-pri-raschete-stoimosti-zakaza">Типовые ошибки при расчёте стоимости заказа</h2>
+<p>Если в заявке нет допусков и требований к чистоте, подрядчик закладывает запас на более жёсткий вариант. Цена выходит выше, чем при ясных требованиях на чертеже.</p>
+<p>Вторая ошибка — одна ставка станко-часа на всё оборудование. Простой фрезерный станок и станок с ЧПУ тогда получают одинаковый час. Для расчёта конкретного заказа такой ставки мало.</p>
+<p>Третья ошибка — <a href="/blog/kak-sravnivat-kommercheskie-predlozheniya-na-metalloobrabotku.html">сравнивать предложения</a>, не спросив про число установок и <a href="/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii.html">размер партии</a>. Разная цена на одну деталь может означать разный техпроцесс и разный тираж в расчёте.</p>
+<h2 id="kak-snizit-tsenu-zakaza-ne-teryaya-v-kachestve">Как снизить цену заказа, не теряя в качестве?</h2>
+<p>Чтобы цена не раздувалась запасом, начните с чертежа. Укажите реальные допуски и чистоту поверхности. Дальше спросите число установок и способ обработки. Марка металла — не единственное, чем расходятся два предложения.</p>
+<p>Если срок позволяет, соберите несколько мелких запусков в одну партию. Доля наладки на штуку падает.</p>
+<p><a href="/ceny.html">Цены на металлообработку</a> задают ориентир по видам работ. Точную калькуляцию считают по вашему чертежу. Пришлите его — разложим цену по статьям из этой статьи.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Почему одинаковые на вид детали стоят по-разному у разных подрядчиков?</summary>
+<div class="faq__a"><p>Цену собирают из нескольких статей, и у цехов они разные. Своя ставка станко-часа, своя загрузка, свой техпроцесс, своё число установок.</p></div>
+</details>
+<details>
+<summary>Что дешевле — заказать одну деталь или партию?</summary>
+<div class="faq__a"><p>В пересчёте на штуку партия дешевле, когда наладка заметна на фоне обработки. Её делят на все детали партии. Если наладка короткая, а почти всю цену составляет металл, разница меньше.</p></div>
+</details>
+<details>
+<summary>Как снизить стоимость заказа, не теряя в качестве детали?</summary>
+<div class="faq__a"><p>Дайте чертёж с реальными допусками. Уточните число установок. Если срок позволяет, укрупните партию. Доля наладки и лишняя трудоёмкость в цене штуки при этом падают. Геометрию детали для этого менять не нужно.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.mmsonline.com/columns/multiple-machine-operation-operator-costs-versus-machine-costs" rel="noopener" target="_blank">Multiple Machine Operation: Operator Costs Versus Machine Costs</a> — Mike Lynch, Modern Machine Shop, 2008</li>
+<li><a href="https://www.mmsonline.com/articles/the-costs-and-benefits-of-horizontal-machining" rel="noopener" target="_blank">The Costs and Benefits of Horizontal Machining</a> — Peter Zelinski, Modern Machine Shop, 2014</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html">
+            <img src="/images/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Производство металлических деталей: выбор аналога</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-zakazat-detali-po-chertezhu.html">
+            <img src="/images/blog/kak-zakazat-detali-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как заказать детали по чертежу: пошаговая инструкция от запроса до приёмки</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/izgotovlenie-prototipov-iz-metalla.html">
+            <img src="/images/blog/izgotovlenie-prototipov-iz-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Изготовление прототипов и опытных образцов из металла по вашему чертежу</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Из чего складывается стоимость изготовления металлических деталей">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

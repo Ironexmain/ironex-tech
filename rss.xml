@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Из чего складывается стоимость изготовления металлических деталей</title>
+      <link>https://ironex.tech/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya.html</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Стоимость изготовления деталей: материал, станко-час, оператор, наладка, инструмент и накладные. Формула часа станка, условный пример и ошибки в заявке.</description>
+    </item>
+    <item>
+      <title>Что такое сталь и как её состав влияет на свойства детали</title>
+      <link>https://ironex.tech/blog/stal-sostav-svoystva-vidy.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/stal-sostav-svoystva-vidy.html</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Из чего состоит сталь, чем отличается от чугуна и как выбрать материал для детали. Разбираем марки, термообработку и проверку сертификата.</description>
+    </item>
+    <item>
+      <title>Как рассчитать абсолютную и относительную погрешность измерения</title>
+      <link>https://ironex.tech/blog/absolyutnaya-i-otnositelnaya-pogreshnost.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/absolyutnaya-i-otnositelnaya-pogreshnost.html</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Абсолютная и относительная погрешность: определения, формулы и примеры. Как учитывать характеристики прибора и проверять размер детали около границы допуска.</description>
+    </item>
     <item>
       <title>Что такое сталь D2 и для каких деталей она подходит</title>
       <link>https://ironex.tech/blog/stal-d2.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Fri, 09 Oct 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Из чего состоит проект нестандартной детали: эскиз, модель, чертёж, допуски, материал. Что передать подрядчику, чтобы получить расчёт без уточнений.</description>
-    </item>
-    <item>
-      <title>Шлифование металла: какие бывают виды и в каких случаях без него не обойтись</title>
-      <link>https://ironex.tech/blog/shlifovanie-metalla-vidy-kogda-shlifovat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/shlifovanie-metalla-vidy-kogda-shlifovat.html</guid>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Круглое и плоское шлифование, какая шероховатость получается и в каких случаях точения не хватает. Критерии для чертежа и что учесть при заказе.</description>
-    </item>
-    <item>
-      <title>Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно</title>
-      <link>https://ironex.tech/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html</guid>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Чем растачивание отличается от сверления и развёртывания: что исправляет ось, какие нужны припуски и что указать в чертеже при заказе.</description>
-    </item>
-    <item>
-      <title>Предел текучести и предел прочности: что эти цифры значат для детали</title>
-      <link>https://ironex.tech/blog/predel-tekuchesti-i-predel-prochnosti.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/predel-tekuchesti-i-predel-prochnosti.html</guid>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Чем предел текучести отличается от предела прочности, как читать диаграмму растяжения и сертификат и по какой цифре считать запас детали.</description>
     </item>
   </channel>
 </rss>
