@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сварочные деформации: почему ведёт деталь и как избежать</title>
+  <meta name="description" content="Деталь повело после сварки: почему шов коробит металл, как на усадку влияют сплав и толщина и что заложить в чертёж, порядок сварки и оснастку." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/svarochnye-deformacii-pochemu-vedet-detal.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/svarochnye-deformacii-pochemu-vedet-detal.html#article",
+      "headline": "Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже",
+      "description": "Деталь повело после сварки: почему шов коробит металл, как на усадку влияют сплав и толщина и что заложить в чертёж, порядок сварки и оснастку.",
+      "datePublished": "2026-10-16",
+      "dateModified": "2026-10-16",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/svarochnye-deformacii-pochemu-vedet-detal.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/svarochnye-deformacii-pochemu-vedet-detal-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "сварочные деформации",
+        "остаточные напряжения",
+        "коробление при сварке",
+        "как избежать сварочных деформаций",
+        "деформация металла при сварке",
+        "устранение сварочных деформаций"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем сварочная деформация отличается от остаточных напряжений?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Деформация — изменение формы, его видно. Остаточные напряжения — силы в металле. Они есть и в ровной детали. Жёсткий зажим как раз копит такие силы, пока не даёт детали сдвинуться."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли сварить деталь так, чтобы её совсем не повело?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Местный нагрев и усадка шва есть при дуговой сварке любого металла. Симметрия швов, порядок наложения и оснастка уменьшают уход. Его сверяют с допуском на чертеже. Точные миллиметры усадки заранее почти не считаются."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как по чертежу понять, что деталь уйдёт из допуска после сварки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Смотрят толщину, длину швов и проходят ли швы через центр тяжести сечения. Смотрят, есть ли на чертеже допуск. Точную усадку по чертежу не вычисляют. Для стали её прикидывают по размеру шва и проверяют на детали. Нет допуска — нет и границы, с которой эту прикидку сравнивать."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой способ правки не портит металл?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Одного такого способа нет. Проковка может повредить поверхность и дать наклёп. Пресс для изгиба и угловой деформации этого недостатка лишён, но деталь перегибают дальше цели из-за пружинения. Слишком высокий нагрев меняет металл. Выбор зависит от толщины и от того, что правят: хлопун, изгиб или угол."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему алюминиевые детали коробит сильнее стальных?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "У алюминия теплопроводность примерно в пять раз выше, чем у низкоуглеродистой стали. Усадка при затвердевании — около 6% по объёму. Размер при том же нагреве меняется почти вдвое сильнее, чем у стали. Эти факторы могут усиливать коробление. Более толстое сечение его снижает: при двойной толщине алюминий весит около 2/3 стальной детали той же прочности."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Почему ведёт деталь после сварки и как это остановить" />
+  <meta property="og:description" content="Деталь повело после сварки: почему шов коробит металл, как на усадку влияют сплав и толщина и что заложить в чертёж, порядок сварки и оснастку." />
+  <meta property="og:url" content="https://ironex.tech/blog/svarochnye-deformacii-pochemu-vedet-detal.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/svarochnye-deformacii-pochemu-vedet-detal-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-16" />
+  <meta property="article:modified_time" content="2026-10-16" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Почему ведёт деталь после сварки и как это остановить" />
+  <meta name="twitter:description" content="Деталь повело после сварки: почему шов коробит металл, как на усадку влияют сплав и толщина и что заложить в чертёж, порядок сварки и оснастку." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/svarochnye-deformacii-pochemu-vedet-detal-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-svarochnye-deformatsii-i-pochemu-detal-vedet">Что такое сварочные деформации и почему деталь «ведёт»</a></li>
+<li><a href="#kakie-byvayut-svarochnye-deformatsii-ot-usadki-shva-do-skruc">Какие бывают сварочные деформации: от усадки шва до скручивания</a></li>
+<li><a href="#ostatochnye-napryazheniya-nevidimaya-storona-svarnogo-shva">Остаточные напряжения: невидимая сторона сварного шва</a></li>
+<li><a href="#ot-chego-zavisit-sila-deformatsii-material-tolschina-pogonna">От чего зависит сила деформации: материал, толщина, погонная энергия</a></li>
+<li><a href="#kakie-dopuski-na-svarnye-konstruktsii-proveryaet-zakazchik">Какие допуски на сварные конструкции проверяет заказчик</a></li>
+<li><a href="#kak-chertezh-i-konstruktsiya-shva-snizhayut-deformatsiyu">Как чертёж и конструкция шва снижают деформацию</a></li>
+<li><a href="#poryadok-svarki-i-rezhimy-kotorye-sderzhivayut-deformatsiyu">Порядок сварки и режимы, которые сдерживают деформацию</a></li>
+<li><a href="#sborochnaya-osnastka-i-zhestkoe-zakreplenie-detali">Сборочная оснастка и жёсткое закрепление детали</a></li>
+<li><a href="#kak-ispravlyayut-detal-esli-ee-vse-zhe-povelo">Как исправляют деталь, если её всё же повело</a></li>
+<li><a href="#kak-deformatsiya-detali-vliyaet-na-srok-i-stoimost-zakaza">Как деформация детали влияет на срок и стоимость заказа</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже</h1>
+        <p class="lede">Деталь повело после сварки: почему шов коробит металл, как на усадку влияют сплав и толщина и что заложить в чертёж, порядок сварки и оснастку.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-10-16">Опубликовано 16 октября 2026</time>
+
+            <span>11 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/svarochnye-deformacii-pochemu-vedet-detal-cover.webp" alt="Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+          <p class="prose__lede">Сварочные деформации появляются не случайно. Шов греется в узкой зоне и остывает неравномерно, металл рядом сжимается и тянет заготовку. Форму удерживают в допуске ещё на чертеже: симметрия швов, разделка и порядок сварки. Правка прессом после остывания эту работу не заменяет.</p>
+
+          <h2 id="chto-takoe-svarochnye-deformatsii-i-pochemu-detal-vedet">Что такое сварочные деформации и почему деталь «ведёт»</h2>
+<p>Сварочная деформация — изменение формы из-за неравномерного нагрева и остывания. Дуга плавит узкую полосу шва. Соседний холодный металл не даёт ей свободно расшириться. При остывании нагретый участок сжимается, и заготовку тянет в сторону шва.</p>
+<p>Тот же эффект виден, если горячую ложку сунуть под холодную воду. Одна часть металла сжимается быстрее другой, и черенок слегка гнётся. В шве силы те же. Их хватает, чтобы сдвинуть лист или повести раму.</p>
+<p>Свободную деталь, которую нагрели и остудили равномерно, вернуло бы к прежнему размеру. Сварка греет только шов и узкую полосу рядом. Поэтому усадка остаётся. Её меряют на остывшей детали штангенциркулем или угольником.</p>
+<p>Тонкий лист ведёт сильнее толстой плиты той же марки. У листа меньше сечения, которое сопротивляется усадке. Большая толщина заметно снижает этот риск. На тонком металле швов лучше закладывать как можно меньше.</p>
+<blockquote><p>Деталь коробит сам металл. Шов остывает в узкой зоне, а холодные участки не пускают его сжаться свободно.</p></blockquote>
+<div class="cta ui" id="cta" data-cta="inline">
+            <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+            <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+            <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже">Прислать чертёж на почту</a>
+          </div>
+<h2 id="kakie-byvayut-svarochnye-deformatsii-ot-usadki-shva-do-skruc">Какие бывают сварочные деформации: от усадки шва до скручивания</h2>
+<p><img src="/images/blog/svarochnye-deformacii-pochemu-vedet-detal-1.webp" alt="Выполнение сварного шва для соединения металлических деталей" width="1000" height="1333" loading="lazy" decoding="async"></p>
+<p><em>Сварной шов соединяет элементы конструкции при помощи сварочного оборудования. Фото: <a href="https://commons.wikimedia.org/wiki/File:US_Navy_030402-N-1050K-037_Steelworker_Constructionman_Patrick_Lewis_from_Kenosha,_Wis.,_is_attached_to_Amphibious_Construction_Battalion_Two_%28ACB-2%29_stationed_at_Little_Creek,_Va.jpg" rel="nofollow noopener" target="_blank">U.S. Navy photo by Journalist 1st Class Joseph Krypel.</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Форм не одна, и на приёмке их не смешивают. У каждой своя причина и свой приём. Справочник TWI выделяет шесть основных форм.</p>
+<ul><li><strong>Продольная усадка</strong> — шов становится короче вдоль своей линии.</li><li><strong>Поперечная усадка</strong> — кромки стягиваются поперёк шва.</li><li><strong>Угловая деформация</strong> — кромка поворачивается, полка уходит от прямого угла.</li><li><strong>Изгиб и выпучивание</strong> — балка гнётся по длине, обшивка вспучивается между рёбрами.</li><li><strong>Потеря устойчивости</strong> — тонкий лист хлопает под длинным сжатием. Попытка его распрямить, скорее всего, выгнет лист в другую сторону.</li><li><strong>Скручивание</strong> — коробчатое сечение закручивается, если кромки в углах расширяются вдоль шва неодинаково.</li></ul>
+<p>Продольный изгиб начинается, когда центр шва не проходит через центр тяжести сечения. Усадка тогда гнёт балку дугой. Односторонний угловой шов поворачивает стойку тавра. Два шва по стойке с обеих сторон этот поворот гасят. Лист под ними всё равно может уйти углом: оба шва лежат с одной стороны листа.</p>
+<h2 id="ostatochnye-napryazheniya-nevidimaya-storona-svarnogo-shva">Остаточные напряжения: невидимая сторона сварного шва</h2>
+<p>Деформация видна глазом: изгиб, скручивание, сдвиг кромок. Остаточное напряжение — сила внутри металла. Снаружи деталь может выглядеть ровной, а сила в ней уже есть.</p>
+<p>Пока ванна горячая, расширение давит на холодный металл вокруг. При остывании шов и полоса рядом хотят сжаться. Холодный металл их держит. В шве остаётся растяжение.</p>
+<p>Если это напряжение выше предела текучести, металл течёт. Размер меняется насовсем, деталь коробит. На жёстком узле из толстого металла та же сила может открыть трещину.</p>
+<p>Жёсткий прижим не даёт детали сдвинуться и за счёт этого копит напряжение. На металле, склонном к трещинам, риск трещины в шве и в зоне термического влияния выше.</p>
+<blockquote><p>Ровная деталь сразу после сварки ещё не значит, что напряжений нет. Зажим мог удержать форму и оставить силу внутри металла.</p></blockquote>
+<h2 id="ot-chego-zavisit-sila-deformatsii-material-tolschina-pogonna">От чего зависит сила деформации: материал, толщина, погонная энергия</h2>
+<p>Насколько поведёт деталь, зависит от марки, толщины и тепла на единицу длины шва. Это погонная энергия. Её задают материал, сечение и режим ещё на чертеже, до поста.</p>
+<p>Чем погонная энергия выше, тем сильнее деформация. Процедура влияет на коробление в первую очередь через это тепло. Объём наплавленного металла поэтому держат небольшим.</p>
+<p>У алюминия теплопроводность примерно в пять раз выше, чем у низкоуглеродистой стали. Усадка при затвердевании — около 6% по объёму. При том же изменении температуры размер меняется почти вдвое сильнее, чем у стали. Рядом с углеродистой сталью эти факторы у алюминия могут проявляться сильнее.</p>
+<p>Толщина работает в другую сторону. Алюминий весит примерно треть стали. Сечение можно сделать вдвое толще и всё ещё получить около 2/3 массы стальной детали той же прочности. Такой запас толщины заметно снижает риск коробления.</p>
+<table><thead><tr><th>Свойство алюминия</th><th>Что показывает источник</th></tr></thead><tbody><tr><td>Теплопроводность</td><td>примерно в пять раз выше, чем у низкоуглеродистой стали</td></tr><tr><td>Усадка при затвердевании</td><td>около 6% по объёму</td></tr><tr><td>Расширение при том же нагреве</td><td>почти вдвое сильнее, чем у стали</td></tr><tr><td>Масса при удвоенной толщине</td><td>около 2/3 массы стальной детали той же прочности</td></tr></tbody></table>
+<p>У углеродисто-марганцевой стали другая оценка. Её не вычитают из 6% алюминия и не прибавляют к ним. При сварке такой стали объём жидкого металла шва падает примерно на 3% в момент затвердевания. Потом шов и зона термического влияния остывают до комнатной температуры. Их объём падает ещё примерно на 7%.</p>
+<p>Точную усадку заранее почти нельзя рассчитать. Для стали есть практическая прикидка по размеру шва. Это запас на сборке, а не допуск с чертежа. Чем больше катет углового шва, тем усадка больше.</p>
+<table><thead><tr><th>Шов на стали</th><th>Поперёк шва</th><th>Вдоль шва</th></tr></thead><tbody><tr><td>Угловой</td><td>0,8 мм на шов, если катет не больше 3/4 толщины листа</td><td>0,8 мм на 3 м шва</td></tr><tr><td>Стыковой</td><td>1,5–3 мм на шов при V-разделке 60°, величина зависит от числа проходов</td><td>3 мм на 3 м шва</td></tr></tbody></table>
+<blockquote><p><strong>Мнение.</strong> На тонком алюминии припуск и способ фиксации лучше выбрать до поста. Иначе правку назначают уже после того, как шов остыл.</p></blockquote>
+<h2 id="kakie-dopuski-na-svarnye-konstruktsii-proveryaet-zakazchik">Какие допуски на сварные конструкции проверяет заказчик</h2>
+<p>Геометрию сварной детали сверяют с допусками на чертеже. Конструктор пишет предельные отклонения размеров, углов и формы или один класс допуска вместо россыпи чисел. Чем жёстче граница, тем раньше ограничивают усадку: швами, разделкой и порядком сварки.</p>
+<p>На приёмке размеры проверяют по контрольным точкам чертежа. Берут шаблон, угольник и штангенциркуль. Сложную геометрию меряют на координатно-измерительной машине или лазерным сканером. Если на чертеже нет ни отклонений, ни класса допуска, кривизну сравнивать не с чем.</p>
+<p>От того, по какому документу выпущен чертёж, зависит, записан ли допуск явно. Разница разобрана отдельно: <a href="/blog/gost-ili-tu-na-detal-v-chem-raznica-dlya-zakazchika.html">чем ГОСТ и ТУ отличаются для заказчика чертежа</a>.</p>
+<h2 id="kak-chertezh-i-konstruktsiya-shva-snizhayut-deformatsiyu">Как чертёж и конструкция шва снижают деформацию</h2>
+<p>Деформацию снижают ещё на чертеже. Самая частая причина лишнего коробления — избыточная сварка. Катет больше, чем на чертеже, добавляет тепло и усадку. Сварщику нужен шаблон катета, чтобы не положить шов крупнее заданного.</p>
+<p>На толстом металле двусторонняя V-образная разделка требует примерно вдвое меньше наплавленного металла, чем односторонняя. Меньше металла в разделке — меньше усадка. К той же цели ведут J-образная и U-образная разделки: они тоже уменьшают объём шва.</p>
+<p>Одинаковые швы по обе стороны от центра тяжести сечения гасят усадку друг друга. Шов ближе к этой оси даёт силе меньшее плечо. Деталь тогда меньше уводит.</p>
+<p>Прерывистый угловой шов вместо сплошного часто сохраняет нужную прочность. Объём сварки при этом падает примерно на 70%, если конструкция это допускает.</p>
+<p>Эти решения конструктор записывает в чертёж заранее. Поменять катет или разделку, когда сборка уже стоит на столе, почти нечего.</p>
+<blockquote><p>Запас «на всякий случай» в катете работает против детали. Лишний металл — это лишнее тепло, а лишнее тепло сильнее её гнёт.</p></blockquote>
+<h2 id="poryadok-svarki-i-rezhimy-kotorye-sderzhivayut-deformatsiyu">Порядок сварки и режимы, которые сдерживают деформацию</h2>
+<p>Порядок шва и режим тоже меняют деформацию. На одностороннем угловом шве и на односторонней V-разделке мало проходов крупным электродом лучше, чем много мелких. Каждый новый нагрев добавляет угловую деформацию.</p>
+<p>Процесс выбирают так, чтобы скорость была выше, а число проходов меньше. Тогда тепло меньше успевает растечься по детали.</p>
+<ol><li>Обратноступенчатый способ: общее направление одно, а каждый короткий участок кладут ему навстречу. Уже положенный шов удерживает следующий.</li><li>По возможности варят от центра соединения к краям, а не от одного края к другому.</li><li>На двустороннем шве проходы чередуют по сторонам. Ещё лучше варить обе стороны одновременно.</li></ol>
+<p>Для заказчика это признак, что технолог записал порядок шва до поста. Точную усадку в миллиметрах заранее всё равно не получают.</p>
+<h2 id="sborochnaya-osnastka-i-zhestkoe-zakreplenie-detali">Сборочная оснастка и жёсткое закрепление детали</h2>
+<p>Кондуктор не даёт детали уйти туда, куда тянет усадка. Струбцины на массивной плите держат сборку, пока идёт сварка. После снятия зажима деталь всё же немного сдвигается: в металле остаются запертые напряжения. Остаток уменьшают небольшим предварительным смещением или отпуском до снятия фиксации.</p>
+<p>Приём «спина к спине» ставит две одинаковые сборки друг к другу. Их стягивают, варят вместе и разжимают только после остывания. Усадка одной встречает усадку другой. Распорки между сборками задают предварительный изгиб. После остывания он приходит к ровной форме.</p>
+<p>Предварительное смещение делают до сварки, в сторону, обратную ожидаемой усадке. Величину находят пробными швами. Дальше её держат постоянной, если размер шва не гуляет: тогда детали выходят с близкой геометрией. По сравнению с жёстким зажимом здесь не нужна дорогая оснастка, а остаточных напряжений меньше. Точную величину заранее угадать трудно, поэтому приём уместнее на простом узле, чем на сложной сборке.</p>
+<p>Жёсткий зажим применяют чаще: смещение и предварительный изгиб труднее выполнить. Ставить струбцины проще. Зато в шов добавляются остаточные напряжения, и возможна трещина. На чувствительном металле риск снижают порядком сварки и подогревом.</p>
+<h2 id="kak-ispravlyayut-detal-esli-ee-vse-zhe-povelo">Как исправляют деталь, если её всё же повело</h2>
+<p>Правка дорогая и требует навыка, иначе деталь легко испортить. Сначала смотрят, можно ли было убрать причину на чертеже и в порядке сварки. Правка выправляет уже сваренную деталь. Следующая партия повторит уход, если шов и порядок остались те же.</p>
+<table><thead><tr><th>Приём</th><th>Где применяют</th><th>На что смотреть</th></tr></thead><tbody><tr><td>Пресс</td><td>изгиб и угловая деформация</td><td>деталь перегибают дальше цели: после снятия силы она пружинит обратно. Проковка вместо пресса бьёт поверхность и даёт наклёп</td></tr><tr><td>Точечный нагрев</td><td>хлопун тонкого листа на жёсткой рамке</td><td>греют выпуклую сторону. Если хлопун регулярный, точки ставят симметрично, от центра к краям</td></tr><tr><td>Линейный нагрев</td><td>угловая деформация углового шва</td><td>линию ведут с обратной от шва стороны, чтобы усадка нагрева вытянула полку</td></tr><tr><td>Клиновой нагрев</td><td>крупная и более толстая деталь</td><td>на толстом листе иногда работают двумя горелками, с двух сторон</td></tr></tbody></table>
+<p>Слишком горячий нагрев меняет металл. Слишком широкая зона перетягивает деталь в другую сторону. Площадь нагрева поэтому ограничивают. Отпуск перед снятием зажима уменьшает сдвиг от запертых напряжений.</p>
+<h2 id="kak-deformatsiya-detali-vliyaet-na-srok-i-stoimost-zakaza">Как деформация детали влияет на срок и стоимость заказа</h2>
+<p>Уход геометрии добавляет работу. Правка — отдельная операция, она берёт время и деньги. Если после сварки деталь ещё обрабатывают, кривая поверхность может потребовать новой установки на станке. В исходном маршруте этой установки не было.</p>
+<p>Правка, найденная на приёмке, сдвигает срок. Деталь возвращается на доработку, следующая операция ждёт. Эту строку в цене сужают ещё на чертеже. Меньше металла в шве, симметрия, порядок сварки и заранее выбранная фиксация убирают часть правки.</p>
+<p>Ориентиры по операциям собраны на странице <a href="/ceny.html">цены на металлообработку</a>. Вопрос усадки проще закрыть, пока чертёж ещё обсуждают.</p>
+<p>Если чертёж узла уже готов, пришлите его на расчёт. Технолог посмотрит расположение швов и скажет, где деталь может повести, ещё до запуска.</p>
+
+          <h2 id="faq">Частые вопросы</h2>
+          <div class="faq">
+            <details open>
+              <summary>Чем сварочная деформация отличается от остаточных напряжений?</summary>
+              <div class="faq__a"><p>Деформация — изменение формы, его видно. Остаточные напряжения — силы в металле. Они есть и в ровной детали. Жёсткий зажим как раз копит такие силы, пока не даёт детали сдвинуться.</p></div>
+            </details>
+<details>
+              <summary>Можно ли сварить деталь так, чтобы её совсем не повело?</summary>
+              <div class="faq__a"><p>Нет. Местный нагрев и усадка шва есть при дуговой сварке любого металла. Симметрия швов, порядок наложения и оснастка уменьшают уход. Его сверяют с допуском на чертеже. Точные миллиметры усадки заранее почти не считаются.</p></div>
+            </details>
+<details>
+              <summary>Как по чертежу понять, что деталь уйдёт из допуска после сварки?</summary>
+              <div class="faq__a"><p>Смотрят толщину, длину швов и проходят ли швы через центр тяжести сечения. Смотрят, есть ли на чертеже допуск. Точную усадку по чертежу не вычисляют. Для стали её прикидывают по размеру шва и проверяют на детали. Нет допуска — нет и границы, с которой эту прикидку сравнивать.</p></div>
+            </details>
+<details>
+              <summary>Какой способ правки не портит металл?</summary>
+              <div class="faq__a"><p>Одного такого способа нет. Проковка может повредить поверхность и дать наклёп. Пресс для изгиба и угловой деформации этого недостатка лишён, но деталь перегибают дальше цели из-за пружинения. Слишком высокий нагрев меняет металл. Выбор зависит от толщины и от того, что правят: хлопун, изгиб или угол.</p></div>
+            </details>
+<details>
+              <summary>Почему алюминиевые детали коробит сильнее стальных?</summary>
+              <div class="faq__a"><p>У алюминия теплопроводность примерно в пять раз выше, чем у низкоуглеродистой стали. Усадка при затвердевании — около 6% по объёму. Размер при том же нагреве меняется почти вдвое сильнее, чем у стали. Эти факторы могут усиливать коробление. Более толстое сечение его снижает: при двойной толщине алюминий весит около 2/3 стальной детали той же прочности.</p></div>
+            </details>
+          </div>
+
+          <h2 id="istochniki">Источники</h2>
+          <ul class="sources">
+            <li><a href="https://esab.com/us/nam_en/esab-university/articles/12-key-steps-to-minimize-distortion-in-aluminum-welding/" rel="noopener" target="_blank">12 Key Steps to Minimize Distortion in Aluminum Welding</a> — ESAB, усадка и теплопроводность алюминия, катет, разделка, прерывистый шов, порядок сварки</li>
+<li><a href="https://www.twi-global.com/technical-knowledge/job-knowledge/distortion-types-and-causes-033" rel="noopener" target="_blank">Distortion — Types and causes</a> — TWI, шесть форм деформации, усадка углеродисто-марганцевой стали, припуски на сборке</li>
+<li><a href="https://www.twi-global.com/technical-knowledge/job-knowledge/distortion-corrective-techniques-037" rel="noopener" target="_blank">Distortion — corrective techniques</a> — TWI, пресс, проковка, точечный, линейный и клиновой нагрев</li>
+<li><a href="https://www.twi-global.com/technical-knowledge/job-knowledge/distortion-prevention-by-pre-setting-pre-bending-or-use-of-restraint-035" rel="noopener" target="_blank">Distortion — Prevention by pre-setting, pre-bending or use of restraint</a> — TWI, предварительное смещение, зажим и остаточные напряжения</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/sertifikaciya-proizvodstva-i-dopuski.html">
+            <img src="/images/blog/sertifikaciya-proizvodstva-i-dopuski-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Сертификация производства и допуски: что она гарантирует, а что нет</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika.html">
+            <img src="/images/blog/defekty-svarnyh-shvov-vidy-prichiny-profilaktika-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Дефекты сварных швов: какие бывают, откуда берутся и как не допустить брак</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/svarka-payka-skleivanie-metod-soedineniya.html">
+            <img src="/images/blog/svarka-payka-skleivanie-metod-soedineniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Сварка vs пайка vs склеивание: когда какой способ соединения деталей выгоднее</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

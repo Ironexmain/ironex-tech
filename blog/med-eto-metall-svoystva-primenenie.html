@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Медь — это металл: свойства, марки и применение в деталях</title>
+  <meta name="description" content="Как медь проводит ток и тепло, чем отличается от латуни и бронзы. Что указать в чертеже и заявке на изготовление медной детали." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/med-eto-metall-svoystva-primenenie.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/med-eto-metall-svoystva-primenenie.html#article",
+      "headline": "Что такое медь и как её свойства влияют на выбор материала детали",
+      "description": "Как медь проводит ток и тепло, чем отличается от латуни и бронзы. Что указать в чертеже и заявке на изготовление медной детали.",
+      "datePublished": "2026-10-16",
+      "dateModified": "2026-10-16",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/med-eto-metall-svoystva-primenenie.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/med-eto-metall-svoystva-primenenie-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "медь это металл",
+        "свойства меди",
+        "марки меди",
+        "медь латунь бронза отличия",
+        "обработка меди",
+        "детали из меди"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Что такое медь и как её свойства влияют на выбор материала детали"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем катодная медь отличается от прутка для станка?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Катод — продукт электрохимического получения или очистки меди. Пруток — полуфабрикат для дальнейшей обработки. Для заказа прутка нужны его марка, размеры и состояние поставки; сведения о чистоте исходной меди этого не заменяют."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли стягивать медную шину латунным болтом без изоляции?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Одних названий материалов для решения недостаточно. Нужны требования к электрическому контакту, рабочая среда, конструкция соединения и допустимые нагрузки. Вопрос об изоляции нельзя решить отдельно от назначения узла."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли отжиг медной детали после фрезерования?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сам факт фрезерования не служит основанием для отжига. Его назначают, если этого требует дальнейшая обработка или заданное состояние материала. Решение должно учитывать требования к готовой детали."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Когда для детали нужна медь, а когда лучше выбрать сплав" />
+  <meta property="og:description" content="Как медь проводит ток и тепло, чем отличается от латуни и бронзы. Что указать в чертеже и заявке на изготовление медной детали." />
+  <meta property="og:url" content="https://ironex.tech/blog/med-eto-metall-svoystva-primenenie.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/med-eto-metall-svoystva-primenenie-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-16" />
+  <meta property="article:modified_time" content="2026-10-16" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Когда для детали нужна медь, а когда лучше выбрать сплав" />
+  <meta name="twitter:description" content="Как медь проводит ток и тепло, чем отличается от латуни и бронзы. Что указать в чертеже и заявке на изготовление медной детали." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/med-eto-metall-svoystva-primenenie-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое медь и как её свойства влияют на выбор материала детали">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Что такое медь и как её свойства влияют на выбор материала детали</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#med-eto-metall-i-himicheskiy-element-cu">Медь — это металл и химический элемент Cu</a></li>
+<li><a href="#svoystva-medi-tsvet-plotnost-provodimost-i-plastichnost">Свойства меди: цвет, плотность, проводимость и пластичность</a></li>
+<li><a href="#kak-med-okislyaetsya-i-v-kakih-sredah-razrushaetsya">Как медь окисляется и в каких средах разрушается</a></li>
+<li><a href="#marki-medi-i-sostoyanie-postavki-chto-menyaetsya-dlya-zakazc">Марки меди и состояние поставки: что меняется для заказчика</a></li>
+<li><a href="#chem-med-otlichaetsya-ot-latuni-i-bronzy">Чем медь отличается от латуни и бронзы</a></li>
+<li><a href="#gde-primenyayut-med-i-pochemu-vybirayut-imenno-ee">Где применяют медь и почему выбирают именно её</a></li>
+<li><a href="#chto-uchityvat-pri-tochenii-frezerovanii-i-soedinenii-medi">Что учитывать при точении, фрезеровании и соединении меди</a></li>
+<li><a href="#otkuda-poluchayut-med-rudy-rafinirovanie-i-vtorichnoe-syre">Откуда получают медь: руды, рафинирование и вторичное сырьё</a></li>
+<li><a href="#biologicheskaya-rol-medi-pochemu-metall-i-ego-soedineniya-ra">Биологическая роль меди: почему металл и его соединения различают</a></li>
+<li><a href="#chto-ukazat-v-chertezhe-i-zayavke-na-mednuyu-detal">Что указать в чертеже и заявке на медную деталь</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое медь и как её свойства влияют на выбор материала детали">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Что такое медь и как её свойства влияют на выбор материала детали</h1>
+        <p class="lede">Как медь проводит ток и тепло, чем отличается от латуни и бронзы. Что указать в чертеже и заявке на изготовление медной детали.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-10-16">Опубликовано 16 октября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/med-eto-metall-svoystva-primenenie-cover.webp" alt="Что такое медь и как её свойства влияют на выбор материала детали" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Медь — химический элемент Cu и металл красновато-розового цвета. Её используют в проводниках, теплообменниках и деталях для отвода тепла. При выборе материала важны не только проводимость, но и марка меди, состояние заготовки, нагрузки и условия работы узла.</p>
+<h2 id="med-eto-metall-i-himicheskiy-element-cu">Медь — это металл и химический элемент Cu</h2>
+<p>Словом «медь» называют химический элемент и простое вещество — металл. Обозначение Cu указывает на элемент, но не описывает заготовку для станка. Для изготовления детали нужны сведения о составе материала, виде проката и состоянии поставки. Поэтому запись «медь» в чертеже оставляет вопросы, которые придётся решить до закупки.</p>
+<p>Элемент и материал детали — разные уровни описания.</p>
+<p>Латунь и бронза тоже содержат медь, но относятся к сплавам. Их нельзя подставлять вместо медной заготовки только потому, что они похожи по цвету. Замена материала затрагивает проводимость, прочность, обработку и работу соединений.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое медь и как её свойства влияют на выбор материала детали">Прислать чертёж на почту</a>
+</div>
+<h2 id="svoystva-medi-tsvet-plotnost-provodimost-i-plastichnost">Свойства меди: цвет, плотность, проводимость и пластичность</h2>
+<p><img alt="Большая медная катушка антенны радиотелеграфной станции в Такертоне" decoding="async" height="736" loading="lazy" src="/images/blog/med-eto-metall-svoystva-primenenie-1.webp" width="1000"/></p>
+<p><em>Медная катушка антенны станции в Такертоне, построенной компанией Telefunken в 1912 году. Фото: <a href="https://commons.wikimedia.org/wiki/File:Large_antenna_loading_coil.jpg" rel="nofollow noopener" target="_blank">Emil A. Mayer</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Для выбора медной детали прежде всего оценивают проводимость, пластичность и поведение под нагрузкой. Медь проводит электрический ток и тепло, поэтому подходит для проводников и теплоотводов. Пластичность помогает при формовании, но требует внимания к закреплению при обработке. Цвет поверхности полезен для осмотра, однако не заменяет сведения о марке.</p>
+<p>Плотность нужна для расчёта массы по объёму модели. Электропроводность описывает перенос тока, а теплопроводность — перенос тепла. Удельное электрическое сопротивление обратно электропроводности.</p>
+<p>Для расчёта нужны данные на выбранный материал с указанием условий измерения.</p>
+<table><thead><tr><th>Свойство</th><th>Где оно важно</th><th>Что учитывать при проектировании</th></tr></thead><tbody><tr><td>Электропроводность</td><td>Шины, перемычки, контакты</td><td>Состав материала, сечение, нагрев и соединения</td></tr><tr><td>Теплопроводность</td><td>Теплоотводы, теплообменные детали</td><td>Геометрию, тепловой контакт и условия охлаждения</td></tr><tr><td>Пластичность</td><td>Гнутые и формованные элементы</td><td>Состояние заготовки и допустимую деформацию</td></tr><tr><td>Плотность</td><td>Детали с ограничением по массе</td><td>Объём детали и данные на материал</td></tr><tr><td>Состояние поверхности</td><td>Контактные и декоративные поверхности</td><td>Загрязнения, окисление и требования к покрытию</td></tr></tbody></table>
+<p>Твёрдость нельзя назначить словом «медь». Она зависит в том числе от состояния материала: отожжённую и нагартованную заготовки рассматривают отдельно.</p>
+<h2 id="kak-med-okislyaetsya-i-v-kakih-sredah-razrushaetsya">Как медь окисляется и в каких средах разрушается</h2>
+<p>Поверхность меди меняется при контакте с окружающей средой: свежий металл и заготовка после хранения могут выглядеть по-разному. Потемнение само по себе не отвечает на вопрос о пригодности детали. Для оценки нужны условия эксплуатации и требования к поверхности, особенно если через неё проходит ток или тепло.</p>
+<p>Внешний вид не заменяет проверку контакта.</p>
+<p>Оксидную плёнку и патину не стоит считать одинаковыми состояниями поверхности. Их состав и влияние на изделие зависят от среды. Для декоративного элемента изменение цвета может быть допустимо, а для контактной площадки требуется отдельное решение.</p>
+<p>При подборе материала учитывают влажность, рабочие жидкости, температуру и соседние металлы. Сведения о стойкости в одной среде нельзя переносить на другую. Для химически нагруженной детали основанием выбора служат данные о совместимости с конкретной рабочей средой.</p>
+<h2 id="marki-medi-i-sostoyanie-postavki-chto-menyaetsya-dlya-zakazc">Марки меди и состояние поставки: что меняется для заказчика</h2>
+<p><img alt="Конец окисленной медной трубы" decoding="async" height="1000" loading="lazy" src="/images/blog/med-eto-metall-svoystva-primenenie-2.webp" width="1000"/></p>
+<p><em>Медная труба со следами окисления. Фото: <a href="https://commons.wikimedia.org/wiki/File:Pipe%27s_end.jpg" rel="nofollow noopener" target="_blank">Stephane Gaudry</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Марка описывает состав материала, а состояние поставки — результат его обработки. Эти сведения дополняют друг друга: одинаковое обозначение марки ещё не означает одинаковое поведение заготовок при гибке и резании. В заявке отдельно указывают марку, вид полуфабриката и состояние, а требования сверяют с документацией на выбранный прокат.</p>
+<p>Отжиг и нагартовка не заменяют выбор химического состава.</p>
+<p>Обозначения состояния следует брать из документации на конкретный полуфабрикат. Переносить расшифровку букв с листа на пруток без проверки нельзя. Если поставщик предлагает замену, сравнивают не только название марки, но и подтверждённые характеристики материала.</p>
+<p>Для токоведущей детали важна проводимость. Для последующего нагрева и соединения — пригодность материала к выбранной технологии. Одной записи «чистая медь» для такого выбора недостаточно.</p>
+<h2 id="chem-med-otlichaetsya-ot-latuni-i-bronzy">Чем медь отличается от латуни и бронзы</h2>
+<p>Медь, латунь и бронза — разные материалы, хотя медь входит в состав всех трёх. В латунях основной легирующий элемент — цинк. Бронзы образуют отдельную группу медных сплавов; они не обязательно содержат олово. Выбор между ними зависит от функции детали, нагрузки, среды и способа изготовления.</p>
+<p>Универсального победителя здесь нет.</p>
+<table><thead><tr><th>Материал</th><th>Что уточняют перед выбором</th><th>Почему нельзя выбрать только по названию</th></tr></thead><tbody><tr><td>Медь</td><td>Марку, состояние, проводимость</td><td>Заготовки различаются по составу и состоянию</td></tr><tr><td>Латунь</td><td>Марку, состав, требования к обработке и прочности</td><td>Свойства разных латуней не совпадают</td></tr><tr><td>Бронза</td><td>Вид сплава, марку, условия трения и нагрузки</td><td>Название группы не описывает свойства конкретного сплава</td></tr></tbody></table>
+<p>Для шины или теплоотвода сравнивают электрические и тепловые характеристики. Для втулки, резьбовой детали или элемента пары трения нужны другие критерии. Сравнение имеет смысл только для конкретных марок и состояний.</p>
+<p>Цвет не подтверждает марку сплава.</p>
+<h2 id="gde-primenyayut-med-i-pochemu-vybirayut-imenno-ee">Где применяют медь и почему выбирают именно её</h2>
+<p>Медь используют там, где нужны перенос электрического тока, отвод тепла или формование материала. К таким изделиям относятся шины, перемычки, контакты, теплоотводы и трубные элементы. Но пригодность материала ещё не доказывает работоспособность узла: её оценивают вместе с геометрией, соединениями, нагрузкой и условиями эксплуатации.</p>
+<p>У токоведущей детали проверяют сечение, контактные поверхности и допустимый нагрев. У теплоотвода — путь тепла от источника к охлаждаемой поверхности. У гнутого элемента — состояние заготовки и требования к форме после обработки.</p>
+<p>Материал работает вместе с конструкцией.</p>
+<p>Если масса ограничена, полезно сравнить <a href="/blog/alyuminiy-eto-metall-i-ego-svoystva.html">свойства алюминия и выбор материала для детали</a>. Сопоставлять следует готовые конструктивные решения: одинаковый наружный размер ещё не означает одинаковую работу деталей.</p>
+<h2 id="chto-uchityvat-pri-tochenii-frezerovanii-i-soedinenii-medi">Что учитывать при точении, фрезеровании и соединении меди</h2>
+<p>При обработке меди внимание уделяют закреплению, отводу стружки и состоянию кромок. Пластичная заготовка может деформироваться под прижимом, а после резания на детали могут оставаться заусенцы. Технологию выбирают по марке, состоянию материала, геометрии и требованиям чертежа. Назначать режимы только по слову «медь» недостаточно.</p>
+<p>У тонкой втулки проверяют деформацию от зажима. У пластины — опору при обработке плоскостей. Для отверстий и пазов заранее определяют, какие кромки доступны для удаления заусенцев.</p>
+<p>Требования должны быть проверяемыми.</p>
+<p>В задании на <a href="/frezerovka.html">фрезерные работы по металлу</a> указывают допуски, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> и состояние кромок. Если следы прижима недопустимы, это тоже отражают в документации. Связь закрепления и отклонений разобрана в статье про <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">причины брака при обработке металла</a>.</p>
+<p>Пайку и сварку рассматривают как отдельные технологические операции. Способ соединения, материалы и последующий контроль согласуют для выбранной марки. Пригодность заготовки к резанию не подтверждает её пригодность к любому способу нагрева.</p>
+<h2 id="otkuda-poluchayut-med-rudy-rafinirovanie-i-vtorichnoe-syre">Откуда получают медь: руды, рафинирование и вторичное сырьё</h2>
+<p>Медь получают из рудного и вторичного сырья. Однако происхождение металла не заменяет описание материала для детали. Между сырьём и заготовкой находятся извлечение, очистка и изготовление полуфабриката. Для заказчика важны характеристики поставленного прутка, листа или трубы, а не только сведения о том, откуда получена медь.</p>
+<p>Катод и пруток — разные виды продукции.</p>
+<p>Катодная медь связана с электрохимическими процессами получения или очистки металла. Пруток — полуфабрикат с заданными размерами и состоянием. Требования к одному продукту нельзя автоматически переносить на другой.</p>
+<p>Для вторичного сырья действует тот же принцип. Указание «из лома» не подтверждает и не опровергает пригодность готового материала. Основанием приёмки служит соответствие поставки требованиям заказа и сопроводительным документам.</p>
+<h2 id="biologicheskaya-rol-medi-pochemu-metall-i-ego-soedineniya-ra">Биологическая роль меди: почему металл и его соединения различают</h2>
+<p>Медь нужна организму как микроэлемент: она участвует в выработке энергии, обмене железа и синтезе соединительной ткани. Эти функции перечислены в справке NIH Office of Dietary Supplements. Они относятся к биологическим процессам и не служат основанием для выбора материала промышленной детали или оценки безопасности работы с ним.</p>
+<p>Пищевая потребность и производственное воздействие — разные вопросы.</p>
+<p>Металлическое изделие, соль меди и медь в составе биомолекулы нельзя рассматривать как взаимозаменяемые вещества. Ссылка на роль микроэлемента ничего не говорит о допустимости контакта с конкретной пылью или рабочим раствором.</p>
+<p>Поэтому сведения о питании не подменяют требования к производственному процессу.</p>
+<h2 id="chto-ukazat-v-chertezhe-i-zayavke-na-mednuyu-detal">Что указать в чертеже и заявке на медную деталь</h2>
+<p>Для расчёта изготовления нужны сведения о материале, геометрии и требованиях к готовой детали. Если марка ещё не выбрана, в задании описывают функцию изделия, нагрузки и рабочую среду. Это позволяет обсудить материал до закупки заготовки и отделить обязательные характеристики от тех, которые допускают согласование с изготовителем.</p>
+<p>В комплект исходных данных входят:</p>
+<ul><li>Марка материала и документ, по которому его заказывают.</li><li>Вид полуфабриката и состояние поставки.</li><li>Чертёж с размерами, допусками и количеством деталей.</li><li>Шероховатость рабочих поверхностей.</li><li>Требования к кромкам, заусенцам и следам закрепления.</li><li>Требования к проводимости, покрытиям и соединениям, если они важны для узла.</li><li>Состав сопроводительных документов на материал и готовую партию.</li></ul>
+<p>Неопределённости лучше обозначить прямо. Например, отсутствие выбранной марки — повод согласовать её, а не разрешение изготовителю заменить материал по своему усмотрению.</p>
+<p>Передайте чертёж и требования на <a href="/">изготовление деталей по чертежам</a>, чтобы согласовать материал и технологию обработки.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем катодная медь отличается от прутка для станка?</summary>
+<div class="faq__a"><p>Катод — продукт электрохимического получения или очистки меди. Пруток — полуфабрикат для дальнейшей обработки. Для заказа прутка нужны его марка, размеры и состояние поставки; сведения о чистоте исходной меди этого не заменяют.</p></div>
+</details>
+<details>
+<summary>Можно ли стягивать медную шину латунным болтом без изоляции?</summary>
+<div class="faq__a"><p>Одних названий материалов для решения недостаточно. Нужны требования к электрическому контакту, рабочая среда, конструкция соединения и допустимые нагрузки. Вопрос об изоляции нельзя решить отдельно от назначения узла.</p></div>
+</details>
+<details>
+<summary>Нужен ли отжиг медной детали после фрезерования?</summary>
+<div class="faq__a"><p>Сам факт фрезерования не служит основанием для отжига. Его назначают, если этого требует дальнейшая обработка или заданное состояние материала. Решение должно учитывать требования к готовой детали.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.rsc.org/periodic-table/element/29/copper" rel="noopener" target="_blank">Copper — Element information, properties and uses</a> — Royal Society of Chemistry.</li>
+<li><a href="https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Cu" rel="noopener" target="_blank">Atomic Weights and Isotopic Compositions for Copper</a> — NIST.</li>
+<li><a href="https://ods.od.nih.gov/factsheets/Copper-HealthProfessional/" rel="noopener" target="_blank">Copper — Health Professional Fact Sheet</a> — NIH Office of Dietary Supplements.</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/stal-sostav-svoystva-vidy.html">
+            <img src="/images/blog/stal-sostav-svoystva-vidy-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Что такое сталь и как её состав влияет на свойства детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/stal-d2.html">
+            <img src="/images/blog/stal-d2-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Что такое сталь D2 и для каких деталей она подходит</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/alyuminiy-eto-metall-i-ego-svoystva.html">
+            <img src="/images/blog/alyuminiy-eto-metall-i-ego-svoystva-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Что такое алюминий и как его свойства влияют на изготовление деталей</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое медь и как её свойства влияют на выбор материала детали">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

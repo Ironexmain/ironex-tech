@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как режим закалки стали определяет структуру и твёрдость детали</title>
+      <link>https://ironex.tech/blog/tehnologiya-zakalki-stalej.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/tehnologiya-zakalki-stalej.html</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как выбрать температуру, выдержку и охлаждение при закалке стали. Связь марки, сечения и структуры с твёрдостью; что задать в чертеже и проверить при приёмке.</description>
+    </item>
+    <item>
+      <title>Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже</title>
+      <link>https://ironex.tech/blog/svarochnye-deformacii-pochemu-vedet-detal.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/svarochnye-deformacii-pochemu-vedet-detal.html</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Деталь повело после сварки: почему шов коробит металл, как на усадку влияют сплав и толщина и что заложить в чертёж, порядок сварки и оснастку.</description>
+    </item>
+    <item>
+      <title>Что такое медь и как её свойства влияют на выбор материала детали</title>
+      <link>https://ironex.tech/blog/med-eto-metall-svoystva-primenenie.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/med-eto-metall-svoystva-primenenie.html</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как медь проводит ток и тепло, чем отличается от латуни и бронзы. Что указать в чертеже и заявке на изготовление медной детали.</description>
+    </item>
     <item>
       <title>Из чего складывается стоимость изготовления металлических деталей</title>
       <link>https://ironex.tech/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sat, 10 Oct 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Как выбрать фрезерную обработку под геометрию детали, согласовать допуски и проверить результат. Разбираем число осей, ограничения, расчёт и приёмку.</description>
-    </item>
-    <item>
-      <title>Что такое алюминий и как его свойства влияют на изготовление деталей</title>
-      <link>https://ironex.tech/blog/alyuminiy-eto-metall-i-ego-svoystva.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/alyuminiy-eto-metall-i-ego-svoystva.html</guid>
-      <pubDate>Sat, 10 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Алюминий — металл. Разбираем его физические и химические свойства, отличия от сплавов и стали, ограничения коррозионной стойкости и требования к заказу детали.</description>
-    </item>
-    <item>
-      <title>Срочное производство деталей по чертежу: как ускорить заказ и не потерять качество</title>
-      <link>https://ironex.tech/blog/srochnoe-proizvodstvo-ekspress-zakaz.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/srochnoe-proizvodstvo-ekspress-zakaz.html</guid>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как работает срочное производство деталей по чертежу: уровни срочности, наценка за скорость, ограничения и контроль качества экспресс-заказа.</description>
-    </item>
-    <item>
-      <title>Как создать проект нестандартной детали: путь от идеи до пробной партии</title>
-      <link>https://ironex.tech/blog/sozdat-proekt-nestandartnoy-detali.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/sozdat-proekt-nestandartnoy-detali.html</guid>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Из чего состоит проект нестандартной детали: эскиз, модель, чертёж, допуски, материал. Что передать подрядчику, чтобы получить расчёт без уточнений.</description>
     </item>
   </channel>
 </rss>
