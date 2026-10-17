@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Твёрдое анодирование: чем отличается от обычного и когда оно действительно нужно</title>
+      <link>https://ironex.tech/blog/tverdoe-anodirovanie-chem-otlichaetsya-ot-obychnogo.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/tverdoe-anodirovanie-chem-otlichaetsya-ot-obychnogo.html</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Твёрдое анодирование даёт толстый износостойкий слой, но меняет размеры детали. Разбираем отличия от обычного, толщину и что указать в чертеже.</description>
+    </item>
+    <item>
+      <title>Титан или алюминий: какой металл выбрать для детали и во сколько обойдётся её изготовление</title>
+      <link>https://ironex.tech/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali.html</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Титан или алюминий для детали: сравнение по весу, прочности, температуре и цене обработки на ЧПУ, плюс матрица выбора по условиям работы.</description>
+    </item>
+    <item>
+      <title>Гидроксид алюминия Al(OH)₃: свойства, реакции и роль в обработке металла</title>
+      <link>https://ironex.tech/blog/gidroksid-alyuminiya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/gidroksid-alyuminiya.html</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Чем Al(OH)₃ отличается от алюминия и глинозёма, как реагирует с кислотами и щелочами и почему образует осадок в ванне травления.</description>
+    </item>
     <item>
       <title>Как режим закалки стали определяет структуру и твёрдость детали</title>
       <link>https://ironex.tech/blog/tehnologiya-zakalki-stalej.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Какие параметры указать для изготовления резьбовых шпилек: резьба каждого конца, материал, допуски и покрытие. Чек-лист чертежа и порядок приёмки партии.</description>
-    </item>
-    <item>
-      <title>Как задать требования к направляющим по чертежу и проверить готовые детали</title>
-      <link>https://ironex.tech/blog/izgotovlenie-napravlyayushchih-po-chertezham.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/izgotovlenie-napravlyayushchih-po-chertezham.html</guid>
-      <pubDate>Sun, 11 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Какие требования задать к рабочим поверхностям направляющих: базы, геометрические допуски, шероховатость, обработка и согласованный порядок приёмки.</description>
-    </item>
-    <item>
-      <title>Как подготовить чертёж кронштейна, чтобы деталь подошла к узлу</title>
-      <link>https://ironex.tech/blog/izgotovlenie-kronshtejnov-po-chertezham.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/izgotovlenie-kronshtejnov-po-chertezham.html</guid>
-      <pubDate>Sat, 10 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Что указать в чертеже кронштейна: материал, толщину, базы отверстий, гибы, сварку и покрытие. Как согласовать сборку и приёмку до изготовления.</description>
-    </item>
-    <item>
-      <title>Фрезерная обработка на станках с ЧПУ: как выбрать маршрут изготовления детали</title>
-      <link>https://ironex.tech/blog/frezernaya-obrabotka-chpu-po-chertezham.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/frezernaya-obrabotka-chpu-po-chertezham.html</guid>
-      <pubDate>Sat, 10 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Как выбрать фрезерную обработку под геометрию детали, согласовать допуски и проверить результат. Разбираем число осей, ограничения, расчёт и приёмку.</description>
     </item>
   </channel>
 </rss>
