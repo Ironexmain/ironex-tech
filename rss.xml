@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 17 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Единицы измерения: как читать обозначения и переводить величины</title>
+      <link>https://ironex.tech/blog/edinicy-izmereniya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/edinicy-izmereniya.html</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Основные и производные единицы СИ, приставки, правила записи и перевод величин. Как согласовать единицы в чертеже, расчёте и заказе деталей.</description>
+    </item>
+    <item>
+      <title>Из каких металлов состоит бронза и как выбрать состав для детали</title>
+      <link>https://ironex.tech/blog/bronza-eto-splav-kakih-metallov.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/bronza-eto-splav-kakih-metallov.html</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Из каких металлов состоит бронза, чем отличается от латуни и как добавки влияют на свойства. Разбираем обозначения, обработку и выбор материала для детали.</description>
+    </item>
+    <item>
+      <title>Как анодируют алюминий и что учесть при заказе цветного покрытия</title>
+      <link>https://ironex.tech/blog/anodirovanie-alyuminiya.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/anodirovanie-alyuminiya.html</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как выбирают процесс анодирования алюминия, получают цветное покрытие и проверяют результат. Что указать в чертеже и заявке на обработку.</description>
+    </item>
     <item>
       <title>Твёрдое анодирование: чем отличается от обычного и когда оно действительно нужно</title>
       <link>https://ironex.tech/blog/tverdoe-anodirovanie-chem-otlichaetsya-ot-obychnogo.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Mon, 12 Oct 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Характеристики стали 45: как связать ГОСТ, состояние заготовки, закалку и отпуск с требованиями к детали. Что указать в чертеже и проверить при приёмке.</description>
-    </item>
-    <item>
-      <title>Как выбрать листогибочный станок под ваши детали и сравнить модели</title>
-      <link>https://ironex.tech/blog/listogibochnyj-stanok-modeli-i-harakteristiki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/listogibochnyj-stanok-modeli-i-harakteristiki.html</guid>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Как сравнить листогибочные станки по материалу, геометрии деталей, оснастке и затратам на запуск. Какие характеристики проверить в паспорте и на пробной гибке.</description>
-    </item>
-    <item>
-      <title>Как выбрать аппарат аргонодуговой сварки под материалы и задачи мастерской</title>
-      <link>https://ironex.tech/blog/kupit-apparat-argonodugovoy-svarki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kupit-apparat-argonodugovoy-svarki.html</guid>
-      <pubDate>Sun, 11 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Как выбрать TIG DC или AC/DC: сравнение моделей, условия измерения ПВ, питание и комплектация. Что проверить до покупки и включить в стоимость поста.</description>
-    </item>
-    <item>
-      <title>Как заказать резьбовые шпильки по чертежу и согласовать требования</title>
-      <link>https://ironex.tech/blog/izgotovlenie-rezbovyh-shpilek-po-chertezhu.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/izgotovlenie-rezbovyh-shpilek-po-chertezhu.html</guid>
-      <pubDate>Sun, 11 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Какие параметры указать для изготовления резьбовых шпилек: резьба каждого конца, материал, допуски и покрытие. Чек-лист чертежа и порядок приёмки партии.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Единицы измерения: таблицы величин, обозначения и перевод</title>
+  <meta name="description" content="Основные и производные единицы СИ, приставки, правила записи и перевод величин. Как согласовать единицы в чертеже, расчёте и заказе деталей." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/edinicy-izmereniya.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/edinicy-izmereniya.html#article",
+      "headline": "Единицы измерения: как читать обозначения и переводить величины",
+      "description": "Основные и производные единицы СИ, приставки, правила записи и перевод величин. Как согласовать единицы в чертеже, расчёте и заказе деталей.",
+      "datePublished": "2026-10-18",
+      "dateModified": "2026-10-18",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/edinicy-izmereniya.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/edinicy-izmereniya-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "единицы измерения",
+        "основные единицы измерения",
+        "система СИ",
+        "перевод единиц измерения",
+        "приставки единиц измерения",
+        "единицы измерения ОКЕИ"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Единицы измерения: как читать обозначения и переводить величины"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как перевести градусы Цельсия в кельвины?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "К числовому значению температуры в градусах Цельсия прибавляют 273,15. Например, 0 °C соответствует 273,15 K. Для разности температур сдвиг не нужен: изменение на 10 °C равно изменению на 10 K. Связь температурных шкал приведена в описании температуры Цельсия в брошюре СИ [1]."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если на чертеже часть размеров указана в дюймах?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При пересчёте используют точное соотношение: 1 международный дюйм = 25,4 мм. В приложении B к руководству NIST SP 811 приведён коэффициент перевода дюйма в метр: 2,54 × 10⁻² [2]. Например, 50 дюймов = 1270 мм. Обозначение дюймовой резьбы нельзя заменять простым пересчётом числа: сначала нужно определить, что именно обозначено на чертеже."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где посмотреть приставки ронна и кветта, если их нет в таблице?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В полном перечне приставок брошюры СИ [1]. Там ронна обозначена символом R и множителем 10²⁷, кветта — Q и множителем 10³⁰. Таблица в этой статье сокращена: она охватывает приставки, которые используются в приведённых расчётах."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Метры, миллиметры и коды ОКЕИ: как не перепутать единицы" />
+  <meta property="og:description" content="Основные и производные единицы СИ, приставки, правила записи и перевод величин. Как согласовать единицы в чертеже, расчёте и заказе деталей." />
+  <meta property="og:url" content="https://ironex.tech/blog/edinicy-izmereniya.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/edinicy-izmereniya-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-18" />
+  <meta property="article:modified_time" content="2026-10-18" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Метры, миллиметры и коды ОКЕИ: как не перепутать единицы" />
+  <meta name="twitter:description" content="Основные и производные единицы СИ, приставки, правила записи и перевод величин. Как согласовать единицы в чертеже, расчёте и заказе деталей." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/edinicy-izmereniya-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Единицы измерения: как читать обозначения и переводить величины">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Единицы измерения: как читать обозначения и переводить величины</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#kak-chitat-chislo-s-edinitsey-izmereniya">Как читать число с единицей измерения</a></li>
+<li><a href="#sem-osnovnyh-edinits-si-i-ih-oboznacheniya">Семь основных единиц СИ и их обозначения</a></li>
+<li><a href="#proizvodnye-i-vnesistemnye-edinitsy-chto-vstrechaetsya-v-ras">Производные и внесистемные единицы: что встречается в расчётах</a></li>
+<li><a href="#pristavki-kak-razlichat-milli-mikro-kilo-i-mega">Приставки: как различать милли-, микро-, кило- и мега-</a></li>
+<li><a href="#kak-perevodit-lineynye-kvadratnye-i-kubicheskie-edinitsy">Как переводить линейные, квадратные и кубические единицы</a></li>
+<li><a href="#kak-zapisyvat-edinitsy-v-tekste-formulah-i-na-chertezhe">Как записывать единицы в тексте, формулах и на чертеже</a></li>
+<li><a href="#si-i-okei-chem-edinitsa-otlichaetsya-ot-ee-koda">СИ и ОКЕИ: чем единица отличается от её кода</a></li>
+<li><a href="#kakie-edinitsy-ukazyvat-pri-zakaze-detaley">Какие единицы указывать при заказе деталей</a></li>
+<li><a href="#kak-proverit-edinitsy-i-nayti-oshibku-v-raschete">Как проверить единицы и найти ошибку в расчёте</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Единицы измерения: как читать обозначения и переводить величины">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Единицы измерения: как читать обозначения и переводить величины</h1>
+        <p class="lede">Основные и производные единицы СИ, приставки, правила записи и перевод величин. Как согласовать единицы в чертеже, расчёте и заказе деталей.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-10-18">Опубликовано 18 октября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/edinicy-izmereniya-cover.webp" alt="Единицы измерения: как читать обозначения и переводить величины" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+          <p class="prose__lede">Единицы измерения помогают прочитать значение величины: длины, массы, времени или давления. При переводе учитывают приставки, степени и состав единицы. В заказе деталей нужно согласовать размеры, массу и количество между чертежом, расчётом и заявкой. Ошибка в обозначении может изменить смысл числа.</p>
+
+          <h2 id="kak-chitat-chislo-s-edinitsey-izmereniya">Как читать число с единицей измерения</h2>
+<p>В записи «125 мм» нужно различать величину, числовое значение и единицу. Величина здесь — длина, числовое значение — 125, единица — миллиметр. Если заменить миллиметры метрами и оставить то же число, получится другая длина. Поэтому размер нельзя переносить в заявку отдельно от единицы или пояснения, в каких единицах составлен чертёж.</p>
+<p>125 мм, 12,5 см и 0,125 м описывают один отрезок.</p>
+<p>В формуле буква обозначает величину, а символ после числа — единицу. Например, в записи <em>l</em> = 125 мм буква <em>l</em> обозначает длину. Она не заменяет «мм».</p>
+<p>Сравнивать числовые значения удобно после перевода в одну единицу. Так, 0,125 м = 125 мм. Числа различаются, длина остаётся прежней.</p>
+<p>В заявке полезно сохранять связку «параметр — значение — единица». Запись «длина 125 мм» понятнее отдельного числа 125 в письме без заголовков.</p>
+<div class="cta ui" id="cta" data-cta="inline">
+            <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+            <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+            <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Единицы измерения: как читать обозначения и переводить величины">Прислать чертёж на почту</a>
+          </div>
+<h2 id="sem-osnovnyh-edinits-si-i-ih-oboznacheniya">Семь основных единиц СИ и их обозначения</h2>
+<p><img src="/images/blog/edinicy-izmereniya-1.webp" alt="Платино-иридиевый цилиндр справа — эталон килограмма № 20" width="1000" height="481" loading="lazy" decoding="async"></p>
+<p><em>Килограмм № 20 — копия международного прототипа килограмма, служившая основным эталоном массы в США. Фото: <a href="https://commons.wikimedia.org/wiki/File:MassStandards_005.jpg" rel="nofollow noopener" target="_blank">National Institute of Standards and Technology</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>В Международной системе единиц СИ семь основных единиц. Они соответствуют времени, длине, массе, силе электрического тока, термодинамической температуре, количеству вещества и силе света. Их названия и международные обозначения приведены в таблице основных единиц брошюры СИ [1]. Русские обозначения ниже даны рядом с международными, чтобы их было проще сопоставить при чтении документов.</p>
+<table><thead><tr><th>Величина</th><th>Единица</th><th>Русское обозначение</th><th>Международное обозначение</th></tr></thead><tbody><tr><td>Длина</td><td>метр</td><td>м</td><td>m</td></tr><tr><td>Масса</td><td>килограмм</td><td>кг</td><td>kg</td></tr><tr><td>Время</td><td>секунда</td><td>с</td><td>s</td></tr><tr><td>Сила электрического тока</td><td>ампер</td><td>А</td><td>A</td></tr><tr><td>Термодинамическая температура</td><td>кельвин</td><td>К</td><td>K</td></tr><tr><td>Количество вещества</td><td>моль</td><td>моль</td><td>mol</td></tr><tr><td>Сила света</td><td>кандела</td><td>кд</td><td>cd</td></tr></tbody></table>
+<p>Килограмм — основная единица массы, хотя его название содержит приставку «кило». Кратные и дольные единицы массы образуют от грамма. Например, миллиграмм обозначают «мг», международный символ — mg. Это исключение разобрано в разделе брошюры СИ о десятичных кратных и дольных единицах [1].</p>
+<p>Символы единиц пишут без точки как знака сокращения. Точка в конце предложения при этом остаётся.</p>
+<p>Латинские A и K внешне похожи на русские «А» и «К». При подготовке двуязычной спецификации стоит проверить символы во всём выражении, а не заменять отдельные буквы по внешнему виду.</p>
+<h2 id="proizvodnye-i-vnesistemnye-edinitsy-chto-vstrechaetsya-v-ras">Производные и внесистемные единицы: что встречается в расчётах</h2>
+<p>Производные единицы СИ выражают через основные. Единица площади получается из произведения двух единиц длины, единица скорости — из отношения длины ко времени. Некоторые производные единицы имеют специальные названия: ньютон, паскаль, джоуль, ватт. Их состав приведён в таблицах производных единиц брошюры СИ [1]. Название не меняет связи между величинами.</p>
+<table><thead><tr><th>Величина</th><th>Единица</th><th>Обозначение</th><th>Через другие единицы СИ</th></tr></thead><tbody><tr><td>Площадь</td><td>квадратный метр</td><td>м²</td><td>м·м</td></tr><tr><td>Объём</td><td>кубический метр</td><td>м³</td><td>м·м·м</td></tr><tr><td>Скорость</td><td>метр в секунду</td><td>м/с</td><td>м·с⁻¹</td></tr><tr><td>Ускорение</td><td>метр на секунду в квадрате</td><td>м/с²</td><td>м·с⁻²</td></tr><tr><td>Сила</td><td>ньютон</td><td>Н</td><td>кг·м·с⁻²</td></tr><tr><td>Давление</td><td>паскаль</td><td>Па</td><td>Н/м²</td></tr><tr><td>Энергия</td><td>джоуль</td><td>Дж</td><td>Н·м</td></tr><tr><td>Мощность</td><td>ватт</td><td>Вт</td><td>Дж/с</td></tr></tbody></table>
+<p>Метр — основная единица, ньютон — производная со специальным названием. Миллиметр и мегапаскаль образованы с помощью приставок.</p>
+<p>Минута, час, литр и тонна не входят в СИ, но перечислены в брошюре среди внесистемных единиц, допускаемых к применению с СИ [1]. Там указаны соотношения: 1 мин = 60 с, 1 ч = 3600 с, 1 л = 1 дм³, 1 т = 1000 кг.</p>
+<p>Перед подстановкой в формулу единицы согласуют.</p>
+<p>Например, объём в кубических сантиметрах нельзя умножать на плотность в килограммах на кубический метр без пересчёта. Сначала нужно привести единицы объёма к одной шкале.</p>
+<h2 id="pristavki-kak-razlichat-milli-mikro-kilo-i-mega">Приставки: как различать милли-, микро-, кило- и мега-</h2>
+<p><img src="/images/blog/edinicy-izmereniya-2.webp" alt="Аналоговый манометр Beuchat для дайвинга со шкалой до 400 бар" width="1000" height="1365" loading="lazy" decoding="async"></p>
+<p><em>Манометр Beuchat для дайвинга: давление указано в барах, предел шкалы — 400 бар. Фото: <a href="https://commons.wikimedia.org/wiki/File:Finimeter.JPG" rel="nofollow noopener" target="_blank">Thomei08 20px|ich bin ein Kiwi</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Приставка задаёт десятичный множитель единицы. «Милли» означает множитель 10⁻³, «кило» — 10³. Поэтому миллиметр составляет тысячную долю метра, а километр содержит тысячу метров. Названия, символы и множители приставок приведены в разделе брошюры СИ о десятичных кратных и дольных единицах [1]. В таблице ниже собраны приставки для примеров этой статьи.</p>
+<table><thead><tr><th>Приставка</th><th>Русский символ</th><th>Международный символ</th><th>Множитель</th></tr></thead><tbody><tr><td>гига</td><td>Г</td><td>G</td><td>10⁹</td></tr><tr><td>мега</td><td>М</td><td>M</td><td>10⁶</td></tr><tr><td>кило</td><td>к</td><td>k</td><td>10³</td></tr><tr><td>санти</td><td>с</td><td>c</td><td>10⁻²</td></tr><tr><td>милли</td><td>м</td><td>m</td><td>10⁻³</td></tr><tr><td>микро</td><td>мк</td><td>µ</td><td>10⁻⁶</td></tr><tr><td>нано</td><td>н</td><td>n</td><td>10⁻⁹</td></tr></tbody></table>
+<p>Регистр меняет смысл символа.</p>
+<p>Международное m перед символом единицы означает «милли», а M — «мега». Например, mN — миллиньютон, MN — меганьютон. Отношение этих единиц равно 10⁹: это результат деления 10⁶ на 10⁻³.</p>
+<p>Приставку пишут слитно с обозначением единицы. Степень относится ко всему обозначению вместе с приставкой. Поэтому см² означает квадратный сантиметр: (10⁻² м)² = 10⁻⁴ м².</p>
+<p>Кило обозначают строчной буквой: k в международной записи, «к» в русской. Международный символ K обозначает кельвин.</p>
+<h2 id="kak-perevodit-lineynye-kvadratnye-i-kubicheskie-edinitsy">Как переводить линейные, квадратные и кубические единицы</h2>
+<p>При переводе сохраняется сама величина, меняются единица и числовое значение. Для длины коэффициент пересчёта используют один раз, для площади возводят в квадрат, для объёма — в куб. Это следует из состава единиц: квадратный метр — произведение двух метров, кубический — трёх. Одинаковый коэффициент для длины, площади и объёма даст разные ошибки.</p>
+<p>Порядок пересчёта удобно проверять по шагам:</p>
+<ol><li>Запишите исходную единицу и единицу результата.</li><li>Выразите исходную единицу через конечную.</li><li>Учтите степень единицы.</li><li>Умножьте число на полученный коэффициент.</li><li>Проверьте обратным переводом.</li></ol>
+<p>Вот расчёты для условных значений:</p>
+<table><thead><tr><th>Исходное значение</th><th>Пересчёт</th><th>Результат</th></tr></thead><tbody><tr><td>250 мм</td><td>250 × 10⁻³ м</td><td>0,25 м</td></tr><tr><td>250 мм²</td><td>250 × (10⁻³)² м²</td><td>0,00025 м²</td></tr><tr><td>250 мм³</td><td>250 × (10⁻³)³ м³</td><td>0,00000025 м³</td></tr></tbody></table>
+<p>Для давления можно вывести полезное равенство. Паскаль равен ньютону на квадратный метр. Поскольку 1 мм² = 10⁻⁶ м², получаем: 1 Н/мм² = 10⁶ Н/м² = 1 МПа.</p>
+<p>В составной единице отдельно переводят числитель и знаменатель. Например, 72 км/ч = 72 000 м / 3600 с = 20 м/с. Коэффициент перевода километров нельзя применить ко всей дроби, забыв о часах.</p>
+<p>Обратная проверка возвращает исходное значение: 20 × 3600 / 1000 = 72 км/ч.</p>
+<h2 id="kak-zapisyvat-edinitsy-v-tekste-formulah-i-na-chertezhe">Как записывать единицы в тексте, формулах и на чертеже</h2>
+<p>В тексте и формулах число отделяют от символа единицы пробелом: 25 мм, 2,5 МПа, 20 °C. Исключение — надстрочные обозначения градуса, минуты и секунды плоского угла: 90°, 30′, 15″. Эти правила приведены в разделе брошюры СИ о записи значений величин [1]. Символ единицы пишут без точки сокращения.</p>
+<p>Произведение единиц можно записать через среднюю точку: Н·м. Для отношения используют дробь, косую черту или отрицательную степень. Записи м/с² и м·с⁻² выражают одну единицу ускорения.</p>
+<p>Различайте температуру и плоский угол: 20 °C пишут с пробелом, 20° — без него.</p>
+<table><thead><tr><th>Запись, которую нужно проверить</th><th>Исправление</th><th>Причина</th></tr></thead><tbody><tr><td>25мм</td><td>25 мм</td><td>Нужен пробел между числом и единицей</td></tr><tr><td>90 °</td><td>90°</td><td>Надстрочный знак плоского угла пишут слитно</td></tr><tr><td>20°C</td><td>20 °C</td><td>Обозначение температуры отделяют пробелом</td></tr><tr><td>N·м</td><td>N·m или Н·м</td><td>Не стоит смешивать алфавиты в одном выражении</td></tr><tr><td>м/с/с</td><td>м/с²</td><td>Запись с повторными косыми чертами лучше заменить однозначной</td></tr></tbody></table>
+<p>На чертеже единица может быть задана общим пояснением, а не повторяться у каждого размера. При переносе числа в заявку нужно сохранить это пояснение. Если единица не обозначена и не установлена документацией, одно число не позволяет определить масштаб.</p>
+<p>Обозначения резьбы разбирают отдельно: <a href="/blog/oboznachenie-rezby-na-chertezhe.html">как читать обозначение резьбы на чертеже</a>. Их нельзя целиком воспринимать как число с символом единицы.</p>
+<h2 id="si-i-okei-chem-edinitsa-otlichaetsya-ot-ee-koda">СИ и ОКЕИ: чем единица отличается от её кода</h2>
+<p>СИ и ОКЕИ решают разные задачи. СИ описывает систему единиц физических величин и связи между ними. ОКЕИ — Общероссийский классификатор единиц измерения ОК 015-94 (МК 002-97), который ведёт Росстандарт [3]. Его трёхзначные коды единиц используют, например, при заполнении счёта-фактуры [4]. Для расчёта нужна сама единица, а для заполнения поля документа может потребоваться её код. Подменять одно другим нельзя.</p>
+<p>В расчётной записи «масса — 5 кг» килограмм задаёт единицу массы. Код в отдельной графе документа не становится множителем и не участвует в формуле.</p>
+<p>При подготовке заявки удобно разделить поля: название параметра, значение, единица и код единицы, если его требует форма. Такое разделение помогает заметить ситуацию, когда масса записана в килограммах, а соседняя графа относится к количеству деталей.</p>
+<p>Код нельзя вычислить из символа единицы.</p>
+<p>Внутренний идентификатор программы также не стоит автоматически считать кодом ОКЕИ. Для сопоставления нужна запись классификатора с наименованием единицы.</p>
+<h2 id="kakie-edinitsy-ukazyvat-pri-zakaze-detaley">Какие единицы указывать при заказе деталей</h2>
+<p>В заявке полезно отдельно указать размеры, массу и количество. Для каждого параметра нужно пояснить, к чему относится значение: к одной детали, заготовке или всей партии. Единицы в заявке должны согласовываться с чертежом и расчётом. Если они различаются, рядом можно привести пересчёт, чтобы получателю не пришлось восстанавливать его самостоятельно.</p>
+<table><thead><tr><th>Параметр</th><th>Пример единицы</th><th>Где зафиксировать</th><th>Что пояснить</th></tr></thead><tbody><tr><td>Линейный размер</td><td>мм</td><td>Чертёж и заявка</td><td>Единицы модели и чертежа</td></tr><tr><td>Масса одной детали</td><td>кг</td><td>Спецификация или заявка</td><td>Готовая деталь или заготовка</td></tr><tr><td>Масса партии</td><td>кг или т</td><td>Заявка</td><td>Число деталей, включена ли тара</td></tr><tr><td>Площадь покрытия</td><td>м²</td><td>Технические требования</td><td>Какие поверхности учтены</td></tr><tr><td>Объём заготовки</td><td>см³ или м³</td><td>Расчёт заготовки</td><td>Включён ли припуск</td></tr><tr><td>Количество</td><td>шт.</td><td>Заявка</td><td>Что считается одной позицией: деталь, комплект или узел</td></tr></tbody></table>
+<p>Это примеры оформления, а не обязательный набор единиц для любого заказа.</p>
+<p>Для однородного материала массу рассчитывают как произведение плотности и объёма: <em>m</em> = <em>ρV</em>. При плотности в кг/м³ объём подставляют в м³. Если плотность выражена в г/см³, а объём — в см³, результат получится в граммах.</p>
+<p>Массу заготовки и готовой детали лучше указывать раздельно. Иначе число без пояснения не показывает, учтён ли металл, который снимут при обработке.</p>
+<p>Для <a href="/">изготовления деталей по чертежам</a> исходные данные удобно собрать в одном комплекте: чертёж, количество и пояснения к единицам.</p>
+<h2 id="kak-proverit-edinitsy-i-nayti-oshibku-v-raschete">Как проверить единицы и найти ошибку в расчёте</h2>
+<p>Проверка единиц помогает обнаружить ошибку до использования результата. При сложении и вычитании величины приводят к одной единице. В произведениях и дробях преобразуют единицы вместе с числами. Затем проверяют размерность результата: например, произведение плотности в кг/м³ и объёма в м³ должно дать массу в килограммах. Это полезная проверка, но она не доказывает правильность всей формулы.</p>
+<p>Если для перевода мм² в м² применить коэффициент 10⁻³ вместо 10⁻⁶, результат окажется завышен в тысячу раз. Ошибка видна из сравнения коэффициентов.</p>
+<p>Совпадение размерностей не гарантирует верный ответ.</p>
+<p>И <em>ρV</em>, и <em>2ρV</em> имеют размерность массы. Проверка единиц не определит, нужен ли множитель 2. Для этого придётся проверить формулу и исходные условия.</p>
+<p>Перед передачей расчёта полезно сверить:</p>
+<ul><li>У каждого значения есть единица или однозначное пояснение.</li><li>Приставка прочитана с учётом регистра.</li><li>При переводе площади и объёма учтена степень.</li><li>Единицы плотности и объёма согласованы.</li><li>Масса одной детали отделена от массы партии.</li><li>Количество деталей не подменено массой без расчёта.</li></ul>
+<p>Погрешность измерения проверяют отдельно: <a href="/blog/absolyutnaya-i-otnositelnaya-pogreshnost.html">как рассчитать абсолютную и относительную погрешность</a>. Правильный перевод единиц сам по себе не показывает точность исходного измерения.</p>
+<p>Пришлите чертёж и количество деталей, указав единицы и пояснив, к чему относится масса: к заготовке, готовой детали или партии.</p>
+
+          <h2 id="faq">Частые вопросы</h2>
+          <div class="faq">
+            <details open>
+              <summary>Как перевести градусы Цельсия в кельвины?</summary>
+              <div class="faq__a"><p>К числовому значению температуры в градусах Цельсия прибавляют 273,15. Например, 0 °C соответствует 273,15 K. Для разности температур сдвиг не нужен: изменение на 10 °C равно изменению на 10 K. Связь температурных шкал приведена в описании температуры Цельсия в брошюре СИ [1].</p></div>
+            </details>
+<details>
+              <summary>Что делать, если на чертеже часть размеров указана в дюймах?</summary>
+              <div class="faq__a"><p>При пересчёте используют точное соотношение: 1 международный дюйм = 25,4 мм. В приложении B к руководству NIST SP 811 приведён коэффициент перевода дюйма в метр: 2,54 × 10⁻² [2]. Например, 50 дюймов = 1270 мм. Обозначение дюймовой резьбы нельзя заменять простым пересчётом числа: сначала нужно определить, что именно обозначено на чертеже.</p></div>
+            </details>
+<details>
+              <summary>Где посмотреть приставки ронна и кветта, если их нет в таблице?</summary>
+              <div class="faq__a"><p>В полном перечне приставок брошюры СИ [1]. Там ронна обозначена символом R и множителем 10²⁷, кветта — Q и множителем 10³⁰. Таблица в этой статье сокращена: она охватывает приставки, которые используются в приведённых расчётах.</p></div>
+            </details>
+          </div>
+
+          <h2 id="istochniki">Источники</h2>
+          <ul class="sources">
+            <li><a href="https://www.bipm.org/en/publications/si-brochure" rel="noopener" target="_blank">1. The International System of Units (SI Brochure)</a> — Международное бюро мер и весов. Таблицы основных и производных единиц подтверждают обозначения и состав единиц; раздел о приставках — десятичные множители; таблица внесистемных единиц — соотношения для минуты, часа, литра и тонны. Раздел о записи значений величин устанавливает пробел между числом и символом единицы с исключением для надстрочных знаков плоского угла.</li>
+<li><a href="https://www.nist.gov/pml/special-publication-811" rel="noopener" target="_blank">2. NIST Special Publication 811: Guide for the Use of the International System of Units (SI)</a> — Национальный институт стандартов и технологий США. Приложение B, строка для дюйма: коэффициент перевода в метр — 2,54 × 10⁻², то есть 25,4 мм.</li>
+<li><a href="https://pravo.ppt.ru/prikaz/rosstandart/n--262561" rel="noopener" target="_blank">3. Изменение 18/2021 к ОК 015-94 (МК 002-97) ОКЕИ</a> — приказ Росстандарта от 07.12.2021 № 1735-ст. Подтверждает полное название классификатора ОК 015-94 (МК 002-97) и то, что его изменения утверждает Росстандарт.</li>
+<li><a href="https://glavkniga.ru/situations/k505020" rel="noopener" target="_blank">4. Код единицы измерения в счёте-фактуре</a> — «Главная книга». Код единицы — трёхзначный цифровой код из разделов 1 и 2 ОКЕИ; например, метр — 006, литр — 112.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/izgotovlenie-napravlyayushchih-po-chertezham.html">
+            <img src="/images/blog/izgotovlenie-napravlyayushchih-po-chertezham-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как задать требования к направляющим по чертежу и проверить готовые детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/izgotovlenie-rezbovyh-shpilek-po-chertezhu.html">
+            <img src="/images/blog/izgotovlenie-rezbovyh-shpilek-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как заказать резьбовые шпильки по чертежу и согласовать требования</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/frezernaya-obrabotka-chpu-po-chertezham.html">
+            <img src="/images/blog/frezernaya-obrabotka-chpu-po-chertezham-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Фрезерная обработка на станках с ЧПУ: как выбрать маршрут изготовления детали</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Единицы измерения: как читать обозначения и переводить величины">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
