@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обозначение шероховатости поверхности: знаки, классы, Ra</title>
+  <meta name="description" content="Как читать знаки шероховатости и параметры Ra и Rz, выбирать требования по назначению поверхности и согласовывать контроль детали." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/oboznachenie-sherohovatosti-poverhnosti.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/oboznachenie-sherohovatosti-poverhnosti.html#article",
+      "headline": "Как читать обозначения шероховатости и выбирать Ra для детали",
+      "description": "Как читать знаки шероховатости и параметры Ra и Rz, выбирать требования по назначению поверхности и согласовывать контроль детали.",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/oboznachenie-sherohovatosti-poverhnosti.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/oboznachenie-sherohovatosti-poverhnosti-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "обозначение шероховатости поверхности",
+        "шероховатость поверхности ra",
+        "таблица шероховатости поверхности ra",
+        "класс шероховатости поверхности",
+        "контроль шероховатости поверхности",
+        "как выбрать шероховатость поверхности"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как читать обозначения шероховатости и выбирать Ra для детали"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужно ли передавать физический образец вместе с чертежом?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Образец поможет объяснить внешний вид, следы обработки или особенности существующей детали. Укажите его назначение и приоритет относительно чертежа. Изношенную деталь не стоит принимать за эталон исходной поверхности без отдельного согласования."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как оформить согласованное изменение шероховатости?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зафиксируйте поверхность, прежнее требование, новую запись и того, кто утвердил изменение. Передайте производству и приёмке одну версию документа. Для оформления используйте принятый у заказчика порядок изменения документации."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли оценивать шероховатость после нанесения покрытия?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сначала определите, к какой поверхности относится требование: до покрытия или после него. Затем согласуйте стадию и метод контроля. Если требуется оценивать обе поверхности, задайте для них отдельные требования."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Как задать шероховатость, чтобы деталь работала без лишних затрат" />
+  <meta property="og:description" content="Как читать знаки шероховатости и параметры Ra и Rz, выбирать требования по назначению поверхности и согласовывать контроль детали." />
+  <meta property="og:url" content="https://ironex.tech/blog/oboznachenie-sherohovatosti-poverhnosti.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/oboznachenie-sherohovatosti-poverhnosti-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-19" />
+  <meta property="article:modified_time" content="2026-10-19" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Как задать шероховатость, чтобы деталь работала без лишних затрат" />
+  <meta name="twitter:description" content="Как читать знаки шероховатости и параметры Ra и Rz, выбирать требования по назначению поверхности и согласовывать контроль детали." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/oboznachenie-sherohovatosti-poverhnosti-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как читать обозначения шероховатости и выбирать Ra для детали">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Как читать обозначения шероховатости и выбирать Ra для детали</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#kak-prochitat-oboznachenie-sherohovatosti-poverhnosti">Как прочитать обозначение шероховатости поверхности</a></li>
+<li><a href="#chto-oznachayut-ra-i-rz-i-v-kakih-edinitsah-ih-zadayut">Что означают Ra и Rz и в каких единицах их задают</a></li>
+<li><a href="#kak-rabotat-s-istoricheskimi-klassami-chistoty">Как работать с историческими классами чистоты</a></li>
+<li><a href="#tri-vida-znaka-kogda-udalenie-materiala-zadano-ili-zapresche">Три вида знака: когда удаление материала задано или запрещено</a></li>
+<li><a href="#obschiy-znak-lokalnye-trebovaniya-i-dopolnitelnye-ukazaniya">Общий знак, локальные требования и дополнительные указания</a></li>
+<li><a href="#kak-vybrat-sherohovatost-po-naznacheniyu-poverhnosti">Как выбрать шероховатость по назначению поверхности</a></li>
+<li><a href="#kak-sposob-obrabotki-vliyaet-na-dostizhimuyu-sherohovatost">Как способ обработки влияет на достижимую шероховатость</a></li>
+<li><a href="#kak-soglasovat-izmerenie-i-priemku-sherohovatosti">Как согласовать измерение и приёмку шероховатости</a></li>
+<li><a href="#primer-zakaza-ot-trebovaniy-chertezha-do-marshruta-izgotovle">Пример заказа: от требований чертежа до маршрута изготовления</a></li>
+<li><a href="#chto-proverit-pered-peredachey-chertezha-podryadchiku">Что проверить перед передачей чертежа подрядчику</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как читать обозначения шероховатости и выбирать Ra для детали">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Как читать обозначения шероховатости и выбирать Ra для детали</h1>
+        <p class="lede">Как читать знаки шероховатости и параметры Ra и Rz, выбирать требования по назначению поверхности и согласовывать контроль детали.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-10-19">Опубликовано 19 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/oboznachenie-sherohovatosti-poverhnosti-cover.webp" alt="Как читать обозначения шероховатости и выбирать Ra для детали" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Обозначение <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатости</a> поверхности задаёт требования к её микронеровностям. Чтобы прочитать запись на чертеже, учитывают вид знака, параметр, значение и дополнительные указания. Особенно внимательно разбирают архивные документы: старый класс чистоты нельзя без проверки заменить одним значением Ra.</p>
+<h2 id="kak-prochitat-oboznachenie-sherohovatosti-poverhnosti">Как прочитать обозначение шероховатости поверхности</h2>
+<p>Читайте обозначение по порядку: вид знака, параметр, числовое требование, дополнительные указания. Затем найдите поверхность, к которой относится запись, и проверьте общие требования чертежа. Если документ архивный, отдельно установите, по каким правилам его оформляли. Одинаковая цифра при разных параметрах или условиях контроля ещё не означает одинаковое требование.</p>
+<p>Начните с исходного документа. Для спорной записи понадобится текст стандарта, на который опирался разработчик, и соответствующий пункт или рисунок. Ссылка на каталог стандартов сама по себе не объясняет обозначение.</p>
+<p>Если часть записи не читается, запросите исходный файл или увеличенный фрагмент. Не восстанавливайте символ по предполагаемому назначению детали.</p>
+<p>Одна цифра не заменяет всё обозначение.</p>
+<p>Шероховатость, волнистость и отклонения формы описывают разные особенности поверхности. Гладкая на ощупь плоскость ещё может иметь прогиб, который мешает работе соединения.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как читать обозначения шероховатости и выбирать Ra для детали">Прислать чертёж на почту</a>
+</div>
+<h2 id="chto-oznachayut-ra-i-rz-i-v-kakih-edinitsah-ih-zadayut">Что означают Ra и Rz и в каких единицах их задают</h2>
+<p><img alt="Трёхмерный профиль поверхности полированной нержавеющей стали" decoding="async" height="666" loading="lazy" src="/images/blog/oboznachenie-sherohovatosti-poverhnosti-1.webp" width="1000"/></p>
+<p><em>Результат оптической профилометрии полированной поверхности <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавеющей стали</a>. Фото: <a href="https://commons.wikimedia.org/wiki/File:Polished_SS_-_optical.png" rel="nofollow noopener" target="_blank">Somnath Bharech</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Ra описывает среднее абсолютное отклонение профиля от средней линии. Rz относится к высотным характеристикам профиля, а способ его расчёта зависит от принятого определения. Эти параметры нельзя считать взаимозаменяемыми: одинаковое Ra ещё не означает одинаковую форму выступов и впадин. Поэтому при согласовании чертежа нужны и название параметра, и условия его оценки.</p>
+<p>Значения Ra и Rz выражают в единицах длины; в обсуждении механически обработанных поверхностей обычно используют микрометры — мкм. Оформление записи на чертеже требует отдельной проверки по принятой системе обозначений.</p>
+<p>Для Rz нужно установить, какое определение использовано в документации. Одного названия в меню прибора недостаточно для выбора метода контроля.</p>
+<p>Не переводите Rz в Ra постоянным множителем.</p>
+<p>Такой пересчёт не учитывает форму профиля и способ расчёта параметров. Если заказчик меняет один параметр на другой, новое требование нужно согласовать отдельно.</p>
+<p>Различия подробнее разобраны в статье о том, <a href="/blog/sherohovatost-poverhnosti-chto-oznachayut-ra-i-rz-na-chertezhe.html">что означают Ra и Rz на чертеже</a>.</p>
+<h2 id="kak-rabotat-s-istoricheskimi-klassami-chistoty">Как работать с историческими классами чистоты</h2>
+<p>Исторический класс чистоты разбирают по документу, на основании которого выпущен архивный чертёж. Для перевода нужны определение класса, его подразделение, границы значений и условия оценки. Подстановка одного привычного Ra может изменить исходное требование. Поэтому сначала восстанавливают смысл старой записи, затем ответственный за документацию утверждает требование для нового заказа.</p>
+<p>Числовая таблица соответствия классов и Ra здесь не приведена: в представленных источниках нет подтверждающего фрагмента стандарта. Таблица без такого основания создала бы риск ошибки при изготовлении и приёмке.</p>
+<p>Для разбора архивного требования удобно использовать рабочую таблицу:</p>
+<table><thead><tr><th>Что есть в архивном чертеже</th><th>Что нужно установить</th><th>Что зафиксировать для заказа</th></tr></thead><tbody><tr><td>Номер класса</td><td>Его определение в исходном документе</td><td>Параметр и согласованное требование</td></tr><tr><td>Подразделение класса</td><td>К какой части диапазона оно относится</td><td>Полную расшифровку записи</td></tr><tr><td>Пределы значений</td><td>Какие границы и условия заданы</td><td>Критерий соответствия</td></tr><tr><td>Дополнительные указания</td><td>Как они влияют на оценку</td><td>Условия контроля</td></tr></tbody></table>
+<p>Диапазон и верхний предел — разные требования. Выбор отдельного числа внутри диапазона ещё не объясняет, почему именно его принимают за границу годности.</p>
+<p>Исходный чертёж сохраняют вместе с согласованным уточнением.</p>
+<h2 id="tri-vida-znaka-kogda-udalenie-materiala-zadano-ili-zapresche">Три вида знака: когда удаление материала задано или запрещено</h2>
+<p><img alt="Промышленная дробемётная установка Surface International для обработки металлических поверхностей" decoding="async" height="694" loading="lazy" src="/images/blog/oboznachenie-sherohovatosti-poverhnosti-2.webp" width="1000"/></p>
+<p><em>Дробемётная установка подаёт абразив вращающимся колесом для очистки, удаления окалины и подготовки металлических поверхностей. Фото: <a href="https://commons.wikimedia.org/wiki/File:Airless_Shot_Blasting_Machine_By_Surface_International.png" rel="nofollow noopener" target="_blank">WXS2OFF</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>При чтении обозначений различают базовый знак, знак с дополнительной чертой и знак с окружностью. Их используют для указания условий получения поверхности. Чтобы применить запись к заказу, нужно проверить её начертание и значение в нормативной основе чертежа. Это особенно важно на сканах: потерянная черта или плохо видимая окружность могут изменить смысл требования.</p>
+<p>Базовый знак связывают с отсутствием указания способа получения поверхности в самом обозначении. При этом материал, размеры и другие требования чертежа могут ограничивать выбор технологии.</p>
+<p>Дополнительная черта обозначает получение поверхности с удалением слоя материала. Сам по себе такой знак не задаёт конкретную операцию, например шлифование.</p>
+<p>Окружность обозначает получение поверхности без удаления слоя материала. Числовое требование, если оно указано, при этом сохраняет значение для оценки поверхности.</p>
+<p>Эти трактовки соответствуют разделу 1.3 ГОСТ 2.309-73; для архивного чертежа сверяйте их с редакцией, по которой он выпущен.</p>
+<p>Если символ неразборчив, решение простое: нужен читаемый документ. Дорисовывать знак по смыслу детали нельзя.</p>
+<h2 id="obschiy-znak-lokalnye-trebovaniya-i-dopolnitelnye-ukazaniya">Общий знак, локальные требования и дополнительные указания</h2>
+<p>Для каждой поверхности сопоставьте локальную запись с общим обозначением и техническими требованиями чертежа. Общая запись позволяет сократить повторяющиеся указания, но её область действия нужно установить по конкретному оформлению. Не распространяйте её автоматически на всю деталь. Сначала проверьте, какие поверхности выделены отдельно и нет ли между указаниями противоречий.</p>
+<p>Удобно разбирать деталь по функциональным зонам. У втулки наружная стенка, посадочное отверстие и торец под уплотнение могут требовать разной обработки и контроля.</p>
+<p>Локальную запись нельзя пропускать из-за наличия общей.</p>
+<p>Дополнительные указания рассматривайте вместе с параметром и его значением. Если задано направление неровностей или определённая обработка, включите это требование в обсуждение маршрута и приёмки.</p>
+<p>Результат разбора — перечень поверхностей с относящимися к ним требованиями. Противоречия передайте ответственному за чертёж до подготовки производства.</p>
+<h2 id="kak-vybrat-sherohovatost-po-naznacheniyu-poverhnosti">Как выбрать шероховатость по назначению поверхности</h2>
+<p>Выбор начинают с функции поверхности: с чем она соприкасается, движется ли относительно другой детали, работает ли со смазкой или уплотнением. Затем изучают документацию сопрягаемого узла и определяют способ контроля. Назначение одного Ra всем поверхностям без разбора условий работы не даёт обоснования ни для изготовления, ни для приёмки.</p>
+<p>Последовательность выбора:</p>
+<ol><li>Определите функцию поверхности.</li><li>Соберите условия работы: нагрузку, движение, температуру, сопрягаемый материал и смазку.</li><li>Проверьте требования сборочного чертежа и документацию конкретного узла.</li><li>Обоснуйте параметры и пределы.</li><li>Согласуйте изготовление и измерение.</li></ol>
+<p>Для свободной стенки выясните требования к покрытию, очистке и внешнему виду. Для посадочной поверхности нужны сведения о соединении и сборке.</p>
+<p>Уплотняемую поверхность рассматривают вместе с уплотняющим элементом. В задании стоит указать его тип и приложить относящиеся к поверхности требования производителя.</p>
+<p>Ужесточение должно иметь причину.</p>
+<p>Если её нет в документации, вопрос возвращают конструктору. Дополнительную обработку не стоит закладывать только потому, что меньшее Ra кажется предпочтительным.</p>
+<h2 id="kak-sposob-obrabotki-vliyaet-na-dostizhimuyu-sherohovatost">Как способ обработки влияет на достижимую шероховатость</h2>
+<p>Название операции помогает обсудить маршрут, но само по себе не подтверждает результат на конкретной детали. Для оценки нужны материал, геометрия, инструмент, закрепление и условия обработки. Возможности подрядчика обсуждают применительно к этим данным. Справочное значение без описания условий нельзя использовать как обещание для любой заготовки.</p>
+<p>Вместо универсальной таблицы достижимых Ra ниже приведены вопросы для подготовки заказа.</p>
+<table><thead><tr><th>Операция</th><th>Что обсудить с изготовителем</th></tr></thead><tbody><tr><td>Предварительное точение</td><td>Какой припуск останется под дальнейшую обработку</td></tr><tr><td>Чистовое точение</td><td>Какие инструмент, подача и закрепление предусмотрены</td></tr><tr><td>Фрезерование</td><td>Как расположены проходы и где находятся их стыки</td></tr><tr><td>Обработка отверстия</td><td>Какая операция выбрана и доступен ли участок инструменту</td></tr><tr><td>Шлифование</td><td>Какие круг, правка и режим предусмотрены для материала</td></tr><tr><td>Притирка и полирование</td><td>Как будут контролировать съём, размер и форму</td></tr><tr><td>Хонингование</td><td>Какие характеристики профиля требуется получить</td></tr><tr><td>Литьё</td><td>Какие поверхности предполагается оставить без последующей обработки</td></tr></tbody></table>
+<p>Проверяют весь маршрут.</p>
+<p>После финишной операции могут следовать покрытие, сборка или другие действия с поверхностью. Стадию, на которой требуется подтвердить шероховатость, нужно назвать в документации.</p>
+<h2 id="kak-soglasovat-izmerenie-i-priemku-sherohovatosti">Как согласовать измерение и приёмку шероховатости</h2>
+<p>Условия измерения согласуют вместе с требованием: какой параметр оценивают, на каком участке и по какому критерию принимают результат. Также фиксируют направление измерения и настройки обработки профиля. Это помогает сравнивать протоколы заказчика и изготовителя. Без описания условий одинаковые названия параметров ещё не объясняют, почему результаты совпали или разошлись.</p>
+<p>Сначала проверьте доступ к поверхности. Узкое отверстие, уступ или короткий участок могут потребовать другого измерительного оснащения.</p>
+<p>Место и направление измерения удобно показать на эскизе.</p>
+<p>Для выбранного прибора нужны руководство и настройки, соответствующие согласованному методу. Название параметра на экране не заменяет эту проверку.</p>
+<p>Если предполагается оценка по образцам сравнения, отдельно согласуйте её применение при приёмке. Методы рассмотрены в статье об <a href="/blog/izmerenie-sherohovatosti-poverhnosti-profilometr-obrazcy.html">измерении шероховатости профилометром и образцами</a>.</p>
+<p>При расхождении результатов сопоставьте участки, оборудование и настройки. После этого определите порядок повторного контроля и оформите решение по партии.</p>
+<h2 id="primer-zakaza-ot-trebovaniy-chertezha-do-marshruta-izgotovle">Пример заказа: от требований чертежа до маршрута изготовления</h2>
+<p>Рассмотрим условную втулку с общей записью для свободных поверхностей, локальным обозначением отверстия и отдельным требованием к торцу под уплотнение. Подготовка заказа связывает каждую запись с изготовлением и контролем. До запуска нужно проверить, одинаково ли заказчик и изготовитель понимают требования и можно ли подтвердить их на готовой детали.</p>
+<p>Сначала изучают чертёж, материал, заготовку и документацию сопрягаемого узла. Затем предлагают маршрут с учётом отверстия и торца.</p>
+<p>Доступ инструмента и измерительного оснащения проверяют до запуска партии. Все изменения переносят в согласованную версию документа.</p>
+<p>Устного решения недостаточно.</p>
+<p>Если предложенный маршрут не позволяет выполнить требование, обсуждают другую операцию, изменение конструкции или пересмотр требования. Утверждает изменение ответственный за документацию.</p>
+<p>В заказе на <a href="/">изготовление деталей по чертежам</a> эта версия становится основой расчёта и приёмки. При сопоставлении <a href="/ceny.html">цен на металлообработку</a> важно учитывать состав операций и контроля в каждом предложении.</p>
+<h2 id="chto-proverit-pered-peredachey-chertezha-podryadchiku">Что проверить перед передачей чертежа подрядчику</h2>
+<p>Перед передачей сопоставьте обозначения с исходным файлом, техническими требованиями и согласованными изменениями. По каждой функциональной поверхности должны быть понятны требование и способ его проверки. Отдельно выделите архивные записи и неразборчивые символы. Их расшифровку нужно завершить до запуска, чтобы производство и приёмка пользовались одним заданием.</p>
+<p>Проверьте документ:</p>
+<ul><li>Установлена нормативная основа; архивные обозначения расшифрованы по первоисточнику.</li><li>Знаки читаются, область действия общей записи определена.</li><li>Ra и Rz не подменены друг другом через постоянный коэффициент.</li><li>Требования к функциональным поверхностям обоснованы условиями работы узла.</li><li>Маршрут учитывает доступ инструмента и последующие операции.</li><li>Согласованы участки измерения, условия контроля и действия при разногласиях.</li></ul>
+<p>Перенесите устные уточнения в документацию. Сохраните одну утверждённую версию для изготовителя и приёмки.</p>
+<p>Передайте чертёж на оценку вместе с вопросами по функциональным поверхностям и условиям контроля.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Нужно ли передавать физический образец вместе с чертежом?</summary>
+<div class="faq__a"><p>Образец поможет объяснить внешний вид, следы обработки или особенности существующей детали. Укажите его назначение и приоритет относительно чертежа. Изношенную деталь не стоит принимать за эталон исходной поверхности без отдельного согласования.</p></div>
+</details>
+<details>
+<summary>Как оформить согласованное изменение шероховатости?</summary>
+<div class="faq__a"><p>Зафиксируйте поверхность, прежнее требование, новую запись и того, кто утвердил изменение. Передайте производству и приёмке одну версию документа. Для оформления используйте принятый у заказчика порядок изменения документации.</p></div>
+</details>
+<details>
+<summary>Можно ли оценивать шероховатость после нанесения покрытия?</summary>
+<div class="faq__a"><p>Сначала определите, к какой поверхности относится требование: до покрытия или после него. Затем согласуйте стадию и метод контроля. Если требуется оценивать обе поверхности, задайте для них отдельные требования.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://meganorm.ru/Data1/4/4581/index.htm" rel="noopener" target="_blank">ГОСТ 2.309-73 «ЕСКД. Обозначения шероховатости поверхностей»</a> — разд. 1.3: знак для поверхности, способ обработки которой конструктор не устанавливает; знак для поверхности, образованной только удалением слоя материала; знак для поверхности без удаления слоя материала. Разд. 2.6: общее обозначение для всех поверхностей помещают в правом верхнем углу чертежа и на изображении не наносят.</li>
+<li><a href="https://informproekt.ru/docs/1200003160/" rel="noopener" target="_blank">ГОСТ 2789-73 «Шероховатость поверхности. Параметры и характеристики»</a> — стандарт распространяется на шероховатость изделий независимо от материала и способа изготовления; в нём Ra названо среднеарифметическим отклонением профиля. Таблицу соответствия старых классов чистоты и Ra статья намеренно не приводит: её нужно брать из документа, по которому выпущен конкретный архивный чертёж.</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/izgotovlenie-napravlyayushchih-po-chertezham.html">
+            <img src="/images/blog/izgotovlenie-napravlyayushchih-po-chertezham-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как задать требования к направляющим по чертежу и проверить готовые детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/smena-podryadchika-v-processe-proekta-kak-peredat-dokumentaciyu.html">
+            <img src="/images/blog/smena-podryadchika-v-processe-proekta-kak-peredat-dokumentaciyu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Как отдать серию другому исполнителю и не потерять чертежи</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/izgotovlenie-kronshtejnov-po-chertezham.html">
+            <img src="/images/blog/izgotovlenie-kronshtejnov-po-chertezham-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как подготовить чертёж кронштейна, чтобы деталь подошла к узлу</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как читать обозначения шероховатости и выбирать Ra для детали">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
