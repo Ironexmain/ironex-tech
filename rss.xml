@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Азотирование стали: что оно даёт детали и чем отличается от закалки и цементации</title>
+      <link>https://ironex.tech/blog/azotirovanie-stali-chto-daet-i-chem-otlichaetsya-ot-zakalki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/azotirovanie-stali-chto-daet-i-chem-otlichaetsya-ot-zakalki.html</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Слой до 0,65 мм, твёрдость до 1200 HV и малое коробление. Сравниваем азотирование с закалкой и цементацией, разбираем стали и запись в чертеже.</description>
+    </item>
+    <item>
+      <title>Что такое азот и как его свойства используют в промышленности</title>
+      <link>https://ironex.tech/blog/azot-eto.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/azot-eto.html</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Чем отличаются элемент N, газ N₂ и соединения азота. Свойства, получение, применение при обработке металлов и выбор системы подачи газа.</description>
+    </item>
+    <item>
+      <title>AISI 304 или 316: какую нержавейку выбрать для детали по чертежу</title>
+      <link>https://ironex.tech/blog/aisi-304-i-316-raznica-vybor-nerzhaveyki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/aisi-304-i-316-raznica-vybor-nerzhaveyki.html</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Чем AISI 304 отличается от 316, где нужен молибден, что такое 12Х18Н10Т и как марка влияет на обработку, сварку и цену детали.</description>
+    </item>
     <item>
       <title>Что такое оксиды и как отличить основные от кислотных</title>
       <link>https://ironex.tech/blog/oksidy-eto.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Состав и свойства стали 40Х, твёрдость после термообработки, применение и ограничения. Как выбрать заготовку и задать требования к детали в чертеже.</description>
-    </item>
-    <item>
-      <title>Как выбрать ГОСТ для оформления проектной документации и чертежей на изготовление</title>
-      <link>https://ironex.tech/blog/gost-proektnaya-i-rabochaya-dokumentaciya.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/gost-proektnaya-i-rabochaya-dokumentaciya.html</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как выбрать стандарт для строительной документации и чертежей деталей: СПДС, ЕСКД, основные надписи, изменения и проверка комплекта перед заказом.</description>
-    </item>
-    <item>
-      <title>Как обрабатывают детали на токарном станке: от заготовки до контроля</title>
-      <link>https://ironex.tech/blog/obrabotka-na-tokarnom-stanke.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/obrabotka-na-tokarnom-stanke.html</guid>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Виды токарной обработки, инструмент и порядок операций на примере детали по чертежу. Как выбирают режимы, проверяют размеры и готовят заказ.</description>
-    </item>
-    <item>
-      <title>Что такое фреза, как она устроена и какие детали ею обрабатывают</title>
-      <link>https://ironex.tech/blog/freza-eto.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/freza-eto.html</guid>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Что такое фреза и как она снимает металл. Разбираем устройство, виды и назначение инструмента: от обработки плоскостей до пазов и сложных контуров.</description>
     </item>
   </channel>
 </rss>
