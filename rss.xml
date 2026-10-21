@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Допуск соосности: как читать рамку на чертеже и не перепутать с концентричностью и биением</title>
+      <link>https://ironex.tech/blog/dopusk-soosnosti-na-chertezhe.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/dopusk-soosnosti-na-chertezhe.html</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Рамка допуска соосности на чертеже вал–корпус: знак, число, Ø и буква базы. Чем эта запись отличается от концентричности и от радиального биения.</description>
+    </item>
+    <item>
+      <title>Допуск плоскостности на чертеже: как обозначить и чем проверить деталь</title>
+      <link>https://ironex.tech/blog/dopusk-ploskostnosti-kak-ukazat-na-chertezhe.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/dopusk-ploskostnosti-kak-ukazat-na-chertezhe.html</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Как задать допуск плоскостности по ГОСТ Р 2.308-2023: одно число без базы и без «±», и как не списать годную деталь из-за плиты или Best Fit.</description>
+    </item>
+    <item>
+      <title>Базы на чертеже: что это и как выбрать базу детали</title>
+      <link>https://ironex.tech/blog/baza-na-chertezhe.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/baza-na-chertezhe.html</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Что такое база на чертеже, чем конструкторская база отличается от технологической и как обозначить её по ГОСТ Р 2.308-2023, действующему с 01.03.2024.</description>
+    </item>
     <item>
       <title>Азотирование стали: что оно даёт детали и чем отличается от закалки и цементации</title>
       <link>https://ironex.tech/blog/azotirovanie-stali-chto-daet-i-chem-otlichaetsya-ot-zakalki.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Thu, 15 Oct 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Из чего состоит сталь, чем отличается от чугуна и как выбрать материал для детали. Разбираем марки, термообработку и проверку сертификата.</description>
-    </item>
-    <item>
-      <title>Как рассчитать абсолютную и относительную погрешность измерения</title>
-      <link>https://ironex.tech/blog/absolyutnaya-i-otnositelnaya-pogreshnost.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/absolyutnaya-i-otnositelnaya-pogreshnost.html</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Абсолютная и относительная погрешность: определения, формулы и примеры. Как учитывать характеристики прибора и проверять размер детали около границы допуска.</description>
-    </item>
-    <item>
-      <title>Что такое сталь D2 и для каких деталей она подходит</title>
-      <link>https://ironex.tech/blog/stal-d2.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/stal-d2.html</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Сталь D2: износостойкость, коррозия, обработка и термообработка. Как выбрать материал для инструмента и детали и проверить предложенный аналог.</description>
-    </item>
-    <item>
-      <title>Сталь 40Х для деталей по чертежу: свойства, термообработка и контроль твёрдости</title>
-      <link>https://ironex.tech/blog/stal-40h-sostav-svoystva-tverdost-primenenie.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/stal-40h-sostav-svoystva-tverdost-primenenie.html</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Состав и свойства стали 40Х, твёрдость после термообработки, применение и ограничения. Как выбрать заготовку и задать требования к детали в чертеже.</description>
     </item>
   </channel>
 </rss>
