@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Допуски при обработке и шероховатость: как они влияют на цену</title>
+  <meta name="description" content="Какие допуски и Ra на чертеже удорожают деталь: ступени точности, износ инструмента, контроль и чек-лист, как не переплатить." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/dopuski-pri-obrabotke-vliyanie-na-cenu.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/dopuski-pri-obrabotke-vliyanie-na-cenu.html#article",
+      "headline": "Допуски при обработке и шероховатость: за что вы платите на самом деле",
+      "description": "Какие допуски и Ra на чертеже удорожают деталь: ступени точности, износ инструмента, контроль и чек-лист, как не переплатить.",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/dopuski-pri-obrabotke-vliyanie-na-cenu.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/dopuski-pri-obrabotke-vliyanie-na-cenu-cover.webp",
+      "articleSection": "Экономика заказа",
+      "keywords": [
+        "допуски при обработке",
+        "точность размеров",
+        "квалитет",
+        "класс точности",
+        "шероховатость",
+        "допуск размера"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Допуски при обработке и шероховатость: за что вы платите на самом деле"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем квалитет отличается от класса точности?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Квалитет задаёт допуск размера номером IT. Класс точности относится к общим допускам по ГОСТ 30893.1: их четыре, и они действуют на размеры без индивидуальных отклонений. Если в заявке встретился «класс», допишите квалитет или уточните, о каких размерах речь."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой допуск ставить на несопрягаемые размеры?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Индивидуальный допуск не нужен. Достаточно общего класса в основной надписи по ГОСТ 30893.1. Под него попадают габарит, фаска и длина, которая никуда не садится. Сопрягаемые размеры по-прежнему указывают своими отклонениями."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли указывать шероховатость на всех поверхностях?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Требование ставят на функциональные поверхности: трение, уплотнение, посадка. Остальным хватает одного общего знака, а поверхность без требования конструкции под него не подгоняют. Лишний Ra добавляет проход и цену."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Всегда ли жёсткий допуск удорожает деталь?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не всегда. Допуски порядка ±0,05–0,127 мм на ЧПУ обычно достигаются легко, без особых мер. Отдельные меры нужны при поле жёстче примерно ±0,025 мм на большой партии, а ±0,005–0,012 мм держат уже с подналадкой, прогревом и частым контролем. Итог зависит от детали, материала и партии."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Какие допуски и шероховатость удорожают деталь, а какие нет" />
+  <meta property="og:description" content="Какие допуски и Ra на чертеже удорожают деталь: ступени точности, износ инструмента, контроль и чек-лист, как не переплатить." />
+  <meta property="og:url" content="https://ironex.tech/blog/dopuski-pri-obrabotke-vliyanie-na-cenu.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/dopuski-pri-obrabotke-vliyanie-na-cenu-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-22" />
+  <meta property="article:modified_time" content="2026-10-22" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Какие допуски и шероховатость удорожают деталь, а какие нет" />
+  <meta name="twitter:description" content="Какие допуски и Ra на чертеже удорожают деталь: ступени точности, износ инструмента, контроль и чек-лист, как не переплатить." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/dopuski-pri-obrabotke-vliyanie-na-cenu-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Допуски при обработке и шероховатость: за что вы платите на самом деле">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Допуски при обработке и шероховатость: за что вы платите на самом деле</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#cena-dopuska">Из чего складывается цена точности</a></li>
+<li><a href="#kvalitet-i-klass-tochnosti">Квалитет, класс и допуск</a></li>
+<li><a href="#gde-cena-ne-rastet">Где допуск почти ничего не стоит</a></li>
+<li><a href="#pochemu-zhestkiy-dopusk-dorozhe">Что происходит на станке</a></li>
+<li><a href="#sherohovatost-i-cena">Почему Ra стоит денег</a></li>
+<li><a href="#stupeni-ceny-tablica">Ступени точности и цена</a></li>
+<li><a href="#obshchie-dopuski-i-forma">Форма и общие допуски</a></li>
+<li><a href="#kontrol-i-material">Контроль, материал, температура</a></li>
+<li><a href="#kak-ne-pereplatit">Как не переплатить</a></li>
+<li><a href="#itog-dopuski">Платить за функцию</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Допуски при обработке и шероховатость: за что вы платите на самом деле">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Допуски при обработке и шероховатость: за что вы платите на самом деле</h1>
+        <p class="lede">Какие допуски и Ra на чертеже удорожают деталь: ступени точности, износ инструмента, контроль и чек-лист, как не переплатить.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Экономика заказа</span>
+            <time datetime="2026-10-22">Опубликовано 22 октября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/dopuski-pri-obrabotke-vliyanie-na-cenu-cover.webp" alt="Допуски при обработке и шероховатость: за что вы платите на самом деле" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede"><a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">Цену детали</a> двигает не сам допуск, а то, что он заставляет сделать: добавить операцию, снизить режимы, подналаживать станок, измерять каждую деталь. Допуски примерно до ±0,05 мм обычно не требуют особых мер. Дальше цена растёт ступенями. Разберём, где эти ступени и как не платить за точность, которая детали не нужна.</p>
+<h2 id="cena-dopuska">Из чего складывается цена точности</h2>
+<p>Когда на чертеже вместо ±0,1 мм стоит ±0,01 мм, вы платите за четыре вещи. Цех добавляет переход или отдельную операцию, снижает режимы резания, подналаживает станок по ходу партии и измеряет детали чаще. Допуск размера — разница между наибольшим и наименьшим допустимым размером. Стоимость обработки меняется, когда эта запись меняет маршрут.</p>
+<p>Цена растёт ступенями. Пока поле укладывается в то, что станок держит без дополнительных мер, смета стоит на месте. Новая ступень начинается с новым способом обработки или новым измерением: чистовой проход, шлифование, калибр вместо штангенциркуля.</p>
+<p>Во сколько раз деталь станет дороже, из одной цифры допуска не следует. Коэффициент зависит от геометрии, материала, партии и станка. Без расчёта по чертежу процент удорожания назвать нельзя.</p>
+<blockquote><p>Допуск стоит денег через лишнюю операцию, сниженный режим, подналадку и контроль. Пока цифра на чертеже маршрут не меняет, она к смете ничего не добавляет.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Допуски при обработке и шероховатость: за что вы платите на самом деле">Прислать чертёж на почту</a>
+</div>
+<h2 id="kvalitet-i-klass-tochnosti">Квалитет, класс точности, допуск: как не запутаться в терминах?</h2>
+<p><img alt="Токарный станок Emco Unimat" decoding="async" height="666" loading="lazy" src="/images/blog/dopuski-pri-obrabotke-vliyanie-na-cenu-1.webp" width="1000"/></p>
+<p><em>Emco Unimat — токарный станок для механической обработки деталей. Фото: <a href="https://commons.wikimedia.org/wiki/File:Emco_Unimat_Metal_Lathe.jpg" rel="nofollow noopener" target="_blank">PhotoPhoto33</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Квалитет, класс точности и допуск размера называют одну точность разными словами: насколько размер может уйти от номинала. Квалитет задаёт допуск размера номером IT. Сам допуск размера определяет стоимость обработки. Если в заявке стоит «класс» без номера IT, расчёт останавливается на вопросе.</p>
+<p>Три слова держите отдельно:</p>
+<ul><li>Допуск размера — ширина разрешённого поля в миллиметрах.</li><li>Квалитет — номер точности IT. При том же номере поле зависит от номинала.</li><li>Класс точности — в общих допусках по ГОСТ 30893.1 один из четырёх классов для размеров без индивидуальных отклонений.</li></ul>
+<p>Один и тот же IT7 на диаметре 10 мм и на диаметре 100 мм — разное требование к станку. Номер общий, допуск в микронах растёт с размером.</p>
+<p>Посадка подшипника качения требует своего поля: от него зависит зазор или натяг. Запись вроде H7/h6 читают отдельно: <a href="/blog/dopuski-po-kvalitetam-kak-chitat-ih-v-chertezhe.html">как читать допуски по квалитетам</a>.</p>
+<h2 id="gde-cena-ne-rastet">Где допуск почти ничего не стоит, а где начинается доплата?</h2>
+<p>Допуски порядка ±0,05–0,127 мм на ЧПУ обычно получают сразу и держат весь срок службы инструмента. Особых мер они, как правило, не требуют. Границу сдвигают станок, материал и жёсткость детали, поэтому абсолютной её не считают.</p>
+<p>Жёстче примерно ±0,025 мм на большой партии нужно планировать отдельно: износ может вывести размер за поле. ±0,005–0,012 мм многие цеха держат регулярно, но уже с мерами: подналадка, прогрев, частый контроль.</p>
+<p>Чертёж с ±0,1 мм обычно идёт без особых мер. Тот же чертёж с ±0,01 мм требует подналадки, прогрева станка и частого измерения.</p>
+<p>Шкала такая: ±0,127 и ±0,05 мм получают сразу, ±0,025 мм — граница, где на партии нужна отдельная проработка, ±0,012 и ±0,005 мм держат регулярно, но с мерами.</p>
+<blockquote><p><strong>Факт.</strong> Допуски от ±0,05 до ±0,127 мм на ЧПУ получают сразу и держат весь срок службы инструмента.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если станок и материал обычные, допуск до ±0,05 мм не повод закладывать надбавку.</p></blockquote>
+<h2 id="pochemu-zhestkiy-dopusk-dorozhe">Что происходит на станке, когда допуск жёсткий?</h2>
+<p>Жёсткий допуск превращает обычную партию в партию с постоянным контролем размера. Износ инструмента смещает размер к границе допуска, термодеформация станка искажает размер, пока узлы не вышли на режим. Оба эффекта сидят в нормо-часе, в риске брака и в цене партии.</p>
+<h3>Износ инструмента и подналадка</h3>
+<p>При износе наружные поверхности растут, внутренние уменьшаются. Чем уже допуск размера, тем меньше деталей проходит между подналадками. На очень малом поле оператор поправляет размер каждые несколько штук.</p>
+<p>Цель в середине поля берёт половину допуска: партия уходит к одной границе. Сдвиг цели на 10 % поля к границе, куда размер уходит с износом, удваивает интервал между подналадками. На ±0,025–0,05 мм в большой партии размер может выйти за поле ещё до конца стойкости. Для заказа это предел серии.</p>
+<p>Шаг коррекции в метрическом режиме обычно 1 мкм: на полном поле 0,025 мм есть 25 положений против 10 в дюймовом.</p>
+<h3>Тепло и износ самого станка</h3>
+<p>На части токарных центров наружный диаметр уменьшается на 0,025 мм, пока узлы выходят на рабочую температуру. Для допуска в единицы и десятки микрон это всё поле. Станок прогревают программой без заготовки при включении и после простоя дольше нескольких минут. Жёсткий допуск требует прогретого станка: с холодного пуска размер может уйти.</p>
+<p>Износ станка первым съедает способность держать жёсткие допуски. Что станок держал новым, становится трудно или невозможно. Перед точной работой спросите, на каком станке пойдёт размер.</p>
+<blockquote><p>Чем жёстче допуск, тем чаще оператор подправляет размер по ходу партии. Эти минуты сидят в нормо-часе.</p></blockquote>
+<h2 id="sherohovatost-i-cena">Шероховатость Ra: почему «зеркало» на чертеже стоит денег</h2>
+<p><a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">Шероховатость</a> Ra влияет на стоимость обработки отдельно от допуска размера. Чем ниже Ra, тем чаще нужен чистовой проход, а на малых значениях — шлифование или другая отделка. Зеркало на нерабочей поверхности добавляет операцию и цену, даже при обычном допуске размера. За этот проход платят отдельно.</p>
+<p>Числовые значения Ra берут из ряда, который задан стандартом на шероховатость, а не назначают произвольно. Требование ставят из функции: трение, уплотнение, посадка. Если функции нет, шероховатость не задают и не контролируют.</p>
+<p>Проверьте пару «квалитет и Ra». Жёсткий квалитет при грубой Ra не сходится: допуск просит тонкую обработку, а Ra оставляет грубый след. Согласуйте их до расчёта.</p>
+<p>На чертеже параметр пишут у знака: Ra или Rz. Знак ставят на поверхностях, которым конструкция задаёт шероховатость. Одинаковую шероховатость всех поверхностей выносят в правый верхний угол.</p>
+<blockquote><p>Шероховатость нужна там, где поверхность трётся, уплотняет или несёт нагрузку. На остальных поверхностях она добавляет операцию и цену.</p></blockquote>
+<h2 id="stupeni-ceny-tablica">Ступени точности и что растёт в цене</h2>
+<p>Чем уже поле допуска, тем больше мер нужно, чтобы удержать его на партии. Коэффициента удорожания здесь нет, его считают по детали. Таблица показывает, что говорит о каждом поле источник и что в смете начинает расти.</p>
+<table><thead><tr><th>Поле допуска</th><th>Что происходит на станке</th><th>Что дорожает</th></tr></thead><tbody><tr><td>±0,05–0,127 мм</td><td>Получают сразу, держат весь срок службы инструмента</td><td>Особых мер не нужно</td></tr><tr><td>±0,025–0,05 мм</td><td>Получают без труда, но на большой партии износ может вывести размер за поле</td><td>Планирование партии, подналадка</td></tr><tr><td>±0,005–0,012 мм</td><td>Многие цеха держат регулярно, но с мерами</td><td>Подналадка, прогрев станка, частый контроль</td></tr></tbody></table>
+<p>Шероховатость добавляет свои ступени: чистовой проход, а на малых Ra — шлифование или другая отделка. Материал, габарит, партия и станок двигают смету сильнее любой отдельной цифры. Для типовых деталей начните с раздела про <a href="/frezerovka.html">фрезерные работы по металлу</a>.</p>
+<h2 id="obshchie-dopuski-i-forma">Допуски формы и общие допуски: скрытая часть цены</h2>
+<p>Цену двигают не только линейные размеры. Допуски формы и расположения — цилиндричность, соосность, биение, плоскостность — требуют своих проходов и своего контроля. Каждое такое требование стоит проверить так же, как жёсткий линейный размер: нужно ли оно сборке.</p>
+<p>Общие допуски заменяют индивидуальные допуски на размеры без проставленных отклонений. Их задают общей записью и выбирают из четырёх классов точности. Средний класс в ссылке обозначают буквой m. Нет строки в основной надписи — расчёт останавливается: поле «голых» размеров неизвестно. Это самый частый повод для уточнения.</p>
+<p>Сопрягаемый размер отделяют от свободного по трём признакам:</p>
+<ul><li>Размер входит в другую деталь: шейка, кольцо подшипника, шпоночный паз.</li><li>Размер держит рабочий зазор: уплотнение, ход подвижного звена.</li><li>Размер никуда не садится: габарит, фаска, свободная длина. Ему хватает общего класса.</li></ul>
+<p>Индивидуальный допуск нужен первым двум.</p>
+<h2 id="kontrol-i-material">Контроль, материал и температура: чего чертёж не показывает?</h2>
+<p>Жёсткий допуск требует контроля размеров: чем поле уже, тем точнее и дороже измерение. Это штангенциркуль, микрометр, калибр, координатно-измерительная машина. Шероховатость проверяют отдельным прибором. Протокол измерений — отдельная работа, и спросить о нём стоит до заказа.</p>
+<p>Материал и форма меняют достижимый допуск без цифры на поле. Нержавеющая сталь, алюминий и титан ведут себя по-разному: инструмент изнашивается быстрее или деталь уходит от тепла. Тонкая стенка после снятия зажима пружинит, и размер, пойманный в приспособлении, на столе уже другой.</p>
+<p>Размер на чертеже относится к определённой температуре. На жёстком допуске спросите, при какой температуре измеряли: деталь и микрометр меняются вместе с теплом цеха. Если протокол нужен сборке, напишите это в заявке.</p>
+<h2 id="kak-ne-pereplatit">Как не переплатить: порядок действий с чертежом</h2>
+<p>Порядок из пяти шагов снимает цену там, где точность детали не нужна, и оставляет её на сопрягаемых размерах. Сначала отделяют рабочие поверхности от свободных, затем проверяют пару квалитета и Ra и только после этого отдают чертёж в расчёт.</p>
+<ol><li>Отметьте сопрягаемые размеры. Остальным оставьте общие допуски в основной надписи.</li><li>По жёсткому допуску спросите, что сломается при поле вдвое шире. Если ничего, поле мягче.</li><li>Ra ставьте только на функциональные поверхности и проверьте пару с квалитетом.</li><li>Укажите общий класс допуска и материал в основной надписи.</li><li>При расчёте узнайте, какие размеры самые дорогие и есть ли вариант мягче.</li></ol>
+<p>Ориентир по деньгам — <a href="/ceny.html">цены на металлообработку</a>. Как расставить поля без лишней цены: <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">допуски и шероховатость без лишнего удорожания</a>.</p>
+<p>Самая частая ошибка — жёсткий допуск на всех размерах «на всякий случай».</p>
+<blockquote><p><strong>Мнение.</strong> Если размер не входит в другую деталь и не держит рабочий зазор, оставьте его на общем допуске. Индивидуальный жёсткий допуск на свободной длине вы оплатите подналадкой.</p></blockquote>
+<h2 id="itog-dopuski">Итог: платить стоит за функцию, а не за красивую цифру</h2>
+<p>До примерно ±0,05 мм допуски обычно не требуют особых мер: станок попадает в поле без отдельного режима. Жёсткие допуски дорожают через подналадку, прогрев и контроль размеров. Шероховатость и допуски формы считают отдельными статьями цены, даже если линейный размер остаётся обычным. Это три разные строки сметы.</p>
+<p>Пройдите чертёж и снимите страховочные допуски со свободных размеров. Оставьте функциональные: посадку, зазор, поверхность, которая трётся или уплотняет.</p>
+<p>Чтобы понять смету по своему файлу, пришлите чертёж и отметьте сопрягаемые поверхности. Технолог вернёт размеры, которые держат цену, и вариант мягче, если сборка его выдержит.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем квалитет отличается от класса точности?</summary>
+<div class="faq__a"><p>Квалитет задаёт допуск размера номером IT. Класс точности относится к общим допускам по ГОСТ 30893.1: их четыре, и они действуют на размеры без индивидуальных отклонений. Если в заявке встретился «класс», допишите квалитет или уточните, о каких размерах речь.</p></div>
+</details>
+<details>
+<summary>Какой допуск ставить на несопрягаемые размеры?</summary>
+<div class="faq__a"><p>Индивидуальный допуск не нужен. Достаточно общего класса в основной надписи по ГОСТ 30893.1. Под него попадают габарит, фаска и длина, которая никуда не садится. Сопрягаемые размеры по-прежнему указывают своими отклонениями.</p></div>
+</details>
+<details>
+<summary>Нужно ли указывать шероховатость на всех поверхностях?</summary>
+<div class="faq__a"><p>Нет. Требование ставят на функциональные поверхности: трение, уплотнение, посадка. Остальным хватает одного общего знака, а поверхность без требования конструкции под него не подгоняют. Лишний Ra добавляет проход и цену.</p></div>
+</details>
+<details>
+<summary>Всегда ли жёсткий допуск удорожает деталь?</summary>
+<div class="faq__a"><p>Не всегда. Допуски порядка ±0,05–0,127 мм на ЧПУ обычно достигаются легко, без особых мер. Отдельные меры нужны при поле жёстче примерно ±0,025 мм на большой партии, а ±0,005–0,012 мм держат уже с подналадкой, прогревом и частым контролем. Итог зависит от детали, материала и партии.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://engenegr.ru/gost-2789-73" rel="noopener" target="_blank">ГОСТ 2789-73. Шероховатость поверхности. Параметры и характеристики</a> — Госстандарт</li>
+<li><a href="https://engenegr.ru/gost-30893-1-2002" rel="noopener" target="_blank">ГОСТ 30893.1-2002. Общие допуски линейных и угловых размеров</a> — Госстандарт России</li>
+<li><a href="https://engenegr.ru/gost-2-309-73" rel="noopener" target="_blank">ГОСТ 2.309-73. Обозначения шероховатости поверхностей</a> — Госстандарт</li>
+<li><a href="https://www.mmsonline.com/articles/holding-size-with-tight-tolerances" rel="noopener" target="_blank">Holding Size with Tight Tolerances</a> — Modern Machine Shop</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/oboznachenie-sherohovatosti-poverhnosti.html">
+            <img src="/images/blog/oboznachenie-sherohovatosti-poverhnosti-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как читать обозначения шероховатости и выбирать Ra для детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/tverdoe-anodirovanie-chem-otlichaetsya-ot-obychnogo.html">
+            <img src="/images/blog/tverdoe-anodirovanie-chem-otlichaetsya-ot-obychnogo-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Твёрдое анодирование: чем отличается от обычного и когда оно действительно нужно</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/izgotovlenie-napravlyayushchih-po-chertezham.html">
+            <img src="/images/blog/izgotovlenie-napravlyayushchih-po-chertezham-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как задать требования к направляющим по чертежу и проверить готовые детали</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Допуски при обработке и шероховатость: за что вы платите на самом деле">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

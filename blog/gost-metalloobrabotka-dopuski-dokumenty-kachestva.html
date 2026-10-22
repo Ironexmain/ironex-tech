@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ГОСТ металлообработка: допуски и документы о качестве</title>
+  <meta name="description" content="Какие допуски, шероховатость и стандарты прописать в чертеже, чем сертификат ISO 9001 отличается от паспорта на металл и протокола контроля." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva.html#article",
+      "headline": "ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха",
+      "description": "Какие допуски, шероховатость и стандарты прописать в чертеже, чем сертификат ISO 9001 отличается от паспорта на металл и протокола контроля.",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "ГОСТ металлообработка",
+        "допуски и посадки",
+        "неуказанные предельные отклонения",
+        "шероховатость Ra",
+        "сертификат на металл",
+        "протокол контроля детали"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какой ГОСТ задаёт допуски на неуказанные размеры?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Общие допуски для размеров без отдельного значения задаёт ГОСТ 30893.1. Нужный класс выбирают по тексту стандарта и функции детали. Перед ссылкой в чертеже сверьте обозначение, статус и действующую редакцию по официальному реестру."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем сертификат ISO 9001 отличается от сертификата на металл?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ISO 9001 подтверждает систему менеджмента качества компании. Сертификат или паспорт на металл относится к конкретной партии материала. Соответствие размеров готовой детали чертежу подтверждает протокол контроля."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как указать шероховатость на чертеже?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Параметр Ra или Rz ставят знаком шероховатости по ГОСТ 2.309 и указывают числовое значение в микрометрах. Определения параметров сверяют по ГОСТ 2789. Если значение не задано, требуемый результат нужно согласовать с цехом до запуска."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Какие ГОСТ указать в чертеже и какие документы просить у цеха" />
+  <meta property="og:description" content="Какие допуски, шероховатость и стандарты прописать в чертеже, чем сертификат ISO 9001 отличается от паспорта на металл и протокола контроля." />
+  <meta property="og:url" content="https://ironex.tech/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-22" />
+  <meta property="article:modified_time" content="2026-10-22" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Какие ГОСТ указать в чертеже и какие документы просить у цеха" />
+  <meta name="twitter:description" content="Какие допуски, шероховатость и стандарты прописать в чертеже, чем сертификат ISO 9001 отличается от паспорта на металл и протокола контроля." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#gde-gost-vstrechaetsya-v-zakaze-ot-chertezha-do-priemki">Где ГОСТ встречается в заказе: от чертежа до приёмки</a></li>
+<li><a href="#chto-obyazatelno-a-chto-dobrovolno-gost-iso-ost">Что обязательно, а что добровольно: ГОСТ, ISO, ОСТ</a></li>
+<li><a href="#obschie-dopuski-chto-oznachaet-neukazannye-predelnye-otklone">Общие допуски: что означает «неуказанные предельные отклонения»</a></li>
+<li><a href="#kvalitety-i-posadki-dopusk-kotoryy-nuzhen-sopryazheniyu">Квалитеты и посадки: допуск, который нужен сопряжению</a></li>
+<li><a href="#dopuski-formy-i-raspolozheniya-kogda-odnih-razmerov-malo">Допуски формы и расположения: когда одних размеров мало</a></li>
+<li><a href="#sherohovatost-kak-zapisat-ra-i-ne-doplatit-za-lishnee">Шероховатость: как записать Ra и не доплатить за лишнее</a></li>
+<li><a href="#sertifikatsiya-i-dokumenty-o-kachestve-chto-prosit-u-podryad">Сертификация и документы о качестве: что просить у подрядчика</a></li>
+<li><a href="#chek-list-chto-ukazat-v-chertezhe-i-zayavke">Чек-лист: что указать в чертеже и заявке</a></li>
+<li><a href="#chastye-oshibki-so-standartami">Частые ошибки со стандартами</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха</h1>
+        <p class="lede">Какие допуски, шероховатость и стандарты прописать в чертеже, чем сертификат ISO 9001 отличается от паспорта на металл и протокола контроля.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-10-22">Опубликовано 22 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva-cover.webp" alt="ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Стандарты в заказе нужны не ради списка номеров, а для трёх решений: какие допуски и <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> поставить в чертёж, на какую марку материала сослаться и какие документы о качестве попросить у цеха. Ниже разобрано, где каждый стандарт срабатывает и что будет, если о нём забыть.</p>
+<h2 id="gde-gost-vstrechaetsya-v-zakaze-ot-chertezha-do-priemki">Где ГОСТ встречается в заказе: от чертежа до приёмки</h2>
+<p>Чертёж ушёл в цех, но расчёт остановился на вопросе «по какому ГОСТ?». Такое происходит, когда заказчик указал геометрию, но не зафиксировал правила её толкования. Стандарты должны связывать чертёж, материал, изготовление и контроль в одну проверяемую цепочку.</p>
+<table><thead><tr><th>Этап заказа</th><th>Что зафиксировать</th><th>На что сослаться</th><th>Кто задаёт</th></tr></thead><tbody><tr><td>Подготовка документации</td><td>Состав чертежей и обозначения</td><td>ЕСКД, ГОСТ 2.102</td><td>Заказчик</td></tr><tr><td>Выбор материала</td><td>Марку и состояние поставки</td><td>Стандарт на материал</td><td>Заказчик</td></tr><tr><td>Назначение точности</td><td>Размерные и геометрические допуски</td><td>ГОСТ 30893.1, 25346, 2.308</td><td>Конструктор</td></tr><tr><td>Обработка поверхности</td><td>Ra или Rz на нужных поверхностях</td><td>ГОСТ 2789 и 2.309</td><td>Конструктор</td></tr><tr><td>Приёмка</td><td>Измеряемые параметры и документы</td><td>Чертёж и заявка</td><td>Заказчик и цех</td></tr></tbody></table>
+<p>ГОСТ 2.102 помогает определить комплект конструкторских документов. Требования к передаваемым файлам разобраны отдельно в материале про <a href="/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html">форматы чертежей и CAD-файлов для цеха</a>.</p>
+<p>Марку стали указывают вместе со стандартом на соответствующую металлопродукцию. Сортамент листа, круга, трубы или крепежа проверяют отдельно: одинаковая марка не отменяет требований к форме поставки. Если исходный материал недоступен, заранее согласуйте <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html">аналог материала</a>.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха">Прислать чертёж на почту</a>
+</div>
+<h2 id="chto-obyazatelno-a-chto-dobrovolno-gost-iso-ost">Что обязательно, а что добровольно: ГОСТ, ISO, ОСТ</h2>
+<p><img alt="Токарный станок в цеху мастерских" decoding="async" height="732" loading="lazy" src="/images/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva-1.webp" width="1000"/></p>
+<p><em>Токарный станок для обработки колес в цеху железнодорожных мастерских. Фото: <a href="https://commons.wikimedia.org/wiki/File:Wheel_lathe_in_the_machine_shop_of_Petone_Railway_Workshops_ATLIB_274047.png" rel="nofollow noopener" target="_blank">Godber, Albert Percy, 1875-1949</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Стандарт становится требованием конкретного заказа через чертёж, техническое задание или договор. Запись должна быть однозначной: номер документа, нужный параметр и применяемая редакция. Общая фраза «изготовить по ГОСТ» не сообщает цеху, какие требования проверять.</p>
+<blockquote><p>Ссылка на стандарт в чертеже превращает его положения в измеримые требования заказа. Без ссылки подрядчик опирается на согласованный чертёж и свои производственные нормы.</p></blockquote>
+<p>ОСТ применяют в отраслевых проектах, если заказчик прямо включил его в документацию. ISO допустим, когда стороны понимают его область действия. Аналогичный российский документ может отличаться терминами, таблицами или диапазонами, поэтому слово «аналог» не подтверждает полное совпадение.</p>
+<p>Перед выпуском чертежа проверьте стандарт в официальном реестре: документ мог получить поправку, замену или новый статус. Найденный в старой подборке PDF не подтверждает актуальность редакции.</p>
+<p>Сертификат ISO 9001 относится к системе менеджмента качества организации. Редакцию стандарта и срок действия сертификата сверяйте по самому сертификату подрядчика и на сайте ISO.</p>
+<blockquote><p><strong>Мнение.</strong> Если стандарт влияет на приёмку или совместимость деталей, укажите его в чертеже и продублируйте требование в заявке. Устного согласования для такого параметра недостаточно.</p></blockquote>
+<h2 id="obschie-dopuski-chto-oznachaet-neukazannye-predelnye-otklone">Общие допуски: что означает «неуказанные предельные отклонения»</h2>
+<p>Общие допуски определяют допустимые отклонения для размеров, рядом с которыми нет отдельного значения. ГОСТ 30893.1 применяют именно к таким размерным допускам. В основной надписи указывают стандарт и выбранный класс, чтобы цех не назначал правило самостоятельно.</p>
+<p>Пример записи: «Неуказанные предельные отклонения размеров — по ГОСТ 30893.1», дальше класс, выбранный по тексту стандарта. Класс подбирают по функции детали и сверяют с действующей редакцией документа.</p>
+<p>Точность, которую цех выдерживает без доплаты, зависит от станка, материала и способа закрепления. Это возможности конкретного маршрута, а не норма стандарта, поэтому уточняйте их у технолога до выпуска чертежа.</p>
+<p>В основной надписи нужны четыре позиции:</p>
+<ul><li>класс общих допусков и ссылка на стандарт;</li><li>шероховатость по умолчанию;</li><li>марка и состояние материала;</li><li>отдельные требования к критичным поверхностям.</li></ul>
+<p>Допуск можно записать симметрично, односторонне или предельными размерами. Цеху важны явные числовые границы, единицы измерения и отсутствие конфликта между основной надписью и размером на виде.</p>
+<h2 id="kvalitety-i-posadki-dopusk-kotoryy-nuzhen-sopryazheniyu">Квалитеты и посадки: допуск, который нужен сопряжению</h2>
+<p>Допуск размера задаёт допустимый диапазон, квалитет характеризует степень точности, а посадка связывает поля допуска отверстия и вала. Квалитет и посадка определяют зазор или натяг для сопрягаемой детали. Поэтому точность выбирают по работе узла, а не по желанию получить минимальное отклонение.</p>
+<p>Систему допусков линейных размеров сверяют по ГОСТ 25346. Конкретное поле допуска выбирают по справочной таблице и номинальному размеру. Квалитеты для токарной, фрезерной или шлифовальной обработки нельзя назначать по памяти: материал, длина базы, жёсткость детали и способ закрепления меняют достижимый результат.</p>
+<p>На паре «вал — отверстие» сначала определяют функцию соединения. Разборная посадка требует рабочего зазора. Неподвижное соединение может требовать натяга. После этого назначают согласованные поля допуска обеих деталей и проверяют, можно ли измерить их выбранным инструментом.</p>
+<p>Слишком жёсткий допуск может потребовать дополнительной обработки. Цена и срок растут, хотя функция узла не меняется. Слишком свободный допуск мешает сборке либо создаёт люфт.</p>
+<blockquote><p>Допуск назначают по функции сопряжения. Лишняя точность увеличивает <a href="/blog/tokarnaya-ili-frezernaya-obrabotka-kak-vybrat-marshrut.html">маршрут обработки</a>, а недостаточная точность переносит проблему на сборку.</p></blockquote>
+<blockquote><p><strong>Факт.</strong> Для развёрнутых отверстий достижим допуск ±0,0127 мм, но технолог должен подтвердить его для конкретной геометрии и материала.</p></blockquote>
+<p>Перед запуском зафиксируйте одну <a href="/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html">версию чертежа</a>: иначе цех может изготовить отверстие по новой модели, а вал — по прежней таблице допусков.</p>
+<h2 id="dopuski-formy-i-raspolozheniya-kogda-odnih-razmerov-malo">Допуски формы и расположения: когда одних размеров мало</h2>
+<p>Размерный допуск ограничивает диаметр, длину или расстояние, но не всегда контролирует форму поверхности и положение элемента относительно базы. Термины допусков формы и расположения собраны в ГОСТ 24642, а правила их указания на чертеже — в ГОСТ 2.308. Для передачи таких требований нужен 2D-чертёж вместе с 3D-моделью.</p>
+<h3>Плоскостность: деталь повело после снятия со станка</h3>
+<p>Тонкую фрезерованную деталь может повести после раскрепления. Причиной становятся внутренние напряжения материала и усилия зажима. Размер толщины при этом останется в допуске, хотя поверхность перестанет прилегать к ответной плите.</p>
+<p>Допуск плоскостности ограничивает поверхность зоной между двумя параллельными плоскостями. На чертеже указывают допустимое отклонение и поверхность, к которой относится рамка допуска.</p>
+<h3>Цилиндричность: «круглое» отверстие может быть овальным</h3>
+<p>Размерный допуск на диаметр сам по себе допускает овальное отверстие. Диаметр в каждом направлении лежит в допуске, но форма мешает работе сопряжения.</p>
+<p>Допуск цилиндричности задаёт зону между двумя соосными цилиндрами. Он нужен, когда одной проверки диаметра недостаточно для работы втулки, подшипника или уплотнения.</p>
+<h3>Позиция, соосность, перпендикулярность</h3>
+<p>Положение отверстия задают позиционным допуском относительно баз. Такая запись связывает отверстие с системой координат детали и лучше описывает функцию, чем два независимых размера по X и Y.</p>
+<p>Соосность применяют, когда отверстие должно совпасть с осью выточки или бобышки. Перпендикулярность ограничивает отклонение торца либо плоскости относительно выбранной базы.</p>
+<h2 id="sherohovatost-kak-zapisat-ra-i-ne-doplatit-za-lishnee">Шероховатость: как записать Ra и не доплатить за лишнее</h2>
+<p>Шероховатость Ra описывает микронеровности поверхности и должна стоять на чертеже там, где влияет на трение, герметичность, посадку или внешний вид. Параметры поверхности сверяют по ГОСТ 2789, обозначения на чертеже — по ГОСТ 2.309.</p>
+<table><thead><tr><th>Тип поверхности</th><th>Производственный ориентир</th><th>Что указать</th></tr></thead><tbody><tr><td>Сопрягаемая</td><td>По расчёту узла</td><td>Ra или Rz на конкретной поверхности</td></tr><tr><td>Свободная плоская</td><td>Около Ra 1,6 мкм</td><td>Значение либо общее требование</td></tr><tr><td>Криволинейная</td><td>Согласовать с технологом</td><td>Функцию поверхности и предел Ra</td></tr><tr><td>Видимая</td><td>По образцу внешнего вида</td><td>Шероховатость и отдельную отделку</td></tr></tbody></table>
+<p>Отделку, которая меняет внешний вид поверхности, не заменяет требование Ra. Это отдельная операция, её указывают в заявке.</p>
+<p>Чем ниже требуемый Ra, тем вероятнее дополнительные проходы, смена инструмента или шлифование. Перед назначением проверьте, <a href="/ceny.html">как допуск и шероховатость влияют на цену обработки</a>, и оставьте строгие значения только на функциональных поверхностях.</p>
+<h2 id="sertifikatsiya-i-dokumenty-o-kachestve-chto-prosit-u-podryad">Сертификация и документы о качестве: что просить у подрядчика</h2>
+<p>Для заказа по чертежу нужны разные подтверждения: документ о системе подрядчика, документ на материал и протокол измерений готовой детали. Один файл не закрывает все три задачи. Состав комплекта согласуют до закупки металла и запуска станка.</p>
+<table><thead><tr><th>Документ</th><th>Что подтверждает</th><th>Кто оформляет</th><th>Когда запросить</th></tr></thead><tbody><tr><td>Сертификат ISO 9001</td><td>Систему менеджмента качества компании</td><td>Орган по сертификации</td><td>При выборе подрядчика</td></tr><tr><td>Паспорт или сертификат на металл</td><td>Марку, партию, состав или номер плавки</td><td>Поставщик материала</td><td>До закупки и запуска</td></tr><tr><td>Протокол контроля детали</td><td>Измеренные размеры и отклонения</td><td>Цех или лаборатория</td><td>До изготовления партии</td></tr></tbody></table>
+<p>Сертификат ISO 9001 не заменяет протокол контроля детали. Стандарт описывает процессы организации, но не содержит результатов измерения вашего заказа.</p>
+<p>Документ о качестве на материал подтверждает соответствие поставленной партии заявленной марке и стандарту. Если важна прослеживаемость, запросите номер плавки и связь материала с партией деталей. Формулировка «сталь по чертежу» такой связи не создаёт.</p>
+<p>Протокол контроля содержит фактические результаты: критичные диаметры, расположение отверстий, плоскостность или другие согласованные параметры. Для первой детали можно заказать отдельный протокол, а для партии — контроль выбранных размеров по утверждённому плану.</p>
+<blockquote><p>Сертификат системы описывает работу компании, паспорт материала — исходный металл, протокол контроля — изготовленную деталь.</p></blockquote>
+<h2 id="chek-list-chto-ukazat-v-chertezhe-i-zayavke">Чек-лист: что указать в чертеже и заявке</h2>
+<p>Перед расчётом соберите требования в одном комплекте. Цех должен увидеть материал, границы годности, способ контроля и перечень документов до выбора технологии и составления цены.</p>
+<ol><li>Укажите марку материала, состояние поставки и применимый стандарт.</li><li>Запишите класс общих допусков в основной надписи чертежа.</li><li>Назначьте отдельные допуски для валов, отверстий и других сопряжений.</li><li>Добавьте допуски формы и расположения для критичных поверхностей и баз.</li><li>Поставьте Ra или Rz там, где шероховатость влияет на функцию детали.</li><li>Перечислите контрольные операции и документы, которые должны войти в поставку.</li></ol>
+<p>Если заданы плоскостность, позиция, соосность или перпендикулярность, передавайте 2D-чертёж вместе с 3D-моделью. Модель описывает геометрию, но не хранит полный смысл рамок допуска и системы баз без отдельной документации.</p>
+<p>Электроэрозию, шлифование, растачивание и другие особые операции укажите в заявке. Они меняют маршрут, состав оборудования и стоимость.</p>
+<h2 id="chastye-oshibki-so-standartami">Частые ошибки со стандартами</h2>
+<p>Стандарт помогает только тогда, когда его номер, редакция и контролируемые значения однозначно записаны в чертеже или заявке. Ссылка без параметров оставляет цеху пространство для толкования.</p>
+<p>Чаще всего заказ задерживают четыре ошибки:</p>
+<ul><li>стандарт взят из старой подборки без проверки статуса;</li><li>допуск назначен жёстче, чем требует работа узла;</li><li>посадка не согласована с сопрягаемой деталью;</li><li>сертификат ISO 9001 принят за подтверждение размеров готовой детали.</li></ul>
+<p>Последствия проявляются на расчёте или при сборке: технолог задаёт уточняющие вопросы, в маршрут добавляются операции, а готовая деталь не входит в узел. Протокол контроля тоже нужно согласовать заранее. После изготовления он покажет только те параметры, которые стороны решили измерять.</p>
+<blockquote><p>Номер стандарта без конкретного требования не задаёт критерий приёмки.</p></blockquote>
+<p>Если чертёж уже готов, проверьте по чек-листу материал, допуски, шероховатость и комплект документов. Затем отправьте актуальную версию файлов на <a href="/">изготовление деталей по чертежам</a>, отметьте критичные размеры и отдельно перечислите документы для приёмки.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Какой ГОСТ задаёт допуски на неуказанные размеры?</summary>
+<div class="faq__a"><p>Общие допуски для размеров без отдельного значения задаёт ГОСТ 30893.1. Нужный класс выбирают по тексту стандарта и функции детали. Перед ссылкой в чертеже сверьте обозначение, статус и действующую редакцию по официальному реестру.</p></div>
+</details>
+<details>
+<summary>Чем сертификат ISO 9001 отличается от сертификата на металл?</summary>
+<div class="faq__a"><p>ISO 9001 подтверждает систему менеджмента качества компании. Сертификат или паспорт на металл относится к конкретной партии материала. Соответствие размеров готовой детали чертежу подтверждает протокол контроля.</p></div>
+</details>
+<details>
+<summary>Как указать шероховатость на чертеже?</summary>
+<div class="faq__a"><p>Параметр Ra или Rz ставят знаком шероховатости по ГОСТ 2.309 и указывают числовое значение в микрометрах. Определения параметров сверяют по ГОСТ 2789. Если значение не задано, требуемый результат нужно согласовать с цехом до запуска.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://protect.gost.ru/gost/details/cf89243c-2a6b-4cfd-b59f-5b54850152d0" rel="noopener" target="_blank">ГОСТ 30893.1-2002. Общие допуски</a> — Росстандарт</li>
+<li><a href="https://protect.gost.ru/gost/details/74a9a2cc-1ea0-4750-8acc-5f860dd72347" rel="noopener" target="_blank">ГОСТ 2.308-2011. Указания допусков формы и расположения поверхностей</a> — Росстандарт</li>
+<li><a href="https://www.iso.org/" rel="noopener" target="_blank">ISO 9001. Quality management systems — Requirements</a> — International Organization for Standardization</li>
+<li><a href="https://www.protolabs.com/resources/design-tips/fine-tuning-tolerances-for-cnc-machined-parts/" rel="noopener" target="_blank">Understanding CNC Machining Tolerances</a> — Protolabs</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/dopusk-ploskostnosti-kak-ukazat-na-chertezhe.html">
+            <img src="/images/blog/dopusk-ploskostnosti-kak-ukazat-na-chertezhe-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Допуск плоскостности на чертеже: как обозначить и чем проверить деталь</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/oboznachenie-sherohovatosti-poverhnosti.html">
+            <img src="/images/blog/oboznachenie-sherohovatosti-poverhnosti-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как читать обозначения шероховатости и выбирать Ra для детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/izgotovlenie-napravlyayushchih-po-chertezham.html">
+            <img src="/images/blog/izgotovlenie-napravlyayushchih-po-chertezham-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как задать требования к направляющим по чертежу и проверить готовые детали</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

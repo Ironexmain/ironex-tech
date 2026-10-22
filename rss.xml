@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха</title>
+      <link>https://ironex.tech/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva.html</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Какие допуски, шероховатость и стандарты прописать в чертеже, чем сертификат ISO 9001 отличается от паспорта на металл и протокола контроля.</description>
+    </item>
+    <item>
+      <title>Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции</title>
+      <link>https://ironex.tech/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat.html</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Какие пары металлов разрушаются во влаге, как работает правило площадей и чем разделить алюминий, сталь и нержавейку в узле по чертежу.</description>
+    </item>
+    <item>
+      <title>Допуски при обработке и шероховатость: за что вы платите на самом деле</title>
+      <link>https://ironex.tech/blog/dopuski-pri-obrabotke-vliyanie-na-cenu.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/dopuski-pri-obrabotke-vliyanie-na-cenu.html</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Какие допуски и Ra на чертеже удорожают деталь: ступени точности, износ инструмента, контроль и чек-лист, как не переплатить.</description>
+    </item>
     <item>
       <title>Допуск соосности: как читать рамку на чертеже и не перепутать с концентричностью и биением</title>
       <link>https://ironex.tech/blog/dopusk-soosnosti-na-chertezhe.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 +0300</pubDate>
       <category>Технологии</category>
       <description>Деталь повело после сварки: почему шов коробит металл, как на усадку влияют сплав и толщина и что заложить в чертёж, порядок сварки и оснастку.</description>
-    </item>
-    <item>
-      <title>Что такое медь и как её свойства влияют на выбор материала детали</title>
-      <link>https://ironex.tech/blog/med-eto-metall-svoystva-primenenie.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/med-eto-metall-svoystva-primenenie.html</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Как медь проводит ток и тепло, чем отличается от латуни и бронзы. Что указать в чертеже и заявке на изготовление медной детали.</description>
-    </item>
-    <item>
-      <title>Из чего складывается стоимость изготовления металлических деталей</title>
-      <link>https://ironex.tech/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/stoimost-izgotovleniya-detaley-iz-chego-skladyvaetsya.html</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Экономика заказа</category>
-      <description>Стоимость изготовления деталей: материал, станко-час, оператор, наладка, инструмент и накладные. Формула часа станка, условный пример и ошибки в заявке.</description>
-    </item>
-    <item>
-      <title>Что такое сталь и как её состав влияет на свойства детали</title>
-      <link>https://ironex.tech/blog/stal-sostav-svoystva-vidy.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/stal-sostav-svoystva-vidy.html</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Из чего состоит сталь, чем отличается от чугуна и как выбрать материал для детали. Разбираем марки, термообработку и проверку сертификата.</description>
     </item>
   </channel>
 </rss>

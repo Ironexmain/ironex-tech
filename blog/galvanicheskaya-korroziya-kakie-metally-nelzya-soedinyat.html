@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Гальваническая коррозия: какие металлы нельзя соединять — IRONEX</title>
+  <meta name="description" content="Какие пары металлов разрушаются во влаге, как работает правило площадей и чем разделить алюминий, сталь и нержавейку в узле по чертежу." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat.html#article",
+      "headline": "Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции",
+      "description": "Какие пары металлов разрушаются во влаге, как работает правило площадей и чем разделить алюминий, сталь и нержавейку в узле по чертежу.",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "гальваническая коррозия",
+        "какие металлы нельзя соединять",
+        "совместимость металлов",
+        "алюминий и медь",
+        "алюминий и нержавейка",
+        "защита от гальванической коррозии"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какие металлы нельзя соединять между собой?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Во влажной или солёной среде без изоляции не соединяют алюминий с медью и её сплавами. Алюминий в контакте почти с любым металлом становится анодом и растворяется. Риск растёт с расстоянием между материалами в практическом гальваническом ряду."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли использовать нержавеющий крепёж с алюминием?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В сухой среде такой крепёж часто допустим. На улице нужно учитывать конденсат и площади. У моря, возле реагентов и при мойке ставят изолирующие втулки и шайбы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что будет, если соединить медь с алюминием?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При наличии влаги алюминий станет анодом и начнёт корродировать возле контакта. Медь сохранится. Между деталями ставят диэлектрическую прокладку или переходный элемент и закрывают зазор от воды."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как защитить узел из разных металлов от гальванической коррозии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Уберите скапливание воды, разделите металлы диэлектрическими втулками и прокладками, загерметизируйте зазоры и защитите поверхности покрытием. Затем проверьте соотношение площадей анода и катода."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Алюминий рядом с медью и сталью: какие пары металлов разрушаются" />
+  <meta property="og:description" content="Какие пары металлов разрушаются во влаге, как работает правило площадей и чем разделить алюминий, сталь и нержавейку в узле по чертежу." />
+  <meta property="og:url" content="https://ironex.tech/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-22" />
+  <meta property="article:modified_time" content="2026-10-22" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Алюминий рядом с медью и сталью: какие пары металлов разрушаются" />
+  <meta name="twitter:description" content="Какие пары металлов разрушаются во влаге, как работает правило площадей и чем разделить алюминий, сталь и нержавейку в узле по чертежу." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-galvanicheskaya-korroziya-i-kogda-ona-voznikaet">Что такое гальваническая коррозия и когда она возникает</a></li>
+<li><a href="#galvanicheskiy-ryad-kto-razrushaetsya-pervym">Гальванический ряд: кто разрушается первым</a></li>
+<li><a href="#kakie-metally-nelzya-soedinyat-matritsa-po-usloviyam-eksplua">Какие металлы нельзя соединять: матрица по условиям эксплуатации</a></li>
+<li><a href="#pravilo-ploschadey-pochemu-krepezh-reshaet-bolshe-chem-marka">Правило площадей: почему крепёж решает больше, чем марка</a></li>
+<li><a href="#alyuminiy-i-nerzhaveyka-pochemu-ob-etoy-pare-sporyat">Алюминий и нержавейка: почему об этой паре спорят</a></li>
+<li><a href="#kak-zaschitit-uzel-izolyatsiya-pokrytiya-i-konstruktsiya">Как защитить узел: изоляция, покрытия и конструкция</a></li>
+<li><a href="#chto-ukazat-v-chertezhe-i-zayavke-chtoby-uzel-ne-razelo">Что указать в чертеже и заявке, чтобы узел не разъело</a></li>
+<li><a href="#chek-list-pered-zapuskom-i-priznaki-togo-chto-para-uzhe-rabo">Чек-лист перед запуском и признаки того, что пара уже работает</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции</h1>
+        <p class="lede">Какие пары металлов разрушаются во влаге, как работает правило площадей и чем разделить алюминий, сталь и нержавейку в узле по чертежу.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-10-22">Опубликовано 22 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat-cover.webp" alt="Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Гальваническая коррозия начинается там, где два разных металла касаются друг друга во влажной среде: менее благородный растворяется, соседний остаётся цел. В сухом узле пара безопасна. Алюминий почти с любым другим металлом становится анодом, поэтому на улице и там, где есть соль, его отделяют изоляцией.</p>
+<h2 id="chto-takoe-galvanicheskaya-korroziya-i-kogda-ona-voznikaet">Что такое гальваническая коррозия и когда она возникает</h2>
+<p>Один узел может годами стоять в сухом цеху, а после установки на улице потерять крепёж или край детали. Причина — вода в зазоре между разными металлами. Она превращает обычный контакт в гальваническую пару.</p>
+<p>Для электрохимической коррозии нужны три условия: разные металлы, электрический контакт между ними и электролит. Электролитом служит дождевая вода, конденсат, влажная грязь или солевой раствор. Если убрать хотя бы одно условие, ток между участками пары не пойдёт.</p>
+<p>В паре менее благородный металл становится анодом и растворяется. Более благородный металл работает катодом и сохраняется. Поэтому разрушение часто выглядит односторонним: стальной болт остаётся целым, а алюминий рядом с ним покрывается белыми солями и язвами.</p>
+<p>Сухое помещение снижает риск, но проектировщику нужно проверить конденсат. Он появляется внутри кожуха, под шайбой и в закрытом профиле после перепада температуры.</p>
+<blockquote><p>Гальваническая пара работает только при наличии электролита. Исключите смачивание контакта — и электрохимическая цепь разомкнётся.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если узел работает только в сухом помещении без конденсата, достаточно контролировать среду. Для улицы и мойки закладывайте изоляцию в конструкцию.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции">Прислать чертёж на почту</a>
+</div>
+<h2 id="galvanicheskiy-ryad-kto-razrushaetsya-pervym">Гальванический ряд: кто разрушается первым</h2>
+<p><img alt="Коррозия металлического компонента" decoding="async" height="682" loading="lazy" src="/images/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat-1.webp" width="1000"/></p>
+<p><em>Коррозионные повреждения на поверхности металлического компонента. Фото: <a href="https://commons.wikimedia.org/wiki/File:23_0067125_Convair_Negative_Image_-_Corrosion_on_metal_component_07-12-1963_%2854157660951%29.jpg" rel="nofollow noopener" target="_blank">San Diego Air &amp; Space Museum Archives</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Гальванический ряд показывает склонность материалов становиться анодом или катодом в заданной среде. Близкие позиции обычно дают меньший риск. Чем дальше материалы разнесены, тем важнее электрически разделить контакт.</p>
+<p>Стандартные электродные потенциалы описывают чистые металлы при заданных лабораторных условиях. Для конструкции нужен практический ряд в реальной среде: атмосфере, пресной или морской воде. В нём учитывают состояние поверхности, пассивную плёнку, сплав и электропроводность жидкости.</p>
+<p>Поэтому таблица стандартных потенциалов не даёт готового ответа для <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавейки</a>, алюминия и титана. Нержавеющая сталь в пассивном состоянии ведёт себя благороднее, чем после повреждения плёнки. Алюминиевый сплав тоже защищает оксидная плёнка, пока среда её не разрушает.</p>
+<p>ГОСТ 9.005-72 устанавливает общие требования к допустимости контактов разнородных металлов, сплавов и покрытий. Соседство материалов в ряду служит первым фильтром; окончательное решение сверяют с требованиями этого стандарта для нужных условий.</p>
+<p>Цинковое покрытие использует тот же механизм с пользой: цинк принимает роль анода и защищает стальную основу возле повреждения. Для конкретного узла нужно отдельно определить <a href="/blog/galvanicheskoe-pokrytie-vidy-i-kogda-primenyat.html">какое покрытие выбрать под чертёж</a>.</p>
+<h2 id="kakie-metally-nelzya-soedinyat-matritsa-po-usloviyam-eksplua">Какие металлы нельзя соединять: матрица по условиям эксплуатации</h2>
+<p>Опасность пары определяют материалы и среда одновременно. В сухом помещении многие контакты работают без повреждений. На улице нужен контроль зазоров и покрытий. В солёной воде, реагентах или мокрой грязи спорную пару разделяют диэлектриком.</p>
+<table><thead><tr><th>Контакт металлов</th><th>Сухое помещение</th><th>Уличная атмосфера</th><th>Соль и реагенты</th></tr></thead><tbody><tr><td>Алюминий + углеродистая сталь</td><td>Допустимо без конденсата</td><td>С ограничениями: закрыть зазор</td><td>Нельзя без изоляции</td></tr><tr><td>Алюминий + нержавеющая сталь</td><td>Допустимо без конденсата</td><td>С ограничениями: учитывать площади</td><td>Нельзя без изоляции</td></tr><tr><td>Алюминий + медь, латунь или бронза</td><td>С ограничениями</td><td>Нельзя без изоляции</td><td>Нельзя без изоляции</td></tr><tr><td>Оцинкованная сталь + медь или нержавейка</td><td>Допустимо в сухом месте</td><td>С ограничениями: защищать цинк</td><td>Нельзя без изоляции</td></tr><tr><td>Углеродистая сталь + нержавеющая сталь</td><td>Допустимо в сухом месте</td><td>С ограничениями: учитывать площадь и влагу</td><td>Нельзя без проверки и защиты</td></tr><tr><td>Алюминий + титан</td><td>Допустимо без конденсата</td><td>С ограничениями</td><td>Нельзя без изоляции</td></tr></tbody></table>
+<p>Матрица служит первичной проверкой. Марка сплава, состояние покрытия, геометрия и периодическое смачивание могут изменить вывод. Для ответственного изделия пару сверяют с ГОСТ и испытывают в рабочей среде.</p>
+<p>Алюминий с медью и её сплавами образует особенно опасную пару: алюминий становится анодом. В солевых растворах проводимость растёт, поэтому повреждение развивается быстрее.</p>
+<blockquote><p>Таблица совместимости без указания среды неполна: одна пара может быть допустима в шкафу и непригодна возле дороги или моря.</p></blockquote>
+<h2 id="pravilo-ploschadey-pochemu-krepezh-reshaet-bolshe-chem-marka">Правило площадей: почему крепёж решает больше, чем марка</h2>
+<p><img alt="Цинковая и медная пластины в картофелине" decoding="async" height="753" loading="lazy" src="/images/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat-2.webp" width="1000"/></p>
+<p><em>Гальванический элемент из цинка и меди демонстрирует принцип электрохимической коррозии. Фото: <a href="https://commons.wikimedia.org/wiki/File:%D0%91%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D0%B9%D0%BA%D0%B0_%D0%B7_%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%BF%D0%BB%D1%96.jpg" rel="nofollow noopener" target="_blank">Kilivnik Yaroslav</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>Скорость разрушения растёт вместе с отношением площади катода к площади анода. Малый анод рядом с большим катодом получает нагрузку на небольшом участке и теряет металл быстрее.</p>
+<p>Алюминиевая заклёпка в большом стальном листе — плохая схема. Заклёпка работает малым анодом, а лист — большим катодом. Коррозия сосредоточится возле заклёпки и быстро уменьшит её рабочее сечение.</p>
+<p>Стальной болт в массивной алюминиевой плите даёт более благоприятное соотношение. Катодный крепёж мал, а площадь алюминиевого анода велика. Изоляция всё равно нужна при соли, конденсате и ответственной нагрузке.</p>
+<p>Для части контактов ГОСТ 9.005-72 разрешает их применение лишь при условии, что площадь анода не менее чем в 8 раз превышает площадь катода.</p>
+<p>В сварных и клёпаных соединениях проверяют основной металл, присадку и крепёж. Тот же стандарт ограничивает разность потенциалов между швом или заклёпкой и основным металлом: она не должна превышать 30–50 мВ.</p>
+<blockquote><p>Опасный случай — малый алюминиевый анод рядом с большой стальной или нержавеющей поверхностью. Геометрия способна сделать терпимую пару аварийной.</p></blockquote>
+<h2 id="alyuminiy-i-nerzhaveyka-pochemu-ob-etoy-pare-sporyat">Алюминий и нержавейка: почему об этой паре спорят</h2>
+<p><img alt="Оксидная плёнка алюминия устойчива примерно при pH от 4 до 9: Кислая среда меньше 4, Плёнка устойчива 4,0–9,0, Щелочная среда больше 9" decoding="async" height="594" loading="lazy" src="/images/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat-diagram.webp" width="1100"/></p>
+<p>Пара алюминия с пассивной нержавеющей сталью иногда спокойно работает в чистой атмосфере. Результат меняют хлориды, повреждение покрытий, состояние нержавейки и соотношение площадей. Поэтому общий ответ «можно» для этой пары бесполезен.</p>
+<p>Хлориды попадают в узел с морским аэрозолем, дорожными реагентами и моющими составами. Достаточно следов хлоридов, чтобы запустить коррозию в контакте алюминия с нержавеющей сталью. В такой среде нержавеющий крепёж от алюминиевой детали отделяют втулкой и шайбами.</p>
+<p>Анодирование снижает контакт металла со средой, пока покрытие остаётся целым. При затяжке болта слой может треснуть. Тогда небольшой участок голого алюминия окажется рядом с большой нержавеющей поверхностью, и правило площадей усилит локальное разрушение. Различия между покрытиями разобраны в материале о том, <a href="/blog/anodirovanie-i-ocinkovka-metalla-chem-otlichayutsya-pokrytiya.html">чем анодирование отличается от оцинковки</a>.</p>
+<p>Смена марки алюминиевого сплава редко устраняет сам механизм пары. Надёжнее изменить конструкцию контакта.</p>
+<p>Оксидная плёнка алюминия обычно устойчива примерно при pH от 4,0 до 9,0. За пределами диапазона кислота или щёлочь может разрушить плёнку; исключения зависят от состава среды.</p>
+<blockquote><p>Анодирование помогает только пока покрытие не повреждено. Трещина создаёт малый анод возле большого катода — самый неблагоприятный вариант.</p></blockquote>
+<h2 id="kak-zaschitit-uzel-izolyatsiya-pokrytiya-i-konstruktsiya">Как защитить узел: изоляция, покрытия и конструкция</h2>
+<p>Защиту начинают с воды: устраняют карманы, обеспечивают сток и исключают конденсат. Затем разрывают электрический контакт. Покрытие добавляют как следующий барьер, учитывая повреждения при сборке.</p>
+<p>В болтовом соединении втулку вставляют в отверстие, а изолирующие шайбы ставят под головку и гайку. Болт не должен касаться края отверстия. Полиамид подходит для умеренных нагрузок, фторопласт выбирают при требованиях к химической стойкости, EPDM — для эластичного уплотнения, паронит — для плоских прокладок. Температуру, сжатие и совместимость со средой сверяют по паспорту материала.</p>
+<p>Герметик или паста перекрывают путь воде в зазор. Они не гарантируют электрического разъединения после старения, смещения деталей или повреждения слоя. Для далёких позиций гальванического ряда нужна диэлектрическая деталь.</p>
+<p>Цинкование, никелирование и анодирование защищают контактные поверхности, если слой остаётся сплошным. Лакокрасочное покрытие лучше наносить на обе контактирующие поверхности. Риск скола при затяжке делает одно покрытие слабой защитой для обслуживаемого крепежа.</p>
+<p>Анод-жертва подключают так, чтобы растворялся более дешёвый металл. Решение применяют главным образом в погружных и подземных конструкциях после расчёта зоны защиты.</p>
+<blockquote><p>Изоляционную втулку нужно заложить до выпуска чертежа. После изготовления детали её установка часто потребует менять отверстия и крепёж.</p></blockquote>
+<h2 id="chto-ukazat-v-chertezhe-i-zayavke-chtoby-uzel-ne-razelo">Что указать в чертеже и заявке, чтобы узел не разъело</h2>
+<p>Подрядчику нужны условия эксплуатации всей сборки. Марки основного материала недостаточно: крепёж, покрытия, прокладки и влажность определяют работу гальванической пары не меньше.</p>
+<p>В заявке укажите:</p>
+<ul><li>среду: помещение, улицу, мойку, соль, реагенты и вероятность конденсата;</li><li>материал и покрытие каждой детали, включая крепёж и сварочную присадку;</li><li>тип и материал втулок, шайб и прокладок;</li><li>расположение разнородных контактов и способ герметизации зазоров;</li><li>примерные площади анодных и катодных поверхностей.</li></ul>
+<p>Фразы «нержавеющий крепёж» или «алюминиевая деталь» слишком общие. Марка, состояние поверхности и покрытие должны стоять в спецификации. Если материал разрешено заменять, задайте допустимые варианты и повторную проверку совместимости.</p>
+<p>Для сварки разнородных металлов может понадобиться биметаллический переходник. В резьбовом соединении часто достаточно втулок, шайб и герметизации, если они разрывают контакт и выдерживают нагрузку.</p>
+<p>При выборе материала полезно заранее проверить, <a href="/razdel/materialy.html">как марка металла влияет на обработку и цену</a>. Сборочный чертёж со средой и спецификацией позволяет технологу проверить пару до запуска деталей.</p>
+<h2 id="chek-list-pered-zapuskom-i-priznaki-togo-chto-para-uzhe-rabo">Чек-лист перед запуском и признаки того, что пара уже работает</h2>
+<p>Проверка конструкции начинается со всех точек соприкосновения разных материалов. Затем оценивают воду, положение металлов в практическом ряду, площади и способ изоляции.</p>
+<ol><li>Найдите прямые контакты металлов, включая болты, заклёпки и сварные швы.</li><li>Проверьте конденсат, мойку, дождь, соль и мокрую грязь.</li><li>Сверьте пару с гальваническим рядом и ГОСТ 9.005-72.</li><li>Найдите малые анодные детали рядом с крупными катодными поверхностями.</li><li>Проверьте, что втулки, шайбы и покрытия разрывают контакт после затяжки.</li></ol>
+<p>На готовом узле гальваническую коррозию выдают локальные язвы, белые соли и разрушение анода возле второго металла. Щелевая коррозия возникает в узком влажном зазоре и без разнородной пары. Питтинг тоже способен появиться на одном металле, поэтому один налёт ещё не доказывает работу гальванической цепи.</p>
+<p>Для ответственного узла образец испытывают в среде, близкой к рабочей.</p>
+<p>Разъеденную анодную деталь заменяют и одновременно разрывают пару. Нет влаги — нет цепи. Далёкие металлы разделяют. Малый анод возле большого катода считают опасным.</p>
+<p>Если нужна проверка сборки до производства, пришлите чертёж с материалами и средой на <a href="/">изготовление деталей и узлов по вашему чертежу</a>.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Какие металлы нельзя соединять между собой?</summary>
+<div class="faq__a"><p>Во влажной или солёной среде без изоляции не соединяют алюминий с медью и её сплавами. Алюминий в контакте почти с любым металлом становится анодом и растворяется. Риск растёт с расстоянием между материалами в практическом гальваническом ряду.</p></div>
+</details>
+<details>
+<summary>Можно ли использовать нержавеющий крепёж с алюминием?</summary>
+<div class="faq__a"><p>В сухой среде такой крепёж часто допустим. На улице нужно учитывать конденсат и площади. У моря, возле реагентов и при мойке ставят изолирующие втулки и шайбы.</p></div>
+</details>
+<details>
+<summary>Что будет, если соединить медь с алюминием?</summary>
+<div class="faq__a"><p>При наличии влаги алюминий станет анодом и начнёт корродировать возле контакта. Медь сохранится. Между деталями ставят диэлектрическую прокладку или переходный элемент и закрывают зазор от воды.</p></div>
+</details>
+<details>
+<summary>Как защитить узел из разных металлов от гальванической коррозии?</summary>
+<div class="faq__a"><p>Уберите скапливание воды, разделите металлы диэлектрическими втулками и прокладками, загерметизируйте зазоры и защитите поверхности покрытием. Затем проверьте соотношение площадей анода и катода.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://files.stroyinf.ru/Data1/6/6662/index.htm" rel="noopener" target="_blank">ГОСТ 9.005-72. Допустимые и недопустимые контакты металлов. Общие требования</a> — Государственный комитет стандартов</li>
+<li><a href="https://www.pfonline.com/articles/fixing-corrosion-between-anodized-aluminum-and-steel" rel="noopener" target="_blank">Fixing Corrosion Between Anodized Aluminum and Steel</a> — Products Finishing</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/aisi-304-i-316-raznica-vybor-nerzhaveyki.html">
+            <img src="/images/blog/aisi-304-i-316-raznica-vybor-nerzhaveyki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">AISI 304 или 316: какую нержавейку выбрать для детали по чертежу</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/gidroksid-alyuminiya.html">
+            <img src="/images/blog/gidroksid-alyuminiya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Гидроксид алюминия Al(OH)₃: свойства, реакции и роль в обработке металла</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali.html">
+            <img src="/images/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Титан или алюминий: какой металл выбрать для детали и во сколько обойдётся её изготовление</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
