@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Как определить шаг резьбы: резьбомер, линейка и таблица шагов</title>
+  <meta name="description" content="Определяем шаг резьбы резьбомером, линейкой и штангенциркулем, сверяем с таблицей ГОСТ, проверяем результат. Что записать в чертёж детали." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/kak-opredelit-shag-rezby.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/kak-opredelit-shag-rezby.html#article",
+      "headline": "Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже",
+      "description": "Определяем шаг резьбы резьбомером, линейкой и штангенциркулем, сверяем с таблицей ГОСТ, проверяем результат. Что записать в чертёж детали.",
+      "datePublished": "2026-10-23",
+      "dateModified": "2026-10-23",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/kak-opredelit-shag-rezby.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/kak-opredelit-shag-rezby-cover.webp",
+      "articleSection": "Контроль качества",
+      "keywords": [
+        "как определить шаг резьбы",
+        "как определить шаг резьбы на болте",
+        "шаг метрической резьбы",
+        "как пользоваться резьбомером",
+        "измерить резьбу штангенциркулем",
+        "таблица шагов резьбы"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как определить шаг резьбы на болте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Приложите резьбомер и подберите пластину, которая садится во впадины без просвета. Без резьбомера измерьте линейкой длину десяти шагов и разделите её на десять. Наружный диаметр измерьте штангенциркулем и сверьте полученную пару с таблицей."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что означает запись M10 без указания шага?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Такая запись обозначает метрическую резьбу с крупным шагом. Для `M10` он равен 1,5 мм. Мелкий шаг указывают явно, например `M10×1,25`."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как определить шаг внутренней резьбы в гайке или отверстии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Подберите ответный болт с известным шагом: он должен вкручиваться рукой без усилия и заметного люфта. Если подходящего болта нет, приложите резьбомер либо сделайте оттиск нескольких витков и измерьте расстояние между ними."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Как узнать шаг резьбы без резьбомера и не ошибиться с заказом детали" />
+  <meta property="og:description" content="Определяем шаг резьбы резьбомером, линейкой и штангенциркулем, сверяем с таблицей ГОСТ, проверяем результат. Что записать в чертёж детали." />
+  <meta property="og:url" content="https://ironex.tech/blog/kak-opredelit-shag-rezby.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/kak-opredelit-shag-rezby-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-23" />
+  <meta property="article:modified_time" content="2026-10-23" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Как узнать шаг резьбы без резьбомера и не ошибиться с заказом детали" />
+  <meta name="twitter:description" content="Определяем шаг резьбы резьбомером, линейкой и штангенциркулем, сверяем с таблицей ГОСТ, проверяем результат. Что записать в чертёж детали." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/kak-opredelit-shag-rezby-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-shag-rezby-i-chem-on-otlichaetsya-ot-diametra-i-h">Что такое шаг резьбы и чем он отличается от диаметра и хода</a></li>
+<li><a href="#snachala-opredelite-tip-metricheskaya-dyuymovaya-ili-trubnay">Сначала определите тип: метрическая, дюймовая или трубная</a></li>
+<li><a href="#kak-opredelit-shag-rezbomerom">Как определить шаг резьбомером</a></li>
+<li><a href="#kak-izmerit-shag-bez-rezbomera-lineyka-i-shtangentsirkul">Как измерить шаг без резьбомера: линейка и штангенциркуль</a></li>
+<li><a href="#razmer-rezby-naruzhnyy-diametr-i-tablitsa-shagov-po-gost">Размер резьбы: наружный диаметр и таблица шагов по ГОСТ</a></li>
+<li><a href="#kak-opredelit-shag-vnutrenney-rezby-v-gayke-ili-otverstii">Как определить шаг внутренней резьбы в гайке или отверстии</a></li>
+<li><a href="#kak-ubeditsya-chto-shag-opredelen-verno">Как убедиться, что шаг определён верно</a></li>
+<li><a href="#chastye-oshibki-pri-izmerenii-rezby">Частые ошибки при измерении резьбы</a></li>
+<li><a href="#chto-zapisat-v-chertezh-kogda-rezba-opredelena">Что записать в чертёж, когда резьба определена</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже</h1>
+        <p class="lede">Определяем шаг резьбы резьбомером, линейкой и штангенциркулем, сверяем с таблицей ГОСТ, проверяем результат. Что записать в чертёж детали.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Контроль качества</span>
+            <time datetime="2026-10-23">Опубликовано 23 октября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/kak-opredelit-shag-rezby-cover.webp" alt="Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+          <p class="prose__lede">Шаг резьбы — это расстояние между соседними витками вдоль оси. Приложите пластины резьбомера, пока одна не сядет во впадины без просвета. Нет резьбомера — измерьте линейкой длину десяти шагов и разделите на десять, затем штангенциркулем возьмите наружный диаметр и сверьте пару с таблицей стандартных шагов.</p>
+
+          <h2 id="chto-takoe-shag-rezby-i-chem-on-otlichaetsya-ot-diametra-i-h">Что такое шаг резьбы и чем он отличается от диаметра и хода</h2>
+<p>В руках болт без маркировки, а для ремонта нужен такой же. Одного диаметра недостаточно: у метрической резьбы одного номинального размера бывают крупный и несколько мелких шагов. Болт с неподходящим шагом может войти на один-два витка, после чего заклинит или повредит ответную деталь.</p>
+<p>Шаг <code>P</code> измеряют вдоль оси между одинаковыми точками соседних витков. Наружный диаметр болта измеряют по вершинам противоположных витков. У внутренней резьбы различают наружный, средний и внутренний диаметры, поэтому размер отверстия нельзя принимать за номинальный размер резьбы.</p>
+<p>У однозаходной резьбы ход за оборот равен шагу. У многозаходной ход равен шагу, умноженному на число заходов. Угол профиля помогает определить систему резьбы, но не заменяет измерение диаметра и шага.</p>
+<blockquote><p>Шаг, наружный диаметр и ход описывают разные свойства резьбы. Для подбора крепежа нужны как минимум тип профиля, диаметр и шаг.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если деталь нужно скопировать по образцу, измеряйте несколько неповреждённых витков и проверяйте результат ответной деталью.</p></blockquote>
+<div class="cta ui" id="cta" data-cta="inline">
+            <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+            <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+            <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже">Прислать чертёж на почту</a>
+          </div>
+<h2 id="snachala-opredelite-tip-metricheskaya-dyuymovaya-ili-trubnay">Сначала определите тип: метрическая, дюймовая или трубная</h2>
+<p><img src="/images/blog/kak-opredelit-shag-rezby-1.webp" alt="Резьбомер для определения метрической и дюймовой резьбы" width="1000" height="523" loading="lazy" decoding="async"></p>
+<p><em>Резьбомер со встроенными профилями для проверки метрической резьбы (60°) и дюймовой резьбы Whitworth (55°). Фото: <a href="https://commons.wikimedia.org/wiki/File:Thread_pitch_gauge_Whitworth_55_deg_and_metric_60_deg_West_Germany_c_1980.jpg" rel="nofollow noopener" target="_blank">R. Henrik Nilsson</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Измерять шаг в миллиметрах имеет смысл после определения системы резьбы. Метрическую резьбу обозначают буквой <code>M</code>, а шаг записывают в миллиметрах. У унифицированной дюймовой резьбы UNC и UNF считают число ниток на дюйм — TPI. Трубную цилиндрическую резьбу обозначают буквой <code>G</code>; её условный размер не равен измеренному наружному диаметру.</p>
+<table><thead><tr><th>Тип резьбы</th><th>Угол профиля</th><th>Как задают шаг</th><th>Где встречается</th></tr></thead><tbody><tr><td>Метрическая <code>M</code></td><td>60°</td><td>Миллиметры между витками</td><td>Машины, крепёж, детали оборудования</td></tr><tr><td>Дюймовая UNC/UNF</td><td>60°</td><td>Число ниток на дюйм</td><td>Импортное оборудование и крепёж</td></tr><tr><td>Whitworth</td><td>55°</td><td>Число ниток на дюйм</td><td>Дюймовые соединения старых систем</td></tr><tr><td>Трубная цилиндрическая <code>G</code></td><td>55°</td><td>Нитки на дюйм по стандартному ряду</td><td>Трубопроводы, фитинги, арматура</td></tr></tbody></table>
+<p>Миллиметровый эквивалент дюймового шага получают по формуле <code>25,4 / TPI</code>. Например, 13 ниток на дюйм дают около 1,954 мм. Такое значение близко к метрическому шагу, поэтому линейки недостаточно.</p>
+<p>Пара <code>M12×1,75</code> и <code>1/2″ UNC</code> особенно коварна: наружные диаметры близки, но шаги различаются. Соединение может начать закручиваться, хотя профили несовместимы. Для резьбы <code>G</code> измерьте наружный диаметр и ищите его в таблице трубных размеров: обозначение в дюймах относится к условному проходу, а не к диаметру штангенциркуля.</p>
+<h2 id="kak-opredelit-shag-rezbomerom">Как определить шаг резьбомером</h2>
+<p>Резьбомер определяет шаг по совпадению зубьев пластины с профилем проверяемой резьбы. На каждой пластине указан шаг в миллиметрах либо число ниток на дюйм. Используйте набор нужной системы: пластина метрического резьбомера не подтверждает дюймовый профиль.</p>
+<ol><li>Очистите витки от масла, стружки, краски и нагара.</li><li>Выберите пластину с предполагаемым шагом.</li><li>Приложите зубья вдоль оси резьбы, не наклоняя пластину.</li><li>Посмотрите соединение на просвет по нескольким виткам.</li><li>Проверьте две соседние пластины и сравните посадку.</li><li>Запишите значение с пластины, которая прилегла без качания и просветов.</li></ol>
+<p>Совпадение одного зуба ничего не доказывает. Правильная пластина одновременно садится во все доступные впадины. Соседнее значение даст постепенно растущий просвет: чем дальше от первого зуба, тем заметнее расхождение.</p>
+<p>Изношенная вершина витка, заусенец или короткий участок мешают проверке. В таком случае приложите пластину в другом месте либо дополните измерение линейкой. Диапазон конкретного набора смотрите на его маркировке или в каталоге производителя: комплектация резьбомеров различается.</p>
+<blockquote><p><strong>Факт.</strong> При дюймовом обозначении шаг в миллиметрах рассчитывают делением 25,4 на число ниток на дюйм.</p></blockquote>
+<h2 id="kak-izmerit-shag-bez-rezbomera-lineyka-i-shtangentsirkul">Как измерить шаг без резьбомера: линейка и штангенциркуль</h2>
+<p><img src="/images/blog/kak-opredelit-shag-rezby-2.webp" alt="Резьбовое кольцо-калибр XX века для проверки левой резьбы" width="1000" height="692" loading="lazy" decoding="async"></p>
+<p><em>Исторический резьбовой калибр-кольцо для левой резьбы с маркировкой Links Gew., XX век. Размер примерно 1,6 × 0,5 см. Фото: <a href="https://commons.wikimedia.org/wiki/File:20th_century_thread_ring_gauge_for_left_hand_threads_marked_Links_Gew.jpg" rel="nofollow noopener" target="_blank">R. Henrik Nilsson</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Без резьбомера измерьте расстояние между удалёнными гребнями и разделите его на число промежутков. Длинная база уменьшает влияние ошибки отсчёта. Затем сопоставьте результат с наружным диаметром и стандартным рядом: одно измерение шага ещё не определяет резьбу.</p>
+<table><thead><tr><th>Способ</th><th>Что нужно</th><th>На что годится</th><th>Где появляется ошибка</th></tr></thead><tbody><tr><td>Линейка</td><td>Шкала с миллиметровыми делениями</td><td>Быстрая оценка по длинному участку</td><td>Короткая база и неверный подсчёт промежутков</td></tr><tr><td>Штангенциркуль</td><td>Наружные губки</td><td>Диаметр и длина нескольких шагов</td><td>Губки соскальзывают с мелких витков</td></tr><tr><td>Резьбомер</td><td>Подходящий набор пластин</td><td>Сопоставление профиля и шага</td><td>Износ, грязь, неверный тип пластин</td></tr><tr><td>Ответный крепёж</td><td>Болт или гайка известного размера</td><td>Контроль совместимости</td><td>Повреждённый эталон или чрезмерное усилие</td></tr><tr><td>Оттиск</td><td>Бумага или мягкий материал</td><td>Внутренняя и труднодоступная резьба</td><td>Смятый или растянутый отпечаток</td></tr><tr><td>Приложение</td><td>Смартфон и масштабная метка</td><td>Предварительная прикидка</td><td>Перспектива, фокус и неверный масштаб</td></tr></tbody></table>
+<h3>Линейка: считаем по десяти шагам</h3>
+<p>Совместите нулевую отметку с вершиной витка и отсчитайте десять промежутков. Для десяти шагов измерение заканчивается на одиннадцатом гребне. Если длина равна 15 мм, шаг составляет <code>15 / 10 = 1,5 мм</code>.</p>
+<p>Ошибка отсчёта до 0,5 мм на десяти шагах даёт около 0,05 мм на один шаг. На пяти шагах влияние той же ошибки возрастает до 0,1 мм. Поэтому используйте самый длинный целый участок.</p>
+<h3>Штангенциркуль: по вершинам витков</h3>
+<p>Губками измерьте расстояние между удалёнными вершинами, затем разделите результат на число шагов. На мелкой резьбе захватывайте больше витков. Отдельно измерьте наружный диаметр в нескольких сечениях, не прижимая губки так, чтобы они провалились между вершинами.</p>
+<p>Приложение на смартфоне подходит только для прикидки. Камера искажает масштаб при наклоне, поэтому результат нужно подтвердить инструментом.</p>
+<h2 id="razmer-rezby-naruzhnyy-diametr-i-tablitsa-shagov-po-gost">Размер резьбы: наружный диаметр и таблица шагов по ГОСТ</h2>
+<p>Штангенциркуль измеряет наружный диаметр резьбы по вершинам витков. Снимите размер в нескольких местах и ориентируйтесь на неизношенный участок. Затем найдите ближайший номинальный диаметр и проверьте, входит ли измеренный шаг в стандартный ряд метрической резьбы (ГОСТ 8724-2002, таблица 1; ниже приведены основные шаги, полный ряд шире).</p>
+<table><thead><tr><th>Размер</th><th>Крупный шаг, мм</th><th>Частые мелкие шаги, мм</th><th>Ориентир сверла под крупный шаг, мм</th></tr></thead><tbody><tr><td>M3</td><td>0,5</td><td>0,35</td><td>2,5</td></tr><tr><td>M4</td><td>0,7</td><td>0,5</td><td>3,3</td></tr><tr><td>M5</td><td>0,8</td><td>0,5</td><td>4,2</td></tr><tr><td>M6</td><td>1,0</td><td>0,75; 0,5</td><td>5,0</td></tr><tr><td>M8</td><td>1,25</td><td>1,0; 0,75</td><td>6,75</td></tr><tr><td>M10</td><td>1,5</td><td>1,25; 1,0</td><td>8,5</td></tr><tr><td>M12</td><td>1,75</td><td>1,5; 1,25</td><td>10,25</td></tr><tr><td>M14</td><td>2,0</td><td>1,5; 1,25</td><td>12,0</td></tr><tr><td>M16</td><td>2,0</td><td>1,5; 1,0</td><td>14,0</td></tr><tr><td>M18</td><td>2,5</td><td>2,0; 1,5</td><td>15,5</td></tr><tr><td>M20</td><td>2,5</td><td>2,0; 1,5</td><td>17,5</td></tr><tr><td>M22</td><td>2,5</td><td>2,0; 1,5</td><td>19,5</td></tr><tr><td>M24</td><td>3,0</td><td>2,0; 1,5</td><td>21,0</td></tr><tr><td>M27</td><td>3,0</td><td>2,0; 1,5</td><td>24,0</td></tr><tr><td>M30</td><td>3,5</td><td>2,0; 1,5</td><td>26,5</td></tr><tr><td>M33</td><td>3,5</td><td>2,0; 1,5</td><td>29,5</td></tr><tr><td>M36</td><td>4,0</td><td>3,0; 2,0</td><td>32,0</td></tr><tr><td>M39</td><td>4,0</td><td>3,0; 2,0</td><td>35,0</td></tr><tr><td>M42</td><td>4,5</td><td>3,0; 2,0</td><td>37,5</td></tr></tbody></table>
+<p>Крупный и мелкий шаг различаются при одном диаметре метрической резьбы. Например, <code>M10</code> без дополнительного значения означает крупный шаг, а <code>M10×1,25</code> прямо задаёт мелкий.</p>
+<p>Колонка сверла рассчитана по приближённому правилу <code>d − P</code>. Она помогает оценить размер, но перед обработкой отверстия технолог сверяет сверло с материалом, требуемой полнотой профиля и таблицей для выбранного метчика.</p>
+<h2 id="kak-opredelit-shag-vnutrenney-rezby-v-gayke-ili-otverstii">Как определить шаг внутренней резьбы в гайке или отверстии</h2>
+<p>Внутреннюю резьбу удобнее проверять исправным ответным болтом известного размера. Болт должен заходить рукой плавно, без перекоса, заметного люфта и силового доворота. Такая проверка одновременно подтверждает диаметр, шаг и практическую совместимость профиля.</p>
+<blockquote><p>Внутреннюю резьбу проще подтвердить ответным болтом известного шага, чем измерять линейкой внутри отверстия.</p></blockquote>
+<p>Если доступ позволяет, приложите узкую пластину резьбомера к впадинам. Для глубокого отверстия сделайте чёткий оттиск на бумажной полоске или мягком материале, разверните его и измерьте несколько промежутков. Смятый отпечаток нужно сделать заново.</p>
+<p>Внутренний диаметр даёт дополнительную проверку. Для обычной метрической резьбы предварительный размер отверстия близок к разности номинального диаметра и шага. Но по одному отверстию шаг не определяют: износ, покрытие и технология нарезания меняют измеряемый размер.</p>
+<p>Внутреннюю резьбу обычно нарезают метчиком. Следы повреждённого метчика, заусенцы или сорванные первые витки мешают подбору. Не пытайтесь оценить шаг по скорости продвижения болта на глаз: левая или многозаходная резьба изменит направление либо ход за оборот.</p>
+<h2 id="kak-ubeditsya-chto-shag-opredelen-verno">Как убедиться, что шаг определён верно</h2>
+<p>Шаг можно считать подтверждённым, когда совпали три проверки: резьбомер или измерение по виткам, пара «диаметр + шаг» из стандартного ряда и пробная сборка с исправной ответной деталью. Совпадение только одного признака оставляет риск ошибки.</p>
+<blockquote><p>Резьба, которая вошла на один-два витка, ещё не подобрана. Правильная ответная деталь проходит рабочую длину без заедания и лишнего люфта.</p></blockquote>
+<p>Не затягивайте пробное соединение ключом. Силовой доворот маскирует несовпадение и портит первые витки. Если гайка идёт туго, остановитесь, очистите детали и повторите измерение на неповреждённом участке.</p>
+<p>Левая резьба поднимается в противоположную сторону и затягивается против привычного направления. У многозаходной резьбы на торце видны два или больше начал, а ход за один оборот превышает измеренный шаг.</p>
+<p>Если измеренная пара отсутствует в таблице, проверьте дюймовую или трубную систему. Причиной расхождения также бывают покрытие, деформация и нестандартная резьба. Образец с сомнительным профилем лучше передать технологу: ошибка в заказе затронет всю партию, а не одну пробную деталь.</p>
+<h2 id="chastye-oshibki-pri-izmerenii-rezby">Частые ошибки при измерении резьбы</h2>
+<p>Большинство ошибок появляется из-за короткой базы измерения, грязи или неверно выбранной системы. Проверка нескольких витков и пары «диаметр + шаг» отсеивает эти промахи до заказа крепежа или изготовления детали.</p>
+<ul><li>Измерили два соседних витка линейкой — погрешность отсчёта стала сопоставима с разницей между стандартными шагами.</li><li>Перепутали метрическую и дюймовую резьбу — близкие диаметры позволили соединить первые витки, после чего профиль заклинило.</li><li>Не очистили канавки — нагар или краска не дали пластине резьбомера сесть во впадины.</li><li>Приняли мелкий шаг за крупный — номинальный диаметр совпал, но ответная деталь не прошла рабочую длину.</li><li>Измерили сточенные витки у торца — штангенциркуль показал заниженный наружный диаметр.</li></ul>
+<p>Повторяйте измерение в двух-трёх местах. Если значения расходятся, используйте участок без замятий и приложите к заказу фотографию повреждения.</p>
+<h2 id="chto-zapisat-v-chertezh-kogda-rezba-opredelena">Что записать в чертёж, когда резьба определена</h2>
+<p>В чертеже метрическую резьбу задают обозначением профиля, номинальным диаметром, шагом при его явном указании, полем допуска и направлением. Поле допуска уточняет требования к сопряжению.</p>
+<p>Пример записи наружной резьбы с мелким шагом — <code>M10×1,25-6g</code>. Для левой резьбы добавляют <code>LH</code>. У многозаходной указывают ход <code>Ph</code>, шаг <code>P</code> и число заходов. Запись должен проверить конструктор по стандарту, который указан в документации проекта.</p>
+<blockquote><p>Фраза «резьба как на образце» не заменяет обозначение. Производству нужны диаметр, шаг, поле допуска, направление и рабочая длина резьбы.</p></blockquote>
+<p>Кроме обозначения, укажите длину нарезанной части, фаску, сбег и тип отверстия — сквозное или глухое. Для глухого отверстия задайте полезную глубину резьбы и общую глубину сверления. Если образец повреждён, приложите фото и разделите подтверждённые размеры и предположения.</p>
+<p>Перед передачей заказа проверьте, <a href="/blog/detalirovka-pered-proizvodstvom.html">какие документы и чертежи нужны перед запуском</a>. Порядок согласования описан в материале о том, <a href="/blog/kak-zakazat-detali-po-chertezhu.html">как заказать детали по чертежу</a>. Готовый комплект можно направить на <a href="/">изготовление деталей по чертежам</a>, указав материал, количество и требования к контролю.</p>
+
+          <h2 id="faq">Частые вопросы</h2>
+          <div class="faq">
+            <details open>
+              <summary>Как определить шаг резьбы на болте?</summary>
+              <div class="faq__a"><p>Приложите резьбомер и подберите пластину, которая садится во впадины без просвета. Без резьбомера измерьте линейкой длину десяти шагов и разделите её на десять. Наружный диаметр измерьте штангенциркулем и сверьте полученную пару с таблицей.</p></div>
+            </details>
+<details>
+              <summary>Что означает запись M10 без указания шага?</summary>
+              <div class="faq__a"><p>Такая запись обозначает метрическую резьбу с крупным шагом. Для <code>M10</code> он равен 1,5 мм. Мелкий шаг указывают явно, например <code>M10×1,25</code>.</p></div>
+            </details>
+<details>
+              <summary>Как определить шаг внутренней резьбы в гайке или отверстии?</summary>
+              <div class="faq__a"><p>Подберите ответный болт с известным шагом: он должен вкручиваться рукой без усилия и заметного люфта. Если подходящего болта нет, приложите резьбомер либо сделайте оттиск нескольких витков и измерьте расстояние между ними.</p></div>
+            </details>
+          </div>
+
+          <h2 id="istochniki">Источники</h2>
+          <ul class="sources">
+            <li><a href="https://meganorm.ru/Data1/40/40422/index.htm" rel="noopener" target="_blank">ГОСТ 8724-2002. Основные нормы взаимозаменяемости. Резьба метрическая. Диаметры и шаги</a> — таблица 1: крупные и мелкие шаги</li>
+<li><a href="https://meganorm.ru/Data1/40/40421/index.htm" rel="noopener" target="_blank">ГОСТ 9150-2002. Основные нормы взаимозаменяемости. Резьба метрическая. Профиль</a> — профиль метрической резьбы</li>
+<li><a href="https://meganorm.ru/mega_doc/norm/gost_gosudarstvennyj-standart/9/gost_6357-81_st_sev_1157-78_osnovnye_normy.html" rel="noopener" target="_blank">ГОСТ 6357-81. Основные нормы взаимозаменяемости. Резьба трубная цилиндрическая</a> — профиль 55°, обозначение G</li>
+<li><a href="https://www.iso.org/" rel="noopener" target="_blank">ISO 261 — ISO general purpose metric screw threads — General plan</a> — International Organization for Standardization</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/faska-na-chertezhe.html">
+            <img src="/images/blog/faska-na-chertezhe-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Фаски и скругления кромок: как задать на чертеже, чтобы не переплатить</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/sozdat-proekt-nestandartnoy-detali.html">
+            <img src="/images/blog/sozdat-proekt-nestandartnoy-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Как создать проект нестандартной детали: путь от идеи до пробной партии</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kontsentratsiya-napryazheniy-v-uglakh-i-otverstiyakh.html">
+            <img src="/images/blog/kontsentratsiya-napryazheniy-v-uglakh-i-otverstiyakh-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Концентрация напряжений: почему детали ломаются в углах и отверстиях</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
