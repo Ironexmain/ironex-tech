@@ -5,7 +5,23 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Накатка или нарезка резьбы: что прочнее и что дешевле для вашей детали</title>
+      <link>https://ironex.tech/blog/nakatka-rezby-ili-narezka-chto-prochnee-i-deshevle.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/nakatka-rezby-ili-narezka-chto-prochnee-i-deshevle.html</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Накатанная резьба держит на растяжение на 10–30% больше, по усталости — до 70%. Разбираем, когда она дешевле нарезки, а когда нет.</description>
+    </item>
+    <item>
+      <title>Магнитится ли нержавейка: как отличить марки стали и что на самом деле показывает магнит</title>
+      <link>https://ironex.tech/blog/magnitsya-li-nerzhaveyka-kak-otlichit-marki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/magnitsya-li-nerzhaveyka-kak-otlichit-marki.html</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Магнитится не всякая нержавейка: 430 и 410 да, 304 почти нет, но после гибки и сварки может. Таблица марок и проверка магнитом.</description>
+    </item>
     <item>
       <title>Как определить допуск отверстия или вала по квалитету точности</title>
       <link>https://ironex.tech/blog/kvalitet-tochnosti-razmerov.html</link>
@@ -149,22 +165,6 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Как выбирают процесс анодирования алюминия, получают цветное покрытие и проверяют результат. Что указать в чертеже и заявке на обработку.</description>
-    </item>
-    <item>
-      <title>Твёрдое анодирование: чем отличается от обычного и когда оно действительно нужно</title>
-      <link>https://ironex.tech/blog/tverdoe-anodirovanie-chem-otlichaetsya-ot-obychnogo.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/tverdoe-anodirovanie-chem-otlichaetsya-ot-obychnogo.html</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Твёрдое анодирование даёт толстый износостойкий слой, но меняет размеры детали. Разбираем отличия от обычного, толщину и что указать в чертеже.</description>
-    </item>
-    <item>
-      <title>Титан или алюминий: какой металл выбрать для детали и во сколько обойдётся её изготовление</title>
-      <link>https://ironex.tech/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali.html</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Титан или алюминий для детали: сравнение по весу, прочности, температуре и цене обработки на ЧПУ, плюс матрица выбора по условиям работы.</description>
     </item>
   </channel>
 </rss>
