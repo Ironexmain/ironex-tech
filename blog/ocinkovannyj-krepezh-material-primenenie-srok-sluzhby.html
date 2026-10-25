@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оцинкованный крепеж: материал, срок службы и толщина покрытия</title>
+  <meta name="description" content="Как цинк защищает крепеж от коррозии, от чего зависит срок службы и как указать толщину покрытия в чертеже, чтобы не получить ржавые болты." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby.html#article",
+      "headline": "Оцинкованный крепеж: из чего он, где работает и сколько служит",
+      "description": "Как цинк защищает крепеж от коррозии, от чего зависит срок службы и как указать толщину покрытия в чертеже, чтобы не получить ржавые болты.",
+      "datePublished": "2026-10-25",
+      "dateModified": "2026-10-25",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "оцинкованный крепеж",
+        "оцинкованная сталь",
+        "толщина цинкового покрытия",
+        "защита крепежа от коррозии",
+        "цинк-никелевое покрытие",
+        "срок службы оцинкованного крепежа"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Оцинкованный крепеж: из чего он, где работает и сколько служит"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем слой на крепеже отличается от горячего цинкования?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Гальванический цинк на болте — это несколько микрометров, резьбу под него обычно не перерезают. Горячий слой бывает толще 2 mil. Такую толщину на витках иногда снимают повторной нарезкой, и резьба остаётся без защиты. Для точной резьбы в заявке прямо пишут «электролитический цинк» и микрометры. Слово «оцинковать» эти два процесса не различает."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Кто выбирает щелочной или кислый электролит?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Заказчик фиксирует толщину, точку замера, класс прочности и закалку. Цех выбирает ванну под эти условия. Щелочная ровнее по детали и идёт с выходом по току около 60 %. Кислая лучше ложится на закалённый крепёж."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Сколько служит оцинкованный крепеж и что указать в чертеже" />
+  <meta property="og:description" content="Как цинк защищает крепеж от коррозии, от чего зависит срок службы и как указать толщину покрытия в чертеже, чтобы не получить ржавые болты." />
+  <meta property="og:url" content="https://ironex.tech/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-25" />
+  <meta property="article:modified_time" content="2026-10-25" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Сколько служит оцинкованный крепеж и что указать в чертеже" />
+  <meta name="twitter:description" content="Как цинк защищает крепеж от коррозии, от чего зависит срок службы и как указать толщину покрытия в чертеже, чтобы не получить ржавые болты." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Оцинкованный крепеж: из чего он, где работает и сколько служит">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Оцинкованный крепеж: из чего он, где работает и сколько служит</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-otsinkovannyy-krepezh-i-iz-chego-on-sostoit">Что такое оцинкованный крепеж и из чего он состоит</a></li>
+<li><a href="#kak-tsink-zaschischaet-stal-ot-korrozii">Как цинк защищает сталь от коррозии?</a></li>
+<li><a href="#kakoy-tolschiny-nuzhen-sloy-tsinka-na-krepezhe">Какой толщины нужен слой цинка на крепеже?</a></li>
+<li><a href="#tsinkovye-splavy-kogda-chistogo-tsinka-malo">Цинковые сплавы: когда чистого цинка мало</a></li>
+<li><a href="#skolko-sluzhit-otsinkovannyy-krepezh-i-kak-eto-proverit">Сколько служит оцинкованный крепеж и как это проверить?</a></li>
+<li><a href="#gde-otsinkovka-ne-podhodit-ili-trebuet-ostorozhnosti">Где оцинковка не подходит или требует осторожности</a></li>
+<li><a href="#chto-ukazat-v-chertezhe-i-zayavke-na-otsinkovannyy-krepezh">Что указать в чертеже и заявке на оцинкованный крепеж?</a></li>
+<li><a href="#chastye-oshibki-pri-zakaze-otsinkovannogo-krepezha">Частые ошибки при заказе оцинкованного крепежа</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Оцинкованный крепеж: из чего он, где работает и сколько служит">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Оцинкованный крепеж: из чего он, где работает и сколько служит</h1>
+        <p class="lede">Как цинк защищает крепеж от коррозии, от чего зависит срок службы и как указать толщину покрытия в чертеже, чтобы не получить ржавые болты.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-10-25">Опубликовано 25 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby-cover.webp" alt="Оцинкованный крепеж: из чего он, где работает и сколько служит" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+          <p class="prose__lede">Оцинкованный крепеж — это стальные болты, винты и гайки с цинковым слоем в несколько микрометров. Цинк корродирует вместо стали, поэтому срок службы зависит прежде всего от толщины слоя и среды, а не от самого факта оцинковки. Ниже — что именно задать в чертеже, чтобы покрытие дошло до конца срока.</p>
+
+          <h2 id="chto-takoe-otsinkovannyy-krepezh-i-iz-chego-on-sostoit">Что такое оцинкованный крепеж и из чего он состоит</h2>
+<p>Оцинкованный крепеж — болт, винт, гайка или шайба из стали с тонким цинковым слоем сверху. Оцинкованная сталь в такой детали остаётся углеродистой или легированной: цинковое покрытие не превращает основу в нержавеющую. Гальванический слой считают микрометрами. Годную толщину назначает чертёж, а не общая подпись «оцинковано».</p>
+<p>Гальванический цинк и горячее цинкование решают разные задачи. У горячего слоя толщина превышает 2 mil (около 50 мкм), и резьбу под такой слой иногда перенарезают: витки остаются без цинка. Гальваника держит несколько микрометров и резьбу обычно не перерезает. Анодирование — другой процесс и другой металл основы. Разницу двух покрытий разобрали отдельно: <a href="/blog/anodirovanie-i-ocinkovka-metalla-chem-otlichayutsya-pokrytiya.html">чем оцинковка отличается от анодирования</a>.</p>
+<p>Из чего состоит оцинкованный болт, если все слои заказаны:</p>
+<ul><li>Стальная основа: углеродистая или легированная, нержавеющей она не становится.</li><li>Цинковое покрытие: электролитический слой, толщина в микрометрах.</li><li>Хроматная плёнка поверх цинка.</li><li>Органическое покрытие сверху, если его отдельно записали в чертёж.</li></ul>
+<p>Без трёх цифр в заявке — тип слоя, толщина, место замера — цех поставит то, что принято у него по умолчанию. Для ответственного узла этого мало. На гайке и шайбе правило то же: сталь внутри, цинк снаружи.</p>
+<div class="cta ui" id="cta" data-cta="inline">
+            <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+            <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+            <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Оцинкованный крепеж: из чего он, где работает и сколько служит">Прислать чертёж на почту</a>
+          </div>
+<h2 id="kak-tsink-zaschischaet-stal-ot-korrozii">Как цинк защищает сталь от коррозии?</h2>
+<p><img src="/images/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby-1.webp" alt="Стальная монета с цинковым покрытием 1943 года" width="1000" height="508" loading="lazy" decoding="async"></p>
+<p><em>Монета Lincoln Cent производилась из оцинкованной стали в 1943 году. Фото: <a href="https://commons.wikimedia.org/wiki/File:NNC-US-1943-1C-Lincoln_Cent_%28wheat,_zinc-coated_steel%29.jpg" rel="nofollow noopener" target="_blank">US Mint (coin), National Numismatic Collection (photograph by Jaclyn Nash)</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Цинковое покрытие защищает оцинкованную сталь протекторно: цинк корродирует первым и закрывает сталь даже на царапине, пока рядом остался цинк. Коррозия идёт в две стадии. Сначала расходуется цинк, и на поверхности появляется белый налёт. Красная ржавчина начинается только после прорыва цинкового покрытия до стали.</p>
+<blockquote><p>Белый налёт — продукты коррозии цинка: слой ещё работает и закрывает сталь. Ржавчина цвета кирпича значит, что цинк в этом месте закончился.</p></blockquote>
+<p>Белая коррозия пугает на входном контроле, хотя крепёж ещё держит соединение. Сам по себе налёт не равен дыре до металла. Браком он становится, когда чертёж отдельно запретил изменение вида.</p>
+<p>Красная ржавчина — уже коррозия стали. Время до неё задаёт толщина покрытия: тонкий слой пробивается раньше толстого при той же среде. Поэтому строка «оцинковать» без микрометров не обещает срок.</p>
+<p>Хроматирование после цинкования задерживает белую коррозию. Тип плёнки сверяют с чертежом и переносят в заявку дословно. Общие требования к покрытиям и их контролю задаёт ГОСТ 9.301. Хроматная плёнка отодвигает белый налёт и не заменяет толщину цинка.</p>
+<blockquote><p><strong>Факт.</strong> Красная ржавчина появляется только после прорыва цинка до стали, и срок до неё зависит от толщины слоя.</p></blockquote>
+<h2 id="kakoy-tolschiny-nuzhen-sloy-tsinka-na-krepezhe">Какой толщины нужен слой цинка на крепеже?</h2>
+<p>У части гальванических покрытий на крепеже толщину увеличили на 50–100 %: с 5 мкм до 8 или 11 мкм. Так отвечают на более жёсткие требования по солевому туману. Поверх цинка может лежать органическое покрытие, оно добавляет барьер, но не отменяет микрометры цинка под ним. Минимум и место замера пишет заказчик. Гальваник не обязан угадать их по слову «оцинковать».</p>
+<table><thead><tr><th>Требование</th><th>Минимальная толщина цинка</th></tr></thead><tbody><tr><td>Прежнее</td><td>5 мкм</td></tr><tr><td>Увеличенное, первый вариант</td><td>8 мкм</td></tr><tr><td>Увеличенное, второй вариант</td><td>11 мкм</td></tr></tbody></table>
+<p>Минимум часто приходится на зону низкой плотности тока. Чтобы в точке замера гарантировать 5 мкм, гальваник наносит около 9 мкм. Если в заявке не сказано, где мерить, протоколы с разных участков разойдутся, и оба будут формально верными. В чертёж вписывают участок: головка, стержень или резьба.</p>
+<blockquote><p><strong>Мнение.</strong> Если крепёж работает на резьбе во влажном узле, задавайте минимум на резьбе, а не там, где цеху удобнее мерить.</p></blockquote>
+<h3>Щелочной или кислый электролит</h3>
+<p>Щелочные электролиты дают более ровную толщину по детали и помогают удержать минимум в трудной точке. Кислые лучше подходят для закалённых и термообработанных крепежей. Выход по току щелочной ванны около 60 %. В чертёж обычно не вписывают марку ванны. Вписывают ограничение: класс прочности, закалка, точка минимума. Тип электролита цех выбирает под это ограничение.</p>
+<h2 id="tsinkovye-splavy-kogda-chistogo-tsinka-malo">Цинковые сплавы: когда чистого цинка мало</h2>
+<p><img src="/images/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby-2.webp" alt="Установка оцинкованных гвоздей в строительстве, 1938 год" width="1000" height="643" loading="lazy" decoding="async"></p>
+<p><em>Оцинкованные гвозди в строительстве административного здания, 1938 год. Фото: <a href="https://commons.wikimedia.org/wiki/File:Contract_No._56,_Administration_Buildings,_Main_Dam,_Belchertown,_setting_galvanized_nails_in_cork_board,_patrol_building,_Belchertown,_Mass.,_Apr._14,_1938_-_DPLA_-_7ae62ed31e52202e8ace3d7775cf8ef2.jpg" rel="nofollow noopener" target="_blank">Massachusetts. Metropolitan District Water Supply Commission, Pike, Stuart D.,…</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Чистого цинка не хватает, когда при той же толщине нужна заметно большая стойкость в солевом тумане или когда резьба не позволяет нарастить слой. Сплавы цинка с никелем, кобальтом и железом дают в солевом тумане в 3–6 раз большую стойкость, чем чистый цинк той же толщины. Цинк-никелевое покрытие в этой группе обгоняет цинк-кобальт: с ростом доли никеля стойкость при той же толщине растёт.</p>
+<table><thead><tr><th>Покрытие</th><th>Доля легирующего элемента</th><th>Что даёт при той же толщине</th><th>На что смотреть в заказе</th></tr></thead><tbody><tr><td>Чистый цинк</td><td>Легирующего элемента нет</td><td>Протекторная защита, срок задаёт толщина</td><td>Толщина, точка замера, тип плёнки</td></tr><tr><td>Цинк-никель</td><td>6–20 % никеля из кислого; 5–10 % или 10–15 % из щелочного</td><td>Выше чистого цинка, растёт с долей никеля</td><td>Доля никеля в осадке и специальный состав хроматирования</td></tr><tr><td>Цинк-кобальт</td><td>0,4–1,0 % кобальта по массе</td><td>Оптимум стойкости внутри этого окна</td><td>Вне окна 0,4–1,0 % стойкость не растёт</td></tr><tr><td>Цинк-железо</td><td>0,4–1 % железа, обычно из щелочного раствора</td><td>Сплав той же группы по стойкости в тумане</td><td>Доля железа в осадке</td></tr></tbody></table>
+<p>Выход доли или толщины за допуск роняет стойкость. По виду партии этого не определить. Сплавы хроматируются сложнее чистого цинка и требуют специальных составов. Жёлтая плёнка на сплаве часто выходит бронзовой, фиолетовой или радужной, и защита от этого не слабее. Поэтому по цвету плёнки качество не оценивают: сверяют с чертежом код покрытия и протокол.</p>
+<h2 id="skolko-sluzhit-otsinkovannyy-krepezh-i-kak-eto-proverit">Сколько служит оцинкованный крепеж и как это проверить?</h2>
+<p>Срок службы оцинкованного крепежа — не одно число лет. Его задают толщина покрытия, среда и то, что лежит поверх цинка. Без среды цифра «служит N лет» в заявке ничего не обещает. Рабочий способ — расписать срок несколькими критериями и под каждый назвать своё испытание.</p>
+<blockquote><p>Срок службы оцинкованного крепежа можно задать тремя критериями: внешний вид, разборка ручным инструментом и удержание соединения. Красная ржавчина закрывает только один из них.</p></blockquote>
+<p>Пример такой записи: четыре года крепёж сохраняет вид, шесть лет его разбирают обычным ручным инструментом, не меньше десяти лет он держит соединение. Это образец формулировки, а не обещание срока для любого климата. В заявке те же три вопроса: когда допустим белый налёт, когда деталь ещё обязана открутиться, когда стык имеет право потерять усилие.</p>
+<p>Одного критерия «нет красной ржавчины» мало. Для узла, который обслуживают, в требования вносят и вид, и разборку.</p>
+<p>Длинные испытания в солевом тумане плохо совпадают с долгой эксплуатацией. Часть покрытий в тумане показывает себя лучше, чем в циклических испытаниях и на изделии. Ускоренные испытания по ГОСТ 9.308 не предназначены для определения срока службы покрытия в природных условиях. Для ответственного крепежа просят циклические испытания и называют критерий отказа: белый налёт или красная ржавчина. Часы в камере без критерия отказа не читаются.</p>
+<h2 id="gde-otsinkovka-ne-podhodit-ili-trebuet-ostorozhnosti">Где оцинковка не подходит или требует осторожности</h2>
+<p>Стальной крепёж в контакте с алюминием или магнием образует гальваническую пару. Алюминий и магний в паре со сталью менее благородны: без защиты они корродируют первыми, а болт при этом может выглядеть целым. Пару и защиту выбирают на чертеже, до сборки узла.</p>
+<blockquote><p>В паре сталь и алюминий без защиты разрушается алюминий. Стальной болт при этом может остаться без рыжих пятен.</p></blockquote>
+<p>Варианты решения: изолирующие шайбы, защитное покрытие контактирующих деталей или другая пара материалов. Для оцинкованного крепежа в контакте с магнием часть заказчиков требует жёлтую хроматную плёнку и затем обработку щелочным силикатным раствором. Что из этого держит узел, выбирают по среде и записывают в чертёж.</p>
+<p>Отдельный риск — водородное охрупчивание. При электролитическом цинковании риск растёт у высокопрочной стали. Прогрев после покрытия, чтобы снять водород, может понадобиться. Температуру и выдержку берут из чертежа, в заявке их не придумывают.</p>
+<p>Какой слой резьбы живёт в вашей среде — соль, влага, контакт с алюминием — разобрано отдельно: <a href="/blog/rezbovye-soedineniya-kakoe-pokrytie-rezby-dlya-kakoy-sredy.html">какое покрытие резьбы выбрать для вашей среды</a>.</p>
+<h2 id="chto-ukazat-v-chertezhe-i-zayavke-na-otsinkovannyy-krepezh">Что указать в чертеже и заявке на оцинкованный крепеж?</h2>
+<p>Подрядчик не додумает за заказчика толщину, точку замера и критерий испытания. В чертёж и в заявку мы вносим шесть позиций в том порядке, в котором их читает технолог. Пропуск любой оставляет выбор цеху, и партия может пройти приёмку по чужому правилу.</p>
+<ol><li>Материал основы и класс прочности болта, винта или гайки.</li><li>Тип покрытия: чистый цинк или сплав; для сплава — доля никеля, кобальта или железа.</li><li>Толщина в микрометрах и участок, где считают минимум: головка, стержень или резьба.</li><li>Хроматирование: тип плёнки.</li><li>Испытания: циклические или солевой туман, число часов и критерий — белый налёт или красная ржавчина.</li><li>Приёмка: протокол толщины в названной точке и, для сплава, доля легирующего элемента в осадке.</li></ol>
+<p>Требования к слою сверяют с ГОСТ 9.301. Обозначение покрытия копируют из чертежа заказчика: номер из чужого каталога не подставляют, в обозначении сидят и металл, и толщина, и обработка.</p>
+<p>В протоколе толщины должна стоять та же точка, что в чертеже. Для сплава рядом с микрометрами нужна доля легирующего элемента: если она вышла из окна по кобальту или никелю, стойкость падает, а внешний вид партии остаётся прежним.</p>
+<h2 id="chastye-oshibki-pri-zakaze-otsinkovannogo-krepezha">Частые ошибки при заказе оцинкованного крепежа</h2>
+<p>Ржавый болт через сезон чаще начинается с пустой строки в заявке, чем с ошибки ванны. Пять ошибок повторяются от заказа к заказу. Каждая оставляет цеху право выбрать слой самому.</p>
+<ul><li>Написать «оцинковать» без толщины и точки замера. Минимум на резьбе тогда никто не гарантирует.</li><li>Выйти за допуск по составу сплава или по толщине. Стойкость падает, глаз этого не видит.</li><li>Принять белый налёт за брак и пропустить красную ржавчину как допустимый тон.</li><li>Для ответственного узла ограничиться часами в солевом тумане. Часть покрытий в камере держится лучше, чем на изделии.</li><li>Выбрать цех без контроля толщины и доли сплава в осадке. Для сплава это потеря стойкости.</li></ul>
+<p>Перед отправкой пройдите чертёж по этим пяти строкам. Если нет толщины, точки замера и критерия отказа, допишите их до запуска. Ориентиры по стоимости — на странице <a href="/ceny.html">цены на металлообработку</a>. Пришлите чертёж с заполненными позициями: <a href="/">изготовление деталей по чертежам</a> считают по нему, а не по одному слову «оцинковать».</p>
+
+          <h2 id="faq">Частые вопросы</h2>
+          <div class="faq">
+            <details open>
+              <summary>Чем слой на крепеже отличается от горячего цинкования?</summary>
+              <div class="faq__a"><p>Гальванический цинк на болте — это несколько микрометров, резьбу под него обычно не перерезают. Горячий слой бывает толще 2 mil. Такую толщину на витках иногда снимают повторной нарезкой, и резьба остаётся без защиты. Для точной резьбы в заявке прямо пишут «электролитический цинк» и микрометры. Слово «оцинковать» эти два процесса не различает.</p></div>
+            </details>
+<details>
+              <summary>Кто выбирает щелочной или кислый электролит?</summary>
+              <div class="faq__a"><p>Заказчик фиксирует толщину, точку замера, класс прочности и закалку. Цех выбирает ванну под эти условия. Щелочная ровнее по детали и идёт с выходом по току около 60 %. Кислая лучше ложится на закалённый крепёж.</p></div>
+            </details>
+          </div>
+
+          <h2 id="istochniki">Источники</h2>
+          <ul class="sources">
+            <li><a href="https://www.pfonline.com/articles/trends-in-fastener-finishing" rel="noopener" target="_blank">Trends in Fastener Finishing</a> — Products Finishing, обзор покрытий крепежа</li>
+<li><a href="https://protect.gost.ru/gost/details/750cc7b5-27bb-4fd0-8ae0-77be96f24514" rel="noopener" target="_blank">ГОСТ 9.301. Покрытия металлические и неметаллические неорганические. Общие требования</a> — Росстандарт</li>
+<li><a href="https://meganorm.ru/Index2/1/4294850/4294850368.htm" rel="noopener" target="_blank">ГОСТ 9.308. Методы ускоренных коррозионных испытаний</a> — текст области применения стандарта</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/aisi-304-i-316-raznica-vybor-nerzhaveyki.html">
+            <img src="/images/blog/aisi-304-i-316-raznica-vybor-nerzhaveyki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">AISI 304 или 316: какую нержавейку выбрать для детали по чертежу</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/passivaciya-nerzhaveyushchey-stali.html">
+            <img src="/images/blog/passivaciya-nerzhaveyushchey-stali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Пассивация нержавеющей стали: зачем она нужна и как её делают на производстве</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/magnitsya-li-nerzhaveyka-kak-otlichit-marki.html">
+            <img src="/images/blog/magnitsya-li-nerzhaveyka-kak-otlichit-marki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Магнитится ли нержавейка: как отличить марки стали и что на самом деле показывает магнит</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Оцинкованный крепеж: из чего он, где работает и сколько служит">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

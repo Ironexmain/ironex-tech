@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Оцинкованный крепеж: из чего он, где работает и сколько служит</title>
+      <link>https://ironex.tech/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby.html</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как цинк защищает крепеж от коррозии, от чего зависит срок службы и как указать толщину покрытия в чертеже, чтобы не получить ржавые болты.</description>
+    </item>
+    <item>
+      <title>Обозначение сварных швов на чертеже: как читать символ и что указать изготовителю</title>
+      <link>https://ironex.tech/blog/oboznachenie-svarnyh-shvov-na-chertezhe.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/oboznachenie-svarnyh-shvov-na-chertezhe.html</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Как читать условное обозначение сварного шва по ГОСТ 2.312: полка, катет, вспомогательные знаки. И что заказчик должен дописать, чтобы деталь сварили как надо.</description>
+    </item>
+    <item>
+      <title>Неуказанные предельные отклонения: что значит, если допусков на чертеже нет</title>
+      <link>https://ironex.tech/blog/neukazannye-predelnye-otkloneniya-gost-30893-1.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/neukazannye-predelnye-otkloneniya-gost-30893-1.html</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Если отклонения на чертеже не указаны, действуют общие допуски ГОСТ 30893.1, но только по ссылке. Классы f, m, c, v, запись и приёмка.</description>
+    </item>
     <item>
       <title>Накатка или нарезка резьбы: что прочнее и что дешевле для вашей детали</title>
       <link>https://ironex.tech/blog/nakatka-rezby-ili-narezka-chto-prochnee-i-deshevle.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Фаска — снятый угол кромки, скругление — радиус. Как записать фаску по ГОСТ 2.307-2011, какой размер взять из ГОСТ 10948-64 и когда радиус только поднимает цену.</description>
-    </item>
-    <item>
-      <title>Единицы измерения: как читать обозначения и переводить величины</title>
-      <link>https://ironex.tech/blog/edinicy-izmereniya.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/edinicy-izmereniya.html</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Основные и производные единицы СИ, приставки, правила записи и перевод величин. Как согласовать единицы в чертеже, расчёте и заказе деталей.</description>
-    </item>
-    <item>
-      <title>Из каких металлов состоит бронза и как выбрать состав для детали</title>
-      <link>https://ironex.tech/blog/bronza-eto-splav-kakih-metallov.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/bronza-eto-splav-kakih-metallov.html</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Из каких металлов состоит бронза, чем отличается от латуни и как добавки влияют на свойства. Разбираем обозначения, обработку и выбор материала для детали.</description>
-    </item>
-    <item>
-      <title>Как анодируют алюминий и что учесть при заказе цветного покрытия</title>
-      <link>https://ironex.tech/blog/anodirovanie-alyuminiya.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/anodirovanie-alyuminiya.html</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Как выбирают процесс анодирования алюминия, получают цветное покрытие и проверяют результат. Что указать в чертеже и заявке на обработку.</description>
     </item>
   </channel>
 </rss>
