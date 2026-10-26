@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Листание и фильтр витрины блога работают скриптом на одной странице —
+# для Яндекса это одна страница, а не дубли (в поиске были /blog.html?page=3 и /blog?category=…)
+Clean-param: page&category /blog
+
 Sitemap: https://ironex.tech/sitemap.xml
