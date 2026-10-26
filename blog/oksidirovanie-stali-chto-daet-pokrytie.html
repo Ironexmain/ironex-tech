@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оксидирование стали: что даёт покрытие, когда выбирать — IRONEX</title>
+  <meta name="description" content="Оксидирование почти не меняет размеры детали, но от ржавчины защищает только с маслом. Где покрытие работает, где нет и что указать в чертеже." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/oksidirovanie-stali-chto-daet-pokrytie.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/oksidirovanie-stali-chto-daet-pokrytie.html#article",
+      "headline": "Оксидирование стали: что даёт покрытие и в каких деталях его выбирают",
+      "description": "Оксидирование почти не меняет размеры детали, но от ржавчины защищает только с маслом. Где покрытие работает, где нет и что указать в чертеже.",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/oksidirovanie-stali-chto-daet-pokrytie.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/oksidirovanie-stali-chto-daet-pokrytie-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "оксидирование стали",
+        "химическое оксидирование стали",
+        "воронение стали",
+        "чернение стали",
+        "оксидирование деталей",
+        "оксидирование по чертежу"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Оксидирование стали: что даёт покрытие и в каких деталях его выбирают"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем воронение отличается от химического оксидирования?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это близкие названия результата — чёрной оксидной плёнки на стали. В чертеже лучше указать химическое оксидирование и отдельно задать финишную пропитку."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Защищает ли оксидирование сталь от ржавчины?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сама плёнка защищает слабо. Основную защиту даёт масло, воск или лак. На улице без обслуживания оксидированная деталь быстро ржавеет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Меняются ли размеры детали после оксидирования?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Изменение минимально, поскольку толстый слой на поверхности не наращивается. Для точной посадки допустимую прибавку всё равно согласуют с технологом и учитывают в размерной цепи."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Оксидирование стали: почему без масла оно не защищает от ржавчины" />
+  <meta property="og:description" content="Оксидирование почти не меняет размеры детали, но от ржавчины защищает только с маслом. Где покрытие работает, где нет и что указать в чертеже." />
+  <meta property="og:url" content="https://ironex.tech/blog/oksidirovanie-stali-chto-daet-pokrytie.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/oksidirovanie-stali-chto-daet-pokrytie-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-26" />
+  <meta property="article:modified_time" content="2026-10-26" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Оксидирование стали: почему без масла оно не защищает от ржавчины" />
+  <meta name="twitter:description" content="Оксидирование почти не меняет размеры детали, но от ржавчины защищает только с маслом. Где покрытие работает, где нет и что указать в чертеже." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/oksidirovanie-stali-chto-daet-pokrytie-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Оксидирование стали: что даёт покрытие и в каких деталях его выбирают">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Оксидирование стали: что даёт покрытие и в каких деталях его выбирают</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-oksidirovanie">Что такое оксидирование</a></li>
+<li><a href="#chto-daet-pokrytie">Что даёт покрытие</a></li>
+<li><a href="#gde-primenyaetsya">Где применяют</a></li>
+<li><a href="#kogda-ne-podhodit">Когда не подходит</a></li>
+<li><a href="#oksidirovanie-i-chertezh">Как указать в чертеже</a></li>
+<li><a href="#sravnenie-pokrytiy">Сравнение покрытий</a></li>
+<li><a href="#kak-prohodit-process">Как проходит процесс</a></li>
+<li><a href="#defekty-i-kontrol">Дефекты и контроль</a></li>
+<li><a href="#chto-ukazat-v-zayavke">Данные для заказа</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Оксидирование стали: что даёт покрытие и в каких деталях его выбирают">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Оксидирование стали: что даёт покрытие и в каких деталях его выбирают</h1>
+        <p class="lede">Оксидирование почти не меняет размеры детали, но от ржавчины защищает только с маслом. Где покрытие работает, где нет и что указать в чертеже.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-10-26">Опубликовано 26 октября 2026</time>
+
+            <span>7 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/oksidirovanie-stali-chto-daet-pokrytie-cover.webp" alt="Оксидирование стали: что даёт покрытие и в каких деталях его выбирают" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Оксидирование стали превращает верхний слой металла в очень тонкую чёрную оксидную плёнку. Размеры детали почти не меняются, поэтому покрытие выбирают для точных узлов, инструмента и оснастки. Но от ржавчины держит не сама плёнка, а пропитка маслом: без неё защита минимальна.</p>
+<h2 id="chto-takoe-oksidirovanie">Что такое оксидирование стали и чем оно отличается от воронения</h2>
+<p>Оксидирование стали — конверсионная обработка: поверхность металла превращается в оксидную плёнку на основе магнетита. Отдельный толстый слой сверху не наращивается. Поэтому покрытие слабо влияет на посадочные размеры, профиль резьбы и геометрию точной детали.</p>
+<p>Воронением и чернением обычно называют внешний результат обработки — тёмную поверхность стали. В чертеже лучше писать «химическое оксидирование» и отдельной строкой указывать финишную пропитку.</p>
+<p>Термическое воронение, химическое оксидирование стали и анодирование алюминия нельзя объединять в один процесс. Они работают с разными металлами и формируют покрытие по разным режимам. Если подрядчику написать только «сделать деталь чёрной», он не получит требований к защите, пропитке и допустимым поверхностям.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Оксидирование стали: что даёт покрытие и в каких деталях его выбирают">Прислать чертёж на почту</a>
+</div>
+<h2 id="chto-daet-pokrytie">Что реально даёт оксидирование</h2>
+<p><img alt="Дверной металлический замок" decoding="async" height="750" loading="lazy" src="/images/blog/oksidirovanie-stali-chto-daet-pokrytie-1.webp" width="1000"/></p>
+<p><em>Дверной замок — деталь, к которой часто применяют оксидирование. Фото: <a href="https://commons.wikimedia.org/wiki/File:HK_household_good_metal_hardware_room_door_lock_repair_and_replace_project_September_2025_N13P_01.jpg" rel="nofollow noopener" target="_blank">Hremsod Shsimoopu</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>Оксидирование сохраняет геометрию детали, удерживает смазку и не страдает от водородного охрупчивания. Главная граница метода — слабая самостоятельная защита от коррозии.</p>
+<p>Оксидная плёнка пористая. После промасливания масло заполняет поры и остаётся на поверхности. Это полезно для резьбовых соединений и трущихся деталей, которые работают со смазкой. Без финишного состава чёрный цвет ещё не означает, что металл защищён от влаги.</p>
+<p>Для нагруженной детали оксидирование может оказаться подходящим вариантом, если конструктор хочет избежать гальванического процесса с риском наводороживания. Выбор всё равно проверяют по марке стали, нагрузке и требованиям конструкторской документации.</p>
+<blockquote><p>Оксидная плёнка служит основой для масла, воска или лака. Рассматривать её как самостоятельную броню от ржавчины нельзя.</p></blockquote>
+<blockquote><p><strong>Факт.</strong> Без финишной пропитки оксидированная деталь может ржаветь так же быстро, как голая сталь.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если деталь работает в сухом обслуживаемом механизме и получает смазку, оксидирование разумно рассматривать раньше толстослойной окраски.</p></blockquote>
+<h2 id="gde-primenyaetsya">В каких деталях оксидирование выбирают</h2>
+<p>Оксидирование выбирают для стальных деталей, которым нужен тёмный цвет без заметного изменения размеров. Лучшие условия — закрытый механизм, контролируемая влажность, регулярное обслуживание и наличие масла.</p>
+<ul><li><strong>Шестерни и элементы передач.</strong> Плёнка сохраняет профиль зубьев, а пористая поверхность удерживает смазку.</li><li><strong>Валы, опоры и посадочные детали.</strong> Тонкий конверсионный слой меньше влияет на допуски и посадки, чем краска.</li><li><strong>Инструмент и оснастка.</strong> Покрытие даёт равномерный тёмный вид при условии ухода.</li><li><strong>Крепёж внутри механизмов.</strong> Оксидирование подходит для винтов и гаек, которые работают в смазанной и защищённой среде.</li><li><strong>Детали подшипниковых узлов.</strong> Обработку задают для отдельных компонентов до сборки. Возможность оксидирования собранного узла нужно согласовать с технологом.</li></ul>
+<p>Корпуса и опоры нельзя выбирать только по названию детали. Если корпус стоит на улице, тонкая плёнка не решит задачу. Если посадочные места критичны, в чертеже отдельно отмечают покрываемые и непокрываемые поверхности.</p>
+<h2 id="kogda-ne-podhodit">Когда оксидирование не подходит</h2>
+<p>Оксидирование не подходит для постоянной работы под дождём, в конденсате или агрессивной среде без регулярного ухода. Наружный крепёж с таким покрытием склонен быстро ржаветь, особенно после потери масляной плёнки.</p>
+<p>Для улицы чаще рассматривают цинкование или порошковую окраску. В химически активной среде покрытие выбирают по конкретному реагенту, температуре и времени контакта. Универсального варианта здесь нет.</p>
+<p>Литьё, сварные швы и детали с неоднородной термообработкой могут получить разный оттенок. На результат также влияют марка стали, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> и остатки окалины. Для <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавеющей стали</a> нельзя автоматически применять режим для обычной углеродистой стали.</p>
+<p>Сборные узлы с узкими зазорами требуют отдельного согласования: раствор может задержаться в полостях, а промывка — не удалить его полностью.</p>
+<blockquote><p>Оксидированная деталь без пропитки и обслуживания на улице быстро теряет защиту. Для таких условий нужен другой тип покрытия.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если владелец механизма не сможет регулярно обновлять масло, выбирайте покрытие с самостоятельной барьерной или электрохимической защитой.</p></blockquote>
+<h2 id="oksidirovanie-i-chertezh">Как указать оксидирование в чертеже и не сломать допуски</h2>
+<p>В чертеже нужно указать химическое оксидирование, финишную пропитку и поверхности, которые нельзя обрабатывать. Одной записи «воронение» недостаточно: она не задаёт защитный состав и требования к приёмке.</p>
+<p>Рабочее требование можно собрать из трёх частей:</p>
+<ul><li>вид обработки — химическое оксидирование стали;</li><li>финиш — масло, воск или лак по согласованной технологии;</li><li>перечень поверхностей под покрытие и участков под маскирование.</li></ul>
+<p>Формулировку из старого чертежа не переносят без проверки: перед выпуском документации запись сверяют с технологом подрядчика.</p>
+<p>Оксидирование почти не нарушает допуски и посадки, но слово «почти» не заменяет расчёт размерной цепи. Для прецизионной посадки, калиброванной резьбы или сопрягаемой поверхности укажите допустимое изменение размера и способ контроля.</p>
+<blockquote><p>Режим и пропитку задают словами в чертеже: одинаковый чёрный цвет не показывает, как обработали деталь и чем закрыли поры.</p></blockquote>
+<h2 id="sravnenie-pokrytiy">Оксидирование или другое покрытие: как выбрать</h2>
+<p>Покрытие выбирают по среде, допустимому изменению размеров и обслуживанию детали. Оксидирование выигрывает в точных смазываемых узлах, но уступает барьерным и гальваническим покрытиям при наружной эксплуатации.</p>
+<table><thead><tr><th>Покрытие</th><th>Защита от коррозии</th><th>Влияние на размеры</th><th>Где выбирать</th></tr></thead><tbody><tr><td>Оксидирование с пропиткой</td><td>Ограниченная, зависит от финиша и ухода</td><td>Минимальное</td><td>Точные узлы в сухой среде</td></tr><tr><td>Фосфатирование</td><td>Зависит от масла или последующей окраски</td><td>Небольшое</td><td>Основа под масло или краску</td></tr><tr><td>Цинкование</td><td>Подходит для более жёсткой влажной среды</td><td>Добавляет слой</td><td>Крепёж и наружные детали</td></tr><tr><td>Никелирование</td><td>Даёт барьерную защиту при сплошном слое</td><td>Добавляет слой</td><td>Износостойкие и декоративные поверхности</td></tr><tr><td>Порошковая окраска</td><td>Защищает, пока слой остаётся целым</td><td>Сильнее влияет на геометрию</td><td>Корпуса и наружные поверхности</td></tr></tbody></table>
+<p>Для высокопрочной детали сначала оцените <a href="/blog/galvanicheskoe-pokrytie-vidy-i-kogda-primenyat.html">гальваническое покрытие под чертёж</a>, потому что у гальванических процессов есть риск наводороживания. Для корпуса без точных посадок может подойти <a href="/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali.html">порошковая покраска как альтернатива</a>.</p>
+<p>Стоимость и рабочую температуру сравнивают только для конкретных систем: состав покрытия, подготовка, финиш и <a href="/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii.html">размер партии</a> меняют расчёт.</p>
+<h2 id="kak-prohodit-process">Как проходит оксидирование: от обезжиривания до пропитки</h2>
+<p>Результат определяет вся технологическая цепочка. Чистая ванна не исправит масло, окалину или ржавчину, оставшиеся на поверхности.</p>
+<h3>Подготовка: обезжиривание и травление</h3>
+<ol><li><strong>Обезжиривание.</strong> Щелочной очиститель снимает масло и смазку. Для некоторых составов рабочая температура начинается примерно от 82 °C.</li><li><strong>Удаление окалины и ржавчины.</strong> Кислотная активация очищает металл перед формированием плёнки. Режим подбирают под марку стали.</li><li><strong>Промывка.</strong> Проточная или каскадная схема уменьшает перенос химии между ваннами. Стоячая вода быстрее накапливает загрязнения.</li></ol>
+<p>Плохая подготовка даёт пятнистый цвет и участки с непрочной плёнкой.</p>
+<h3>Ванна и режимы: горячий и среднетемпературный</h3>
+<ol><li><strong>Оксидирующая ванна.</strong> Горячий процесс может занимать менее 10 минут, но требует вентиляции из-за паров кипящего раствора.</li><li><strong>Повторная промывка.</strong> С детали удаляют остатки реагентов, включая раствор из отверстий и пазов.</li><li><strong>Промасливание.</strong> Масло заполняет поры магнетитовой плёнки и создаёт основную защиту от влаги.</li></ol>
+<p>У насыщенного горячего раствора температура кипения может находиться около 139–142 °C. Это значение нельзя переносить в техпроцесс без паспорта состава и проверки режима технологом.</p>
+<h2 id="defekty-i-kontrol">Типичные дефекты и как проверить результат</h2>
+<p>Приёмка оксидирования включает цвет, сплошность плёнки, состояние поверхности и согласованные испытания. Оттенок сам по себе не подтверждает режим обработки или коррозионную стойкость.</p>
+<ul><li><strong>Пятна и разводы →</strong> остатки масла, неоднородная сталь или слабая промывка → осмотреть поверхность при равномерном освещении.</li><li><strong>Светлые участки →</strong> окалина, ржавчина либо недостаточная активация → проверить подготовку и повторяемость дефекта на партии.</li><li><strong>Красный налёт →</strong> отсутствие пропитки, остатки раствора или ранняя коррозия → проверить промывку и финишный состав.</li><li><strong>Ржавчина после хранения →</strong> повреждённая либо высохшая масляная плёнка → сверить упаковку и условия хранения.</li></ul>
+<p>Капельную пробу с раствором медного купороса и испытание во влажной камере назначают только с конкретной методикой и критерием приёмки. Их согласуют с подрядчиком до начала работ.</p>
+<p>В протоколе полезны номер партии, режим, вид пропитки и результаты согласованных проб.</p>
+<h2 id="chto-ukazat-v-zayavke">Что подготовить для заказа и от чего зависят цена и срок</h2>
+<p>Для расчёта подрядчику нужны данные о детали, партии и условиях работы. Без них нельзя оценить загрузку ванны, подготовку поверхности и объём контроля.</p>
+<ul><li>чертёж с требованиями к покрытию;</li><li>марка стали и состояние поверхности;</li><li>габариты и масса детали;</li><li>число деталей в партии;</li><li>выбранная пропитка;</li><li>условия эксплуатации и критичные допуски.</li></ul>
+<p>Цена и срок зависят от площади поверхности, массы партии, подготовки и габаритов относительно ванны. Ограничения оборудования уточняют до согласования заказа. Если конструкция содержит полости, резьбы или собранные узлы, покажите их технологу отдельно.</p>
+<p>Сверить исходные данные можно по <a href="/ceny.html">ориентирам цен на металлообработку</a>. Для предметного расчёта <a href="/kontakty.html">пришлите чертёж</a>, укажите марку стали, партию и требуемый финиш.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем воронение отличается от химического оксидирования?</summary>
+<div class="faq__a"><p>Это близкие названия результата — чёрной оксидной плёнки на стали. В чертеже лучше указать химическое оксидирование и отдельно задать финишную пропитку.</p></div>
+</details>
+<details>
+<summary>Защищает ли оксидирование сталь от ржавчины?</summary>
+<div class="faq__a"><p>Сама плёнка защищает слабо. Основную защиту даёт масло, воск или лак. На улице без обслуживания оксидированная деталь быстро ржавеет.</p></div>
+</details>
+<details>
+<summary>Меняются ли размеры детали после оксидирования?</summary>
+<div class="faq__a"><p>Изменение минимально, поскольку толстый слой на поверхности не наращивается. Для точной посадки допустимую прибавку всё равно согласуют с технологом и учитывают в размерной цепи.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://sendcutsend.com/blog/black-oxide-coating/" rel="noopener" target="_blank">Black Oxide Coating: What Is Black Oxide?</a> — SendCutSend</li>
+<li><a href="https://www.pfonline.com/articles/pretreatment-of-black-oxide" rel="noopener" target="_blank">Pretreatment of Black Oxide</a> — Products Finishing</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali.html">
+            <img src="/images/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Порошковая покраска на заказ: как выбрать покрытие</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/nakatka-rezby-ili-narezka-chto-prochnee-i-deshevle.html">
+            <img src="/images/blog/nakatka-rezby-ili-narezka-chto-prochnee-i-deshevle-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Накатка или нарезка резьбы: что прочнее и что дешевле для вашей детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kontaktnaya-tochechnaya-svarka-kontrol-kachestva.html">
+            <img src="/images/blog/kontaktnaya-tochechnaya-svarka-kontrol-kachestva-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Контактная точечная сварка: где применяют и как проверяют качество сварной точки</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Оксидирование стали: что даёт покрытие и в каких деталях его выбирают">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

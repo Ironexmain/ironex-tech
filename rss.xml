@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать</title>
+      <link>https://ironex.tech/blog/oshibki-pri-proektirovanii-detalej.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/oshibki-pri-proektirovanii-detalej.html</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Тонкие стенки, глубокие карманы, лишние допуски: какие решения в чертеже растят цену и срок детали и что поправить до отправки в цех.</description>
+    </item>
+    <item>
+      <title>Оксидирование стали: что даёт покрытие и в каких деталях его выбирают</title>
+      <link>https://ironex.tech/blog/oksidirovanie-stali-chto-daet-pokrytie.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/oksidirovanie-stali-chto-daet-pokrytie.html</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Оксидирование почти не меняет размеры детали, но от ржавчины защищает только с маслом. Где покрытие работает, где нет и что указать в чертеже.</description>
+    </item>
+    <item>
+      <title>Оцинковка деталей по чертежу: как выбрать способ и толщину слоя и посчитать цену</title>
+      <link>https://ironex.tech/blog/ocinkovka-metalla-zashchita-ot-korrozii-stoimost.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/ocinkovka-metalla-zashchita-ot-korrozii-stoimost.html</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Экономика заказа</category>
+      <description>Горячее, гальваника, холодное цинкование: чем отличаются, какой слой нужен под условия эксплуатации и из чего складывается цена оцинковки детали.</description>
+    </item>
     <item>
       <title>Оцинкованный крепеж: из чего он, где работает и сколько служит</title>
       <link>https://ironex.tech/blog/ocinkovannyj-krepezh-material-primenenie-srok-sluzhby.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Чем AISI 304 отличается от 316, где нужен молибден, что такое 12Х18Н10Т и как марка влияет на обработку, сварку и цену детали.</description>
-    </item>
-    <item>
-      <title>Что такое оксиды и как отличить основные от кислотных</title>
-      <link>https://ironex.tech/blog/oksidy-eto.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/oksidy-eto.html</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Что такое оксиды, чем основные отличаются от кислотных и как определить их класс. Формулы, реакции, исключения и роль оксидных плёнок на деталях.</description>
-    </item>
-    <item>
-      <title>Как читать обозначения шероховатости и выбирать Ra для детали</title>
-      <link>https://ironex.tech/blog/oboznachenie-sherohovatosti-poverhnosti.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/oboznachenie-sherohovatosti-poverhnosti.html</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Как читать знаки шероховатости и параметры Ra и Rz, выбирать требования по назначению поверхности и согласовывать контроль детали.</description>
-    </item>
-    <item>
-      <title>Фаски и скругления кромок: как задать на чертеже, чтобы не переплатить</title>
-      <link>https://ironex.tech/blog/faska-na-chertezhe.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/faska-na-chertezhe.html</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Фаска — снятый угол кромки, скругление — радиус. Как записать фаску по ГОСТ 2.307-2011, какой размер взять из ГОСТ 10948-64 и когда радиус только поднимает цену.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ошибки при проектировании деталей: что удорожает заказ</title>
+  <meta name="description" content="Тонкие стенки, глубокие карманы, лишние допуски: какие решения в чертеже растят цену и срок детали и что поправить до отправки в цех." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/oshibki-pri-proektirovanii-detalej.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/oshibki-pri-proektirovanii-detalej.html#article",
+      "headline": "Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать",
+      "description": "Тонкие стенки, глубокие карманы, лишние допуски: какие решения в чертеже растят цену и срок детали и что поправить до отправки в цех.",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/oshibki-pri-proektirovanii-detalej.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/oshibki-pri-proektirovanii-detalej-cover.webp",
+      "articleSection": "Экономика заказа",
+      "keywords": [
+        "ошибки при проектировании деталей",
+        "технологичность конструкции",
+        "недостатки в чертеже",
+        "тонкая стенка фрезерование",
+        "глубокий карман фреза",
+        "допуск на размер детали"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужно ли показывать чертёж технологу до запуска?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, до заказа оснастки. Если выяснится, что деталь не держит допуск, когда штамп уже в прессе, переделка бьёт и по сроку, и по деньгам. Технолог на этом шаге смотрит доступ инструмента, гибы и поля, которые можно расширить без потери функции."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как проверить чертёж перед отправкой в цех?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пройдите стенки, глубину карманов, резьбу, допуски, шероховатость, базы, материал и состояние поставки. Затем отправьте PDF вместе с моделью в STEP или DXF и строкой, какой файл главный при расхождении."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "К чему приводят ошибки в чертеже?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "К другому инструменту, лишним установам, большему машинному времени и переделке оснастки. Всё это попадает в цену и срок ещё до того, как станок сделает первую годную деталь."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="7 ошибок в чертеже, из-за которых деталь дорожает в цеху" />
+  <meta property="og:description" content="Тонкие стенки, глубокие карманы, лишние допуски: какие решения в чертеже растят цену и срок детали и что поправить до отправки в цех." />
+  <meta property="og:url" content="https://ironex.tech/blog/oshibki-pri-proektirovanii-detalej.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/oshibki-pri-proektirovanii-detalej-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-26" />
+  <meta property="article:modified_time" content="2026-10-26" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="7 ошибок в чертеже, из-за которых деталь дорожает в цеху" />
+  <meta name="twitter:description" content="Тонкие стенки, глубокие карманы, лишние допуски: какие решения в чертеже растят цену и срок детали и что поправить до отправки в цех." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/oshibki-pri-proektirovanii-detalej-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/index.html">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/index.html">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#pochemu-oshibka-dorozhaet">Почему ошибка в чертеже дороже, чем кажется</a></li>
+<li><a href="#tonkie-steny-i-glubokie-karmany">Тонкие стенки, глубокие карманы и острые углы</a></li>
+<li><a href="#rezba-i-otverstiya">Резьба и отверстия: где чертёж требует лишнего</a></li>
+<li><a href="#listovoj-metall">Листовой металл: гиб, полки и отверстия у гиба</a></li>
+<li><a href="#oshibki-v-samom-chertezhe">Допуски, шероховатость и базы</a></li>
+<li><a href="#material-i-zagotovka">Материал и заготовка</a></li>
+<li><a href="#tablitsa-oshibok">Семь ошибок и цена</a></li>
+<li><a href="#proverka-do-zapuska">Как проверить технологичность до запуска</a></li>
+<li><a href="#chek-list-i-vyvody">Чек-лист перед отправкой чертежа</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать</h1>
+        <p class="lede">Тонкие стенки, глубокие карманы, лишние допуски: какие решения в чертеже растят цену и срок детали и что поправить до отправки в цех.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Экономика заказа</span>
+            <time datetime="2026-10-26">Опубликовано 26 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/oshibki-pri-proektirovanii-detalej-cover.webp" alt="Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Деталь дорожает из-за решений в чертеже: стенки тоньше 1,6 мм, глубокие карманы, допуски «на всякий случай», резьба на всю глубину. Каждое такое решение заставляет цех брать другой инструмент, делать лишние установы или переделывать оснастку. Ниже — что именно меняется и как поправить чертёж до запуска.</p>
+<h2 id="pochemu-oshibka-dorozhaet">Почему ошибка в чертеже дороже, чем кажется</h2>
+<p>Когда вы в последний раз спрашивали у цеха, какая строка чертежа делает деталь дороже? По чертежу цех выбирает инструмент, число установов и припуски, поэтому технологичность конструкции задаёт стоимость детали ещё до запуска. Ориентир статьи — фрезерование и лист, предел станка назовёт технолог.</p>
+<p>Решение на чертеже превращается в другой инструмент, лишний установ и лишние минуты станка. В цехе это смена фрезы или спор на приёмке. Технологичность конструкции снижает стоимость детали, когда такие решения убирают до заказа инструмента.</p>
+<p>Если деталь не выходит в допуск, когда оснастка уже стоит в прессе, переделка обходится дорого и сдвигает срок. Физику формовки металла не переписать, поэтому технолога зовут до проектирования оснастки.</p>
+<p>Оснастка входит в стоимость детали вместе с материалом и машинным временем. Если её не учесть заранее, сумма всплывёт на запуске. Как собрана цена: <a href="/razdel/ekonomika-zakaza.html">из чего складывается цена детали</a>.</p>
+<blockquote><p><a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">Цена детали</a> закладывается в чертеже. В цехе её уже считают по инструменту, установам и машинному времени.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать">Прислать чертёж на почту</a>
+</div>
+<h2 id="tonkie-steny-i-glubokie-karmany">Тонкие стенки, глубокие карманы и острые углы</h2>
+<p><img alt="Сварщик соединяет две металлические детали при помощи сварки" decoding="async" height="686" loading="lazy" src="/images/blog/oshibki-pri-proektirovanii-detalej-1.webp" width="1000"/></p>
+<p><em>Сварка металлических деталей — важный этап производства, требующий контроля качества соединения. Фото: <a href="https://commons.wikimedia.org/wiki/File:US_Army_soldier_welding_two_metal_pieces,_Fort_Gregg-Adams,_Virginia,_March_2025.jpg" rel="nofollow noopener" target="_blank">Juan F. Jimenez, Army</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Тонкая стенка, глубокий карман и острый внутренний угол мешают фрезе держать жёсткость. Отсюда рост стоимости детали.</p>
+<h3>Стенка тоньше 1,6 мм</h3>
+<p>Тонкая стенка прогибается под фрезой, и инструмент вибрирует. Сильнее всего это мешает, когда стенка стоит вертикально, перпендикулярно столу станка.</p>
+<p>Заложите не меньше 1,6 мм (0,0625 дюйма). Это ориентир фрезерования, к ГОСТ он не привязан.</p>
+<blockquote><p><strong>Факт.</strong> Стенка тоньше 0,0625 дюйма (около 1,6 мм) при фрезеровании прогибается: вибрация инструмента оставляет на поверхности следы.</p></blockquote>
+<h3>Карман глубже шести диаметров фрезы</h3>
+<p>Глубокий карман увеличивает стоимость детали: растут вылет фрезы и машинное время. Длину к диаметру держат не больше 6:1. Фреза 12,7 мм режет до 3 дюймов, около 76 мм. Удлинённый или переточенный инструмент достанет глубже, но заметно добавит машинного времени и стоимости. Уменьшите глубину кармана или заранее согласуйте с технологом длинный инструмент.</p>
+<h3>Острый внутренний угол</h3>
+<p>Фреза оставляет в углу свой радиус. Острый угол закрывают электроэрозией, и цена растёт. Сделайте разгрузочную выемку, если ответная деталь это позволяет. На чертеже выемку покажите явно и согласуйте до запуска.</p>
+<h2 id="rezba-i-otverstiya">Резьба и отверстия: где чертёж требует лишнего</h2>
+<p>Резьбовое отверстие дорожает, когда резьба глубже, чем нужно сборке, или когда к нему не подобраться с одной установки.</p>
+<p>Метчик нестабильно нарезает резьбу при глубине больше 2,5 диаметра. В чертеже укажите рабочую длину резьбы. Формулировку «на всю глубину» уберите.</p>
+<p>Если резьба проходит плиту толщиной около 25 мм, оставьте рабочую длину зацепления, а остальную глубину раскройте расточкой или зенковкой.</p>
+<p>Перед запуском сверьте каждое резьбовое отверстие по трём вопросам:</p>
+<ul><li>Какая рабочая длина резьбы нужна сборке.</li><li>Подходит ли метчик к отверстию с одной установки.</li><li>Можно ли остальную глубину раскрыть расточкой.</li></ul>
+<p>Отверстие на боковой грани добавляет установ. Если сборка позволяет, разверните ось к шпинделю и укажите сторону захода.</p>
+<h2 id="listovoj-metall">Листовой металл: гиб, полки и отверстия у гиба</h2>
+<p><img alt="Болт метрической резьбы M12" decoding="async" height="616" loading="lazy" src="/images/blog/oshibki-pri-proektirovanii-detalej-2.webp" width="1000"/></p>
+<p><em>Болт с метрической резьбой M12, шестигранная головка, длина 110 мм, класс 8.8. Фото: <a href="https://commons.wikimedia.org/wiki/File:1990s_BUFO_M12_110_hex_head_bolt_by_Bulten_AB_Hallstahammar_Sweden_view_2.jpg" rel="nofollow noopener" target="_blank">R. Henrik Nilsson</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>В штамповке листа цена уходит в оснастку: кулачок входит в стоимость детали. Пример ниже — кронштейн из низколегированной стали повышенной прочности, лист 2 мм, прогрессивный штамп. Число ударов взято из штамповки, на лазере и листогибе его не переносите. Радиус гиба и отступ отверстия от линии гиба спросите у технолога.</p>
+<h3>Отверстие на отогнутой полке</h3>
+<p>Пробивка отверстия на отогнутой полке требует кулачка, механического или гидравлического. Это поднимает стоимость оснастки и её обслуживание. Сильно выступающий пуансон легко сломать. В чертеже перенесите отверстие в плоскую зону до гиба или укажите кулачок в заявке отдельной строкой.</p>
+<h3>Паз вместо круглого отверстия</h3>
+<p>Паз пробивается в плоской заготовке до гибки, без кулачка. В чертеже замените круг на паз, если болту нужна фиксация только по одной оси.</p>
+<h3>Радиус и длинная полка</h3>
+<p>У листа 2 мм полка около 8 мм с радиусом 1,5–2 мм потребовала четыре удара штампа. Радиус около 3 мм и полка около 6 мм свели формовку к одному удару. Если полка длиннее, чем нужно сборке, укоротите её.</p>
+<p>Слишком длинные полки могут не влезть в позиции прогрессивного штампа. Когда толщину увеличили с 2 до 4 мм и поменяли форму, правки в детали позволили сохранить прежнюю раскладку полосы.</p>
+<h2 id="oshibki-v-samom-chertezhe">Допуски, шероховатость и базы: ошибки внутри самого чертежа</h2>
+<p>Допуск на размер, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> поверхности и базы решают, сколько проходов сделает цех и чем закончится приёмка.</p>
+<p>Допуск ±0,002 дюйма (около ±0,05 мм) на свободном периметре расширьте, если точность не нужна. На контуры без своего допуска ставьте общие допуски. ГОСТ 2.307-2011 задаёт нанесение размеров и отсылает неуказанные отклонения к ГОСТ 30893.1.</p>
+<blockquote><p>Жёсткий допуск нужен там, где он влияет на работу узла.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если размер не входит в посадку и не держит нагрузку, расширяйте допуск: поле около ±0,05 мм на свободном контуре лишь поднимает стоимость детали.</p></blockquote>
+<p>Без баз станочник и контролёр могут мерить от разных граней. По ГОСТ 2.307-2011 один размер замкнутой цепи делают справочным, отклонения у него не указывают. Число размеров оставляют минимальным, но достаточным для контроля.</p>
+<p>Если на чертеже нет материала, состояния поставки, термообработки или покрытия, цех возьмёт то, что есть на складе, или остановит запуск. Шероховатость ставьте по функции поверхности, а не одной строкой на весь чертёж. Оформление модели — в материале про <a href="/blog/proektirovanie-detaley-cad-chertezhi-formaty-gost.html">форматы чертежей, CAD и требования ГОСТ для цеха</a>. В заявке укажите, какой документ главный при расхождении модели и чертежа.</p>
+<h2 id="material-i-zagotovka">Материал и заготовка: когда чертёж выбирает дорогой путь</h2>
+<p>Заготовка влияет на стоимость детали ещё до первого реза. Плиту 1,6 мм со стойками дешевле собрать со стойками-проставками, чем фрезеровать стойки из гораздо более толстой заготовки. Стойки ставят отдельными деталями, основание оставляют листом.</p>
+<blockquote><p>Тонкую плиту и стойки дешевле сделать разными деталями, чем вырезать стойки из толстой заготовки: экономятся материал и машинное время.</p></blockquote>
+<p>Редкая марка сдвигает старт на срок поставки. Если расчёт позволяет, возьмите марку, которая уже есть у цеха. Замену по прочности и коррозии подтвердите расчётом.</p>
+<p>Сварка и термообработка могут повести деталь. Припуск под финиш оставьте там, где размер нужен после отпуска или шва, и впишите его отдельной поверхностью. Величину коробления назовёт технолог.</p>
+<p>Как задумал заказчик: стойки заодно с основанием 1,6 мм из толстой плиты. Как технологичнее: лист 1,6 мм и отдельные стойки с посадкой в отверстия. Второй вариант приложите к заявке, если узел его допускает.</p>
+<h2 id="tablitsa-oshibok">Семь ошибок: что происходит в цехе и как поправить</h2>
+<p>Семь ошибок можно сверить по чертежу за один проход. Технологичность конструкции здесь видна по столбцу правки.</p>
+<table><thead><tr><th>Ошибка</th><th>Что происходит в цехе</th><th>Как исправить</th></tr></thead><tbody><tr><td>Стенка тоньше 1,6 мм</td><td>Стенка прогибается, фреза вибрирует, остаются следы</td><td>Заложить толщину от 1,6 мм</td></tr><tr><td>Глубокий карман</td><td>Нужна длинная фреза, растёт машинное время</td><td>Держать глубину до 6 диаметров фрезы</td></tr><tr><td>Острый внутренний угол</td><td>В маршрут может попасть электроэрозия</td><td>Сделать разгрузочную выемку, если сборка позволяет</td></tr><tr><td>Резьба на всю глубину</td><td>Метчик нестабилен глубже 2,5 диаметров</td><td>Оставить рабочую длину, остальное расточить</td></tr><tr><td>Лишний допуск</td><td>Точность, которой функция не требует</td><td>Расширить поле на свободном контуре</td></tr><tr><td>Отверстие на отогнутой полке</td><td>В штампе нужен кулачковый привод</td><td>Перенести отверстие в плоскую зону или сделать паз</td></tr><tr><td>Толстая заготовка вместо плиты и стоек</td><td>Лишний металл и машинное время</td><td>Поставить стойки отдельными деталями</td></tr></tbody></table>
+<p>Толщину стенки, глубину кармана, длину резьбы и свободный допуск можно поправить в файле самостоятельно. Отверстие на полке, радиус гиба и составную деталь согласуют с работой узла.</p>
+<h2 id="proverka-do-zapuska">Как проверить технологичность до запуска</h2>
+<p>Проверка технологичности до запуска — разговор с технологом по готовому пакету, пока чертёж ещё можно изменить без переделки оснастки. В таком разговоре видно, какой допуск можно расширить.</p>
+<ol><li>Соберите PDF чертежа, модель в STEP или DXF, марку, состояние поставки и количество.</li><li>Отправьте пакет на проверку до заказа инструмента и оснастки.</li><li>Ответьте, как деталь работает, какие поверхности критичны и какой допуск нужен по функции.</li><li>Поправьте радиус, глубину, резьбу или положение отверстия и пометьте, какой файл главный.</li><li>Для новой гибки, сварки или большой серии сначала сделайте пробную деталь, затем запускайте партию.</li></ol>
+<p>Пробная деталь нужна для непроверенного процесса: первый гиб листа повышенной прочности, глубокая формовка, размеры после термообработки.</p>
+<p>Срок согласования и рост цены после запуска зависят от загрузки и от того, заказан ли инструмент. Обе цифры назовёт технолог по вашему пакету.</p>
+<h2 id="chek-list-i-vyvody">Чек-лист перед отправкой чертежа в цех</h2>
+<p>Перед отправкой пройдите чертёж по десяти пунктам. Правка в файле обходится дешевле лишнего инструмента.</p>
+<ul><li>Проверьте стенки: от 1,6 мм, вертикальные только по функции.</li><li>Ограничьте глубину кармана шестью диаметрами фрезы цеха.</li><li>Замените острый угол разгрузочной выемкой.</li><li>Оставьте у резьбы рабочую длину.</li><li>Уберите отверстие с отогнутой полки или замените его пазом.</li><li>Уточните радиус гиба и отступ отверстия от линии гиба.</li><li>Расширьте допуск на контуре вне посадки и нагрузки.</li><li>Назначьте шероховатость по функции поверхности.</li><li>Укажите базы, материал, состояние поставки, термообработку и покрытие.</li><li>Сверьте модель, спецификацию и чертёж и напишите, какой документ главный.</li></ul>
+<p>Стенки, карманы, резьбу, допуски, базы и материал можно закрыть самому. Радиус гиба и вопрос составной детали отдайте технологу. Резьбу на всю глубину и допуск «на всякий случай» не закладывайте.</p>
+<p>Как разложить файлы в заявке, описано в материале <a href="/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html">как составить заявку на расчёт изготовления деталей</a>. Когда PDF и модель собраны, <a href="/kontakty.html">пришлите чертёж на расчёт</a> до заказа инструмента.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Нужно ли показывать чертёж технологу до запуска?</summary>
+<div class="faq__a"><p>Да, до заказа оснастки. Если выяснится, что деталь не держит допуск, когда штамп уже в прессе, переделка бьёт и по сроку, и по деньгам. Технолог на этом шаге смотрит доступ инструмента, гибы и поля, которые можно расширить без потери функции.</p></div>
+</details>
+<details>
+<summary>Как проверить чертёж перед отправкой в цех?</summary>
+<div class="faq__a"><p>Пройдите стенки, глубину карманов, резьбу, допуски, шероховатость, базы, материал и состояние поставки. Затем отправьте PDF вместе с моделью в STEP или DXF и строкой, какой файл главный при расхождении.</p></div>
+</details>
+<details>
+<summary>К чему приводят ошибки в чертеже?</summary>
+<div class="faq__a"><p>К другому инструменту, лишним установам, большему машинному времени и переделке оснастки. Всё это попадает в цену и срок ещё до того, как станок сделает первую годную деталь.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.mmsonline.com/articles/five-design-for-manufacturability-tips-for-designers" rel="noopener" target="_blank">Five Design for Manufacturability Tips for Designers</a> — Modern Machine Shop</li>
+<li><a href="https://www.thefabricator.com/thefabricator/article/bending/design-for-manufacturability" rel="noopener" target="_blank">Design for Manufacturability</a> — The Fabricator</li>
+<li><a href="https://ru.wikisource.org/wiki/%D0%93%D0%9E%D0%A1%D0%A2_2.307%E2%80%942011" rel="noopener" target="_blank">ГОСТ 2.307-2011. Нанесение размеров и предельных отклонений</a> — межгосударственный стандарт ЕСКД</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html">
+            <img src="/images/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Изготовление деталей по чертежам: контроль версий</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/mozhno-li-zakazat-detal-bez-3d-modeli.html">
+            <img src="/images/blog/mozhno-li-zakazat-detal-bez-3d-modeli-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Изготовление деталей по чертежам без 3D-модели</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html">
+            <img src="/images/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Как составить заявку на изготовление деталей</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/index.html" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
