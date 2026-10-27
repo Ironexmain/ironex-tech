@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кремний — металл или нет: свойства Si и место в таблице</title>
+  <meta name="description" content="Почему кремний называют металлоидом, как он проводит ток и чем отличается от кремнезёма. Что учитывать при выборе сплава с кремнием для детали." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/kremniy-metall-ili-net.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/kremniy-metall-ili-net.html#article",
+      "headline": "Кремний — металл или нет и что его свойства значат для обработки",
+      "description": "Почему кремний называют металлоидом, как он проводит ток и чем отличается от кремнезёма. Что учитывать при выборе сплава с кремнием для детали.",
+      "datePublished": "2026-10-27",
+      "dateModified": "2026-10-27",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/kremniy-metall-ili-net.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/kremniy-metall-ili-net-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "кремний металл или нет",
+        "кремний это металл",
+        "положение кремния в периодической таблице",
+        "свойства кремния",
+        "кремний в сплавах",
+        "химические свойства кремния"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Кремний — металл или нет и что его свойства значат для обработки"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как ответить, металл ли кремний, в школьном задании?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нужно опираться на классификацию принятого учебника. В справочной литературе встречается название «металлоид»; оно подчёркивает сочетание признаков металлов и неметаллов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли указывать изотоп кремния в чертеже обычной металлической детали?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для такой детали исходными данными служат марка сплава и состояние поставки. Требования к изотопному составу относятся к отдельным специальным задачам."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем карбид кремния отличается от самого кремния?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Карбид кремния — соединение кремния с углеродом. Это другой материал со своими свойствами и способами обработки. В заявке нужно сохранять точное обозначение из чертежа."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Кремний блестит как металл. Почему этого недостаточно?" />
+  <meta property="og:description" content="Почему кремний называют металлоидом, как он проводит ток и чем отличается от кремнезёма. Что учитывать при выборе сплава с кремнием для детали." />
+  <meta property="og:url" content="https://ironex.tech/blog/kremniy-metall-ili-net.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/kremniy-metall-ili-net-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-27" />
+  <meta property="article:modified_time" content="2026-10-27" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Кремний блестит как металл. Почему этого недостаточно?" />
+  <meta name="twitter:description" content="Почему кремний называют металлоидом, как он проводит ток и чем отличается от кремнезёма. Что учитывать при выборе сплава с кремнием для детали." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/kremniy-metall-ili-net-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Кремний — металл или нет и что его свойства значат для обработки">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Кремний — металл или нет и что его свойства значат для обработки</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#kremniy-metall-ili-net-pochemu-vstrechayutsya-raznye-otvety">Кремний — металл или нет: почему встречаются разные ответы</a></li>
+<li><a href="#gde-nahoditsya-si-v-periodicheskoy-tablitse">Где находится Si в периодической таблице</a></li>
+<li><a href="#pochemu-blesk-ne-delaet-kremniy-metallom">Почему блеск не делает кремний металлом</a></li>
+<li><a href="#kak-vyglyadit-kremniy-i-chem-razlichayutsya-ego-formy">Как выглядит кремний и чем различаются его формы</a></li>
+<li><a href="#kak-kremniy-provodit-tok-i-zachem-nuzhny-primesi">Как кремний проводит ток и зачем нужны примеси</a></li>
+<li><a href="#kremniy-kremnezem-kremen-i-silikon-raznye-materialy">Кремний, кремнезём, кремень и силикон — разные материалы</a></li>
+<li><a href="#kakie-reaktsii-i-soedineniya-harakterizuyut-kremniy">Какие реакции и соединения характеризуют кремний</a></li>
+<li><a href="#kak-poluchayut-kremniy-i-zachem-ego-ochischayut">Как получают кремний и зачем его очищают</a></li>
+<li><a href="#zachem-kremniy-dobavlyayut-v-alyuminievye-splavy-i-stali">Зачем кремний добавляют в алюминиевые сплавы и стали</a></li>
+<li><a href="#chto-uchityvat-pri-zakaze-detali-iz-kremniya-ili-splava-s-ni">Что учитывать при заказе детали из кремния или сплава с ним</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Кремний — металл или нет и что его свойства значат для обработки">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Кремний — металл или нет и что его свойства значат для обработки</h1>
+        <p class="lede">Почему кремний называют металлоидом, как он проводит ток и чем отличается от кремнезёма. Что учитывать при выборе сплава с кремнием для детали.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-10-27">Опубликовано 27 октября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/kremniy-metall-ili-net-cover.webp" alt="Кремний — металл или нет и что его свойства значат для обработки" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+          <p class="prose__lede">Кремний не относят к обычным металлам: его описывают как металлоид и полупроводник. Кристалл блестит, но остаётся хрупким. Для изготовления деталей важнее другое различие: чистый кремний, его соединения и металлические сплавы с кремнием — разные материалы. Одного названия элемента для выбора обработки недостаточно.</p>
+
+          <h2 id="kremniy-metall-ili-net-pochemu-vstrechayutsya-raznye-otvety">Кремний — металл или нет: почему встречаются разные ответы</h2>
+<p>Кремний называют металлоидом, поскольку в его свойствах сочетаются признаки металлов и неметаллов. В учебных классификациях встречается и отнесение к неметаллам. Эти названия описывают положение элемента среди других веществ, но сами по себе не объясняют поведение заготовки. Для обработки важны хрупкость, структура и состав материала, а для электроники — его полупроводниковые свойства.</p>
+<p>Блеск здесь мало помогает.</p>
+<p>Слово «полуметалл» требует осторожности: в химической и физической литературе оно может обозначать разные понятия. При обсуждении электрических свойств кремния точнее говорить «полупроводник».</p>
+<p>Для ответа в учебной работе нужна классификация из конкретного учебника. В технической документации полезнее точное обозначение материала: термин «металлоид» не заменяет требования к заготовке.</p>
+<div class="cta ui" id="cta" data-cta="inline">
+            <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+            <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+            <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Кремний — металл или нет и что его свойства значат для обработки">Прислать чертёж на почту</a>
+          </div>
+<h2 id="gde-nahoditsya-si-v-periodicheskoy-tablitse">Где находится Si в периодической таблице</h2>
+<p><img src="/images/blog/kremniy-metall-ili-net-1.webp" alt="Монокристаллический слиток кремния и кремниевые стержни" width="1000" height="1349" loading="lazy" decoding="async"></p>
+<p><em>Слиток монокристаллического кремния и несколько кремниевых стержней в Музее минералогии в Мюнхене. Фото: <a href="https://commons.wikimedia.org/wiki/File:Monocrystalline_silicon_ingot.jpg" rel="nofollow noopener" target="_blank">ArticCynda</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>Кремний обозначают символом Si. Положение элемента в периодической таблице помогает описать строение атома и сопоставить его с соседними элементами. Однако таблица не заменяет справочник свойств материала. Из обозначения элемента нельзя получить режим резания, допустимую нагрузку или требования к поверхности готовой детали: для этого нужны отдельные исходные данные.</p>
+<p>Атомный номер и атомная масса — разные величины. Первый связан с числом протонов в ядре. Вторая зависит от изотопного состава образца.</p>
+<p>На странице <strong>Silicon — standard atomic weight</strong> комиссия CIAAW приводит интервал <strong>[28,084; 28,086]</strong>. Подтверждающая строка источника: «Ar(Si) = [28.084, 28.086] since 2009».</p>
+<p>Для заказа металлической детали эта величина обычно не служит исходным параметром. Марка материала даёт технологу больше полезной информации.</p>
+<h2 id="pochemu-blesk-ne-delaet-kremniy-metallom">Почему блеск не делает кремний металлом</h2>
+<p>Блеск описывает внешний вид поверхности, а принадлежность к металлам — совокупность свойств вещества. Кристаллический кремний может напоминать металлический образец, но ведёт себя иначе при деформации и прохождении тока. Поэтому по фотографии нельзя заключить, что материал можно гнуть, тянуть в проволоку или обрабатывать тем же способом, что медь.</p>
+<p>Для сравнения полезно разделить несколько признаков.</p>
+<table><thead><tr><th>Признак</th><th>Кристаллический кремний</th><th>Медь</th></tr></thead><tbody><tr><td>Внешний вид</td><td>Поверхность может иметь металлический блеск</td><td>Поверхность может блестеть</td></tr><tr><td>Поведение при деформации</td><td>Хрупкий материал</td><td>Пластичный металл</td></tr><tr><td>Электрические свойства</td><td>Полупроводник</td><td>Металлический проводник</td></tr></tbody></table>
+<p>Один общий признак не делает материалы взаимозаменяемыми. Даже среди металлов пластичность и поведение при обработке различаются.</p>
+<p>Подробнее о другом материале — в статье про <a href="/blog/med-eto-metall-svoystva-primenenie.html">свойства меди как металла</a>.</p>
+<h2 id="kak-vyglyadit-kremniy-i-chem-razlichayutsya-ego-formy">Как выглядит кремний и чем различаются его формы</h2>
+<p>Кристаллический кремний имеет серую поверхность с металлическим блеском. Кремнезём, кварц и песок не подходят для иллюстрации внешнего вида простого вещества: кремний входит в их состав в связанном состоянии. Подпись «кремний» под фотографией кварца смешивает элемент и его соединение. Для выбора изображения это принципиальное различие.</p>
+<p>У кристаллической и аморфной форм различается порядок расположения атомов. Поэтому описание свойств должно уточнять, о какой форме идёт речь.</p>
+<p>Слиток, порошок и тонкая плёнка также выглядят по-разному. Внешний вид образца не заменяет сведения о его составе и структуре.</p>
+<p>Температуры переходов и другие численные характеристики требуют отдельного подтверждения с указанием формы вещества и условий измерения. Переносить значения для чистого кремния на кварц или сплав нельзя.</p>
+<h2 id="kak-kremniy-provodit-tok-i-zachem-nuzhny-primesi">Как кремний проводит ток и зачем нужны примеси</h2>
+<p>Кремний используют как полупроводниковый материал: его проводимость зависит от температуры, примесей и структуры. Это отличает его от привычного металлического проводника. Для электронного компонента недостаточно указать только название вещества. Нужны требования к чистоте и электрическим характеристикам, поскольку образцы кремния разного назначения не обязательно подходят для одной задачи.</p>
+<p>Введение примесей называют легированием. Так получают материал с нужными электрическими свойствами.</p>
+<p>При этом слово «легирование» встречается и в металлургии. Смысл задачи различается: в полупроводнике управляют носителями заряда, а в металлическом сплаве — комплексом свойств материала.</p>
+<p>Правило «нагрев всегда улучшает проводимость кремния» слишком широко. Поведение конкретного образца зависит от его состава и температурного диапазона.</p>
+<h2 id="kremniy-kremnezem-kremen-i-silikon-raznye-materialy">Кремний, кремнезём, кремень и силикон — разные материалы</h2>
+<p>Кремний — название химического элемента и простого вещества. Кремнезём — его соединение с кислородом, а кремень — горная порода на основе кремнезёма. Силикон относится к полимерным материалам. Созвучие названий не означает сходства свойств: кристалл кремния, камень и силиконовый герметик нельзя описывать как варианты одной заготовки.</p>
+<p>Различие удобно сверять по составу.</p>
+<table><thead><tr><th>Название</th><th>Что обозначает</th><th>Состав или основа</th></tr></thead><tbody><tr><td>Кремний</td><td>Химический элемент и простое вещество</td><td>Si</td></tr><tr><td>Кремнезём</td><td>Диоксид кремния</td><td>SiO₂</td></tr><tr><td>Кремень</td><td>Горная порода</td><td>Преимущественно кремнезём</td></tr><tr><td>Силикон</td><td>Полимерный материал</td><td>Цепи с чередованием кремния и кислорода и органическими группами</td></tr></tbody></table>
+<p>Кварц — кристаллическая форма диоксида кремния. Песок может содержать кварц, но его состав зависит от происхождения.</p>
+<p>Для заявки важно название материала из чертежа или спецификации. Подмена «кремния» «силиконом» меняет сам предмет заказа.</p>
+<h2 id="kakie-reaktsii-i-soedineniya-harakterizuyut-kremniy">Какие реакции и соединения характеризуют кремний</h2>
+<p>Химические свойства кремния нужно описывать вместе с условиями реакции. Значение имеют форма вещества, состояние поверхности, температура и реагент. Краткое утверждение «кремний реагирует с кислотами» или «кремний не реагирует с кислотами» не даёт достаточной информации. По нему нельзя выбирать состав для очистки, травления или другой обработки поверхности.</p>
+<p>Уравнение реакции без условий тоже неполно.</p>
+<p>Отдельно нужно различать валентность и степень окисления. Эти понятия описывают строение соединений с разных сторон и не заменяют друг друга.</p>
+<p>Свойства соединения нельзя переносить на исходный элемент. Например, кремний и карбид кремния требуют разных описаний материала и разных технологических решений. Химическое сходство названий здесь не помогает выбрать способ обработки.</p>
+<h2 id="kak-poluchayut-kremniy-i-zachem-ego-ochischayut">Как получают кремний и зачем его очищают</h2>
+<p>Получение кремния и подготовка материала к применению — разные этапы. Сначала выделяют вещество из соединений, затем доводят его состав и структуру до требований конкретной задачи. Металлургическое применение и производство электронных компонентов предъявляют разные требования к примесям. Поэтому обозначение «технический кремний» само по себе не подтверждает пригодность материала для электроники.</p>
+<p>Чистота должна соответствовать назначению.</p>
+<p>Описание промышленного процесса не сводится к суммарному химическому уравнению. Оно не показывает промежуточные стадии, оборудование и контроль состава.</p>
+<p>Для закупки нужны требования к материалу и документ о составе партии. Происхождение сырья не заменяет этих данных.</p>
+<h2 id="zachem-kremniy-dobavlyayut-v-alyuminievye-splavy-i-stali">Зачем кремний добавляют в алюминиевые сплавы и стали</h2>
+<p>В металлических сплавах кремний входит в состав материала вместе с другими элементами. Это отличается от изделия из чистого кремния. Свойства заготовки определяют основа сплава, содержание компонентов, структура и состояние поставки. Поэтому упоминание кремния ещё не объясняет, как деталь будет отливаться, резаться или работать под нагрузкой.</p>
+<p>Алюминиево-кремниевые сплавы называют силуминами. Их рассматривают при выборе материала для отливок. Однако литейные свойства конкретной марки нельзя оценить по одному названию семейства.</p>
+<p>В производстве стали кремний используют для раскисления, а в отдельных марках — как легирующий компонент. Его роль зависит от состава и назначения стали.</p>
+<table><thead><tr><th>Материал</th><th>Что важно для выбора обработки</th></tr></thead><tbody><tr><td>Чистый кремний</td><td>Форма материала, чистота, структура и требования к поверхности</td></tr><tr><td>Алюминиево-кремниевый сплав</td><td>Марка, способ получения заготовки и состояние поставки</td></tr><tr><td>Сталь с кремнием в составе</td><td>Марка стали, состояние поставки и требования чертежа</td></tr></tbody></table>
+<p>Содержание элемента нужно брать из документа на конкретную марку. Общая статья не заменяет спецификацию.</p>
+<p>С выбором материала связан и разбор <a href="/blog/alyuminiy-eto-metall-i-ego-svoystva.html">свойств алюминия для изготовления деталей</a>.</p>
+<h2 id="chto-uchityvat-pri-zakaze-detali-iz-kremniya-ili-splava-s-ni">Что учитывать при заказе детали из кремния или сплава с ним</h2>
+<p>Сначала нужно установить, из какого материала изготовлена заготовка: чистого кремния, соединения кремния или металлического сплава. Затем определить марку, состояние поставки и требования чертежа. Формулировка «материал с кремнием» оставляет слишком много вариантов. По ней нельзя обоснованно выбрать инструмент, закрепление и последовательность операций.</p>
+<p>Для расчёта металлической детали нужны чертёж, обозначение материала, количество и требования к поверхности. Допуски и состояние заготовки также влияют на маршрут.</p>
+<p>О выборе материала для производства подробнее сказано на странице <a href="/razdel/materialy.html">материалы для изготовления деталей</a>.</p>
+<p>Для расчёта детали из алюминиевого сплава или стали <a href="/kontakty.html">пришлите чертёж и марку материала</a>.</p>
+
+          <h2 id="faq">Частые вопросы</h2>
+          <div class="faq">
+            <details open>
+              <summary>Как ответить, металл ли кремний, в школьном задании?</summary>
+              <div class="faq__a"><p>Нужно опираться на классификацию принятого учебника. В справочной литературе встречается название «металлоид»; оно подчёркивает сочетание признаков металлов и неметаллов.</p></div>
+            </details>
+<details>
+              <summary>Нужно ли указывать изотоп кремния в чертеже обычной металлической детали?</summary>
+              <div class="faq__a"><p>Для такой детали исходными данными служат марка сплава и состояние поставки. Требования к изотопному составу относятся к отдельным специальным задачам.</p></div>
+            </details>
+<details>
+              <summary>Чем карбид кремния отличается от самого кремния?</summary>
+              <div class="faq__a"><p>Карбид кремния — соединение кремния с углеродом. Это другой материал со своими свойствами и способами обработки. В заявке нужно сохранять точное обозначение из чертежа.</p></div>
+            </details>
+          </div>
+
+          <h2 id="istochniki">Источники</h2>
+          <ul class="sources">
+            <li><a href="https://www.rsc.org/periodic-table/element/14/silicon" rel="noopener" target="_blank">Silicon</a> — Royal Society of Chemistry, карточка элемента.</li>
+<li><a href="https://www.ciaaw.org/silicon.htm" rel="noopener" target="_blank">Silicon — standard atomic weight</a> — CIAAW; строка «Ar(Si) = [28.084, 28.086] since 2009» подтверждает приведённый интервал атомной массы.</li>
+<li><a href="https://iupac.org/what-we-do/periodic-table-of-elements/" rel="noopener" target="_blank">Periodic Table of Elements</a> — IUPAC, периодическая таблица элементов.</li>
+<li><a href="https://education.jlab.org/itselemental/ele014.html" rel="noopener" target="_blank">It&#x27;s Elemental: Silicon</a> — Thomas Jefferson National Accelerator Facility, справочная страница о кремнии.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/azot-eto.html">
+            <img src="/images/blog/azot-eto-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Что такое азот и как его свойства используют в промышленности</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/oksidy-eto.html">
+            <img src="/images/blog/oksidy-eto-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Что такое оксиды и как отличить основные от кислотных</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/absolyutnaya-i-otnositelnaya-pogreshnost.html">
+            <img src="/images/blog/absolyutnaya-i-otnositelnaya-pogreshnost-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Как рассчитать абсолютную и относительную погрешность измерения</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Кремний — металл или нет и что его свойства значат для обработки">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

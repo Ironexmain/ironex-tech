@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ошибки при заказе деталей по чертежу: брак, сроки — IRONEX</title>
+  <meta name="description" content="Какие ошибки заказчика ведут к браку и срыву сроков при изготовлении деталей по чертежу — и что записать в заявку, чтобы их избежать." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html#article",
+      "headline": "Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков",
+      "description": "Какие ошибки заказчика ведут к браку и срыву сроков при изготовлении деталей по чертежу — и что записать в заявку, чтобы их избежать.",
+      "datePublished": "2026-10-27",
+      "dateModified": "2026-10-27",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/oshibki-pri-zakaze-detaley-po-chertezhu-cover.webp",
+      "articleSection": "Контроль качества",
+      "keywords": [
+        "ошибки при заказе деталей",
+        "изготовление деталей по чертежу",
+        "брак деталей",
+        "допуски на чертеже",
+        "приёмка партии деталей",
+        "срок изготовления деталей"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что указать в заказе, чтобы деталь не оказалась браком?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Укажите материал с минимальными свойствами и документом о качестве, допуски ключевых размеров, измерительные базы, шероховатость, термообработку, покрытие и номер ревизии. Отдельно закрепите критерии приёмки и приоритет документа при расхождении чертежа с 3D-моделью."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если допуски на чертеже не указаны?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Согласуйте допуски ключевых размеров или прямо назовите класс общих допусков. Не оставляйте выбор класса исполнителю: формально допустимое отклонение может не подойти для вашей сборки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что проверить перед отправкой заявки на изготовление?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сверьте полноту документов, актуальную ревизию, материал и сертификат, допуски, тираж, состав срока и правила приёмки. Для гнутой детали виртуально соберите сгибы в CAD. Для фрезерной проверьте доступ инструмента, глубину карманов и толщину стенок."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Деталь пришла браком: какие ошибки в заказе виноваты" />
+  <meta property="og:description" content="Какие ошибки заказчика ведут к браку и срыву сроков при изготовлении деталей по чертежу — и что записать в заявку, чтобы их избежать." />
+  <meta property="og:url" content="https://ironex.tech/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/oshibki-pri-zakaze-detaley-po-chertezhu-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-27" />
+  <meta property="article:modified_time" content="2026-10-27" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Деталь пришла браком: какие ошибки в заказе виноваты" />
+  <meta name="twitter:description" content="Какие ошибки заказчика ведут к браку и срыву сроков при изготовлении деталей по чертежу — и что записать в заявку, чтобы их избежать." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/oshibki-pri-zakaze-detaley-po-chertezhu-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#pochemu-oshibka-dorogo">Цена ошибки в заказе</a></li>
+<li><a href="#nepolnyy-komplekt-dokumentov">Чертёж, модель и ревизия</a></li>
+<li><a href="#material-bez-svoystv">Материал и сертификат</a></li>
+<li><a href="#dopuski-i-sherohovatost">Допуски и шероховатость</a></li>
+<li><a href="#konstrukciya-ne-dlya-stanka">Технологичность конструкции</a></li>
+<li><a href="#sroki-iz-chego-skladyvayutsya">Из чего складывается срок</a></li>
+<li><a href="#vybor-ispolnitelya-po-cene">Выбор исполнителя</a></li>
+<li><a href="#priemka-i-akt">Приёмка партии</a></li>
+<li><a href="#chek-list-pered-zayavkoy">Чек-лист заявки</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков</h1>
+        <p class="lede">Какие ошибки заказчика ведут к браку и срыву сроков при изготовлении деталей по чертежу — и что записать в заявку, чтобы их избежать.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Контроль качества</span>
+            <time datetime="2026-10-27">Опубликовано 27 октября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/oshibki-pri-zakaze-detaley-po-chertezhu-cover.webp" alt="Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Большинство срывов при заказе деталей по чертежу начинаются до станка: в заявке нет материала, допусков или номера актуальной ревизии. Дальше это превращается в брак, переделку и сдвинутый срок. Разберём, где это случается и что записать в заказ, чтобы не платить дважды.</p>
+<h2 id="pochemu-oshibka-dorogo">Почему ошибка в заказе стоит дороже самой детали</h2>
+<p>Готовая деталь выглядит аккуратно, но в сборку не встаёт: отверстия смещены, вал не входит в посадку, покрытие добавило лишнюю толщину. Исполнитель сверяется с переданным чертежом и заявкой. Если параметр не записан, цех запросит уточнение либо выберет технологически допустимый вариант, который может не подойти заказчику.</p>
+<p>У заказа по чертежу нет каталожного артикула, который заранее определяет геометрию и исполнение. Документация задаёт материал, размеры, допуски, обработку и критерии приёмки. Неполный чертёж поэтому прямо ведёт к браку.</p>
+<p>Ошибка запускает цепочку расходов: партию останавливают, документацию исправляют, материал и станочное время оплачивают повторно. <a href="/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp.html">Срок изготовления</a> сдвигается ещё до переделки, поскольку нужно заново согласовать технологию и место заказа в производственном графике.</p>
+<p>Ответственность зависит от зафиксированных требований. Если исполнитель нарушил согласованный размер, основание для рекламации видно из документов. Если размер или свойство не задали, стороны сначала выясняют, что именно считалось согласованным. Связанные причины разобраны в материале про <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">пять дорогих ошибок, из-за которых получается брак</a>.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков">Прислать чертёж на почту</a>
+</div>
+<h2 id="nepolnyy-komplekt-dokumentov">Неполный комплект: чертёж, модель и ревизия, которые не совпадают</h2>
+<p><img alt="Цех машинной обработки на заводе Wolverine Brass Works" decoding="async" height="676" loading="lazy" src="/images/blog/oshibki-pri-zakaze-detaley-po-chertezhu-1.webp" width="1000"/></p>
+<p><em>Винтовой цех завода Wolverine Brass Works, производившего авиационные детали для государственных нужд. Фото: <a href="https://commons.wikimedia.org/wiki/File:Airplanes_-_Manufacturing_Plants_-_Manufacturing_Aircraft_Parts_for_Government._Screw_machine_room_of_plant_of_Wolverine_Brass_Works,_Grand_Rapids,_Mich_-_NARA_-_17340578.jpg" rel="nofollow noopener" target="_blank">Unknown author Unknown author or not provided</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Комплект документов должен давать исполнителю один ответ на каждый производственный вопрос. Если <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">3D-модель</a> показывает одну геометрию, а чертёж — другую, в заявке нужно назначить приоритетный документ. Иначе технолог выберет версию сам или остановит расчёт до уточнения.</p>
+<p>Проверьте, есть ли в комплекте:</p>
+<ul><li>марка материала и состояние поставки;</li><li>размеры, базы и допуски на сопрягаемые поверхности;</li><li><a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> функциональных поверхностей;</li><li>требования к термообработке и покрытию;</li><li>технические требования, которые нельзя показать размером;</li><li>номер ревизии и понятная маркировка актуальных файлов.</li></ul>
+<p>Ревизия чертежа фиксирует, какой файл принят в производство. Перед запуском отправьте комплект одним архивом, укажите номер версии в заявке и получите подтверждение исполнителя. Старые файлы лучше пометить как недействующие, чтобы их нельзя было принять за актуальные.</p>
+<p>Размеры в дюймах или смешанных единицах требуют отдельной отметки. Назовите единицы в основной надписи и заявке. Для расхождений задайте правило: например, размеры и допуски берутся с чертежа, а 3D-модель служит для построения траектории после проверки.</p>
+<h2 id="material-bez-svoystv">Материал: марка без свойств и без сертификата</h2>
+<p>Марка материала сужает выбор, но не описывает все свойства заготовки. Стандарт может допускать разброс характеристик внутри поставки. Металл проходит формальную проверку по документу, однако материал у нижней границы допустимого диапазона хуже переносит вытяжку или последовательную формовку.</p>
+<p>Для критичной операции согласуйте с технологом минимальные характеристики. При штамповке это могут быть относительное удлинение, предел текучести, коэффициенты упрочнения и анизотропии. Нужные показатели зависят от формы детали и маршрута, поэтому переносить значения из чужого заказа нельзя.</p>
+<blockquote><p>Марка в заявке не гарантирует пригодность материала для конкретной операции. Зафиксируйте минимальные свойства и документ, которым поставщик их подтверждает.</p></blockquote>
+<p>Сертификат на материал или паспорт плавки связывает поставку с указанной маркой и результатами контроля. Если заказу нужны документы о качестве, назовите конкретный тип документа и состав проверки. Формулировка «предоставить сертификат» оставляет сторонам разные трактовки.</p>
+<p>Отдельно запишите, кто закупает металл и можно ли менять его на аналог. Любую замену согласуйте до обработки: другая марка меняет режим резания, термообработку и поведение детали под нагрузкой. Порядок такого согласования разобран в статье о том, <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html">как согласовать аналог материала</a>.</p>
+<h2 id="dopuski-i-sherohovatost">Допуски и шероховатость: не указали или потребовали невозможного</h2>
+<p><img alt="Нержавеющая сталь AISI 439, макроструктура" decoding="async" height="665" loading="lazy" src="/images/blog/oshibki-pri-zakaze-detaley-po-chertezhu-2.webp" width="1000"/></p>
+<p><em>Образец стали марки AISI 439 с видимой макроструктурой материала. Фото: <a href="https://commons.wikimedia.org/wiki/File:AISI_439.jpg" rel="nofollow noopener" target="_blank">KDA-TRUE-TECH</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Вал и отверстие могут соответствовать номинальным размерам, но не образовать нужную посадку. Чертёж задаёт допуск, который определяет допустимое отклонение размера. Если допуск не указан, стороны должны заранее согласовать класс общих допусков. Иначе исполнитель и заказчик могут проверять деталь по разным правилам.</p>
+<p>Квалитет описывает уровень точности размера. Более жёсткий квалитет требует устойчивого процесса, дополнительных проходов и точного контроля. Это влияет на срок изготовления и цену.</p>
+<blockquote><p>Допуск нужен на размерах, от которых зависит сборка или работа узла. Завышенная точность остальных поверхностей добавляет операции, контроль и срок.</p></blockquote>
+<p>Укажите базы, от которых измеряются ключевые размеры. Иначе каждый размер по отдельности пройдёт контроль, а размерная цепь в сборке не сойдётся. Нереалистичный допуск тоже создаёт брак: выбранный процесс может физически не держать требуемую точность.</p>
+<p>Шероховатость Ra задают на функциональных поверхностях. В заказе запишите допуски ключевых размеров, измерительные базы, требуемую Ra и правило для остальных размеров.</p>
+<h2 id="konstrukciya-ne-dlya-stanka">Конструкция, которую нельзя сделать: технологичность до заказа</h2>
+<p>Технологичность конструкции показывает, можно ли получить заданную геометрию доступным инструментом без самопересечения, разрыва материала и ручной доводки. Проверка конструкции до расчёта сокращает риск брака: технолог меняет проблемный элемент до закупки металла и запуска партии.</p>
+<p>Для гибки листа в опубликованных рекомендациях ширина просечки под сгиб ограничена 0,760 мм, а длина — радиусом гиба плюс толщиной листа. Эти значения относятся к описанному процессу: параметры конкретной детали нужно согласовать с цехом.</p>
+<p>Внутренний радиус также связан с оснасткой. В примере производителя радиус 4,572 мм заменяют ближайшим стандартным — 4,775 мм. Если нужный радиус нестандартный, заранее обсудите с цехом, как он будет выполнен, иначе геометрия изменится без вашего ведома.</p>
+<blockquote><p><strong>Факт.</strong> В опубликованном DFM-примере полку короче минимальной высоты автоматически увеличивают до 6,1 мм, из-за чего готовая геометрия отличается от исходного чертежа.</p></blockquote>
+<p>Пересекающиеся отгибы физически мешают согнуть короб. На плоской развёртке проблема может быть незаметна, поэтому перед заказом нужно «сложить» 3D-модель в CAD и проверить углы.</p>
+<p>Для фрезерной детали технолог оценивает внутренние радиусы, глубину карманов и отверстий, толщину стенок и доступ инструмента. Передача модели полезна, но она не отменяет чертёж с допусками и требованиями.</p>
+<h2 id="sroki-iz-chego-skladyvayutsya">Сроки: из чего складываются и где их теряют</h2>
+<p>Срок изготовления складывается из последовательных операций. Одна строка в коммерческом предложении скрывает закупку материала, подготовку программы, обработку, передачу подрядчикам и контроль. Сдвиг любого этапа меняет дату готовности всей партии.</p>
+<p>Зафиксируйте маршрут и риск для каждого этапа:</p>
+<ol><li><strong>Закупка материала.</strong> Срок сдвинется, если нужной марки или состояния поставки нет у поставщика.</li><li><strong>Программирование.</strong> Расхождения модели и чертежа останавливают подготовку программы.</li><li><strong>Механическая обработка.</strong> Новые допуски после запуска требуют пересмотра режимов и инструмента.</li><li><strong>Термообработка.</strong> Неуказанная твёрдость или смена материала возвращает заказ на согласование.</li><li><strong>Покрытие.</strong> Толщина покрытия влияет на посадки, если её не учли в размерах.</li><li><strong>Контроль.</strong> Без критериев приёмки исполнитель не понимает объём измерений.</li><li><strong>Логистика.</strong> Передача детали между площадками добавляет отдельную точку риска.</li></ol>
+<p>В заявке запишите, какие операции входят в согласованный срок, кто утверждает изменения и с какого момента срок пересчитывается. Если заказчик меняет ревизию после запуска, исполнитель должен до продолжения работ сообщить влияние правки на материал, цену и готовность.</p>
+<h2 id="vybor-ispolnitelya-po-cene">Исполнитель по самой низкой цене: что скрыто за экономией</h2>
+<p>Сравнивать предложения можно после проверки маршрута, оборудования, оснастки и контроля. Низкая цена иногда означает, что исполнитель исключил необходимую операцию либо рассчитывает приспособить деталь к имеющемуся станку уже после запуска.</p>
+<p>Показательный случай — расчётный маршрут, которому нужен стол пресса длиной 2540 мм, при доступном столе 1778 мм. Сокращение числа переходов «на глаз» меняет технологию и приводит к браку. До заказа спросите, на каком оборудовании выполнят каждую критичную операцию. Полезно также проверить <a href="/oborudovanie.html">оборудование под маршрут детали</a>.</p>
+<p>Оснастку оценивают по материалу, термообработке, жёсткости и планируемому тиражу. По данным отраслевого источника, оснастка из незакалённой стали, рассчитанная на массовый выпуск, может не выдержать и сотни деталей. Экономия оборачивается простоем, ремонтом и повторным запуском.</p>
+<blockquote><p>Цена без описания маршрута детали и оборудования сравнивает обещания, а не способы получить результат.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если размер критичен для сборки или остановит линию при ошибке, выбирайте предложение с понятным маршрутом, измерениями и протоколом контроля, даже когда его цена выше.</p></blockquote>
+<h2 id="priemka-i-akt">Приёмка: как поймать брак до того, как деталь ушла в сборку</h2>
+<p>Критерии приёмки нужно согласовать до запуска. Тогда заказчик проверяет ровно те параметры, которые влияют на сборку и работу узла, а исполнитель заранее планирует средства измерения и форму протокола.</p>
+<p>Порядок приёмки партии:</p>
+<ol><li><strong>Согласуйте первую деталь.</strong> Сверьте геометрию, ключевые размеры, покрытие, маркировку и работу в контрольной сборке.</li><li><strong>Проверьте партию.</strong> Штангенциркуль подходит для общих наружных и внутренних размеров, микрометр — для более точных диаметров и толщин. Сложную геометрию проверяют на координатно-измерительной машине.</li><li><strong>Сверьте документы.</strong> Запросите сертификат на материал, протокол замеров и, если чертёж требует термообработку, результаты контроля твёрдости.</li><li><strong>Зафиксируйте расхождение.</strong> В акте укажите обозначение детали, ревизию, измеренный параметр, требование чертежа и применённый инструмент. Добавьте фотографии.</li><li><strong>Передайте рекламацию.</strong> Сошлитесь на заказ, акт и согласованный порядок устранения несоответствия.</li></ol>
+<p>В техническом задании или договоре закрепите материал, допуски, критерии приёмки, ответственность за брак и порядок согласования изменений. Юридические формулировки договора согласуйте со специалистом. Приёмка партии выявляет брак до передачи деталей в сборку, где стоимость ошибки обычно растёт.</p>
+<h2 id="chek-list-pered-zayavkoy">Чек-лист перед отправкой заявки</h2>
+<p>Проверьте заявку по таблице. Каждая строка должна иметь однозначный ответ в чертеже, техническом задании или договоре.</p>
+<table><thead><tr><th>Ошибка</th><th>Последствие</th><th>Как предотвратить</th><th>Что записать в заказе</th></tr></thead><tbody><tr><td>Неполный комплект</td><td>Деталь делают по допущениям</td><td>Сверить чертёж и модель</td><td>Приоритет документа и ревизию</td></tr><tr><td>Материал без свойств</td><td>Металл не выдерживает процесс</td><td>Согласовать свойства</td><td>Марку, состояние и сертификат</td></tr><tr><td>Нет допусков</td><td>Деталь не входит в сборку</td><td>Выделить ключевые размеры</td><td>Допуски, базы и общий класс</td></tr><tr><td>Нереальная геометрия</td><td>Деталь нельзя обработать</td><td>Провести DFM-проверку</td><td>Согласованные изменения</td></tr><tr><td>Не раскрыт срок</td><td>Один этап задерживает партию</td><td>Разбить маршрут</td><td>Состав срока и порядок пересчёта</td></tr><tr><td>Выбор только по цене</td><td>Операции исключают из маршрута</td><td>Проверить станки и оснастку</td><td>Оборудование и протокол контроля</td></tr><tr><td>Нет правил приёмки</td><td>Спор возникает после поставки</td><td>Согласовать контроль заранее</td><td>Образец, замеры и документы</td></tr></tbody></table>
+<p>Чем точнее заявка, тем меньше решений исполнитель принимает без заказчика. Чтобы проверить технологичность и получить предложение по маршруту, можно <a href="/">отправить чертёж на расчёт изготовления детали</a>.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Что указать в заказе, чтобы деталь не оказалась браком?</summary>
+<div class="faq__a"><p>Укажите материал с минимальными свойствами и документом о качестве, допуски ключевых размеров, измерительные базы, шероховатость, термообработку, покрытие и номер ревизии. Отдельно закрепите критерии приёмки и приоритет документа при расхождении чертежа с 3D-моделью.</p></div>
+</details>
+<details>
+<summary>Что делать, если допуски на чертеже не указаны?</summary>
+<div class="faq__a"><p>Согласуйте допуски ключевых размеров или прямо назовите класс общих допусков. Не оставляйте выбор класса исполнителю: формально допустимое отклонение может не подойти для вашей сборки.</p></div>
+</details>
+<details>
+<summary>Что проверить перед отправкой заявки на изготовление?</summary>
+<div class="faq__a"><p>Сверьте полноту документов, актуальную ревизию, материал и сертификат, допуски, тираж, состав срока и правила приёмки. Для гнутой детали виртуально соберите сгибы в CAD. Для фрезерной проверьте доступ инструмента, глубину карманов и толщину стенок.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.protolabs.com/resources/design-tips/avoiding-sheet-metal-dfm-issues/" rel="noopener" target="_blank">Avoiding Sheet Metal DFM Issues</a> — Protolabs</li>
+<li><a href="https://www.thefabricator.com/thefabricator/article/bending/die-science-successful-stamping-it-s-a-we-thing" rel="noopener" target="_blank">Die Science: Successful stamping — it’s a “we” thing</a> — The Fabricator</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat.html">
+            <img src="/images/blog/posadki-s-zazorom-perehodnye-natyagom-kak-vybrat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Посадки с зазором, переходные и с натягом: как выбрать нужную для соединения</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii.html">
+            <img src="/images/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Мелкосерийное производство деталей: приёмка образца</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/vhodnoy-kontrol-partii-i-kontrol-na-kim.html">
+            <img src="/images/blog/vhodnoy-kontrol-partii-i-kontrol-na-kim-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Координатно-измерительная машина: контроль деталей</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

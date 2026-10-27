@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как разобраться в параметрах, обозначениях и классах шероховатости поверхности</title>
+      <link>https://ironex.tech/blog/parametry-sherohovatosti-poverhnosti.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/parametry-sherohovatosti-poverhnosti.html</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Параметры шероховатости поверхности, обозначения на чертеже и таблица значений. Как читать старые классы и согласовать требования к изготовлению детали.</description>
+    </item>
+    <item>
+      <title>Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков</title>
+      <link>https://ironex.tech/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Какие ошибки заказчика ведут к браку и срыву сроков при изготовлении деталей по чертежу — и что записать в заявку, чтобы их избежать.</description>
+    </item>
+    <item>
+      <title>Кремний — металл или нет и что его свойства значат для обработки</title>
+      <link>https://ironex.tech/blog/kremniy-metall-ili-net.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kremniy-metall-ili-net.html</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Почему кремний называют металлоидом, как он проводит ток и чем отличается от кремнезёма. Что учитывать при выборе сплава с кремнием для детали.</description>
+    </item>
     <item>
       <title>Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать</title>
       <link>https://ironex.tech/blog/oshibki-pri-proektirovanii-detalej.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Wed, 21 Oct 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Что такое база на чертеже, чем конструкторская база отличается от технологической и как обозначить её по ГОСТ Р 2.308-2023, действующему с 01.03.2024.</description>
-    </item>
-    <item>
-      <title>Азотирование стали: что оно даёт детали и чем отличается от закалки и цементации</title>
-      <link>https://ironex.tech/blog/azotirovanie-stali-chto-daet-i-chem-otlichaetsya-ot-zakalki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/azotirovanie-stali-chto-daet-i-chem-otlichaetsya-ot-zakalki.html</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Слой до 0,65 мм, твёрдость до 1200 HV и малое коробление. Сравниваем азотирование с закалкой и цементацией, разбираем стали и запись в чертеже.</description>
-    </item>
-    <item>
-      <title>Что такое азот и как его свойства используют в промышленности</title>
-      <link>https://ironex.tech/blog/azot-eto.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/azot-eto.html</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Чем отличаются элемент N, газ N₂ и соединения азота. Свойства, получение, применение при обработке металлов и выбор системы подачи газа.</description>
-    </item>
-    <item>
-      <title>AISI 304 или 316: какую нержавейку выбрать для детали по чертежу</title>
-      <link>https://ironex.tech/blog/aisi-304-i-316-raznica-vybor-nerzhaveyki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/aisi-304-i-316-raznica-vybor-nerzhaveyki.html</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Чем AISI 304 отличается от 316, где нужен молибден, что такое 12Х18Н10Т и как марка влияет на обработку, сварку и цену детали.</description>
     </item>
   </channel>
 </rss>
