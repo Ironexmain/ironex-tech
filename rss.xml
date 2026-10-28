@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже</title>
+      <link>https://ironex.tech/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat.html</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Как читать позиционный допуск отверстий на чертеже: рамка, базы A|B|C, модификаторы MMC/LMC и расчёт бонусного допуска с числовым примером.</description>
+    </item>
+    <item>
+      <title>Как отполировать нержавейку и сохранить геометрию детали</title>
+      <link>https://ironex.tech/blog/polirovka-nerzhaveyki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/polirovka-nerzhaveyki.html</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Чем отполировать нержавейку: выбор инструмента, кругов и паст, удаление царапин и доводка. Контроль нагрева, кромок и размеров детали.</description>
+    </item>
+    <item>
+      <title>Почему литий — металл и чем он отличается от солей и сплавов</title>
+      <link>https://ironex.tech/blog/litiy-metall-ili-nemetall.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/litiy-metall-ili-nemetall.html</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Литий относится к щелочным металлам. Разбираем признаки металла, отличие от солей, роль в аккумуляторах и выбор алюминиево-литиевого сплава для детали.</description>
+    </item>
     <item>
       <title>Как разобраться в параметрах, обозначениях и классах шероховатости поверхности</title>
       <link>https://ironex.tech/blog/parametry-sherohovatosti-poverhnosti.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Thu, 22 Oct 2026 00:00:00 +0300</pubDate>
       <category>Экономика заказа</category>
       <description>Какие допуски и Ra на чертеже удорожают деталь: ступени точности, износ инструмента, контроль и чек-лист, как не переплатить.</description>
-    </item>
-    <item>
-      <title>Допуск соосности: как читать рамку на чертеже и не перепутать с концентричностью и биением</title>
-      <link>https://ironex.tech/blog/dopusk-soosnosti-na-chertezhe.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/dopusk-soosnosti-na-chertezhe.html</guid>
-      <pubDate>Wed, 21 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Рамка допуска соосности на чертеже вал–корпус: знак, число, Ø и буква базы. Чем эта запись отличается от концентричности и от радиального биения.</description>
-    </item>
-    <item>
-      <title>Допуск плоскостности на чертеже: как обозначить и чем проверить деталь</title>
-      <link>https://ironex.tech/blog/dopusk-ploskostnosti-kak-ukazat-na-chertezhe.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/dopusk-ploskostnosti-kak-ukazat-na-chertezhe.html</guid>
-      <pubDate>Wed, 21 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Как задать допуск плоскостности по ГОСТ Р 2.308-2023: одно число без базы и без «±», и как не списать годную деталь из-за плиты или Best Fit.</description>
-    </item>
-    <item>
-      <title>Базы на чертеже: что это и как выбрать базу детали</title>
-      <link>https://ironex.tech/blog/baza-na-chertezhe.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/baza-na-chertezhe.html</guid>
-      <pubDate>Wed, 21 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Что такое база на чертеже, чем конструкторская база отличается от технологической и как обозначить её по ГОСТ Р 2.308-2023, действующему с 01.03.2024.</description>
     </item>
   </channel>
 </rss>

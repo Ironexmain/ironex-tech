@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Позиционный допуск отверстий: как читать на чертеже</title>
+  <meta name="description" content="Как читать позиционный допуск отверстий на чертеже: рамка, базы A|B|C, модификаторы MMC/LMC и расчёт бонусного допуска с числовым примером." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat.html#article",
+      "headline": "Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже",
+      "description": "Как читать позиционный допуск отверстий на чертеже: рамка, базы A|B|C, модификаторы MMC/LMC и расчёт бонусного допуска с числовым примером.",
+      "datePublished": "2026-10-28",
+      "dateModified": "2026-10-28",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "позиционный допуск",
+        "допуск расположения отверстий",
+        "позиционный допуск на чертеже",
+        "зависимый допуск",
+        "позиционный допуск гост"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем позиционный допуск отличается от обычного допуска на размер?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Допуск на размер ограничивает диаметр отверстия, а позиционный — где может находиться его центр относительно баз. Деталь может пройти по размеру, но не пройти по позиции."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что означает знак Ø перед значением позиционного допуска?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Знак Ø говорит, что зона допуска круглая, а не квадратная. Без него теряется больше трети допустимой площади, и допуск становится жёстче, чем задумано."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как посчитать бонусный допуск при модификаторе MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бонус равен разности между фактическим измеренным размером отверстия и его размером при максимуме материала. Чем ближе отверстие к минимуму материала, тем больше запас по положению."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем зависимый допуск отличается от независимого?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависимый допуск связан с модификатором MMC или LMC и меняется вместе с фактическим размером элемента. Независимый допуск постоянен и не зависит от полученного размера отверстия."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем проверяют позиционный допуск на производстве — калибром или на КИМ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Комплексный калибр-пробка быстро проверяет партию с зависимым допуском, а координатно-измерительная машина даёт точные числа по каждой оси и нужна для сложных баз или малых серий."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Отверстие сместилось на 0,2 мм — деталь ещё годна или уже брак?" />
+  <meta property="og:description" content="Как читать позиционный допуск отверстий на чертеже: рамка, базы A|B|C, модификаторы MMC/LMC и расчёт бонусного допуска с числовым примером." />
+  <meta property="og:url" content="https://ironex.tech/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-28" />
+  <meta property="article:modified_time" content="2026-10-28" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Отверстие сместилось на 0,2 мм — деталь ещё годна или уже брак?" />
+  <meta name="twitter:description" content="Как читать позиционный допуск отверстий на чертеже: рамка, базы A|B|C, модификаторы MMC/LMC и расчёт бонусного допуска с числовым примером." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-pozicionnyy-dopusk">Что такое позиционный допуск</a></li>
+<li><a href="#chtenie-oboznacheniya">Как читать обозначение на чертеже</a></li>
+<li><a href="#pochemu-kruglaya-zona">Почему круглая зона выгоднее квадратной</a></li>
+<li><a href="#izmerenie-otkloneniya">Как измерить отклонение оси</a></li>
+<li><a href="#zavisimyy-dopusk-mmc">Зависимый допуск: MMC и LMC</a></li>
+<li><a href="#bazy-i-perpendikulyarnost">Базы A, B, C и перпендикулярность</a></li>
+<li><a href="#sootvetstvie-gost-iso-asme">ГОСТ, ISO, ASME: соответствие терминов</a></li>
+<li><a href="#kontrol-kalibr-ili-kim">Калибр-пробка или КИМ</a></li>
+<li><a href="#chastye-oshibki-i-chto-ukazat">Частые ошибки в обозначении</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже</h1>
+        <p class="lede">Как читать позиционный допуск отверстий на чертеже: рамка, базы A|B|C, модификаторы MMC/LMC и расчёт бонусного допуска с числовым примером.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-10-28">Опубликовано 28 октября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat-cover.webp" alt="Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Позиционный допуск в рамке чертежа — это не абстрактный значок, а зона, внутри которой обязан оказаться центр отверстия. Он строже, чем допуск на размер: если позицию не выдержать, деталь не соберётся, даже когда диаметр отверстия в норме. Разбираем, как читать рамку, считать бонусный допуск и не переплатить за лишнюю точность.</p>
+<h2 id="chto-takoe-pozicionnyy-dopusk">Что такое позиционный допуск</h2>
+<p>Два отверстия диаметром 10,05 мм оба проходят по калибру-пробке одинаково хорошо. Но если центр одного смещён от расчётной точки на 0,3 мм, крепёж через него может не пройти, хотя второе отверстие соберётся без проблем. Разница не в размере, а в позиции.</p>
+<p>Позиционный допуск задаёт зону, где обязан находиться центр (ось) отверстия, а не сам размер отверстия. Диаметр контролируют отдельно — калибром или микрометром, по своему полю допуска. Позицию задаёт отдельная рамка на чертеже, и её нарушение бракует деталь даже при идеальном диаметре.</p>
+<p>Раньше положение отверстий задавали координатным допуском: плюс-минус столько-то по осям X и Y. Такой допуск строит квадратную зону вокруг номинальной точки. Позиционный допуск со знаком Ø строит круглую зону той же ширины — и она получается почти на 57% больше по площади. При равной строгости для сборки это даёт технологу больше свободы на обработку.</p>
+<p>В российских чертежах вид рамки и условные знаки для допусков расположения задаёт ГОСТ на допуски формы и расположения поверхностей — часть комплекса ЕСКД.</p>
+<blockquote><p>Позиционный допуск — не про размер отверстия, а про то, где может оказаться его центр.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже">Прислать чертёж на почту</a>
+</div>
+<h2 id="chtenie-oboznacheniya">Как читать обозначение на чертеже</h2>
+<p><img alt="Сверление отверстий в листовом металле на производстве" decoding="async" height="750" loading="lazy" src="/images/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat-1.webp" width="1000"/></p>
+<p><em>Производственный процесс сверления отверстий в листовом металле на фабрике. Фото: <a href="https://commons.wikimedia.org/wiki/File:Austral_Sheet_Metal%28GN15074%29.jpg" rel="nofollow noopener" target="_blank">State Government Photographer</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>Рамка позиционного допуска — таблица без границ, где ячейки идут слева направо в строгом порядке. Читать её нужно построчно, не пытаясь угадать смысл целиком.</p>
+<p>Первая ячейка — условный знак позиционного допуска: две концентрические окружности с крестом внутри. Он показывает тип допуска — не форму и не ориентацию, а именно положение центра.</p>
+<p>Вторая ячейка — знак диаметра Ø. Он превращает зону допуска из квадратной в круглую (следующий раздел объясняет, почему это выгодно).</p>
+<p>Третья ячейка — само значение допуска в миллиметрах, например 0,20.</p>
+<p>Дальше может стоять модификатор в кружке — Ⓜ (максимум материала) или Ⓛ (минимум материала). Если кружка нет, допуск независимый и не меняется с фактическим размером отверстия.</p>
+<p>Последние ячейки — буквы баз: A, B, C. Порядок важен: первая буква — главная база, вторая — вторичная, третья — третичная. Их указывают в порядке убывания важности для контроля.</p>
+<p>Пример: рамка ⊕ Ø0,20 Ⓜ A B C означает позиционный допуск, круглую зону 0,20 мм, зависимость от размера отверстия (бонус по MMC) и базы по порядку — сначала A, затем B, затем C.</p>
+<h2 id="pochemu-kruglaya-zona">Почему круглая зона выгоднее квадратной</h2>
+<p>Допуск Ø1 мм задаёт круглую зону радиусом 0,5 мм вокруг номинального положения оси отверстия. Ось может отклониться на 0,5 мм в любую сторону — вбок, вверх, по диагонали — и деталь всё равно пройдёт контроль.</p>
+<p>Чтобы принять ту же деталь по координатным допускам плюс-минус, пришлось бы задать ±0,35 мм по каждой оси — это квадрат со стороной 0,7 мм. У квадрата углы дальше от центра, чем середины сторон, поэтому по диагонали допуск шире, чем по осям, а сборка это не всегда прощает.</p>
+<p>Если в рамке забыть знак Ø перед значением, зона автоматически становится квадратной — как при обычных ± допусках. При том же номинальном значении теряется больше 36% допустимой площади: отверстие, которое реально годно, бракуют только из-за пропущенного знака.</p>
+<table><thead><tr><th>Форма зоны</th><th>Как задана</th><th>Площадь при допуске 1 мм</th></tr></thead><tbody><tr><td>Круглая (Ø)</td><td>Позиционный допуск со знаком диаметра</td><td>около 0,785 мм²</td></tr><tr><td>Квадратная (±)</td><td>Координатный допуск по осям X и Y</td><td>около 0,5 мм²</td></tr></tbody></table>
+<blockquote><p><strong>Факт.</strong> Круглая зона позиционного допуска примерно на 57% больше квадратной зоны с тем же предельным отклонением; без знака Ø теряется больше 36% допустимой площади.</p></blockquote>
+<p>Вывод простой: для отверстий позицию задают со знаком Ø — так проще <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">назначить допуски без лишнего удорожания при фрезеровке</a>, не ухудшая сборку.</p>
+<h2 id="izmerenie-otkloneniya">Как измерить отклонение оси</h2>
+<p>Фактическое отклонение оси отверстия проверяют не линейкой по одной оси, а пересчётом в диаметральное отклонение — по формуле 2·√(ΔX²+ΔY²), где ΔX и ΔY — обмеренные смещения от номинальной точки. Деталь годна, если результат не больше значения позиционного допуска.</p>
+<p>Пример: обмер показал отклонение 0,076 мм по X и 0,051 мм по Y. По формуле диаметральное отклонение оси равно 0,18 мм. Допуск в рамке — Ø0,20 мм. Деталь проходит, хоть смещение и заметно на глаз.</p>
+<p>Другой пример: смещение по 0,25 мм по обеим осям даёт диаметральное отклонение около 0,7 мм — такое отверстие всё ещё укладывается в допуск Ø1 мм, но уже близко к границе.</p>
+<table><thead><tr><th>Величина</th><th>Значение</th></tr></thead><tbody><tr><td>Отклонение по X</td><td>0,076 мм</td></tr><tr><td>Отклонение по Y</td><td>0,051 мм</td></tr><tr><td>Диаметральное отклонение оси</td><td>0,18 мм</td></tr><tr><td>Позиционный допуск</td><td>0,20 мм</td></tr></tbody></table>
+<blockquote><p><strong>Факт.</strong> При отклонении 0,076 мм по X и 0,051 мм по Y диаметральное отклонение оси отверстия равно 0,18 мм — это укладывается в допуск Ø0,20 мм.</p></blockquote>
+<p>Измерять нужно не в одной плоскости у входа отверстия, а в нескольких сечениях по глубине. Если проверить только верхний срез, перекос оси (когда сверло ушло не строго перпендикулярно) останется незамеченным — а позиционный допуск ограничивает и его, потому что зона допуска цилиндрическая и проходит через всю толщину детали.</p>
+<h2 id="zavisimyy-dopusk-mmc">Зависимый допуск: MMC и LMC</h2>
+<p>Зависимый допуск — разновидность позиционного: его жёсткость меняется вместе с фактическим размером отверстия. Модификатор в круге показывает, от чего именно зависит бонус — от максимума материала (Ⓜ) или минимума (Ⓛ).</p>
+<blockquote><p>Модификатор максимума материала не ослабляет допуск сам по себе — он даёт запас, который зависит от того, каким получилось отверстие.</p></blockquote>
+<h3>Модификатор максимума материала (MMC)</h3>
+<p>MMC ставят на крепёжные отверстия под болты с зазором, где важно только то, чтобы через все отверстия прошёл крепёж. Модификатор определяет размер бонуса: чем дальше фактический диаметр от размера при максимуме материала, тем больше запас по положению.</p>
+<p>Бонус считают так: измеренный диаметр минус диаметр отверстия при MMC. Пример: MMC-размер — 10,00 мм, факт после сверления — 10,15 мм. Бонус — 0,15 мм. Его добавляют к допуску из рамки: было Ø0,20 мм, стало Ø0,35 мм.</p>
+<p>Такую деталь проверяют функциональным калибром-пробкой: он сразу учитывает размер, позицию и бонус за один проход.</p>
+<h3>Модификатор минимума материала (LMC)</h3>
+<p>LMC применяют реже — там, где важнее не собираемость, а минимальная толщина стенки между отверстием и краем детали. Логика бонуса обратная: чем меньше фактический размер отверстия, ближе к минимуму материала, тем больше запас по положению.</p>
+<p>Модификатор подходит для тонкостенных деталей и отверстий рядом с кромкой, где смещение оси к краю опаснее смещения вглубь материала. Встречается заметно реже MMC — уточняйте у конструктора, если он непривычен.</p>
+<blockquote><p><strong>Мнение.</strong> Если отверстие крепёжное и под болт с зазором — берите MMC: бонусный допуск снижает процент необоснованного брака без риска для сборки.</p></blockquote>
+<h2 id="bazy-i-perpendikulyarnost">Базы A, B, C и перпендикулярность</h2>
+<p>Базы в рамке — не список подряд, а иерархия. Первая буква, обычно A, — главная база: от неё ось отверстия обязана быть перпендикулярна. Так позиционный допуск заодно контролирует перпендикулярность, отдельный допуск для неё можно не ставить.</p>
+<p>Вторая и третья базы (B, C) фиксируют деталь от смещения и поворота в плоскости. Их выбирают в порядке убывания важности для функции детали: сначала поверхность, которая садится в сборку, потом та, что задаёт направление, и только затем третья точка опоры.</p>
+<p>Расстояния от баз до номинального центра отверстия задают теоретически точными размерами — числами в прямоугольной рамке без собственного знака ±. Весь разброс положения тогда определяется одним позиционным допуском, а не суммой погрешностей нескольких размеров.</p>
+<p>Нельзя выбрать любые три поверхности в произвольном порядке: если базу A назначить не там, где деталь садится в стык, калибр или КИМ проверят не то, что задумал конструктор, — и годная деталь может уйти в брак.</p>
+<h2 id="sootvetstvie-gost-iso-asme">ГОСТ, ISO, ASME: соответствие терминов</h2>
+<p>Обозначения допусков расположения в российских чертежах задаёт профильный ГОСТ из состава ЕСКД: вид рамки, условные знаки, порядок записи баз. Справочники иногда ссылаются на более старые редакции этого ГОСТа — перед использованием стоит проверять, действует ли редакция, на которую вы смотрите.</p>
+<p>Зарубежные чертежи размечают по системе GD&amp;T: в США — по ASME Y14.5, международный аналог — ISO 1101. Смысл символов совпадает почти полностью: та же круглая зона, те же модификаторы максимума и минимума материала, отличается только написание.</p>
+<table><thead><tr><th>Стандарт</th><th>Что задаёт</th><th>На что смотреть</th></tr></thead><tbody><tr><td>ГОСТ (ЕСКД, допуски формы и расположения)</td><td>Вид рамки, знаки, базы</td><td>Действующая редакция</td></tr><tr><td>ГОСТ Р (аналог ISO 1101)</td><td>Соответствие ISO по допускам формы и расположения</td><td>Проверяйте актуальный номер редакции</td></tr><tr><td>ASME Y14.5</td><td>Американский стандарт GD&amp;T</td><td>Модификаторы Ⓜ/Ⓛ, теоретически точные размеры</td></tr></tbody></table>
+<blockquote><p>Смысл символов у ГОСТ и зарубежного GD&amp;T совпадает почти полностью — различается только написание знаков и порядок пунктов в рамке.</p></blockquote>
+<p>Позиционный допуск применим только к элементам с размером — отверстию, пазу, бобышке, пальцу, шпоночному пазу. Расположение плоских поверхностей задают допуском профиля, а не позиции — эти два допуска на смешанных чертежах часто путают.</p>
+<h2 id="kontrol-kalibr-ili-kim">Калибр-пробка или КИМ</h2>
+<p>Комплексный (функциональный) калибр-пробка — быстрый способ проверить партию деталей с зависимым допуском. Калибр воспроизводит виртуальное состояние отверстия при MMC и сразу учитывает бонус: если пробка входит, деталь годна независимо от того, где именно внутри допуска оказалась ось. Метод не выдаёт цифр — только да/нет, но занимает секунды на деталь.</p>
+<p>Координатно-измерительная машина даёт точное значение отклонения по каждой оси и позволяет пересчитать его в диаметральное отклонение по формуле из раздела выше. Метод нужен, когда допуск независимый, без модификатора, базы сложные или партия слишком мала, чтобы заказывать под неё специальный калибр.</p>
+<blockquote><p><strong>Мнение.</strong> Если партия меньше сотни деталей или чертёж меняется от заказа к заказу — берите <a href="/blog/vhodnoy-kontrol-partii-i-kontrol-na-kim.html">контроль на КИМ</a>: специальный калибр под такую партию не окупается.</p></blockquote>
+<p>Для контрактного изготовления единичных деталей и малых партий по чертежу заказчика КИМ обычно выгоднее: калибр-пробка под уникальную деталь окупается только на большом тираже.</p>
+<h2 id="chastye-oshibki-i-chto-ukazat">Частые ошибки в обозначении</h2>
+<p>Позиционный допуск легко испортить одной пропущенной деталью в обозначении — а исправлять придётся уже готовую партию. Вот что чаще всего идёт не так на чертежах, которые попадают в производство.</p>
+<ul><li>Забыли знак Ø перед значением допуска — зона стала квадратной, и годное отверстие бракуют напрасно.</li><li>Перепутан порядок баз A, B, C — калибр или КИМ проверяют не то положение, что задумал конструктор.</li><li>Допуск задан в радиусном выражении вместо диаметрального (или наоборот) — расхождение в два раза меняет результат контроля.</li><li>Не указан нужный модификатор Ⓜ или Ⓛ — допуск получается жёстче, чем требуется, и обработка дороже без пользы для сборки.</li></ul>
+<p>Если сомневаетесь, как проставлен допуск на вашем чертеже, <a href="/">пришлите его на расчёт</a> вместе со значением допуска, базами и модификатором — так сразу видно, укладывается ли деталь в допуск и во что обойдётся обработка.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем позиционный допуск отличается от обычного допуска на размер?</summary>
+<div class="faq__a"><p>Допуск на размер ограничивает диаметр отверстия, а позиционный — где может находиться его центр относительно баз. Деталь может пройти по размеру, но не пройти по позиции.</p></div>
+</details>
+<details>
+<summary>Что означает знак Ø перед значением позиционного допуска?</summary>
+<div class="faq__a"><p>Знак Ø говорит, что зона допуска круглая, а не квадратная. Без него теряется больше трети допустимой площади, и допуск становится жёстче, чем задумано.</p></div>
+</details>
+<details>
+<summary>Как посчитать бонусный допуск при модификаторе MMC?</summary>
+<div class="faq__a"><p>Бонус равен разности между фактическим измеренным размером отверстия и его размером при максимуме материала. Чем ближе отверстие к минимуму материала, тем больше запас по положению.</p></div>
+</details>
+<details>
+<summary>Чем зависимый допуск отличается от независимого?</summary>
+<div class="faq__a"><p>Зависимый допуск связан с модификатором MMC или LMC и меняется вместе с фактическим размером элемента. Независимый допуск постоянен и не зависит от полученного размера отверстия.</p></div>
+</details>
+<details>
+<summary>Чем проверяют позиционный допуск на производстве — калибром или на КИМ?</summary>
+<div class="faq__a"><p>Комплексный калибр-пробка быстро проверяет партию с зависимым допуском, а координатно-измерительная машина даёт точные числа по каждой оси и нужна для сложных баз или малых серий.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.gdandtbasics.com/true-position/" rel="noopener" target="_blank">True Position (GD&amp;T Basics)</a> — инженерный справочник по GD&amp;T</li>
+<li><a href="https://fractory.com/true-position-gdt/" rel="noopener" target="_blank">True Position in GD&amp;T (Fractory)</a> — инженерный справочник по машиностроительному черчению</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/baza-na-chertezhe.html">
+            <img src="/images/blog/baza-na-chertezhe-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Базы на чертеже: что это и как выбрать базу детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/dopusk-ploskostnosti-kak-ukazat-na-chertezhe.html">
+            <img src="/images/blog/dopusk-ploskostnosti-kak-ukazat-na-chertezhe-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Допуск плоскостности на чертеже: как обозначить и чем проверить деталь</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/dopusk-soosnosti-na-chertezhe.html">
+            <img src="/images/blog/dopusk-soosnosti-na-chertezhe-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Допуск соосности: как читать рамку на чертеже и не перепутать с концентричностью и биением</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
