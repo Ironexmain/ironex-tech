@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Развёртывание отверстий: когда нужно и что оно не исправляет</title>
+  <meta name="description" content="Когда нужно развёртывание отверстий, сколько припуска оставить после сверления и почему развёртка не исправляет увод оси. Что указать в чертеже." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html#article",
+      "headline": "Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит",
+      "description": "Когда нужно развёртывание отверстий, сколько припуска оставить после сверления и почему развёртка не исправляет увод оси. Что указать в чертеже.",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "развертывание отверстий",
+        "развёртка отверстия",
+        "квалитет H7",
+        "припуск под развёртку",
+        "чистовая обработка отверстий",
+        "зенкерование и развертывание отверстий"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем развёртывание отличается от зенкерования?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зенкерование — получистовая операция. Зенкер улучшает форму предварительного отверстия и снимает основной припуск после сверла. Развёртывание завершает обработку: калибрует диаметр и снимает небольшой слой металла."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Исправит ли развёртка отверстие, которое сверло увело в сторону?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Развёртка идёт по существующему отверстию и не исправляет ошибку его положения. Если важна координата оси, сначала используют растачивание, кондуктор или обработку за одну установку."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько металла оставлять под развёртку после сверления?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Исходный ориентир — 2–5 % диаметра отверстия. Для Ø10 мм это примерно 0,2–0,5 мм на диаметр. Окончательный припуск выбирают по таблице производителя инструмента с учётом материала и промежуточного зенкерования."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Когда нужна развёртка: что она даёт и чего не исправляет" />
+  <meta property="og:description" content="Когда нужно развёртывание отверстий, сколько припуска оставить после сверления и почему развёртка не исправляет увод оси. Что указать в чертеже." />
+  <meta property="og:url" content="https://ironex.tech/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-29" />
+  <meta property="article:modified_time" content="2026-10-29" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Когда нужна развёртка: что она даёт и чего не исправляет" />
+  <meta name="twitter:description" content="Когда нужно развёртывание отверстий, сколько припуска оставить после сверления и почему развёртка не исправляет увод оси. Что указать в чертеже." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-delaet-razvertka-i-chem-ona-otlichaetsya-ot-sverla-i-ze">Что делает развёртка и чем она отличается от сверла и зенкера</a></li>
+<li><a href="#kogda-razvertka-nuzhna-a-kogda-hvatit-sverla-ili-rastachivan">Когда развёртка нужна, а когда хватит сверла или растачивания</a></li>
+<li><a href="#kvalitet-i-sherohovatost-kak-ih-zadat">Квалитет и шероховатость: как их задать</a></li>
+<li><a href="#pripusk-i-marshrut-ot-sverla-do-chistovoy-razvertki">Припуск и маршрут: от сверла до чистовой развёртки</a></li>
+<li><a href="#chto-razvertka-ne-ispravlyaet-polozhenie-i-uvod-osi">Что развёртка не исправляет: положение и увод оси</a></li>
+<li><a href="#rezhimy-i-instrument-oboroty-podacha-bienie-struzhka">Режимы и инструмент: обороты, подача, биение, стружка</a></li>
+<li><a href="#defekty-posle-razvertyvaniya-simptom-prichina-chto-ispravit">Дефекты после развёртывания: симптом, причина, что исправить</a></li>
+<li><a href="#chto-ukazat-v-chertezhe-i-kak-eto-vliyaet-na-tsenu">Что указать в чертеже и как это влияет на цену</a></li>
+<li><a href="#itog-kogda-zakazyvat-razvertyvanie">Итог: когда заказывать развёртывание</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит</h1>
+        <p class="lede">Когда нужно развёртывание отверстий, сколько припуска оставить после сверления и почему развёртка не исправляет увод оси. Что указать в чертеже.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-10-29">Опубликовано 29 октября 2026</time>
+
+            <span>7 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka-cover.webp" alt="Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Развёртка нужна, когда после сверла или зенкера отверстию не хватает точности диаметра и чистоты стенки. Положение оси она не исправляет: развёртка идёт по готовому отверстию. Ниже: когда её заказывать, сколько припуска оставить и что написать в чертеже.</p>
+<h2 id="chto-delaet-razvertka-i-chem-ona-otlichaetsya-ot-sverla-i-ze">Что делает развёртка и чем она отличается от сверла и зенкера</h2>
+<p>Развёртывание отверстий — чистовая операция после сверления, иногда после промежуточного зенкерования. Многолезвийная развёртка снимает небольшой слой металла, калибрует диаметр и улучшает поверхность стенки. Основной объём материала должен убрать предыдущий инструмент.</p>
+<p>Сверло формирует отверстие, но может увести ось, разбить диаметр или оставить следы подачи. Зенкер снимает больший припуск, чем развёртка, улучшает форму и готовит равномерный слой для чистового прохода. Поэтому типичная цепочка выглядит так: сверление, зенкерование, развёртывание.</p>
+<p>Размер, прямолинейность и равномерность предварительного отверстия напрямую влияют на результат: развёртка идёт по нему.</p>
+<p>Ручную развёртку вращают воротком при ремонтной, сборочной или единичной работе. Машинную ставят в патрон станка и применяют при повторяемой обработке. Для назначения операции важнее три параметра: требуемый диаметр, состояние заготовки и способ отвода стружки.</p>
+<blockquote><p><strong>Факт.</strong> Развёртывание выполняют по предварительно обработанному отверстию; развёртка снимает только оставленный под неё припуск.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если свободное отверстие под болт уже получается сверлением, добавлять развёртывание без требования к посадке невыгодно.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит">Прислать чертёж на почту</a>
+</div>
+<h2 id="kogda-razvertka-nuzhna-a-kogda-hvatit-sverla-ili-rastachivan">Когда развёртка нужна, а когда хватит сверла или растачивания</h2>
+<p>Развёртку назначают, когда критичны посадочный размер и чистота стенки, а ось отверстия уже расположена правильно. Типичные задачи — отверстия под штифты, направляющие и втулки, а также посадочные места под подшипники. Для болта с зазором часто достаточно сверления.</p>
+<p>Развёртка даёт точный размер и ровную поверхность, но идёт по готовому каналу. Если сверло увело ось, чистовой проход сохранит эту ошибку. Когда конструктор жёстко ограничил положение отверстия, технолог сначала растачивает его или обеспечивает направление кондуктором.</p>
+<blockquote><p>Развёртка отвечает за диаметр и поверхность. Положение оси обеспечивает предшествующая операция — растачивание, обработка по кондуктору или сверление в жёсткой установке.</p></blockquote>
+<p>Для закалённых деталей способ обработки выбирают до термообработки: от него зависят базирование и окончательный размер.</p>
+<h2 id="kvalitet-i-sherohovatost-kak-ih-zadat">Квалитет и шероховатость: как их задать</h2>
+<p>Квалитет задаёт ширину допуска диаметра, а Ra описывает микронеровности стенки. Одно не заменяет другое, поэтому в чертеже их указывают раздельно. Для поля H нижнее отклонение отверстия равно нулю, а допуск расположен в сторону увеличения размера.</p>
+<p>Запись «±0,005 мм» нельзя автоматически назвать H7: квалитет зависит от номинального диаметра.</p>
+<p>Какой квалитет и какую Ra получит конкретная развёртка, зависит от диаметра, материала, жёсткости станка, биения и подготовки отверстия. Цифры по одному названию операции обещать нельзя, их подтверждают пробной деталью. Что известно точно: биение даёт увеличенное отверстие и плохую поверхность, а неверный припуск ухудшает стенку или ускоряет износ инструмента.</p>
+<h2 id="pripusk-i-marshrut-ot-sverla-do-chistovoy-razvertki">Припуск и маршрут: от сверла до чистовой развёртки</h2>
+<p>Припуск под развёртку должен дать всем зубьям устойчивое резание. Практический ориентир после сверления — 2–5 % диаметра отверстия. Для Ø10 мм это 0,2–0,5 мм на диаметр, но окончательный размер предварительного отверстия выбирают по таблицам инструмента и условиям обработки.</p>
+<p>Слишком большой припуск перегружает заборную часть и ухудшает поверхность. При слишком малом зубья скользят по металлу вместо резания: растут нагрев и износ. Поэтому припуск влияет и на <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> стенки.</p>
+<p>Маршрут строят так:</p>
+<ol><li>Просверлить отверстие меньше окончательного диаметра и оставить расчётный припуск.</li><li>Выполнить зенкерование, если сверло оставило большой или неравномерный слой.</li><li>Пройти чистовой развёрткой номинального размера при постоянной подаче.</li><li>Проверить диаметр калибром-пробкой или нутромером и отдельно оценить шероховатость, если она задана.</li></ol>
+<p>Для условного Ø10 мм можно начать с отверстия Ø9,5–9,8 мм и уточнить размер сверла по материалу и каталогу развёртки. Это диапазон для технологической проработки, а не готовый режим. Если зенкер уже сформировал стабильный припуск, отдельная черновая развёртка может не понадобиться.</p>
+<h2 id="chto-razvertka-ne-ispravlyaet-polozhenie-i-uvod-osi">Что развёртка не исправляет: положение и увод оси</h2>
+<p>Развёртка не исправляет положение оси: она идёт по существующему отверстию и не переносит его центр в заданную координату.</p>
+<p>Например, сверло увело канал на 0,2 мм. После чистовой обработки диаметр может пройти контроль калибром, однако центр останется смещённым. Деталь будет годна по размеру и одновременно не пройдёт контроль положения.</p>
+<p>Погрешность расположения снижают до развёртывания: точно базируют заготовку, делают центровочное отверстие, сокращают вылет сверла, применяют кондуктор или выполняют обработку за одну установку. При строгом позиционном допуске используют растачивание: резец формирует ось относительно станочных координат.</p>
+<blockquote><p>Точный диаметр не доказывает точное положение. Развёртка может сделать уведённое отверстие посадочным по размеру, сохранив его смещённую ось.</p></blockquote>
+<p>В чертеже размерный допуск и допуск положения задают отдельными обозначениями. Контроль тоже различается: диаметр проверяют пробкой или нутромером, а положение — координатным измерением относительно назначенных баз.</p>
+<h2 id="rezhimy-i-instrument-oboroty-podacha-bienie-struzhka">Режимы и инструмент: обороты, подача, биение, стружка</h2>
+<p>Для машинного развёртывания часто применяют 100–500 об/мин и подачу примерно 0,05–0,30 мм/об. Это исходные ориентиры. Точные режимы назначают по диаметру, материалу заготовки, типу развёртки и рекомендациям производителя инструмента.</p>
+<p>Подача должна оставаться равномерной: остановка внутри отверстия оставляет следы, а слишком осторожная подача переводит резание в трение. Для стали, алюминия, чугуна и жаропрочных сплавов нужны разные скорости и составы СОЖ.</p>
+<p>Биение инструмента приводит к увеличенному диаметру и плохой поверхности. Перед серией развёртку проверяют индикатором, очищают конус и патрон, контролируют вылет.</p>
+<p>Направление спирали выбирают по отводу стружки. Левая спираль при правом резании толкает стружку вперёд и подходит только для сквозного отверстия. В глухом отверстии нужна геометрия, которая выводит стружку наружу. Подробнее об ограничениях — в материале о том, <a href="/blog/glukhoe-otverstie-kak-proektirovat.html">как проектировать глухое отверстие</a>.</p>
+<p>Стружка, набитая в канавки, повышает трение и может сломать развёртку, особенно с прямыми канавками. Для конкретной стойки ЧПУ заранее проверяют цикл развёртывания: способ вывода инструмента влияет на состояние поверхности.</p>
+<h2 id="defekty-posle-razvertyvaniya-simptom-prichina-chto-ispravit">Дефекты после развёртывания: симптом, причина, что исправить</h2>
+<p>Брак после развёртывания обычно связан с биением, неверным припуском, износом зубьев или плохим отводом стружки. Менять номинал инструмента до проверки этих условий рискованно: причина останется, а отверстие может стать ещё больше.</p>
+<table><thead><tr><th>Симптом</th><th>Вероятная причина</th><th>Что исправить</th></tr></thead><tbody><tr><td>Увеличенный диаметр, плохая поверхность</td><td>Биение, плохая центровка в патроне</td><td>Проверить индикатором, очистить крепление, уменьшить вылет</td></tr><tr><td>Нагрев, быстрый износ, грубая стенка</td><td>Слишком малый или слишком большой припуск</td><td>Исправить размер подготовительного отверстия</td></tr><tr><td>Поломка в глубине, задиры</td><td>Канавки забиты стружкой</td><td>Организовать отвод стружки, изменить геометрию развёртки</td></tr></tbody></table>
+<p>Перед запуском серии проверяют центровку, биение, фактический припуск, состояние зубьев и подачу СОЖ. <a href="/blog/kak-prinyat-pervuyu-detal-pered-zapuskom-serii.html">Первую деталь</a> измеряют нутромером по нескольким сечениям. Калибр-пробка подтверждает предельный размер, но не показывает конусность и характер поверхности.</p>
+<blockquote><p><strong>Факт.</strong> Набитая в канавки стружка повышает трение и может сломать развёртку, особенно инструмент с прямыми канавками.</p></blockquote>
+<h2 id="chto-ukazat-v-chertezhe-i-kak-eto-vliyaet-na-tsenu">Что указать в чертеже и как это влияет на цену</h2>
+<p>В задании на отверстие нужны отдельные требования к диаметру, шероховатости и положению. Запись «развернуть» без допуска не объясняет изготовителю, какой результат контролировать. Назначение H7 там, где подходит свободная посадка, добавляет операцию и измерение без пользы для узла.</p>
+<p>В заявку включают:</p>
+<ul><li>номинальный диаметр и поле допуска, например Ø10 H7;</li><li>требуемую шероховатость стенки;</li><li>допуск положения относительно указанных баз;</li><li>материал, состояние поставки и твёрдость;</li><li>глубину и тип отверстия: сквозное или глухое;</li><li><a href="/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii.html">размер партии</a> и допустимость пробной детали;</li><li>способ контроля: пробка, нутромер, профилометр или КИМ.</li></ul>
+<p>Глухое отверстие требует места для заборной части и стружки. Термообработка тоже меняет маршрут: конструктору нужно определить, формируется окончательный размер до неё или после. Связанные решения описаны в материалах про <a href="/blog/cementaciya-stali-dlya-kakih-detalej.html">цементацию и закалку деталей</a> и про то, как <a href="/razdel/materialy.html">марка металла влияет на обработку</a>.</p>
+<p>Чем уже допуск, тем выше требования к станку, инструменту и контролю первой детали. Перед заказом полезно сверить, <a href="/razdel/ekonomika-zakaza.html">из чего складывается цена детали</a>.</p>
+<h2 id="itog-kogda-zakazyvat-razvertyvanie">Итог: когда заказывать развёртывание</h2>
+<p>Развёртывание заказывают для посадочного диаметра и чистой стенки, если предварительное отверстие уже правильно расположено. Когда критична координата оси, сначала предусматривают растачивание, кондуктор или обработку за одну установку.</p>
+<p>Пришлите чертёж с допуском диаметра, шероховатостью, позиционным допуском, материалом и твёрдостью и укажите назначение отверстия: под штифт, втулку, подшипник или свободный крепёж. По этим данным технолог выберет маршрут, припуск, тип развёртки и способ контроля, а вы получите <a href="/ceny.html">расчёт металлообработки</a>.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем развёртывание отличается от зенкерования?</summary>
+<div class="faq__a"><p>Зенкерование — получистовая операция. Зенкер улучшает форму предварительного отверстия и снимает основной припуск после сверла. Развёртывание завершает обработку: калибрует диаметр и снимает небольшой слой металла.</p></div>
+</details>
+<details>
+<summary>Исправит ли развёртка отверстие, которое сверло увело в сторону?</summary>
+<div class="faq__a"><p>Нет. Развёртка идёт по существующему отверстию и не исправляет ошибку его положения. Если важна координата оси, сначала используют растачивание, кондуктор или обработку за одну установку.</p></div>
+</details>
+<details>
+<summary>Сколько металла оставлять под развёртку после сверления?</summary>
+<div class="faq__a"><p>Исходный ориентир — 2–5 % диаметра отверстия. Для Ø10 мм это примерно 0,2–0,5 мм на диаметр. Окончательный припуск выбирают по таблице производителя инструмента с учётом материала и промежуточного зенкерования.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://ctemag.com/articles/reaming-basics/" rel="noopener" target="_blank">Reaming basics</a> — Cutting Tool Engineering</li>
+<li><a href="https://www.iso.org/" rel="noopener" target="_blank">International Organization for Standardization (ISO)</a> — главная страница организации, публикующей ISO 286</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki.html">
+            <img src="/images/blog/rastachivanie-otverstij-otlichie-ot-sverleniya-razvertki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Растачивание отверстий: чем отличается от сверления и развёртывания и когда оно действительно нужно</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/svarochnye-deformacii-pochemu-vedet-detal.html">
+            <img src="/images/blog/svarochnye-deformacii-pochemu-vedet-detal-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html">
+            <img src="/images/blog/oshibki-pri-zakaze-detaley-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

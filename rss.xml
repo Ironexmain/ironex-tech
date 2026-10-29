@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит</title>
+      <link>https://ironex.tech/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Когда нужно развёртывание отверстий, сколько припуска оставить после сверления и почему развёртка не исправляет увод оси. Что указать в чертеже.</description>
+    </item>
+    <item>
+      <title>Развёртка листового металла при гибке: как K-фактор определяет длину заготовки</title>
+      <link>https://ironex.tech/blog/razvertka-listovogo-metalla-k-faktor.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/razvertka-listovogo-metalla-k-faktor.html</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Как посчитать развёртку детали с гибом: K-фактор, припуск и вычет, формулы и расчёт Г-образной детали с числами. Типичные ошибки.</description>
+    </item>
+    <item>
+      <title>Как собрать точило для инструмента: проект, детали и проверки</title>
+      <link>https://ironex.tech/blog/kak-sdelat-tochilo-dlya-zatochki-instrumenta.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-sdelat-tochilo-dlya-zatochki-instrumenta.html</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как подготовить проект точила, подобрать комплектующие и заказать детали. Что должно быть известно о креплении круга, защите и проверках до сборки.</description>
+    </item>
     <item>
       <title>Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже</title>
       <link>https://ironex.tech/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Fri, 23 Oct 2026 00:00:00 +0300</pubDate>
       <category>Контроль качества</category>
       <description>Определяем шаг резьбы резьбомером, линейкой и штангенциркулем, сверяем с таблицей ГОСТ, проверяем результат. Что записать в чертёж детали.</description>
-    </item>
-    <item>
-      <title>ГОСТ и стандарты при изготовлении металлических деталей: что указать в чертеже и какие документы запросить у цеха</title>
-      <link>https://ironex.tech/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/gost-metalloobrabotka-dopuski-dokumenty-kachestva.html</guid>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Какие допуски, шероховатость и стандарты прописать в чертеже, чем сертификат ISO 9001 отличается от паспорта на металл и протокола контроля.</description>
-    </item>
-    <item>
-      <title>Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции</title>
-      <link>https://ironex.tech/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat.html</guid>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Какие пары металлов разрушаются во влаге, как работает правило площадей и чем разделить алюминий, сталь и нержавейку в узле по чертежу.</description>
-    </item>
-    <item>
-      <title>Допуски при обработке и шероховатость: за что вы платите на самом деле</title>
-      <link>https://ironex.tech/blog/dopuski-pri-obrabotke-vliyanie-na-cenu.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/dopuski-pri-obrabotke-vliyanie-na-cenu.html</guid>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Экономика заказа</category>
-      <description>Какие допуски и Ra на чертеже удорожают деталь: ступени точности, износ инструмента, контроль и чек-лист, как не переплатить.</description>
     </item>
   </channel>
 </rss>
