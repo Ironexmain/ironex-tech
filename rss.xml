@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как выбрать режим закалки и отпуска стали 40Х по требованиям к детали</title>
+      <link>https://ironex.tech/blog/rezhim-zakalki-stali-40h.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/rezhim-zakalki-stali-40h.html</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как подготовить режим закалки и отпуска стали 40Х: исходные данные, прогрев, выдержка, охлаждение и контроль результата по требованиям чертежа.</description>
+    </item>
+    <item>
+      <title>Резьбофрезерование или метчик: чем нарезать внутреннюю резьбу в вашей детали</title>
+      <link>https://ironex.tech/blog/rezbofrezerovanie-ili-metchik-vnutrennyaya-rezba.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/rezbofrezerovanie-ili-metchik-vnutrennyaya-rezba.html</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Метчик или резьбовая фреза: сравнение по диаметру, глубине, материалу и серии. Где дешевле, где риск брака и что указать в чертеже при заказе.</description>
+    </item>
+    <item>
+      <title>Как варить чугун электродами: от проверки детали до контроля шва</title>
+      <link>https://ironex.tech/blog/kak-svarit-chugun-elektrodami.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/kak-svarit-chugun-elektrodami.html</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как подготовить чугунную деталь к сварке электродами, подобрать расходники и режим, организовать охлаждение и проверить результат ремонта.</description>
+    </item>
     <item>
       <title>Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит</title>
       <link>https://ironex.tech/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sat, 24 Oct 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Магнитится не всякая нержавейка: 430 и 410 да, 304 почти нет, но после гибки и сварки может. Таблица марок и проверка магнитом.</description>
-    </item>
-    <item>
-      <title>Как определить допуск отверстия или вала по квалитету точности</title>
-      <link>https://ironex.tech/blog/kvalitet-tochnosti-razmerov.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kvalitet-tochnosti-razmerov.html</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Как найти допуск по квалитету и номинальному размеру, прочитать обозначения H7 и h6 и рассчитать предельные размеры отверстия и вала.</description>
-    </item>
-    <item>
-      <title>Контактная точечная сварка: где применяют и как проверяют качество сварной точки</title>
-      <link>https://ironex.tech/blog/kontaktnaya-tochechnaya-svarka-kontrol-kachestva.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kontaktnaya-tochechnaya-svarka-kontrol-kachestva.html</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Где контактная точечная сварка работает на листе, чем отличается жёсткий режим от мягкого и как принять сварную точку: срез, отрыв, ядро, дефекты.</description>
-    </item>
-    <item>
-      <title>Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже</title>
-      <link>https://ironex.tech/blog/kak-opredelit-shag-rezby.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-opredelit-shag-rezby.html</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Контроль качества</category>
-      <description>Определяем шаг резьбы резьбомером, линейкой и штангенциркулем, сверяем с таблицей ГОСТ, проверяем результат. Что записать в чертёж детали.</description>
     </item>
   </channel>
 </rss>
