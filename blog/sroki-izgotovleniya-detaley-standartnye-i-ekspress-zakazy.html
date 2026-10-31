@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сроки изготовления деталей: стандартные и экспресс-заказы</title>
+  <meta name="description" content="Из чего складывается срок детали по чертежу, что даёт экспресс-режим и что ускорить нельзя: термообработку, покрытие. Таблица и чек-лист заказчика." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy.html#article",
+      "headline": "Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить",
+      "description": "Из чего складывается срок детали по чертежу, что даёт экспресс-режим и что ускорить нельзя: термообработку, покрытие. Таблица и чек-лист заказчика.",
+      "datePublished": "2026-10-31",
+      "dateModified": "2026-10-31",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "сроки изготовления деталей",
+        "экспресс-заказ деталей по чертежу",
+        "срочное изготовление деталей",
+        "время производства деталей",
+        "ускоренное изготовление по чертежу",
+        "срок изготовления и срок поставки"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько изготавливаются нестандартные детали?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Срок нестандартной детали называют после расчёта по чертежу. До расчёта вилка в днях ничего не даёт: её двигают марка, число операций, допуски и наличие термообработки или покрытия. Две детали одного габарита расходятся по сроку именно на этих четырёх пунктах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С какого дня считается срок изготовления?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "С дня, который записан в договоре. Обычно это момент, когда оплата уже есть и чертёж утверждён. Если материал закупают отдельно, точку отсчёта согласуйте письмом, иначе дни поставки металла смешаются с днями обработки. Рабочие это дни или календарные, в строке договора написано явно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если исполнитель затягивает сроки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Запросите причину и новую дату письмом. Затем сверьте ответ с договором: срок меняют только в порядке, который он предусматривает, а неустойку за просрочку считают по его условию. Уточните, упёрся срок в очередь станка или в операцию с фиксированным циклом: от этого зависит, поможет ли приоритет."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Экспресс-заказ на деталь: что можно ускорить, а что нет" />
+  <meta property="og:description" content="Из чего складывается срок детали по чертежу, что даёт экспресс-режим и что ускорить нельзя: термообработку, покрытие. Таблица и чек-лист заказчика." />
+  <meta property="og:url" content="https://ironex.tech/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-10-31" />
+  <meta property="article:modified_time" content="2026-10-31" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Экспресс-заказ на деталь: что можно ускорить, а что нет" />
+  <meta name="twitter:description" content="Из чего складывается срок детали по чертежу, что даёт экспресс-режим и что ускорить нельзя: термообработку, покрытие. Таблица и чек-лист заказчика." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chem-srok-izgotovleniya-otlichaetsya-ot-sroka-postavki">Чем срок изготовления отличается от срока поставки?</a></li>
+<li><a href="#iz-chego-skladyvaetsya-srok-detali-ot-chertezha-do-otgruzki">Из чего складывается срок детали: от чертежа до отгрузки</a></li>
+<li><a href="#ot-chego-zavisit-standartnyy-srok">От чего зависит стандартный срок?</a></li>
+<li><a href="#ekspress-zakaz-chto-eto-i-kogda-ispolnitel-ego-beret">Экспресс-заказ: что это и когда исполнитель его берёт?</a></li>
+<li><a href="#chto-uskorit-nelzya-termoobrabotka-pokrytiya-kontrol">Что ускорить нельзя: термообработка, покрытия, контроль</a></li>
+<li><a href="#kak-sokratit-srok-za-schet-marshruta-obrabotki">Как сократить срок за счёт маршрута обработки?</a></li>
+<li><a href="#standartnyy-i-ekspress-rezhim-sravnenie-po-etapam">Стандартный и экспресс-режим: сравнение по этапам</a></li>
+<li><a href="#chek-list-zakazchika-kak-ne-poteryat-dni-do-zapuska">Чек-лист заказчика: как не потерять дни до запуска</a></li>
+<li><a href="#dogovor-kak-zapisat-srok-i-chto-delat-pri-prosrochke">Договор: как записать срок и что делать при просрочке</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить</h1>
+        <p class="lede">Из чего складывается срок детали по чертежу, что даёт экспресс-режим и что ускорить нельзя: термообработку, покрытие. Таблица и чек-лист заказчика.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-10-31">Опубликовано 31 октября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy-cover.webp" alt="Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede"><a href="/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp.html">Срок изготовления</a> детали — это не время работы станка, а сумма очередей, переустановок, термообработки и контроля. Экспресс-режим сокращает ожидание и переналадки, но не отменяет операции, у которых есть минимальное время. Ниже — что входит в стандартный срок, что исполнитель может ускорить и что должен сделать заказчик, чтобы срочный заказ не растянулся.</p>
+<h2 id="chem-srok-izgotovleniya-otlichaetsya-ot-sroka-postavki">Чем срок изготовления отличается от срока поставки?</h2>
+<p>Срок изготовления заканчивается готовой и принятой деталью: размеры в допуске, контроль закрыт, деталь упакована. Срок поставки длиннее, потому что сверху садятся доставка или ожидание самовывоза. Одна цифра на оба срока смешивает цех и дорогу, поэтому сразу уточняют, какие дни в неё входят.</p>
+<p>Точку отсчёта берут из договора. Обычно срок идёт, когда оплата прошла и чертёж утверждён, а если заготовку закупают отдельно, третьей точкой пишут поступление материала. Пока записанное условие не наступило, дни изготовления не идут, даже если технолог уже открыл чертёж.</p>
+<p>«10 дней» без пометки «рабочие» или «календарные» ничего не говорят: рабочие дни не считают выходные, календарные считают, и одна цифра даёт разные даты готовности. Цифру называют после расчёта по чертежу, а в договоре пишут, какие дни идут в счёт. По телефону, без размеров и марки, маршрута ещё нет.</p>
+<blockquote><p>Срок считают от момента, когда есть утверждённый чертёж, материал и оплата. Фраза «беру в работу» этот момент не заменяет.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить">Прислать чертёж на почту</a>
+</div>
+<h2 id="iz-chego-skladyvaetsya-srok-detali-ot-chertezha-do-otgruzki">Из чего складывается срок детали: от чертежа до отгрузки</h2>
+<p><img alt="CNC станок для механической обработки деталей" decoding="async" height="666" loading="lazy" src="/images/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy-1.webp" width="1000"/></p>
+<p><em>Механическая обработка — один из основных этапов производства деталей. Фото: <a href="https://commons.wikimedia.org/wiki/File:TGFT25_Fadal_CNC_machines_-_Taylor_Guitar_Factory.jpg" rel="nofollow noopener" target="_blank">Marcin Wichary</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Станочное время — короткая часть срока изготовления: дольше длятся очередь на станки, наладка и паузы между операциями. Пока деталь лежит между станками, резец стоит, а календарь заказа идёт. У каждого этапа в маршруте своё ожидание.</p>
+<ol><li>Проверка чертежа и расчёт. Срок стоит, пока не закрыты марка, допуски, количество и спорный размер.</li><li>Заготовка и материал. Резка из наличия стартует сразу, закупка редкой марки добавляет поставку.</li><li>Программа и наладка станка. На одной детали наладка часто длиннее самого реза.</li><li>Обработка. Здесь машинное время, и в сроке изготовления оно редко самое длинное.</li><li>Термообработка и покрытия. Нагрев и выдержка часто идут у подрядчика.</li><li>Контроль. Замеры, протокол и сертификат на материал закрывают готовность детали.</li><li>Упаковка. Здесь срок изготовления заканчивается, доставка в него не входит.</li></ol>
+<p>У вала с зубьями обработка дробится на несколько операций. В классическом маршруте зуб предварительно шлифуют, а между черновой и чистовой обработкой вал отжигают. Каждая передача между станками добавляет очередь.</p>
+<p>Очередь на станки и наладка станка входят в срок изготовления наравне с резанием. Шаги разобраны в материале про <a href="/blog/sroki-izgotovleniya-detaley-ot-eskiza-do-otgruzki.html">весь маршрут детали от эскиза до отгрузки</a>.</p>
+<h2 id="ot-chego-zavisit-standartnyy-srok">От чего зависит стандартный срок?</h2>
+<p>Стандартный срок прикидывают по шести факторам: часть задаёт заказчик в чертеже, часть зависит от загрузки цеха и внешних операций. Общей вилки в днях без чертежа нет. Срок сдвигается на лишней операции или на лишнем ожидании. Сверьте с этими пунктами свою деталь.</p>
+<ul><li>Заготовка и материал. Редкая закупка влияет на срок изготовления, складская марка стартует сразу.</li><li>Операции и установки. Новая сторона добавляет базу и очередь.</li><li>Допуски. Жёсткий допуск добавляет проходы.</li><li>Термообработка. Закалка и цементация удлиняют срок изготовления.</li><li>Покрытия. Гальваника и окраска идут у подрядчика.</li><li>Геометрия. Свои размеры удлиняют подготовку, стандартные диаметры её сокращают.</li></ul>
+<p>Фрезерование и точение иногда скручивают вал, поэтому в классическом маршруте между черновой и чистовой обработкой его отжигают, и это тоже время.</p>
+<h3>Что в сроке зависит от заказчика</h3>
+<p>От заказчика зависят чертёж, допуски, марка материала и скорость согласования. Пока версия чертежа меняется, программу не запускают: окончательный размер ещё не выбран. <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html">Замену марки</a> без письма в заготовку не пускают. Ответ технологу в тот же день помогает не потерять окно на станке. Пауза в несколько дней сдвигает запуск на эти дни. Молчание заказчика в срок изготовления входит так же, как очередь.</p>
+<h3>Что зависит от загрузки производства</h3>
+<p>От цеха зависят очередь на станки, внешняя термообработка и поставка металла, и правкой допуска эти три позиции не убрать. Очередь на станки входит в срок изготовления: деталь ждёт окно, даже если программа уже написана. Печь подрядчика и склад металла живут по своему графику. Приоритет двигает только момент, когда деталь в эту очередь попадает. Цикл печи и срок поставки металла от приоритета не сжимаются.</p>
+<h2 id="ekspress-zakaz-chto-eto-i-kogda-ispolnitel-ego-beret">Экспресс-заказ: что это и когда исполнитель его берёт?</h2>
+<p><img alt="Цех производства деталей машин компании Columbia Axle Co" decoding="async" height="686" loading="lazy" src="/images/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy-2.webp" width="1000"/></p>
+<p><em>Машиностроительный цех компании Columbia Axle Co в городе Кливленде, штат Огайо, где производили детали для машин. Фото: <a href="https://commons.wikimedia.org/wiki/File:Industries_of_War_-_Machinery_-_Miscellaneous_-_Manufacturing_Machine_Parts_For_War_Use._General_view_machine_shop,_Columbia_Axle_Co.,_Cleveland,_Ohio_-_NARA_-_45486063.jpg" rel="nofollow noopener" target="_blank">Unknown author Unknown author or not provided</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Экспресс-заказ даёт приоритет в очереди и сжимает подготовку, но нагрев, выдержка и отверждение покрытия идут своим режимом. Сам рез от приоритета не короче. Исполнитель берёт такой заказ, когда может сдвинуть ожидание, и отказывает, когда срок держит технология: место в очереди цикл печи не меняет.</p>
+<p>Быстрее проходят расчёт, закупка из наличия, наладка вне очереди и запуск в ближайшую смену. Программу и инструмент иногда собирают параллельно, пока закрывают вопрос по марке, и так уходят дни простоя. Минуты резания почти не меняются.</p>
+<p>Экспресс-заказ требует чертёж: утверждённую версию без правок после запуска, материал из наличия или уже согласованную поставку, быструю оплату и быстрый ответ технологу. Без чертежа маршрута нет, поэтому день запуска назначить нельзя. Размер доплаты за приоритет называют в расчёте по чертежу. Наценку без чертежа не считают.</p>
+<p>Экспресс обычно не берут при длинной внешней термообработке, неполном чертеже или редкой марке, которой нет на складе: деталь ждёт печь, размер или пруток.</p>
+<blockquote><p>Экспресс-заказ сокращает ожидание. Время обязательных технологических операций остаётся прежним.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если линия стоит, чертёж утверждён и материал есть на складе, просите экспресс: платите за место в очереди. Если в маршруте внешняя закалка или покрытие, для плановой партии оставляйте стандартный режим и закладывайте их цикл.</p></blockquote>
+<h2 id="chto-uskorit-nelzya-termoobrabotka-pokrytiya-kontrol">Что ускорить нельзя: термообработка, покрытия, контроль</h2>
+<p>У части операций есть физический минимум времени, и первое место в очереди его не снимает. Упрочнение, выдержка при нагреве, охлаждение и отверждение покрытия идут режимом процесса, даже если станок уже свободен. Срок изготовления в эти часы ждёт печь и ванну.</p>
+<p>Внешняя термообработка остаётся узким местом и в сжатом цикле: деталь уезжает по графику подрядчика, день возврата плавает, и соседние станки впритык не планируют. Термообработка удлиняет срок изготовления сильнее, чем лишний проход резцом. Контроль сидит в том же сроке: замер, протокол и сертификат на материал занимают время после последнего прохода, и без этих бумаг деталь не отгружают.</p>
+<p>Если дата критична, маршрут упрощают там, где допуск и покрытие не держат посадку, либо сдают заказ этапами: сначала поверхности без покрытия, затем термообработку отдельной датой в договоре.</p>
+<blockquote><p>Если в маршруте есть внешняя термообработка, срок упирается в её цикл.</p></blockquote>
+<blockquote><p><strong>Факт.</strong> В разобранном примере вала с зубьями и внешней закалкой сверхсрочный заказ после перестройки маршрута теоретически укладывается в четыре недели. Это результат конкретного маршрута, и к любому чертежу его не переносят.</p></blockquote>
+<h2 id="kak-sokratit-srok-za-schet-marshruta-obrabotki">Как сократить срок за счёт маршрута обработки?</h2>
+<p>Срок падает сильнее машинного времени, когда из маршрута уходят переустановки и ожидание между ними. Выигрыш тогда больше, чем экономия одних станко-часов. Обработка за одну установку сокращает срок изготовления: вал не стоит в очереди на токарном, фрезерном и шлифовальном станках по отдельности.</p>
+<p>В примере вал с зубьями точат за одну установку, зуб делают вчерне, предварительное шлифование исчезает, и после черновой обработки вал сразу идёт на цементацию. В таком переходе наладка стала короче на 50%, машинное время — на 15–20%, а срок изготовления сократился вдвое.</p>
+<p>Спросите технолога про пять приёмов:</p>
+<ul><li>Одну установку вала и зуба вчерне: перекладка добавляет очередь.</li><li>Точение со щупом в процессе обработки. В примере так получили допуск вплоть до IT6 без отдельного шлифования; квалитет IT6 есть в системе допусков ГОСТ 25346.</li><li>Измерение на станке. Биение проверяют без съёма вала, и деталь не уходит на отдельный контроль.</li><li>Программу зуба на станке по данным зацепления, без внешнего программирования.</li><li>Наладку параллельно резу. В примере партии составляли от 1 до 24 штук, а следующий инструмент готовили во время резания за счёт большого магазина.</li></ul>
+<p>Станок под такой маршрут подбирают в разборе <a href="/razdel/tehnologii.html">как выбрать маршрут обработки под конкретную деталь</a>.</p>
+<h2 id="standartnyy-i-ekspress-rezhim-sravnenie-po-etapam">Стандартный и экспресс-режим: сравнение по этапам</h2>
+<p>Режим выбирают по этапу, который держит срок. Экспресс полезен, где узкое место — очередь, и мало что меняет, где узкое место — цикл печи или ванны. Остановка линии при готовых чертеже и материале идёт в приоритет, плановая партия остаётся в обычной очереди.</p>
+<table><thead><tr><th>Этап</th><th>Стандартный режим</th><th>Экспресс-режим</th></tr></thead><tbody><tr><td>Расчёт по чертежу</td><td>В общей очереди расчётов</td><td>Вне общей очереди, если чертёж полный</td></tr><tr><td>Заготовка и материал</td><td>Закупка, если марки нет на складе</td><td>Только из наличия или уже согласованная поставка</td></tr><tr><td>Наладка станка</td><td>По очереди на выбранный станок</td><td>Вне очереди, в ближайшую смену</td></tr><tr><td>Обработка</td><td>По загрузке станка</td><td>Приоритет в смене; параллельные операции, где маршрут позволяет</td></tr><tr><td>Термообработка</td><td>Полный цикл подрядчика</td><td>Не ускоряется: нагрев и выдержка заданы режимом</td></tr><tr><td>Покрытие</td><td>Цикл нанесения и отверждения</td><td>Не ускоряется: время отверждения задано процессом</td></tr><tr><td>Контроль</td><td>Замеры и документы после обработки</td><td>Замеры остаются; щуп на станке не ставит деталь в отдельную очередь на контроль</td></tr></tbody></table>
+<p>Оба варианта считают по чертежу на странице <a href="/">изготовление деталей по чертежам</a>.</p>
+<h2 id="chek-list-zakazchika-kak-ne-poteryat-dni-do-zapuska">Чек-лист заказчика: как не потерять дни до запуска</h2>
+<p>Дни до запуска теряются на уточнениях, и эти дни не требуют доплаты за экспресс. Их убирает полный пакет в первом письме, а правка после запуска обнуляет программу и возвращает заказ в подготовку. Состав запроса разобран в материале <a href="/blog/kak-podgotovit-zapros-na-raschet-izgotovleniya-detaley.html">как составить запрос на расчёт</a>. Перед отправкой срочного запроса проверьте шесть пунктов, каждый закрывает свой простой.</p>
+<ol><li>Приложите актуальную <a href="/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html">версию чертежа</a>: допуски, шероховатость, марку материала и количество. Иначе расчёт встанет на первом неясном размере.</li><li>После запуска версию чертежа не меняйте. Новая ревизия обнуляет программу и наладку, и срок начинают собирать заново.</li><li>Допустимые замены материала напишите заранее. Иначе при пустом складе заказ встанет, пока согласуют марку.</li><li>Ослабьте допуск там, где он не держит посадку и не несёт нагрузку. Лишний жёсткий размер добавляет проход, контроль и ещё одну установку.</li><li>Отвечайте технологу в тот же день. Простой на согласовании тоже входит в срок изготовления.</li><li>Срок считайте от условий договора. Первый звонок точку отсчёта не включает: без чертежа дни разговора в срок изготовления не попадают.</li></ol>
+<h2 id="dogovor-kak-zapisat-srok-i-chto-delat-pri-prosrochke">Договор: как записать срок и что делать при просрочке</h2>
+<p>Срок без точки отсчёта быстро становится спором о дне старта. В договоре подряда указывают начальный и конечный сроки выполнения работы (ст. 708 ГК РФ), а рядом отдельно пишут срок поставки и срок оплаты. У каждой даты своя точка: изготовление считают от оплаты и утверждённого чертежа, поставку — от готовности к передаче, оплату — от счёта.</p>
+<p>Перенос идёт в порядке из договора: начальный, конечный и промежуточные сроки меняют в случаях и в порядке, которые предусмотрел сам договор. Новую дату отправьте письмом, пока старая не вышла.</p>
+<p>Неустойку за просрочку назначает закон или договор (ст. 330 ГК РФ): это денежная сумма, которую должник платит кредитору при просрочке. Размер и порядок расчёта ищите в тексте своего договора.</p>
+<blockquote><p>Срок без точки отсчёта превращается в спор о том, с какого дня его считать.</p></blockquote>
+<p>Отправьте чертёж на расчёт. В расчёте укажем режим, точку отсчёта и операции, чей цикл сжать нельзя.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Сколько изготавливаются нестандартные детали?</summary>
+<div class="faq__a"><p>Срок нестандартной детали называют после расчёта по чертежу. До расчёта вилка в днях ничего не даёт: её двигают марка, число операций, допуски и наличие термообработки или покрытия. Две детали одного габарита расходятся по сроку именно на этих четырёх пунктах.</p></div>
+</details>
+<details>
+<summary>С какого дня считается срок изготовления?</summary>
+<div class="faq__a"><p>С дня, который записан в договоре. Обычно это момент, когда оплата уже есть и чертёж утверждён. Если материал закупают отдельно, точку отсчёта согласуйте письмом, иначе дни поставки металла смешаются с днями обработки. Рабочие это дни или календарные, в строке договора написано явно.</p></div>
+</details>
+<details>
+<summary>Что делать, если исполнитель затягивает сроки?</summary>
+<div class="faq__a"><p>Запросите причину и новую дату письмом. Затем сверьте ответ с договором: срок меняют только в порядке, который он предусматривает, а неустойку за просрочку считают по его условию. Уточните, упёрся срок в очередь станка или в операцию с фиксированным циклом: от этого зависит, поможет ли приоритет.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://ctemag.com/articles/cutting-lead-time-half/" rel="noopener" target="_blank">Cutting Lead Time In Half</a> — Cutting Tool Engineering</li>
+<li><a href="https://internet-law.ru/documents/prod/gost_gosudarstvennyj-standart/7/gost_37849.html" rel="noopener" target="_blank">ГОСТ 25346. Система допусков на линейные размеры</a> — Межгосударственный стандарт</li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_9027/94492e64fdea026f033e334a2f18b7f1de1f04a0/" rel="noopener" target="_blank">ГК РФ, статья 708. Сроки выполнения работы</a> — Гражданский кодекс Российской Федерации</li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_5142/b4e192e502ea85e2cf31e682d6dbd8ad395a5012/" rel="noopener" target="_blank">ГК РФ, статья 330. Понятие неустойки</a> — Гражданский кодекс Российской Федерации</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/srochnoe-proizvodstvo-ekspress-zakaz.html">
+            <img src="/images/blog/srochnoe-proizvodstvo-ekspress-zakaz-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Срочное производство деталей по чертежу: как ускорить заказ и не потерять качество</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/izgotovlenie-prototipov-iz-metalla.html">
+            <img src="/images/blog/izgotovlenie-prototipov-iz-metalla-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Изготовление прототипов и опытных образцов из металла по вашему чертежу</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kontraktnoe-proizvodstvo-detaley-kak-rabotaet.html">
+            <img src="/images/blog/kontraktnoe-proizvodstvo-detaley-kak-rabotaet-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Контрактное производство деталей по чертежу: как оно устроено и когда выгоднее своего цеха</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

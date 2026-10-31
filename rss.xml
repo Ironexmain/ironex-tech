@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Станочные приспособления и кондукторы: зачем заказчику знать об оснастке</title>
+      <link>https://ironex.tech/blog/stanochnye-prisposobleniya-i-konduktory.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/stanochnye-prisposobleniya-i-konduktory.html</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Какая оснастка стоит под вашей деталью, как она влияет на цену, срок и точность и когда кондуктор окупается. Что передать исполнителю.</description>
+    </item>
+    <item>
+      <title>Сталь 45 по ГОСТ 1050-88: как подобрать диаметр и состояние заготовки</title>
+      <link>https://ironex.tech/blog/stal-45-gost-1050-88-diametry.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/stal-45-gost-1050-88-diametry.html</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как подобрать диаметр заготовки из стали 45, рассчитать массу круга и согласовать состояние поставки. Что проверить в заказе и документах на металл.</description>
+    </item>
+    <item>
+      <title>Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить</title>
+      <link>https://ironex.tech/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy.html</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Из чего складывается срок детали по чертежу, что даёт экспресс-режим и что ускорить нельзя: термообработку, покрытие. Таблица и чек-лист заказчика.</description>
+    </item>
     <item>
       <title>Как выбрать режим закалки и отпуска стали 40Х по требованиям к детали</title>
       <link>https://ironex.tech/blog/rezhim-zakalki-stali-40h.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sun, 25 Oct 2026 00:00:00 +0300</pubDate>
       <category>Чертежи и допуски</category>
       <description>Как читать условное обозначение сварного шва по ГОСТ 2.312: полка, катет, вспомогательные знаки. И что заказчик должен дописать, чтобы деталь сварили как надо.</description>
-    </item>
-    <item>
-      <title>Неуказанные предельные отклонения: что значит, если допусков на чертеже нет</title>
-      <link>https://ironex.tech/blog/neukazannye-predelnye-otkloneniya-gost-30893-1.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/neukazannye-predelnye-otkloneniya-gost-30893-1.html</guid>
-      <pubDate>Sun, 25 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Если отклонения на чертеже не указаны, действуют общие допуски ГОСТ 30893.1, но только по ссылке. Классы f, m, c, v, запись и приёмка.</description>
-    </item>
-    <item>
-      <title>Накатка или нарезка резьбы: что прочнее и что дешевле для вашей детали</title>
-      <link>https://ironex.tech/blog/nakatka-rezby-ili-narezka-chto-prochnee-i-deshevle.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/nakatka-rezby-ili-narezka-chto-prochnee-i-deshevle.html</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Накатанная резьба держит на растяжение на 10–30% больше, по усталости — до 70%. Разбираем, когда она дешевле нарезки, а когда нет.</description>
-    </item>
-    <item>
-      <title>Магнитится ли нержавейка: как отличить марки стали и что на самом деле показывает магнит</title>
-      <link>https://ironex.tech/blog/magnitsya-li-nerzhaveyka-kak-otlichit-marki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/magnitsya-li-nerzhaveyka-kak-otlichit-marki.html</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Магнитится не всякая нержавейка: 430 и 410 да, 304 почти нет, но после гибки и сварки может. Таблица марок и проверка магнитом.</description>
     </item>
   </channel>
 </rss>
