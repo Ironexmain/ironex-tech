@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steel ball: перевод и применение стальных шаров в технике</title>
+  <meta name="description" content="Steel ball — «стальной шар» или «стальной шарик». Как различать назначение изделий и какие данные о материале, геометрии и поверхности нужны для заказа." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/steel-ball-perevod-i-primenenie.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/steel-ball-perevod-i-primenenie.html#article",
+      "headline": "Что означает steel ball в документации и как выбрать стальные шары",
+      "description": "Steel ball — «стальной шар» или «стальной шарик». Как различать назначение изделий и какие данные о материале, геометрии и поверхности нужны для заказа.",
+      "datePublished": "2026-11-01",
+      "dateModified": "2026-11-01",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/steel-ball-perevod-i-primenenie.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/steel-ball-perevod-i-primenenie-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "steel ball",
+        "steel ball перевод",
+        "стальной шар",
+        "стальные шарики применение",
+        "изготовление стальных шаров по чертежу"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Что означает steel ball в документации и как выбрать стальные шары"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем steel ball отличается от ball bearing в спецификации?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Steel ball обозначает стальной шар или шарик. Ball bearing обычно обозначает шариковый подшипник. Эти записи нельзя считать одной позицией без проверки контекста и обозначения изделия."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли указывать каждый диаметр шаров отдельной строкой заявки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Отдельные строки помогают закрепить количество и требования для каждого размера. Другой вариант — приложенная спецификация набора, где эти сведения перечислены. Важна однозначность состава заказа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что добавить в заявку, если шар работает в масле или воде?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нужно указать рабочую среду, условия контакта и сопрягаемую деталь. Если известны температура и нагрузка, их тоже включают в исходные данные. По одному слову «вода» или «масло» материал не назначают."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Стальной шар или шарик: что проверить перед заказом" />
+  <meta property="og:description" content="Steel ball — «стальной шар» или «стальной шарик». Как различать назначение изделий и какие данные о материале, геометрии и поверхности нужны для заказа." />
+  <meta property="og:url" content="https://ironex.tech/blog/steel-ball-perevod-i-primenenie.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/steel-ball-perevod-i-primenenie-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-01" />
+  <meta property="article:modified_time" content="2026-11-01" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Стальной шар или шарик: что проверить перед заказом" />
+  <meta name="twitter:description" content="Steel ball — «стальной шар» или «стальной шарик». Как различать назначение изделий и какие данные о материале, геометрии и поверхности нужны для заказа." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/steel-ball-perevod-i-primenenie-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что означает steel ball в документации и как выбрать стальные шары">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Что означает steel ball в документации и как выбрать стальные шары</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#kak-perevesti-steel-ball-v-tehnicheskom-dokumente">Как перевести steel ball в техническом документе</a></li>
+<li><a href="#gde-primenyayut-stalnye-shary-i-pochemu-ih-nelzya-vybirat-od">Где применяют стальные шары и почему их нельзя выбирать одинаково</a></li>
+<li><a href="#kak-svyazany-material-shara-tverdost-i-rabochaya-sreda">Как связаны материал шара, твёрдость и рабочая среда</a></li>
+<li><a href="#kakie-trebovaniya-zadayut-k-diametru-forme-i-poverhnosti">Какие требования задают к диаметру, форме и поверхности</a></li>
+<li><a href="#pochemu-stalnye-shary-proskalzyvayut-v-vibratsionnoy-mashine">Почему стальные шары проскальзывают в вибрационной машине</a></li>
+<li><a href="#chto-soglasovat-pri-vybore-zagruzki-i-zamene-futerovki">Что согласовать при выборе загрузки и замене футеровки</a></li>
+<li><a href="#chto-ukazat-v-zayavke-na-stalnye-shary-ili-sfericheskuyu-det">Что указать в заявке на стальные шары или сферическую деталь</a></li>
+<li><a href="#kak-proverit-sootvetstvie-postavki-trebovaniyam">Как проверить соответствие поставки требованиям</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что означает steel ball в документации и как выбрать стальные шары">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Что означает steel ball в документации и как выбрать стальные шары</h1>
+        <p class="lede">Steel ball — «стальной шар» или «стальной шарик». Как различать назначение изделий и какие данные о материале, геометрии и поверхности нужны для заказа.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-11-01">Опубликовано 1 ноября 2026</time>
+
+            <span>7 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/steel-ball-perevod-i-primenenie-cover.webp" alt="Что означает steel ball в документации и как выбрать стальные шары" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Steel ball — «стальной шар» или «стальной шарик». Перевод выбирают по назначению изделия и терминологии документа. За этой записью могут стоять деталь подшипника, запорный элемент или технологическая загрузка. Для заказа одного названия и диаметра недостаточно: нужны требования к материалу, геометрии и поверхности.</p>
+<h2 id="kak-perevesti-steel-ball-v-tehnicheskom-dokumente">Как перевести steel ball в техническом документе</h2>
+<p>Steel ball переводят как «стальной шар» или «стальной шарик». В спецификации вариант выбирают по назначению позиции и терминам остальных документов. По одному английскому словосочетанию нельзя определить, нужен ли заказчику шарик для узла, мелющее тело или загрузка для обработки поверхности. Сначала нужно понять, какую работу выполняет изделие.</p>
+<p>Уточняющие слова помогают различить позиции. Steel bearing ball обозначает подшипниковый шарик, steel grinding ball — стальное мелющее тело. В выражении steel burnishing media речь идёт о стальной загрузке для обработки поверхности; её форму нужно уточнять отдельно.</p>
+<p>Перевод не заменяет обозначение изделия.</p>
+<p>Если в исходнике есть только steel ball и диаметр, описание заказа остаётся неполным. Функцию шара ищут на сборочном чертеже, а требования — в спецификации или документе на изделие.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что означает steel ball в документации и как выбрать стальные шары">Прислать чертёж на почту</a>
+</div>
+<h2 id="gde-primenyayut-stalnye-shary-i-pochemu-ih-nelzya-vybirat-od">Где применяют стальные шары и почему их нельзя выбирать одинаково</h2>
+<p>Назначение шара определяет, какие сведения нужны для его выбора. В подшипниковом узле речь идёт о теле качения, в шариковом клапане — о запорном элементе. Мелющие тела и загрузка для полирования работают уже как часть технологического процесса. Совпадение диаметра ещё не подтверждает, что изделия подходят для замены друг друга.</p>
+<table><thead><tr><th>Применение</th><th>Роль шара</th><th>Что уточнить перед заказом</th></tr></thead><tbody><tr><td>Подшипниковый узел</td><td>Тело качения</td><td>Обозначение, материал, требования к геометрии и поверхности</td></tr><tr><td>Шариковый клапан</td><td>Запорный элемент</td><td>Чертёж, сопряжение с седлом, рабочую среду</td></tr><tr><td>Измельчение</td><td>Мелющее тело</td><td>Требования изготовителя мельницы и условия процесса</td></tr><tr><td>Виброполирование</td><td>Технологическая загрузка</td><td>Форму и материал загрузки, футеровку, рабочий состав</td></tr></tbody></table>
+<p>Шариковый клапан и шаровой кран также нельзя смешивать в переводе. Для заказа важно установить конструкцию запорного элемента по документации узла.</p>
+<p>Партия подходящих по размеру шаров может оказаться неподходящей по назначению. Поэтому подбор начинается с функции изделия.</p>
+<h2 id="kak-svyazany-material-shara-tverdost-i-rabochaya-sreda">Как связаны материал шара, твёрдость и рабочая среда</h2>
+<p>В заявке на шар нужно разделять марку стали, состояние поставки и требования к твёрдости. Название материала само по себе не описывает готовую деталь полностью. Для выбора также нужны сведения о нагрузке, контакте с другими поверхностями и рабочей среде. Эти данные помогают сформулировать задание конструктору или поставщику.</p>
+<p>Требования к материалу и термообработке берут из документации на изделие. Подменять их перечнем предположительно подходящих сталей из общей статьи нельзя.</p>
+<p>Для углеродистой загрузки в виброполировании важна ещё и защита от коррозии. В разборе <a href="https://www.pfonline.com/articles/ball-burnishing-vibrators" rel="noopener" target="_blank">Ball Burnishing Vibrators</a> автор прямо предупреждает об этом при обсуждении снижения концентрации компаунда. Поэтому такой способ изменить движение загрузки нельзя оценивать отдельно от защиты стали.</p>
+<p>Рабочий состав — часть процесса.</p>
+<p>Связь материала и обработки подробнее разобрана в статье о <a href="/blog/stal-40h-sostav-svoystva-tverdost-primenenie.html">составе, свойствах и термообработке стали 40Х</a>. Она не служит основанием назначать эту марку любому шару.</p>
+<h2 id="kakie-trebovaniya-zadayut-k-diametru-forme-i-poverhnosti">Какие требования задают к диаметру, форме и поверхности</h2>
+<p>Диаметр, форма и поверхность — отдельные части задания на шар. В документации нужно различать номинальный размер, допустимые отклонения размера и требования к сферичности. Отдельно указывают состояние поверхности. Запись «шар полированный» не заменяет эти сведения и не объясняет, как проверять соответствие детали при поставке.</p>
+<p>Измерение диаметра в одном направлении не подтверждает все требования к форме. Метод контроля выбирают под конкретный параметр и его допуск. При выборе средства измерений учитывают <a href="/blog/absolyutnaya-i-otnositelnaya-pogreshnost.html">погрешность измерений</a>.</p>
+<p>Блеск не служит протоколом контроля.</p>
+<p>Для поверхности отдельно оговаривают <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>, допустимость повреждений и покрытия, если они нужны. Слова «гладкий» и «без дефектов» оставляют слишком много места для разных трактовок.</p>
+<p>Для стальных шариков подшипников качения такие документы существуют: ГОСТ 3722-2014 «Подшипники качения. Шарики стальные. Технические условия» распространяется на шарики, применяемые в подшипниках и как отдельные детали [2], а международный ISO 3290-1:2014 относится к стальным шарикам подшипников качения [3]. Если спецификация ссылается на стандарт, в заказе нужен именно этот документ с обозначением изделия. Назначать класс точности по внешнему виду шара или по похожей позиции из каталога нельзя.</p>
+<h2 id="pochemu-stalnye-shary-proskalzyvayut-v-vibratsionnoy-mashine">Почему стальные шары проскальзывают в вибрационной машине</h2>
+<p>В разборе Ball Burnishing Vibrators проскальзывание стальной загрузки связано с футеровкой чаши. Автор объясняет: более мягкая футеровка позволяет шарам слегка вдавливаться в неё и активнее вовлекаться в движение. Жёсткая футеровка в описанном процессе вызывает избыточное проскальзывание между загрузкой и стенкой. Это объяснение конкретного сбоя, а не диагноз любой вибрационной машины.</p>
+<p>Смена партии шаров не обязательно устраняет причину.</p>
+<p>Перед заменой загрузки нужно установить, под какую операцию выбрана футеровка. Затем сопоставляют её с фактическим материалом загрузки и рабочим составом.</p>
+<p>В той же публикации автор связывает большую массу стальной загрузки с требованиями к приводу, пружинам и корпусу машины. Поэтому пригодность оборудования нельзя оценивать только по тому, помещается ли партия в чашу. Допустимую загрузку и режим берут из документации оборудования.</p>
+<h2 id="chto-soglasovat-pri-vybore-zagruzki-i-zamene-futerovki">Что согласовать при выборе загрузки и замене футеровки</h2>
+<p>Поставщику футеровки нужно сообщать, какая загрузка будет работать в машине и какую операцию она выполняет. В описанном разборе этих сведений не хватило: автор указывает, что при известном применении стальных шаров подрядчик предложил бы другой материал футеровки. Ошибка возникла ещё при подготовке задания, до запуска процесса.</p>
+<p>В задание на подбор или замену футеровки включают:</p>
+<ul><li>материал и форму загрузки;</li><li>выполняемую операцию;</li><li>рабочий состав и его концентрацию;</li><li>режимы из технологической документации;</li><li>описание сбоя и условия, при которых он возникает.</li></ul>
+<p>Источник также рассматривает менее скользкий компаунд, керамическую и несферическую загрузку как возможные варианты изменения процесса. При этом автор предупреждает: результат по блеску может отличаться от полирования стальными шарами.</p>
+<p>Это варианты для обсуждения с технологом, а не готовые замены.</p>
+<p>При изменении загрузки нужно заново согласовать ожидаемую поверхность детали и способ её оценки. Восстановление движения в чаше само по себе не подтверждает, что операция даёт нужный результат.</p>
+<h2 id="chto-ukazat-v-zayavke-na-stalnye-shary-ili-sfericheskuyu-det">Что указать в заявке на стальные шары или сферическую деталь</h2>
+<p>Заявка должна связывать назначение шара с проверяемыми требованиями к изделию. Для стандартной позиции основой служат обозначение и спецификация. Для изготовления сферической детали — согласованный чертёж. Если часть требований пока не определена, это нужно обозначить прямо, а исходные условия передать на инженерную проработку до расчёта производства.</p>
+<p>Для заявки собирают:</p>
+<ul><li>назначение шара и условия работы;</li><li>чертёж или спецификацию с обозначением;</li><li>диаметр и допустимые отклонения;</li><li>требования к форме;</li><li>материал, состояние поставки и термообработку;</li><li>требования к поверхности и покрытию;</li><li>количество изделий;</li><li>порядок контроля и сопроводительные документы.</li></ul>
+<p>Неизвестные параметры нельзя заменять словами «обычный» или «стандартный». Например, если не выбран материал, нужны сведения о среде, нагрузке и сопряжённых деталях. Они помогут подготовить задание, но сами по себе чертёж не заменят.</p>
+<p>Готовая документация служит основой для оценки возможности <a href="/">изготовления деталей по чертежам</a>. Материал, допуски, поверхность, партия и контроль также входят в исходные данные для <a href="/ceny.html">расчёта стоимости металлообработки</a>.</p>
+<h2 id="kak-proverit-sootvetstvie-postavki-trebovaniyam">Как проверить соответствие поставки требованиям</h2>
+<p>Проверка поставки начинается с согласованных документов, а не с внешнего сходства шаров. Обозначение партии, материал и заявленное состояние поставки сопоставляют с заказом. Затем проверяют параметры, для которых предусмотрен контроль. Перечень измерений, методику, объём проверки и состав документов нужно определить до поставки, чтобы стороны одинаково понимали условия приёмки.</p>
+<p>Геометрию и поверхность проверяют раздельно. Документы на материал также не заменяют измерение размера или контроль формы.</p>
+<p>Важно различать соответствие заказу и пригодность для процесса. Если исходное задание было неполным, поставка по нему может не решить производственную задачу. Разбор виброполирования показывает именно такую ситуацию: выбор футеровки без сведений о стальной загрузке привёл к проблеме с её движением.</p>
+<p>Приёмка не исправляет ошибку выбора.</p>
+<p>Пришлите чертёж или спецификацию на сферическую деталь для оценки возможности изготовления и расчёта заказа.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем steel ball отличается от ball bearing в спецификации?</summary>
+<div class="faq__a"><p>Steel ball обозначает стальной шар или шарик. Ball bearing обычно обозначает шариковый подшипник. Эти записи нельзя считать одной позицией без проверки контекста и обозначения изделия.</p></div>
+</details>
+<details>
+<summary>Нужно ли указывать каждый диаметр шаров отдельной строкой заявки?</summary>
+<div class="faq__a"><p>Отдельные строки помогают закрепить количество и требования для каждого размера. Другой вариант — приложенная спецификация набора, где эти сведения перечислены. Важна однозначность состава заказа.</p></div>
+</details>
+<details>
+<summary>Что добавить в заявку, если шар работает в масле или воде?</summary>
+<div class="faq__a"><p>Нужно указать рабочую среду, условия контакта и сопрягаемую деталь. Если известны температура и нагрузка, их тоже включают в исходные данные. По одному слову «вода» или «масло» материал не назначают.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.pfonline.com/articles/ball-burnishing-vibrators" rel="noopener" target="_blank">Ball Burnishing Vibrators — Products Finishing</a> — . Подтверждающие фрагменты приведены в поле `claims`: о вдавливании шаров в футеровку, защите углеродистой загрузки от коррозии и выборе футеровки с учётом стальных шаров.</li>
+<li><a href="https://rulaws.ru/acts/Prikaz-Rosstandarta-ot-08.09.2014-N-1008-st" rel="noopener" target="_blank">ГОСТ 3722-2014 «Подшипники качения. Шарики стальные. Технические условия»</a> — приказ Росстандарта от 08.09.2014 № 1008-ст: стандарт введён с 1 января 2016 года взамен ГОСТ 3722-81. Стандарт распространяется на стальные шарики подшипников качения и отдельные детали.</li>
+<li><a href="https://www.iso.org/standard/60132.html" rel="noopener" target="_blank">ISO 3290-1:2014 «Rolling bearings — Balls — Part 1: Steel balls»</a> — Международная организация по стандартизации. Название и принадлежность стандарта к стальным шарикам подшипников качения.</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/alyuminievaya-bronza.html">
+            <img src="/images/blog/alyuminievaya-bronza-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Как выбрать алюминиевую бронзу для детали: состав, марки и условия работы</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/bronza-eto-splav-kakih-metallov.html">
+            <img src="/images/blog/bronza-eto-splav-kakih-metallov-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Из каких металлов состоит бронза и как выбрать состав для детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali.html">
+            <img src="/images/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Титан или алюминий: какой металл выбрать для детали и во сколько обойдётся её изготовление</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что означает steel ball в документации и как выбрать стальные шары">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
