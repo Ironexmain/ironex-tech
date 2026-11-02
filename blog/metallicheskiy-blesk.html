@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Металлический блеск: причины и влияние обработки поверхности</title>
+  <meta name="description" content="Почему металл блестит, а после обработки становится матовым. Как шероховатость, плёнки и полирование влияют на поверхность и что согласовать при заказе." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/metallicheskiy-blesk.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/metallicheskiy-blesk.html#article",
+      "headline": "Почему металл блестит и как обработка меняет внешний вид детали",
+      "description": "Почему металл блестит, а после обработки становится матовым. Как шероховатость, плёнки и полирование влияют на поверхность и что согласовать при заказе.",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-02",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/metallicheskiy-blesk.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/metallicheskiy-blesk-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "металлический блеск",
+        "почему металл блестит",
+        "шероховатость поверхности",
+        "параметр Ra",
+        "полирование металла",
+        "риски обработки"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Почему металл блестит и как обработка меняет внешний вид детали"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли вернуть блеск меди или стали после потускнения?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это зависит от причины потускнения. Удаление загрязнения или поверхностной плёнки не устраняет царапины и коррозионные повреждения. Способ восстановления подбирают с учётом материала, покрытия и допустимого изменения размеров."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему сварной шов блестит иначе, чем металл рядом?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После сварки и зачистки состояние поверхности шва может отличаться от соседнего участка. Разницу могут давать следы инструмента и поверхностные плёнки. Если шов остаётся видимым, его внешний вид согласуют отдельно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли зеркало на поверхностях, которые закроет сборка?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Решение зависит от функции поверхности и требований чертежа. Закрытая зона может быть рабочей или требовать очистки. Само по себе отсутствие обзора не определяет нужную обработку, но и не служит основанием для зеркальной отделки."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Один металл — разный блеск: что меняет поверхность детали" />
+  <meta property="og:description" content="Почему металл блестит, а после обработки становится матовым. Как шероховатость, плёнки и полирование влияют на поверхность и что согласовать при заказе." />
+  <meta property="og:url" content="https://ironex.tech/blog/metallicheskiy-blesk.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/metallicheskiy-blesk-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-02" />
+  <meta property="article:modified_time" content="2026-11-02" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Один металл — разный блеск: что меняет поверхность детали" />
+  <meta name="twitter:description" content="Почему металл блестит, а после обработки становится матовым. Как шероховатость, плёнки и полирование влияют на поверхность и что согласовать при заказе." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/metallicheskiy-blesk-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему металл блестит и как обработка меняет внешний вид детали">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Почему металл блестит и как обработка меняет внешний вид детали</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#pochemu-metall-blestit">Почему металл блестит</a></li>
+<li><a href="#pochemu-med-tsvetnaya-a-metallicheskiy-poroshok-vyglyadit-in">Почему медь цветная, а металлический порошок выглядит иначе</a></li>
+<li><a href="#kak-sherohovatost-napravlenie-risok-i-svet-menyayut-blesk">Как шероховатость, направление рисок и свет меняют блеск</a></li>
+<li><a href="#kak-vyglyadit-poverhnost-posle-raznyh-sposobov-obrabotki">Как выглядит поверхность после разных способов обработки</a></li>
+<li><a href="#pochemu-poverhnost-tuskneet-ili-menyaet-tsvet">Почему поверхность тускнеет или меняет цвет</a></li>
+<li><a href="#pochemu-odnogo-ra-nedostatochno-dlya-otsenki-bleska">Почему одного Ra недостаточно для оценки блеска</a></li>
+<li><a href="#chto-meshaet-poluchit-ravnomernuyu-otdelku">Что мешает получить равномерную отделку</a></li>
+<li><a href="#kogda-vazhnee-ochischaemost-i-sostoyanie-poverhnosti-chem-bl">Когда важнее очищаемость и состояние поверхности, чем блеск</a></li>
+<li><a href="#kak-soglasovat-vneshniy-vid-detali-do-izgotovleniya">Как согласовать внешний вид детали до изготовления</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему металл блестит и как обработка меняет внешний вид детали">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Почему металл блестит и как обработка меняет внешний вид детали</h1>
+        <p class="lede">Почему металл блестит, а после обработки становится матовым. Как шероховатость, плёнки и полирование влияют на поверхность и что согласовать при заказе.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-11-02">Опубликовано 2 ноября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/metallicheskiy-blesk-cover.webp" alt="Почему металл блестит и как обработка меняет внешний вид детали" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Металлический блеск связан с отражением света, в котором участвуют электроны проводимости. Но внешний вид детали зависит ещё и от поверхности: следы инструмента рассеивают свет, а плёнки и загрязнения меняют отражение. Поэтому одна заготовка после фрезерования, шлифования и полирования выглядит по-разному.</p>
+<h2 id="pochemu-metall-blestit">Почему металл блестит</h2>
+<p>В отражении света металлом участвуют электроны проводимости. Они реагируют на электромагнитное поле падающей волны, и часть света отражается от поверхности. При этом металл поглощает другую часть падающего света. Видимый блеск зависит и от самого материала, и от состояния его поверхности, и от освещения. Поэтому название сплава ещё не описывает внешний вид готовой детали.</p>
+<p>На гладкой поверхности заметнее направленное отражение: глаз видит резкий блик, иногда — очертания окружающих предметов. Неровности меняют направление отражённых лучей. Блик становится шире, а отражение предметов теряет чёткость.</p>
+<p>Состав прежний, внешний вид другой.</p>
+<p>Для заказа детали это различие принципиально. Марка материала описывает металл, но не заменяет требования к фактуре видимых граней. Их согласуют отдельно: например, поверхность со следами фрезы, направленным сатином или зеркальным отражением.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему металл блестит и как обработка меняет внешний вид детали">Прислать чертёж на почту</a>
+</div>
+<h2 id="pochemu-med-tsvetnaya-a-metallicheskiy-poroshok-vyglyadit-in">Почему медь цветная, а металлический порошок выглядит иначе</h2>
+<p><img alt="Смеситель с поверхностью из шлифованного металла" decoding="async" height="564" loading="lazy" src="/images/blog/metallicheskiy-blesk-1.webp" width="1000"/></p>
+<p><em>Пример шлифованной металлической поверхности на смесителе. Фото: <a href="https://commons.wikimedia.org/wiki/File:Brushed_metal.jpg" rel="nofollow noopener" target="_blank">Gordeonbleu ( talk )</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Цвет металла связан с тем, как он отражает разные участки видимого спектра. Медь выглядит красноватой, алюминий — серебристым. Но при осмотре детали виден не только основной материал: поверхностная плёнка, загрязнение или покрытие могут изменить оттенок. Поэтому потемневший образец нельзя сравнивать с очищенным, не учитывая состояние поверхности. По одному цвету на фотографии причину различия не установить.</p>
+<p>Форма материала тоже влияет на впечатление. У порошка множество отдельных частиц с разной ориентацией. Свет от них отражается в разные стороны, поэтому порошок может выглядеть иначе, чем гладкая заготовка из того же металла.</p>
+<p>Сам по себе тусклый вид порошка ещё не объясняет его причину.</p>
+<p>При сравнении образцов полезно разделять цвет основного материала, состояние поверхности и условия съёмки. Иначе разницу в освещении легко принять за разницу между сплавами.</p>
+<h2 id="kak-sherohovatost-napravlenie-risok-i-svet-menyayut-blesk">Как шероховатость, направление рисок и свет меняют блеск</h2>
+<p>Микрорельеф поверхности влияет на распределение отражённого света. Гладкая грань даёт более чёткий блик, а разнонаправленные неровности делают его рассеянным. Следы инструмента добавляют направленность: при повороте детали светлые и тёмные полосы меняются местами. Поэтому поверхность, которая выглядит однородной под рассеянным светом, может показать полосы под боковой лампой. Для сравнения деталей нужны одинаковые условия осмотра.</p>
+<p>Зеркальной обычно называют поверхность, в которой различимы отражения предметов. На матовой они не читаются. Сатинированная поверхность сохраняет направленную фактуру и мягкий блеск.</p>
+<p>Этих названий мало для приёмки.</p>
+<p>Слова «сатин» или «зеркало» стороны могут понимать по-разному. Образец помогает договориться точнее: на нём видны направление рисок, характер блика и допустимые следы обработки.</p>
+<p>Освещение входит в это соглашение. Без него одна сторона оценивает деталь у окна, другая — под направленной лампой, и получает другое впечатление.</p>
+<h2 id="kak-vyglyadit-poverhnost-posle-raznyh-sposobov-obrabotki">Как выглядит поверхность после разных способов обработки</h2>
+<p>Обработка оставляет на металле характерный след. После точения заметны следы подачи резца, после фрезерования — проходов инструмента, после шлифования — абразивные риски. Полирование уменьшает следы предыдущих операций, а струйно-абразивная обработка создаёт другую фактуру. Итог зависит от материала, инструмента и последовательности операций. Поэтому таблица ниже описывает возможный внешний вид, а не гарантированный результат любого процесса с таким названием.</p>
+<table><thead><tr><th>Способ обработки</th><th>Характер поверхности</th><th>Возможный видимый эффект</th><th>Что согласовать</th></tr></thead><tbody><tr><td>Точение</td><td>Следы подачи резца</td><td>Регулярный рисунок блика</td><td>Допустимые следы резца на видимых зонах</td></tr><tr><td>Фрезерование</td><td>Следы зубьев и проходов фрезы</td><td>Полосы при боковом свете</td><td>Направление проходов и необходимость отделки</td></tr><tr><td>Шлифование</td><td>Направленные абразивные риски</td><td>Направленный блеск</td><td>Направление и однородность фактуры</td></tr><tr><td>Полирование</td><td>Уменьшенные следы предыдущих операций</td><td>Более чёткое отражение</td><td>Образец поверхности и допустимые дефекты</td></tr><tr><td>Струйно-абразивная обработка</td><td>Разнонаправленный рельеф</td><td>Матовая фактура</td><td>Образец, защищаемые зоны и очистка после обработки</td></tr></tbody></table>
+<p>Для <a href="/frezerovka.html">фрезерных работ по металлу</a> важно заранее определить, останется ли обработанная грань окончательной. Если да, след инструмента становится частью внешнего вида детали.</p>
+<p>Название операции образец не заменяет.</p>
+<p>Запись «полировать» не объясняет, насколько чётким должно быть отражение и какие царапины допустимы. Эти условия нужны рядом с указанием обработки.</p>
+<h2 id="pochemu-poverhnost-tuskneet-ili-menyaet-tsvet">Почему поверхность тускнеет или меняет цвет</h2>
+<p>Потускнение может сопровождать загрязнение, появление поверхностной плёнки или изменение рельефа. Эти причины требуют разного разбора. Масляный след, коррозионное повреждение и царапины могут выглядеть как неоднородность блеска, но состояние металла под ними различается. Поэтому до решения об очистке или повторной обработке важно установить, что именно изменилось. Фотография помогает показать участок, но не всегда позволяет определить причину.</p>
+<p>Сравнивать детали лучше в согласованном состоянии: например, после очистки и высушивания. Защитное масло, следы пальцев и остатки обработки мешают оценить фактуру.</p>
+<p>Очистка тоже должна быть согласована.</p>
+<p>Если поверхность имеет покрытие, осматривают уже его внешний вид. В таком случае требования к блеску и допустимым дефектам относятся к готовой покрытой детали. Образец необработанного металла для такой приёмки не подходит.</p>
+<h2 id="pochemu-odnogo-ra-nedostatochno-dlya-otsenki-bleska">Почему одного Ra недостаточно для оценки блеска</h2>
+<p>Ra — параметр <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатости</a>, который описывает среднее отклонение профиля поверхности. Это численная характеристика рельефа, а не полное описание внешнего вида. В ней нет цвета детали, условий освещения или требований к заметности отдельных царапин. Поэтому для видимых поверхностей измеряемые параметры и визуальную приёмку задают отдельно. Одно не заменяет другое, даже если обе проверки относятся к одной грани.</p>
+<p>При измерении важны место и направление трассы. Если на поверхности есть направленные следы инструмента, способ проведения измерения нужно согласовать заранее.</p>
+<p>Число без условий контроля оставляет место для спора.</p>
+<p>Образец дополняет требования к профилю: показывает фактуру и допустимую неоднородность. При этом он не отменяет измерений, если они предусмотрены чертежом.</p>
+<blockquote><p>Ra описывает характеристику профиля. Внешний вид детали требует отдельного описания.</p></blockquote>
+<h2 id="chto-meshaet-poluchit-ravnomernuyu-otdelku">Что мешает получить равномерную отделку</h2>
+<p>Неоднородность отделки стоит разбирать по следам на поверхности и последовательности операций. Полосы, отдельные царапины и различие соседних граней — разные признаки. Для поиска причины важно знать, чем обрабатывали каждый участок и в каком состоянии он поступил на отделку. Повторное полирование без такого разбора может оставить исходную причину. Проверку удобнее вести от видимого дефекта к операции, после которой он появился.</p>
+<p>Ниже — вопросы для разбора, а не диагноз по одному внешнему признаку.</p>
+<ul><li>При пятнистой фактуре: одинаково ли обработаны соседние участки?</li><li>При отдельных глубоких царапинах: оставались ли они перед завершающей операцией?</li><li>При различии граней: совпадали ли последовательность обработки и требования к каждой зоне?</li><li>При изменении цвета: есть ли загрязнение, покрытие или следы нагрева?</li></ul>
+<p>Скорость работы абразива согласуют с рекомендациями его производителя. Максимально допустимая скорость инструмента и выбранный режим обработки — разные условия: соблюдение первого само по себе не описывает весь процесс.</p>
+<p>Для обсуждения переделки нужны образец дефекта и история обработки. Общие причины разобраны в материале <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">о браке при обработке металла</a>.</p>
+<h2 id="kogda-vazhnee-ochischaemost-i-sostoyanie-poverhnosti-chem-bl">Когда важнее очищаемость и состояние поверхности, чем блеск</h2>
+<p>Требования к отделке зависят от назначения детали. Для декоративной панели существенны отражение и однородность видимых граней. Для поверхности, которую предстоит мыть, нужно отдельно описать условия очистки и допустимые дефекты. Для сопрягаемой детали важны требования чертежа к рабочей зоне. Блеск не объединяет эти задачи в один критерий и сам по себе не подтверждает пригодность поверхности.</p>
+<p>Зеркальное отражение — ещё не результат испытания.</p>
+<p>По внешнему виду нельзя подтвердить стерильность, стойкость к коррозии или точность размеров. Эти свойства требуют собственных критериев контроля. Их нельзя подменять фотографией блестящей детали.</p>
+<p>В требованиях к заказу полезно разделить декоративные, рабочие и очищаемые зоны. Тогда подрядчик сможет обсудить обработку каждой поверхности, не распространяя требование «зеркало» на всю деталь без разбора.</p>
+<h2 id="kak-soglasovat-vneshniy-vid-detali-do-izgotovleniya">Как согласовать внешний вид детали до изготовления</h2>
+<p>До изготовления нужно связать требования к поверхности с конкретными зонами чертежа. Общее пожелание «сделать блестящей» не объясняет, какие грани будут видны, допустимы ли следы инструмента и как проводить приёмку. Рабочее описание включает назначение поверхности, фактуру, образец и условия контроля. Измеряемые параметры указывают отдельно от визуальных требований. Так стороны получают общий предмет для обсуждения до запуска обработки.</p>
+<p>В пакет требований входят:</p>
+<ol><li>Назначение зон: декоративная поверхность, сопряжение, участок для очистки.</li><li>Фактура: матовая, направленная или зеркальная; допустимое направление рисок.</li><li>Образец: согласованная поверхность с понятными границами допустимых дефектов.</li><li>Измерения: параметры профиля, места контроля и направление трассы.</li><li>Осмотр: освещение, положение детали, состояние поверхности и критерии несоответствия.</li></ol>
+<p>Фотография полезна как пояснение, но её условия тоже имеют значение. Вспышка, угол съёмки и обработка кадра меняют вид блика. Физический образец позволяет сравнить поверхности при одном освещении.</p>
+<p>Отдельно фиксируют состояние детали при передаче: с защитным маслом, после очистки или с покрытием. Иначе стороны будут оценивать разные поверхности.</p>
+<p>Для расчёта <a href="/">изготовления деталей по чертежам</a> приложите к заявке чертёж, описание видимых зон и требования к поверхности. Образец или фотографии помогут обсудить фактуру, а параметры контроля — согласовать приёмку.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Можно ли вернуть блеск меди или стали после потускнения?</summary>
+<div class="faq__a"><p>Это зависит от причины потускнения. Удаление загрязнения или поверхностной плёнки не устраняет царапины и коррозионные повреждения. Способ восстановления подбирают с учётом материала, покрытия и допустимого изменения размеров.</p></div>
+</details>
+<details>
+<summary>Почему сварной шов блестит иначе, чем металл рядом?</summary>
+<div class="faq__a"><p>После сварки и зачистки состояние поверхности шва может отличаться от соседнего участка. Разницу могут давать следы инструмента и поверхностные плёнки. Если шов остаётся видимым, его внешний вид согласуют отдельно.</p></div>
+</details>
+<details>
+<summary>Нужно ли зеркало на поверхностях, которые закроет сборка?</summary>
+<div class="faq__a"><p>Решение зависит от функции поверхности и требований чертежа. Закрытая зона может быть рабочей или требовать очистки. Само по себе отсутствие обзора не определяет нужную обработку, но и не служит основанием для зеркальной отделки.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.britannica.com/science/metallic-bond" rel="noopener" target="_blank">Metallic bond</a> — Encyclopaedia Britannica; справочный материал о металлической связи.</li>
+<li><a href="https://www.thefabricator.com/thefabricator/article/finishing/the-basics-of-metal-surface-finishes" rel="noopener" target="_blank">The basics of metal surface finishes</a> — The Fabricator; отраслевой обзор отделки металлических поверхностей.</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">
+            <img src="/images/blog/brak-pri-obrabotke-metalla-prichiny-oshibki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Брак при обработке металла: 5 ошибок, которые стоят дороже, чем предупреждение</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/pochemu-partiya-menyaet-tsenu-detali.html">
+            <img src="/images/blog/pochemu-partiya-menyaet-tsenu-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Экономика заказа</span>
+              <span class="mat-card__title">Почему партия меняет цену детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/polirovka-nerzhaveyki.html">
+            <img src="/images/blog/polirovka-nerzhaveyki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Как отполировать нержавейку и сохранить геометрию детали</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Почему металл блестит и как обработка меняет внешний вид детали">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

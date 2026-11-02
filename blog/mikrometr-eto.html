@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Микрометр: устройство, измерение и чтение шкалы</title>
+  <meta name="description" content="Как выбрать микрометр, подготовить его к работе и прочитать шкалу. Учебные примеры отсчёта, сравнение с допуском и причины расхождений." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/mikrometr-eto.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/mikrometr-eto.html#article",
+      "headline": "Что такое микрометр и как им проверить размер детали",
+      "description": "Как выбрать микрометр, подготовить его к работе и прочитать шкалу. Учебные примеры отсчёта, сравнение с допуском и причины расхождений.",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-02",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/mikrometr-eto.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/mikrometr-eto-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "микрометр это",
+        "как читать микрометр",
+        "устройство микрометра",
+        "измерение деталей микрометром",
+        "цена деления микрометра",
+        "как пользоваться микрометром"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Что такое микрометр и как им проверить размер детали"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое микрометр?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Микрометр — прибор для измерения линейных размеров. Наружным микрометром измеряют, например, диаметр вала или толщину пластины. Исполнение и диапазон подбирают под деталь."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как понять, нужно ли прибавлять половину миллиметра?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В разобранном учебном примере половину миллиметра учитывают, если соответствующая отметка на стебле уже открыта. Разметку своего прибора проверяют по руководству."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Означает ли цена деления 0,01 мм такую же погрешность?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Цена деления описывает шкалу. Характеристики погрешности прибора берут из его документации, а при оценке результата учитывают условия измерения."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если повторные показания различаются?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Повторить измерение в том же месте и направлении, проверить контакты, положение прибора и способ подвода. До выяснения причины не стоит заменять расходящиеся значения их средним."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Как читать микрометр и не перепутать деления с точностью" />
+  <meta property="og:description" content="Как выбрать микрометр, подготовить его к работе и прочитать шкалу. Учебные примеры отсчёта, сравнение с допуском и причины расхождений." />
+  <meta property="og:url" content="https://ironex.tech/blog/mikrometr-eto.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/mikrometr-eto-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-02" />
+  <meta property="article:modified_time" content="2026-11-02" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Как читать микрометр и не перепутать деления с точностью" />
+  <meta name="twitter:description" content="Как выбрать микрометр, подготовить его к работе и прочитать шкалу. Учебные примеры отсчёта, сравнение с допуском и причины расхождений." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/mikrometr-eto-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое микрометр и как им проверить размер детали">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Что такое микрометр и как им проверить размер детали</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-mikrometr-i-kakie-razmery-im-izmeryayut">Что такое микрометр и какие размеры им измеряют</a></li>
+<li><a href="#kak-ustroen-mikrometr-i-pochemu-vraschenie-daet-otschet-razm">Как устроен микрометр и почему вращение даёт отсчёт размера</a></li>
+<li><a href="#kak-vybrat-diapazon-i-ispolnenie-pod-formu-detali">Как выбрать диапазон и исполнение под форму детали</a></li>
+<li><a href="#tsena-deleniya-razreshenie-i-pogreshnost-v-chem-raznitsa">Цена деления, разрешение и погрешность: в чём разница</a></li>
+<li><a href="#chto-proverit-do-pervogo-zamera">Что проверить до первого замера</a></li>
+<li><a href="#kak-izmerit-detal-mikrometrom-poryadok-deystviy">Как измерить деталь микрометром: порядок действий</a></li>
+<li><a href="#kak-chitat-shkalu-millimetry-poloviny-i-sotye">Как читать шкалу: миллиметры, половины и сотые</a></li>
+<li><a href="#kak-sravnit-izmereniya-s-dopuskom-na-chertezhe">Как сравнить измерения с допуском на чертеже</a></li>
+<li><a href="#pochemu-povtornye-zamery-rashodyatsya">Почему повторные замеры расходятся</a></li>
+<li><a href="#proverka-kalibrovka-poverka-i-hranenie-pribora">Проверка, калибровка, поверка и хранение прибора</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое микрометр и как им проверить размер детали">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Что такое микрометр и как им проверить размер детали</h1>
+        <p class="lede">Как выбрать микрометр, подготовить его к работе и прочитать шкалу. Учебные примеры отсчёта, сравнение с допуском и причины расхождений.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-11-02">Опубликовано 2 ноября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/mikrometr-eto-cover.webp" alt="Что такое микрометр и как им проверить размер детали" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+          <p class="prose__lede">Микрометр — это прибор для измерения линейных размеров: например, диаметра вала или толщины пластины. У наружного микрометра деталь располагают между пяткой и шпинделем, а показание читают по шкалам или дисплею. Ниже — порядок подготовки, учебные примеры отсчёта и разбор ошибок при сравнении размера с чертежом.</p>
+
+          <h2 id="chto-takoe-mikrometr-i-kakie-razmery-im-izmeryayut">Что такое микрометр и какие размеры им измеряют</h2>
+<p>Микрометром измеряют линейные размеры детали. Наружная модель с плоскими контактами подходит для доступных противоположных поверхностей: например, для измерения толщины пластины. Для другого расположения поверхностей нужен инструмент подходящего исполнения. Перед работой проверяют, доступны ли места контакта и входит ли ожидаемый размер в диапазон прибора. Затем выбирают места измерения по чертежу и принятому порядку контроля.</p>
+<p>Один отсчёт не описывает всю деталь.</p>
+<p>Результат относится к выбранному месту и направлению измерения. Если на чертеже есть требования к форме или взаимному расположению поверхностей, проверки одного размера недостаточно. В протоколе полезно указывать место замера: без него трудно сопоставить результаты разных исполнителей.</p>
+<div class="cta ui" id="cta" data-cta="inline">
+            <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+            <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+            <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое микрометр и как им проверить размер детали">Прислать чертёж на почту</a>
+          </div>
+<h2 id="kak-ustroen-mikrometr-i-pochemu-vraschenie-daet-otschet-razm">Как устроен микрометр и почему вращение даёт отсчёт размера</h2>
+<p><img src="/images/blog/mikrometr-eto-1.webp" alt="Наружный микрометр CE Johansson модели 101 с диапазоном 0–25 мм" width="1000" height="494" loading="lazy" decoding="async"></p>
+<p><em>Микрометр CE Johansson середины XX века с разрешением 0,01 мм. Фото: <a href="https://commons.wikimedia.org/wiki/File:Mid_20th_century_outside_micrometer_0_to_25_mm_0_01_mm_resolution_by_CE_Johansson_AB_Eskilstuna_Sweden.jpg" rel="nofollow noopener" target="_blank">R. Henrik Nilsson</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>Основные части наружного механического микрометра — скоба, пятка, шпиндель, стебель и барабан. Пятка закреплена на скобе, а шпиндель перемещается вдоль оси при вращении микрометрического винта. По шкалам определяют его положение. Механизм ограничения усилия помогает завершить подвод контактов без дополнительного затягивания рукой. Устройство конкретной модели и порядок работы с ней описаны в руководстве.</p>
+<p>У механической модели перемещение связано с шагом винта. Часть отсчёта читают на стебле, оставшуюся — на барабане.</p>
+<p>Трещотка и стопор выполняют разные задачи: трещоткой доводят контакт, стопором закрепляют положение шпинделя. Стопор не заменяет механизм ограничения усилия.</p>
+<h2 id="kak-vybrat-diapazon-i-ispolnenie-pod-formu-detali">Как выбрать диапазон и исполнение под форму детали</h2>
+<p>Прибор выбирают по размеру детали и доступу к измеряемым поверхностям. KEYENCE приводит диапазоны 0–25 мм и 25–50 мм как примеры выбора под размер объекта. Одного подходящего диапазона недостаточно: контакты должны попадать на нужные поверхности. Для канавки, стенки трубы или внутреннего размера сначала определяют подходящее исполнение, затем проверяют характеристики конкретной модели.</p>
+<table><thead><tr><th>Задача</th><th>Что проверить при выборе</th></tr></thead><tbody><tr><td>Наружный диаметр вала</td><td>Диапазон и возможность установить контакты на нужном сечении</td></tr><tr><td>Толщина пластины</td><td>Доступ к обеим сторонам и глубину скобы</td></tr><tr><td>Размер в узкой канавке</td><td>Форму и размеры измерительных контактов</td></tr><tr><td>Толщина стенки трубы</td><td>Возможность контакта с внутренней и наружной поверхностями</td></tr><tr><td>Внутренний размер или глубина</td><td>Назначение инструмента для выбранного измерения</td></tr></tbody></table>
+<p>Насадки требуют отдельного внимания. Нельзя переносить порядок отсчёта с обычных плоских контактов на другую оснастку без проверки её инструкции.</p>
+<p>Сначала выбирают способ контакта, затем прибор.</p>
+<h2 id="tsena-deleniya-razreshenie-i-pogreshnost-v-chem-raznitsa">Цена деления, разрешение и погрешность: в чём разница</h2>
+<p><img src="/images/blog/mikrometr-eto-2.webp" alt="Микрометры для наружных и внутренних измерений и измерения глубины" width="1000" height="1000" loading="lazy" decoding="async"></p>
+<p><em>Наружный, внутренний и глубинный микрометры. Фото: <a href="https://commons.wikimedia.org/wiki/File:Micrometers111.jpg" rel="nofollow noopener" target="_blank">Splarka at English Wikipedia</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Цена деления показывает, какому изменению размера соответствует промежуток между соседними отметками шкалы. Разрешение характеризует различимость показаний; у цифрового прибора с ним связан шаг индикации. Погрешность относится к отклонению показания или результата от опорного значения. Поэтому количество рисок или знаков после запятой само по себе не доказывает пригодность прибора для контроля заданного допуска.</p>
+<p>В примере KEYENCE барабан позволяет отсчитывать 0,01 мм. Это описание отсчёта, а не обещание погрешности измерения.</p>
+<table><thead><tr><th>Характеристика</th><th>На какой вопрос отвечает</th></tr></thead><tbody><tr><td>Цена деления</td><td>Какой размер соответствует одному делению шкалы?</td></tr><tr><td>Шаг цифровой индикации</td><td>На сколько меняется последнее отображаемое значение?</td></tr><tr><td>Предел допускаемой погрешности прибора</td><td>Какие отклонения показаний допускает документация?</td></tr><tr><td>Неопределённость измерения</td><td>Каков разброс значений, обоснованно приписываемых измеряемому размеру?</td></tr></tbody></table>
+<p>При выборе под допуск нужны характеристики модели и условия измерения. По одному виду шкалы такое решение принять нельзя.</p>
+<h2 id="chto-proverit-do-pervogo-zamera">Что проверить до первого замера</h2>
+<p>Перед измерением очищают контакты и проверяют начальное показание способом, предусмотренным для модели. KEYENCE рекомендует протирать пятку и шпиндель чистой тканью. Поверхности детали тоже должны быть доступны для осмотра: загрязнение или заусенец могут помешать контакту в нужном месте. При подготовке важно различать очистку и обработку детали — удаление металла уже меняет объект контроля.</p>
+<p>Заусенец нельзя снимать произвольно ради удобного отсчёта.</p>
+<p>Для подготовки удобно использовать короткий перечень:</p>
+<ul><li>Очистить пятку, шпиндель и место контакта на детали.</li><li>Осмотреть поверхности на повреждения и заусенцы.</li><li>Проверить единицы измерения и выбранный режим отсчёта.</li><li>Проверить начальное показание способом из руководства.</li><li>При расхождении с мерой выяснить причину до контроля партии.</li></ul>
+<p>KEYENCE также советует по возможности не держать металл голыми руками либо использовать перчатки для точных работ с низкой теплопередачей. Подготовку детали и прибора к измерению согласуют с принятой методикой.</p>
+<h2 id="kak-izmerit-detal-mikrometrom-poryadok-deystviy">Как измерить деталь микрометром: порядок действий</h2>
+<p>Деталь устанавливают между пяткой и шпинделем так, чтобы контакты попадали на выбранные поверхности. Затем подводят шпиндель и завершают контакт механизмом ограничения усилия. В описании KEYENCE трещотку вращают до проскальзывания, после чего читают показание. Для своего прибора используют порядок из руководства, включая правила работы со стопором и снятия отсчёта.</p>
+<ol><li>Разведите контакты и установите деталь.</li><li>Совместите ось шпинделя с направлением измеряемого размера.</li><li>Подведите шпиндель к поверхности.</li><li>Завершите подвод трещоткой по инструкции модели.</li><li>Прочитайте показание и запишите его с единицей измерения.</li></ol>
+<p>Не дотягивайте барабан после срабатывания трещотки.</p>
+<p>При измерении вала проверяют, что контакты расположены на нужном сечении и не попали на фаску. После повторной установки сопоставляют показания. Если они расходятся, сначала проверяют место контакта, чистоту и положение прибора.</p>
+<p>Усреднение не устраняет причину расхождения. В записи результата сохраняют сведения о сечении и направлении, чтобы следующий исполнитель мог повторить измерение.</p>
+<h2 id="kak-chitat-shkalu-millimetry-poloviny-i-sotye">Как читать шкалу: миллиметры, половины и сотые</h2>
+<p>Порядок чтения зависит от устройства и разметки конкретного микрометра. Ниже приведён учебный пример механической шкалы: шаг винта принят равным 0,5 мм, барабан разделён на 50 частей. Тогда одному делению соответствует 0,5 ÷ 50 = 0,01 мм. Это исходные условия примера, а не характеристики любого микрометра.</p>
+<p>Сначала читают стебель, затем барабан.</p>
+<p>Если на стебле последняя открытая отметка — 12 мм, а отметка 12,5 мм ещё закрыта, к 12 мм добавляют отсчёт барабана. При значении 0,15 мм результат составит:</p>
+<p><strong>12,00 + 0,15 = 12,15 мм.</strong></p>
+<p>Если отметка 12,5 мм уже открыта, при том же положении барабана получится:</p>
+<p><strong>12,50 + 0,15 = 12,65 мм.</strong></p>
+<p>Пропуск открытой половины миллиметра в этом примере даст ошибку на 0,5 мм.</p>
+<p>У прибора с другим диапазоном сначала проверяют нумерацию стебля. Начало диапазона нельзя автоматически прибавлять к уже полному показанию шкалы: это приведёт к двойному учёту.</p>
+<p>На цифровой модели перед чтением проверяют единицу измерения и режим отсчёта. Относительный ноль может отличаться от начала абсолютного отсчёта.</p>
+<h2 id="kak-sravnit-izmereniya-s-dopuskom-na-chertezhe">Как сравнить измерения с допуском на чертеже</h2>
+<p>Для сравнения нужны предельные размеры, подходящий метод измерения и правило принятия решения. Номинал с отклонениями переводят в нижний и верхний пределы. После измерения сопоставляют результат с этими границами. При этом результат возле границы требует внимания к неопределённости измерения: одного арифметического сравнения показания с пределом может быть недостаточно.</p>
+<p>Рассмотрим условную задачу, а не производственный норматив. На учебном чертеже задан диаметр 20 мм с верхним отклонением +0,018 мм и нижним −0,005 мм.</p>
+<p>Получаем:</p>
+<table><thead><tr><th>Величина</th><th>Расчёт</th><th>Значение</th></tr></thead><tbody><tr><td>Нижний предельный размер</td><td>20 − 0,005</td><td>19,995 мм</td></tr><tr><td>Верхний предельный размер</td><td>20 + 0,018</td><td>20,018 мм</td></tr><tr><td>Ширина допуска</td><td>20,018 − 19,995</td><td>0,023 мм</td></tr></tbody></table>
+<p>Показание 20,016 мм численно находится между этими пределами. До верхней границы остаётся 0,002 мм. Но заключение о соответствии требует принятого правила контроля и учёта характеристик измерения.</p>
+<p>Это ещё не решение о приёмке.</p>
+<p>Места и направления замеров фиксируют заранее. Вопросы объёма контроля разобраны в материале о том, <a href="/razdel/kontrol-kachestva.html">как принять партию деталей по чертежу</a>.</p>
+<h2 id="pochemu-povtornye-zamery-rashodyatsya">Почему повторные замеры расходятся</h2>
+<p>Разные показания могут относиться как к разным размерам детали, так и к разным условиям измерения. Поэтому сначала повторяют установку в том же месте и направлении. Затем проверяют чистоту контактов, положение прибора, способ подвода и режим отсчёта. Изменять сразу несколько условий неудобно: после этого трудно установить причину расхождения.</p>
+<table><thead><tr><th>Что заметили</th><th>Что проверить</th></tr></thead><tbody><tr><td>Показания меняются после переустановки</td><td>Место контакта, положение прибора, загрязнение</td></tr><tr><td>Результат зависит от затягивания</td><td>Использование механизма ограничения усилия</td></tr><tr><td>Значения меняются во время работы</td><td>Нагрев детали и прибора, условия подготовки</td></tr><tr><td>В разных сечениях получены разные значения</td><td>Совпадают ли места и направления измерения</td></tr><tr><td>Механический отсчёт отличается на половину миллиметра</td><td>Не пропущена ли открытая отметка на стебле</td></tr><tr><td>Цифровое показание неожиданно изменилось</td><td>Единицы измерения и режим абсолютного или относительного отсчёта</td></tr></tbody></table>
+<p>Расхождение — повод разобраться, а не выбрать удобное число.</p>
+<p>Если размер проверяют на разных стадиях изготовления, в протоколе указывают и стадию. Результаты до обработки и после неё нельзя сопоставлять без этого контекста.</p>
+<h2 id="proverka-kalibrovka-poverka-i-hranenie-pribora">Проверка, калибровка, поверка и хранение прибора</h2>
+<p>Перед работой проверяют начальное показание, но такая проверка не описывает состояние прибора во всём диапазоне. KEYENCE указывает концевые меры длины или специальную меру для проверки микрометра. Какие меры и точки использовать, определяет процедура для конкретного прибора. Самостоятельная установка нуля не заменяет документированную оценку его характеристик.</p>
+<p>Не стоит смешивать названия операций. Сверка показания с мерой, регулировка прибора и оформление результатов калибровки или поверки требуют разного порядка действий. Здесь не приводятся обязательность поверки и её интервалы: подтверждающих документов в источниках статьи нет.</p>
+<p>Для хранения используют рекомендации изготовителя. Прибор защищают от загрязнения и ударов; повреждённые контакты нельзя считать исправными только потому, что шкала показывает ноль.</p>
+<p>Контроль размера начинают планировать до выпуска партии.</p>
+<p>При заказе <a href="/">изготовления деталей по чертежам</a> заранее согласуют контролируемые размеры, места измерения и оформление результатов. Пришлите чертёж с допусками, чтобы согласовать изготовление и контроль детали.</p>
+
+          <h2 id="faq">Частые вопросы</h2>
+          <div class="faq">
+            <details open>
+              <summary>Что такое микрометр?</summary>
+              <div class="faq__a"><p>Микрометр — прибор для измерения линейных размеров. Наружным микрометром измеряют, например, диаметр вала или толщину пластины. Исполнение и диапазон подбирают под деталь.</p></div>
+            </details>
+<details>
+              <summary>Как понять, нужно ли прибавлять половину миллиметра?</summary>
+              <div class="faq__a"><p>В разобранном учебном примере половину миллиметра учитывают, если соответствующая отметка на стебле уже открыта. Разметку своего прибора проверяют по руководству.</p></div>
+            </details>
+<details>
+              <summary>Означает ли цена деления 0,01 мм такую же погрешность?</summary>
+              <div class="faq__a"><p>Нет. Цена деления описывает шкалу. Характеристики погрешности прибора берут из его документации, а при оценке результата учитывают условия измерения.</p></div>
+            </details>
+<details>
+              <summary>Что делать, если повторные показания различаются?</summary>
+              <div class="faq__a"><p>Повторить измерение в том же месте и направлении, проверить контакты, положение прибора и способ подвода. До выяснения причины не стоит заменять расходящиеся значения их средним.</p></div>
+            </details>
+          </div>
+
+          <h2 id="istochniki">Источники</h2>
+          <ul class="sources">
+            <li><a href="https://www.keyence.com/ss/products/measure-sys/measurement-selection/type/micrometer.jsp" rel="noopener" target="_blank">Micrometer — KEYENCE</a> — описание прибора и порядка работы.</li>
+<li><a href="https://www.mmsonline.com/articles/theres-a-micrometer-for-that" rel="noopener" target="_blank">There&#x27;s a Micrometer for That — Modern Machine Shop</a> — дополнительный материал об исполнениях и измерительных контактах.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/absolyutnaya-i-otnositelnaya-pogreshnost.html">
+            <img src="/images/blog/absolyutnaya-i-otnositelnaya-pogreshnost-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Как рассчитать абсолютную и относительную погрешность измерения</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html">
+            <img src="/images/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html">
+            <img src="/images/blog/oshibki-pri-zakaze-detaley-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое микрометр и как им проверить размер детали">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

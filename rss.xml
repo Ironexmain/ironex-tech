@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Что такое микрометр и как им проверить размер детали</title>
+      <link>https://ironex.tech/blog/mikrometr-eto.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/mikrometr-eto.html</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как выбрать микрометр, подготовить его к работе и прочитать шкалу. Учебные примеры отсчёта, сравнение с допуском и причины расхождений.</description>
+    </item>
+    <item>
+      <title>Почему металл блестит и как обработка меняет внешний вид детали</title>
+      <link>https://ironex.tech/blog/metallicheskiy-blesk.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/metallicheskiy-blesk.html</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Почему металл блестит, а после обработки становится матовым. Как шероховатость, плёнки и полирование влияют на поверхность и что согласовать при заказе.</description>
+    </item>
+    <item>
+      <title>426-ФЗ и специальная оценка условий труда на металлообрабатывающем производстве</title>
+      <link>https://ironex.tech/blog/426-fz-o-spetsialnoy-otsenke-usloviy-truda.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/426-fz-o-spetsialnoy-otsenke-usloviy-truda.html</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как подготовить металлообрабатывающее производство к СОУТ: сведения о рабочих местах, вопросы исполнителю, проверка отчёта и учёт изменений в цехе.</description>
+    </item>
     <item>
       <title>Что означает steel ball в документации и как выбрать стальные шары</title>
       <link>https://ironex.tech/blog/steel-ball-perevod-i-primenenie.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Tue, 27 Oct 2026 00:00:00 +0300</pubDate>
       <category>Контроль качества</category>
       <description>Какие ошибки заказчика ведут к браку и срыву сроков при изготовлении деталей по чертежу — и что записать в заявку, чтобы их избежать.</description>
-    </item>
-    <item>
-      <title>Кремний — металл или нет и что его свойства значат для обработки</title>
-      <link>https://ironex.tech/blog/kremniy-metall-ili-net.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kremniy-metall-ili-net.html</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Почему кремний называют металлоидом, как он проводит ток и чем отличается от кремнезёма. Что учитывать при выборе сплава с кремнием для детали.</description>
-    </item>
-    <item>
-      <title>Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать</title>
-      <link>https://ironex.tech/blog/oshibki-pri-proektirovanii-detalej.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/oshibki-pri-proektirovanii-detalej.html</guid>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Экономика заказа</category>
-      <description>Тонкие стенки, глубокие карманы, лишние допуски: какие решения в чертеже растят цену и срок детали и что поправить до отправки в цех.</description>
-    </item>
-    <item>
-      <title>Оксидирование стали: что даёт покрытие и в каких деталях его выбирают</title>
-      <link>https://ironex.tech/blog/oksidirovanie-stali-chto-daet-pokrytie.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/oksidirovanie-stali-chto-daet-pokrytie.html</guid>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Оксидирование почти не меняет размеры детали, но от ржавчины защищает только с маслом. Где покрытие работает, где нет и что указать в чертеже.</description>
     </item>
   </channel>
 </rss>
