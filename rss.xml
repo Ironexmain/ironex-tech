@@ -5,7 +5,23 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как выбрать алюминиевую полосу для изготовления детали</title>
+      <link>https://ironex.tech/blog/polosa-alyuminievaya-razmery-splavy-obrabotka.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/polosa-alyuminievaya-razmery-splavy-obrabotka.html</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как выбрать размеры, сплав и состояние алюминиевой полосы под обработку. Какие требования к заготовке указать в чертеже и заявке.</description>
+    </item>
+    <item>
+      <title>Как выбрать нутромер и измерить внутренний размер детали</title>
+      <link>https://ironex.tech/blog/nutromer.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/nutromer.html</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Как выбрать нутромер под отверстие и допуск чертежа, настроить отсчёт и записать результаты контроля. Разбираем ошибки измерения.</description>
+    </item>
     <item>
       <title>Что такое микрометр и как им проверить размер детали</title>
       <link>https://ironex.tech/blog/mikrometr-eto.html</link>
@@ -149,22 +165,6 @@
       <pubDate>Wed, 28 Oct 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Литий относится к щелочным металлам. Разбираем признаки металла, отличие от солей, роль в аккумуляторах и выбор алюминиево-литиевого сплава для детали.</description>
-    </item>
-    <item>
-      <title>Как разобраться в параметрах, обозначениях и классах шероховатости поверхности</title>
-      <link>https://ironex.tech/blog/parametry-sherohovatosti-poverhnosti.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/parametry-sherohovatosti-poverhnosti.html</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Параметры шероховатости поверхности, обозначения на чертеже и таблица значений. Как читать старые классы и согласовать требования к изготовлению детали.</description>
-    </item>
-    <item>
-      <title>Ошибки при заказе деталей по чертежу: что приводит к браку и срыву сроков</title>
-      <link>https://ironex.tech/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/oshibki-pri-zakaze-detaley-po-chertezhu.html</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Контроль качества</category>
-      <description>Какие ошибки заказчика ведут к браку и срыву сроков при изготовлении деталей по чертежу — и что записать в заявку, чтобы их избежать.</description>
     </item>
   </channel>
 </rss>
