@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Можно ли сваривать сталь 40Х и как сохранить свойства детали</title>
+      <link>https://ironex.tech/blog/svarka-stali-40h.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/svarka-stali-40h.html</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Что проверить перед сваркой стали 40Х: состояние металла, технологию, присадку, подогрев и контроль. Как сравнить ремонт с изготовлением новой детали.</description>
+    </item>
+    <item>
+      <title>Как выбрать аргоновый редуктор под баллон, горелку и задачу сварки</title>
+      <link>https://ironex.tech/blog/reduktor-argonovyy.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/reduktor-argonovyy.html</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Как выбрать аргоновый редуктор для TIG-сварки: проверить соединения, давление, контроль расхода и линии для горелки и поддува.</description>
+    </item>
+    <item>
+      <title>Что означает НАКС сварщика и как проверить допуск к вашему заказу</title>
+      <link>https://ironex.tech/blog/naks-svarshchika-chto-eto.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/naks-svarshchika-chto-eto.html</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как сопоставить удостоверение сварщика с чертежом, проверить область аттестации и согласовать документы подрядчика перед изготовлением.</description>
+    </item>
     <item>
       <title>Как выбрать алюминиевую полосу для изготовления детали</title>
       <link>https://ironex.tech/blog/polosa-alyuminievaya-razmery-splavy-obrabotka.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Thu, 29 Oct 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Как подготовить проект точила, подобрать комплектующие и заказать детали. Что должно быть известно о креплении круга, защите и проверках до сборки.</description>
-    </item>
-    <item>
-      <title>Позиционный допуск отверстий: зачем он нужен и как его читать на чертеже</title>
-      <link>https://ironex.tech/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/pozicionnyy-dopusk-otverstiy-kak-ego-chitat.html</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Как читать позиционный допуск отверстий на чертеже: рамка, базы A|B|C, модификаторы MMC/LMC и расчёт бонусного допуска с числовым примером.</description>
-    </item>
-    <item>
-      <title>Как отполировать нержавейку и сохранить геометрию детали</title>
-      <link>https://ironex.tech/blog/polirovka-nerzhaveyki.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/polirovka-nerzhaveyki.html</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Чем отполировать нержавейку: выбор инструмента, кругов и паст, удаление царапин и доводка. Контроль нагрева, кромок и размеров детали.</description>
-    </item>
-    <item>
-      <title>Почему литий — металл и чем он отличается от солей и сплавов</title>
-      <link>https://ironex.tech/blog/litiy-metall-ili-nemetall.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/litiy-metall-ili-nemetall.html</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Литий относится к щелочным металлам. Разбираем признаки металла, отличие от солей, роль в аккумуляторах и выбор алюминиево-литиевого сплава для детали.</description>
     </item>
   </channel>
 </rss>

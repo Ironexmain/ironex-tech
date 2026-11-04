@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сварка стали 40Х: подогрев, присадка и контроль трещин</title>
+  <meta name="description" content="Что проверить перед сваркой стали 40Х: состояние металла, технологию, присадку, подогрев и контроль. Как сравнить ремонт с изготовлением новой детали." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/svarka-stali-40h.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/svarka-stali-40h.html#article",
+      "headline": "Можно ли сваривать сталь 40Х и как сохранить свойства детали",
+      "description": "Что проверить перед сваркой стали 40Х: состояние металла, технологию, присадку, подогрев и контроль. Как сравнить ремонт с изготовлением новой детали.",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/svarka-stali-40h.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/svarka-stali-40h-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "сварка стали 40х",
+        "химический состав стали 40х",
+        "предел прочности стали 40х",
+        "нормализация стали 40х",
+        "холодные трещины при сварке",
+        "подогрев при сварке стали 40х"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Можно ли сваривать сталь 40Х и как сохранить свойства детали"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли подтвердить марку 40Х по искре и твёрдости?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для решения о сварке нужен согласованный способ идентификации материала. Если документов нет, результаты проверки по искре и измерения твёрдости нельзя автоматически считать достаточным подтверждением состава и истории детали."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли выправить вал из 40Х нагревом горелкой?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В этой статье нет подтверждённой технологии такой правки. Для конкретного вала нужно отдельно согласовать нагрев, допустимые изменения геометрии и проверку после операции."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где измерять твёрдость сварного соединения из 40Х?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Места измерений и критерии оценки нужно указать в программе контроля. Запись «проверить твёрдость» без схемы точек не позволяет однозначно сопоставить результаты с требованиями."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Сварка 40Х: что проверить до подогрева и первого шва" />
+  <meta property="og:description" content="Что проверить перед сваркой стали 40Х: состояние металла, технологию, присадку, подогрев и контроль. Как сравнить ремонт с изготовлением новой детали." />
+  <meta property="og:url" content="https://ironex.tech/blog/svarka-stali-40h.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/svarka-stali-40h-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-04" />
+  <meta property="article:modified_time" content="2026-11-04" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Сварка 40Х: что проверить до подогрева и первого шва" />
+  <meta name="twitter:description" content="Что проверить перед сваркой стали 40Х: состояние металла, технологию, присадку, подогрев и контроль. Как сравнить ремонт с изготовлением новой детали." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/svarka-stali-40h-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Можно ли сваривать сталь 40Х и как сохранить свойства детали">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Можно ли сваривать сталь 40Х и как сохранить свойства детали</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#kogda-svarka-stali-40h-dopustima">Когда сварка стали 40Х допустима</a></li>
+<li><a href="#kak-sostav-40h-svyazan-s-riskom-treschin">Как состав 40Х связан с риском трещин</a></li>
+<li><a href="#pochemu-predel-prochnosti-nuzhno-ukazyvat-vmeste-s-termoobra">Почему предел прочности нужно указывать вместе с термообработкой</a></li>
+<li><a href="#chto-proverit-i-podgotovit-pered-svarkoy">Что проверить и подготовить перед сваркой</a></li>
+<li><a href="#kak-vybirayut-sposob-svarki-elektrody-i-provoloku">Как выбирают способ сварки, электроды и проволоку</a></li>
+<li><a href="#podogrev-mezhsloynaya-temperatura-i-ohlazhdenie">Подогрев, межслойная температура и охлаждение</a></li>
+<li><a href="#normalizatsiya-zakalka-i-otpusk-chto-menyaetsya-posle-svarki">Нормализация, закалка и отпуск: что меняется после сварки</a></li>
+<li><a href="#kak-proverit-soedinenie-i-chto-delat-pri-treschinah">Как проверить соединение и что делать при трещинах</a></li>
+<li><a href="#remontirovat-svarkoy-ili-izgotovit-detal-zanovo">Ремонтировать сваркой или изготовить деталь заново</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Можно ли сваривать сталь 40Х и как сохранить свойства детали">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Можно ли сваривать сталь 40Х и как сохранить свойства детали</h1>
+        <p class="lede">Что проверить перед сваркой стали 40Х: состояние металла, технологию, присадку, подогрев и контроль. Как сравнить ремонт с изготовлением новой детали.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-11-04">Опубликовано 4 ноября 2026</time>
+
+            <span>7 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/svarka-stali-40h-cover.webp" alt="Можно ли сваривать сталь 40Х и как сохранить свойства детали" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+          <p class="prose__lede">Вопрос о сварке стали 40Х нужно решать для конкретной детали. Для оценки нужны документы на металл, история термообработки, чертёж и сведения о нагрузках. Выбор электрода — только часть подготовки. До ремонта важно определить, какие свойства требуется получить и как проверить результат.</p>
+
+          <h2 id="kogda-svarka-stali-40h-dopustima">Когда сварка стали 40Х допустима</h2>
+<p>Одного обозначения 40Х в чертеже недостаточно для решения о сварке. Сначала нужно определить задачу: изготовление нового узла, ремонт повреждения или восстановление поверхности наплавкой. Затем — сопоставить требования к детали с предлагаемой технологией. Решение должно учитывать подготовку соединения, нагрев, последующую обработку и доступные способы проверки.</p>
+<p>При изготовлении нового узла эти операции можно предусмотреть до заказа заготовки. При ремонте исходные данные приходится восстанавливать по документам и результатам обследования. Если история детали неизвестна, это отдельный вопрос для конструктора и технолога.</p>
+<p>Сначала оценивают допустимость ремонта, затем выбирают способ его выполнения.</p>
+<p>В согласованном решении стоит зафиксировать, кто задаёт требования к соединению и кто принимает результат. Формулировка «заварить по месту» не описывает ни технологию, ни критерии приёмки.</p>
+<div class="cta ui" id="cta" data-cta="inline">
+            <div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+            <div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+            <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Можно ли сваривать сталь 40Х и как сохранить свойства детали">Прислать чертёж на почту</a>
+          </div>
+<h2 id="kak-sostav-40h-svyazan-s-riskom-treschin">Как состав 40Х связан с риском трещин</h2>
+<p>Для оценки состава стали нужны данные конкретной плавки. Обозначение марки не заменяет сертификат и не даёт полного набора исходных данных для расчёта режима. Если при выборе технологии используют углеродный эквивалент, в расчёте должны быть указаны формула, исходные значения и границы её применимости. Сам по себе результат калькулятора не служит разрешением на сварку.</p>
+<table><thead><tr><th>Что проверить</th><th>Где искать</th><th>Что зафиксировать</th></tr></thead><tbody><tr><td>Марку и номер плавки</td><td>Сертификат и маркировка заготовки</td><td>Связь документа с конкретной деталью</td></tr><tr><td>Химический состав</td><td>Сертификат или согласованный протокол анализа</td><td>Значения, использованные при разработке технологии</td></tr><tr><td>Требования к составу</td><td>Документ на поставку металла</td><td>Применённый документ и его редакцию</td></tr><tr><td>Оценку риска трещин</td><td>Обоснование технологии сварки</td><td>Учтённые факторы и способы контроля</td></tr></tbody></table>
+<p>Если сертификата нет, способ идентификации материала нужно согласовать отдельно. Подмена неизвестного состава усреднёнными данными из справочника оставляет неопределённость в расчёте.</p>
+<p>Общий контекст раскрыт в статье о <a href="/blog/stal-sostav-svoystva-vidy.html">составе, свойствах и видах стали</a>.</p>
+<h2 id="pochemu-predel-prochnosti-nuzhno-ukazyvat-vmeste-s-termoobra">Почему предел прочности нужно указывать вместе с термообработкой</h2>
+<p>Для расчёта соединения нужно знать, к какому состоянию металла относятся заявленные свойства. В исходных данных стоит связать предел прочности с документом, термообработкой и условиями испытаний. Если в сертификате приведены результаты для образца, нужно проверить, как их применяют к рассматриваемой детали. Одной цифры без этих пояснений недостаточно для согласования ремонта.</p>
+<p>Твёрдость и предел прочности следует указывать раздельно. Если используется пересчёт между ними, для него нужны методика и обоснование применимости.</p>
+<table><thead><tr><th>Исходные данные</th><th>Что уточнить</th></tr></thead><tbody><tr><td>Состояние поставки</td><td>Как оно обозначено в документах на металл</td></tr><tr><td>Термообработка</td><td>Какие операции подтверждены документами</td></tr><tr><td>Механические свойства</td><td>Для какого состояния и образца получены результаты</td></tr><tr><td>Требования чертежа</td><td>Какие свойства должна иметь готовая деталь</td></tr></tbody></table>
+<p>Особенно важно разделять свойства заготовки и требования к готовому изделию.</p>
+<p>В справочном материале о <a href="/blog/stal-40h-sostav-svoystva-tverdost-primenenie.html">стали 40Х</a> эти параметры также нужно читать вместе с условиями, к которым они относятся.</p>
+<h2 id="chto-proverit-i-podgotovit-pered-svarkoy">Что проверить и подготовить перед сваркой</h2>
+<p>Подготовку удобно вести от документов к технологии. Сначала устанавливают материал и требования к детали, затем оценивают повреждение и доступность операций. После этого согласуют разделку, сварку, обработку и приёмку. Такой порядок помогает обнаружить недостающие данные до вмешательства в деталь, когда ещё можно сравнить ремонт с изготовлением замены.</p>
+<ol><li>Сопоставить чертёж, маркировку и документы на металл. Отдельно отметить неизвестную историю термообработки.</li><li>Описать нагрузки, рабочую среду, геометрию и допустимые отклонения после ремонта.</li><li>Зафиксировать повреждение и согласовать способ определения его границ.</li><li>Подготовить последовательность удаления дефекта, сборки, сварки и восстановления размеров.</li><li>Установить контрольные операции и критерии приёмки.</li></ol>
+<p>До разделки нужно понять, по каким признакам подтвердят удаление повреждённого металла. До сварки — как проверят готовое соединение.</p>
+<p>Пробелы в исходных данных лучше перечислить прямо, а не скрывать за общей записью «по технологии».</p>
+<h2 id="kak-vybirayut-sposob-svarki-elektrody-i-provoloku">Как выбирают способ сварки, электроды и проволоку</h2>
+<p>Способ сварки и присадочный материал нужно выбирать вместе с требованиями к соединению. В запросе технологу стоит описать доступ к шву, положение детали, объём работ и последующую обработку. Для выбранного материала нужны документация производителя и подтверждение применимости к задаче. Название электрода или проволоки без этих сведений не образует готовую технологию.</p>
+<p>Стык одинаковых сталей, разнородное соединение и восстановительная наплавка требуют отдельного рассмотрения. В каждом случае важно определить, какие свойства проверяют после завершения всех операций.</p>
+<table><thead><tr><th>Задача</th><th>Что требуется согласовать</th></tr></thead><tbody><tr><td>Соединение 40Х с 40Х</td><td>Требования к шву и прилегающему металлу</td></tr><tr><td>Соединение с другой сталью</td><td>Данные обеих сторон и применимость присадки</td></tr><tr><td>Восстановительная наплавка</td><td>Назначение слоя, размеры и последующую обработку</td></tr></tbody></table>
+<p>Условия хранения и подготовки сварочных материалов следует брать из документации на выбранный продукт. Переносить режим подготовки с другого материала без обоснования нельзя.</p>
+<h2 id="podogrev-mezhsloynaya-temperatura-i-ohlazhdenie">Подогрев, межслойная температура и охлаждение</h2>
+<p>В этой статье нет подтверждённых температурных режимов для сварки 40Х, поэтому использовать её как инструкцию по подогреву нельзя. Для конкретного соединения в технологии нужно отдельно описать нагрев до сварки, температурные ограничения между проходами и порядок охлаждения. Для каждого параметра должны быть понятны основание выбора, способ измерения и действия при отклонении.</p>
+<p>Запись «подогреть деталь» оставляет слишком много вопросов. Нужны зона нагрева, расположение точек измерения, прибор и порядок регистрации результатов.</p>
+<p>Измерение должно быть воспроизводимым.</p>
+<p>Если при работе меняются исходные условия — например, состав материала, геометрия соединения или способ закрепления, — применимость выбранного режима нужно оценить повторно. Название марки само по себе не обосновывает перенос технологии на другую деталь.</p>
+<h2 id="normalizatsiya-zakalka-i-otpusk-chto-menyaetsya-posle-svarki">Нормализация, закалка и отпуск: что меняется после сварки</h2>
+<p>Послесварочную термообработку нужно рассматривать как часть общего маршрута изготовления или ремонта. В документации следует указать её цель, последовательность операций и требования к результату. Названия «нормализация», «закалка» или «отпуск» без режима и критериев проверки не отвечают на вопрос, какие свойства получит деталь после завершения работ.</p>
+<p>Если исходная деталь уже прошла термообработку, нужны сведения об этом состоянии. Отдельно следует обосновать, как предлагаемый маршрут связан с требованиями чертежа.</p>
+<p>Нельзя обещать восстановление прежних свойств одним упоминанием отпуска.</p>
+<p>В расчёт работ стоит включить обработку после нагрева, проверку геометрии и контроль свойств. Припуски и промежуточные размеры лучше согласовать до начала ремонта, чтобы весь маршрут можно было оценить целиком.</p>
+<h2 id="kak-proverit-soedinenie-i-chto-delat-pri-treschinah">Как проверить соединение и что делать при трещинах</h2>
+<p>План контроля нужно подготовить до сварки. В нём следует связать каждый метод с искомым дефектом, доступной зоной и критериями оценки. Отдельно нужно определить момент проверки: сразу после операции или после предусмотренной выдержки. Общая запись «провести неразрушающий контроль» не объясняет, что именно проверят и на каком основании примут результат.</p>
+<p>Визуальный, магнитопорошковый, капиллярный, ультразвуковой и радиографический методы нельзя назначать как взаимозаменяемые. Применимость каждого метода должна быть обоснована для материала и геометрии соединения.</p>
+<p>Для приёмки удобно собрать следующий комплект:</p>
+<ul><li>записи параметров сварки и сведения о партии присадки;</li><li>результаты проверки геометрии;</li><li>протоколы контроля с указанием проверенных зон;</li><li>результаты измерения твёрдости или испытаний, если они предусмотрены;</li><li>заключение по согласованным критериям.</li></ul>
+<p>Обнаруженная трещина требует отдельного решения по исправлению. В нём нужно описать удаление дефекта, проверку подготовленной зоны, повторную сварку и последующую приёмку.</p>
+<p>Повторный проход сам по себе не подтверждает устранение причины.</p>
+<h2 id="remontirovat-svarkoy-ili-izgotovit-detal-zanovo">Ремонтировать сваркой или изготовить деталь заново</h2>
+<p>Ремонт и изготовление новой детали стоит сравнивать по полным маршрутам. Для ремонта нужны обследование, подготовка, сварка, возможная термообработка, восстановление размеров и контроль. Для замены — заготовка, обработка и подтверждение требований чертежа. Сравнение только стоимости сварочного шва с ценой новой детали не показывает общий состав работ.</p>
+<p>Полезно сопоставить не только цену, но и полноту исходных данных. Если для ремонта остаются вопросы о материале, состоянии или приёмке, их нужно отразить в расчёте отдельно.</p>
+<p>Решение должно опираться на проверяемые требования.</p>
+<p>Для альтернативного расчёта подходит <a href="/">изготовление деталей по чертежам</a>. Состав затрат разобран на странице <a href="/ceny.html">цен на металлообработку</a>. Приложите к заявке чертёж, количество деталей, сведения о материале и требования к приёмке, чтобы сравнить оба варианта.</p>
+
+          <h2 id="faq">Частые вопросы</h2>
+          <div class="faq">
+            <details open>
+              <summary>Можно ли подтвердить марку 40Х по искре и твёрдости?</summary>
+              <div class="faq__a"><p>Для решения о сварке нужен согласованный способ идентификации материала. Если документов нет, результаты проверки по искре и измерения твёрдости нельзя автоматически считать достаточным подтверждением состава и истории детали.</p></div>
+            </details>
+<details>
+              <summary>Можно ли выправить вал из 40Х нагревом горелкой?</summary>
+              <div class="faq__a"><p>В этой статье нет подтверждённой технологии такой правки. Для конкретного вала нужно отдельно согласовать нагрев, допустимые изменения геометрии и проверку после операции.</p></div>
+            </details>
+<details>
+              <summary>Где измерять твёрдость сварного соединения из 40Х?</summary>
+              <div class="faq__a"><p>Места измерений и критерии оценки нужно указать в программе контроля. Запись «проверить твёрдость» без схемы точек не позволяет однозначно сопоставить результаты с требованиями.</p></div>
+            </details>
+          </div>
+
+          <h2 id="istochniki">Источники</h2>
+          <ul class="sources">
+            <li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Росстандарт</a> — конкретный документ и подтверждающие положения не представлены.</li>
+<li><a href="https://www.iso.org/" rel="noopener" target="_blank">Международная организация по стандартизации ISO</a> — конкретные документы по сварке и контролю не представлены.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/rezhim-zakalki-stali-40h.html">
+            <img src="/images/blog/rezhim-zakalki-stali-40h-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Как выбрать режим закалки и отпуска стали 40Х по требованиям к детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/stal-40h-sostav-svoystva-tverdost-primenenie.html">
+            <img src="/images/blog/stal-40h-sostav-svoystva-tverdost-primenenie-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Сталь 40Х для деталей по чертежу: свойства, термообработка и контроль твёрдости</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kontaktnaya-tochechnaya-svarka-kontrol-kachestva.html">
+            <img src="/images/blog/kontaktnaya-tochechnaya-svarka-kontrol-kachestva-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Контактная точечная сварка: где применяют и как проверяют качество сварной точки</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Можно ли сваривать сталь 40Х и как сохранить свойства детали">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
