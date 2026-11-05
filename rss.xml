@@ -5,7 +5,23 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Что такое ЛКП и как оно защищает металлические детали</title>
+      <link>https://ironex.tech/blog/lkp-eto-zashchita-metallicheskih-detalej.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/lkp-eto-zashchita-metallicheskih-detalej.html</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Что означает ЛКП, чем покрытие отличается от краски и как защищает металл. Разбираем слои, толщину, маскирование и требования к окраске деталей по чертежу.</description>
+    </item>
+    <item>
+      <title>Сколько сантиметров в 15 мм и как проверить расчёт</title>
+      <link>https://ironex.tech/blog/15-mm-skolko-sm.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/15-mm-skolko-sm.html</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>15 мм = 1,5 см, или 1 см 5 мм. Формула перевода, проверка по линейке, таблица единиц длины и пример пересчёта размера вместе с отклонениями.</description>
+    </item>
     <item>
       <title>Можно ли сваривать сталь 40Х и как сохранить свойства детали</title>
       <link>https://ironex.tech/blog/svarka-stali-40h.html</link>
@@ -149,22 +165,6 @@
       <pubDate>Thu, 29 Oct 2026 00:00:00 +0300</pubDate>
       <category>Технологии</category>
       <description>Когда нужно развёртывание отверстий, сколько припуска оставить после сверления и почему развёртка не исправляет увод оси. Что указать в чертеже.</description>
-    </item>
-    <item>
-      <title>Развёртка листового металла при гибке: как K-фактор определяет длину заготовки</title>
-      <link>https://ironex.tech/blog/razvertka-listovogo-metalla-k-faktor.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/razvertka-listovogo-metalla-k-faktor.html</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Как посчитать развёртку детали с гибом: K-фактор, припуск и вычет, формулы и расчёт Г-образной детали с числами. Типичные ошибки.</description>
-    </item>
-    <item>
-      <title>Как собрать точило для инструмента: проект, детали и проверки</title>
-      <link>https://ironex.tech/blog/kak-sdelat-tochilo-dlya-zatochki-instrumenta.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-sdelat-tochilo-dlya-zatochki-instrumenta.html</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как подготовить проект точила, подобрать комплектующие и заказать детали. Что должно быть известно о креплении круга, защите и проверках до сборки.</description>
     </item>
   </channel>
 </rss>

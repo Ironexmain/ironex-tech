@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЛКП — это лакокрасочное покрытие: зачем оно металлической детали</title>
+  <meta name="description" content="Что означает ЛКП, чем покрытие отличается от краски и как защищает металл. Разбираем слои, толщину, маскирование и требования к окраске деталей по чертежу." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/lkp-eto-zashchita-metallicheskih-detalej.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/lkp-eto-zashchita-metallicheskih-detalej.html#article",
+      "headline": "Что такое ЛКП и как оно защищает металлические детали",
+      "description": "Что означает ЛКП, чем покрытие отличается от краски и как защищает металл. Разбираем слои, толщину, маскирование и требования к окраске деталей по чертежу.",
+      "datePublished": "2026-11-05",
+      "dateModified": "2026-11-05",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/lkp-eto-zashchita-metallicheskih-detalej.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/lkp-eto-zashchita-metallicheskih-detalej-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "лкп это",
+        "лакокрасочное покрытие",
+        "лакокрасочный материал",
+        "толщина ЛКП",
+        "маскирование поверхностей",
+        "подготовка поверхности"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Что такое ЛКП и как оно защищает металлические детали"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем лакокрасочное покрытие отличается от цинкового слоя?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Цинковый слой — металлическое покрытие. ЛКП формируется из лакокрасочного материала. Эти покрытия могут применяться вместе, если система окраски рассчитана на оцинкованное основание."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли окрасить собранный узел целиком?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Возможность зависит от конструкции узла. Нужно проверить доступ к поверхностям, возможность подготовки и маскирования, а также совместимость всех элементов с нанесением и отверждением. Закрытые полости и подвижные соединения требуют отдельного решения."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что писать рядом с кодом цвета в чертеже?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Помимо цвета указывают систему покрытия или требования для её подбора, сухую толщину, поверхности без окраски и правила приёмки. Если данные вынесены в отдельное задание, в чертеже дают ссылку на него."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Почему окрашенная деталь может ржаветь и не подходить к сборке" />
+  <meta property="og:description" content="Что означает ЛКП, чем покрытие отличается от краски и как защищает металл. Разбираем слои, толщину, маскирование и требования к окраске деталей по чертежу." />
+  <meta property="og:url" content="https://ironex.tech/blog/lkp-eto-zashchita-metallicheskih-detalej.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/lkp-eto-zashchita-metallicheskih-detalej-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-05" />
+  <meta property="article:modified_time" content="2026-11-05" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Почему окрашенная деталь может ржаветь и не подходить к сборке" />
+  <meta name="twitter:description" content="Что означает ЛКП, чем покрытие отличается от краски и как защищает металл. Разбираем слои, толщину, маскирование и требования к окраске деталей по чертежу." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/lkp-eto-zashchita-metallicheskih-detalej-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое ЛКП и как оно защищает металлические детали">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Что такое ЛКП и как оно защищает металлические детали</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#lkp-eto-gotovoe-pokrytie-a-ne-kraska-v-banke">ЛКП — это готовое покрытие, а не краска в банке</a></li>
+<li><a href="#zachem-lkp-nanosyat-na-korpusa-ramy-i-kronshteyny">Зачем ЛКП наносят на корпуса, рамы и кронштейны</a></li>
+<li><a href="#kakie-byvayut-sistemy-lkp-i-zachem-nuzhny-raznye-sloi">Какие бывают системы ЛКП и зачем нужны разные слои</a></li>
+<li><a href="#pochemu-podgotovka-metalla-vliyaet-na-rezultat-okraski">Почему подготовка металла влияет на результат окраски</a></li>
+<li><a href="#kak-tolschina-lkp-vliyaet-na-razmery-rezby-i-sborku">Как толщина ЛКП влияет на размеры, резьбы и сборку</a></li>
+<li><a href="#chto-ukazat-v-zadanii-na-okrasku-detali-po-chertezhu">Что указать в задании на окраску детали по чертежу</a></li>
+<li><a href="#kak-proveryayut-tolschinu-vneshniy-vid-i-adgeziyu-pokrytiya">Как проверяют толщину, внешний вид и адгезию покрытия</a></li>
+<li><a href="#chto-oznachayut-skoly-puzyri-i-otsloeniya">Что означают сколы, пузыри и отслоения</a></li>
+<li><a href="#kogda-pokrytie-mozhno-vosstanovit-i-kak-ego-sohranit">Когда покрытие можно восстановить и как его сохранить</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое ЛКП и как оно защищает металлические детали">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Что такое ЛКП и как оно защищает металлические детали</h1>
+        <p class="lede">Что означает ЛКП, чем покрытие отличается от краски и как защищает металл. Разбираем слои, толщину, маскирование и требования к окраске деталей по чертежу.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-11-05">Опубликовано 5 ноября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/lkp-eto-zashchita-metallicheskih-detalej-cover.webp" alt="Что такое ЛКП и как оно защищает металлические детали" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">ЛКП — это лакокрасочное покрытие, которое образуется после нанесения и высыхания либо отверждения лакокрасочного материала. На металлических деталях оно помогает защищать основание от воздействия среды и задаёт цвет и внешний вид. Результат зависит от подготовки металла, выбранной системы и технологии нанесения.</p>
+<h2 id="lkp-eto-gotovoe-pokrytie-a-ne-kraska-v-banke">ЛКП — это готовое покрытие, а не краска в банке</h2>
+<p>Лакокрасочный материал — продукт для нанесения, а ЛКП — полученное из него покрытие на поверхности. Материал может быть жидким, пастообразным или порошковым. После нанесения он должен сформировать покрытие в предусмотренных для него условиях. Поэтому при заказе окраски важно описать и материал, и требования к готовому слою: его толщине, внешнему виду и сцеплению с основанием.</p>
+<p>В банке находится материал. На корпусе или кронштейне проверяют уже покрытие.</p>
+<p>Краски, эмали, грунты и лаки относятся к лакокрасочным материалам. Они могут выполнять разные задачи и входить в одну систему окраски. При этом отдельный лак или грунт нужен не каждой системе.</p>
+<p>Число слоёв и порядок нанесения задают для выбранного покрытия. Универсальной схемы для всех металлических деталей нет.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое ЛКП и как оно защищает металлические детали">Прислать чертёж на почту</a>
+</div>
+<h2 id="zachem-lkp-nanosyat-na-korpusa-ramy-i-kronshteyny">Зачем ЛКП наносят на корпуса, рамы и кронштейны</h2>
+<p><img alt="Пара настенных кронштейнов на два светильника из позолоченной и окрашенной бронзы с эмалью" decoding="async" height="973" loading="lazy" src="/images/blog/lkp-eto-zashchita-metallicheskih-detalej-1.webp" width="1000"/></p>
+<p><em>Австрийские настенные кронштейны около 1740–1750 годов: позолоченная и окрашенная бронза, расписная эмаль. Фото: <a href="https://commons.wikimedia.org/wiki/File:Pair_of_two-light_wall_brackets_%28IA_mma_pair_of_twolight_wall_brackets_205772%29.jpg" rel="nofollow noopener" target="_blank">Internet Archive identifier : mma_pair_of_twolight_wall_brackets_205772 https:/…</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>ЛКП наносят для защиты металла и получения нужного внешнего вида. Покрытие ограничивает контакт основания с окружающей средой, но его возможности зависят от состава и состояния слоя. Для корпуса в помещении и рамы на улице условия различаются. Поэтому выбор начинается с места работы детали, воздействия влаги, солнечного света и веществ, с которыми она соприкасается.</p>
+<p>Цвет сам по себе не описывает защиту.</p>
+<p>Повреждение покрытия может открыть доступ к металлу. Однако скол не позволяет заранее определить скорость коррозии: она зависит и от основания, и от условий эксплуатации.</p>
+<p>Окраска также не исправляет ошибку размера и не устраняет дефекты изготовления. Посадочные поверхности, резьбы и электрические контакты могут требовать защиты от попадания краски. Эти зоны отмечают на чертеже до производства.</p>
+<h2 id="kakie-byvayut-sistemy-lkp-i-zachem-nuzhny-raznye-sloi">Какие бывают системы ЛКП и зачем нужны разные слои</h2>
+<p>Система ЛКП объединяет материалы и слои, которые должны работать совместно на выбранном основании. Грунт может обеспечивать сцепление и участвовать в защите металла, промежуточный слой — формировать нужную толщину. Финишное покрытие задаёт внешний вид и принимает внешние воздействия. Распределение этих задач зависит от конкретной системы: переносить свойства одного продукта на все материалы с похожим названием нельзя.</p>
+<p>Жидкая и <a href="/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali.html">порошковая окраска</a> различаются формой материала и процессом нанесения. Тип связующего — другая характеристика. Например, слово «порошковый» само по себе не отвечает на вопрос о пригодности покрытия для улицы.</p>
+<table><thead><tr><th>Что выбирают</th><th>Что нужно выяснить</th></tr></thead><tbody><tr><td>Основание</td><td>Подходит ли система для стали, алюминия или оцинкованной поверхности</td></tr><tr><td>Состав слоёв</td><td>Какие материалы совместимы и в каком порядке их наносят</td></tr><tr><td>Условия работы</td><td>Для каких воздействий производитель описывает применение</td></tr><tr><td>Отверждение</td><td>Какие условия нужны для формирования покрытия</td></tr><tr><td>Ремонт</td><td>Чем и как допускается восстанавливать повреждённый участок</td></tr></tbody></table>
+<p>Название связующего не заменяет документацию продукта.</p>
+<p>Для сравнения вариантов нужны сведения о конкретных материалах. Без них таблица «эпоксидное против полиуретанового» скрывает больше различий, чем объясняет.</p>
+<h2 id="pochemu-podgotovka-metalla-vliyaet-na-rezultat-okraski">Почему подготовка металла влияет на результат окраски</h2>
+<p><img alt="Нанесение порошкового покрытия" decoding="async" height="750" loading="lazy" src="/images/blog/lkp-eto-zashchita-metallicheskih-detalej-2.webp" width="1000"/></p>
+<p><em>Процесс нанесения порошковой краски. Фото: <a href="https://commons.wikimedia.org/wiki/File:Pulverlack-Applikation.JPG" rel="nofollow noopener" target="_blank">Hardcoreraveman</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Подготовка поверхности нужна, чтобы покрытие сцепилось с основанием. Масло, пыль, продукты коррозии и непрочный старый слой могут мешать этому контакту. Внешне чистая поверхность ещё не означает готовность к окраске. Способ очистки и требования к её результату выбирают с учётом металла, его состояния и материалов, которые будут нанесены дальше.</p>
+<p>Адгезия — сцепление покрытия с основанием.</p>
+<p>Подготовка может включать обезжиривание, механическую очистку и химическую обработку. Эти операции не взаимозаменяемы: удаление масла не решает задачу удаления окалины. Важны также последовательность операций и защита очищенной детали от повторного загрязнения.</p>
+<p>Рабочий порядок подготовки включает:</p>
+<ol><li>Оценку металла, загрязнений, коррозии и старого покрытия.</li><li>Выбор обработки для этого основания и системы окраски.</li><li>Очистку с последующей проверкой результата.</li><li>Передачу детали на окраску в условиях, предусмотренных технологией.</li></ol>
+<p>Оцинкованная поверхность тоже требует подготовки под выбранную краску. Цинковый слой и ЛКП решают связанные, но разные задачи. Подробнее об основании — в разборе <a href="/blog/ocinkovka-metalla-zashchita-ot-korrozii-stoimost.html">способов оцинковки металла</a>.</p>
+<h2 id="kak-tolschina-lkp-vliyaet-na-razmery-rezby-i-sborku">Как толщина ЛКП влияет на размеры, резьбы и сборку</h2>
+<p>Покрытие занимает место на поверхности и меняет размеры готовой детали. Для сборки важна сухая толщина — после высыхания или отверждения. У жидких материалов дополнительно контролируют мокрый слой, если это предусмотрено технологией. Переносить его толщину на готовое покрытие напрямую нельзя: при формировании плёнки её состояние и объём меняются.</p>
+<p>На наружной цилиндрической поверхности покрытие увеличивает диаметр, а внутри отверстия — уменьшает. При равномерной толщине изменение диаметра складывается из толщин на противоположных сторонах.</p>
+<p>Для посадки даже небольшой слой может оказаться существенным.</p>
+<p>Маскирование защищает участки, где покрытие мешает работе узла. Это могут быть резьбы, посадки под подшипники, поверхности уплотнения и электрические контакты. Состав таких зон определяет конструкция.</p>
+<p>В чертеже важно различать размеры металла до окраски и размеры готовой детали. Иначе исполнитель может выдержать размер заготовки, а сборка после нанесения покрытия потребует доработки.</p>
+<h2 id="chto-ukazat-v-zadanii-na-okrasku-detali-po-chertezhu">Что указать в задании на окраску детали по чертежу</h2>
+<p>Задание на окраску связывает требования к покрытию с условиями работы детали. Одного кода цвета недостаточно: он не описывает защиту, толщину и поверхности без краски. Если систему подбирает исполнитель, ему нужны сведения об основании, эксплуатации и ограничениях производства. Результат подбора затем фиксируют вместе с правилами приёмки.</p>
+<p>Для согласования удобно использовать такой перечень:</p>
+<ul><li>Металл и состояние поверхности, включая старое покрытие или слой цинка.</li><li>Условия работы: помещение или улица, влага, вещества, нагрев и механические воздействия.</li><li>Выбранная система либо требования для её подбора.</li><li>Подготовка поверхности.</li><li>Сухая толщина и места её измерения.</li><li>Цвет, блеск и допустимый внешний вид.</li><li>Зоны маскирования.</li><li>Ограничения по нагреву детали и собранного узла.</li><li>Проверки при приёмке и применение контрольных образцов.</li></ul>
+<p>Особенно важно различать температуру воздуха в печи и температуру самой детали. Если для отверждения задан режим по металлу, показания воздуха не заменяют проверку его прогрева.</p>
+<p>Требования должны быть доступны до расчёта работ.</p>
+<p>Подготовка, маскирование и контроль влияют на состав операций. Эти факторы разобраны в статье <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">о цене металлообработки по чертежу</a>.</p>
+<h2 id="kak-proveryayut-tolschinu-vneshniy-vid-i-adgeziyu-pokrytiya">Как проверяют толщину, внешний вид и адгезию покрытия</h2>
+<p>Приёмка покрытия состоит из разных проверок: одна не подменяет остальные. Толщина показывает геометрию слоя, но сама по себе не подтверждает сцепление с металлом или пригодность к рабочей среде. Внешний вид тоже не раскрывает все свойства. Для каждой проверки нужны согласованные метод, место измерения и критерий, по которому принимают результат.</p>
+<table><thead><tr><th>Что проверяют</th><th>Что фиксируют при согласовании</th></tr></thead><tbody><tr><td>Подготовку поверхности</td><td>Признаки готовности основания перед нанесением</td></tr><tr><td>Сухую толщину</td><td>Прибор, точки измерения и допустимые значения</td></tr><tr><td>Внешний вид</td><td>Освещение, образец и допустимые дефекты</td></tr><tr><td>Адгезию</td><td>Метод, место испытания и критерий оценки</td></tr><tr><td>Отверждение</td><td>Параметры процесса и способ проверки по документации материала</td></tr></tbody></table>
+<p>Прибор и метод измерения подбирают с учётом металла, покрытия и формы детали. На кромке, в углублении или рядом с резьбой условия отличаются от измерения на плоскости.</p>
+<p>Точки контроля лучше определить заранее.</p>
+<p>Испытание с надрезами повреждает покрытие. Поэтому место проверки или использование отдельного образца согласуют до приёмки. Результат такого испытания не следует превращать в обещание срока службы детали.</p>
+<h2 id="chto-oznachayut-skoly-puzyri-i-otsloeniya">Что означают сколы, пузыри и отслоения</h2>
+<p>Скол, царапина, пузырь и отслоение описывают разные повреждения покрытия. Для оценки важно, какие слои затронуты и открыт ли металл. Один внешний признак может иметь несколько причин, связанных с подготовкой, нанесением, отверждением или эксплуатацией. Поэтому фотография помогает зафиксировать дефект, но обычно не даёт достаточно данных для окончательного вывода о его происхождении.</p>
+<p>Царапина по финишу и повреждение до металла требуют разной оценки.</p>
+<p>При осмотре отмечают расположение и размер участка, глубину повреждения и время его появления. Полезны сведения о системе окраски, подготовке поверхности, условиях работы и контакте с веществами.</p>
+<p>Ржавый след требует проверки основания. Он не доказывает сам по себе, что коррозия началась именно в месте видимого пятна: загрязнение могло попасть с соседнего элемента.</p>
+<p>Сначала фиксируют наблюдения, затем проверяют причины.</p>
+<p>Это помогает избежать ремонта, который закрывает внешний след, но оставляет источник повреждения.</p>
+<h2 id="kogda-pokrytie-mozhno-vosstanovit-i-kak-ego-sohranit">Когда покрытие можно восстановить и как его сохранить</h2>
+<p>Способ восстановления выбирают по глубине повреждения, состоянию металла и совместимости ремонтного материала с оставшимся покрытием. Поверхностная потёртость и скол до основания требуют разных операций. Возможность локального ремонта зависит также от доступа к участку и условий отверждения. На собранном узле повторить исходную технологию окраски бывает невозможно.</p>
+<p>Полировка снимает часть поверхности. Утраченный слой она не восстанавливает.</p>
+<p>При повреждении до металла ремонт включает оценку основания и подготовку участка. Простое закрашивание видимого следа не подтверждает, что устранена причина дефекта. Отдельно проверяют, выдержат ли соседние материалы очистку, растворители и нагрев.</p>
+<p>Для ухода нужны сведения о совместимости покрытия с моющими средствами. Рекомендации для автомобильного кузова нельзя автоматически переносить на промышленный корпус или раму.</p>
+<p>Итог ремонта проверяют по согласованным критериям: внешний вид не заменяет остальные требования.</p>
+<p>Для расчёта изготовления <a href="/">передайте чертёж детали</a> и приложите условия эксплуатации, требования к толщине, зоны маскирования и правила приёмки.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Чем лакокрасочное покрытие отличается от цинкового слоя?</summary>
+<div class="faq__a"><p>Цинковый слой — металлическое покрытие. ЛКП формируется из лакокрасочного материала. Эти покрытия могут применяться вместе, если система окраски рассчитана на оцинкованное основание.</p></div>
+</details>
+<details>
+<summary>Можно ли окрасить собранный узел целиком?</summary>
+<div class="faq__a"><p>Возможность зависит от конструкции узла. Нужно проверить доступ к поверхностям, возможность подготовки и маскирования, а также совместимость всех элементов с нанесением и отверждением. Закрытые полости и подвижные соединения требуют отдельного решения.</p></div>
+</details>
+<details>
+<summary>Что писать рядом с кодом цвета в чертеже?</summary>
+<div class="faq__a"><p>Помимо цвета указывают систему покрытия или требования для её подбора, сухую толщину, поверхности без окраски и правила приёмки. Если данные вынесены в отдельное задание, в чертеже дают ссылку на него.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.iso.org/standard/64831.html" rel="noopener" target="_blank">ISO 12944-1:2017. Paints and varnishes — Corrosion protection of steel structures by protective paint systems — Part 1: General introduction</a> — .</li>
+<li><a href="https://www.iso.org/standard/65532.html" rel="noopener" target="_blank">ISO 2808:2019. Paints and varnishes — Determination of film thickness</a> — .</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/alyuminievaya-bronza.html">
+            <img src="/images/blog/alyuminievaya-bronza-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Как выбрать алюминиевую бронзу для детали: состав, марки и условия работы</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/obrabotka-na-tokarnom-stanke.html">
+            <img src="/images/blog/obrabotka-na-tokarnom-stanke-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Как обрабатывают детали на токарном станке: от заготовки до контроля</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/zaschita-detaley-ot-korrozii-na-vremya-hraneniya.html">
+            <img src="/images/blog/zaschita-detaley-ot-korrozii-na-vremya-hraneniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Как закрыть партию от ржавчины, пока она ждёт монтажа</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Что такое ЛКП и как оно защищает металлические детали">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
