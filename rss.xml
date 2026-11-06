@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как образуется металлическая стружка и как управлять ею при обработке</title>
+      <link>https://ironex.tech/blog/metallicheskaya-struzhka.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/metallicheskaya-struzhka.html</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Как различать виды металлической стружки, разбирать причины наматывания, подбирать стружколом и организовывать отвод из зоны резания.</description>
+    </item>
+    <item>
+      <title>Что такое дюраль и как выбрать её для детали по чертежу</title>
+      <link>https://ironex.tech/blog/dyural-eto-sostav-svoystva-obrabotka.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/dyural-eto-sostav-svoystva-obrabotka.html</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Чем дюраль отличается от алюминия, зачем различать марку и состояние заготовки и что учесть при обработке детали по чертежу.</description>
+    </item>
+    <item>
+      <title>Сталь 08Х18Н10: как выбрать материал и обработку для детали</title>
+      <link>https://ironex.tech/blog/08h18n10-sostav-svoystva-obrabotka.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/08h18n10-sostav-svoystva-obrabotka.html</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Как проверить состав и свойства стали 08Х18Н10, согласовать замену на AISI 304 и подготовить требования к обработке, сварке и приёмке детали.</description>
+    </item>
     <item>
       <title>Что такое ЛКП и как оно защищает металлические детали</title>
       <link>https://ironex.tech/blog/lkp-eto-zashchita-metallicheskih-detalej.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Fri, 30 Oct 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Как подготовить режим закалки и отпуска стали 40Х: исходные данные, прогрев, выдержка, охлаждение и контроль результата по требованиям чертежа.</description>
-    </item>
-    <item>
-      <title>Резьбофрезерование или метчик: чем нарезать внутреннюю резьбу в вашей детали</title>
-      <link>https://ironex.tech/blog/rezbofrezerovanie-ili-metchik-vnutrennyaya-rezba.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/rezbofrezerovanie-ili-metchik-vnutrennyaya-rezba.html</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Метчик или резьбовая фреза: сравнение по диаметру, глубине, материалу и серии. Где дешевле, где риск брака и что указать в чертеже при заказе.</description>
-    </item>
-    <item>
-      <title>Как варить чугун электродами: от проверки детали до контроля шва</title>
-      <link>https://ironex.tech/blog/kak-svarit-chugun-elektrodami.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/kak-svarit-chugun-elektrodami.html</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Как подготовить чугунную деталь к сварке электродами, подобрать расходники и режим, организовать охлаждение и проверить результат ремонта.</description>
-    </item>
-    <item>
-      <title>Развёртывание отверстий: когда без развёртки не обойтись и чего она не исправит</title>
-      <link>https://ironex.tech/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/razvertyvanie-otverstij-kogda-nuzhna-razvertka.html</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Когда нужно развёртывание отверстий, сколько припуска оставить после сверления и почему развёртка не исправляет увод оси. Что указать в чертеже.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>08Х18Н10: состав, характеристики и обработка по чертежу</title>
+  <meta name="description" content="Как проверить состав и свойства стали 08Х18Н10, согласовать замену на AISI 304 и подготовить требования к обработке, сварке и приёмке детали." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/08h18n10-sostav-svoystva-obrabotka.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/08h18n10-sostav-svoystva-obrabotka.html#article",
+      "headline": "Сталь 08Х18Н10: как выбрать материал и обработку для детали",
+      "description": "Как проверить состав и свойства стали 08Х18Н10, согласовать замену на AISI 304 и подготовить требования к обработке, сварке и приёмке детали.",
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/08h18n10-sostav-svoystva-obrabotka.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/08h18n10-sostav-svoystva-obrabotka-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "08х18н10",
+        "сталь 08х18н10 состав",
+        "08х18н10 характеристики",
+        "08х18н10 AISI 304",
+        "обработка 08х18н10",
+        "предел текучести 08х18н10"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Сталь 08Х18Н10: как выбрать материал и обработку для детали"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли заменить 08Х18Н10 на AISI 304?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "По представленным источникам такая замена не подтверждена. Нужны конкретные документы на оба материала, сравнение требований и согласование ответственного за конструкцию."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где взять состав и предел текучести 08Х18Н10?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Состав проверяют по документу на марку и сертификату плавки. Предел текучести ищут для выбранного вида продукции и состояния поставки, с указанием условий испытания. Подтверждённых значений в этой статье нет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли назначить режим резания только по марке стали?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для выбора режима нужны также инструмент, операция, размеры, закрепление и условия охлаждения. Отправной точкой служат рекомендации производителя выбранного инструмента для соответствующего материала."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Заменяет ли сертификат на металл приёмку готовой детали?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сертификат относится к поставленному материалу. Размеры, поверхность, швы и другие требования к готовому изделию проверяют отдельно."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="08Х18Н10: что проверить перед изготовлением детали" />
+  <meta property="og:description" content="Как проверить состав и свойства стали 08Х18Н10, согласовать замену на AISI 304 и подготовить требования к обработке, сварке и приёмке детали." />
+  <meta property="og:url" content="https://ironex.tech/blog/08h18n10-sostav-svoystva-obrabotka.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/08h18n10-sostav-svoystva-obrabotka-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-06" />
+  <meta property="article:modified_time" content="2026-11-06" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="08Х18Н10: что проверить перед изготовлением детали" />
+  <meta name="twitter:description" content="Как проверить состав и свойства стали 08Х18Н10, согласовать замену на AISI 304 и подготовить требования к обработке, сварке и приёмке детали." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/08h18n10-sostav-svoystva-obrabotka-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сталь 08Х18Н10: как выбрать материал и обработку для детали">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Сталь 08Х18Н10: как выбрать материал и обработку для детали</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#kogda-08h18n10-podhodit-dlya-detali-po-chertezhu">Когда 08Х18Н10 подходит для детали по чертежу</a></li>
+<li><a href="#rasshifrovka-08h18n10-i-proverka-sostava">Расшифровка 08Х18Н10 и проверка состава</a></li>
+<li><a href="#mehanicheskie-i-fizicheskie-svoystva-kakie-znacheniya-sravni">Механические и физические свойства: какие значения сравнивать</a></li>
+<li><a href="#aisi-304-i-sosednie-marki-kogda-vozmozhna-zamena">AISI 304 и соседние марки: когда возможна замена</a></li>
+<li><a href="#ogranicheniya-po-korrozii-srede-i-temperature">Ограничения по коррозии, среде и температуре</a></li>
+<li><a href="#kak-vybrat-zagotovku-i-marshrut-izgotovleniya">Как выбрать заготовку и маршрут изготовления</a></li>
+<li><a href="#tochenie-frezerovanie-i-sverlenie-kak-uchityvat-naklep">Точение, фрезерование и сверление: как учитывать наклёп</a></li>
+<li><a href="#termoobrabotka-i-deformatsiya-chto-menyaetsya-v-svoystvah">Термообработка и деформация: что меняется в свойствах</a></li>
+<li><a href="#svarka-udalenie-zausentsev-i-vosstanovlenie-poverhnosti">Сварка, удаление заусенцев и восстановление поверхности</a></li>
+<li><a href="#chto-proverit-v-sertifikate-i-pri-priemke-detali">Что проверить в сертификате и при приёмке детали</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сталь 08Х18Н10: как выбрать материал и обработку для детали">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Сталь 08Х18Н10: как выбрать материал и обработку для детали</h1>
+        <p class="lede">Как проверить состав и свойства стали 08Х18Н10, согласовать замену на AISI 304 и подготовить требования к обработке, сварке и приёмке детали.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-11-06">Опубликовано 6 ноября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/08h18n10-sostav-svoystva-obrabotka-cover.webp" alt="Сталь 08Х18Н10: как выбрать материал и обработку для детали" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Для изготовления детали из стали 08Х18Н10 нужны требования к материалу, рабочей среде и готовому изделию. Состав проверяют по документу на марку и сертификату поставки, свойства — с учётом вида заготовки и её состояния. Замену на AISI 304 согласовывают отдельно: одного упоминания в таблице аналогов недостаточно.</p>
+<h2 id="kogda-08h18n10-podhodit-dlya-detali-po-chertezhu">Когда 08Х18Н10 подходит для детали по чертежу</h2>
+<p>Пригодность 08Х18Н10 для детали оценивают по условиям её работы. Для этого нужны состав среды, температура, нагрузки, характер контакта с другими деталями и требования к поверхности. Если предусмотрена сварка, в оценку включают соединение. Пока исходных данных нет, выбор материала остаётся предварительным: название марки не заменяет проверку конструкции.</p>
+<p>Для корпуса, втулки и зубчатого колеса нужны разные исходные данные. У корпуса важны герметичность и работа в среде. У трущейся пары — нагрузка, смазка и допустимый износ.</p>
+<p>В чертеже фиксируют размеры, допуски, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a> и требования к швам. Для изделия с пищевым контактом отдельно определяют требования к материалам и обработке поверхности.</p>
+<p>Решение о марке принимает ответственный за конструкцию.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сталь 08Х18Н10: как выбрать материал и обработку для детали">Прислать чертёж на почту</a>
+</div>
+<h2 id="rasshifrovka-08h18n10-i-proverka-sostava">Расшифровка 08Х18Н10 и проверка состава</h2>
+<p><img alt="Вилка из аустенитной нержавеющей стали 18-8" decoding="async" height="667" loading="lazy" src="/images/blog/08h18n10-sostav-svoystva-obrabotka-1.webp" width="1000"/></p>
+<p><em>Вилка из <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавеющей стали</a> с содержанием хрома 18% и никеля 8%. Фото: <a href="https://commons.wikimedia.org/wiki/File:18-8_stainless_steel_fork_1.jpg" rel="nofollow noopener" target="_blank">Yapparina</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>Расшифровку марки и допустимое содержание элементов нужно проверять по конкретному документу, который распространяется на выбранный материал. В представленном блоке источников такой документ не указан: ссылка на главную страницу организации не подтверждает состав. Поэтому здесь нет численных пределов элементов и утверждений о том, какие значения обозначают цифры марки.</p>
+<p>При закупке сравнивают требования к составу с результатами анализа поставленной плавки. Название марки в счёте и фактический состав в сертификате — разные сведения.</p>
+<table><thead><tr><th>Что проверить</th><th>С чем сравнить</th></tr></thead><tbody><tr><td>Обозначение материала</td><td>Чертёж и заказ</td></tr><tr><td>Документ на марку</td><td>Обозначение и редакция документа в заказе</td></tr><tr><td>Содержание элементов</td><td>Таблица состава и примечания к ней</td></tr><tr><td>Результаты анализа плавки</td><td>Пределы, установленные для заказанного материала</td></tr><tr><td>Номер плавки или партии</td><td>Маркировка поставленной заготовки</td></tr></tbody></table>
+<p>Если документ поставщика не позволяет установить соответствие, вопрос решают до передачи металла в обработку.</p>
+<h2 id="mehanicheskie-i-fizicheskie-svoystva-kakie-znacheniya-sravni">Механические и физические свойства: какие значения сравнивать</h2>
+<p>Характеристики материала для расчёта и приёмки нужно сопровождать условиями, к которым они относятся. Для прочности и пластичности указывают вид продукции, размеры, состояние поставки и условия испытания. Справочная таблица без этих пояснений не позволяет проверить конкретную заготовку. В этой статье численные свойства не приведены: подтверждающих документов на выбранный полуфабрикат нет.</p>
+<p>Для сравнения предложений поставщиков удобнее собрать сведения в одну таблицу.</p>
+<table><thead><tr><th>Показатель</th><th>Что должно сопровождать значение</th></tr></thead><tbody><tr><td>Временное сопротивление</td><td>Вид продукции, состояние и условия испытания</td></tr><tr><td>Условный предел текучести</td><td>Принятое условное удлинение и условия испытания</td></tr><tr><td>Относительное удлинение</td><td>Тип образца и расчётная длина</td></tr><tr><td>Твёрдость</td><td>Метод измерения и состояние материала</td></tr><tr><td>Плотность</td><td>Источник и условия, для которых дано значение</td></tr><tr><td>Тепловое расширение</td><td>Температурный интервал и источник данных</td></tr></tbody></table>
+<p>Значения для расчёта конструкции и требования приёмки стоит обозначать отдельно. Это помогает избежать ситуации, когда справочную величину принимают за гарантированное свойство поставки.</p>
+<p>Массу заготовки рассчитывают как произведение плотности на объём. Для точного расчёта нужны обоснованная плотность и геометрия заготовки.</p>
+<h2 id="aisi-304-i-sosednie-marki-kogda-vozmozhna-zamena">AISI 304 и соседние марки: когда возможна замена</h2>
+<p>Замену 08Х18Н10 на AISI 304 нельзя обосновать одной строкой в таблице аналогов. Для решения нужны документы на оба материала и требования изделия. В представленных источниках нет конкретных таблиц состава и свойств, поэтому соответствие этих обозначений здесь не подтверждено. Его проверяют для выбранного вида продукции и состояния поставки.</p>
+<p>Сначала сравнивают химический состав, механические свойства и предусмотренные испытания. Затем проверяют требования к сварке, поверхности и работе в заданной среде.</p>
+<p>Совпадение части показателей ещё не закрывает вопрос замены.</p>
+<p>Другую марку, включая материал с дополнительными легирующими элементами, оценивают тем же способом. Основание для согласования — сопоставление требований, а не сходство названий.</p>
+<p>Согласованную замену отражают в документации на заказ. Иначе поставщик материала и изготовитель детали могут опираться на разные требования.</p>
+<h2 id="ogranicheniya-po-korrozii-srede-i-temperature">Ограничения по коррозии, среде и температуре</h2>
+<p>Оценка работы детали в среде требует её состава, концентрации компонентов, температуры и режима контакта. Нужно различать постоянное погружение, периодическое смачивание и контакт с конденсатом. Для соединений дополнительно описывают зазоры и условия очистки. Без этих данных нельзя обосновать пригодность материала или назвать срок службы изделия.</p>
+<p>В исходных материалах нет документа, который подтверждал бы допустимые среды и температуры для рассматриваемой поставки. Поэтому универсальные температурные пределы и обещания коррозионной стойкости здесь не приведены.</p>
+<p>Температура сама по себе не описывает условия работы.</p>
+<p>Для нагруженного узла нужны также усилия и продолжительность их действия. Для сварной конструкции — сведения о соединениях и обработке после сварки.</p>
+<p>Расчёт или программа испытаний должны отвечать на вопрос о конкретном изделии. Испытание образца в других условиях не стоит использовать как гарантию срока службы детали.</p>
+<h2 id="kak-vybrat-zagotovku-i-marshrut-izgotovleniya">Как выбрать заготовку и маршрут изготовления</h2>
+<p>Заготовку для детали выбирают по геометрии, требованиям к материалу и доступному состоянию поставки. Для корпуса может рассматриваться лист или сварная заготовка, для втулки — пруток либо труба. Выбор проверяют по размерам, припускам и возможностям контроля. Документы на материал должны позволять связать поставку с заготовкой, которая пойдёт в работу.</p>
+<p>Припуск назначают под конкретную операцию и схему закрепления. Одного обозначения марки для этого недостаточно.</p>
+<p>Пример маршрута: <a href="/blog/vhodnoy-kontrol-partii-i-kontrol-na-kim.html">входной контроль</a>, подготовка заготовки, черновая обработка, промежуточный контроль, чистовая обработка и окончательная приёмка. Это схема планирования, а не описание выполненного заказа.</p>
+<p>Для тонкостенной детали в маршрут включают проверку геометрии после снятия зажимного усилия. Если предусмотрены сварка или термообработка, заранее определяют место этих операций и последующего контроля.</p>
+<p>Требования к исходным данным для <a href="/">изготовления деталей по чертежам</a> включают редакцию чертежа, материал, количество и условия приёмки.</p>
+<h2 id="tochenie-frezerovanie-i-sverlenie-kak-uchityvat-naklep">Точение, фрезерование и сверление: как учитывать наклёп</h2>
+<p>При подготовке обработки 08Х18Н10 нужно проверить рекомендации производителя инструмента для выбранного материала и состояния заготовки. В исходном тексте нет конкретного руководства, которое подтверждало бы режимы или причины отдельных дефектов. Поэтому универсальные скорости и подачи здесь не указаны. Режим связывают с инструментом, операцией, закреплением и подачей смазочно-охлаждающей жидкости — СОЖ.</p>
+<p>Наклёп и его влияние на следующий проход рассматривают при разработке технологии. Делать вывод о причине брака только по внешнему виду стружки недостаточно.</p>
+<p>Если обработка идёт нестабильно, проверяют:</p>
+<ul><li>состояние кромки и наличие налипшего материала;</li><li>закрепление заготовки и вылет инструмента;</li><li>соответствие режима рекомендациям производителя;</li><li>отвод стружки;</li><li>поступление СОЖ в зону резания;</li><li>размеры и поверхность после прохода.</li></ul>
+<p>Диагностику начинают с наблюдаемого отклонения: вибрации, износа инструмента, повреждения поверхности или ухода размера. Затем проверяют возможные причины.</p>
+<p>Сведения об операции собраны на странице <a href="/frezerovka.html">фрезерной обработки металла</a>. Конкретный инструмент и режим выбирают при подготовке производства.</p>
+<h2 id="termoobrabotka-i-deformatsiya-chto-menyaetsya-v-svoystvah">Термообработка и деформация: что меняется в свойствах</h2>
+<p>Термообработку детали из 08Х18Н10 следует описывать через цель и проверяемый результат. В документации нужны исходное состояние, режим обработки, требования к охлаждению и последующий контроль. В представленных источниках нет конкретного документа, подтверждающего режим для этой марки. Поэтому температура, выдержка и ожидаемое изменение свойств здесь не назначены.</p>
+<p>Фраза «закалить деталь» оставляет слишком много неопределённости. В задании нужно назвать требуемое состояние материала и показатели, по которым примут результат.</p>
+<p>Если маршрут включает деформацию, при выборе дальнейших операций учитывают её способ и степень. Свойства исходного проката нельзя автоматически считать характеристиками готовой детали.</p>
+<p>После обработки отдельно проверяют геометрию.</p>
+<p>Необходимость правки, повторного контроля или дополнительных испытаний определяют при разработке технологии. Обещать восстановление размеров одним нагревом без обоснования нельзя.</p>
+<h2 id="svarka-udalenie-zausentsev-i-vosstanovlenie-poverhnosti">Сварка, удаление заусенцев и восстановление поверхности</h2>
+<p>Для сварной детали нужно согласовать способ сварки, материалы соединения, присадку, последовательность операций и контроль. Обозначение основного металла не заменяет технологию соединения. Требования к поверхности после сварки также задают заранее: иначе изготовитель и заказчик могут по-разному понимать допустимый вид шва и прилегающих участков.</p>
+<p>Очистку, травление и пассивацию не стоит записывать как взаимозаменяемые операции. Для каждой выбранной операции нужны цель, технология и критерий приёмки.</p>
+<p>Составы растворов и режимы обработки без подтверждённой технологической документации здесь не приведены.</p>
+<p>Отдельно определяют порядок работы с инструментом, абразивами и рабочими поверхностями. Это позволяет включить предотвращение загрязнений в маршрут, а не обсуждать его после появления дефекта.</p>
+<p>Фотография очищенного шва показывает внешний вид. Она не подтверждает стойкость соединения в рабочей среде.</p>
+<h2 id="chto-proverit-v-sertifikate-i-pri-priemke-detali">Что проверить в сертификате и при приёмке детали</h2>
+<p>Приёмку материала и готовой детали разделяют. На входе проверяют соответствие поставки заказу и связь документов с заготовкой. После изготовления проверяют результат по чертежу: размеры, форму, шероховатость, швы и состояние поверхности. Сертификат на металл не содержит результатов контроля всех последующих операций и не заменяет приёмку изделия.</p>
+<p>Состав сертификата сверяют с требованиями заказа. Важно установить марку, документ на продукцию, плавку или партию, состояние поставки и результаты предусмотренных испытаний.</p>
+<p>Дополнительные испытания включают в заказ с указанием метода и критерия приёмки. Одного названия испытания недостаточно.</p>
+<p>Для расчёта изготовления нужны:</p>
+<ul><li>чертёж и номер редакции;</li><li>количество деталей;</li><li>материал, требования к заготовке и согласованные замены;</li><li>рабочая среда, температура и нагрузки;</li><li>требования к сварке и обработке поверхности;</li><li>перечень документов и условия приёмки.</li></ul>
+<p>Передайте чертёж на расчёт вместе с условиями работы детали и требованиями к приёмке.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Можно ли заменить 08Х18Н10 на AISI 304?</summary>
+<div class="faq__a"><p>По представленным источникам такая замена не подтверждена. Нужны конкретные документы на оба материала, сравнение требований и согласование ответственного за конструкцию.</p></div>
+</details>
+<details>
+<summary>Где взять состав и предел текучести 08Х18Н10?</summary>
+<div class="faq__a"><p>Состав проверяют по документу на марку и сертификату плавки. Предел текучести ищут для выбранного вида продукции и состояния поставки, с указанием условий испытания. Подтверждённых значений в этой статье нет.</p></div>
+</details>
+<details>
+<summary>Можно ли назначить режим резания только по марке стали?</summary>
+<div class="faq__a"><p>Для выбора режима нужны также инструмент, операция, размеры, закрепление и условия охлаждения. Отправной точкой служат рекомендации производителя выбранного инструмента для соответствующего материала.</p></div>
+</details>
+<details>
+<summary>Заменяет ли сертификат на металл приёмку готовой детали?</summary>
+<div class="faq__a"><p>Нет. Сертификат относится к поставленному материалу. Размеры, поверхность, швы и другие требования к готовому изделию проверяют отдельно.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Росстандарт</a> — главная страница; документ с составом 08Х18Н10 не представлен.</li>
+<li><a href="https://www.astm.org/" rel="noopener" target="_blank">ASTM International</a> — главная страница; документ для сопоставления с AISI 304 не представлен.</li>
+<li><a href="https://www.sandvik.coromant.com/" rel="noopener" target="_blank">Sandvik Coromant</a> — главная страница; конкретное руководство по обработке не представлено.</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/alyuminievaya-bronza.html">
+            <img src="/images/blog/alyuminievaya-bronza-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Как выбрать алюминиевую бронзу для детали: состав, марки и условия работы</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/polirovka-nerzhaveyki.html">
+            <img src="/images/blog/polirovka-nerzhaveyki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Как отполировать нержавейку и сохранить геометрию детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/magnitsya-li-nerzhaveyka-kak-otlichit-marki.html">
+            <img src="/images/blog/magnitsya-li-nerzhaveyka-kak-otlichit-marki-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Магнитится ли нержавейка: как отличить марки стали и что на самом деле показывает магнит</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Сталь 08Х18Н10: как выбрать материал и обработку для детали">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
