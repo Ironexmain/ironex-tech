@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>НАКС: реестр сварщиков и проверка аттестации исполнителя</title>
+  <meta name="description" content="Как проверить запись о сварщике в реестре НАКС, сопоставить её с удостоверением и требованиями чертежа. Порядок действий при расхождениях." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/naks-reestr-svarshchikov.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/naks-reestr-svarshchikov.html#article",
+      "headline": "Как проверить сварщика в реестре НАКС перед заказом",
+      "description": "Как проверить запись о сварщике в реестре НАКС, сопоставить её с удостоверением и требованиями чертежа. Порядок действий при расхождениях.",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/naks-reestr-svarshchikov.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/naks-reestr-svarshchikov-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "накс реестр сварщиков",
+        "реестр аттестованного персонала",
+        "удостоверение сварщика накс",
+        "область аттестации сварщика",
+        "аттестационный центр накс",
+        "проверка подрядчика сварочные работы"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как проверить сварщика в реестре НАКС перед заказом"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли ограничиться скриншотом реестра от подрядчика?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Используйте скриншот как приложение к переписке, а для собственной сверки откройте исходную страницу. Сохраните её адрес, дату обращения и реквизиты поиска. Если повторить результат не удалось, запишите это как открытый вопрос."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Кто на стороне заказчика сверяет область аттестации с чертежом?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Назначьте технического специалиста, который сможет сопоставить обозначения в документах с требованиями заказа. Сбор копий и поиск записи можно поручить снабженцу. Неясности в содержании удостоверения направляйте в центр, указанный в нём."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли повторять проверку, если сварку передадут другому исполнителю?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для другого человека соберите отдельный комплект и повторите сверку. Зафиксируйте замену в документах заказа, чтобы итог проверки относился к тому, кто будет выполнять соединения."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Удостоверение сварщика есть. Как проверить документы для вашего заказа" />
+  <meta property="og:description" content="Как проверить запись о сварщике в реестре НАКС, сопоставить её с удостоверением и требованиями чертежа. Порядок действий при расхождениях." />
+  <meta property="og:url" content="https://ironex.tech/blog/naks-reestr-svarshchikov.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/naks-reestr-svarshchikov-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-07" />
+  <meta property="article:modified_time" content="2026-11-07" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Удостоверение сварщика есть. Как проверить документы для вашего заказа" />
+  <meta name="twitter:description" content="Как проверить запись о сварщике в реестре НАКС, сопоставить её с удостоверением и требованиями чертежа. Порядок действий при расхождениях." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/naks-reestr-svarshchikov-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как проверить сварщика в реестре НАКС перед заказом">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Как проверить сварщика в реестре НАКС перед заказом</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#shag-1-zaprosite-udostoverenie-i-trebovaniya-k-svarke">Шаг 1. Запросите удостоверение и требования к сварке</a></li>
+<li><a href="#shag-2-naydite-ispolnitelya-v-ofitsialnom-reestre-naks">Шаг 2. Найдите исполнителя в официальном реестре НАКС</a></li>
+<li><a href="#shag-3-sopostavte-naydennuyu-zapis-s-udostovereniem">Шаг 3. Сопоставьте найденную запись с удостоверением</a></li>
+<li><a href="#shag-4-proverte-oblast-attestatsii-po-vashemu-chertezhu">Шаг 4. Проверьте область аттестации по вашему чертежу</a></li>
+<li><a href="#shag-5-razberites-s-datami-i-svedeniyami-o-prodlenii">Шаг 5. Разберитесь с датами и сведениями о продлении</a></li>
+<li><a href="#shag-6-utochnite-prichinu-esli-zapisi-net-ili-dannye-rashody">Шаг 6. Уточните причину, если записи нет или данные расходятся</a></li>
+<li><a href="#shag-7-otdelite-attestatsiyu-svarschika-ot-dokumentov-organi">Шаг 7. Отделите аттестацию сварщика от документов организации</a></li>
+<li><a href="#shag-8-zafiksiruyte-rezultat-proverki-pered-zapuskom-zakaza">Шаг 8. Зафиксируйте результат проверки перед запуском заказа</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как проверить сварщика в реестре НАКС перед заказом">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Как проверить сварщика в реестре НАКС перед заказом</h1>
+        <p class="lede">Как проверить запись о сварщике в реестре НАКС, сопоставить её с удостоверением и требованиями чертежа. Порядок действий при расхождениях.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-11-07">Опубликовано 7 ноября 2026</time>
+
+            <span>7 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/naks-reestr-svarshchikov-cover.webp" alt="Как проверить сварщика в реестре НАКС перед заказом" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Проверку сварщика в реестре НАКС начните с документов назначенного исполнителя. Сопоставьте найденную запись с удостоверением, а указанную область аттестации — с требованиями к вашему узлу. Если записи нет или сведения расходятся, зафиксируйте вопрос и запросите подтверждение у центра, указанного в документе.</p>
+<h2 id="shag-1-zaprosite-udostoverenie-i-trebovaniya-k-svarke">Шаг 1. Запросите удостоверение и требования к сварке</h2>
+<p>Для проверки соберите документы конкретного сварщика и требования к соединениям вашего узла. Попросите подрядчика назвать исполнителя, прислать читаемую копию удостоверения и все относящиеся к нему приложения. Затем передайте комплект технологу для сопоставления с чертежом: проверять нужно соответствие конкретному заказу, а не только наличие документа.</p>
+<p>Начните с исходных данных.</p>
+<p>В комплект для сверки включите:</p>
+<ul><li>ФИО сварщика, которого подрядчик назначил на заказ;</li><li>копию удостоверения со всеми заполненными страницами и приложениями;</li><li>чертёж узла с обозначениями сварных соединений;</li><li>технические требования к материалу, сварке и приёмке.</li></ul>
+<p>Если обозначения на чертеже допускают разные прочтения, запишите вопросы конструктору. Не подставляйте предполагаемый материал или способ сварки, чтобы закончить проверку быстрее.</p>
+<p>Состав документов для заказа сначала согласуйте с техническим специалистом. Наличие слова «сварка» в заявке не используйте как достаточное основание для вывода об обязательной аттестации. Вопросы о назначении документов разобраны в материале <a href="/blog/naks-svarshchika-chto-eto.html">об аттестации сварщика НАКС</a>.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как проверить сварщика в реестре НАКС перед заказом">Прислать чертёж на почту</a>
+</div>
+<h2 id="shag-2-naydite-ispolnitelya-v-ofitsialnom-reestre-naks">Шаг 2. Найдите исполнителя в официальном реестре НАКС</h2>
+<p>Начните с <a href="https://naks.ru/" rel="noopener" target="_blank">официального сайта НАКС</a> и найдите раздел проверки аттестованного персонала. На открытой странице прочитайте описание поиска и доступные поля. Используйте реквизиты из полученного удостоверения, сохраните адрес формы и дату обращения: так вы сможете повторить поиск и объяснить подрядчику, где возникло расхождение.</p>
+<p>Не переносите названия полей из сторонних инструкций. Если форма предлагает поиск по номеру документа, вводите его в указанном формате. Если нужны другие реквизиты, берите их из читаемой копии.</p>
+<p>Неразборчивый символ не угадывайте.</p>
+<p>Сначала запросите новый скан. При нескольких результатах откройте записи и сравните доступные идентификаторы. Не выбирайте человека только потому, что его фамилия стоит первой в выдаче.</p>
+<h2 id="shag-3-sopostavte-naydennuyu-zapis-s-udostovereniem">Шаг 3. Сопоставьте найденную запись с удостоверением</h2>
+<p>Сравните реквизиты, которые доступны одновременно в найденной записи и в удостоверении. Начните с ФИО и номера документа, затем проверьте остальные общие поля. Каждое расхождение запишите отдельно, сохранив оба значения: это позволит задать центру конкретный вопрос и не потерять детали при переписке с подрядчиком.</p>
+<p>Не смешивайте отсутствие сведений с противоречием. Если поле не показано, поставьте отметку «не отображается». Если значения различаются, запишите различие.</p>
+<table><thead><tr><th>Что проверить</th><th>Как зафиксировать результат</th></tr></thead><tbody><tr><td>ФИО</td><td>Перенести написание из записи и удостоверения</td></tr><tr><td>Номер документа</td><td>Сравнить все символы, включая буквы и разделители</td></tr><tr><td>Центр, указанный в документе</td><td>Сопоставить название, если оно доступно в записи</td></tr><tr><td>Даты и отметки</td><td>Записать значение вместе с названием соответствующего поля</td></tr><tr><td>Область аттестации</td><td>Указать, какие сведения доступны для сравнения</td></tr></tbody></table>
+<p>Совпадение реквизитов отметьте как результат сверки документов. Не превращайте его в обещание качества будущего шва: требования к изготовлению и приёмке согласуйте отдельно.</p>
+<p>Если по доступным полям нельзя уверенно сопоставить запись с удостоверением, оставьте проверку незавершённой.</p>
+<h2 id="shag-4-proverte-oblast-attestatsii-po-vashemu-chertezhu">Шаг 4. Проверьте область аттестации по вашему чертежу</h2>
+<p>Сопоставление области аттестации с заказом поручите технологу, предоставив чертёж, техническое задание и полный комплект документов сварщика. Попросите показать, какие записи относятся к каждому проверяемому соединению. Не ограничивайтесь общим ответом «удостоверение подходит»: в результате сверки должны быть видны основание вывода и вопросы, которые ещё требуют пояснения.</p>
+<p>Для рабочего сопоставления можно использовать таблицу:</p>
+<table><thead><tr><th>Параметр заказа</th><th>Что записать при сверке</th></tr></thead><tbody><tr><td>Способ сварки</td><td>Обозначение из задания и соответствующую запись в документе</td></tr><tr><td>Материал</td><td>Марку из чертежа и основание её сопоставления с областью аттестации</td></tr><tr><td>Размеры соединения</td><td>Параметры чертежа и относящиеся к ним ограничения документа</td></tr><tr><td>Тип и положение соединения</td><td>Обозначения из задания и пояснение технолога</td></tr><tr><td>Непонятный код</td><td>Сам код, источник расшифровки и нерешённый вопрос</td></tr></tbody></table>
+<p>Это форма для проверки, а не утверждение о составе каждого удостоверения.</p>
+<p>Предположим, способ сварки удалось сопоставить, а обозначение материала осталось непонятным. Запишите именно такой промежуточный результат. Не закрывайте всю проверку по одному совпавшему параметру.</p>
+<p>Спорный код оставьте открытым.</p>
+<p>Попросите технолога указать документ, по которому он читает обозначение. Если вопрос относится к содержанию выданного удостоверения, направьте его в указанный там центр.</p>
+<h2 id="shag-5-razberites-s-datami-i-svedeniyami-o-prodlenii">Шаг 5. Разберитесь с датами и сведениями о продлении</h2>
+<p>Проверяйте даты вместе с подписями полей и плановым периодом сварочных работ. Перенесите в рабочую запись сведения из удостоверения и найденной карточки, сохранив их исходный смысл. Если срок нельзя установить по представленным материалам, запросите пояснение: не рассчитывайте его самостоятельно от даты выдачи или другой удобной отметки.</p>
+<p>Дата без названия поля для сверки бесполезна.</p>
+<p>Не назначайте всем документам один срок по памяти или по примеру другого сварщика. Для вашего заказа нужно установить, какие сведения относятся именно к представленному удостоверению и на чём основан вывод о его действии.</p>
+<p>Если подрядчик сообщает о продлении, запросите подтверждающий документ или проверяемую запись. Расхождение с копией удостоверения перечислите в обращении в центр.</p>
+<p>При переносе работ на другой период повторите проверку дат. В рабочей записи укажите, на какой график вы опирались.</p>
+<h2 id="shag-6-utochnite-prichinu-esli-zapisi-net-ili-dannye-rashody">Шаг 6. Уточните причину, если записи нет или данные расходятся</h2>
+<p>Если поиск ничего не дал, сначала проверьте исходные данные и последовательность действий. Сопоставьте введённые символы с удостоверением, прочитайте описание выбранного раздела и проверьте фильтры. Затем сохраните результат поиска и сформулируйте вопрос подрядчику: что именно не найдено, по каким реквизитам и на какой странице вы искали.</p>
+<p>Пустую выдачу зафиксируйте как результат поиска. Не называйте её доказательством подделки и не объясняйте технической задержкой без подтверждения.</p>
+<p>Порядок действий:</p>
+<ol><li>Перепроверьте ввод, раздел сайта и условия поиска.</li><li>Запросите читаемую копию, если часть реквизитов вызывает сомнения.</li><li>Обратитесь в центр, указанный в документе, предварительно проверив его контакты.</li><li>Сохраните ответ и повторите сверку с учётом полученных сведений.</li></ol>
+<p>В запросе приведите номер документа, ФИО и конкретное расхождение. Например: «В копии указана одна дата, а в найденной записи — другая. Просим пояснить различие».</p>
+<p>До ответа вопрос остаётся открытым.</p>
+<p>Если подрядчик предлагает заменить исполнителя, начните проверку его документов отдельно. Не переносите выводы о первом человеке на нового сварщика.</p>
+<h2 id="shag-7-otdelite-attestatsiyu-svarschika-ot-dokumentov-organi">Шаг 7. Отделите аттестацию сварщика от документов организации</h2>
+<p>Разберите полученный от подрядчика комплект по предмету проверки: конкретный человек, организация, технология, оборудование или результат контроля. Для каждого документа прочитайте название, назначение и сведения о том, кому он выдан. Затем отметьте, на какой вопрос по вашему заказу он отвечает и какие вопросы после этого остаются открытыми.</p>
+<p>Название организации на бланке само по себе не связывает документ с назначенным исполнителем. Ищите сведения, позволяющие установить эту связь, и запрашивайте пояснение, если их недостаточно.</p>
+<p>Не подменяйте один вопрос другим.</p>
+<p>Вместо фразы «у подрядчика всё аттестовано» запишите результаты по отдельности: документы сварщика получены, область сопоставлена с чертежом, требования к технологии согласованы, порядок контроля определён. Если какой-то пункт не проверен, так и укажите.</p>
+<p>Состав остальных документов для оценки подрядчика рассмотрен в материале <a href="/blog/sertifikaciya-proizvodstva-i-dopuski.html">о документах производства и допусках</a>.</p>
+<h2 id="shag-8-zafiksiruyte-rezultat-proverki-pered-zapuskom-zakaza">Шаг 8. Зафиксируйте результат проверки перед запуском заказа</h2>
+<p>Сохраните результат сверки в комплекте документов заказа, чтобы к нему могли вернуться технолог, снабженец и ответственный за приёмку. Укажите исполнителя, реквизиты удостоверения, адрес проверенной страницы, дату поиска и <a href="/blog/kak-upravlyat-versiyami-chertezhey-pri-zakaze-partii.html">версию чертежа</a>. Отдельно запишите вывод специалиста о сопоставлении области аттестации с заданием и перечислите оставшиеся вопросы.</p>
+<p>Формулируйте вывод в пределах выполненной проверки. Например: «Реквизиты сопоставлены, вопрос по обозначению материала направлен в центр». Такая запись точнее, чем общее «проверено», когда часть сведений ещё не получена.</p>
+<p>Перед согласованием запуска сверьте:</p>
+<ul><li>документы относятся к назначенному исполнителю;</li><li>доступные реквизиты сопоставлены, расхождения перечислены;</li><li>сведения о сроке проверены относительно графика работ;</li><li>технолог записал результат сопоставления с чертежом;</li><li>открытым вопросам назначены ответственные;</li><li>порядок приёмки соединений согласован отдельно.</li></ul>
+<p>Не записывайте незавершённую сверку как готовое решение о допуске.</p>
+<p>Для расчёта <a href="/">изготовления деталей по чертежам</a> передайте чертёж, материал, требования к швам и приёмке, приложив результаты проверки документов.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Можно ли ограничиться скриншотом реестра от подрядчика?</summary>
+<div class="faq__a"><p>Используйте скриншот как приложение к переписке, а для собственной сверки откройте исходную страницу. Сохраните её адрес, дату обращения и реквизиты поиска. Если повторить результат не удалось, запишите это как открытый вопрос.</p></div>
+</details>
+<details>
+<summary>Кто на стороне заказчика сверяет область аттестации с чертежом?</summary>
+<div class="faq__a"><p>Назначьте технического специалиста, который сможет сопоставить обозначения в документах с требованиями заказа. Сбор копий и поиск записи можно поручить снабженцу. Неясности в содержании удостоверения направляйте в центр, указанный в нём.</p></div>
+</details>
+<details>
+<summary>Нужно ли повторять проверку, если сварку передадут другому исполнителю?</summary>
+<div class="faq__a"><p>Для другого человека соберите отдельный комплект и повторите сверку. Зафиксируйте замену в документах заказа, чтобы итог проверки относился к тому, кто будет выполнять соединения.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://naks.ru/" rel="noopener" target="_blank">НАКС</a> — официальный сайт для поиска реестров и документов системы аттестации.</li>
+<li><a href="https://www.gosnadzor.ru/" rel="noopener" target="_blank">Ростехнадзор</a> — официальный сайт для поиска документов по промышленной безопасности.</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/naks-svarshchika-chto-eto.html">
+            <img src="/images/blog/naks-svarshchika-chto-eto-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Что означает НАКС сварщика и как проверить допуск к вашему заказу</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/diametr-eto.html">
+            <img src="/images/blog/diametr-eto-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Что такое диаметр и как измерить его у вала или отверстия</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/15-mm-skolko-sm.html">
+            <img src="/images/blog/15-mm-skolko-sm-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Сколько сантиметров в 15 мм и как проверить расчёт</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как проверить сварщика в реестре НАКС перед заказом">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

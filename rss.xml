@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как выбрать форму основной надписи чертежа и заполнить её графы</title>
+      <link>https://ironex.tech/blog/osnovnaya-nadpis-chertezha.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/osnovnaya-nadpis-chertezha.html</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Порядок проверки основной надписи: форма, размеры, расположение, реквизиты и согласованность чертежа металлической детали с комплектом документов.</description>
+    </item>
+    <item>
+      <title>Как проверить сварщика в реестре НАКС перед заказом</title>
+      <link>https://ironex.tech/blog/naks-reestr-svarshchikov.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/naks-reestr-svarshchikov.html</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как проверить запись о сварщике в реестре НАКС, сопоставить её с удостоверением и требованиями чертежа. Порядок действий при расхождениях.</description>
+    </item>
+    <item>
+      <title>Что такое диаметр и как измерить его у вала или отверстия</title>
+      <link>https://ironex.tech/blog/diametr-eto.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/diametr-eto.html</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Что означает диаметр, как найти его через радиус и измерить на детали. Выбор инструмента, обозначение ⌀ на чертеже и ошибки при проверке размера.</description>
+    </item>
     <item>
       <title>Как образуется металлическая стружка и как управлять ею при обработке</title>
       <link>https://ironex.tech/blog/metallicheskaya-struzhka.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sat, 31 Oct 2026 00:00:00 +0300</pubDate>
       <category>Технологии</category>
       <description>Какая оснастка стоит под вашей деталью, как она влияет на цену, срок и точность и когда кондуктор окупается. Что передать исполнителю.</description>
-    </item>
-    <item>
-      <title>Сталь 45 по ГОСТ 1050-88: как подобрать диаметр и состояние заготовки</title>
-      <link>https://ironex.tech/blog/stal-45-gost-1050-88-diametry.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/stal-45-gost-1050-88-diametry.html</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Как подобрать диаметр заготовки из стали 45, рассчитать массу круга и согласовать состояние поставки. Что проверить в заказе и документах на металл.</description>
-    </item>
-    <item>
-      <title>Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить</title>
-      <link>https://ironex.tech/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy.html</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Из чего складывается срок детали по чертежу, что даёт экспресс-режим и что ускорить нельзя: термообработку, покрытие. Таблица и чек-лист заказчика.</description>
-    </item>
-    <item>
-      <title>Как выбрать режим закалки и отпуска стали 40Х по требованиям к детали</title>
-      <link>https://ironex.tech/blog/rezhim-zakalki-stali-40h.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/rezhim-zakalki-stali-40h.html</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Как подготовить режим закалки и отпуска стали 40Х: исходные данные, прогрев, выдержка, охлаждение и контроль результата по требованиям чертежа.</description>
     </item>
   </channel>
 </rss>
