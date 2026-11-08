@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Что входит в обрабатывающую промышленность и какое место в ней занимает металлообработка</title>
+      <link>https://ironex.tech/blog/obrabatyvayushchaya-promyshlennost.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/obrabatyvayushchaya-promyshlennost.html</guid>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Какие отрасли входят в обрабатывающую промышленность, чем она отличается от добычи и строительства и куда относится изготовление деталей по чертежам.</description>
+    </item>
+    <item>
+      <title>Что означает «эквивалент» и когда равноценность допускает замену</title>
+      <link>https://ironex.tech/blog/ekvivalent-eto.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/ekvivalent-eto.html</guid>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Эквивалент — равноценный объект по выбранному признаку. Разбираем значение слова, отличие от аналога и условия замены материала или детали.</description>
+    </item>
+    <item>
+      <title>Чем заменить сталь 40Х и какие свойства проверить до заказа детали</title>
+      <link>https://ironex.tech/blog/analog-stali-40h.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/analog-stali-40h.html</guid>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Что проверить при подборе аналога стали 40Х: состав плавки, состояние поставки, свойства после термообработки и согласование замены в чертеже.</description>
+    </item>
     <item>
       <title>Как выбрать форму основной надписи чертежа и заполнить её графы</title>
       <link>https://ironex.tech/blog/osnovnaya-nadpis-chertezha.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sun, 01 Nov 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Steel ball — «стальной шар» или «стальной шарик». Как различать назначение изделий и какие данные о материале, геометрии и поверхности нужны для заказа.</description>
-    </item>
-    <item>
-      <title>Какой металл самый прочный и как выбрать материал для детали</title>
-      <link>https://ironex.tech/blog/samyy-prochnyy-metall.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/samyy-prochnyy-metall.html</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как сравнивать стали, титан и вольфрам для детали по чертежу: прочность, твёрдость, масса, рабочая температура и состояние материала.</description>
-    </item>
-    <item>
-      <title>Как выбрать алюминиевую бронзу для детали: состав, марки и условия работы</title>
-      <link>https://ironex.tech/blog/alyuminievaya-bronza.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/alyuminievaya-bronza.html</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Свойства и марки алюминиевой бронзы: как выбрать заготовку для втулки, колеса или корпуса, учесть трение, коррозию и требования чертежа.</description>
-    </item>
-    <item>
-      <title>Станочные приспособления и кондукторы: зачем заказчику знать об оснастке</title>
-      <link>https://ironex.tech/blog/stanochnye-prisposobleniya-i-konduktory.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/stanochnye-prisposobleniya-i-konduktory.html</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Какая оснастка стоит под вашей деталью, как она влияет на цену, срок и точность и когда кондуктор окупается. Что передать исполнителю.</description>
     </item>
   </channel>
 </rss>
