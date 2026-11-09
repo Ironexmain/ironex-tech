@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Технологичность конструкции детали: правила под фрезеровку</title>
+  <meta name="description" content="Внутренние радиусы, карманы, стенки, отверстия, допуски: что в конструкции детали удорожает фрезеровку и как исправить это до заказа." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku.html#article",
+      "headline": "Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали",
+      "description": "Внутренние радиусы, карманы, стенки, отверстия, допуски: что в конструкции детали удорожает фрезеровку и как исправить это до заказа.",
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku-cover.webp",
+      "articleSection": "Чертежи и допуски",
+      "keywords": [
+        "технологичность конструкции",
+        "технологичность детали",
+        "проектирование под ЧПУ",
+        "DFM",
+        "ошибки конструктора",
+        "проектирование деталей под фрезеровку"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое технологичность конструкции детали?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это приспособленность конструкции к изготовлению с оптимальными затратами. Она зависит от конструкции детали, а не от её функции."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Зависит ли технологичность детали от объёма выпуска?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, её оценивают для заданных условий производства и объёма выпуска. Деталь, удобная для единичного заказа, в серии может оказаться неудобной, и наоборот."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Отменяет ли пятиосевой станок правила технологичности?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет: радиус по-прежнему ограничен фрезой, а тонкая стенка по-прежнему вибрирует. Пятиосевой станок часто убирает лишние установы, но выгоду для конкретной детали считает технолог по чертежу. Если чертёж готов, пришлите его на расчёт через [форму на странице контактов](/kontakty.html): технолог проверит радиусы, доступ инструмента и допуски и вернёт вопросы до запуска заказа. Подробнее о наших [фрезерных работах по металлу](/frezerovka.html)."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Цену детали во многом задаёт чертёж: правила под фрезеровку" />
+  <meta property="og:description" content="Внутренние радиусы, карманы, стенки, отверстия, допуски: что в конструкции детали удорожает фрезеровку и как исправить это до заказа." />
+  <meta property="og:url" content="https://ironex.tech/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-09" />
+  <meta property="article:modified_time" content="2026-11-09" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Цену детали во многом задаёт чертёж: правила под фрезеровку" />
+  <meta name="twitter:description" content="Внутренние радиусы, карманы, стенки, отверстия, допуски: что в конструкции детали удорожает фрезеровку и как исправить это до заказа." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#tehnologichnost-konstruktsii-chto-eto-i-chto-otsenivayut-u-o">Технологичность конструкции: что это и что оценивают у одной детали</a></li>
+<li><a href="#kak-reshenie-konstruktora-prevraschaetsya-v-tsenu-detali">Как решение конструктора превращается в цену детали</a></li>
+<li><a href="#vnutrennie-radiusy-i-karmany-glavnyy-istochnik-peredelok">Внутренние радиусы и карманы: главный источник переделок</a></li>
+<li><a href="#stenki-rebra-otverstiya-i-rezby">Стенки, рёбра, отверстия и резьбы</a></li>
+<li><a href="#dostup-instrumenta-i-bazy-kak-detal-budut-zakreplyat">Доступ инструмента и базы: как деталь будут закреплять</a></li>
+<li><a href="#dopuski-i-sherohovatost-gde-lishniy-kvalitet-stoit-deneg">Допуски и шероховатость: где лишний квалитет стоит денег</a></li>
+<li><a href="#tipichnye-oshibki-konstruktora-tablitsa-pravil-i-ispravleniy">Типичные ошибки конструктора: таблица правил и исправлений</a></li>
+<li><a href="#chek-list-pered-otpravkoy-chertezha-i-chto-delaet-tehnolog">Чек-лист перед отправкой чертежа и что делает технолог</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали</h1>
+        <p class="lede">Внутренние радиусы, карманы, стенки, отверстия, допуски: что в конструкции детали удорожает фрезеровку и как исправить это до заказа.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Чертежи и допуски</span>
+            <time datetime="2026-11-09">Опубликовано 9 ноября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku-cover.webp" alt="Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Технологичная деталь — та, которую можно изготовить без лишних установов, особого инструмента и придирчивых допусков. Для фрезеровки это значит: внутренние радиусы под диаметр фрезы, стенки и карманы с запасом по жёсткости, допуск только там, где он нужен. Всё остальное заказчик оплачивает временем станка.</p>
+<h2 id="tehnologichnost-konstruktsii-chto-eto-i-chto-otsenivayut-u-o">Технологичность конструкции: что это и что оценивают у одной детали</h2>
+<p>Чертёж готов, деталь встаёт в узел, размеры сходятся, а расчёт фрезеровки приходит дороже, чем ждали. Обычно причина не в материале, а в конструкции: она заставляет станок делать лишнее.</p>
+<p>Технологичность конструкции — это совокупность свойств конструкции изделия, определяющих её приспособленность к достижению оптимальных затрат при производстве, техническом обслуживании и ремонте для заданных показателей качества, объёма выпуска и условий выполнения работ (ГОСТ 14.205-83) [1]. Для заказчика фрезеровки важна производственная часть определения. Свойство относится к конструкции, а не к функции: две детали с одинаковой работой в узле могут стоить по-разному.</p>
+<p>Технологичность оценивают только для заданных условий: конкретного производства и объёма выпуска. Деталь, удобная для единичного заказа, в серии может потребовать другой оснастки.</p>
+<p>Для заказчика фрезеровки главное — трудоёмкость: она превращается в часы станка и в цену.</p>
+<blockquote><p>Технологичность — не оценка «хорошей детали». Это соответствие конструкции условиям конкретного производства и объёма заказа.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали">Прислать чертёж на почту</a>
+</div>
+<h2 id="kak-reshenie-konstruktora-prevraschaetsya-v-tsenu-detali">Как решение конструктора превращается в цену детали</h2>
+<p><img alt="CAD модель и готовая алюминиевая деталь после фрезеровки и пескоструйной обработки" decoding="async" height="1290" loading="lazy" src="/images/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku-1.webp" width="1000"/></p>
+<p><em>CAD модель (вверху) и соответствующая готовая деталь, обработанная на 6-осевом фрезерном станке с финальной пескоструйной обработкой поверхности. Фото: <a href="https://commons.wikimedia.org/wiki/File:CAD_model_and_CNC_machined_part.PNG" rel="nofollow noopener" target="_blank">Mike1024</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Цену фрезеровки задаёт машинное время, число переустановок, особый инструмент и оснастка, а не только вес заготовки. Каждое решение конструктора проходит одну цепочку: элемент детали, доступ инструмента, число установов, время станка, цена. DFM — не упрощение детали, а согласование конструкции с тем, как её будут брать и обрабатывать. Разбор всех статей цены — в материале <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">от чего зависит цена детали по чертежу</a>.</p>
+<h3>Установы и оснастка</h3>
+<p>Установ — одно закрепление заготовки в станке. Каждая поверхность, до которой нельзя добраться за один установ, добавляет переустановку, наладку и риск накопленной погрешности баз. Установ увеличивает трудоёмкость, а значит, и <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">цену детали</a>.</p>
+<p>Если форма заготовки неудобна для тисков, технолог делает специальную оснастку. Её изготавливают отдельно, до самой детали. Избежать этого можно конструкцией: добавить плоскую базу или припуск под зажим.</p>
+<h3>Три оси и пять осей</h3>
+<p>Пятиосевой станок подводит инструмент под разными углами и часто убирает лишние установы. Но правила проектирования он не отменяет: радиус по-прежнему ограничен фрезой, а тонкая стенка по-прежнему вибрирует. Час такого станка, как правило, стоит дороже. Что выгоднее для вашей детали, считает технолог по чертежу: универсальных чисел здесь нет.</p>
+<h2 id="vnutrennie-radiusy-i-karmany-glavnyy-istochnik-peredelok">Внутренние радиусы и карманы: главный источник переделок</h2>
+<p>Откроем чертёж с прямоугольным карманом, у которого все четыре внутренних угла нарисованы острыми. Цех такой карман не сделает. Фреза круглая, поэтому в углу остаётся радиус не меньше радиуса инструмента. Внутренний радиус ограничен диаметром фрезы: это геометрия, а не каприз цеха.</p>
+<p>Радиус разумно брать чуть больше радиуса фрезы. И делать одинаковым во всех углах детали: тогда технолог работает одним инструментом и не меняет фрезу ради каждого угла. Радиус у дна кармана тоже стоит указать на чертеже.</p>
+<p>С глубиной та же связь. Карман при большой глубине требует фрезы подходящего диаметра и длинного вылета. Длинная фреза гнётся, поэтому приходится снижать режимы. Ориентир соотношения глубины к диаметру для вашего материала уточните у технологов IRONEX.</p>
+<p>Если острый угол нужен по функции, есть два пути. Можно оставить радиус и снять кромку у ответной детали. Или заранее согласовать электроэрозию либо доработку: это отдельная операция, а не «просто нарисовать».</p>
+<blockquote><p><strong>Факт.</strong> Чем глубже карман относительно диаметра фрезы, тем длиннее вылет инструмента и тем ниже допустимые режимы резания.</p></blockquote>
+<h2 id="stenki-rebra-otverstiya-i-rezby">Стенки, рёбра, отверстия и резьбы</h2>
+<p><img alt="Фрезерный станок SAKAI UNITE ER555F" decoding="async" height="753" loading="lazy" src="/images/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku-2.webp" width="1000"/></p>
+<p><em>Фрезерный станок SAKAI UNITE ER555F для холодного фрезерования металлических деталей. Фото: <a href="https://commons.wikimedia.org/wiki/File:SAKAI_UNITE_ER555F_cold_milling_machine_2.jpg" rel="nofollow noopener" target="_blank">Syced</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>Чем тоньше и глубже элемент, тем хуже он держит нагрузку резания. Ниже — что проверить у стенок, рёбер, отверстий и резьб до отправки чертежа.</p>
+<h3>Тонкие стенки и рёбра</h3>
+<p>Тонкая стенка склонна к вибрации и деформации при фрезеровке: фреза давит на неё сбоку, а подпереть нечем.</p>
+<ul><li>Стенка, которая сильно выступает над основанием, «поёт» под фрезой и уходит от размера. Итог — брак по толщине и следы вибрации на поверхности.</li><li>Алюминий и сталь ведут себя по-разному: алюминий мягче и легче гнётся, сталь сильнее нагружает инструмент. Минимальную толщину и отношение высоты к толщине для вашего материала называют технологи IRONEX.</li></ul>
+<h3>Отверстия и резьбы</h3>
+<p>Глубину отверстия считают в его диаметрах. Чем оно глубже, тем хуже уходит стружка и тем осторожнее режим. Предельную глубину для вашего сверла уточните у технолога.</p>
+<ul><li>Резьба до самого дна глухого отверстия: метчику нужен запас на выход, поэтому резьбу делают короче отверстия.</li><li>Нестандартный диаметр вместо стандартного сверла удорожает деталь: вместо одного прохода появляется фрезерование по контуру или расточка.</li><li>Глубокое отверстие с резьбой — двойной риск: стружка забивает канал, и метчик ломается.</li></ul>
+<h2 id="dostup-instrumenta-i-bazy-kak-detal-budut-zakreplyat">Доступ инструмента и базы: как деталь будут закреплять</h2>
+<p>Технолог смотрит на чертёж и задаёт два вопроса: куда подойдёт инструмент и за что деталь можно взять. Нет ответа на любой из них — деталь переделывают или ждут оснастку, и цена растёт раньше, чем начнётся обработка.</p>
+<p>Недоступные поверхности и подрезы инструмент не достаёт. Тогда меняют установ или переходят на пять осей. Пример: паз на внутренней стороне корпуса, куда фреза не проходит из-за стенки. Его обрабатывают отдельным установом, иногда с особым приспособлением.</p>
+<p>Заготовку нужно за что-то зажать. Без технологических баз и припуска под зажим деталь либо переделывают, либо изготавливают под неё оснастку. Чем меньше сторон нужно обработать, тем меньше установов: одна-две вместо шести — заметная экономия времени. Лишняя грань съедает установ.</p>
+<p>Проверьте и переходы. Выход инструмента и радиус на стыке поверхностей избавляют деталь от «ступенек», которые остаются от фрезы.</p>
+<blockquote><p>Если технолог не видит, за что деталь взять и как до неё добраться, цена растёт раньше, чем начнётся обработка.</p></blockquote>
+<h2 id="dopuski-i-sherohovatost-gde-lishniy-kvalitet-stoit-deneg">Допуски и шероховатость: где лишний квалитет стоит денег</h2>
+<p>Жёсткий допуск на все размеры подряд — типичная ошибка. Допуск нужен поверхностям, которые работают в паре: посадкам, базам, уплотнениям. Остальные размеры оставьте по общим допускам. Общие допуски — предельные отклонения размеров без индивидуального допуска; их задают одной ссылкой на чертеже, например «ГОСТ 30893.1 — m». Стандарт идентичен ISO 2768-1 и предусматривает четыре класса точности: f, m, c и v [2].</p>
+<p>Избыточный допуск и квалитет повышают трудоёмкость. Появляются чистовые проходы, иногда шлифовка, отдельный контроль каждого размера. С <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатость</a>ю так же: чем меньше допустимая шероховатость, тем больше проходов и тем дольше станок держит деталь. Сколько времени добавит квалитет на вашей детали, считает технолог по чертежу.</p>
+<p>Подробнее о том, как назначать допуски, разобрано в статье про <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">допуски без переплат</a>. Здесь важно одно: допуск связан с конструкцией, а не с привычкой.</p>
+<blockquote><p>Допуск нужно назначать функции поверхности, а не привычке: каждый лишний квалитет добавляет операции и контроль.</p></blockquote>
+<h2 id="tipichnye-oshibki-konstruktora-tablitsa-pravil-i-ispravleniy">Типичные ошибки конструктора: таблица правил и исправлений</h2>
+<p>Таблица для самопроверки: элемент детали, правило, последствие нарушения и способ исправить чертёж. Числовые ориентиры, где они нужны, уточняйте у технолога.</p>
+<table><thead><tr><th>Элемент детали</th><th>Правило</th><th>Что будет при нарушении</th><th>Как исправить</th></tr></thead><tbody><tr><td>Внутренний угол</td><td>Радиус не меньше радиуса фрезы, лучше чуть больше и один для всех углов</td><td>Острый угол не получить, ответная деталь не встаёт</td><td>Нарисовать радиус, у ответной детали снять фаску</td></tr><tr><td>Глубокий карман</td><td>Глубина соразмерна диаметру фрезы</td><td>Длинный вылет, вибрация, сниженные режимы</td><td>Сделать карман шире или мельче</td></tr><tr><td>Тонкая стенка</td><td>Толщина с запасом под нагрузку резания</td><td>Вибрация, уход от размера</td><td>Утолстить стенку или добавить ребро</td></tr><tr><td>Глубокое отверстие</td><td>Глубина в диаметрах в пределах ориентира технолога</td><td>Плохой отвод стружки, риск поломки инструмента</td><td>Уменьшить глубину или сделать отверстие сквозным</td></tr><tr><td>Резьба до дна</td><td>Запас под выход метчика</td><td>Неполная резьба, сломанный метчик</td><td>Удлинить отверстие под резьбой</td></tr><tr><td>Недоступная поверхность</td><td>Инструмент доходит до каждой поверхности</td><td>Лишний установ, оснастка или пять осей</td><td>Изменить форму или разделить деталь на две</td></tr><tr><td>Допуск и шероховатость</td><td>Строгие значения только на функциональных поверхностях</td><td>Чистовые проходы, шлифовка, лишний контроль</td><td>Оставить общие допуски на остальных поверхностях</td></tr></tbody></table>
+<blockquote><p><strong>Мнение.</strong> Если деталь заказывают единичным заказом, начните проверку с внутренних радиусов и допусков: их проще всего поправить на чертеже, а влияние на время станка заметное.</p></blockquote>
+<h2 id="chek-list-pered-otpravkoy-chertezha-i-chto-delaet-tehnolog">Чек-лист перед отправкой чертежа и что делает технолог</h2>
+<p>Пройдите чертёж по шагам до отправки на расчёт. Каждый пункт закрывает одну из причин, по которой деталь возвращают на доработку.</p>
+<ol><li>Радиусы: у всех внутренних углов есть радиус, он одинаковый и чуть больше радиуса фрезы.</li><li>Карманы: глубина соразмерна ширине, у дна указан радиус.</li><li>Стенки и рёбра: толщина с запасом, нет длинных тонких выступов.</li><li>Отверстия и резьбы: стандартные диаметры, у глухой резьбы запас на выход метчика.</li><li>Доступ и базы: инструмент доходит до каждой поверхности, есть место под зажим.</li><li>Допуски и шероховатость: строгие значения только на функциональных поверхностях.</li><li>Материал и <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">3D-модель</a>: материал указан, модель совпадает с чертежом. Как это сделать, описано в статье, <a href="/blog/kak-podgotovit-3d-model-dlya-rascheta-metalloobrabotki.html">как подготовить 3D-модель для расчёта</a>.</li></ol>
+<p>Технолог проходит тот же список. Всё, что нарушает правила, он возвращает вопросом и часто сразу предлагает правку, которая не меняет функцию детали. Это дешевле, чем узнать о проблеме на станке.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Что такое технологичность конструкции детали?</summary>
+<div class="faq__a"><p>Это приспособленность конструкции к изготовлению с оптимальными затратами. Она зависит от конструкции детали, а не от её функции.</p></div>
+</details>
+<details>
+<summary>Зависит ли технологичность детали от объёма выпуска?</summary>
+<div class="faq__a"><p>Да, её оценивают для заданных условий производства и объёма выпуска. Деталь, удобная для единичного заказа, в серии может оказаться неудобной, и наоборот.</p></div>
+</details>
+<details>
+<summary>Отменяет ли пятиосевой станок правила технологичности?</summary>
+<div class="faq__a"><p>Нет: радиус по-прежнему ограничен фрезой, а тонкая стенка по-прежнему вибрирует. Пятиосевой станок часто убирает лишние установы, но выгоду для конкретной детали считает технолог по чертежу. Если чертёж готов, пришлите его на расчёт через <a href="/kontakty.html">форму на странице контактов</a>: технолог проверит радиусы, доступ инструмента и допуски и вернёт вопросы до запуска заказа. Подробнее о наших <a href="/frezerovka.html">фрезерных работах по металлу</a>.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://meganorm.ru/Data2/1/4294851/4294851993.htm" rel="noopener" target="_blank">ГОСТ 14.205-83. Технологичность конструкции изделий. Термины и определения</a></li>
+<li><a href="https://meganorm.ru/Data1/40/40423/index.htm" rel="noopener" target="_blank">ГОСТ 30893.1-2002 (ИСО 2768-1-89). Общие допуски</a></li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/oshibki-pri-proektirovanii-detalej.html">
+            <img src="/images/blog/oshibki-pri-proektirovanii-detalej-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Экономика заказа</span>
+              <span class="mat-card__title">Ошибки при проектировании деталей: что в чертеже удорожает изготовление и как этого избежать</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/otverstie-pod-rezbu-tablica-sverl-metricheskaya-rezba.html">
+            <img src="/images/blog/otverstie-pod-rezbu-tablica-sverl-metricheskaya-rezba-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Диаметр отверстия под резьбу: какое сверло брать для метрической резьбы и почему</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-zakazat-detali-po-chertezhu.html">
+            <img src="/images/blog/kak-zakazat-detali-po-chertezhu-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Чертежи и допуски</span>
+              <span class="mat-card__title">Как заказать детали по чертежу: пошаговая инструкция от запроса до приёмки</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

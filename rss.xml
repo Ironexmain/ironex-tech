@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 08 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали</title>
+      <link>https://ironex.tech/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku.html</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Внутренние радиусы, карманы, стенки, отверстия, допуски: что в конструкции детали удорожает фрезеровку и как исправить это до заказа.</description>
+    </item>
+    <item>
+      <title>Сварные швы: как различать виды и задавать требования на чертеже</title>
+      <link>https://ironex.tech/blog/svarnye-shvy-vidy-oboznacheniya-gost.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/svarnye-shvy-vidy-oboznacheniya-gost.html</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Виды сварных швов, размеры и обозначения на чертеже. Что учесть при выборе стандарта и какие требования передать подрядчику для изготовления и приёмки.</description>
+    </item>
+    <item>
+      <title>Сварные конструкции и узлы: как их проектируют и изготавливают по чертежу</title>
+      <link>https://ironex.tech/blog/svarnye-konstruktsii-proektirovanie-proizvodstvo.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/svarnye-konstruktsii-proektirovanie-proizvodstvo.html</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Как проектируют и варят узлы по чертежу: способы сварки, ГОСТы, контроль шва, допуски сборки, сроки и из чего складывается цена.</description>
+    </item>
     <item>
       <title>Что входит в обрабатывающую промышленность и какое место в ней занимает металлообработка</title>
       <link>https://ironex.tech/blog/obrabatyvayushchaya-promyshlennost.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Mon, 02 Nov 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Как выбрать микрометр, подготовить его к работе и прочитать шкалу. Учебные примеры отсчёта, сравнение с допуском и причины расхождений.</description>
-    </item>
-    <item>
-      <title>Почему металл блестит и как обработка меняет внешний вид детали</title>
-      <link>https://ironex.tech/blog/metallicheskiy-blesk.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/metallicheskiy-blesk.html</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Почему металл блестит, а после обработки становится матовым. Как шероховатость, плёнки и полирование влияют на поверхность и что согласовать при заказе.</description>
-    </item>
-    <item>
-      <title>426-ФЗ и специальная оценка условий труда на металлообрабатывающем производстве</title>
-      <link>https://ironex.tech/blog/426-fz-o-spetsialnoy-otsenke-usloviy-truda.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/426-fz-o-spetsialnoy-otsenke-usloviy-truda.html</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как подготовить металлообрабатывающее производство к СОУТ: сведения о рабочих местах, вопросы исполнителю, проверка отчёта и учёт изменений в цехе.</description>
-    </item>
-    <item>
-      <title>Что означает steel ball в документации и как выбрать стальные шары</title>
-      <link>https://ironex.tech/blog/steel-ball-perevod-i-primenenie.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/steel-ball-perevod-i-primenenie.html</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Steel ball — «стальной шар» или «стальной шарик». Как различать назначение изделий и какие данные о материале, геометрии и поверхности нужны для заказа.</description>
     </item>
   </channel>
 </rss>
