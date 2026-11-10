@@ -5,7 +5,23 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Точность лазерной резки: какие допуски реально держит лист и от чего они зависят</title>
+      <link>https://ironex.tech/blog/tochnost-lazernoj-rezki-dopuski-lista.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/tochnost-lazernoj-rezki-dopuski-lista.html</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Какой допуск реально держит лазерная резка листа: ширина реза, конусность, отверстия у кромки, размеры через гиб. И что писать в чертеже.</description>
+    </item>
+    <item>
+      <title>Как строят технологический процесс токарной обработки детали по чертежу</title>
+      <link>https://ironex.tech/blog/tekhnologicheskiy-protsess-tokarnoy-obrabotki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/tekhnologicheskiy-protsess-tokarnoy-obrabotki.html</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Этапы токарной обработки на примере ступенчатого вала: выбор заготовки, базирование, расчёт режимов, карта переходов и контроль по чертежу.</description>
+    </item>
     <item>
       <title>Технологичность конструкции: как спроектировать деталь, чтобы её выгодно фрезеровали</title>
       <link>https://ironex.tech/blog/tehnologichnost-konstrukcii-detali-pod-frezerovku.html</link>
@@ -149,22 +165,6 @@
       <pubDate>Tue, 03 Nov 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Как выбрать размеры, сплав и состояние алюминиевой полосы под обработку. Какие требования к заготовке указать в чертеже и заявке.</description>
-    </item>
-    <item>
-      <title>Как выбрать нутромер и измерить внутренний размер детали</title>
-      <link>https://ironex.tech/blog/nutromer.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/nutromer.html</guid>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Контроль качества</category>
-      <description>Как выбрать нутромер под отверстие и допуск чертежа, настроить отсчёт и записать результаты контроля. Разбираем ошибки измерения.</description>
-    </item>
-    <item>
-      <title>Что такое микрометр и как им проверить размер детали</title>
-      <link>https://ironex.tech/blog/mikrometr-eto.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/mikrometr-eto.html</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как выбрать микрометр, подготовить его к работе и прочитать шкалу. Учебные примеры отсчёта, сравнение с допуском и причины расхождений.</description>
     </item>
   </channel>
 </rss>
