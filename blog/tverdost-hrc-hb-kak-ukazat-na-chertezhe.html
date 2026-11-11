@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Твердость HRC и HB: как указать на чертеже и проверить — IRONEX</title>
+  <meta name="description" content="Как записать твёрдость HRC или HB на чертеже: диапазон, шкала, зона. Как её проверяют у исполнителя и что просить в протоколе." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe.html#article",
+      "headline": "Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют",
+      "description": "Как записать твёрдость HRC или HB на чертеже: диапазон, шкала, зона. Как её проверяют у исполнителя и что просить в протоколе.",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe-cover.webp",
+      "articleSection": "Контроль качества",
+      "keywords": [
+        "твердость HRC",
+        "твёрдость по Роквеллу",
+        "твёрдость по Бринеллю",
+        "твёрдость на чертеже",
+        "измерение твёрдости",
+        "твердомер"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что означает твёрдость 58 HRC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это значение по шкале C Роквелла: алмазный конус с углом 120° вдавливают под предварительной и основной нагрузками, а результат определяют по глубине внедрения. Для чертежа одного числа мало: добавьте допуск, например 56…60 HRC, и зону замера."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как проверить твёрдость тонкого листа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Стандартное измерение HRC для стали около 57 HRC требует толщины не менее 0,76 мм. Более тонкий металл контролируют по поверхностным шкалам Роквелла (HR15N, HR30N, HR45N) либо методом Виккерса. Шкалу лучше указать на чертеже, а не оставлять на усмотрение лаборатории."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли перевести HB в HRC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно получить приблизительное значение по справочной таблице для подходящего материала. Для приёмки пересчёт не используют: деталь измеряют в шкале, указанной на чертеже."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда указывать HB, а когда HRC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HB выбирают для мягких и нормализованных заготовок, чугуна, поковок и отливок. HRC подходит для закалённых сталей достаточной толщины. Тонкие детали и упрочнённые слои проверяют поверхностными шкалами Роквелла либо методом Виккерса."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Твёрдость на чертеже: как записать HRC или HB без споров при приёмке" />
+  <meta property="og:description" content="Как записать твёрдость HRC или HB на чертеже: диапазон, шкала, зона. Как её проверяют у исполнителя и что просить в протоколе." />
+  <meta property="og:url" content="https://ironex.tech/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-11" />
+  <meta property="article:modified_time" content="2026-11-11" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Твёрдость на чертеже: как записать HRC или HB без споров при приёмке" />
+  <meta name="twitter:description" content="Как записать твёрдость HRC или HB на чертеже: диапазон, шкала, зона. Как её проверяют у исполнителя и что просить в протоколе." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#hrc-i-hb-chto-izmeryayut-i-pochemu-chisla-nelzya-sravnivat-n">HRC и HB: что измеряют и почему числа нельзя сравнивать напрямую</a></li>
+<li><a href="#metod-brinellya-kogda-ukazyvat-hb-a-ne-hrc">Метод Бринелля: когда указывать HB, а не HRC</a></li>
+<li><a href="#kak-zapisat-tverdost-na-chertezhe-chtoby-detal-mozhno-bylo-p">Как записать твёрдость на чертеже, чтобы деталь можно было принять</a></li>
+<li><a href="#45-hrc-i-58-hrc-chto-tehnolog-proveryaet-do-zapuska">45 HRC и 58 HRC: что технолог проверяет до запуска</a></li>
+<li><a href="#kak-izmeryayut-tverdost-u-ispolnitelya-poryadok-kontrolya">Как измеряют твёрдость у исполнителя: порядок контроля</a></li>
+<li><a href="#tonkie-detali-i-sloi-kogda-hrc-ne-podhodit">Тонкие детали и слои: когда HRC не подходит</a></li>
+<li><a href="#perevod-hb-hrc-i-hv-chto-mozhno-a-chto-nelzya">Перевод HB, HRC и HV: что можно, а что нельзя</a></li>
+<li><a href="#oshibki-v-trebovanii-po-tverdosti-iz-za-kotoryh-detali-vozvr">Ошибки в требовании по твёрдости, из-за которых детали возвращают</a></li>
+<li><a href="#chto-ukazat-v-zayavke-chtoby-raschet-prishel-bez-perepiski">Что указать в заявке, чтобы расчёт пришёл без переписки</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют</h1>
+        <p class="lede">Как записать твёрдость HRC или HB на чертеже: диапазон, шкала, зона. Как её проверяют у исполнителя и что просить в протоколе.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Контроль качества</span>
+            <time datetime="2026-11-11">Опубликовано 11 ноября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe-cover.webp" alt="Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Пишите твёрдость диапазоном, со шкалой и зоной: «56…60 HRC, рабочая поверхность». Для закалённой стали берут HRC, для мягких и нормализованных заготовок, поковок и чугуна — HB. Одно число без допуска и шкалы исполнитель не может ни выполнить, ни принять.</p>
+<h2 id="hrc-i-hb-chto-izmeryayut-i-pochemu-chisla-nelzya-sravnivat-n">HRC и HB: что измеряют и почему числа нельзя сравнивать напрямую</h2>
+<p>Первый вопрос технолога при чтении чертежа — в какой шкале контролировать твёрдость. HRC измеряют методом Роквелла: алмазный конус входит в металл под предварительной и основной нагрузками, а прибор определяет результат по разнице глубины внедрения. Число записывают вместе с обозначением HR и буквой шкалы.</p>
+<p>Запись <code>58 HRC</code> означает 58 единиц по шкале C. Алмазный конус этой шкалы имеет угол 120°. Полученное значение помогает оценить сопротивление поверхности вдавливанию и косвенно проверить результат закалки и отпуска.</p>
+<p>HB измеряют методом Бринелля. Твердомер вдавливает шарик, после чего оператор или оптическая система измеряет диаметр отпечатка. Значения HRC и HB нельзя сопоставлять как одинаковые единицы.</p>
+<table><thead><tr><th>Шкала</th><th>Индентор</th><th>Основа измерения</th><th>Типичное применение</th></tr></thead><tbody><tr><td>HRC</td><td>Алмазный конус</td><td>Глубина внедрения</td><td>Закалённые стали</td></tr><tr><td>HBW</td><td>Твердосплавный шарик</td><td>Диаметр отпечатка</td><td>Отожжённые стали, чугун, поковки</td></tr><tr><td>HV</td><td>Алмазная пирамида</td><td>Диагонали отпечатка</td><td>Тонкие слои и мелкие детали</td></tr></tbody></table>
+<blockquote><p><strong>Мнение.</strong> Если деталь закалена и её толщина допускает полноценный отпечаток, задавайте HRC: подрядчику будет проще связать требование с термообработкой и контролем.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют">Прислать чертёж на почту</a>
+</div>
+<h2 id="metod-brinellya-kogda-ukazyvat-hb-a-ne-hrc">Метод Бринелля: когда указывать HB, а не HRC</h2>
+<p><img alt="Компонент подвески автомобиля в тестере Бринелля для проверки твёрдости" decoding="async" height="804" loading="lazy" src="/images/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe-1.webp" width="1000"/></p>
+<p><em>Контроль твёрдости компонента подвески методом Бринелля в соответствии с требованиями чертежа. Фото: <a href="https://commons.wikimedia.org/wiki/File:A_Brinell_hardness_testing_machine.jpg" rel="nofollow noopener" target="_blank">Foundrax_Engineering_Products</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p>HB подходит для материалов, в которых крупный отпечаток показывает усреднённые свойства объёма. Метод применяют для мягких, отожжённых и нормализованных сталей, чугуна, поковок и крупных отливок. Закалённую сталь обычно контролируют по HRC, поскольку шарик Бринелля может деформироваться на твёрдом материале.</p>
+<p>При испытании твердосплавный шарик вдавливают с заданной нагрузкой и выдерживают под ней установленное время. На практике встречаются шарики диаметром 2,5 и 10 мм, нагрузки от 187,5 до 3000 кгс и выдержка от 10 до 30 секунд. Конкретное сочетание выбирают по стандарту с учётом материала и ожидаемой твёрдости.</p>
+<p>После разгрузки отпечаток измеряют в двух взаимно перпендикулярных направлениях. Твёрдость рассчитывают по нагрузке, диаметру шарика и среднему диаметру отпечатка. Результаты, полученные при несопоставимых отношениях нагрузки к квадрату диаметра шарика, напрямую не сравнивают.</p>
+<p>Критерий выбора можно свести к трём случаям: закалённая сталь — HRC, мягкая массивная заготовка — HB, тонкий слой или небольшая деталь — HV либо поверхностная шкала Роквелла.</p>
+<h2 id="kak-zapisat-tverdost-na-chertezhe-chtoby-detal-mozhno-bylo-p">Как записать твёрдость на чертеже, чтобы деталь можно было принять</h2>
+<p>Технические требования чертежа должны фиксировать диапазон, шкалу и зону контроля. Запись <code>HRC 58</code> оставляет спор о допустимом отклонении. Формулировка <code>56…60 HRC, рабочая поверхность А</code> задаёт проверяемое условие для производства и приёмки.</p>
+<p>Плохая запись: <code>Твёрдость 58</code>. Здесь нет шкалы, допуска и места замера. Рабочая запись для закалённой детали: <code>Закалить и отпустить до 56…60 HRC</code>. Если требование относится к одной поверхности, добавляют обозначение этой поверхности и участок контроля.</p>
+<p>Марку стали и вид термообработки указывают вместе с твёрдостью. Закалка и отпуск задают итоговый диапазон HRC, но достижимый результат зависит от химического состава, сечения детали и режима охлаждения. Полезно также проверить, <a href="/razdel/chertezhi-i-dopuski.html">что ещё должно быть на чертеже, чтобы его посчитали без переписки</a>.</p>
+<blockquote><p>Твёрдость на чертеже — это диапазон, шкала и зона замера. Одно число нельзя однозначно изготовить и проверить.</p></blockquote>
+<h3>Закалка ТВЧ и цементация: слой и поверхность</h3>
+<p>Для поверхностного упрочнения задают два отдельных требования: твёрдость поверхности и глубину упрочнённого слоя. Пример: <code>Рабочую поверхность Б закалить ТВЧ до 54…58 HRC; глубина слоя — уточнить по расчёту</code>.</p>
+<p>Для цементованной детали дополнительно согласуют способ определения границы слоя. Без этого лаборатория может измерить глубину по другому критерию и получить формально иной результат. Зону отпечатков показывают на чертеже либо описывают в технических требованиях.</p>
+<h2 id="45-hrc-i-58-hrc-chto-tehnolog-proveryaet-do-zapuska">45 HRC и 58 HRC: что технолог проверяет до запуска</h2>
+<p>Одно и то же число HRC на чертеже может означать разный объём работы. Достижимый диапазон для выбранной марки не стоит брать из чужой таблицы: его подтверждает технолог по марке, сечению и состоянию заготовки.</p>
+<table><thead><tr><th>Что проверяют</th><th>Почему это влияет на результат</th></tr></thead><tbody><tr><td>Сечение детали</td><td>В толстом сечении твёрдость на поверхности и в сердцевине может различаться</td></tr><tr><td>Исходное состояние заготовки</td><td>От него зависят режим нагрева и поведение металла при закалке</td></tr><tr><td>Режим охлаждения и отпуска</td><td>Определяет итоговую твёрдость и риск трещин</td></tr><tr><td>Припуск под шлифовку</td><td>Позволяет снять обезуглероженный слой и скорректировать деформацию</td></tr></tbody></table>
+<p>Термообработка может вызвать коробление, поэтому ответственные поверхности часто оставляют с припуском и шлифуют после закалки. Дополнительные операции влияют на <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">цену детали по чертежу</a> и производственный срок.</p>
+<h2 id="kak-izmeryayut-tverdost-u-ispolnitelya-poryadok-kontrolya">Как измеряют твёрдость у исполнителя: порядок контроля</h2>
+<p>Контроль начинается с подготовки поверхности и проверки твердомера. Окалина, обезуглероженный слой, загрязнение или качание детали меняют глубину внедрения индентора. Значение на дисплее при этом выглядит точным, хотя установка образца нарушена.</p>
+<ol><li>Поверхность очищают и при необходимости шлифуют, не перегревая металл.</li><li>Деталь устанавливают на опору без качания и загрязнений под ней.</li><li>Твердомер проверяют по эталонной мере нужного диапазона.</li><li>Отпечатки ставят в заданной зоне с нормативными отступами от края и друг от друга.</li><li>Результаты оценивают по принятому плану контроля и заносят в протокол.</li></ol>
+<p>Для цилиндрических и выпуклых поверхностей учитывают поправку на кривизну. Допустимые расстояния и поправки берут из таблиц применяемого стандарта, поэтому их лучше зафиксировать в методике контроля.</p>
+<p>В протокол включают обозначение детали, шкалу, зону, результаты отдельных измерений, итог, модель или номер прибора и сведения о проверке твердомера. Для партии отдельно указывают сплошной либо выборочный контроль.</p>
+<p>Портативный динамический твердомер удобен на крупной детали, которую нельзя поставить на стационарный прибор. Метод Либа чувствителен к массе, толщине, <a href="/blog/dopuski-i-sherohovatost-bez-lishnego-udorozhaniya.html">шероховатости</a> и закреплению изделия, поэтому способ контроля согласуют до приёмки.</p>
+<h2 id="tonkie-detali-i-sloi-kogda-hrc-ne-podhodit">Тонкие детали и слои: когда HRC не подходит</h2>
+<p>Для тонкого металла шкалу выбирают прежде всего по толщине. Слишком большое усилие продавливает образец настолько, что на результат начинает влиять опорная наковальня. После такого испытания полученное число нельзя считать твёрдостью материала.</p>
+<h3>Как выбрать шкалу по толщине</h3>
+<p>Ориентировочная минимальная толщина равна десяти глубинам отпечатка для алмазного конуса и пятнадцати глубинам для шарика. Точный предел определяют по таблицам стандарта. После замера проверяют обратную сторону: видимый след деформации указывает на неверную шкалу или недостаточную толщину.</p>
+<p>Для тонких листов применяют поверхностные шкалы HR15N, HR30N и HR45N с меньшей нагрузкой. Приближённо значению 57 HRC соответствуют 88,9 HR15N, 74,8 HR30N и 63,2 HR45N.</p>
+<table><thead><tr><th>Исходный ориентир</th><th>Приближённый перевод</th></tr></thead><tbody><tr><td>57 HRC</td><td>88,9 HR15N</td></tr><tr><td>57 HRC</td><td>74,8 HR30N</td></tr><tr><td>57 HRC</td><td>63,2 HR45N</td></tr></tbody></table>
+<p>По ASTM E18, как его приводит Buehler, для стали около 57 HRC стандартное испытание по HRC требует толщины не менее 0,76 мм. Более тонкий лист при таком уровне твёрдости контролируют по подходящей поверхностной шкале.</p>
+<h3>Когда уходить от Роквелла</h3>
+<p>Если толщина или глубина слоя не позволяют выбрать шкалу Роквелла, используют метод Виккерса либо Кнупа. Небольшая нагрузка и малый отпечаток подходят для тонких упрочнённых слоёв и мелких деталей. В чертеже указывают фактическую шкалу измерения, чтобы лаборатория не заменяла контроль пересчётом.</p>
+<h2 id="perevod-hb-hrc-i-hv-chto-mozhno-a-chto-nelzya">Перевод HB, HRC и HV: что можно, а что нельзя</h2>
+<p>Таблицы перевода дают ориентировочное соответствие между HB, HRC и HV для определённых групп материалов. На результат влияют структура металла, термообработка и диапазон твёрдости. Поэтому одинаковое значение HB у двух сплавов не гарантирует одинаковое HRC.</p>
+<p>Перевод полезен на этапе оценки. Например, закупщик может понять, подходит ли выбранный метод к ожидаемому состоянию заготовки. Для приёмки нужен замер по шкале, записанной на чертеже или в договоре.</p>
+<p>Особенно рискован обратный расчёт механических свойств по HB. Справочные коэффициенты работают только для оговорённых сталей и состояний поставки. Без подтверждённой зависимости предел прочности по одному значению HB не назначают.</p>
+<blockquote><p>Перевод между шкалами даёт оценку. Приёмочное значение получают тем методом и в той шкале, которые указаны в технических требованиях.</p></blockquote>
+<h2 id="oshibki-v-trebovanii-po-tverdosti-iz-za-kotoryh-detali-vozvr">Ошибки в требовании по твёрдости, из-за которых детали возвращают</h2>
+<p>Большинство споров начинается до производства: чертёж не задаёт способ однозначной проверки. Исполнитель выбирает режим по своему пониманию, а заказчик применяет другой критерий при входном контроле. Проверка пяти формулировок снижает этот риск.</p>
+<ul><li><code>58 HRC</code> без допуска: добавьте нижнюю и верхнюю границы.</li><li><code>Твёрдость 220</code> без шкалы: укажите HBW, HRC или HV.</li><li>HRC для мягкой заготовки: проверьте, не нужен ли контроль по Бринеллю.</li><li><code>Закалить поверхность</code> без обозначения зоны: привяжите требование к поверхности или участку.</li><li>Термообработка без метода контроля: укажите шкалу, зону, план измерений и требования к протоколу.</li></ul>
+<p>Ошибочная шкала приводит к недостоверному контролю. Слишком узкий диапазон увеличивает риск повторной обработки и брака. Необозначенная зона позволяет поставить отпечаток на удобном участке, который не характеризует рабочую поверхность. Другие <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">типичные причины брака при обработке металла</a> лучше исключить до запуска партии.</p>
+<h2 id="chto-ukazat-v-zayavke-chtoby-raschet-prishel-bez-perepiski">Что указать в заявке, чтобы расчёт пришёл без переписки</h2>
+<p>Для расчёта нужны данные, которые влияют на технологический маршрут и контроль: марка стали, диапазон твёрдости со шкалой, зона измерения и вид термообработки. При поверхностном упрочнении добавляют глубину слоя и способ её определения.</p>
+<p>Укажите, кто проводит закалку и отпуск: подрядчик по мехобработке, отдельная термическая площадка или заказчик. Если нужен протокол измерений, задайте его состав и формат заранее. Количество деталей в партии тоже влияет на расчёт, поскольку от него зависит сплошной или выборочный контроль.</p>
+<p>Перед отправкой проверьте комплект:</p>
+<ul><li>чертёж и модель детали;</li><li>марка и состояние поставки стали;</li><li>диапазон HRC, HBW или HV;</li><li>зона измерения;</li><li>глубина упрочнённого слоя;</li><li>вид термообработки;</li><li>требования к протоколу и объёму контроля.</li></ul>
+<blockquote><p>Расчёт проходит без уточнений, когда заявка содержит диапазон, шкалу, зону замера и требования к протоколу.</p></blockquote>
+<p>Если эти данные готовы, <a href="/kontakty.html">пришлите чертёж на расчёт</a>. Технолог проверит совместимость материала, термообработки, геометрии и выбранного метода контроля.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Что означает твёрдость 58 HRC?</summary>
+<div class="faq__a"><p>Это значение по шкале C Роквелла: алмазный конус с углом 120° вдавливают под предварительной и основной нагрузками, а результат определяют по глубине внедрения. Для чертежа одного числа мало: добавьте допуск, например 56…60 HRC, и зону замера.</p></div>
+</details>
+<details>
+<summary>Как проверить твёрдость тонкого листа?</summary>
+<div class="faq__a"><p>Стандартное измерение HRC для стали около 57 HRC требует толщины не менее 0,76 мм. Более тонкий металл контролируют по поверхностным шкалам Роквелла (HR15N, HR30N, HR45N) либо методом Виккерса. Шкалу лучше указать на чертеже, а не оставлять на усмотрение лаборатории.</p></div>
+</details>
+<details>
+<summary>Можно ли перевести HB в HRC?</summary>
+<div class="faq__a"><p>Можно получить приблизительное значение по справочной таблице для подходящего материала. Для приёмки пересчёт не используют: деталь измеряют в шкале, указанной на чертеже.</p></div>
+</details>
+<details>
+<summary>Когда указывать HB, а когда HRC?</summary>
+<div class="faq__a"><p>HB выбирают для мягких и нормализованных заготовок, чугуна, поковок и отливок. HRC подходит для закалённых сталей достаточной толщины. Тонкие детали и упрочнённые слои проверяют поверхностными шкалами Роквелла либо методом Виккерса.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.buehler.com/blog/rockwell-hardness-testing/" rel="noopener" target="_blank">Rockwell Hardness Testing</a> — Buehler</li>
+<li><a href="https://www.buehler.com/blog/brinell-hardness-testing/" rel="noopener" target="_blank">Brinell Hardness Testing</a> — Buehler</li>
+<li><a href="https://www.buehler.com/blog/material-thickness-when-choosing-a-rockwell-scale/" rel="noopener" target="_blank">Material Thickness When Choosing a Rockwell Scale</a> — Buehler</li>
+<li><a href="https://www.iso.org/" rel="noopener" target="_blank">ISO — международные стандарты, в том числе по испытаниям твёрдости</a> — International Organization for Standardization</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/svarka-stali-40h.html">
+            <img src="/images/blog/svarka-stali-40h-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Можно ли сваривать сталь 40Х и как сохранить свойства детали</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-opredelit-shag-rezby.html">
+            <img src="/images/blog/kak-opredelit-shag-rezby-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Как определить шаг и размер резьбы у детали: от резьбомера до записи в чертеже</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-polzovatsya-shtangencirkulem-i-mikrometrom.html">
+            <img src="/images/blog/kak-polzovatsya-shtangencirkulem-i-mikrometrom-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Контроль качества</span>
+              <span class="mat-card__title">Как пользоваться штангенциркулем и микрометром: инструкция по шагам и как не ошибиться в замере детали</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

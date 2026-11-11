@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как выбрать материал для детали: сталь, алюминий или нержавейка</title>
+      <link>https://ironex.tech/blog/vybor-materiala-detali-stal-alyuminiy-nerzhaveyka.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/vybor-materiala-detali-stal-alyuminiy-nerzhaveyka.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Плотность, коррозия, обработка и цена: когда детали нужна сталь, когда алюминий, а когда нержавейка. Таблица сравнения и что указать в чертеже.</description>
+    </item>
+    <item>
+      <title>Виды заклёпок и заклёпочных соединений: что выбрать для листового изделия</title>
+      <link>https://ironex.tech/blog/vidy-zaklepok-zaklepochnye-soedineniya-dlya-lista.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/vidy-zaklepok-zaklepochnye-soedineniya-dlya-lista.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Вытяжные, забивные, резьбовые и структурные заклёпки: чем отличаются, как подобрать диаметр и длину под пакет и избежать гальванической коррозии.</description>
+    </item>
+    <item>
+      <title>Твёрдость HRC и HB: как записать требование на чертеже и как её проверяют</title>
+      <link>https://ironex.tech/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/tverdost-hrc-hb-kak-ukazat-na-chertezhe.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Как записать твёрдость HRC или HB на чертеже: диапазон, шкала, зона. Как её проверяют у исполнителя и что просить в протоколе.</description>
+    </item>
     <item>
       <title>Точность лазерной резки: какие допуски реально держит лист и от чего они зависят</title>
       <link>https://ironex.tech/blog/tochnost-lazernoj-rezki-dopuski-lista.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Wed, 04 Nov 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Что проверить перед сваркой стали 40Х: состояние металла, технологию, присадку, подогрев и контроль. Как сравнить ремонт с изготовлением новой детали.</description>
-    </item>
-    <item>
-      <title>Как выбрать аргоновый редуктор под баллон, горелку и задачу сварки</title>
-      <link>https://ironex.tech/blog/reduktor-argonovyy.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/reduktor-argonovyy.html</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Как выбрать аргоновый редуктор для TIG-сварки: проверить соединения, давление, контроль расхода и линии для горелки и поддува.</description>
-    </item>
-    <item>
-      <title>Что означает НАКС сварщика и как проверить допуск к вашему заказу</title>
-      <link>https://ironex.tech/blog/naks-svarshchika-chto-eto.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/naks-svarshchika-chto-eto.html</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как сопоставить удостоверение сварщика с чертежом, проверить область аттестации и согласовать документы подрядчика перед изготовлением.</description>
-    </item>
-    <item>
-      <title>Как выбрать алюминиевую полосу для изготовления детали</title>
-      <link>https://ironex.tech/blog/polosa-alyuminievaya-razmery-splavy-obrabotka.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/polosa-alyuminievaya-razmery-splavy-obrabotka.html</guid>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Как выбрать размеры, сплав и состояние алюминиевой полосы под обработку. Какие требования к заготовке указать в чертеже и заявке.</description>
     </item>
   </channel>
 </rss>
