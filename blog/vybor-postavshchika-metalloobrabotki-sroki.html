@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Выбор поставщика металлообработки: как не сорвать сроки</title>
+  <meta name="description" content="Загрузка станков, операции на стороне, документы на металл, пробная партия и неустойка — что проверить у подрядчика до подписания договора." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/vybor-postavshchika-metalloobrabotki-sroki.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/vybor-postavshchika-metalloobrabotki-sroki.html#article",
+      "headline": "Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора",
+      "description": "Загрузка станков, операции на стороне, документы на металл, пробная партия и неустойка — что проверить у подрядчика до подписания договора.",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/vybor-postavshchika-metalloobrabotki-sroki.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/vybor-postavshchika-metalloobrabotki-sroki-cover.webp",
+      "articleSection": "Заказчику",
+      "keywords": [
+        "выбор поставщика металлообработки",
+        "как выбрать подрядчика по металлообработке",
+        "критерии выбора подрядчика",
+        "как не сорвать сроки изготовления",
+        "проверка качества металлообработки",
+        "пробная партия деталей"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Почему дешёвое предложение может оказаться дороже?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В КП нет простоя вашей линии, штрафов перед вашим заказчиком и срочной замены исполнителя, а платите за это вы. Поэтому сравнивайте предложения на одинаковых условиях: материал, допуски, партия, срок."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли пробная партия перед серией?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если деталь новая, допуски жёсткие или тираж большой: пробная партия показывает реальный срок и ловит ошибки до серии. Для простой повторяющейся детали иногда хватает приёмки первой детали по акту."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие документы просить у подрядчика по металлообработке?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сертификат или паспорт на металл, протокол измерений по вашему чертежу и, если нужно, сертификат системы менеджмента качества. Условия гарантии фиксируйте в договоре, а не в переписке."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Дешёвое КП — не главное: что проверить у цеха до договора" />
+  <meta property="og:description" content="Загрузка станков, операции на стороне, документы на металл, пробная партия и неустойка — что проверить у подрядчика до подписания договора." />
+  <meta property="og:url" content="https://ironex.tech/blog/vybor-postavshchika-metalloobrabotki-sroki.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/vybor-postavshchika-metalloobrabotki-sroki-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-12" />
+  <meta property="article:modified_time" content="2026-11-12" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Дешёвое КП — не главное: что проверить у цеха до договора" />
+  <meta name="twitter:description" content="Загрузка станков, операции на стороне, документы на металл, пробная партия и неустойка — что проверить у подрядчика до подписания договора." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/vybor-postavshchika-metalloobrabotki-sroki-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#pochemu-tsena-v-kp-ne-glavnoe-pri-vybore-podryadchika">Почему цена в КП — не главное при выборе подрядчика</a></li>
+<li><a href="#kogo-vy-vybiraete-ispolnitelya-rabot-postavschika-prokata-il">Кого вы выбираете: исполнителя работ, поставщика проката или продавца станков</a></li>
+<li><a href="#sroki-chto-sprosit-u-tseha-do-podpisaniya-dogovora">Сроки: что спросить у цеха до подписания договора</a></li>
+<li><a href="#proverka-kachestva-kakie-dokumenty-i-zamery-prosit">Проверка качества: какие документы и замеры просить</a></li>
+<li><a href="#kak-sravnit-dva-predlozheniya-skoring-vmesto-vzglyada-na-tse">Как сравнить два предложения: скоринг вместо взгляда на цену</a></li>
+<li><a href="#krasnye-flagi-na-pervom-zvonke-i-v-perepiske">Красные флаги на первом звонке и в переписке</a></li>
+<li><a href="#dogovor-i-oplata-kak-zakrepit-srok-na-bumage">Договор и оплата: как закрепить срок на бумаге</a></li>
+<li><a href="#pervaya-detal-i-probnaya-partiya-priemka-do-serii">Первая деталь и пробная партия: приёмка до серии</a></li>
+<li><a href="#chto-sdelat-do-zaprosa-kp-korotkiy-poryadok-deystviy">Что сделать до запроса КП: короткий порядок действий</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора</h1>
+        <p class="lede">Загрузка станков, операции на стороне, документы на металл, пробная партия и неустойка — что проверить у подрядчика до подписания договора.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Заказчику</span>
+            <time datetime="2026-11-12">Опубликовано 12 ноября 2026</time>
+
+            <span>8 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/vybor-postavshchika-metalloobrabotki-sroki-cover.webp" alt="Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Сроки нередко ломаются не на станке, а вокруг него: в очереди на загрузку, в ожидании металла, у смежника с термообработкой. Поэтому выбирайте цех не по цене в КП, а по тому, что он готов показать заранее: загрузку, маршрут детали, документы на материал и условия приёмки.</p>
+<h2 id="pochemu-tsena-v-kp-ne-glavnoe-pri-vybore-podryadchika">Почему цена в КП — не главное при выборе подрядчика</h2>
+<p>Цена в КП показывает, сколько вы заплатите цеху, но не показывает, сколько потеряете, если деталь придёт позже. Одна опоздавшая деталь может остановить сборку, и стоимость этого простоя стоит сравнить с разницей между двумя предложениями. Цена без срока — половина предложения.</p>
+<p>Стоимость срыва складывается из трёх частей: простой вашей линии или сборки, штрафы перед вашим заказчиком и срочная замена исполнителя. Замена добавляет расходы: вы платите за скорость и заново встаёте в чужую очередь.</p>
+<p>Сравнивайте КП только на одинаковых условиях: материал, допуски, <a href="/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii.html">размер партии</a>, срок. Если один цех посчитал сталь 45, а другой — 40Х, разница в цене объясняется материалом, а не мастерством. Как складывается сама цена, разобрано в статье <a href="/ceny.html">из чего складываются цены на металлообработку</a>.</p>
+<blockquote><p>Дешёвое КП дорожает в тот момент, когда деталь не приехала к сборке.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора">Прислать чертёж на почту</a>
+</div>
+<h2 id="kogo-vy-vybiraete-ispolnitelya-rabot-postavschika-prokata-il">Кого вы выбираете: исполнителя работ, поставщика проката или продавца станков</h2>
+<p><img alt="Токарь обрабатывает деталь на станке под контролем инструктора" decoding="async" height="734" loading="lazy" src="/images/blog/vybor-postavshchika-metalloobrabotki-sroki-1.webp" width="1000"/></p>
+<p><em>Инструктор контролирует обработку детали на токарном станке во время производственного обучения. Фото: <a href="https://commons.wikimedia.org/wiki/File:HECOX,_C.W._INSTRUCTOR_IN_MACHINE_SHOP,_D.C._PUBLIC_SCHOOLS._SUPERVISING_MFR._OF_PRACTICE_SHELLS_FOR_NAVY,_AT_McKINLEY_TRAINING_SCHOOL.jpg" rel="nofollow noopener" target="_blank">Harris &amp; Ewing</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Статья про заказ детали по чертежу — то есть про контрактную металлообработку. Исполнитель режет, точит и фрезерует по вашему чертежу. Поставщик проката продаёт заготовку, продавец оборудования — станки. У каждого свои риски, поэтому критерии из этой статьи работают только для первого.</p>
+<p>Отдельно решите, чей материал пойдёт в работу. Давальческий — ваш: цех не ждёт прокат, но срок зависит от того, когда вы его привезёте. Материал подрядчика избавляет вас от логистики, но в срок входит ожидание проката: спросите, есть ли он на складе. Ещё спросите, кто на самом деле обрабатывает деталь: у посредника появляется лишнее звено и вторая очередь.</p>
+<p>Крупный завод подходит для больших серий и сложной <a href="/blog/proizvodstvennaya-kooperaciya-v-metalloobrabotke-kak-peredat-zakaz.html">кооперации</a>. Среднее контрактное производство закрывает серии и несколько операций в одном месте. Малый цех быстрее берёт разовые детали. Узкий специалист хорош там, где нужна одна технология, например шлифовка.</p>
+<blockquote><p>Выбирая подрядчика по чертежу, вы покупаете срок и повторяемость результата, а не станко-часы.</p></blockquote>
+<h2 id="sroki-chto-sprosit-u-tseha-do-podpisaniya-dogovora">Сроки: что спросить у цеха до подписания договора</h2>
+<p><img alt="Конвейер производства в цехе спецтехники" decoding="async" height="667" loading="lazy" src="/images/blog/vybor-postavshchika-metalloobrabotki-sroki-2.webp" width="1000"/></p>
+<p><em>Конвейер кабин в производственном цехе спецтехники. Фото: <a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4_%D0%9F%D0%A2%D0%97,_%D0%93%D0%A2%D0%9A,_%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D0%B9%D0%B5%D1%80_%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD,_%D1%86%D0%B5%D1%85_%D1%81%D0%BF%D0%B5%D1%86%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8.jpg" rel="nofollow noopener" target="_blank">Рустам Котов</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p><a href="/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp.html">Срок изготовления</a> складывается из станко-времени и ожиданий вокруг него: очередь на загрузку, прокат, смежник, приёмка. Спрашивайте не «за сколько сделаете», а «как деталь пойдёт по операциям». Попросите время каждой операции для партий в 1, 10 и 100 деталей и покажите, где стоят очереди. Уточните запас на непредвиденное и контрольные точки: что цех покажет вам к середине срока. И спросите, кто и за сколько дней сообщит о задержке.</p>
+<p>Путь детали от заявки до приёмки проходит через четыре места, где теряется время: очередь на станок, ожидание металла, операции на стороне и приёмка.</p>
+<h3>Загрузка станков и смены</h3>
+<p>Спросите: «Когда деталь реально встанет на станок, а не когда вы примете её в работу?» Срок зависит от загрузки: если станок занят другим заказом на две недели, обещание уложиться в десять дней ничего не стоит. Уточните, сколько смен работает участок и что произойдёт при поломке — есть ли второй станок.</p>
+<h3>Операции на стороне: термообработка, покрытие, покраска</h3>
+<p>Эти операции часто идут у смежника, и очередью там цех не управляет. Спросите, кто их делает и сколько времени они добавляют к маршруту. Отдельно уточните, что случится со сроком, если смежник опоздает. Как это влияет на сроки, разобрано в статьях <a href="/blog/termoobrabotka-metalla-kogda-ona-nuzhna-i-kak-vliyaet-na-cenu-i-sroki.html">как термообработка влияет на цену и сроки</a> и <a href="/blog/kak-proverit-srok-izgotovleniya-i-dostavki-v-kp.html">как проверить срок изготовления в КП</a>.</p>
+<h2 id="proverka-kachestva-kakie-dokumenty-i-zamery-prosit">Проверка качества: какие документы и замеры просить</h2>
+<p>Вместо «у вас есть ОТК?» задайте конкретный вопрос: какие документы вы получите вместе с деталью. Качество металла подрядчик подтверждает документами на материал, точность — протоколом измерений по вашему чертежу, порядок работы — сертификатом системы менеджмента качества.</p>
+<table><thead><tr><th>Документ</th><th>Что подтверждает</th><th>Когда просить</th></tr></thead><tbody><tr><td>Сертификат или паспорт на металл</td><td>Марку и партию проката</td><td>До запуска в работу</td></tr><tr><td>Протокол измерений</td><td>Размеры готовой детали по чертежу</td><td>При каждой приёмке</td></tr><tr><td>Сертификат СМК</td><td>Порядок работы цеха</td><td>При выборе подрядчика</td></tr><tr><td>Акт приёмки</td><td>Что и когда вы приняли</td><td>При сдаче партии</td></tr></tbody></table>
+<p>В протоколе смотрите, чем мерили. Жёсткий допуск штангенциркулем не проверить: нужны микрометр, калибр или координатно-измерительная машина. Если на чертеже допуск не проставлен, заранее оговорите в договоре, по каким нормам идёт приёмка.</p>
+<p>Сертификат системы менеджмента качества говорит о порядке работы, но не о годности вашей детали. Подлинность проверяйте в реестре органа, который его выдал. Условия гарантии — на что она распространяется и сколько действует — фиксируйте в договоре.</p>
+<h2 id="kak-sravnit-dva-predlozheniya-skoring-vmesto-vzglyada-na-tse">Как сравнить два предложения: скоринг вместо взгляда на цену</h2>
+<p>Чтобы сравнить КП, оцените каждое по одним и тем же критериям: срок, допуски и контроль, документы и гарантия, цена, тираж. Вес критерия зависит от вашей задачи. Для разовой детали с жёстким допуском важнее срок и контроль, для серии — цена и повторяемость. «Лучшего вообще» подрядчика нет, есть лучший под ваш заказ.</p>
+<p>Пример учебный, числа условные, не статистика. Каждому критерию дайте вес от 1 до 5, каждому подрядчику — оценку от 1 до 5. Перемножьте и сложите. В скобках стоит произведение оценки на вес.</p>
+<table><thead><tr><th>Критерий</th><th>Вес</th><th>Подрядчик А, оценка</th><th>Подрядчик Б, оценка</th></tr></thead><tbody><tr><td>Срок</td><td>5</td><td>2 (10)</td><td>5 (25)</td></tr><tr><td>Допуски и контроль</td><td>4</td><td>3 (12)</td><td>5 (20)</td></tr><tr><td>Документы и гарантия</td><td>3</td><td>3 (9)</td><td>5 (15)</td></tr><tr><td>Цена</td><td>2</td><td>5 (10)</td><td>3 (6)</td></tr><tr><td>Тираж</td><td>1</td><td>4 (4)</td><td>3 (3)</td></tr><tr><td>Итого</td><td>—</td><td>45</td><td>69</td></tr></tbody></table>
+<p>Подрядчик А дешевле, но проигрывает по сроку и контролю. Для другой задачи вес цены поднимется, и итог может поменяться.</p>
+<blockquote><p><strong>Мнение.</strong> Если у вас разовая деталь с жёстким допуском, берите цех с лучшим сроком и контролем, даже если он дороже. Если серия большая и деталь простая, поднимите вес цены и тиража.</p></blockquote>
+<h2 id="krasnye-flagi-na-pervom-zvonke-i-v-perepiske">Красные флаги на первом звонке и в переписке</h2>
+<p>Красный флаг — признак, что цех не считал вашу деталь всерьёз, а значит, и срок назван наугад. Тревожных сигналов пять, и у каждого есть вопрос, который снимает сомнение:</p>
+<ul><li>Ни одного вопроса по чертежу. Цех его не читал и маршрут не считал: спросите, какие операции он заложил.</li><li>Расчёт устно или без расшифровки операций. Срок не проверить: попросите письменную смету.</li><li>Отказ показать производство или участок, где пойдёт работа. Попросите хотя бы видео участка.</li><li>Предоплата 100 %. Вся финансовая нагрузка на вас: предложите оплату по этапам.</li><li>Цена заметно ниже остальных без объяснения. Спросите, что исключено из расчёта.</li></ul>
+<p>Отдельно проверьте контрагента по открытым источникам: выписка из ЕГРЮЛ на сайте ФНС, картотека арбитражных дел, банк исполнительных производств ФССП, отчётность в ГИР БО. Проверка не гарантирует срок, но уточняет надёжность подрядчика.</p>
+<h2 id="dogovor-i-oplata-kak-zakrepit-srok-na-bumage">Договор и оплата: как закрепить срок на бумаге</h2>
+<p>Срок работает, только если он записан в договоре подряда. Пропишите этапы с датами, дату приёмки, неустойку за просрочку, оплату по этапам и порядок рекламаций. Одна общая дата в конце не защищает: о срыве вы узнаете, когда уже поздно.</p>
+<blockquote><p><strong>Факт.</strong> Неустойка — денежная сумма, которую должник платит кредитору за просрочку или иное нарушение обязательства; её определяет закон или договор (ст. 330 ГК РФ).</p></blockquote>
+<p>Размер неустойки можно закрепить в договоре, поэтому обсуждайте его до подписания. Оплату делите по этапам вместо 100 % предоплаты. Заранее оговорите, что происходит при новой ревизии чертежа и кто отвечает за ошибки в нём. Договор составляет юрист, ваша задача — прийти к нему с этим списком вопросов.</p>
+<blockquote><p>Срок, который не привязан к этапам и неустойке, остаётся пожеланием, а не условием.</p></blockquote>
+<h2 id="pervaya-detal-i-probnaya-partiya-priemka-do-serii">Первая деталь и пробная партия: приёмка до серии</h2>
+<p>Пробная партия нужна, если деталь новая, допуски жёсткие или серия большая. Она задерживает заказ на один цикл, но защищает от переделки всей серии. Сертификат СМК её не заменяет: он показывает порядок работы цеха, но не годность вашей детали. Заодно проба показывает реальную скорость цеха: сравните фактический срок с обещанным.</p>
+<p>Порядок приёмки:</p>
+<ol><li>Цех делает первую деталь по чертежу заказчика.</li><li>Вы замеряете её по чертежу, а не «на глаз».</li><li>Подписываете акт: размеры, материал, отклонения, замечания.</li><li>Только после акта согласуете запуск серии.</li></ol>
+<p>Для простой повторяющейся детали иногда хватает приёмки первой детали по акту. Проба стоит один цикл работы, а ошибка, найденная уже в серии, обходится в целую серию.</p>
+<h2 id="chto-sdelat-do-zaprosa-kp-korotkiy-poryadok-deystviy">Что сделать до запроса КП: короткий порядок действий</h2>
+<p>Сначала подготовьте чертёж: допуски, материал, тираж и желаемый срок. Что должно быть на нём, чтобы цех посчитал без переписки, описано в статье <a href="/razdel/chertezhi-i-dopuski.html">что должно быть на чертеже, чтобы его посчитали без переписки</a>. Затем запросите КП у двух-трёх цехов на одинаковых условиях, задайте вопросы про загрузку, операции на стороне и документы, сравните по скорингу и договоритесь о пробной партии.</p>
+<blockquote><p>Сравнивать можно только те предложения, где чертёж и условия одинаковы для всех.</p></blockquote>
+<p>Если готовы сравнивать, <a href="/kontakty.html">отправьте чертёж на расчёт</a>: технолог IRONEX посчитает срок и цену на тех же условиях, что вы дадите другим цехам.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Почему дешёвое предложение может оказаться дороже?</summary>
+<div class="faq__a"><p>В КП нет простоя вашей линии, штрафов перед вашим заказчиком и срочной замены исполнителя, а платите за это вы. Поэтому сравнивайте предложения на одинаковых условиях: материал, допуски, партия, срок.</p></div>
+</details>
+<details>
+<summary>Нужна ли пробная партия перед серией?</summary>
+<div class="faq__a"><p>Да, если деталь новая, допуски жёсткие или тираж большой: пробная партия показывает реальный срок и ловит ошибки до серии. Для простой повторяющейся детали иногда хватает приёмки первой детали по акту.</p></div>
+</details>
+<details>
+<summary>Какие документы просить у подрядчика по металлообработке?</summary>
+<div class="faq__a"><p>Сертификат или паспорт на металл, протокол измерений по вашему чертежу и, если нужно, сертификат системы менеджмента качества. Условия гарантии фиксируйте в договоре, а не в переписке.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_5142/" rel="noopener" target="_blank">Гражданский кодекс Российской Федерации, часть первая (ст. 330)</a> — КонсультантПлюс</li>
+<li><a href="https://egrul.nalog.ru/" rel="noopener" target="_blank">Единый государственный реестр юридических лиц: выписки</a> — ФНС России</li>
+<li><a href="https://bo.nalog.gov.ru/" rel="noopener" target="_blank">Государственный информационный ресурс бухгалтерской (финансовой) отчётности</a> — ФНС России</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy.html">
+            <img src="/images/blog/sroki-izgotovleniya-detaley-standartnye-i-ekspress-zakazy-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Сроки изготовления деталей по чертежу: сколько занимает обычный заказ и что реально можно ускорить</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/srochnoe-proizvodstvo-ekspress-zakaz.html">
+            <img src="/images/blog/srochnoe-proizvodstvo-ekspress-zakaz-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Срочное производство деталей по чертежу: как ускорить заказ и не потерять качество</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/kak-vybrat-subpodryadchika-pri-peregruzke-proizvodstva.html">
+            <img src="/images/blog/kak-vybrat-subpodryadchika-pri-peregruzke-proizvodstva-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Заказчику</span>
+              <span class="mat-card__title">Аутсорсинг металлообработки: выбор субподрядчика</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

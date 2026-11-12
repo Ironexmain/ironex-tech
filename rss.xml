@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора</title>
+      <link>https://ironex.tech/blog/vybor-postavshchika-metalloobrabotki-sroki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/vybor-postavshchika-metalloobrabotki-sroki.html</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Загрузка станков, операции на стороне, документы на металл, пробная партия и неустойка — что проверить у подрядчика до подписания договора.</description>
+    </item>
+    <item>
+      <title>Как выбрать материал для детали и не переплатить за сталь</title>
+      <link>https://ironex.tech/blog/vybor-materiala-metalloobrabotka-ne-pereplatit.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/vybor-materiala-metalloobrabotka-ne-pereplatit.html</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Из чего складывается цена детали: заготовка, время на станке, износ инструмента, защита. Как выбрать марку стали и не заплатить за лишнее.</description>
+    </item>
+    <item>
+      <title>Какой материал выбрать для детали: сравнение сталей и сплавов</title>
+      <link>https://ironex.tech/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med.html</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Сравнение стали, нержавейки, алюминия и меди по прочности, обрабатываемости и цене. Какие данные нужны, чтобы выбрать марку под чертёж.</description>
+    </item>
     <item>
       <title>Как выбрать материал для детали: сталь, алюминий или нержавейка</title>
       <link>https://ironex.tech/blog/vybor-materiala-detali-stal-alyuminiy-nerzhaveyka.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Fri, 06 Nov 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Как проверить состав и свойства стали 08Х18Н10, согласовать замену на AISI 304 и подготовить требования к обработке, сварке и приёмке детали.</description>
-    </item>
-    <item>
-      <title>Что такое ЛКП и как оно защищает металлические детали</title>
-      <link>https://ironex.tech/blog/lkp-eto-zashchita-metallicheskih-detalej.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/lkp-eto-zashchita-metallicheskih-detalej.html</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Что означает ЛКП, чем покрытие отличается от краски и как защищает металл. Разбираем слои, толщину, маскирование и требования к окраске деталей по чертежу.</description>
-    </item>
-    <item>
-      <title>Сколько сантиметров в 15 мм и как проверить расчёт</title>
-      <link>https://ironex.tech/blog/15-mm-skolko-sm.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/15-mm-skolko-sm.html</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>15 мм = 1,5 см, или 1 см 5 мм. Формула перевода, проверка по линейке, таблица единиц длины и пример пересчёта размера вместе с отклонениями.</description>
-    </item>
-    <item>
-      <title>Можно ли сваривать сталь 40Х и как сохранить свойства детали</title>
-      <link>https://ironex.tech/blog/svarka-stali-40h.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/svarka-stali-40h.html</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Что проверить перед сваркой стали 40Х: состояние металла, технологию, присадку, подогрев и контроль. Как сравнить ремонт с изготовлением новой детали.</description>
     </item>
   </channel>
 </rss>

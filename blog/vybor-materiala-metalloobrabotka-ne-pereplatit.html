@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Выбор материала для металлообработки: не переплатить за сталь</title>
+  <meta name="description" content="Из чего складывается цена детали: заготовка, время на станке, износ инструмента, защита. Как выбрать марку стали и не заплатить за лишнее." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/vybor-materiala-metalloobrabotka-ne-pereplatit.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/vybor-materiala-metalloobrabotka-ne-pereplatit.html#article",
+      "headline": "Как выбрать материал для детали и не переплатить за сталь",
+      "description": "Из чего складывается цена детали: заготовка, время на станке, износ инструмента, защита. Как выбрать марку стали и не заплатить за лишнее.",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/vybor-materiala-metalloobrabotka-ne-pereplatit.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/vybor-materiala-metalloobrabotka-ne-pereplatit-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "выбор материала металлообработка",
+        "подбор стали для детали",
+        "материалы для обработки",
+        "нержавейка vs углеродистая сталь"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как выбрать материал для детали и не переплатить за сталь"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какая сталь дешевле в обработке — углеродистая или нержавеющая?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Как правило, углеродистая. Аустенитные нержавеющие марки склонны к наклёпу, поэтому режимы ниже, а инструмент изнашивается быстрее. Точная разница зависит от марки и детали."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем AISI 304 отличается от AISI 316?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сталь 316 содержит молибден и устойчивее к хлоридам, поэтому её берут для морской воды и солевой среды. Для сухой среды или пищевой воды обычно достаточно 304."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как выбрать сталь для детали по условиям работы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Определите среду, нагрузку и температуру, затем берите самую простую марку, которая их выдерживает. Если условий не знаете, спросите конструктора узла."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Нержавейка или углеродистая сталь: за что вы реально платите" />
+  <meta property="og:description" content="Из чего складывается цена детали: заготовка, время на станке, износ инструмента, защита. Как выбрать марку стали и не заплатить за лишнее." />
+  <meta property="og:url" content="https://ironex.tech/blog/vybor-materiala-metalloobrabotka-ne-pereplatit.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/vybor-materiala-metalloobrabotka-ne-pereplatit-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-12" />
+  <meta property="article:modified_time" content="2026-11-12" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Нержавейка или углеродистая сталь: за что вы реально платите" />
+  <meta name="twitter:description" content="Из чего складывается цена детали: заготовка, время на станке, износ инструмента, защита. Как выбрать марку стали и не заплатить за лишнее." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/vybor-materiala-metalloobrabotka-ne-pereplatit-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как выбрать материал для детали и не переплатить за сталь">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Как выбрать материал для детали и не переплатить за сталь</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#s-chego-nachat-gde-i-kak-budet-rabotat-detal">С чего начать: где и как будет работать деталь</a></li>
+<li><a href="#iz-chego-skladyvaetsya-tsena-detali-i-gde-zdes-material">Из чего складывается цена детали и где здесь материал</a></li>
+<li><a href="#sravnenie-grupp-materialov-obrabotka-korroziya-tsena-zagotov">Сравнение групп материалов: обработка, коррозия, цена заготовки</a></li>
+<li><a href="#nerzhaveyka-ili-uglerodistaya-stal-schitaem-polnuyu-stoimost">Нержавейка или углеродистая сталь: считаем полную стоимость</a></li>
+<li><a href="#marki-i-analogi-po-gost-i-zarubezhnym-standartam">Марки и аналоги по ГОСТ и зарубежным стандартам</a></li>
+<li><a href="#material-dopuski-i-posleduyuschaya-obrabotka">Материал, допуски и последующая обработка</a></li>
+<li><a href="#oshibki-zakazchika-pri-vybore-materiala">Ошибки заказчика при выборе материала</a></li>
+<li><a href="#chek-list-pered-otpravkoy-chertezha">Чек-лист перед отправкой чертежа</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как выбрать материал для детали и не переплатить за сталь">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Как выбрать материал для детали и не переплатить за сталь</h1>
+        <p class="lede">Из чего складывается цена детали: заготовка, время на станке, износ инструмента, защита. Как выбрать марку стали и не заплатить за лишнее.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-11-12">Опубликовано 12 ноября 2026</time>
+
+            <span>7 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/vybor-materiala-metalloobrabotka-ne-pereplatit-cover.webp" alt="Как выбрать материал для детали и не переплатить за сталь" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Переплата за материал прячется в трёх местах: марка выше нужной, дорогая обработка и лишняя защита. Начните с условий работы детали — среда, нагрузка, температура — и берите самую простую марку, которая их выдерживает. Нержавейка оправдана во влаге и агрессивной среде, а в сухом узле часто хватает углеродистой стали с покрытием.</p>
+<h2 id="s-chego-nachat-gde-i-kak-budet-rabotat-detal">С чего начать: где и как будет работать деталь</h2>
+<p>Начните со встречного вопроса: где будет стоять деталь? Ответ отсекает половину марок раньше, чем вы откроете прайс. Среда, нагрузка, температура и особые требования задают минимальный класс материала. Всё, что выше этого минимума, — запас, за который вы платите, а пользы не получаете.</p>
+<p>Деталь проверяют по четырём вопросам. Среда: влага, химия, улица или сухой цех. Нагрузка: статическая, ударная или износ трением. Температура: комнатная, нагрев или мороз. Особые требования: немагнитность, контакт с пищей, ограничение по массе. На каждый пункт хватит одной строки.</p>
+<p>Решение идёт в одном порядке: условия работы, затем класс материала, затем конкретная марка. Обратный ход («возьмём привычную 12Х18Н10Т») чаще всего заканчивается лишними деньгами. Ответы про среду, нагрузку и температуру обычно сужают выбор до одной-двух марок.</p>
+<blockquote><p>Берите самую простую марку, которая выдерживает условия работы. Запас «на всякий случай» оплачивает заказчик.</p></blockquote>
+<p>Условий не знаете — спросите конструктора узла.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как выбрать материал для детали и не переплатить за сталь">Прислать чертёж на почту</a>
+</div>
+<h2 id="iz-chego-skladyvaetsya-tsena-detali-i-gde-zdes-material">Из чего складывается цена детали и где здесь материал</h2>
+<p><img alt="Поверхность излома стали с неметаллическими включениями" decoding="async" height="1115" loading="lazy" src="/images/blog/vybor-materiala-metalloobrabotka-ne-pereplatit-1.webp" width="1000"/></p>
+<p><em>Поверхность излома стали показывает структуру материала и влияние включений на его прочность, что учитывается при определении цены детали. Фото: <a href="https://commons.wikimedia.org/wiki/File:Steel_fracture_surface.jpg" rel="nofollow noopener" target="_blank">Mykhailo Voron</a> · <a href="https://creativecommons.org/licenses/by/4.0" rel="nofollow noopener" target="_blank">CC BY 4.0</a></em></p>
+<p><a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">Цена детали</a> складывается из четырёх статей: заготовка, машинное время, износ инструмента и последующая защита или термообработка. Материал влияет на все четыре, а не только на первую. Поэтому металл, дешёвый по килограмму, не гарантирует дешёвую деталь. Общую картину затрат разбираем в статье <a href="/blog/ot-chego-zavisit-cena-metalloobrabotki-po-chertezhu.html">от чего зависит цена металлообработки по чертежу</a>.</p>
+<blockquote><p>Разница в цене заготовки часто меньше, чем разница в машинном времени и защите. Дешёвый по килограмму материал не делает деталь дешёвой.</p></blockquote>
+<h3>Заготовка: сортамент и припуск</h3>
+<p>Заготовка — круг, пруток или лист под размер детали. Вы платите за вес всей заготовки, а не готовой детали: припуск уходит в стружку, но оплачивается как металл. Нужного диаметра нет в наличии — берут ближайший больший, и лишний металл тоже превращается в стружку. Размер детали, подогнанный под ходовой сортамент, сокращает такой отход.</p>
+<h3>Машинное время и инструмент</h3>
+<p>Обрабатываемость резанием определяет режимы: скорость, подачу, глубину прохода. Вязкие и упрочняющиеся металлы режут медленнее, а инструмент на них изнашивается быстрее. Износ инструмента увеличивает стоимость детали дважды: расходом на пластины и простоем при замене. Разницу для вашей детали покажет только расчёт технолога, без него любая цифра будет выдумкой.</p>
+<h2 id="sravnenie-grupp-materialov-obrabotka-korroziya-tsena-zagotov">Сравнение групп материалов: обработка, коррозия, цена заготовки</h2>
+<p><img alt="Коррозия магниевого сплава в условиях электролита" decoding="async" height="561" loading="lazy" src="/images/blog/vybor-materiala-metalloobrabotka-ne-pereplatit-2.webp" width="1000"/></p>
+<p><em>Активная коррозия магниевого сплава, подвергнутого воздействию электролита. Фото: <a href="https://commons.wikimedia.org/wiki/File:Corrosion_activa.jpg" rel="nofollow noopener" target="_blank">MHGuerraMutis</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="nofollow noopener" target="_blank">CC0 1.0</a></em></p>
+<p>Проще всего обрабатываются сталь 45, латунь и алюминий Д16Т. Тяжелее всего режется нержавейка, зато она лучше всех держит коррозию. Углеродистые стали дешевле в заготовке, нержавейка и латунь дороже. Оценки в таблице приблизительные и без цифр.</p>
+<table><thead><tr><th>Материал</th><th>Обрабатываемость резанием</th><th>Свариваемость</th><th>Коррозионная стойкость</th><th>Цена заготовки</th></tr></thead><tbody><tr><td>Ст3</td><td>хорошая</td><td>хорошая</td><td>слабая</td><td>низкая</td></tr><tr><td>Сталь 45</td><td>хорошая</td><td>ограниченная</td><td>слабая</td><td>низкая</td></tr><tr><td>40Х</td><td>средняя</td><td>ограниченная</td><td>слабая</td><td>средняя</td></tr><tr><td>09Г2С</td><td>средняя</td><td>хорошая</td><td>слабая</td><td>средняя</td></tr><tr><td>12Х18Н10Т, 08Х18Н10</td><td>тяжёлая</td><td>хорошая</td><td>хорошая</td><td>дорогая</td></tr><tr><td>Д16Т</td><td>хорошая</td><td>плохая</td><td>средняя</td><td>выше средней</td></tr><tr><td>Латунь</td><td>хорошая</td><td>ограниченная</td><td>средняя</td><td>дорогая</td></tr></tbody></table>
+<p>«Цена заготовки» здесь относительная: она зависит от региона, <a href="/blog/kak-opredelit-ekonomicheski-razumnyy-razmer-partii.html">размера партии</a> и даты закупки. Точные рубли и коэффициенты обрабатываемости мы не приводим — без свежего источника они устареют в день публикации.</p>
+<h2 id="nerzhaveyka-ili-uglerodistaya-stal-schitaem-polnuyu-stoimost">Нержавейка или углеродистая сталь: считаем полную стоимость</h2>
+<p>Нержавеющая сталь лучше сопротивляется коррозии, но дороже в заготовке и обычно труднее обрабатывается, чем углеродистая. Углеродистая дешевле, зато в агрессивной среде нуждается в защитном покрытии. Сравнивайте варианты по одним критериям: заготовка, время обработки, покрытие (цинк, порошковая краска, оксидирование) и срок службы в вашей среде.</p>
+<h3>Когда нержавейка — переплата</h3>
+<p>Деталь в сухом закрытом узле не встречается с влагой, и коррозия не влияет на её работу. Выбирайте углеродистую сталь с покрытием, если:</p>
+<ul><li>узел сухой и стоит внутри корпуса;</li><li>деталь всё равно красят или цинкуют;</li><li>покрытие легко обновить при обслуживании.</li></ul>
+<h3>Когда экономия на ней обходится дороже</h3>
+<p>В мокрой среде покрытие изнашивается, деталь приходится менять — и вы платите за изготовление дважды. Класс <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавейки</a> тоже важен: аустенитные, ферритные и мартенситные стали различаются по стойкости и магнитности. В хлоридной среде 304 может не хватить, там берут 316 с молибденом. Выбирайте нержавейку, если:</p>
+<ul><li>есть влага, реагенты или хлориды;</li><li>деталь контактирует с пищей или лекарствами;</li><li>покрытие будет стираться при работе.</li></ul>
+<h2 id="marki-i-analogi-po-gost-i-zarubezhnym-standartam">Марки и аналоги по ГОСТ и зарубежным стандартам</h2>
+<p>Аналог марки — это близкий по составу металл, а не тот же самый. Он может снизить стоимость детали, если чертёж требует импортную марку, которой нет на складе. Но свойства могут отличаться, поэтому замену согласуют, а не подставляют. Порядок согласования — в статье <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html">как согласовать аналог материала</a>.</p>
+<table><thead><tr><th>Марка по ГОСТ</th><th>Ближайший аналог</th><th>Типичное применение</th></tr></thead><tbody><tr><td>08Х18Н10</td><td>AISI 304</td><td>пищевое и бытовое оборудование</td></tr><tr><td>12Х18Н10Т</td><td>AISI 321</td><td>сварные узлы, детали с нагревом</td></tr><tr><td>03Х17Н14М3</td><td>AISI 316L</td><td>хлоридная среда, химия</td></tr><tr><td>12Х17</td><td>AISI 430</td><td>бытовые и декоративные детали</td></tr><tr><td>Д16Т</td><td>2024</td><td>силовые алюминиевые детали</td></tr><tr><td>В95</td><td>7075</td><td>нагруженные алюминиевые детали</td></tr></tbody></table>
+<blockquote><p>Аналог — это близкий состав, а не тот же металл. Замену фиксируют письменно.</p></blockquote>
+<p>Если в чертеже стоит импортная марка, укажите допустимые аналоги или требования к свойствам. Тогда технолог не будет гадать и не задержит расчёт вопросами.</p>
+<h2 id="material-dopuski-i-posleduyuschaya-obrabotka">Материал, допуски и последующая обработка</h2>
+<p>Материал тянет за собой допуски, шероховатость и доработку, а они — цену. Вязкие металлы задирают поверхность, аустенитная нержавейка склонна к наклёпу, твёрдая сталь плохо режется. Чем жёстче допуск и чище поверхность, тем больше проходов и тем дороже деталь.</p>
+<blockquote><p><strong>Факт.</strong> Аустенитная нержавеющая сталь склонна к наклёпу: при резании поверхность упрочняется, и следующему проходу инструмента приходится труднее.</p></blockquote>
+<p>Термообработка меняет обрабатываемость резанием. Закалённую сталь режут плохо, поэтому деталь чаще обтачивают до закалки. После неё металл может повести, и остаётся припуск под шлифовку. Вал из 40Х с закалкой дороже не из-за марки, а из-за двух дополнительных операций.</p>
+<p>Покрытие меняет размер. Цинк и оксидирование добавляют слой, и его толщину закладывают в допуск заранее: иначе деталь после покрытия не встанет в сопряжение. Электрополировку, галтовку и оксидирование указывайте в чертеже, иначе они не попадут в расчёт. Кто их выполняет — исполнитель или подрядчик, — уточняйте в заявке: от этого зависят срок и цена.</p>
+<h2 id="oshibki-zakazchika-pri-vybore-materiala">Ошибки заказчика при выборе материала</h2>
+<p>Типовые ошибки удорожают деталь или срывают срок, и почти все они возникают ещё на чертеже. Каждая из них снимается одной строкой в заявке.</p>
+<ul><li><strong>Марка «на всякий случай».</strong> Нержавейка там, где хватает стали с покрытием: переплата за заготовку и время обработки.</li><li><strong>Импортная марка без аналога.</strong> Появляются вопросы, срок растёт, есть риск не той замены.</li><li><strong>Не учтены сортамент и припуск.</strong> Круга или листа нужного размера нет в наличии — срок растёт.</li><li><strong>Не указана термообработка.</strong> Деталь приходит мягкой, и её приходится делать заново.</li><li><strong>Нет требования к сертификату на материал.</strong> Позже подтвердить происхождение металла нечем.</li><li><strong>Не решено, чей материал.</strong> Если сырьё даёт заказчик, а не исполнитель, ответственность за его качество и сроки нужно оговорить заранее.</li></ul>
+<blockquote><p><strong>Мнение.</strong> Если сомневаетесь между нержавейкой и сталью с покрытием, сравнивайте полную стоимость обоих вариантов, а не цену за килограмм.</p></blockquote>
+<h2 id="chek-list-pered-otpravkoy-chertezha">Чек-лист перед отправкой чертежа</h2>
+<p>Чтобы расчёт пришёл без лишних вопросов и без переплаты, подготовьте пять пунктов. Технолог проверит марку и скажет, есть ли вариант проще.</p>
+<ol><li>Опишите условия работы в двух строках: среда, нагрузка, температура.</li><li>Укажите марку и допустимые аналоги.</li><li>Зафиксируйте термообработку, покрытие и требование к сертификату.</li><li>Определите, чей материал — ваш или исполнителя.</li><li>Назовите объём партии: от него зависит цена, ориентиры есть на странице <a href="/ceny.html">цены на металлообработку</a>.</li></ol>
+<p>К чертежу приложите требования к шероховатости и допускам. Когда всё готово, <a href="/kontakty.html">отправьте чертёж на расчёт</a> — мы проверим марку под ваши условия и подскажем, где можно обойтись без лишнего.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Какая сталь дешевле в обработке — углеродистая или нержавеющая?</summary>
+<div class="faq__a"><p>Как правило, углеродистая. Аустенитные нержавеющие марки склонны к наклёпу, поэтому режимы ниже, а инструмент изнашивается быстрее. Точная разница зависит от марки и детали.</p></div>
+</details>
+<details>
+<summary>Чем AISI 304 отличается от AISI 316?</summary>
+<div class="faq__a"><p>Сталь 316 содержит молибден и устойчивее к хлоридам, поэтому её берут для морской воды и солевой среды. Для сухой среды или пищевой воды обычно достаточно 304.</p></div>
+</details>
+<details>
+<summary>Как выбрать сталь для детали по условиям работы?</summary>
+<div class="faq__a"><p>Определите среду, нагрузку и температуру, затем берите самую простую марку, которая их выдерживает. Если условий не знаете, спросите конструктора узла.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.rst.gov.ru/" rel="noopener" target="_blank">Росстандарт</a> — Федеральное агентство по техническому регулированию и метрологии</li>
+<li><a href="https://www.astm.org/" rel="noopener" target="_blank">ASTM International</a> — организация по стандартам на металлы и сплавы</li>
+<li><a href="https://www.worldstainless.org/" rel="noopener" target="_blank">World Stainless</a> — отраслевая ассоциация производителей нержавеющей стали</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/vybor-materiala-detali-stal-alyuminiy-nerzhaveyka.html">
+            <img src="/images/blog/vybor-materiala-detali-stal-alyuminiy-nerzhaveyka-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Как выбрать материал для детали: сталь, алюминий или нержавейка</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med.html">
+            <img src="/images/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Какой материал выбрать для детали: сравнение сталей и сплавов</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/stal-sostav-svoystva-vidy.html">
+            <img src="/images/blog/stal-sostav-svoystva-vidy-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Что такое сталь и как её состав влияет на свойства детали</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Как выбрать материал для детали и не переплатить за сталь">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Выбор материала для детали: сталь, алюминий, нержавейка, медь</title>
+  <meta name="description" content="Сравнение стали, нержавейки, алюминия и меди по прочности, обрабатываемости и цене. Какие данные нужны, чтобы выбрать марку под чертёж." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med.html#article",
+      "headline": "Какой материал выбрать для детали: сравнение сталей и сплавов",
+      "description": "Сравнение стали, нержавейки, алюминия и меди по прочности, обрабатываемости и цене. Какие данные нужны, чтобы выбрать марку под чертёж.",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med-cover.webp",
+      "articleSection": "Материалы",
+      "keywords": [
+        "выбор материала для детали",
+        "материалы для деталей",
+        "конструкционная сталь",
+        "нержавеющая сталь",
+        "алюминиевый сплав",
+        "медь латунь бронза"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Какой материал выбрать для детали: сравнение сталей и сплавов"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как проверить, что металл соответствует заявленной марке?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Запросите сертификат на партию и сверьте номер плавки с маркировкой на прутке или листе. Клеймо и документ должны относиться к одной плавке. Если цифры расходятся, до запуска делают химический анализ. Надпись марки в штампе чертежа плавку не подтверждает."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему нельзя выбирать материал только по цене за килограмм?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В штуку входят ещё минуты станка, пластины, брак, покрытие и длина прутка на складе. Короткая серия из складского металла часто обходится спокойнее, чем тонна проката с лишней стружкой. Сравнивают готовую деталь в вашем количестве."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем грозит неверно выбранный материал?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Деталь ржавеет, садится под нагрузкой или истирается раньше узла. Дальше новая заготовка, повторная обработка и сдвиг срока сборки. На партии ошибка в марке дороже, чем согласование замены до закупки."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Сталь, алюминий или медь: как не ошибиться с материалом детали" />
+  <meta property="og:description" content="Сравнение стали, нержавейки, алюминия и меди по прочности, обрабатываемости и цене. Какие данные нужны, чтобы выбрать марку под чертёж." />
+  <meta property="og:url" content="https://ironex.tech/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-12" />
+  <meta property="article:modified_time" content="2026-11-12" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Сталь, алюминий или медь: как не ошибиться с материалом детали" />
+  <meta name="twitter:description" content="Сравнение стали, нержавейки, алюминия и меди по прочности, обрабатываемости и цене. Какие данные нужны, чтобы выбрать марку под чертёж." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какой материал выбрать для детали: сравнение сталей и сплавов">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Какой материал выбрать для детали: сравнение сталей и сплавов</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-znat-o-detali">Что знать о детали до выбора</a></li>
+<li><a href="#svodnaya-tablitsa-materialov">Сводное сравнение групп</a></li>
+<li><a href="#konstruktsionnye-stali">Когда хватает обычной стали</a></li>
+<li><a href="#nerzhaveyushchaya-stal">Где нужна нержавейка</a></li>
+<li><a href="#alyuminiy-i-med">Алюминий и медные сплавы</a></li>
+<li><a href="#obrabatyvaemost-svarka-termoobrabotka">Как марка меняет срок и цену</a></li>
+<li><a href="#zagotovka-ili-obrabotka">Цена заготовки и обработки</a></li>
+<li><a href="#marki-gost-aisi-en">Если нужной марки нет</a></li>
+<li><a href="#chek-list-zakazchika">Что сообщить мастерской</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какой материал выбрать для детали: сравнение сталей и сплавов">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Какой материал выбрать для детали: сравнение сталей и сплавов</h1>
+        <p class="lede">Сравнение стали, нержавейки, алюминия и меди по прочности, обрабатываемости и цене. Какие данные нужны, чтобы выбрать марку под чертёж.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Материалы</span>
+            <time datetime="2026-11-12">Опубликовано 12 ноября 2026</time>
+
+            <span>10 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med-cover.webp" alt="Какой материал выбрать для детали: сравнение сталей и сплавов" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Материал выбирают не по названию, а по условиям работы детали: нагрузка, среда, температура, ресурс. Конструкционной стали хватает для большинства валов и кронштейнов, нержавейка нужна при влаге и химии, алюминий — где важен вес, медь — где нужен отвод тепла или ток. Ниже — как сравнить варианты и что сообщить мастерской.</p>
+<h2 id="chto-znat-o-detali">Что нужно знать о детали до выбора материала?</h2>
+<p>Условия эксплуатации детали определяют выбор материала. До марки нужны нагрузка, среда, температура и ресурс. Чертёж с контуром и пустым штампом марку ещё не задаёт.</p>
+<p>Сначала отсекают группы, которые среду или удар не держат. Потом сравнивают оставшиеся по прочности, массе, резанию и цене готовой штуки.</p>
+<p>Пять вопросов о детали, на которые нужен ответ до выбора марки:</p>
+<ul><li>Нагрузка: постоянная, удар или знакопеременный цикл?</li><li>Среда: сухой воздух, влага, масло, щёлочь, кислота?</li><li>Температура и число часов, которые деталь в ней стоит?</li><li>Ресурс: разовая оснастка или тысячи часов в машине?</li><li>Что ещё нельзя потерять: массу, ток, тепло, магнитность, сварку?</li></ul>
+<p>Прочность впереди, если деталь бьют. Коррозионная стойкость впереди, если деталь моют или стоит на улице. Ток и тепло считают, только когда через деталь идёт ток или тепло.</p>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какой материал выбрать для детали: сравнение сталей и сплавов">Прислать чертёж на почту</a>
+</div>
+<h2 id="svodnaya-tablitsa-materialov">Сталь, нержавейка, алюминий, медь: сводное сравнение</h2>
+<p><img alt="Стальные балки при монтаже перекрытия" decoding="async" height="750" loading="lazy" src="/images/blog/vybor-materiala-dlya-detali-stal-alyuminiy-med-1.webp" width="1000"/></p>
+<p><em>Монтаж стальной палубы над конструкционными балками при строительстве. Фото: <a href="https://commons.wikimedia.org/wiki/File:Overhead_decking_going_in_above_structural_steel_beams_in_the_back_of_house_area_of_the_LIRR_passenger_concourse._08-26-2019_%2848647324728%29.jpg" rel="nofollow noopener" target="_blank">MTA Capital Construction Mega Projects</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="nofollow noopener" target="_blank">CC BY 2.0</a></em></p>
+<p>Конструкционную сталь, нержавейку, алюминий, медь, латунь и бронзу сравнивают по одним критериям. Цифры ориентировочные: точное значение зависит от марки и состояния поставки.</p>
+<table><thead><tr><th>Группа</th><th>Прочность</th><th>Плотность</th><th>Теплопроводность</th><th>Коррозия без покрытия</th><th>Резание</th></tr></thead><tbody><tr><td>Конструкционная сталь</td><td>база для валов</td><td>7700–7900 кг/м³</td><td>ниже меди</td><td>ржавеет во влаге</td><td>среднее</td></tr><tr><td>Нержавеющая сталь</td><td>близко к конструкционной</td><td>как у стали</td><td>ниже меди</td><td>держит влагу</td><td>тяжелее стали</td></tr><tr><td>Алюминиевые сплавы</td><td>ниже сталей</td><td>2,6989 г/см³ у алюминия</td><td>237 Вт/(м·К) у алюминия</td><td>не любая химия</td><td>легко</td></tr><tr><td>Медь</td><td>не для силовой нагрузки</td><td>8,92 г/см³</td><td>401 Вт/(м·К)</td><td>спокойнее стали</td><td>вязкая</td></tr><tr><td>Латунь</td><td>ближе к меди</td><td>зависит от марки</td><td>ниже меди</td><td>спокойнее стали</td><td>легче меди</td></tr><tr><td>Бронза</td><td>для втулок</td><td>зависит от марки</td><td>ниже меди</td><td>зависит от марки</td><td>средняя</td></tr></tbody></table>
+<blockquote><p><strong>Факт.</strong> Плотность стали — 7700–7900 кг/м³, алюминия — 2,6989 г/см³, меди — 8,92 г/см³. При том же объёме алюминиевая заготовка легче стальной примерно втрое.</p></blockquote>
+<p>Алюминиевые сплавы имеют меньшую плотность, чем конструкционная сталь. Кронштейн из сплава выходит легче. Нержавеющая сталь устойчива к коррозии там, где конструкционная без покрытия ржавеет. Медь и её сплавы отводят тепло лучше стали: у меди в таблице 401 Вт/(м·К). Сталь 45 в поставке и после закалки — две разные детали.</p>
+<h2 id="konstruktsionnye-stali">Конструкционные стали: когда хватает Ст3, стали 45 или 40Х</h2>
+<p>Конструкционной стали хватает, когда среда металл не разрушает и масса детали не ограничена. Ст3, сталь 45, 40Х и 09Г2С закрывают валы, оси, фланцы, кронштейны и корпуса подшипниковых узлов.</p>
+<p>Ст3 идёт по ГОСТ 380-2005: пластины, кронштейны, неответственные фланцы.</p>
+<p>Сталь 45 — прокат по ГОСТ 1050-2013 для валов и осей. Конструкционная сталь этой марки допускает термообработку: закалка и отпуск поднимают прочность, после печи нужен припуск на увод.</p>
+<p>40Х берут на более нагруженные валы. ГОСТ 4543-2016 относит такую сталь к работе после термической обработки. 09Г2С оставляют сварным рамам.</p>
+<p>Без покрытия конструкционная сталь ржавеет. Защиту дают гальваника, порошок или масло в закрытом узле.</p>
+<blockquote><p>Конструкционная сталь с покрытием закрывает вал, фланец и кронштейн, пока среда металл не разрушает и масса детали не ограничена.</p></blockquote>
+<blockquote><p><strong>Мнение.</strong> Если узел сухой, а деталь потом красят или цинкуют, берите Ст3, сталь 45 или 40Х. Нержавейку оставляйте для влаги и химии.</p></blockquote>
+<h2 id="nerzhaveyushchaya-stal">Нержавеющая сталь: какая марка нужна и где без неё не обойтись?</h2>
+<p>Нержавеющая сталь нужна, когда покрытие среду не закрывает: при конденсате, мойке, уличной эксплуатации, пищевом или медицинском контакте, кислотах и хлоридах, а также когда шов не красят. ГОСТ 5632-2014 задаёт марки для работы в коррозионно-активных средах и при высоких температурах.</p>
+<h3>Аустенитные марки: 08Х18Н10, 12Х18Н10Т, 03Х17Н14М3</h3>
+<p>08Х18Н10 — базовая марка для влаги и общих сред. В хлориды её не ставят наугад: без молибдена точечная коррозия приходит раньше. У 12Х18Н10Т в марке титан. Титан связывает углерод, и шов после сварки меньше страдает от межкристаллитной коррозии. 03Х17Н14М3 — низкий углерод и молибден, её смотрят при хлоридах.</p>
+<p>Свариваемость у тройки рабочая, режим другой, чем у Ст3. Резание тоже другое: нержавейка вязкая, греет кромку, минут на штуку больше, чем у стали 45. Разницу закладывают в цену заранее.</p>
+<h3>Когда нержавейка не нужна?</h3>
+<p>В сухом узле, под маслом или под покрытием хватает обычной стали. Гальваника или <a href="/blog/kak-vybrat-poroshkovoe-pokrytie-dlya-metallicheskoy-detali.html">порошковая окраска</a> дешевле и по заготовке, и по станку: нержавейка дольше стоит в резании. На короткой серии пруток берут длиннее заказа, остаток лежит, а минуты станка уже оплачены.</p>
+<p>Платить за нержавейку имеет смысл, когда сталь с покрытием по среде уже не проходит. Сухая деталь из неё дороже и по прутку, и по минутам резания. Краску по шву при этом закладывают в ту же цену.</p>
+<h2 id="alyuminiy-i-med">Алюминий и медные сплавы: вес, теплоотвод, проводимость</h2>
+<p>Алюминиевые сплавы и медь берут, когда сталь проигрывает по массе, теплу или току. За это платят жёсткостью и ценой килограмма. Состояние поставки меняет свойства сильнее, чем одна буква в марке.</p>
+<h3>Алюминиевые сплавы: Д16Т, АМг6, АД31</h3>
+<p>Алюминиевые сплавы имеют меньшую плотность, чем конструкционная сталь: у алюминия она 2,6989 г/см³. Марки деформируемых сплавов собраны в ГОСТ 4784-2019.</p>
+<p>Д16Т — кронштейны и корпуса. Сварку плавлением не закладывают: шов склонен к трещинам, узел собирают механически. АМг6 варят: баки и рамы во влаге. АД31 — профили и радиаторы. Подробнее: <a href="/blog/alyuminievyj-splav-d16t-amg6-ad31-sravnenie.html">как выбрать между Д16Т, АМг6 и АД31</a>.</p>
+<blockquote><p>Алюминий берут ради массы и отвода тепла. По прочности большинство его сплавов уступает конструкционным сталям, поэтому сечение приходится увеличивать.</p></blockquote>
+<h3>Медь, латунь и бронза</h3>
+<p>Медь проводит тепло и ток лучше стали. Теплопроводность меди — 401 Вт/(м·К), плотность — 8,92 г/см³, заготовка тяжелее стальной того же объёма. Медь М1 ставят на шины, контакты и теплоотводящие элементы.</p>
+<p>Латунь Л63 режется легче меди: штуцеры, гайки, мелкая токарная номенклатура. Бронзу БрАЖ9-4 оставляют втулкам и парам трения, где нужна износостойкость, а ток чистой меди не нужен. Цену килограмма без актуального прайса не называем: сравнивают готовую деталь и диаметр прутка на складе.</p>
+<h2 id="obrabatyvaemost-svarka-termoobrabotka">Обрабатываемость, сварка и термообработка: как марка меняет срок и цену</h2>
+<p>Выбор материала влияет на срок и стоимость детали через обрабатываемость резанием. Соседние сплавы расходятся по скорости, износу пластины и минутам на штуку. Коэффициент «во сколько раз» зависит от твёрдости и пластины. В таблице порядок групп, без нормы из справочника режимов.</p>
+<table><thead><tr><th>Группа</th><th>Как режется</th><th>Как варится</th><th>Что даёт термообработка</th></tr></thead><tbody><tr><td>Ст3</td><td>легко</td><td>штатный режим</td><td>обычно не нужна</td></tr><tr><td>Сталь 45 и 40Х</td><td>после закалки тяжелее</td><td>режим жёстче</td><td>закалка и отпуск, нужен припуск</td></tr><tr><td>Аустенитная нержавейка</td><td>вязкая, греет кромку</td><td>шов чувствителен к коррозии</td><td>закалкой не упрочняют</td></tr><tr><td>Алюминиевые сплавы</td><td>быстро, стружка липнет</td><td>АМг6 варят, Д16Т обычно нет</td><td>старение, не закалка стали</td></tr><tr><td>Медь, латунь, бронза</td><td>латунь легко, медь тянется</td><td>свой режим</td><td>закалкой обычно не упрочняют</td></tr></tbody></table>
+<p>Сталь 45 и 40Х на силовом шве требуют разделки. Д16Т в сварной конструкции — повод сменить марку. Термообработку ставят так: черновая обработка, печь, чистовая с припуском на коробление. Готовый размер в печь не отдают. До программы имеет смысл <a href="/razdel/tehnologii.html">подобрать маршрут обработки под деталь</a>. Смена марки без смены программы сдвигает и срок, и стоимость. Припуск на коробление закладывают до заказа заготовки.</p>
+<h2 id="zagotovka-ili-obrabotka">Цена заготовки и цена обработки: когда дорогой материал выгоднее</h2>
+<p>Стоимость детали — это заготовка, минуты станка, инструмент, брак и покрытие. Дорогой материал выгоднее, когда он снимается быстрее, даёт меньше брака и позволяет взять заготовку ближе к готовому размеру.</p>
+<p>Дешёвый пруток проигрывает, если нержавейку ставят на сухую деталь: металл дороже, и штука дольше стоит на станке. Проигрывает и длинный пруток «за тонну», когда серия — двадцать штук: остаток дороже короткого со склада. Нет нужного диаметра — берут больший и превращают лишнее в стружку.</p>
+<p>Диаметр и наличие на складе двигают срок сильнее, чем строка прайса. Пруток пачкой на год для двадцати деталей дороже короткого куска у поставщика. Пластина под нержавейку живёт меньше, чем на стали 45, и тоже входит в штуку. Рублей за килограмм без актуального прайса здесь нет. Считают готовую штуку в вашем количестве. <a href="/ceny.html">Цены на металлообработку</a> показывают работу станка, металл считают отдельно по марке и массе.</p>
+<blockquote><p>Стоимость готовой детали решает выбор: разница в цене заготовки часто тает в минутах станка, браке и покрытии.</p></blockquote>
+<h2 id="marki-gost-aisi-en">Марки ГОСТ, AISI и EN: что делать, если нужного материала нет?</h2>
+<p>Обозначения по ГОСТ, AISI и EN не взаимозаменяемы: составы и допуски по элементам расходятся. Иностранную марку используют как ориентир при поиске проката, а замену согласуют до запуска.</p>
+<table><thead><tr><th>Марка по ГОСТ</th><th>Что сверить до замены</th></tr></thead><tbody><tr><td>08Х18Н10</td><td>углерод, хром и никель по сертификату плавки</td></tr><tr><td>12Х18Н10Т</td><td>титан: он указан в марке, в соседней марке без буквы Т его может не быть</td></tr><tr><td>03Х17Н14М3</td><td>молибден и низкий углерод, а не только номер марки</td></tr><tr><td>Д16</td><td>состояние поставки (Т или М) меняет прочность</td></tr></tbody></table>
+<p>Сверяют химический состав по сертификату на плавку, а не строку в каталоге поставщика.</p>
+<p>Соседний сплав предлагает мастерская, решение принимает заказчик. Как оформить согласие: <a href="/blog/kak-soglasovat-material-analog-dlya-metallicheskoy-detali.html">как согласовать аналог материала</a>.</p>
+<blockquote><p>Замена марки — решение заказчика. Без подписи в переписке или на чертеже соседний сплав в работу не берут.</p></blockquote>
+<h2 id="chek-list-zakazchika">Что сообщить мастерской: чек-лист и примеры для типовых деталей</h2>
+<p>Выбор материала закрывается пакетом данных. Мастерской нужны условия работы, нагрузка, количество и правило замены. Чертёж без этого оставляет технолога гадать.</p>
+<p>Как подготовить данные для подбора материала:</p>
+<ol><li>Опишите среду, температуру и ресурс: сухо, влага, масло, химия, улица.</li><li>Укажите нагрузку: постоянная, удар, цикл, и что ломается первым.</li><li>Напишите, что важнее: прочность, масса, тепло, ток, магнитность.</li><li>Приложите чертёж с маркой по ГОСТ и строкой, можно ли менять марку.</li><li>Для давальческого металла добавьте сертификат и номер плавки.</li></ol>
+<p>На типовых деталях группа сужается сама. Вал в сухой среде — сталь 45 или 40Х с термообработкой. Корпус подшипникового узла — конструкционная сталь, алюминий если узел легче. Фланец во влажном стыке — нержавейка. Кронштейн — сталь, при сварном шве смотрят АМг6. Теплоотводящий элемент — медь М1 или алюминий, если важнее масса.</p>
+<p>Марка стоит в штампе чертежа. Номер плавки на торце и в сертификате должны совпасть. Частая ошибка: марки нет на складе, запрет на замену всплывает после закупки.</p>
+<p>Пришлите чертёж и ответы по пяти пунктам. По ним называют марку и говорят, где замена ломает узел. Дальше считают заготовку и маршрут.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Как проверить, что металл соответствует заявленной марке?</summary>
+<div class="faq__a"><p>Запросите сертификат на партию и сверьте номер плавки с маркировкой на прутке или листе. Клеймо и документ должны относиться к одной плавке. Если цифры расходятся, до запуска делают химический анализ. Надпись марки в штампе чертежа плавку не подтверждает.</p></div>
+</details>
+<details>
+<summary>Почему нельзя выбирать материал только по цене за килограмм?</summary>
+<div class="faq__a"><p>В штуку входят ещё минуты станка, пластины, брак, покрытие и длина прутка на складе. Короткая серия из складского металла часто обходится спокойнее, чем тонна проката с лишней стружкой. Сравнивают готовую деталь в вашем количестве.</p></div>
+</details>
+<details>
+<summary>Чем грозит неверно выбранный материал?</summary>
+<div class="faq__a"><p>Деталь ржавеет, садится под нагрузкой или истирается раньше узла. Дальше новая заготовка, повторная обработка и сдвиг срока сборки. На партии ошибка в марке дороже, чем согласование замены до закупки.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://files.stroyinf.ru/Index2/1/4293768/4293768057.htm" rel="noopener" target="_blank">ГОСТ 1050-2013. Металлопродукция из нелегированных конструкционных качественных и специальных сталей. Общие технические условия</a> — Межгосударственный совет по стандартизации, метрологии и сертификации</li>
+<li><a href="https://files.stroyinf.ru/Index2/1/4293748/4293748469.htm" rel="noopener" target="_blank">ГОСТ 4543-2016. Металлопродукция из конструкционной легированной стали. Технические условия</a> — Межгосударственный совет по стандартизации, метрологии и сертификации</li>
+<li><a href="https://files.stroyinf.ru/Index2/1/4293768/4293768317.htm" rel="noopener" target="_blank">ГОСТ 5632-2014. Нержавеющие стали и сплавы коррозионно-стойкие, жаростойкие и жаропрочные. Марки</a> — Межгосударственный совет по стандартизации, метрологии и сертификации</li>
+<li><a href="https://files.stroyinf.ru/Index2/1/4293728/4293728395.htm" rel="noopener" target="_blank">ГОСТ 4784-2019. Алюминий и сплавы алюминиевые деформируемые. Марки</a> — Межгосударственный совет по стандартизации, метрологии и сертификации</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/vybor-materiala-detali-stal-alyuminiy-nerzhaveyka.html">
+            <img src="/images/blog/vybor-materiala-detali-stal-alyuminiy-nerzhaveyka-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Как выбрать материал для детали: сталь, алюминий или нержавейка</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat.html">
+            <img src="/images/blog/galvanicheskaya-korroziya-kakie-metally-nelzya-soedinyat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Гальваническая коррозия: какие металлы нельзя соединять в одной конструкции</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali.html">
+            <img src="/images/blog/titan-ili-alyuminiy-chto-vybrat-dlya-detali-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Материалы</span>
+              <span class="mat-card__title">Титан или алюминий: какой металл выбрать для детали и во сколько обойдётся её изготовление</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Какой материал выбрать для детали: сравнение сталей и сплавов">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>
