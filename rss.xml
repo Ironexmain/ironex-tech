@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Выборочный контроль: как принимают партию деталей по плану выборки</title>
+      <link>https://ironex.tech/blog/vyborochnyj-kontrol-partii-detalej-plan-vyborki.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/vyborochnyj-kontrol-partii-detalej-plan-vyborki.html</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Как принимают партию по выборке: уровень контроля, буква кода, объём n и числа Ac/Re на примере 2000 деталей. Что такое AQL и чего он не гарантирует.</description>
+    </item>
+    <item>
+      <title>Выбор производителя деталей: на что смотреть, прежде чем отдавать чертёж</title>
+      <link>https://ironex.tech/blog/vybor-proizvoditelya-detaley-kak-proverit-podryadchika.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/vybor-proizvoditelya-detaley-kak-proverit-podryadchika.html</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Как проверить производителя деталей до заказа: порядок проверки, допуски и протоколы, сертификаты, договор и красные флаги. Есть чек-лист.</description>
+    </item>
+    <item>
+      <title>Выбор производителя деталей по чертежу: как проверить цех и не попасть на посредника</title>
+      <link>https://ironex.tech/blog/vybor-proizvoditelya-detalej-po-chertezhu.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/vybor-proizvoditelya-detalej-po-chertezhu.html</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Контроль качества</category>
+      <description>Станки, допуски, ОТК, сертификаты на металл и КП: что проверить на вашем чертеже и как отличить цех от посредника. Чек-лист заказчика.</description>
+    </item>
     <item>
       <title>Как выбрать подрядчика по металлообработке и не сорвать сроки: на что смотреть до договора</title>
       <link>https://ironex.tech/blog/vybor-postavshchika-metalloobrabotki-sroki.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sat, 07 Nov 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Что означает диаметр, как найти его через радиус и измерить на детали. Выбор инструмента, обозначение ⌀ на чертеже и ошибки при проверке размера.</description>
-    </item>
-    <item>
-      <title>Как образуется металлическая стружка и как управлять ею при обработке</title>
-      <link>https://ironex.tech/blog/metallicheskaya-struzhka.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/metallicheskaya-struzhka.html</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Как различать виды металлической стружки, разбирать причины наматывания, подбирать стружколом и организовывать отвод из зоны резания.</description>
-    </item>
-    <item>
-      <title>Что такое дюраль и как выбрать её для детали по чертежу</title>
-      <link>https://ironex.tech/blog/dyural-eto-sostav-svoystva-obrabotka.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/dyural-eto-sostav-svoystva-obrabotka.html</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Технологии</category>
-      <description>Чем дюраль отличается от алюминия, зачем различать марку и состояние заготовки и что учесть при обработке детали по чертежу.</description>
-    </item>
-    <item>
-      <title>Сталь 08Х18Н10: как выбрать материал и обработку для детали</title>
-      <link>https://ironex.tech/blog/08h18n10-sostav-svoystva-obrabotka.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/08h18n10-sostav-svoystva-obrabotka.html</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Как проверить состав и свойства стали 08Х18Н10, согласовать замену на AISI 304 и подготовить требования к обработке, сварке и приёмке детали.</description>
     </item>
   </channel>
 </rss>
