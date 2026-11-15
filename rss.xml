@@ -5,7 +5,31 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Жаропрочная сталь, никелевые сплавы и инконель: как выбрать материал для детали под нагрев</title>
+      <link>https://ironex.tech/blog/zharoprochnaya-stal-ili-inkonel-chto-vybrat.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/zharoprochnaya-stal-ili-inkonel-chto-vybrat.html</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Материалы</category>
+      <description>Чем жаропрочность отличается от жаростойкости, до каких температур работают аустенитные и ферритные стали и когда пора переходить на инконель.</description>
+    </item>
+    <item>
+      <title>Зенкование отверстий: чем зенковка отличается от цековки и как обозначить каждую на чертеже</title>
+      <link>https://ironex.tech/blog/zenkovanie-otverstij-zenkovka-cekovka-oboznachenie.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/zenkovanie-otverstij-zenkovka-cekovka-oboznachenie.html</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Чертежи и допуски</category>
+      <description>Зенковка — конус под потайной винт, цековка — цилиндр под болт. Как обозначить каждую на чертеже, какой угол выбрать и что указать в заказе.</description>
+    </item>
+    <item>
+      <title>Завод-изготовитель деталей: как выбрать партнёра и проверить его до заказа</title>
+      <link>https://ironex.tech/blog/zavod-izgotovitel-kak-vybrat-partnera.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/zavod-izgotovitel-kak-vybrat-partnera.html</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Как отличить завод от посредника: вопросы для проверки, ЕГРЮЛ и ISO 9001, сертификат на металл и пробная партия перед серией.</description>
+    </item>
     <item>
       <title>Выборочный контроль: как принимают партию деталей по плану выборки</title>
       <link>https://ironex.tech/blog/vyborochnyj-kontrol-partii-detalej-plan-vyborki.html</link>
@@ -141,30 +165,6 @@
       <pubDate>Sun, 08 Nov 2026 00:00:00 +0300</pubDate>
       <category>Материалы</category>
       <description>Что проверить при подборе аналога стали 40Х: состав плавки, состояние поставки, свойства после термообработки и согласование замены в чертеже.</description>
-    </item>
-    <item>
-      <title>Как выбрать форму основной надписи чертежа и заполнить её графы</title>
-      <link>https://ironex.tech/blog/osnovnaya-nadpis-chertezha.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/osnovnaya-nadpis-chertezha.html</guid>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Чертежи и допуски</category>
-      <description>Порядок проверки основной надписи: форма, размеры, расположение, реквизиты и согласованность чертежа металлической детали с комплектом документов.</description>
-    </item>
-    <item>
-      <title>Как проверить сварщика в реестре НАКС перед заказом</title>
-      <link>https://ironex.tech/blog/naks-reestr-svarshchikov.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/naks-reestr-svarshchikov.html</guid>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Как проверить запись о сварщике в реестре НАКС, сопоставить её с удостоверением и требованиями чертежа. Порядок действий при расхождениях.</description>
-    </item>
-    <item>
-      <title>Что такое диаметр и как измерить его у вала или отверстия</title>
-      <link>https://ironex.tech/blog/diametr-eto.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/diametr-eto.html</guid>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Что означает диаметр, как найти его через радиус и измерить на детали. Выбор инструмента, обозначение ⌀ на чертеже и ошибки при проверке размера.</description>
     </item>
   </channel>
 </rss>
