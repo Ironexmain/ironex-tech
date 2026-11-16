@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Зона термического влияния при резке и сварке: что с металлом</title>
+  <meta name="description" content="Что такое ЗТВ, почему кромка после резки твердеет и как сузить зону: лазер, плазма, газ, гидроабразив. Что указать в чертеже." />
+  <link rel="preload" href="/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <link rel="canonical" href="https://ironex.tech/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke.html" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://ironex.tech/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke.html#article",
+      "headline": "Зона термического влияния: что происходит с металлом при резке и сварке",
+      "description": "Что такое ЗТВ, почему кромка после резки твердеет и как сузить зону: лазер, плазма, газ, гидроабразив. Что указать в чертеже.",
+      "datePublished": "2026-11-16",
+      "dateModified": "2026-11-16",
+      "inLanguage": "ru-RU",
+      "mainEntityOfPage": {
+        "@id": "https://ironex.tech/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke.html"
+      },
+      "isPartOf": {
+        "@id": "https://ironex.tech#website"
+      },
+      "author": {
+        "@id": "https://ironex.tech#person-anton-ryabchikov"
+      },
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      },
+      "image": "https://ironex.tech/images/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke-cover.webp",
+      "articleSection": "Технологии",
+      "keywords": [
+        "зона термического влияния",
+        "зона термического влияния сварного шва",
+        "ЗТВ при лазерной резке",
+        "металл зоны термического влияния",
+        "твёрдость ЗТВ",
+        "зона термического влияния шва"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ironex.tech#website",
+      "url": "https://ironex.tech",
+      "name": "IRONEX",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ironex.tech#organization",
+      "name": "IRONEX",
+      "url": "https://ironex.tech"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ironex.tech#person-anton-ryabchikov",
+      "name": "Антон Рябчиков",
+      "jobTitle": "Инженер",
+      "description": "Инженер, выпускник МИЭТ по специальности «микроэлектроника». Разбирает, что должно быть в чертеже и технических требованиях, чтобы расчёт получился точным, а маршрут изготовления — предсказуемым.",
+      "image": "https://ironex.tech/images/avtor/anton-ryabchikov.webp",
+      "url": "https://ironex.tech/avtor/anton-ryabchikov.html",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "МИЭТ, факультет микроэлектроники"
+        }
+      ],
+      "knowsAbout": [
+        "подготовка чертежей и технических требований",
+        "допуски, посадки и шероховатость",
+        "механическая обработка на станках с ЧПУ",
+        "контроль качества деталей и измерения на КИМ"
+      ],
+      "worksFor": {
+        "@id": "https://ironex.tech#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://ironex.tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://ironex.tech/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Зона термического влияния: что происходит с металлом при резке и сварке"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какие стали сильнее всего страдают от зоны термического влияния?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чувствительность зависит от механизма повреждения. Высокоуглеродистые и низколегированные стали могут закаливаться при быстром охлаждении, повышая твёрдость и риск холодных трещин. Нержавеющая сталь в ЗТВ может потерять коррозионную стойкость из-за обеднения границ зёрен хромом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем лазерная резка лучше плазменной и газовой по ЗТВ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Лазер подводит тепло к малой площади и создаёт наименьшую ЗТВ среди термических способов. У плазмы зона промежуточная, у газовой резки — самая широкая. Это не делает лазер универсальным выбором: нужно учитывать толщину, допустимую кромку и стоимость операции."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что указать в чертеже, чтобы ограничить влияние ЗТВ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Укажите способ резки либо требование сохранить исходную структуру кромки, припуск на удаление ЗТВ и подготовку к сварке. Для ответственной детали задайте предел твёрдости, точки контроля и выдержку. Для нержавейки добавьте требование по стойкости к межкристаллитной коррозии."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(105009501,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+  </script>
+  <link rel="stylesheet" href="/ironex.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ЗТВ при лазерной, плазменной и газовой резке: где зона шире" />
+  <meta property="og:description" content="Что такое ЗТВ, почему кромка после резки твердеет и как сузить зону: лазер, плазма, газ, гидроабразив. Что указать в чертеже." />
+  <meta property="og:url" content="https://ironex.tech/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke.html" />
+  <meta property="og:image" content="https://ironex.tech/images/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:site_name" content="IRONEX" />
+  <meta property="article:published_time" content="2026-11-16" />
+  <meta property="article:modified_time" content="2026-11-16" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ЗТВ при лазерной, плазменной и газовой резке: где зона шире" />
+  <meta name="twitter:description" content="Что такое ЗТВ, почему кромка после резки твердеет и как сузить зону: лазер, плазма, газ, гидроабразив. Что указать в чертеже." />
+  <meta name="twitter:image" content="https://ironex.tech/images/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke-cover.webp" />
+  <link rel="alternate" type="application/rss+xml" title="Блог IRONEX" href="https://ironex.tech/rss.xml" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><div><img src="https://mc.yandex.ru/watch/105009501" width="1" height="1" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="/">IRON<span>EX</span></a>
+    <ul class="nav" data-phone="+7 993 490-40-24">
+      <li><a href="/uslugi.html">Услуги</a></li>
+      <li><a href="/oborudovanie.html">Оборудование</a></li>
+      <li><a href="/ceny.html">Цены</a></li>
+      <li><a href="/blog.html" aria-current="page">Блог</a></li>
+      <li><a href="/kontakty.html">Контакты</a></li>
+    </ul>
+    <div class="clockbar" data-clockbar>
+      <span data-clock-time>Москва</span>
+      <span data-clock-state>приёмка чертежей</span>
+    </div>
+    <div class="site-header__actions">
+      <a class="site-header__email" href="mailto:info@ironex.tech">info@ironex.tech</a>
+      <a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Зона термического влияния: что происходит с металлом при резке и сварке">Прислать чертёж на почту</a>
+    </div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <div class="container">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/blog.html">Блог</a><span aria-hidden="true">/</span><span>Зона термического влияния: что происходит с металлом при резке и сварке</span>
+    </div>
+  </nav>
+
+  <div class="container section">
+
+    <div class="reading">
+      <aside class="rail">
+        <span class="label">В статье</span>
+        <ol class="toc">
+          <li><a href="#chto-takoe-ztv">Что такое ЗТВ</a></li>
+<li><a href="#kak-formiruetsya-ztv">Как формируется ЗТВ</a></li>
+<li><a href="#chto-proishodit-s-metallom">Что происходит с металлом</a></li>
+<li><a href="#ztv-pri-rezke">ЗТВ при разных способах резки</a></li>
+<li><a href="#chem-opasna-ztv">Чем опасна ЗТВ</a></li>
+<li><a href="#kak-suzit-ztv-pri-svarke">Как контролировать ЗТВ при сварке</a></li>
+<li><a href="#chto-ukazat-v-chertezhe">Что указать в чертеже</a></li>
+<li><a href="#kontrol-i-oshibki">Контроль ЗТВ и ошибки</a></li>
+        </ol>
+        <div class="rail__card">
+          <strong>Нужен расчёт по вашему чертежу?</strong>
+          <p>Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</p>
+          <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Зона термического влияния: что происходит с металлом при резке и сварке">Прислать чертёж на почту</a>
+        </div>
+      </aside>
+
+      <div class="reading__main">
+        <header class="article-hero">
+        <h1>Зона термического влияния: что происходит с металлом при резке и сварке</h1>
+        <p class="lede">Что такое ЗТВ, почему кромка после резки твердеет и как сузить зону: лазер, плазма, газ, гидроабразив. Что указать в чертеже.</p>
+
+        <div class="byline">
+          <span class="byline__who">
+            <span class="avatar"><img src="/images/avtor/anton-ryabchikov.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span>
+            <span>
+              <span class="byline__name"><a href="/avtor/anton-ryabchikov.html" rel="author">Антон Рябчиков</a></span>
+              <span class="byline__role">Инженер</span>
+            </span>
+          </span>
+          <span class="byline__meta">
+            <span>Технологии</span>
+            <time datetime="2026-11-16">Опубликовано 16 ноября 2026</time>
+
+            <span>9 мин чтения</span>
+          </span>
+        </div>
+
+        <figure class="article-cover">
+          <img src="/images/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke-cover.webp" alt="Зона термического влияния: что происходит с металлом при резке и сварке" width="1200" height="675" fetchpriority="high" decoding="async" />
+        </figure>
+        </header>
+
+        <article class="prose">
+<p class="prose__lede">Зона термического влияния (ЗТВ) — участок основного металла рядом с резом или швом: он не плавился, но нагрелся настолько, что изменил структуру и свойства. В ЗТВ растут твёрдость и хрупкость, возникает риск трещин, а у <a href="/blog/obrabotka-nerzhaveyuschey-stali-na-chpu-chto-ukazat-v-zayavke.html">нержавейки</a> падает коррозионная стойкость. Шире всего зона при газовой резке, уже всего при лазерной, а гильотина и гидроабразив её не создают.</p>
+<h2 id="chto-takoe-ztv">Что такое зона термического влияния и почему она важнее самого шва</h2>
+<p>После термической резки рядом с кромкой часто остаются цвета побежалости. Видимая полоса показывает нагрев поверхности, но граница изменённого металла может проходить иначе. ЗТВ находится между расплавленным или выгоревшим участком и основным металлом, который сохранил исходную структуру.</p>
+<p>У сварного соединения можно выделить металл шва, ЗТВ и неизменённый основной металл. При резке вместо шва остаётся кромка, однако принцип тот же: источник тепла проходит вдоль детали, а соседний слой нагревается и остывает. Он не переходит в жидкое состояние, но переживает структурные превращения.</p>
+<p>Слабым местом иногда становится именно ЗТВ. Шов может соответствовать требованиям, тогда как соседний металл получает закалочную структуру или остаточные напряжения. Это влияет на хрупкость, стойкость к трещинам, коррозию и последующую обработку.</p>
+<p>Ширина зоны сама по себе не описывает весь риск. Для детали важны марка стали, максимальная температура, скорость охлаждения и место приложения нагрузки. Поэтому ЗТВ оценивают вместе с режимом резки или сварки и требованиями чертежа.</p>
+<blockquote><p>ЗТВ не плавилась, но после нагрева это уже не тот металл, который поступил на производство.</p></blockquote>
+<div class="cta ui" data-cta="inline" id="cta">
+<div class="cta__title">Нужен расчёт по вашему чертежу?</div>
+<div class="cta__sub">Приложите чертёж или 3D-модель, количество, материал и желаемый срок — технолог проверит задачу и вернётся с ценой.</div>
+<a class="btn btn--primary" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Зона термического влияния: что происходит с металлом при резке и сварке">Прислать чертёж на почту</a>
+</div>
+<h2 id="kak-formiruetsya-ztv">Как формируется ЗТВ: нагрев, остывание и время t8/5</h2>
+<p><img alt="Электроды и держатель для дуговой сварки" decoding="async" height="750" loading="lazy" src="/images/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke-1.webp" width="1000"/></p>
+<p><em>Сварочные электроды и держатель электрода — основной инструмент дуговой сварки. Фото: <a href="https://commons.wikimedia.org/wiki/File:Arc_welding_electrodes_and_electrode_holder.triddle.jpg" rel="nofollow noopener" target="_blank">участник Wikimedia Commons</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Каждая точка рядом с резом или швом проходит свой термический цикл. Ближе к источнику тепла температура выше, дальше — ниже. Поэтому внутри ЗТВ соседствуют участки с разной историей нагрева. Точные границы зависят от состава стали и режима обработки.</p>
+<p>Процесс похож на закалку ножа: результат задаёт не один нагрев, а сочетание пиковой температуры и скорости остывания. Для сварных сталей скорость охлаждения описывают временем t8/5 — периодом, за который металл остывает с 800 до 500 °C и проходит диапазон основных структурных превращений.</p>
+<blockquote><p>Структуру ЗТВ определяют два параметра: до какой температуры нагрелась точка и как долго она остывала с 800 до 500 °C.</p></blockquote>
+<p>На ширину зоны влияет температуропроводность — способность материала распределять тепло. У нержавеющей стали типа AISI 304 показатель составляет 4,2 мм²/с, у конструкционной стали — 11,72 мм²/с. При одинаковом режиме тепло в нержавейке уходит медленнее, поэтому ЗТВ может оказаться шире.</p>
+<p>Толщина листа, скорость движения источника и отвод тепла оснасткой тоже меняют картину. Универсальную ширину ЗТВ в миллиметрах назначить нельзя: её подтверждают на конкретном материале и режиме.</p>
+<blockquote><p><strong>Факт.</strong> Время t8/5 измеряет охлаждение металла с 800 до 500 °C — в диапазоне структурных превращений.</p></blockquote>
+<h2 id="chto-proishodit-s-metallom">Что происходит с металлом: твёрдость, закалка и отпуск</h2>
+<p>Максимальную твёрдость в углеродисто-марганцевых и низколегированных сталях ожидают там, где основной металл один раз нагрелся выше приблизительно 800 °C. В такой точке может образоваться мартенсит — твёрдая и хрупкая структура, возникающая при быстром охлаждении стали.</p>
+<p>Чем меньше t8/5, тем быстрее охлаждается металл и тем выше может быть доля мартенсита. При увеличении t8/5 охлаждение замедляется, а твёрдость ЗТВ снижается. Связь зависит от химического состава: одна и та же скорость даст разный результат для малоуглеродистой и легированной стали.</p>
+<p>Поэтому твёрдость измеряют не в любой точке, а в участке, который прошёл один цикл нагрева выше 800 °C. Замер в другом месте способен пропустить максимум.</p>
+<p>Повышенная твёрдость уменьшает запас пластичности. Вместе с водородом она повышает риск холодных трещин. После газовой резки это особенно важно учитывать: зона широкая, а значит, изменённого металла у кромки больше.</p>
+<blockquote><p>Самая твёрдая точка ЗТВ ожидается там, где металл один раз нагрелся выше 800 °C, а затем быстро остыл.</p></blockquote>
+<h2 id="ztv-pri-rezke">ЗТВ при резке: лазер, плазма, газ и методы без зоны</h2>
+<p><img alt="Оборудование масляной закалки для закаливания шпал" decoding="async" height="686" loading="lazy" src="/images/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke-2.webp" width="1000"/></p>
+<p><em>Закалочная ванна с маслом контролирует охлаждение стали, определяя её твёрдость и структуру при термической обработке. Фото: <a href="https://commons.wikimedia.org/wiki/File:Industries_of_War_-_Metals_-_Steel_-_Lackawanna_Steel_Company_-_View_at_No.2_Splice_Bar_Plant_showing_oil_quenching_equipment_for_tempering_splice_bars_-_NARA_-_45487704.jpg" rel="nofollow noopener" target="_blank">Unknown author Unknown author or not provided</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="nofollow noopener" target="_blank">Public domain</a></em></p>
+<p>Способ резки определяет площадь подвода тепла и время его воздействия. <a href="/blog/ot-chego-zavisit-cena-lazernoy-rezki-metalla.html">Лазерная резка</a> даёт наименьшую ЗТВ среди термических методов, плазменная занимает промежуточное положение, газовая создаёт самую широкую. Гидроабразив и гильотина не перегревают металл, поэтому ЗТВ у кромки не возникает.</p>
+<table><thead><tr><th>Способ резки</th><th>Подвод тепла</th><th>ЗТВ</th><th>Когда подходит</th></tr></thead><tbody><tr><td>Лазер</td><td>Сфокусирован на малой площади</td><td>Наименьшая среди термических способов</td><td>Когда важны точная кромка и малое тепловое воздействие</td></tr><tr><td>Плазма</td><td>Дуга шире лазерного луча</td><td>Промежуточная</td><td>Когда нужен баланс скорости, толщины и стоимости</td></tr><tr><td>Газ</td><td>Широкое пламя и длительный нагрев</td><td>Наибольшая среди термических способов</td><td>Для подходящих сталей и толщин с последующей обработкой кромки</td></tr><tr><td>Гидроабразив</td><td>Холодная струя с абразивом</td><td>Нет</td><td>Когда нельзя менять структуру и твёрдость кромки</td></tr><tr><td>Гильотина</td><td>Механический сдвиг</td><td>Нет</td><td>Для прямолинейного раскроя без сложного контура</td></tr></tbody></table>
+<h3>Лазер и плазма</h3>
+<p>Лазер концентрирует энергию на небольшом пятне и быстро проходит контур. Плазменная дуга шире, поэтому прогревает больший участок. Режим плазмы выбирают вместе с толщиной, качеством кромки и возможностями оборудования.</p>
+<h3>Газовая резка</h3>
+<p>Газокислородная резка сочетает интенсивный нагрев, широкое пламя и сравнительно медленное движение. Поэтому она формирует самую широкую ЗТВ среди термических способов. Если кромку предстоит сваривать или обрабатывать начисто, в чертеже нужен припуск на удаление изменённого слоя. Его величину назначает технолог для материала и толщины.</p>
+<h3>Резка без ЗТВ</h3>
+<p><a href="/blog/lazernaya-plazmennaya-ili-gidroabrazivnaya-rezka.html">Гидроабразивная резка</a> не перегревает металл и подходит для сложного контура. Гильотина также не создаёт ЗТВ, но ограничивает геометрию реза. При выборе полезно сопоставить эти варианты с другими способами: <a href="/blog/gibka-shtampovka-lazernaya-rezka-vybor-metoda.html">как выбрать между гибкой, штамповкой и лазерной резкой</a>.</p>
+<h2 id="chem-opasna-ztv">Чем опасна ЗТВ: хром и водород</h2>
+<p>ЗТВ повреждает разные стали по разным механизмам. Для нержавеющей стали критична коррозионная стойкость, для закаливающихся сталей — твёрдость и холодные трещины.</p>
+<p>В нержавеющей стали у границ зёрен содержание хрома может упасть ниже 10,5 %. В этих местах металл теряет способность образовывать пассивную плёнку и перестаёт быть нержавеющим. Для детали, работающей в агрессивной среде, одного внешнего осмотра недостаточно: метод испытания задают в технических требованиях.</p>
+<p>Водород, оставшийся в металле, может вызвать трещину спустя 24 часа после нагрева. Поэтому немедленный контроль не всегда показывает окончательное состояние соединения. Выдержку перед проверкой назначают по применимой технологии и нормативной документации.</p>
+<p>Перед сваркой кромку после термической резки зачищают от окалины и загрязнений. Требование к глубине зачистки задаёт технолог для конкретного материала.</p>
+<blockquote><p>ЗТВ может проявить себя позже: водородная трещина — после выдержки, потеря стойкости нержавейки — во время эксплуатации.</p></blockquote>
+<h2 id="kak-suzit-ztv-pri-svarke">Как держать ЗТВ под контролем при сварке: t8/5, подогрев, погонная энергия</h2>
+<p>Технолог управляет ЗТВ через тепловой цикл. Подогрев и увеличение погонной энергии замедляют охлаждение, увеличивают t8/5 и могут снизить твёрдость закаливающейся стали. Режим нельзя выбирать по одному показателю: он зависит от марки, толщины и конструкции соединения.</p>
+<p>Последовательность решения выглядит так:</p>
+<ol><li>Уточнить марку, толщину, состояние поставки металла и конструкцию соединения.</li><li>Рассчитать ориентировочное t8/5 для выбранного процесса и геометрии.</li><li>Подобрать подогрев, погонную энергию и порядок проходов.</li><li>Выполнить пробное соединение при критичных требованиях.</li><li>Измерить твёрдость в участке вероятного максимума и проверить заданные свойства.</li></ol>
+<p>Расчёт t8/5 по уравнениям, переработанным для дуговой сварки, даёт среднее отклонение от измеренных значений в пределах 8 %. Это полезный ориентир для выбора режима, но не замена испытанию.</p>
+<p>Неопределённость прогноза твёрдости ещё заметнее. Для модели прогноза максимальной твёрдости ЗТВ стандартное отклонение составляет 28 HV, а большинство значений лежит в пределах ±56 HV. При прогнозе 250 HV фактический результат может попасть в диапазон 194–306 HV. Если среда или норматив ограничивает твёрдость, решение принимают по замеру.</p>
+<blockquote><p><strong>Мнение.</strong> Если предельная твёрдость влияет на безопасность или стойкость детали, используйте расчёт для выбора режима, а соответствие подтверждайте испытанием образца.</p></blockquote>
+<h2 id="chto-ukazat-v-chertezhe">Что прописать в чертеже и заявке, чтобы ЗТВ не испортила деталь</h2>
+<p>В чертеже нужно задавать проверяемый результат: допустимый способ резки, необходимость удаления изменённого слоя и метод контроля. Фраза «не допускать перегрева» не даёт технологу критерия приёмки и не объясняет, какая кромка нужна для последующей операции.</p>
+<p>Перед отправкой заявки проверьте пять строк:</p>
+<ul><li><strong>Способ раскроя.</strong> Укажите лазер, плазму, газ или требование «резка без ЗТВ», если структура кромки критична.</li><li><strong>Припуск.</strong> Назначьте припуск на снятие ЗТВ под чистовую обработку; после газовой резки он обычно нужен больше, чем после лазерной.</li><li><strong>Подготовка к сварке.</strong> Потребуйте удалить окалину, загрязнения и изменённый поверхностный слой с кромки.</li><li><strong>Требования к нержавейке.</strong> Задайте стойкость к межкристаллитной коррозии и согласованный метод проверки.</li><li><strong>Контроль.</strong> Укажите предельную твёрдость, точки замера и необходимость выдержки перед дефектоскопией.</li></ul>
+<p>Припуск на зачистку позволяет снять ЗТВ с функциональной поверхности. Конкретный размер нельзя переносить с другой детали: его связывают со способом резки, толщиной, маркой материала и глубиной последующей обработки.</p>
+<p><a href="/razdel/materialy.html">Марка металла и её влияние на обработку и цену</a> нужны исполнителю до расчёта технологии. Если изменённую кромку требуется убрать начисто, заранее согласуйте <a href="/frezerovka.html">фрезерную обработку кромки после резки</a>. Это позволит учесть припуск, базирование и итоговый допуск в одной технологической цепочке.</p>
+<h2 id="kontrol-i-oshibki">Как проверить ЗТВ и какие ошибки чаще всего приводят к браку</h2>
+<p>ЗТВ проверяют методами, которые отвечают конкретному риску. Твёрдость по Виккерсу показывает упрочнённые участки. Макро- и микрошлифы выявляют границы зоны и структуру. Ударные испытания оценивают сопротивление хрупкому разрушению. Визуальный, ультразвуковой, капиллярный и магнитопорошковый контроль ищут дефекты, но сами по себе не определяют структуру металла.</p>
+<p>Контроль планируют после требуемой выдержки, поскольку водородные трещины появляются не сразу. Точки измерения твёрдости располагают в участке вероятного максимума — там, где основной металл прошёл один цикл нагрева выше 800 °C.</p>
+<p>Чаще всего к браку приводят четыре решения: способ резки оставили на усмотрение производства; припуск не учитывает удаление ЗТВ; нержавейку обрабатывают по режиму конструкционной стали; твёрдость измеряют вдали от вероятного максимума. Разбор смежных причин собран в материале о том, <a href="/blog/brak-pri-obrabotke-metalla-prichiny-oshibki.html">какие ошибки чаще всего ведут к браку при обработке металла</a>.</p>
+<blockquote><p>ЗТВ можно удержать в допустимых пределах: выбрать способ резки, задать припуск, согласовать тепловой цикл и проверить критичное свойство.</p></blockquote>
+<p>Чтобы оценить риск до запуска, передайте исполнителю чертёж, марку и толщину металла, требования к кромке, среде эксплуатации и контролю. По этим данным технолог подберёт маршрут и отметит параметры, которые нужно подтвердить образцом.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details open="">
+<summary>Какие стали сильнее всего страдают от зоны термического влияния?</summary>
+<div class="faq__a"><p>Чувствительность зависит от механизма повреждения. Высокоуглеродистые и низколегированные стали могут закаливаться при быстром охлаждении, повышая твёрдость и риск холодных трещин. Нержавеющая сталь в ЗТВ может потерять коррозионную стойкость из-за обеднения границ зёрен хромом.</p></div>
+</details>
+<details>
+<summary>Чем лазерная резка лучше плазменной и газовой по ЗТВ?</summary>
+<div class="faq__a"><p>Лазер подводит тепло к малой площади и создаёт наименьшую ЗТВ среди термических способов. У плазмы зона промежуточная, у газовой резки — самая широкая. Это не делает лазер универсальным выбором: нужно учитывать толщину, допустимую кромку и стоимость операции.</p></div>
+</details>
+<details>
+<summary>Что указать в чертеже, чтобы ограничить влияние ЗТВ?</summary>
+<div class="faq__a"><p>Укажите способ резки либо требование сохранить исходную структуру кромки, припуск на удаление ЗТВ и подготовку к сварке. Для ответственной детали задайте предел твёрдости, точки контроля и выдержку. Для нержавейки добавьте требование по стойкости к межкристаллитной коррозии.</p></div>
+</details>
+</div>
+<h2 id="istochniki">Источники</h2>
+<ul class="sources">
+<li><a href="https://www.thefabricator.com/thefabricator/article/shopmanagement/all-you-need-to-know-about-the-heat-affected-zone" rel="noopener" target="_blank">All You Need to Know About the Heat-Affected Zone</a> — The Fabricator</li>
+<li><a href="https://www.twi-global.com/technical-knowledge/published-papers/the-prediction-of-maximum-haz-hardness-in-c-mn-and-low-alloy-steel-arc-welds-june-2008" rel="noopener" target="_blank">The Prediction of Maximum HAZ Hardness in C-Mn and Low Alloy Steel Arc Welds</a> — TWI Global</li>
+</ul>
+</article>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2 id="smezhnye">Читайте также</h2>
+      <div class="related mat-grid mat-grid--3" style="margin-top:28px">
+        <article class="card mat-card">
+          <a href="/blog/svarochnye-deformacii-pochemu-vedet-detal.html">
+            <img src="/images/blog/svarochnye-deformacii-pochemu-vedet-detal-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Почему сварной шов гнёт деталь — и что с этим делать ещё на чертеже</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/lazernaya-rezka-metalla-kogda-ispolzovat.html">
+            <img src="/images/blog/lazernaya-rezka-metalla-kogda-ispolzovat-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Лазерная резка металла: в каких случаях она оправдана, а в каких лучше другой способ</span>
+            </span>
+          </a>
+        </article>
+<article class="card mat-card">
+          <a href="/blog/svarka-payka-skleivanie-metod-soedineniya.html">
+            <img src="/images/blog/svarka-payka-skleivanie-metod-soedineniya-cover.webp" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <span class="mat-card__body">
+              <span class="mat-card__meta">Технологии</span>
+              <span class="mat-card__title">Сварка vs пайка vs склеивание: когда какой способ соединения деталей выгоднее</span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement statement--grid section">
+    <div class="container">
+      <h2>Нужен расчёт деталей по вашим чертежам?</h2>
+      <p style="max-width:56ch">Приложите к письму чертёж или 3D-модель, количество, материал и желаемый срок. Технолог проверит задачу и вернётся с ценой и сроком.</p>
+      <p style="margin:26px 0 0">
+        <a class="btn btn--on-dark" href="mailto:info@ironex.tech?subject=Расчёт по чертежу — Зона термического влияния: что происходит с металлом при резке и сварке">Прислать чертёж на почту</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="logo" href="/" style="color:#fff">IRON<span style="color:#fff">EX</span></a>
+        <p style="margin-top:14px;max-width:34ch">Изготовление металлических деталей и узлов по чертежам заказчика: механообработка, резка, гибка, сварка и контроль на КИМ.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="/uslugi.html">Все услуги</a></li>
+          <li><a href="/tokarnaya.html">Токарная обработка</a></li>
+          <li><a href="/frezerovka.html">Фрезерная обработка</a></li>
+          <li><a href="/serijnoe-proizvodstvo-detalej.html">Серийное производство</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="/oborudovanie.html">Оборудование</a></li>
+          <li><a href="/ceny.html">Цены</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/avtor/anton-ryabchikov.html">Автор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="mailto:info@ironex.tech">info@ironex.tech</a></li>
+          <li><a href="tel:+79934904024">+7 993 490-40-24</a></li>
+          <li><a href="/kontakty.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 IRONEX · Контрактное производство деталей</span>
+      <span>ООО «Айронекс» · ИНН 7804719856</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/analytics-events.js"></script>
+<script src="/email-copy.js"></script>
+<script src="/redesign.js"></script>
+</body>
+</html>

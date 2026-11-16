@@ -5,7 +5,23 @@
     <link>https://ironex.tech/blog.html</link>
     <description>Практические материалы для закупщиков и инженеров о заказном изготовлении металлических деталей.</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 15 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0300</lastBuildDate>
+    <item>
+      <title>Зона термического влияния: что происходит с металлом при резке и сварке</title>
+      <link>https://ironex.tech/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/zona-termicheskogo-vliyaniya-pri-rezke-i-svarke.html</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Технологии</category>
+      <description>Что такое ЗТВ, почему кромка после резки твердеет и как сузить зону: лазер, плазма, газ, гидроабразив. Что указать в чертеже.</description>
+    </item>
+    <item>
+      <title>Почему железо относится к металлам и чем отличается от стали</title>
+      <link>https://ironex.tech/blog/zhelezo-metall-ili-nemetall.html</link>
+      <guid isPermaLink="true">https://ironex.tech/blog/zhelezo-metall-ili-nemetall.html</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0300</pubDate>
+      <category>Заказчику</category>
+      <description>Почему железо относят к металлам, чем оно отличается от стали и чугуна и какие свойства материала нужно учитывать при заказе детали.</description>
+    </item>
     <item>
       <title>Жаропрочная сталь, никелевые сплавы и инконель: как выбрать материал для детали под нагрев</title>
       <link>https://ironex.tech/blog/zharoprochnaya-stal-ili-inkonel-chto-vybrat.html</link>
@@ -149,22 +165,6 @@
       <pubDate>Sun, 08 Nov 2026 00:00:00 +0300</pubDate>
       <category>Заказчику</category>
       <description>Какие отрасли входят в обрабатывающую промышленность, чем она отличается от добычи и строительства и куда относится изготовление деталей по чертежам.</description>
-    </item>
-    <item>
-      <title>Что означает «эквивалент» и когда равноценность допускает замену</title>
-      <link>https://ironex.tech/blog/ekvivalent-eto.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/ekvivalent-eto.html</guid>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Заказчику</category>
-      <description>Эквивалент — равноценный объект по выбранному признаку. Разбираем значение слова, отличие от аналога и условия замены материала или детали.</description>
-    </item>
-    <item>
-      <title>Чем заменить сталь 40Х и какие свойства проверить до заказа детали</title>
-      <link>https://ironex.tech/blog/analog-stali-40h.html</link>
-      <guid isPermaLink="true">https://ironex.tech/blog/analog-stali-40h.html</guid>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 +0300</pubDate>
-      <category>Материалы</category>
-      <description>Что проверить при подборе аналога стали 40Х: состав плавки, состояние поставки, свойства после термообработки и согласование замены в чертеже.</description>
     </item>
   </channel>
 </rss>
